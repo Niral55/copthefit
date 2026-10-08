@@ -29,7 +29,7 @@ def main():
             continue
         items = []
         for it in fit["items"]:
-            cut = cutout_path(fit["find"], it["slide"])
+            cut = cutout_path(fit["find"], it)
             if cut:
                 shutil.copy(cut, DIST / "img" / cut.name)
             items.append(dict(
@@ -65,6 +65,7 @@ def main():
                                      + html.replace("<div class=\"wrap\">", "</head>\n<body>\n<div class=\"wrap\">", 1)
                                      + "\n</body>\n</html>\n")
     (DIST / "fits.json").write_text(dump(public))
+    shutil.copy(ROOT / "templates" / "admin.html", DIST / "admin.html")
     (DIST / ".nojekyll").write_text("")
     if cfg.get("custom_domain"):
         (DIST / "CNAME").write_text(cfg["custom_domain"].strip() + "\n")

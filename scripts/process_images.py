@@ -16,7 +16,7 @@ from datetime import date
 
 from PIL import Image
 
-from common import INBOX, CUT_DIR, PHOTO_DIR, load_fits, save_fits
+from common import ROOT, INBOX, CUT_DIR, PHOTO_DIR, load_fits, save_fits, cutout_path, item_key
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
@@ -81,7 +81,9 @@ def process_inbox(doc):
             if meta.get("product_url"):
                 it["product_url"] = meta["product_url"]
             side.unlink()
-        remove_bg(Image.open(p)).save(CUT_DIR / f"{find}-{slide}.png", optimize=True)
+        out = CUT_DIR / f"{find}-{item_key(it)}.png"
+        remove_bg(Image.open(p)).save(out, optimize=True)
+        it["img"] = out.relative_to(ROOT).as_posix()
         it.pop("image_fetch", None)
         p.unlink()
         done += 1
@@ -101,8 +103,11 @@ def save_photo(doc, find, p):
     img.thumbnail((1600, 1600))
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
     img.save(PHOTO_DIR / f"{find}.jpg", quality=88, optimize=True)
-    fit["photo"] = {"credit": meta.get("credit") or (fit.get("photo") or {}).get("credit", ""),
-                    "source_url": meta.get("source_url", "")}
+    old = fit.get("photo") or {}
+    fit["photo"] = {"credit": meta.get("credit") or old.get("credit", ""),
+                    "source_url": meta.get("source_url", "") or old.get("source_url", "")}
+    if meta.get("license") or old.get("license"):
+        fit["photo"]["license"] = meta.get("license") or old.get("license")
     pins = meta.get("pins") or {}
     for it in fit["items"]:
         xy = pins.get(str(it["slide"]))
@@ -140,7 +145,7 @@ def fetch_missing(doc):
             continue
         for it in f["items"]:
             key = f"{f['find']}-{it['slide']}"
-            if not it.get("product_url") or (CUT_DIR / f"{key}.png").exists() or it.get("image_fetch"):
+            if not it.get("product_url") or cutout_path(f["find"], it) or it.get("image_fetch"):
                 continue
             try:
                 src = page_image(it["product_url"])
@@ -148,7 +153,9 @@ def fetch_missing(doc):
                     raise ValueError("no product image on page")
                 r = requests.get(src, headers={"User-Agent": UA, "Referer": it["product_url"]}, timeout=25)
                 r.raise_for_status()
-                remove_bg(Image.open(io.BytesIO(r.content))).save(CUT_DIR / f"{key}.png", optimize=True)
+                out = CUT_DIR / f"{f['find']}-{item_key(it)}.png"
+                remove_bg(Image.open(io.BytesIO(r.content))).save(out, optimize=True)
+                it["img"] = out.relative_to(ROOT).as_posix()
                 print(f"fetched {key}")
             except Exception as e:  # noqa: BLE001 - log and move on
                 it["image_fetch"] = f"failed {date.today().isoformat()}: {str(e)[:80]}"

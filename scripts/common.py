@@ -81,9 +81,19 @@ def retailer_name(cfg, item):
     return r["name"] if r else ""
 
 
-def cutout_path(find, slide):
-    p = CUT_DIR / f"{find}-{slide}.png"
+def cutout_path(find, item):
+    """An item's product cutout. New images are stored per item (item["img"]) so reordering items keeps them."""
+    if item.get("img") and (ROOT / item["img"]).exists():
+        return ROOT / item["img"]
+    p = CUT_DIR / f"{find}-{item['slide']}.png"
     return p if p.exists() else None
+
+
+def item_key(item):
+    import secrets
+    if not item.get("id"):
+        item["id"] = secrets.token_hex(3)
+    return item["id"]
 
 
 def photo_path(find):

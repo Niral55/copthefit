@@ -10,11 +10,24 @@ Right-click product images  →  images/inbox  →  Build workflow: cut out imag
                                         Daily post workflow (12:05 PM ET): next carousel → Instagram
 ```
 
+## Admin page: `<site>/admin.html`
+
+Your control panel, on a computer or phone. Connect it once (Settings: GitHub username + token).
+
+- **Leads**: fits the lead finder found. Open one, add the cover photo (upload, paste, or tap a free photo), click the photo to pin each item, add product images and shop links, then **Save & add to queue**, **Post next** or **Post now**.
+- **Queue**: approved posts in posting order, with what each still needs (photo, images, links).
+- **Posted**: live posts. Edits update the site.
+- **Unpublished**: hidden posts. Open one to restore it.
+- **+ New post**: the same editor, empty.
+
+Post now needs the token to also have **Actions: Read and write**. It waits for the new slides to build, then posts (about 5 minutes).
+
 ## Day to day (about an hour a week)
 
 | Job | Where | Time |
 |---|---|---|
-| Approve or reject new fits | Extension → **Review** | 1 min each |
+| Finish and approve new leads | Admin page → **Leads** | 2 min each |
+| Approve or reject new fits (from Chrome) | Extension → **Review** | 1 min each |
 | Add the cover photo | Right-click the photo of the look → **Cop the Fit: set as cover photo** → pick Find #, add the credit, click to pin each item (optional) | 30 sec each |
 | Add product images | Right-click a product shot on a shop page → **Cop the Fit: add product image** → pick Find # and item | 10 sec each |
 | Add a fit you spotted | Extension → **Add fit** | 2 min |

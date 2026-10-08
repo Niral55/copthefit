@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Cop the Fit Admin</title>
+<style>
+@font-face { font-family: "Big Shoulders Display"; font-weight: 800; font-display: swap; src: url(fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Big Shoulders Display"; font-weight: 900; font-display: swap; src: url(fonts/big-shoulders-display-latin-900-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Sans"; font-weight: 400; font-display: swap; src: url(fonts/instrument-sans-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Sans"; font-weight: 600; font-display: swap; src: url(fonts/instrument-sans-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url(fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url(fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2"); }
+/* Admin: list of posts by stage on the left/top, one editor at a time. Same tokens as the public site. */
+:root {
+  --paper: #ECEEF1; --tag: #FFFFFF; --ink: #13151A; --muted: #5B626E; --line: #D3D8DF;
+  --accent: #2238C9; --accent-ink: #FFFFFF; --similar: #E3E7FF; --ok: #1E7A3C; --warn: #A15C00; --bad: #B4321F;
+  --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #0E1014; --tag: #171A20; --ink: #E8EBF0; --muted: #98A0AC; --line: #2A2F38;
+          --accent: #8C9EFF; --accent-ink: #0E1014; --similar: #222842; --ok: #5BC27E; --warn: #E0A040; --bad: #FF8A6B; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 14px/1.45 var(--body); }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding-inline: 16px; padding-block: 0 60px; }
+header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; padding-block: 20px 12px; border-bottom: 2px solid var(--ink); }
+.mark { font: 900 40px/.9 var(--display); text-transform: uppercase; text-decoration: none; color: var(--ink); }
+.mark span { color: var(--accent); }
+.mark small { font: 500 12px var(--mono); letter-spacing: .1em; color: var(--muted); margin-left: 8px; vertical-align: 6px; }
+.btn { font: 600 13px var(--body); padding: 9px 13px; border-radius: 5px; border: 1px solid var(--line); background: var(--tag); color: var(--ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.dark { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.btn.danger { color: var(--bad); }
+.btn:disabled { opacity: .5; cursor: default; }
+.btn.sm { padding: 6px 9px; font-size: 12px; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-block: 14px; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.tab { font: 500 12px var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.tab b { font-weight: 500; opacity: .7; margin-left: 4px; }
+.grow { flex: 1 1 200px; min-width: 0; }
+input, select, textarea { font: 14px var(--body); color: var(--ink); background: var(--tag); border: 1px solid var(--line); border-radius: 5px; padding: 9px 10px; width: 100%; min-width: 0; }
+textarea { min-height: 72px; resize: vertical; }
+input[type="checkbox"] { width: auto; }
+label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); min-width: 0; }
+.hint { font-size: 12.5px; color: var(--muted); margin: 0; }
+.msg { font-size: 13px; padding: 9px 12px; border-radius: 5px; background: var(--tag); border: 1px solid var(--line); margin: 10px 0; }
+.msg.ok { border-color: var(--ok); color: var(--ok); }
+.msg.err { border-color: var(--bad); color: var(--bad); }
+
+/* list */
+.list { display: flex; flex-direction: column; gap: 8px; }
+.row { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 14px; align-items: center; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; cursor: pointer; text-align: left; color: inherit; font: inherit; width: 100%; }
+.row:hover { border-color: var(--ink); }
+.thumb { width: 64px; aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: var(--paper); display: grid; place-items: center; font: 9px var(--mono); color: var(--muted); text-transform: uppercase; text-align: center; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+.row .num { font: 500 11px var(--mono); color: var(--muted); }
+.row .who { font: 800 22px/1 var(--display); text-transform: uppercase; }
+.row .hl { font-size: 13.5px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.chip { font: 500 10.5px var(--mono); letter-spacing: .04em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); }
+.chip.ok { border-color: var(--ok); color: var(--ok); }
+.chip.no { border-color: var(--warn); color: var(--warn); }
+.chip.next { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.empty { padding: 30px 0; color: var(--muted); }
+
+/* editor */
+.ed-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; justify-content: space-between; padding-block: 16px 8px; }
+.ed-title { font: 800 34px/1 var(--display); text-transform: uppercase; margin: 0; }
+.pill { font: 500 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; background: var(--ink); color: var(--paper); }
+.ed { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 22px; align-items: start; }
+.panel { background: var(--tag); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.panel h2 { margin: 0; font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.photo { position: relative; min-height: 220px; background: var(--paper); border-radius: 6px; overflow: hidden; display: grid; place-items: center; }
+.photo .pw { position: relative; line-height: 0; cursor: crosshair; max-width: 100%; }
+.photo img { max-width: 100%; max-height: 520px; width: auto; height: auto; display: block; }
+.photo .ph { font: 500 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; text-align: center; padding: 16px; line-height: 1.5;
+  position: absolute; inset: 0; display: grid; place-items: center; background: repeating-linear-gradient(-45deg, var(--paper) 0 8px, var(--tag) 8px 16px); }
+.mk { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); border: 2px solid #fff; font: 700 13px/22px var(--body); text-align: center; pointer-events: none; }
+.cands { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.cands button { padding: 0; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); cursor: pointer; aspect-ratio: 4 / 5; overflow: hidden; }
+.cands img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.items { display: flex; flex-direction: column; gap: 10px; }
+.it { display: grid; grid-template-columns: 28px 76px minmax(0, 1fr) auto; gap: 10px; align-items: start; border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
+.it .n { width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 700 12px var(--body); }
+.it .img { width: 76px; aspect-ratio: 1; border-radius: 4px; border: 1px dashed var(--line); background: var(--paper); display: grid; place-items: center; overflow: hidden; cursor: pointer; font: 9px var(--mono); color: var(--muted); text-transform: uppercase; text-align: center; padding: 0; }
+.it .img img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.it .fields { display: grid; grid-template-columns: 110px 1fr; gap: 8px; min-width: 0; }
+.it .fields .wide { grid-column: 1 / -1; }
+.it .ctl { display: flex; flex-direction: column; gap: 4px; }
+.ready { display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 0; list-style: none; font-size: 13px; }
+.ready li::before { content: "○ "; color: var(--warn); }
+.ready li.done::before { content: "● "; color: var(--ok); }
+.actions { position: sticky; bottom: 0; display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0px)); background: var(--paper); border-top: 1px solid var(--line); margin-top: 18px; }
+dialog { border: 1px solid var(--line); border-radius: 8px; background: var(--tag); color: var(--ink); max-width: 440px; width: calc(100% - 32px); }
+dialog::backdrop { background: rgba(0,0,0,.35); }
+@media (max-width: 760px) {
+  .ed { grid-template-columns: minmax(0, 1fr); }
+  .it { grid-template-columns: 28px 64px minmax(0, 1fr); }
+  .it .img { width: 64px; }
+  .it .ctl { grid-column: 3; flex-direction: row; }
+  .it .fields { grid-template-columns: 1fr; }
+  .three { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="./">Cop the <span>Fit</span><small>ADMIN</small></a>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="openSettings" type="button">Settings</button><a class="btn" href="./" target="_blank">View site ↗</a></div>
+  </header>
+  <div id="flash"></div>
+
+  <section id="listView">
+    <div class="bar">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <input class="grow" id="q" type="search" placeholder="Search name, headline or Find #" aria-label="Search posts">
+      <button class="btn primary" id="newPost" type="button">+ New post</button>
+    </div>
+    <p class="hint" id="tabHint"></p>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section id="editView" hidden></section>
+</div>
+
+<dialog id="settings">
+  <form method="dialog" id="settingsForm" style="display:flex;flex-direction:column;gap:10px">
+    <h2 style="margin:0;font:800 26px/1 var(--display);text-transform:uppercase">Connect GitHub</h2>
+    <div class="two">
+      <label class="f" for="sOwner">GitHub username<input id="sOwner" autocomplete="off"></label>
+      <label class="f" for="sRepo">Repo<input id="sRepo" placeholder="copthefit"></label>
+    </div>
+    <label class="f" for="sToken">Token<input id="sToken" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+    <p class="hint">Fine-grained token for only the copthefit repo with <b>Contents: Read and write</b>. Add <b>Actions: Read and write</b> to use Post now. It stays in this browser only.</p>
+    <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" value="cancel" type="submit">Cancel</button><button class="btn primary" id="sSave" value="save" type="submit">Save</button></div>
+  </form>
+</dialog>
+<input type="file" id="filePick" accept="image/*" hidden>
+
+<script>
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+/* ---------- settings ---------- */
+function settings() {
+  let s = {};
+  try { s = JSON.parse(localStorage.getItem("ctf-admin") || "{}"); } catch (e) {}
+  const host = location.hostname.endsWith(".github.io") ? location.hostname.split(".")[0] : "";
+  const repo = location.hostname.endsWith(".github.io") ? (location.pathname.split("/")[1] || "copthefit") : "copthefit";
+  return { owner: s.owner || host, repo: s.repo || repo, branch: s.branch || "main", token: s.token || "" };
+}
+function saveSettings(s) { try { localStorage.setItem("ctf-admin", JSON.stringify(s)); } catch (e) { flash("This browser blocked saving settings.", "err"); } }
+
+/* ---------- GitHub ---------- */
+const GH = {
+  async req(path, opts = {}) {
+    const s = settings();
+    if (!s.owner || !s.token) throw new Error("Connect GitHub in Settings first.");
+    const r = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}${path}`, {
+      ...opts, cache: "no-store",
+      headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${s.token}`, "X-GitHub-Api-Version": "2022-11-28", ...(opts.body ? { "Content-Type": "application/json" } : {}) }
+    });
+    if (!r.ok) {
+      const t = await r.text();
+      const e = new Error(`GitHub ${r.status}${r.status === 401 ? " (token wrong or expired)" : r.status === 404 ? " (check username, repo and token access)" : ""}: ${t.slice(0, 140)}`);
+      e.status = r.status; throw e;
+    }
+    return r.status === 204 ? null : r.json();
+  },
+  dec(b64) { const bin = atob(b64.replace(/\n/g, "")); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); },
+  b64bytes(bytes) { let s = ""; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000)); return btoa(s); },
+  b64text(t) { return GH.b64bytes(new TextEncoder().encode(t)); },
+  async json(path, ref) {
+    const f = await GH.req(`/contents/${path}?ref=${encodeURIComponent(ref || settings().branch)}`);
+    return JSON.parse(GH.dec(f.content || (await GH.req(`/git/blobs/${f.sha}`)).content));
+  },
+  // Read the latest data, apply change(doc), and commit it together with any image files, in one commit.
+  async commit(change, files, message) {
+    const s = settings();
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const ref = await GH.req(`/git/ref/heads/${encodeURIComponent(s.branch)}`);
+      const head = ref.object.sha;
+      const doc = await GH.json("data/fits.json", head);
+      const result = change(doc);
+      const commit = await GH.req(`/git/commits/${head}`);
+      const tree = [];
+      for (const f of [{ path: "data/fits.json", base64: GH.b64text(JSON.stringify(doc, null, 1) + "\n") }, ...files]) {
+        const blob = await GH.req(`/git/blobs`, { method: "POST", body: JSON.stringify({ content: f.base64, encoding: "base64" }) });
+        tree.push({ path: f.path, mode: "100644", type: "blob", sha: blob.sha });
+      }
+      const t = await GH.req(`/git/trees`, { method: "POST", body: JSON.stringify({ base_tree: commit.tree.sha, tree }) });
+      const c = await GH.req(`/git/commits`, { method: "POST", body: JSON.stringify({ message, tree: t.sha, parents: [head] }) });
+      try {
+        await GH.req(`/git/refs/heads/${encodeURIComponent(s.branch)}`, { method: "PATCH", body: JSON.stringify({ sha: c.sha }) });
+        DOC = doc;
+        return result;
+      } catch (e) { if (e.status !== 422 || attempt === 2) throw e; } // someone else saved first: redo on top
+    }
+  },
+  raw(path) { const s = settings(); return `https://raw.githubusercontent.com/${s.owner}/${s.repo}/${s.branch}/${path}?t=${STAMP}`; }
+};
+let STAMP = Date.now();
+
+/* ---------- state ---------- */
+let DOC = null, CFG = null, TAB = "review", DRAFT = null, PENDING = null;
+const STAGES = [
+  { id: "review", label: "Leads", hint: "New fits the lead finder found. Add the photo, images and links, then approve or post." },
+  { id: "approved", label: "Queue", hint: "Approved posts, in posting order. One posts each day; posts without a cover photo wait." },
+  { id: "posted", label: "Posted", hint: "Live on Instagram. Edits here update the site." },
+  { id: "rejected", label: "Unpublished", hint: "Hidden from the site and the queue. Open one to restore it." }
+];
+
+function flash(text, kind = "") {
+  $("#flash").innerHTML = text ? `<div class="msg ${kind}">${text}</div>` : "";
+  if (kind === "ok") setTimeout(() => { if ($("#flash").textContent === new DOMParser().parseFromString(text, "text/html").body.textContent) $("#flash").innerHTML = ""; }, 8000);
+}
+
+const queueOrder = (a, b) => (a.priority ?? 1) - (b.priority ?? 1) || +a.find - +b.find;
+const isCustom = it => !it.product_url && !(it.retailer && it.query);
+function readiness(f) {
+  const items = f.items || [];
+  const buyable = items.filter(it => !isCustom(it));
+  return {
+    photo: !!(f.photo && f.photo.credit),
+    imgs: items.filter(it => it.img).length, n: items.length,
+    links: buyable.length, linkable: items.length
+  };
+}
+
+/* ---------- list view ---------- */
+function renderTabs() {
+  $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${DOC.fits.filter(f => f.status === s.id).length}</b></button>`).join("");
+  $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; renderList(); });
+  $("#tabHint").textContent = STAGES.find(s => s.id === TAB).hint;
+}
+
+function renderList() {
+  renderTabs();
+  const q = $("#q").value.trim().toLowerCase().replace(/^#/, "");
+  let list = DOC.fits.filter(f => f.status === TAB);
+  list = TAB === "approved" ? list.sort(queueOrder) : list.sort((a, b) => +b.find - +a.find);
+  if (q) list = list.filter(f => (/^\d+$/.test(q) ? f.find === q.padStart(3, "0") : (f.celeb + " " + f.headline + " " + f.context).toLowerCase().includes(q)));
+  const requirePhoto = CFG && CFG.require_photo;
+  let nextShown = false;
+  $("#list").innerHTML = list.length ? list.map(f => {
+    const r = readiness(f);
+    let next = "";
+    if (TAB === "approved" && !nextShown && (!requirePhoto || r.photo)) { next = `<span class="chip next">Posts next</span>`; nextShown = true; }
+    return `<button class="row" type="button" data-find="${f.find}">
+      <span class="thumb">${f.photo ? `<img src="${GH.raw(`images/photos/${f.find}.jpg`)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('No photo'))">` : "No photo"}</span>
+      <span style="min-width:0">
+        <span class="num">#${f.find} · ${esc(f.context)} · ${esc(f.date)}</span>
+        <span class="who" style="display:block">${esc(f.celeb)}</span>
+        <span class="hl">${esc(f.headline)}</span>
+        <span class="chips">${next}
+          <span class="chip ${r.photo ? "ok" : "no"}">${r.photo ? "Photo" : "Needs photo"}</span>
+          <span class="chip ${r.imgs === r.n ? "ok" : ""}">Images ${r.imgs}/${r.n}</span>
+          <span class="chip ${r.links === r.linkable ? "ok" : ""}">Links ${r.links}/${r.linkable}</span>
+          ${f.ig_permalink ? `<span class="chip ok">On Instagram</span>` : ""}
+        </span>
+      </span>
+      <span class="btn sm">Open</span>
+    </button>`;
+  }).join("") : `<p class="empty">${q ? "Nothing matches that search." : TAB === "review" ? "No new leads right now. The lead finder adds more on Mondays and Thursdays, or press + New post." : "Nothing here yet."}</p>`;
+  $("#list").querySelectorAll(".row").forEach(b => b.onclick = () => openEditor(b.dataset.find));
+}
+
+/* ---------- editor ---------- */
+function blankFit() {
+  return { find: "", status: "review", priority: 1, celeb: "", context: "", date: "", category: "Fit", timing: "Recent", headline: "", detail: "",
+    tags: [], sources: [{ label: "", url: "" }], note: "", items: [{ slide: 2, label: "Exact", brand: "", name: "", retailer: "", query: "", product_url: "", note: "" }],
+    posted_at: null, ig_media_id: null, ig_permalink: null };
+}
+
+function linkText(it) { return it.product_url || (it.retailer && it.query ? `${it.retailer}: ${it.query}` : (it.note && /custom/i.test(it.note) ? "custom" : "")); }
+
+function openEditor(find) {
+  const src = find ? DOC.fits.find(f => f.find === find) : blankFit();
+  DRAFT = JSON.parse(JSON.stringify(src));
+  DRAFT.items.forEach(it => it._link = linkText(it));
+  PENDING = { photo: null, items: new Map() }; // item object -> {b64, url}
+  $("#listView").hidden = true;
+  $("#editView").hidden = false;
+  renderEditor();
+  window.scrollTo(0, 0);
+}
+
+function closeEditor() { DRAFT = null; $("#editView").hidden = true; $("#listView").hidden = false; renderList(); }
+
+function photoUrl() {
+  if (PENDING.photo) return PENDING.photo.url;
+  if (DRAFT.find && DRAFT.photo) return GH.raw(`images/photos/${DRAFT.find}.jpg`);
+  return "";
+}
+
+function renderEditor() {
+  const d = DRAFT;
+  const isNew = !d.find;
+  const st = STAGES.find(s => s.id === d.status);
+  const retailers = CFG ? Object.keys(CFG.retailers) : [];
+  const purl = photoUrl();
+  $("#editView").innerHTML = `
+    <div class="ed-head">
+      <div style="display:flex;gap:12px;align-items:baseline;flex-wrap:wrap"><button class="btn sm" id="back" type="button">← All posts</button>
+        <h1 class="ed-title">${isNew ? "New post" : `#${d.find} ${esc(d.celeb)}`}</h1>${isNew ? "" : `<span class="pill">${esc(st ? st.label : d.status)}</span>`}</div>
+      ${d.ig_permalink ? `<a href="${esc(d.ig_permalink)}" target="_blank">View on Instagram ↗</a>` : ""}
+    </div>
+    <div class="ed">
+      <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+        <div class="panel">
+          <h2>Cover photo</h2>
+          <div class="photo" id="photoBox">${purl ? `<div class="pw" id="pw"><img id="pimg" src="${esc(purl)}" alt="Cover photo. Click to pin items."></div>` : `<div class="ph">No photo yet.<br>Upload one, paste one, or pick a free photo below.</div>`}</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" id="upPhoto" type="button">Upload photo</button>${purl ? `<button class="btn sm" id="clearPins" type="button">Clear pins</button>` : ""}</div>
+          ${purl ? `<p class="hint" id="pinHint"></p>` : `<p class="hint">Tip: copy an image and press Ctrl/Cmd+V here to paste it.</p>`}
+          <label class="f" for="credit">Photo credit<input id="credit" value="${esc((d.photo || {}).credit || "")}" placeholder="@account or photographer / agency"></label>
+          ${(d.photo_candidates || []).length ? `<h2>Free photos found (public domain / CC)</h2><div class="cands">${d.photo_candidates.map((c, i) => `<button type="button" data-c="${i}" title="${esc(c.author)}, ${esc(c.license)}, ${esc(c.taken)}"><img src="${esc(c.image)}" alt="Free photo ${i + 1}" loading="lazy"></button>`).join("")}</div><p class="hint">Tap one to use it. The credit fills in.</p>` : ""}
+          ${d.photo_source ? `<a href="${esc(d.photo_source)}" target="_blank">Open the source page to find the photo ↗</a>` : ""}
+        </div>
+        <div class="panel">
+          <h2>Ready to post?</h2>
+          <ul class="ready" id="ready"></ul>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+        <div class="panel">
+          <h2>The fit</h2>
+          <div class="two">
+            <label class="f" for="celeb">Who<input id="celeb" value="${esc(d.celeb)}" placeholder="Jalen Hurts"></label>
+            <label class="f" for="category">Category<select id="category">${["Fit", "Kicks", "Wrist"].map(c => `<option${d.category === c ? " selected" : ""}>${c}</option>`).join("")}</select></label>
+          </div>
+          <div class="two">
+            <label class="f" for="context">Where<input id="context" value="${esc(d.context)}" placeholder="NFL Week 6 arrival"></label>
+            <label class="f" for="date">When<input id="date" value="${esc(d.date)}" placeholder="Oct 12, 2026"></label>
+          </div>
+          <label class="f" for="headline">Headline (cover text)<input id="headline" maxlength="90" value="${esc(d.headline)}" placeholder="Hurts went double denim with 11s"></label>
+          <label class="f" for="detail">What they wore<textarea id="detail" placeholder="One or two sentences, in your own words.">${esc(d.detail)}</textarea></label>
+          <div class="two">
+            <label class="f" for="srcLabel">Source<input id="srcLabel" value="${esc((d.sources[0] || {}).label)}" placeholder="ESPN — Week 6 arrivals"></label>
+            <label class="f" for="srcUrl">Source link<input id="srcUrl" value="${esc((d.sources[0] || {}).url)}" placeholder="https://…"></label>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Items (up to 8)</h2>
+          <div class="items" id="items"></div>
+          <div><button class="btn sm" id="addItem" type="button">+ Add item</button></div>
+          <p class="hint">Link: paste a product page, or write <code>retailer: search words</code> (${esc(retailers.join(", "))}), or <code>custom</code> for one-off pieces. Tap an image box to upload that item's product shot.</p>
+        </div>
+      </div>
+    </div>
+    <div id="edMsg"></div>
+    <div class="actions">
+      <button class="btn" id="save" type="button">Save</button>
+      ${d.status !== "posted" ? `<button class="btn dark" id="approve" type="button">Save &amp; add to queue</button>
+      <button class="btn primary" id="postNext" type="button">Post next</button>
+      <button class="btn primary" id="postNow" type="button">Post now</button>` : ""}
+      ${isNew ? "" : d.status === "rejected" ? `<button class="btn" id="restore" type="button">Restore to leads</button>` : `<button class="btn danger" id="unpublish" type="button">Unpublish</button>`}
+    </div>`;
+
+  renderItems();
+  renderPins();
+  renderReady();
+  $("#back").onclick = closeEditor;
+  $("#upPhoto").onclick = () => pickFile(f => setPhoto(f));
+  if ($("#clearPins")) $("#clearPins").onclick = () => { DRAFT.items.forEach(it => delete it.pin); renderPins(); };
+  $("#editView").querySelectorAll(".cands button").forEach(b => b.onclick = () => useCandidate(DRAFT.photo_candidates[+b.dataset.c]));
+  $("#editView").querySelectorAll("input,textarea,select").forEach(el => el.addEventListener("input", () => { readForm(); renderReady(); }));
+  $("#addItem").onclick = () => { readForm(); if (DRAFT.items.length >= 8) return; DRAFT.items.push({ label: "Similar", brand: "", name: "", retailer: "", query: "", product_url: "", note: "", _link: "" }); renderItems(); renderReady(); };
+  $("#save").onclick = () => save("save");
+  if ($("#approve")) $("#approve").onclick = () => save("approve");
+  if ($("#postNext")) $("#postNext").onclick = () => save("next");
+  if ($("#postNow")) $("#postNow").onclick = () => save("now");
+  if ($("#unpublish")) $("#unpublish").onclick = () => save("unpublish");
+  if ($("#restore")) $("#restore").onclick = () => save("restore");
+  const img = $("#pimg");
+  if (img) {
+    img.addEventListener("load", renderPins);
+    img.addEventListener("click", e => {
+      const next = DRAFT.items.find(it => !it.pin);
+      if (!next) return;
+      const r = img.getBoundingClientRect();
+      next.pin = [+((e.clientX - r.left) / r.width).toFixed(4), +((e.clientY - r.top) / r.height).toFixed(4)];
+      renderPins();
+    });
+  }
+}
+
+function renderItems() {
+  $("#items").innerHTML = DRAFT.items.map((it, i) => {
+    const pend = PENDING.items.get(it);
+    const src = pend ? pend.url : it.img && DRAFT.find ? GH.raw(it.img) : "";
+    return `<div class="it" data-i="${i}">
+      <span class="n">${i + 1}</span>
+      <button class="img" type="button" data-up="${i}" aria-label="Upload image for item ${i + 1}">${src ? `<img src="${esc(src)}" alt="">` : "Add image"}</button>
+      <div class="fields">
+        <label class="f" for="lab${i}">Type<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
+        <label class="f" for="br${i}">Brand<input id="br${i}" data-k="brand" value="${esc(it.brand)}" placeholder="${it.label === "Similar" ? "(optional)" : "Rolex"}"></label>
+        <label class="f wide" for="nm${i}">Item<input id="nm${i}" data-k="name" value="${esc(it.name)}" placeholder="Cosmograph Daytona 126528LN"></label>
+        <label class="f wide" for="lk${i}">Link<input id="lk${i}" data-k="_link" value="${esc(it._link)}" placeholder="https://… or chrono24: Rolex 126528LN or custom"></label>
+      </div>
+      <div class="ctl">
+        <button class="btn sm" type="button" data-mv="-1" aria-label="Move up"${i === 0 ? " disabled" : ""}>↑</button>
+        <button class="btn sm" type="button" data-mv="1" aria-label="Move down"${i === DRAFT.items.length - 1 ? " disabled" : ""}>↓</button>
+        <button class="btn sm danger" type="button" data-rm aria-label="Remove item"${DRAFT.items.length === 1 ? " disabled" : ""}>✕</button>
+      </div>
+    </div>`;
+  }).join("");
+  $("#items").querySelectorAll(".it").forEach(row => {
+    const i = +row.dataset.i;
+    row.querySelectorAll("[data-k]").forEach(el => el.addEventListener("input", () => { DRAFT.items[i][el.dataset.k] = el.value; renderReady(); }));
+    row.querySelector("[data-up]").onclick = () => pickFile(f => toB64(f, "image/png").then(p => { PENDING.items.set(DRAFT.items[i], p); renderItems(); renderReady(); }));
+    row.querySelectorAll("[data-mv]").forEach(b => b.onclick = () => { const j = i + +b.dataset.mv; [DRAFT.items[i], DRAFT.items[j]] = [DRAFT.items[j], DRAFT.items[i]]; renderItems(); renderPins(); });
+    row.querySelector("[data-rm]").onclick = () => { PENDING.items.delete(DRAFT.items[i]); DRAFT.items.splice(i, 1); renderItems(); renderPins(); renderReady(); };
+  });
+}
+
+function renderPins() {
+  const pw = $("#pw");
+  if (!pw) return;
+  pw.querySelectorAll(".mk").forEach(m => m.remove());
+  DRAFT.items.forEach((it, i) => {
+    if (!it.pin) return;
+    const m = document.createElement("span");
+    m.className = "mk"; m.textContent = i + 1;
+    m.style.left = it.pin[0] * 100 + "%"; m.style.top = it.pin[1] * 100 + "%";
+    pw.appendChild(m);
+  });
+  const next = DRAFT.items.findIndex(it => !it.pin);
+  if ($("#pinHint")) $("#pinHint").textContent = next >= 0 ? `Optional: click the photo on item ${next + 1}${DRAFT.items[next].name ? ` (${DRAFT.items[next].name})` : ""} to pin it.` : "Every item is pinned.";
+}
+
+function renderReady() {
+  if (!$("#ready")) return;
+  const d = DRAFT;
+  const hasPhoto = !!(PENDING.photo || d.photo);
+  const credit = ($("#credit") || {}).value || "";
+  const imgs = d.items.filter(it => it.img || PENDING.items.has(it)).length;
+  const links = d.items.filter(it => (it._link || "").trim() && !/^custom$/i.test(it._link.trim())).length;
+  const rows = [
+    [d.celeb && d.headline && d.context && d.date && d.detail, "Who, where, when, headline and description filled in"],
+    [(d.sources[0] || {}).url, "Source link added"],
+    [hasPhoto && credit.trim(), hasPhoto ? (credit.trim() ? "Cover photo with credit" : "Cover photo needs a credit") : "Cover photo added"],
+    [imgs === d.items.length, `Product images: ${imgs} of ${d.items.length} (optional)`],
+    [links === d.items.length, `Shop links: ${links} of ${d.items.length}`]
+  ];
+  $("#ready").innerHTML = rows.map(([ok, t]) => `<li class="${ok ? "done" : ""}">${esc(t)}</li>`).join("");
+}
+
+function readForm() {
+  const v = id => ($("#" + id) || {}).value?.trim() ?? "";
+  Object.assign(DRAFT, { celeb: v("celeb"), category: v("category"), context: v("context"), date: v("date"), headline: v("headline"), detail: v("detail") });
+  DRAFT.sources[0] = { label: v("srcLabel"), url: v("srcUrl") };
+  if (DRAFT.photo || PENDING.photo) DRAFT.photo = { ...(DRAFT.photo || {}), credit: v("credit") };
+}
+
+/* ---------- images ---------- */
+function pickFile(cb) {
+  const inp = $("#filePick");
+  inp.value = "";
+  inp.onchange = () => { if (inp.files[0]) cb(inp.files[0]); };
+  inp.click();
+}
+
+async function toB64(blob, type) {
+  const bmp = await createImageBitmap(blob);
+  const scale = Math.min(1, 1600 / Math.max(bmp.width, bmp.height));
+  const c = document.createElement("canvas");
+  c.width = Math.round(bmp.width * scale); c.height = Math.round(bmp.height * scale);
+  const ctx = c.getContext("2d");
+  if (type === "image/jpeg") { ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, c.width, c.height); }
+  ctx.drawImage(bmp, 0, 0, c.width, c.height);
+  const out = await new Promise(r => c.toBlob(r, type, 0.9));
+  return { b64: GH.b64bytes(new Uint8Array(await out.arrayBuffer())), url: URL.createObjectURL(out) };
+}
+
+async function setPhoto(blob, meta = {}) {
+  readForm();
+  try {
+    PENDING.photo = { ...(await toB64(blob, "image/jpeg")), ...meta };
+    DRAFT.items.forEach(it => delete it.pin);
+    if (meta.credit) DRAFT.photo = { ...(DRAFT.photo || {}), credit: meta.credit, license: meta.license, source_url: meta.source_url };
+    else if (!DRAFT.photo) DRAFT.photo = { credit: "" };
+    renderEditor();
+  } catch (e) { msg(`Couldn't read that image: ${esc(e.message)}`, "err"); }
+}
+
+async function useCandidate(c) {
+  try {
+    const r = await fetch(c.image);
+    if (!r.ok) throw new Error(r.status);
+    await setPhoto(await r.blob(), { credit: `${c.author} / ${c.license} via Wikimedia Commons`, license: c.license, source_url: c.page });
+  } catch (e) { msg(`Couldn't load that photo. <a href="${esc(c.page)}" target="_blank">Open it</a>, save it, then use Upload photo.`, "err"); }
+}
+
+document.addEventListener("paste", e => {
+  if (!DRAFT || $("#editView").hidden) return;
+  if (e.target.matches("input,textarea") && !e.clipboardData.files.length) return;
+  const f = [...(e.clipboardData.files || [])].find(f => f.type.startsWith("image/"));
+  if (f) { e.preventDefault(); setPhoto(f); }
+});
+
+/* ---------- save ---------- */
+function msg(text, kind = "") { $("#edMsg").innerHTML = text ? `<div class="msg ${kind}">${text}</div>` : ""; }
+
+function parseItems() {
+  return DRAFT.items.map((it, i) => {
+    const n = i + 1;
+    const link = (it._link || "").trim();
+    if (!(it.name || "").trim()) throw new Error(`Item ${n}: add the item name.`);
+    if (/\b(dupe|fake|faux|replica)\b/i.test(it.name)) throw new Error(`Item ${n}: avoid dupe/fake/faux/replica wording.`);
+    const out = { ...it, slide: i + 2, brand: (it.brand || "").trim(), name: it.name.trim(), product_url: "", retailer: "", query: "" };
+    delete out._link;
+    const m = link.match(/^([a-z0-9]+)\s*:\s*(.+)$/i);
+    if (/^https?:\/\//i.test(link)) out.product_url = link;
+    else if (m && !/^https?$/i.test(m[1])) {
+      const key = m[1].toLowerCase();
+      if (CFG && !CFG.retailers[key]) throw new Error(`Item ${n}: unknown retailer "${m[1]}". Use: ${Object.keys(CFG.retailers).join(", ")}`);
+      out.retailer = key; out.query = m[2].trim();
+    } else if (!link || /^custom$/i.test(link)) {
+      out.note = out.note && !/custom piece/i.test(out.note) ? out.note : "Custom piece — not for sale";
+    } else throw new Error(`Item ${n}: the link should be a web address, "retailer: search words", or custom.`);
+    if (out.product_url || out.retailer) out.note = /custom piece/i.test(out.note || "") ? "" : (out.note || "");
+    return out;
+  });
+}
+
+async function save(action) {
+  readForm();
+  const d = DRAFT;
+  const busy = on => $("#editView").querySelectorAll(".actions button").forEach(b => b.disabled = on);
+  try {
+    for (const [k, name] of [["celeb", "Who"], ["context", "Where"], ["date", "When"], ["headline", "Headline"], ["detail", "What they wore"]])
+      if (!d[k]) throw new Error(`${name} is empty.`);
+    if (!(d.sources[0].url || "").match(/^https?:\/\//)) throw new Error("Add the source link (https://…).");
+    if (!d.sources[0].label) d.sources[0].label = new URL(d.sources[0].url).hostname.replace("www.", "");
+    if ((PENDING.photo || d.photo) && !(d.photo && d.photo.credit)) throw new Error("Add the photo credit.");
+    if (action === "now" && !(PENDING.photo || d.photo)) throw new Error("Add a cover photo before posting.");
+    const items = parseItems();
+    busy(true); msg("Saving…");
+
+    const pend = [];
+    const pinMeta = {};
+    items.forEach(it => { if (it.pin) pinMeta[String(it.slide)] = it.pin; });
+    const status = { save: d.status, approve: "approved", next: "approved", now: "approved", unpublish: "rejected", restore: "review" }[action];
+    const find = await GH.commit(doc => {
+      let f = d.find ? doc.fits.find(x => x.find === d.find) : null;
+      const n = f ? f.find : String(Math.max(0, ...doc.fits.map(x => +x.find)) + 1).padStart(3, "0");
+      const fresh = {
+        ...(f || {}), ...d, find: n, items, status, updated: new Date().toISOString(),
+        priority: action === "next" || action === "now" ? 0 : (f ? f.priority ?? 1 : 1),
+        added: (f && f.added) || new Date().toISOString().slice(0, 10)
+      };
+      if (!d.photo) delete fresh.photo;
+      if (f) Object.keys(f).forEach(k => delete f[k]); else { f = {}; doc.fits.push(f); }
+      Object.assign(f, fresh);
+      // image files for this commit
+      pend.length = 0;
+      if (PENDING.photo) {
+        pend.push({ path: `images/inbox/${n}-photo.jpg`, base64: PENDING.photo.b64 });
+        pend.push({ path: `images/inbox/${n}-photo.json`, base64: GH.b64text(JSON.stringify({ credit: f.photo.credit, source_url: f.photo.source_url || "", license: f.photo.license || "", pins: pinMeta }) + "\n") });
+      }
+      items.forEach((it, i) => { const p = PENDING.items.get(d.items[i]); if (p) pend.push({ path: `images/inbox/${n}-${it.slide}.png`, base64: p.b64 }); });
+      return n;
+    }, pend, `${{ save: "Edit", approve: "Approve", next: "Post next", now: "Post now", unpublish: "Unpublish", restore: "Restore" }[action]} #${d.find || "new"}: ${d.celeb}`);
+    // GH.commit builds files inside change(); pass them by reference
+    STAMP = Date.now();
+
+    let note = "Saved. The site and slides update in about 3 minutes.";
+    if (action === "approve") note = "Added to the posting queue.";
+    if (action === "next") note = "Saved. This is the next post.";
+    if (action === "unpublish") note = "Unpublished. It's off the site and out of the queue.";
+    if (action === "now") {
+      try {
+        await GH.req(`/actions/workflows/post.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: settings().branch, inputs: { dry_run: "false", find } }) });
+        note = "Posting now: it goes live on Instagram as soon as the new slides are built (about 5 minutes).";
+      } catch (e) {
+        note = e.status === 403 || e.status === 404
+          ? "Saved and moved to the front of the queue. To post instantly, give the token Actions: Read and write. Otherwise it posts at the next daily slot."
+          : `Saved and moved to the front of the queue, but starting the post failed: ${esc(e.message)}`;
+      }
+    }
+    flash(note, "ok");
+    closeEditor();
+    if (status !== TAB) { TAB = status; renderList(); }
+  } catch (e) {
+    msg(esc(e.message), "err");
+  } finally {
+    busy(false);
+  }
+}
+
+/* ---------- boot ---------- */
+async function load() {
+  flash("Loading…");
+  [DOC, CFG] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json")]);
+  flash("");
+  if (!DOC.fits.some(f => f.status === "review") && TAB === "review") TAB = "approved";
+  renderList();
+}
+
+$("#q").addEventListener("input", renderList);
+$("#newPost").onclick = () => openEditor(null);
+$("#openSettings").onclick = () => { const s = settings(); $("#sOwner").value = s.owner; $("#sRepo").value = s.repo; $("#sToken").value = s.token; $("#settings").showModal(); };
+$("#settingsForm").addEventListener("submit", e => {
+  if (e.submitter && e.submitter.value === "save") {
+    saveSettings({ owner: $("#sOwner").value.trim(), repo: $("#sRepo").value.trim() || "copthefit", branch: "main", token: $("#sToken").value.trim() });
+    load().catch(err => flash(esc(err.message), "err"));
+  }
+});
+
+(function boot() {
+  const s = settings();
+  if (!s.owner || !s.token) { $("#openSettings").click(); flash("Connect GitHub to manage posts."); return; }
+  load().catch(err => flash(esc(err.message), "err"));
+})();
+</script>
+</body>
+</html>

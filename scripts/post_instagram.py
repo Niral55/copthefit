@@ -36,7 +36,12 @@ def main():
         print("posting_paused is true in config.json; nothing posted.")
         return
     doc = load_fits()
+    want = os.environ.get("FIND", "").strip().zfill(3) if os.environ.get("FIND", "").strip() else ""
     q = ready_queue(doc, cfg)
+    if want:
+        q = [f for f in doc["fits"] if f["find"] == want and f["status"] == "approved"]
+        if not q:
+            sys.exit(f"#{want} isn't approved (or doesn't exist), so it can't be posted.")
     if not q:
         waiting = len(queue(doc))
         print(f"Nothing ready to post. {waiting} approved fits are waiting for a cover photo." if waiting
@@ -53,6 +58,17 @@ def main():
     if not dry and not (os.environ.get("IG_USER_ID") and os.environ.get("IG_ACCESS_TOKEN")):
         print("IG_USER_ID / IG_ACCESS_TOKEN secrets aren't set yet; nothing posted.")
         return
+
+    if want:  # posted right after an edit: wait until the rebuilt slides are live
+        stamp_url = f"{site}/slides/{fit['find']}/stamp.txt"
+        for _ in range(30):
+            r = requests.get(stamp_url, timeout=30, params={"t": time.time()})
+            if r.status_code == 200 and r.text.strip() == fit.get("updated", ""):
+                break
+            print("Waiting for the new slides to go live…")
+            time.sleep(30)
+        else:
+            sys.exit("The rebuilt slides didn't go live within 15 minutes. Check the Build and deploy run.")
 
     missing = [u for u in urls if requests.head(u, timeout=30, allow_redirects=True).status_code != 200]
     if missing:

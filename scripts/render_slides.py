@@ -15,8 +15,8 @@ TEMPLATE = (ROOT / "templates" / "slide.html").as_uri()
 def slides_for(cfg, fit):
     items = fit["items"]
     total = len(items) + 2
-    first_img = next((cutout_path(fit["find"], it["slide"]) for it in items
-                      if it["label"] == "Exact" and cutout_path(fit["find"], it["slide"])), None)
+    first_img = next((cutout_path(fit["find"], it) for it in items
+                      if it["label"] == "Exact" and cutout_path(fit["find"], it)), None)
     outlet = fit["sources"][0]["label"].split(" — ")[0] if fit.get("sources") else ""
     photo = photo_path(fit["find"])
     out = [dict(type="cover", find=fit["find"], headline=fit["headline"], context=fit["context"],
@@ -25,7 +25,7 @@ def slides_for(cfg, fit):
                 items=[dict(label=i["label"], brand=i.get("brand", ""), name=i["name"], pin=i.get("pin"))
                        for i in items])]
     for it in items:
-        img = cutout_path(fit["find"], it["slide"])
+        img = cutout_path(fit["find"], it)
         out.append(dict(type="item", find=fit["find"], idx=it["slide"], total=total, numbered=bool(photo),
                         image=img.as_uri() if img else "",
                         item=dict(label=it["label"], brand=it.get("brand", ""), name=it["name"],
@@ -55,6 +55,7 @@ def main(only):
                     problems.append(f"{fit['find']} slide {n} overflows")
                 page.locator("#slide").screenshot(path=str(folder / f"{n:02d}.jpg"), type="jpeg", quality=90)
             (folder / "caption.txt").write_text(caption(cfg, fit))
+            (folder / "stamp.txt").write_text(fit.get("updated", ""))  # lets "Post now" wait for fresh slides
         browser.close()
     print(f"rendered {len(fits)} carousels")
     for pr in problems:
