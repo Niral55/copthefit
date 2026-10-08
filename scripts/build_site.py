@@ -6,7 +6,7 @@ import json
 import shutil
 import sys
 
-from common import ROOT, DIST, CUT_DIR, load_config, load_fits, raw_url, retailer_name, cutout_path, validate
+from common import ROOT, DIST, CUT_DIR, load_config, load_fits, raw_url, retailer_name, cutout_path, photo_path, validate
 
 
 def main():
@@ -38,7 +38,14 @@ def main():
                 image=f"img/{cut.name}" if cut else ""))
         first = next((i["image"] for i in items if i["image"] and i["label"] == "Exact"), "") or \
             next((i["image"] for i in items if i["image"]), "")
-        public.append(dict(
+        cover, credit = "", ""
+        ph = photo_path(fit["find"])
+        mode = cfg.get("site_photos", "free")  # "free" = only public-domain/CC photos, "all", or "none"
+        meta = fit.get("photo") or {}
+        if ph and (mode == "all" or (mode == "free" and meta.get("license"))):
+            shutil.copy(ph, DIST / "img" / f"photo-{fit['find']}.jpg")
+            cover, credit = f"img/photo-{fit['find']}.jpg", meta.get("credit", "")
+        public.append(dict(cover=cover, cover_credit=credit,
             find=fit["find"], celeb=fit["celeb"], context=fit["context"], date=fit["date"],
             category=fit["category"], timing=fit.get("timing", ""), headline=fit["headline"],
             detail=fit["detail"], sources=fit["sources"], note=fit.get("note", ""),

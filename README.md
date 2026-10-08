@@ -22,6 +22,8 @@ Right-click product images  →  images/inbox  →  Build workflow: cut out imag
 
 Free cover photos are found automatically: every build searches Wikimedia Commons for public-domain and Creative Commons photos (commercial use allowed) taken the day of the event, and uses one with the credit filled in. Same-month matches show up as "free photo" links in the Queue tab for you to check.
 
+On the site, every listing has image slots. Product cutouts fill the item thumbnails as you add them. The photo of the look shows on the site only when it's free-licensed (`"site_photos": "free"`); set it to `"all"` to show every cover photo or `"none"` for none. Empty slots show a "Photo coming" placeholder.
+
 With `"require_photo": true` (the default), the daily job only posts fits that have a cover photo and skips the rest until you add one. The extension's Queue tab lists the next fits that still need one, with a link to the photo the lead finder found.
 
 Everything else runs on its own. Each change rebuilds the site and slides in about 3 minutes.
