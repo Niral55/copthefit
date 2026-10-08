@@ -44,7 +44,7 @@ Everything else runs on its own. Each change rebuilds the site and slides in abo
 ## One-time setup
 
 ### 1. Site (GitHub Pages)
-1. Repo → **Settings → Pages** → Source: **GitHub Actions**.
+1. The build publishes the site to the `gh-pages` branch. If the site doesn't appear, open repo → **Settings → Pages** and set Source to **Deploy from a branch → gh-pages / (root)**.
 2. In `config.json` set `site_url` to `https://<your-username>.github.io/copthefit` and `instagram_handle`.
 3. Repo → **Actions** → **Build and deploy** → **Run workflow**. The site is live when it turns green.
 4. Own domain later: set `custom_domain` in `config.json` and add the domain under Settings → Pages.
