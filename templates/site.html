@@ -99,7 +99,11 @@ a { color: inherit; }
 .fit .detail { max-width: 62ch; margin: 0 0 22px; font-size: 16px; }
 .items { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
 .item { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); }
-.item.has-img { grid-template-columns: 34px 84px minmax(0, 1fr) auto; }
+.item.has-img { grid-template-columns: 84px minmax(0, 1fr) auto; }
+.sect { font-family: var(--display); font-weight: 800; font-size: 26px; text-transform: uppercase; margin: 26px 0 8px; }
+.sect:first-of-type { margin-top: 4px; }
+.sect-sub { margin: -4px 0 10px; color: var(--muted); font-size: 13px; }
+.items.cheap { border-top-width: 1px; }
 .item .thumb { width: 84px; height: 84px; object-fit: contain; background: var(--tag); border: 1px solid var(--line); border-radius: 4px; }
 .item .thumb.ph { font-size: 9px; padding: 4px; }
 .item .slide { font: 500 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -132,9 +136,9 @@ footer p { margin: 0; max-width: 80ch; }
   .bigtag dl { grid-column: 1 / -1; }
   .item { grid-template-columns: 26px minmax(0, 1fr); }
   .item .act { grid-column: 2; }
-  .item.has-img { grid-template-columns: 26px 64px minmax(0, 1fr); }
+  .item.has-img { grid-template-columns: 64px minmax(0, 1fr); }
   .item.has-img .thumb { width: 64px; height: 64px; }
-  .item.has-img .act { grid-column: 3; }
+  .item.has-img .act { grid-column: 2; }
 }
 @media (prefers-reduced-motion: reduce) { .tagcard { transition: none; } .tagcard:hover { transform: none; } }
 </style>
@@ -262,26 +266,27 @@ function renderFit(f) {
         <p class="celeb">${esc(f.celeb)} · ${esc(f.category === "Fit" ? "Fit" : f.category)}</p>
         <h1>${esc(f.headline)}</h1>
         <p class="detail">${esc(f.detail)}</p>
-        <ol class="items">
-          ${f.items.map(it => {
+        ${(() => {
+          const row = it => {
             const url = shopUrl(f, it);
             const retailer = it.retailer_name || "retailer";
             const act = url
               ? `<a class="shop" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop on ${esc(retailer)} ↗</a>`
               : `<span class="nosale">Not for sale</span>`;
             return `<li class="item has-img">
-              <span class="slide">${String(it.slide).padStart(2, "0")}</span>
               ${it.image ? `<img class="thumb" src="${esc(it.image)}" alt="${esc(it.name)}" loading="lazy">` : `<span class="thumb ph">Image coming</span>`}
               <div style="min-width:0">
-                <span class="lab ${it.label.toLowerCase()}">${it.label}</span>
                 ${it.brand ? `<div class="brand">${esc(it.brand)}</div>` : ""}
                 <div class="name">${esc(it.name)}</div>
                 ${it.note ? `<div class="note">${esc(it.note)}</div>` : ""}
               </div>
               <div class="act">${act}</div>
             </li>`;
-          }).join("")}
-        </ol>
+          };
+          const exact = f.items.filter(i => i.label === "Exact"), cheap = f.items.filter(i => i.label !== "Exact");
+          return (exact.length ? `<h2 class="sect">The exact fit</h2><ol class="items">${exact.map(row).join("")}</ol>` : "")
+            + (cheap.length ? `<h2 class="sect">${exact.length ? "Get it for less" : "Get the look"}</h2><p class="sect-sub">${exact.length ? "Similar pieces at a lower price. Not the exact items worn." : "The brands weren't reported, so these are similar picks."}</p><ol class="items cheap">${cheap.map(row).join("")}</ol>` : "");
+        })()}
         <div class="sources">
           <h2>Spotted via</h2>
           <ul>${f.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join("")}</ul>

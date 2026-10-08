@@ -7,14 +7,15 @@ import json
 import sys
 from playwright.sync_api import sync_playwright
 
-from common import ROOT, DIST, load_config, load_fits, caption, retailer_name, raw_url, cutout_path, photo_path
+from common import ROOT, DIST, load_config, load_fits, caption, retailer_name, raw_url, cutout_path, photo_path, ig_items
 
 TEMPLATE = (ROOT / "templates" / "slide.html").as_uri()
 
 
 def slides_for(cfg, fit):
-    items = fit["items"]
+    items = ig_items(fit)
     total = len(items) + 2
+    has_cheaper = len(items) < len(fit["items"])
     first_img = next((cutout_path(fit["find"], it) for it in items
                       if it["label"] == "Exact" and cutout_path(fit["find"], it)), None)
     outlet = fit["sources"][0]["label"].split(" — ")[0] if fit.get("sources") else ""
@@ -24,13 +25,13 @@ def slides_for(cfg, fit):
                 photo=photo.as_uri() if photo else "", photo_credit=(fit.get("photo") or {}).get("credit", ""),
                 items=[dict(label=i["label"], brand=i.get("brand", ""), name=i["name"], pin=i.get("pin"))
                        for i in items])]
-    for it in items:
+    for n, it in enumerate(items, start=2):
         img = cutout_path(fit["find"], it)
-        out.append(dict(type="item", find=fit["find"], idx=it["slide"], total=total, numbered=bool(photo),
+        out.append(dict(type="item", find=fit["find"], idx=n, total=total, numbered=bool(photo),
                         image=img.as_uri() if img else "",
                         item=dict(label=it["label"], brand=it.get("brand", ""), name=it["name"],
                                   retailer=retailer_name(cfg, it), custom=not raw_url(cfg, it))))
-    out.append(dict(type="cta", find=fit["find"], total=total,
+    out.append(dict(type="cta", find=fit["find"], total=total, cheaper=has_cheaper,
                     handle=cfg.get("instagram_handle", ""), keyword=cfg.get("comment_keyword", "")))
     return out
 

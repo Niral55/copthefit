@@ -116,13 +116,22 @@ def caption(cfg, fit):
     how = f"comment {kw} or tap the link in bio" if kw else "tap the link in bio and search"
     outlet = fit["sources"][0]["label"].split(" — ")[0] if fit.get("sources") else ""
     parts = [
-        f"{fit['headline']}\nCop the fit → {how} #{fit['find']} · affiliate links",
+        f"{fit['headline']}\nCop the fit → {how} #{fit['find']}"
+        + (" (get it for less there too)" if any(i["label"] == "Similar" for i in fit["items"]) and any(i["label"] == "Exact" for i in fit["items"]) else "")
+        + " · affiliate links",
         fit["detail"],
         f"{fit['context']}, {fit['date']}." + (f" Spotted via {outlet}." if outlet else "")
         + (f" Photo: {fit['photo']['credit']}." if (fit.get("photo") or {}).get("credit") and photo_path(fit["find"]) else ""),
         " ".join("#" + t for t in hashtags(cfg, fit)),
     ]
     return "\n\n".join(p for p in parts if p)
+
+
+def ig_items(fit):
+    """Instagram shows the exact pieces only; budget picks live on the site.
+    A fit with no exact pieces (brands not reported) shows its picks instead."""
+    exact = [it for it in fit["items"] if it["label"] == "Exact"]
+    return exact or fit["items"]
 
 
 def queue(doc):

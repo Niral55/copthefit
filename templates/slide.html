@@ -111,7 +111,7 @@ function photoCover(d) {
       <div class="photo" id="photo"><img id="pimg" src="${esc(d.photo)}" alt="">${d.items.map((it, i) => it.pin ? `<span class="pin" data-x="${it.pin[0]}" data-y="${it.pin[1]}">${i + 1}</span>` : "").join("")}</div>
       <div class="side" id="il"><div class="lbl">IN THIS FIT</div>${rows}</div>
     </div>
-    <div class="cover-bottom"><div class="meta" style="color:var(--ink)">${d.items.length} items · ${exact} exact · ${d.items.length - exact} similar</div><div class="swipe">Swipe →</div></div>
+    <div class="cover-bottom"><div class="meta" style="color:var(--ink)">${d.items.length} ${d.items.length === 1 ? "piece" : "pieces"} identified</div><div class="swipe">Swipe →</div></div>
     ${credit ? `<div class="credit">${credit}</div>` : ""}`;
 }
 
@@ -139,7 +139,7 @@ function cover(d) {
     <div class="meta">${esc(d.context)} · ${esc(d.date)}</div>
     <h1 class="headline" id="hl">${esc(d.headline)}</h1>
     <div class="card">${d.image ? `<img src="${esc(d.image)}" alt="">` : `<div class="inlist" id="il"><div class="lbl">IN THIS FIT</div>${list}</div>`}</div>
-    <div class="cover-bottom"><div class="meta" style="color:var(--ink)">${d.items.length} items · ${exact} exact · ${d.items.length - exact} similar</div><div class="swipe">Swipe →</div></div>
+    <div class="cover-bottom"><div class="meta" style="color:var(--ink)">${d.items.length} ${d.items.length === 1 ? "piece" : "pieces"} identified</div><div class="swipe">Swipe →</div></div>
     ${d.outlet ? `<div class="credit">Spotted via ${esc(d.outlet)}</div>` : ""}`;
 }
 
@@ -158,7 +158,8 @@ function item(d) {
 
 function cta(d) {
   const kw = d.keyword ? `Comment ${esc(d.keyword)} and we'll DM you every link` : "Every link is in our bio";
-  const small = d.keyword ? `Or tap the link in bio and search #${d.find}.` : `Tap the link in bio and search #${d.find}.`;
+  const where = d.keyword ? `Or tap the link in bio and search #${d.find}` : `Tap the link in bio and search #${d.find}`;
+  const small = d.cheaper ? `${where} for every piece, plus the get-it-for-less picks.` : `${where}.`;
   return `
     <div class="top"><div>COP THE FIT</div><div class="dim">${pad(d.total)} / ${pad(d.total)}</div></div>
     <div class="rule"></div>

@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 import requests
 
-from common import load_config, load_fits, save_fits, queue, ready_queue, caption
+from common import load_config, load_fits, save_fits, queue, ready_queue, caption, ig_items
 
 
 def api(path):
@@ -49,7 +49,7 @@ def main():
         return
     fit = q[0]
     site = cfg["site_url"].rstrip("/")
-    n = len(fit["items"]) + 2
+    n = len(ig_items(fit)) + 2
     urls = [f"{site}/slides/{fit['find']}/{i:02d}.jpg" for i in range(1, n + 1)]
     text = caption(cfg, fit)
     print(f"Next: #{fit['find']} {fit['celeb']} ({n} slides, {len(q)} in queue)")
