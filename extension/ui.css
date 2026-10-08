@@ -63,3 +63,14 @@ a { color: var(--accent); }
 .pick .have { font: 11px var(--mono); color: var(--ok); margin-left: auto; white-space: nowrap; }
 .imgbox { background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 10px; text-align: center; }
 .imgbox img { max-width: 100%; max-height: 220px; object-fit: contain; }
+.pinbox { background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 10px; text-align: center; }
+.pinwrap { position: relative; display: inline-block; line-height: 0; cursor: crosshair; }
+.pinwrap img { max-width: 100%; max-height: 400px; width: auto; height: auto; display: block; }
+.mk { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); border: 2px solid #fff; font: 700 13px/22px var(--body); text-align: center; pointer-events: none; }
+.pins { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.pins li { display: flex; gap: 8px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.pins li.now { color: var(--ink); font-weight: 600; }
+.pins li.done { color: var(--ink); }
+.badge { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font: 700 11px var(--body); flex: none; }
+.pins li:not(.done):not(.now) .badge { background: var(--line); color: var(--muted); }
+.flag { font: 600 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--bad); }

@@ -16,12 +16,13 @@ from datetime import date
 
 from PIL import Image
 
-from common import INBOX, CUT_DIR, load_fits, save_fits
+from common import INBOX, CUT_DIR, PHOTO_DIR, load_fits, save_fits
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
 EXTS = (".jpg", ".jpeg", ".png", ".webp", ".avif")
 NAME = re.compile(r"^(\d{3})-(\d{1,2})$")
+PHOTO = re.compile(r"^(\d{3})-photo$")
 _session = None
 
 
@@ -61,6 +62,10 @@ def process_inbox(doc):
     for p in sorted(INBOX.iterdir()) if INBOX.exists() else []:
         if p.suffix.lower() not in EXTS:
             continue
+        pm = PHOTO.match(p.stem)
+        if pm:
+            done += save_photo(doc, pm.group(1), p)
+            continue
         m = NAME.match(p.stem)
         if not m:
             print(f"skip {p.name}: name it <find>-<slide>, e.g. 003-2.jpg")
@@ -82,6 +87,34 @@ def process_inbox(doc):
         done += 1
         print(f"cut {find}-{slide}")
     return done
+
+
+def save_photo(doc, find, p):
+    """Cover photo of the look: kept as-is (no cutout), resized, with credit and optional item pins."""
+    fit = next((f for f in doc["fits"] if f["find"] == find), None)
+    if not fit:
+        print(f"skip {p.name}: no fit #{find}")
+        return 0
+    side = p.with_suffix(".json")
+    meta = json.loads(side.read_text()) if side.exists() else {}
+    img = Image.open(p).convert("RGB")
+    img.thumbnail((1600, 1600))
+    PHOTO_DIR.mkdir(parents=True, exist_ok=True)
+    img.save(PHOTO_DIR / f"{find}.jpg", quality=88, optimize=True)
+    fit["photo"] = {"credit": meta.get("credit") or (fit.get("photo") or {}).get("credit", ""),
+                    "source_url": meta.get("source_url", "")}
+    pins = meta.get("pins") or {}
+    for it in fit["items"]:
+        xy = pins.get(str(it["slide"]))
+        if xy:
+            it["pin"] = [round(float(xy[0]), 4), round(float(xy[1]), 4)]
+        elif pins:
+            it.pop("pin", None)
+    if side.exists():
+        side.unlink()
+    p.unlink()
+    print(f"photo {find}")
+    return 1
 
 
 def page_image(url):

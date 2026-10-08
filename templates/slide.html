@@ -59,6 +59,21 @@ html, body { margin: 0; background: var(--paper); }
 .cover-bottom { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex: none; }
 .swipe { font: 900 56px/1 var(--display); text-transform: uppercase; color: var(--accent); }
 .credit { font: 22px var(--mono); color: var(--muted); flex: none; }
+/* Photo cover: full photo (never cropped) with numbered pins, item breakdown beside it */
+.hero { flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: 52% 1fr; gap: 32px; }
+.photo { position: relative; border-radius: 12px; overflow: hidden; background: var(--ink); min-height: 0; }
+.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.pin { position: absolute; width: 58px; height: 58px; margin: -29px 0 0 -29px; border-radius: 50%; background: var(--accent); color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font: 900 30px/1 var(--display); box-shadow: 0 2px 12px rgba(0,0,0,.35); }
+.side { display: flex; flex-direction: column; justify-content: center; gap: 20px; min-width: 0; min-height: 0; overflow: hidden; }
+.side .lbl { font: 500 24px var(--mono); letter-spacing: .12em; color: var(--muted); }
+.brk { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; align-items: start; }
+.badge { width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: #FFFFFF; display: grid; place-items: center; font: 900 28px/1 var(--display); flex: none; }
+.brk .lab { font: 500 18px var(--mono); letter-spacing: .1em; color: var(--muted); display: block; margin-bottom: 4px; }
+.brk .lab b { font-weight: 500; padding: 2px 7px; border-radius: 4px; margin-right: 8px; }
+.brk .lab b.exact { background: var(--ink); color: var(--paper); }
+.brk .lab b.similar { background: var(--similar); color: var(--ink); border: 1px solid var(--ink); }
+.brk .nm { font: 800 46px/.95 var(--display); text-transform: uppercase; display: block; }
+.headline.short { font-size: 104px; }
 .cta-mid { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
 .cta-mid .lbl { font: 500 30px var(--mono); letter-spacing: .12em; color: var(--night-muted); }
 .cta-mid .num { font: 900 380px/.82 var(--display); color: var(--night-accent); }
@@ -81,7 +96,39 @@ function fit(el, maxH, minPx) {
   while (el.scrollHeight > maxH && px > minPx) { px -= 4; el.style.fontSize = px + "px"; }
 }
 
+function photoCover(d) {
+  const exact = d.items.filter(i => i.label === "Exact").length;
+  const rows = d.items.map((it, i) => `
+    <div class="brk"><span class="badge">${i + 1}</span>
+    <div><span class="lab"><b class="${it.label.toLowerCase()}">${it.label.toUpperCase()}</b>${esc(it.brand)}</span><span class="nm">${esc(it.name)}</span></div></div>`).join("");
+  const credit = [d.photo_credit && "Photo: " + esc(d.photo_credit), d.outlet && "Spotted via " + esc(d.outlet)].filter(Boolean).join(" · ");
+  return `
+    <div class="top"><div class="mark">Cop the <span>Fit</span></div><div>FIND #${d.find}</div></div>
+    <div class="rule"></div>
+    <div class="meta">${esc(d.context)} · ${esc(d.date)}</div>
+    <h1 class="headline short" id="hl">${esc(d.headline)}</h1>
+    <div class="hero">
+      <div class="photo" id="photo"><img id="pimg" src="${esc(d.photo)}" alt="">${d.items.map((it, i) => it.pin ? `<span class="pin" data-x="${it.pin[0]}" data-y="${it.pin[1]}">${i + 1}</span>` : "").join("")}</div>
+      <div class="side" id="il"><div class="lbl">IN THIS FIT</div>${rows}</div>
+    </div>
+    <div class="cover-bottom"><div class="meta" style="color:var(--ink)">${d.items.length} items · ${exact} exact · ${d.items.length - exact} similar</div><div class="swipe">Swipe →</div></div>
+    ${credit ? `<div class="credit">${credit}</div>` : ""}`;
+}
+
+// Place pins on a contain-fitted photo using fractions of the original image.
+function placePins() {
+  const box = document.getElementById("photo"), img = document.getElementById("pimg");
+  if (!box || !img || !img.naturalWidth) return;
+  const cw = box.clientWidth, ch = box.clientHeight, iw = img.naturalWidth, ih = img.naturalHeight;
+  const s = Math.min(cw / iw, ch / ih), ox = (cw - iw * s) / 2, oy = (ch - ih * s) / 2;
+  box.querySelectorAll(".pin").forEach(p => {
+    p.style.left = (ox + parseFloat(p.dataset.x) * iw * s) + "px";
+    p.style.top = (oy + parseFloat(p.dataset.y) * ih * s) + "px";
+  });
+}
+
 function cover(d) {
+  if (d.photo) return photoCover(d);
   const list = d.items.map(it => `
     <div class="row"><span class="chip ${it.label.toLowerCase()}">${it.label.toUpperCase()}</span>
     <div>${it.brand ? `<span class="br">${esc(it.brand)}</span>` : ""}<span class="nm">${esc(it.name)}</span></div></div>`).join("");
@@ -99,7 +146,7 @@ function cover(d) {
 function item(d) {
   const it = d.item;
   const where = it.custom ? "Custom piece · not for sale" : (it.retailer ? "at " + esc(it.retailer) : "");
-  const chips = `<div class="chiprow"><span class="chip ${it.label.toLowerCase()}">${it.label.toUpperCase()}</span><span class="where">${where}</span></div>`;
+  const chips = `<div class="chiprow">${d.numbered ? `<span class="badge">${d.idx - 1}</span>` : ""}<span class="chip ${it.label.toLowerCase()}">${it.label.toUpperCase()}</span><span class="where">${where}</span></div>`;
   const nameBlock = cls => `<div class="${cls}">${it.brand ? `<div class="br">${esc(it.brand)}</div>` : ""}<div class="nm" id="nm">${esc(it.name)}</div></div>`;
   return `
     <div class="top"><div>FIND #${d.find}</div><div class="dim">${pad(d.idx)} / ${pad(d.total)}</div></div>
@@ -128,9 +175,20 @@ window.render = async function (d) {
   const imgs = [...el.querySelectorAll("img")];
   await Promise.all(imgs.map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
   if (d.type === "cover") {
-    fit(document.getElementById("hl"), 330, 72);
-    const il = document.getElementById("il");
-    if (il) shrinkList(il, il.parentElement.clientHeight - 88);
+    if (d.photo) {
+      fit(document.getElementById("hl"), 190, 60);
+      placePins();
+      const side = document.getElementById("il");
+      let px = 46;
+      while (side.scrollHeight > side.clientHeight + 1 && px > 24) {
+        px -= 3;
+        side.querySelectorAll(".nm").forEach(n => n.style.fontSize = px + "px");
+      }
+    } else {
+      fit(document.getElementById("hl"), 330, 72);
+      const il = document.getElementById("il");
+      if (il) shrinkList(il, il.parentElement.clientHeight - 88);
+    }
   }
   if (d.type === "item") {
     const nm = document.getElementById("nm");

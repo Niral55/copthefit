@@ -4,6 +4,7 @@
  "instagram_handle": "",
  "comment_keyword": "",
  "posting_paused": false,
+ "require_photo": true,
  "custom_domain": "",
  "post_time_note": "The daily post runs at 16:05 UTC (12:05 PM New York in summer, 11:05 AM in winter). Change the cron line in .github/workflows/post.yml to move it.",
  "hashtag_base": [

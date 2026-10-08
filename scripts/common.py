@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "fits.json"
 CONFIG = ROOT / "config.json"
 CUT_DIR = ROOT / "images" / "cut"
+PHOTO_DIR = ROOT / "images" / "photos"
 INBOX = ROOT / "images" / "inbox"
 DIST = ROOT / "dist"
 
@@ -85,6 +86,11 @@ def cutout_path(find, slide):
     return p if p.exists() else None
 
 
+def photo_path(find):
+    p = PHOTO_DIR / f"{find}.jpg"
+    return p if p.exists() else None
+
+
 def hashtags(cfg, fit):
     tags = []
     cat_tag = {"Fit": "fitcheck", "Kicks": "sneakers", "Wrist": "watchspotting"}[fit["category"]]
@@ -102,7 +108,8 @@ def caption(cfg, fit):
     parts = [
         f"{fit['headline']}\nCop the fit → {how} #{fit['find']} · affiliate links",
         fit["detail"],
-        f"{fit['context']}, {fit['date']}." + (f" Spotted via {outlet}." if outlet else ""),
+        f"{fit['context']}, {fit['date']}." + (f" Spotted via {outlet}." if outlet else "")
+        + (f" Photo: {fit['photo']['credit']}." if (fit.get("photo") or {}).get("credit") and photo_path(fit["find"]) else ""),
         " ".join("#" + t for t in hashtags(cfg, fit)),
     ]
     return "\n\n".join(p for p in parts if p)
@@ -112,6 +119,12 @@ def queue(doc):
     """Approved, unposted fits in posting order: news first, then backlog by Find #."""
     q = [f for f in doc["fits"] if f["status"] == "approved"]
     return sorted(q, key=lambda f: (f.get("priority", 1), int(f["find"])))
+
+
+def ready_queue(doc, cfg):
+    """What the daily job will actually post: the queue, minus fits still waiting on a cover photo."""
+    q = queue(doc)
+    return [f for f in q if photo_path(f["find"])] if cfg.get("require_photo") else q
 
 
 def next_find(doc):
@@ -137,6 +150,8 @@ def validate(doc, cfg):
             errs.append(f"{fid}: category must be one of {CATEGORIES}")
         if f.get("status") not in STATUSES:
             errs.append(f"{fid}: status must be one of {STATUSES}")
+        if photo_path(fid) and not (f.get("photo") or {}).get("credit"):
+            errs.append(f"{fid}: cover photo needs a credit (photo.credit)")
         items = f.get("items", [])
         if not 1 <= len(items) <= 8:
             errs.append(f"{fid}: needs 1-8 items (Instagram allows 10 slides: cover + items + CTA)")

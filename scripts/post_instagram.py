@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 import requests
 
-from common import load_config, load_fits, save_fits, queue, caption
+from common import load_config, load_fits, save_fits, queue, ready_queue, caption
 
 
 def api(path):
@@ -36,9 +36,11 @@ def main():
         print("posting_paused is true in config.json; nothing posted.")
         return
     doc = load_fits()
-    q = queue(doc)
+    q = ready_queue(doc, cfg)
     if not q:
-        print("Queue is empty: approve more fits to keep posting.")
+        waiting = len(queue(doc))
+        print(f"Nothing ready to post. {waiting} approved fits are waiting for a cover photo." if waiting
+              else "Queue is empty: approve more fits to keep posting.")
         return
     fit = q[0]
     site = cfg["site_url"].rstrip("/")

@@ -15,9 +15,12 @@ Right-click product images  →  images/inbox  →  Build workflow: cut out imag
 | Job | Where | Time |
 |---|---|---|
 | Approve or reject new fits | Extension → **Review** | 1 min each |
-| Add product images | Right-click the image on a shop page → **Add image to Cop the Fit** → pick Find # and item | 10 sec each |
+| Add the cover photo | Right-click the photo of the look → **Cop the Fit: set as cover photo** → pick Find #, add the credit, click to pin each item (optional) | 30 sec each |
+| Add product images | Right-click a product shot on a shop page → **Cop the Fit: add product image** → pick Find # and item | 10 sec each |
 | Add a fit you spotted | Extension → **Add fit** | 2 min |
 | Pause posting | `config.json` → `"posting_paused": true` | |
+
+With `"require_photo": true` (the default), the daily job only posts fits that have a cover photo and skips the rest until you add one. The extension's Queue tab lists the next fits that still need one, with a link to the photo the lead finder found.
 
 Everything else runs on its own. Each change rebuilds the site and slides in about 3 minutes.
 
@@ -64,6 +67,7 @@ Set up ManyChat: keyword **FIT** on any post → DM "Every link is here: <site_u
 | `config.json` | Site URL, handle, affiliate IDs, retailers |
 | `images/inbox/` | Raw product images land here (from the extension or upload as `003-2.jpg`) |
 | `images/cut/` | Background-removed cutouts used on slides and the site |
+| `images/photos/` | Cover photos of each look (`003.jpg`), with credit and item pins stored in `data/fits.json` |
 | `templates/` | `site.html` and `slide.html` (the carousel design) |
 | `scripts/` | `check.py`, `process_images.py`, `render_slides.py`, `build_site.py`, `post_instagram.py`, `refresh_token.py` |
 | `LEADS.md` | Instructions the lead-finder run follows |
