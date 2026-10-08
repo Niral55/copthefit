@@ -215,8 +215,9 @@ const GH = {
 let STAMP = Date.now();
 
 /* ---------- state ---------- */
-let DOC = null, CFG = null, TAB = "review", DRAFT = null, PENDING = null;
+let DOC = null, CFG = null, TAB = "all", DRAFT = null, PENDING = null;
 const STAGES = [
+  { id: "all", label: "All posts", hint: "Every post. Open any one to edit it. The pill shows where it is: lead, queue, posted or unpublished." },
   { id: "review", label: "Leads", hint: "New fits the lead finder found. Add the photo, images and links, then approve or post." },
   { id: "approved", label: "Queue", hint: "Approved posts, in posting order. One posts each day; posts without a cover photo wait." },
   { id: "posted", label: "Posted", hint: "Live on Instagram. Edits here update the site." },
@@ -242,7 +243,7 @@ function readiness(f) {
 
 /* ---------- list view ---------- */
 function renderTabs() {
-  $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${DOC.fits.filter(f => f.status === s.id).length}</b></button>`).join("");
+  $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${s.id === "all" ? DOC.fits.length : DOC.fits.filter(f => f.status === s.id).length}</b></button>`).join("");
   $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; renderList(); });
   $("#tabHint").textContent = STAGES.find(s => s.id === TAB).hint;
 }
@@ -250,7 +251,7 @@ function renderTabs() {
 function renderList() {
   renderTabs();
   const q = $("#q").value.trim().toLowerCase().replace(/^#/, "");
-  let list = DOC.fits.filter(f => f.status === TAB);
+  let list = TAB === "all" ? DOC.fits.slice() : DOC.fits.filter(f => f.status === TAB);
   list = TAB === "approved" ? list.sort(queueOrder) : list.sort((a, b) => +b.find - +a.find);
   if (q) list = list.filter(f => (/^\d+$/.test(q) ? f.find === q.padStart(3, "0") : (f.celeb + " " + f.headline + " " + f.context).toLowerCase().includes(q)));
   const requirePhoto = CFG && CFG.require_photo;
@@ -269,6 +270,7 @@ function renderList() {
           <span class="chip ${r.photo ? "ok" : "no"}">${r.photo ? "Photo" : "Needs photo"}</span>
           <span class="chip ${r.imgs === r.n ? "ok" : ""}">Images ${r.imgs}/${r.n}</span>
           <span class="chip ${r.links === r.linkable ? "ok" : ""}">Links ${r.links}/${r.linkable}</span>
+          ${TAB === "all" ? `<span class="chip">${esc((STAGES.find(s => s.id === f.status) || {}).label || f.status)}</span>` : ""}
           ${f.ig_permalink ? `<span class="chip ok">On Instagram</span>` : ""}
         </span>
       </span>
@@ -595,7 +597,7 @@ async function save(action) {
     }
     flash(note, "ok");
     closeEditor();
-    if (status !== TAB) { TAB = status; renderList(); }
+    if (TAB !== "all" && status !== TAB) { TAB = status; renderList(); }
   } catch (e) {
     msg(esc(e.message), "err");
   } finally {
@@ -608,7 +610,6 @@ async function load() {
   flash("Loading…");
   [DOC, CFG] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json")]);
   flash("");
-  if (!DOC.fits.some(f => f.status === "review") && TAB === "review") TAB = "approved";
   renderList();
 }
 
