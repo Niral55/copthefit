@@ -39,6 +39,10 @@ jobs:
       - name: Check data
         run: python scripts/check.py
 
+      - name: Free-to-use cover photos (Wikimedia Commons)
+        run: python scripts/find_free_photos.py
+        continue-on-error: true
+
       - name: Product images (inbox + product links)
         run: python scripts/process_images.py
 

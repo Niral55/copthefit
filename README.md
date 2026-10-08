@@ -20,6 +20,8 @@ Right-click product images  →  images/inbox  →  Build workflow: cut out imag
 | Add a fit you spotted | Extension → **Add fit** | 2 min |
 | Pause posting | `config.json` → `"posting_paused": true` | |
 
+Free cover photos are found automatically: every build searches Wikimedia Commons for public-domain and Creative Commons photos (commercial use allowed) taken the day of the event, and uses one with the credit filled in. Same-month matches show up as "free photo" links in the Queue tab for you to check.
+
 With `"require_photo": true` (the default), the daily job only posts fits that have a cover photo and skips the rest until you add one. The extension's Queue tab lists the next fits that still need one, with a link to the photo the lead finder found.
 
 Everything else runs on its own. Each change rebuilds the site and slides in about 3 minutes.
