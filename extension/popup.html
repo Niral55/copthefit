@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cop the Fit Studio</title>
+<link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<div class="app">
+  <header><div class="mark">Cop the <span>Fit</span></div><div class="sub" id="who"></div></header>
+  <nav role="tablist">
+    <button role="tab" data-tab="queue" aria-selected="true" type="button">Queue</button>
+    <button role="tab" data-tab="review" aria-selected="false" type="button">Review<span class="badge" id="rcount" hidden></span></button>
+    <button role="tab" data-tab="add" aria-selected="false" type="button">Add fit</button>
+    <button role="tab" data-tab="settings" aria-selected="false" type="button">Settings</button>
+  </nav>
+
+  <main id="tab-queue">
+    <div class="stats"><div class="stat"><b id="sPosted">–</b><span>Posted</span></div><div class="stat"><b id="sQueue">–</b><span>In queue</span></div><div class="stat"><b id="sReview">–</b><span>To review</span></div></div>
+    <h2>Next up (one a day)</h2>
+    <ul class="q" id="next"></ul>
+    <p class="hint">Right-click any product image on a shop page → <b>Add image to Cop the Fit</b>.</p>
+    <div class="row" id="links"></div>
+    <div id="qmsg"></div>
+  </main>
+
+  <main id="tab-review" hidden>
+    <p class="hint">New fits from the lead finder. Approve to add them to the site and the posting queue.</p>
+    <div id="rlist"></div>
+  </main>
+
+  <main id="tab-add" hidden>
+    <p class="hint">Saved fits go live on the site and join the queue.</p>
+    <label for="aCeleb">Who<input id="aCeleb" placeholder="Jalen Hurts"></label>
+    <div class="two">
+      <label for="aContext">Where<input id="aContext" placeholder="NFL Week 6 arrival"></label>
+      <label for="aDate">When<input id="aDate" placeholder="Oct 12, 2026"></label>
+    </div>
+    <label for="aCat">Category<select id="aCat"><option>Fit</option><option>Kicks</option><option>Wrist</option></select></label>
+    <label for="aHead">Headline (cover text)<input id="aHead" maxlength="90" placeholder="Hurts went double denim with 11s"></label>
+    <label for="aDetail">What they wore<textarea id="aDetail" placeholder="One or two sentences, in your own words."></textarea></label>
+    <div class="two">
+      <label for="aSrcLabel">Source<input id="aSrcLabel" placeholder="ESPN — Week 6 arrivals"></label>
+      <label for="aSrcUrl">Source link<input id="aSrcUrl" placeholder="https://…"></label>
+    </div>
+    <label for="aItems">Items, one per line
+      <textarea id="aItems" class="mono" placeholder="Exact | Jordan | Air Jordan 11 | https://www.nike.com/…&#10;Similar | | Medium-wash denim shirt | amazon: men's denim shirt&#10;Exact | Custom | Denim jacket | custom"></textarea>
+    </label>
+    <p class="hint">Format: Exact or Similar | brand | item name | product link, or <code>retailer: search words</code>, or <code>custom</code> (not for sale).</p>
+    <label class="check" for="aNext"><input id="aNext" type="checkbox" checked> Post this next</label>
+    <div class="row"><button class="btn primary" id="aSave" type="button">Add fit</button></div>
+    <div id="amsg"></div>
+  </main>
+
+  <main id="tab-settings" hidden>
+    <label for="sOwner">GitHub username<input id="sOwner" autocomplete="off"></label>
+    <div class="two">
+      <label for="sRepo">Repo<input id="sRepo" placeholder="copthefit"></label>
+      <label for="sBranch">Branch<input id="sBranch" placeholder="main"></label>
+    </div>
+    <label for="sToken">GitHub token<input id="sToken" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+    <p class="hint">Fine-grained token, only the copthefit repo, permission Contents: Read and write. Stored only in this browser.</p>
+    <label for="sSite">Site URL<input id="sSite" placeholder="https://you.github.io/copthefit"></label>
+    <div class="row"><button class="btn primary" id="sSave" type="button">Save and test</button></div>
+    <div id="smsg"></div>
+  </main>
+</div>
+<script src="gh.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cop the Fit slide</title>
+<style>
+@font-face { font-family: "Big Shoulders Display"; font-weight: 700; src: url(../assets/fonts/big-shoulders-display-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Big Shoulders Display"; font-weight: 800; src: url(../assets/fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Big Shoulders Display"; font-weight: 900; src: url(../assets/fonts/big-shoulders-display-latin-900-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Sans"; font-weight: 400; src: url(../assets/fonts/instrument-sans-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Sans"; font-weight: 500; src: url(../assets/fonts/instrument-sans-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Sans"; font-weight: 600; src: url(../assets/fonts/instrument-sans-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 400; src: url(../assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 500; src: url(../assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2"); }
+/* Slide: 1080x1350 hang-tag card on cool paper. Same tokens as the site. */
+:root {
+  --paper: #ECEEF1; --tag: #FFFFFF; --ink: #13151A; --muted: #4E5561; --line: #D3D8DF; --dash: #C3C9D2;
+  --accent: #2238C9; --similar: #DDE3FF; --night: #13151A; --night-fg: #ECEEF1; --night-accent: #8C9EFF; --night-muted: #A3AAB6;
+  --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", "DejaVu Sans Mono", monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); }
+#slide { width: 1080px; height: 1350px; padding: 72px; display: flex; flex-direction: column; gap: 28px; background: var(--paper); color: var(--ink); font-family: var(--body); overflow: hidden; }
+#slide.night { background: var(--night); color: var(--night-fg); }
+.top { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; font: 500 30px var(--mono); letter-spacing: .04em; }
+.top .dim { color: var(--muted); }
+.night .top .dim { color: var(--night-muted); }
+.mark { font: 900 48px/1 var(--display); text-transform: uppercase; letter-spacing: 0; }
+.mark span { color: var(--accent); }
+.rule { height: 4px; background: var(--ink); flex: none; }
+.night .rule { background: var(--night-fg); }
+.meta { font: 28px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.headline { margin: 0; font: 800 118px/.9 var(--display); text-transform: uppercase; text-wrap: balance; }
+.card { flex: 1 1 auto; min-height: 0; position: relative; background: var(--tag); border: 2px solid var(--line); border-radius: 12px; padding: 44px 44px 44px 100px; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+.card::before { content: ""; position: absolute; left: 38px; top: 42px; width: 26px; height: 26px; border-radius: 50%; background: var(--paper); border: 2px solid var(--line); }
+.card img { width: 100%; height: 100%; object-fit: contain; }
+.inlist { display: flex; flex-direction: column; gap: 22px; }
+.inlist .lbl { font: 500 24px var(--mono); letter-spacing: .12em; color: var(--muted); }
+.row { display: grid; grid-template-columns: 150px 1fr; gap: 18px; align-items: baseline; }
+.row .nm { font: 800 50px/.98 var(--display); text-transform: uppercase; }
+.row .br { font: 500 22px var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; display: block; margin-bottom: 4px; }
+.chip { display: inline-block; font: 500 26px/1 var(--mono); letter-spacing: .12em; padding: 9px 16px; border-radius: 6px; border: 2px solid var(--ink); white-space: nowrap; justify-self: start; }
+.chip.exact { background: var(--ink); color: var(--paper); }
+.chip.similar { background: var(--similar); color: var(--ink); }
+.row .chip { font-size: 20px; padding: 7px 10px; }
+.bigname .br { font: 500 32px var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; }
+.bigname .nm { font: 800 140px/.9 var(--display); text-transform: uppercase; text-wrap: balance; }
+.under { display: flex; flex-direction: column; gap: 14px; flex: none; }
+.chiprow { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.chiprow .where { font: 28px var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+.under .nm { font: 800 100px/.92 var(--display); text-transform: uppercase; text-wrap: balance; }
+.under .br { font: 500 28px var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+.under .sub { font-size: 28px; color: var(--muted); }
+.bottom { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-top: 22px; border-top: 2px dashed var(--dash); flex: none; }
+.bottom .l { font: 28px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
+.bottom .r { font: 900 56px/1 var(--display); text-transform: uppercase; color: var(--accent); }
+.cover-bottom { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex: none; }
+.swipe { font: 900 56px/1 var(--display); text-transform: uppercase; color: var(--accent); }
+.credit { font: 22px var(--mono); color: var(--muted); flex: none; }
+.cta-mid { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.cta-mid .lbl { font: 500 30px var(--mono); letter-spacing: .12em; color: var(--night-muted); }
+.cta-mid .num { font: 900 380px/.82 var(--display); color: var(--night-accent); }
+.cta-copy { display: flex; flex-direction: column; gap: 22px; flex: none; }
+.cta-copy .big { font: 800 92px/.95 var(--display); text-transform: uppercase; text-wrap: balance; }
+.cta-copy .small { font-size: 34px; line-height: 1.35; color: #C9CED6; }
+.cta-foot { display: flex; justify-content: space-between; gap: 24px; padding-top: 22px; border-top: 2px dashed #3A404B; font: 24px var(--mono); color: var(--night-muted); flex: none; }
+</style>
+</head>
+<body>
+<div id="slide"></div>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const pad = n => String(n).padStart(2, "0");
+
+// Shrink a text block's font size until the element fits maxH (px).
+function fit(el, maxH, minPx) {
+  if (!el) return;
+  let px = parseFloat(getComputedStyle(el).fontSize);
+  while (el.scrollHeight > maxH && px > minPx) { px -= 4; el.style.fontSize = px + "px"; }
+}
+
+function cover(d) {
+  const list = d.items.map(it => `
+    <div class="row"><span class="chip ${it.label.toLowerCase()}">${it.label.toUpperCase()}</span>
+    <div>${it.brand ? `<span class="br">${esc(it.brand)}</span>` : ""}<span class="nm">${esc(it.name)}</span></div></div>`).join("");
+  const exact = d.items.filter(i => i.label === "Exact").length;
+  return `
+    <div class="top"><div class="mark">Cop the <span>Fit</span></div><div>FIND #${d.find}</div></div>
+    <div class="rule"></div>
+    <div class="meta">${esc(d.context)} · ${esc(d.date)}</div>
+    <h1 class="headline" id="hl">${esc(d.headline)}</h1>
+    <div class="card">${d.image ? `<img src="${esc(d.image)}" alt="">` : `<div class="inlist" id="il"><div class="lbl">IN THIS FIT</div>${list}</div>`}</div>
+    <div class="cover-bottom"><div class="meta" style="color:var(--ink)">${d.items.length} items · ${exact} exact · ${d.items.length - exact} similar</div><div class="swipe">Swipe →</div></div>
+    ${d.outlet ? `<div class="credit">Spotted via ${esc(d.outlet)}</div>` : ""}`;
+}
+
+function item(d) {
+  const it = d.item;
+  const where = it.custom ? "Custom piece · not for sale" : (it.retailer ? "at " + esc(it.retailer) : "");
+  const chips = `<div class="chiprow"><span class="chip ${it.label.toLowerCase()}">${it.label.toUpperCase()}</span><span class="where">${where}</span></div>`;
+  const nameBlock = cls => `<div class="${cls}">${it.brand ? `<div class="br">${esc(it.brand)}</div>` : ""}<div class="nm" id="nm">${esc(it.name)}</div></div>`;
+  return `
+    <div class="top"><div>FIND #${d.find}</div><div class="dim">${pad(d.idx)} / ${pad(d.total)}</div></div>
+    <div class="rule"></div>
+    <div class="card" id="card">${d.image ? `<img src="${esc(d.image)}" alt="">` : nameBlock("bigname")}</div>
+    <div class="under">${chips}${d.image ? nameBlock("namewrap") : ""}${it.label === "Similar" ? `<div class="sub">Similar pick, not the exact item worn.</div>` : ""}</div>
+    <div class="bottom"><div class="l">Link in bio · search #${d.find}</div><div class="r">→</div></div>`;
+}
+
+function cta(d) {
+  const kw = d.keyword ? `Comment ${esc(d.keyword)} and we'll DM you every link` : "Every link is in our bio";
+  const small = d.keyword ? `Or tap the link in bio and search #${d.find}.` : `Tap the link in bio and search #${d.find}.`;
+  return `
+    <div class="top"><div>COP THE FIT</div><div class="dim">${pad(d.total)} / ${pad(d.total)}</div></div>
+    <div class="rule"></div>
+    <div class="cta-mid"><div class="lbl">FIND</div><div class="num">#${d.find}</div></div>
+    <div class="cta-copy"><div class="big" id="ctab">${kw}</div><div class="small">${small}</div></div>
+    <div class="cta-foot"><div>${d.handle ? "@" + esc(d.handle.replace(/^@/, "")) : ""}</div><div>Affiliate links. We may earn a commission.</div></div>`;
+}
+
+window.render = async function (d) {
+  const el = document.getElementById("slide");
+  el.className = d.type === "cta" ? "night" : "";
+  el.innerHTML = d.type === "cover" ? cover(d) : d.type === "item" ? item(d) : cta(d);
+  await document.fonts.ready;
+  const imgs = [...el.querySelectorAll("img")];
+  await Promise.all(imgs.map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+  if (d.type === "cover") {
+    fit(document.getElementById("hl"), 330, 72);
+    const il = document.getElementById("il");
+    if (il) shrinkList(il, il.parentElement.clientHeight - 88);
+  }
+  if (d.type === "item") {
+    const nm = document.getElementById("nm");
+    if (d.image) fit(nm, 190, 56);
+    else { const card = document.getElementById("card"); fit(nm, card.clientHeight - 88 - 60, 64); }
+  }
+  if (d.type === "cta") fit(document.getElementById("ctab"), 280, 60);
+  return el.scrollHeight <= 1350;
+};
+
+// Cover list: scale every item name down together until the list fits the card.
+function shrinkList(il, maxH) {
+  const set = px => {
+    il.querySelectorAll(".nm").forEach(n => n.style.fontSize = px + "px");
+    il.querySelectorAll(".br").forEach(n => n.style.fontSize = Math.max(18, Math.round(px * 0.42)) + "px");
+    il.style.gap = Math.round(px * 0.45) + "px";
+  };
+  let px = 76;
+  set(px);
+  while (il.scrollHeight > maxH && px > 26) { px -= 3; set(px); }
+}
+</script>
+</body>
+</html>

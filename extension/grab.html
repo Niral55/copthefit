@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Add image · Cop the Fit</title>
+<link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<div class="grab">
+  <header><div class="mark">Cop the <span>Fit</span></div><div class="sub">Add product image</div></header>
+  <main>
+    <div class="imgbox"><img id="img" alt="The image you right-clicked"></div>
+    <label for="find">Find #
+      <input id="find" list="finds" placeholder="Type a number or name, e.g. 003" autocomplete="off">
+      <datalist id="finds"></datalist>
+    </label>
+    <div id="items" class="pick"></div>
+    <label class="check" for="useLink"><input id="useLink" type="checkbox" checked> Use this page as the item's shop link</label>
+    <p class="hint" id="pageUrl"></p>
+    <div class="row"><button class="btn primary" id="save" type="button" disabled>Save to Cop the Fit</button><button class="btn" id="close" type="button">Close</button></div>
+    <div id="msg"></div>
+  </main>
+</div>
+<script src="gh.js"></script>
+<script src="grab.js"></script>
+</body>
+</html>

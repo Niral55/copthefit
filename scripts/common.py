@@ -1,0 +1,153 @@
+"""Shared helpers: load/save data, build shop links, captions and the posting queue."""
+import json
+import re
+from pathlib import Path
+from urllib.parse import quote_plus, urlparse, urlencode, parse_qsl, urlunparse
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data" / "fits.json"
+CONFIG = ROOT / "config.json"
+CUT_DIR = ROOT / "images" / "cut"
+INBOX = ROOT / "images" / "inbox"
+DIST = ROOT / "dist"
+
+LABELS = ("Exact", "Similar")
+CATEGORIES = ("Fit", "Kicks", "Wrist")
+STATUSES = ("review", "approved", "posted", "rejected")
+
+
+def load_config():
+    return json.loads(CONFIG.read_text())
+
+
+def load_fits():
+    return json.loads(DATA.read_text())
+
+
+def save_fits(doc):
+    DATA.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + "\n")
+
+
+def search_url(cfg, item):
+    r = cfg["retailers"].get(item.get("retailer") or "")
+    if not r or not item.get("query"):
+        return ""
+    return r["search"] + quote_plus(item["query"])
+
+
+def raw_url(cfg, item):
+    """Product page if we have one, else a retailer search."""
+    return item.get("product_url") or search_url(cfg, item)
+
+
+def shop_url(cfg, item):
+    """Raw URL with affiliate tracking applied (same rules as the site's JS)."""
+    u = raw_url(cfg, item)
+    if not u:
+        return ""
+    aff = cfg.get("affiliate", {})
+    host = urlparse(u).hostname or ""
+    if host.endswith("amazon.com"):
+        if aff.get("amazon_tag"):
+            p = urlparse(u)
+            q = dict(parse_qsl(p.query))
+            q["tag"] = aff["amazon_tag"]
+            u = urlunparse(p._replace(query=urlencode(q)))
+        return u
+    if host.endswith("ebay.com"):
+        if aff.get("ebay_campaign_id"):
+            p = urlparse(u)
+            q = dict(parse_qsl(p.query))
+            q.update(mkcid="1", mkrid="711-53200-19255-0", siteid="0",
+                     campid=aff["ebay_campaign_id"], toolid="10001", mkevt="1")
+            u = urlunparse(p._replace(query=urlencode(q)))
+        return u
+    if aff.get("skimlinks_id"):
+        return "https://go.skimresources.com/?id=" + quote_plus(aff["skimlinks_id"]) + "&xs=1&url=" + quote_plus(u)
+    if aff.get("sovrn_key"):
+        return "https://redirect.viglink.com?key=" + quote_plus(aff["sovrn_key"]) + "&u=" + quote_plus(u)
+    return u
+
+
+def retailer_name(cfg, item):
+    if item.get("product_url"):
+        host = (urlparse(item["product_url"]).hostname or "").replace("www.", "")
+        for r in cfg["retailers"].values():
+            if (urlparse(r["search"]).hostname or "").replace("www.", "") == host:
+                return r["name"]
+        return host.split(".")[0].capitalize() if host else ""
+    r = cfg["retailers"].get(item.get("retailer") or "")
+    return r["name"] if r else ""
+
+
+def cutout_path(find, slide):
+    p = CUT_DIR / f"{find}-{slide}.png"
+    return p if p.exists() else None
+
+
+def hashtags(cfg, fit):
+    tags = []
+    cat_tag = {"Fit": "fitcheck", "Kicks": "sneakers", "Wrist": "watchspotting"}[fit["category"]]
+    for t in cfg.get("hashtag_base", []) + [cat_tag] + fit.get("tags", []):
+        t = re.sub(r"[^a-z0-9_]", "", t.lower())
+        if t and t not in tags:
+            tags.append(t)
+    return tags[:5]  # Instagram caps hashtags at 5
+
+
+def caption(cfg, fit):
+    kw = (cfg.get("comment_keyword") or "").strip()
+    how = f"comment {kw} or tap the link in bio" if kw else "tap the link in bio and search"
+    outlet = fit["sources"][0]["label"].split(" — ")[0] if fit.get("sources") else ""
+    parts = [
+        f"{fit['headline']}\nCop the fit → {how} #{fit['find']} · affiliate links",
+        fit["detail"],
+        f"{fit['context']}, {fit['date']}." + (f" Spotted via {outlet}." if outlet else ""),
+        " ".join("#" + t for t in hashtags(cfg, fit)),
+    ]
+    return "\n\n".join(p for p in parts if p)
+
+
+def queue(doc):
+    """Approved, unposted fits in posting order: news first, then backlog by Find #."""
+    q = [f for f in doc["fits"] if f["status"] == "approved"]
+    return sorted(q, key=lambda f: (f.get("priority", 1), int(f["find"])))
+
+
+def next_find(doc):
+    nums = [int(f["find"]) for f in doc["fits"]]
+    return f"{(max(nums) if nums else 0) + 1:03d}"
+
+
+def validate(doc, cfg):
+    """Return a list of problems; empty means the data is good to build and post."""
+    errs = []
+    seen = set()
+    for f in doc["fits"]:
+        fid = f.get("find", "?")
+        if not re.fullmatch(r"\d{3}", fid):
+            errs.append(f"{fid}: find must be 3 digits")
+        if fid in seen:
+            errs.append(f"{fid}: duplicate find")
+        seen.add(fid)
+        for k in ("celeb", "context", "date", "category", "headline", "detail", "status", "items", "sources"):
+            if not f.get(k):
+                errs.append(f"{fid}: missing {k}")
+        if f.get("category") not in CATEGORIES:
+            errs.append(f"{fid}: category must be one of {CATEGORIES}")
+        if f.get("status") not in STATUSES:
+            errs.append(f"{fid}: status must be one of {STATUSES}")
+        items = f.get("items", [])
+        if not 1 <= len(items) <= 8:
+            errs.append(f"{fid}: needs 1-8 items (Instagram allows 10 slides: cover + items + CTA)")
+        for n, it in enumerate(items, start=2):
+            if it.get("slide") != n:
+                errs.append(f"{fid}: item {it.get('name')} should be slide {n}")
+            if it.get("label") not in LABELS:
+                errs.append(f"{fid}-{n}: label must be Exact or Similar")
+            if it.get("retailer") and it["retailer"] not in cfg["retailers"]:
+                errs.append(f"{fid}-{n}: unknown retailer '{it['retailer']}' (add it to config.json)")
+            txt = (it.get("name", "") + " " + it.get("note", "")).lower()
+            if re.search(r"\b(dupe|fake|faux|replica)\b", txt):
+                errs.append(f"{fid}-{n}: don't use dupe/fake/faux/replica wording")
+    return errs

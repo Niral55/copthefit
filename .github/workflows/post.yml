@@ -1,0 +1,56 @@
+name: Daily Instagram post
+
+# Posts the next approved carousel once a day. 16:05 UTC = 12:05 PM New York (EDT), 11:05 AM (EST).
+on:
+  schedule:
+    - cron: "5 16 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only, don't post"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Refresh Instagram token
+        continue-on-error: true
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python scripts/refresh_token.py
+
+      - name: Post next carousel
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python scripts/post_instagram.py
+
+      - name: Record the post
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name "copthefit-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/fits.json
+            git commit -m "Posted to Instagram"
+            git pull --rebase
+            git push
+          fi

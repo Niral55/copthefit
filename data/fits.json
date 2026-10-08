@@ -1,0 +1,2766 @@
+{
+ "version": 1,
+ "fits": [
+  {
+   "find": "001",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Uchenna Nwosu",
+   "context": "NFL Week 4 arrival",
+   "date": "Oct 4, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Nwosu's custom Abasi x Jagne raw denim",
+   "detail": "A custom cropped jacket and wide-leg trousers in dark indigo raw denim with copper contrast stitching, made with designer Baba Jagne.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC11) — NFL Week 4 arrivals, Oct 2026",
+     "url": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/"
+    }
+   ],
+   "note": "Custom look; the Similar picks carry the links.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Abasi x Jagne",
+     "name": "Cropped raw-denim jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "",
+     "note": "Custom piece — not for sale"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Abasi x Jagne",
+     "name": "Wide-leg raw-denim trousers",
+     "retailer": "",
+     "query": "",
+     "product_url": "",
+     "note": "Custom piece — not for sale"
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Cropped raw denim trucker jacket",
+     "retailer": "amazon",
+     "query": "men's cropped raw denim trucker jacket",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "Wide-leg raw denim jeans",
+     "retailer": "amazon",
+     "query": "men's wide leg raw denim jeans",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "002",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Matthew Rhys",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Matthew Rhys' made-to-measure Thom Browne",
+   "detail": "A made-to-measure Thom Browne twill tux with grosgrain trim, a bib-front Oxford, a cashmere vest and wingtip boots.",
+   "tags": [
+    "emmys",
+    "redcarpet"
+   ],
+   "sources": [
+    {
+     "label": "FandomWire — Emmys 2026 best dressed",
+     "url": "https://fandomwire.com/emmys-2026-best-dressed-celebrities-ranked/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Thom Browne",
+     "name": "Twill tuxedo (made-to-measure)",
+     "retailer": "farfetch",
+     "query": "Thom Browne tuxedo",
+     "product_url": "",
+     "note": "MTM version is custom"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Thom Browne",
+     "name": "Bib-front Oxford shirt",
+     "retailer": "farfetch",
+     "query": "Thom Browne oxford shirt",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Cashmere sweater vest",
+     "retailer": "amazon",
+     "query": "men's cashmere sweater vest",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "Wingtip boots",
+     "retailer": "amazon",
+     "query": "men's wingtip boots",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "003",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Carlos Alcaraz",
+   "context": "US Open first round",
+   "date": "Aug 31, 2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Alcaraz walked out in Cactus Jack x Nike",
+   "detail": "A custom brown-to-white ombré Cactus Jack x Nike kit, the new Travis Scott x Nike Zoom Vapor 12 HC — and a Rolex Daytona 'Le Mans' off court.",
+   "tags": [
+    "usopen"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — Alcaraz in Travis Scott x Nike",
+     "url": "https://gqhongkong.com/en/lifestyle-en/carlos-alcaraz-us-open-travis-scott-cactus-jack"
+    },
+    {
+     "label": "Chrono 10:10 — watches at the 2026 US Open",
+     "url": "https://chrono1010.com/en/blog/3662"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Nike x Travis Scott",
+     "name": "Zoom Vapor 12 HC (Cactus Jack)",
+     "retailer": "nike",
+     "query": "Travis Scott Zoom Vapor 12",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Rolex",
+     "name": "Cosmograph Daytona 126528LN 'Le Mans'",
+     "retailer": "chrono24",
+     "query": "Rolex 126528LN",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Exact",
+     "brand": "Nike x Cactus Jack",
+     "name": "Ombré tennis vest and shorts",
+     "retailer": "",
+     "query": "",
+     "product_url": "",
+     "note": "Custom piece — not for sale"
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "Nike tennis shorts",
+     "retailer": "nike",
+     "query": "nikecourt tennis shorts",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "004",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Timothée Chalamet",
+   "context": "Off-duty, 2026",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Timothée's vacation runners: Asics x Thom Browne",
+   "detail": "On holiday he wore the hard-to-find Thom Browne collab on the Gel-Kayano 14.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "Collab is scarce; GR colorways capture the look.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Asics x Thom Browne",
+     "name": "Gel-Kayano 14",
+     "retailer": "ebay",
+     "query": "Asics Thom Browne Gel Kayano 14",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Asics Gel-Kayano 14 (GR colorways)",
+     "retailer": "farfetch",
+     "query": "Asics Gel-Kayano 14",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "005",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Aidan Hutchinson",
+   "context": "Sunday Night Football arrival",
+   "date": "Oct 4, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Hutchinson's fuzzy sweater-vest arrival",
+   "detail": "A fuzzy color-block sweater vest with black jeans and boots — and the signature gallon jug.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC11) — NFL Week 4 arrivals, Oct 2026",
+     "url": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/"
+    }
+   ],
+   "note": "Brands not named in the source — all picks are Similar.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Similar",
+     "brand": "",
+     "name": "Fuzzy color-block sweater vest",
+     "retailer": "amazon",
+     "query": "men's fuzzy color block sweater vest",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Black straight jeans",
+     "retailer": "amazon",
+     "query": "men's black straight leg jeans",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Black leather boots",
+     "retailer": "amazon",
+     "query": "men's black leather chelsea boots",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "006",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Oscar Isaac",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Oscar Isaac: white Celine + an AP Code 11.59",
+   "detail": "A white Celine suit jacket paired with an Audemars Piguet Code 11.59 in 18k white gold.",
+   "tags": [
+    "emmys",
+    "watchspotting"
+   ],
+   "sources": [
+    {
+     "label": "Deccan Chronicle — Emmys 2026 red carpet",
+     "url": "https://www.deccanchronicle.com/amp/entertainment/hollywood/emmys-2026-red-carpet-the-best-dressed-stars-1987555"
+    },
+    {
+     "label": "Avi & Co. — watches at the 2026 Emmys",
+     "url": "https://www.aviandco.com/luxury-watches-spotted-at-the-2026-emmy-awards"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Celine",
+     "name": "White suit jacket",
+     "retailer": "farfetch",
+     "query": "Celine white blazer",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Audemars Piguet",
+     "name": "Code 11.59 (white gold, 41mm)",
+     "retailer": "chrono24",
+     "query": "Audemars Piguet Code 11.59 white gold",
+     "product_url": "",
+     "note": "Outlets differ on the exact reference"
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "White tailored blazer",
+     "retailer": "amazon",
+     "query": "men's white tailored blazer",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "007",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Travis Scott",
+   "context": "US Open",
+   "date": "Aug 31, 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Travis Scott's Richard Mille at the Open",
+   "detail": "Courtside at the Open with a rare Richard Mille on his wrist.",
+   "tags": [
+    "usopen"
+   ],
+   "sources": [
+    {
+     "label": "Chrono 10:10 — watches at the 2026 US Open",
+     "url": "https://chrono1010.com/en/blog/3662"
+    },
+    {
+     "label": "Esquire India — watches at US Open 2026",
+     "url": "https://www.esquireindia.co.in/style/watches-and-jewellery/best-watches-spotted-at-us-open-2026-so-far-roger-federers-hyped-up-rolex-to-kaia-gerbers-cartier"
+    }
+   ],
+   "note": "Reports differ on the exact reference (RM 56-01 vs RM 75-01).",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Richard Mille",
+     "name": "RM 56-01 (reported)",
+     "retailer": "chrono24",
+     "query": "Richard Mille RM 56-01",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Skeleton tonneau watch",
+     "retailer": "amazon",
+     "query": "skeleton tonneau watch men",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "008",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "François Arnaud",
+   "context": "Out in 2026",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Heated Rivalry's François Arnaud: 9060s + double denim",
+   "detail": "New Balance 9060 'Earth Shadow' with a mid-wash Canadian tuxedo.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "New Balance",
+     "name": "9060 'Earth Shadow'",
+     "retailer": "newbalance",
+     "query": "9060",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Mid-wash denim jacket",
+     "retailer": "amazon",
+     "query": "men's mid wash denim jacket",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Mid-wash straight jeans",
+     "retailer": "amazon",
+     "query": "men's mid wash straight jeans",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "009",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Cameron Jordan",
+   "context": "Monday Night Football arrival",
+   "date": "Oct 5, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Cam Jordan dressed in Saints colors for MNF",
+   "detail": "A gold-and-black checkered jacket over black pants.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC11) — NFL Week 4 arrivals, Oct 2026",
+     "url": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/"
+    }
+   ],
+   "note": "Brands not named in the source — all picks are Similar.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Similar",
+     "brand": "",
+     "name": "Black and gold check jacket",
+     "retailer": "amazon",
+     "query": "men's black gold checkered jacket",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Black tailored trousers",
+     "retailer": "amazon",
+     "query": "men's black tailored trousers",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "010",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Colman Domingo",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Colman Domingo's peach Valentino moment",
+   "detail": "A peach mandarin-collar Valentino jacket with frog closures, over flowing ivory trousers.",
+   "tags": [
+    "emmys",
+    "redcarpet"
+   ],
+   "sources": [
+    {
+     "label": "HOLA! USA — Emmys 2026 best dressed",
+     "url": "https://www.hola.com/us/celebrities/20260914923383/best-dressed-stars-2026-emmys/"
+    },
+    {
+     "label": "FandomWire — Emmys 2026 best dressed",
+     "url": "https://fandomwire.com/emmys-2026-best-dressed-celebrities-ranked/"
+    },
+    {
+     "label": "Avi & Co. — watches at the 2026 Emmys",
+     "url": "https://www.aviandco.com/luxury-watches-spotted-at-the-2026-emmy-awards"
+    }
+   ],
+   "note": "HOLA! calls it peach; FandomWire says terracotta.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Valentino",
+     "name": "Mandarin-collar jacket",
+     "retailer": "farfetch",
+     "query": "Valentino mandarin collar jacket",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Ivory wide-leg trousers",
+     "retailer": "amazon",
+     "query": "men's ivory wide leg trousers",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Mandarin-collar jacket",
+     "retailer": "amazon",
+     "query": "men's mandarin collar jacket",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "011",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Roger Federer",
+   "context": "US Open exhibition (his return)",
+   "date": "Aug 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Federer's colorful Rolex at his US Open return",
+   "detail": "Back on court for an exhibition, he wore a Rolex Oyster Perpetual with the multicolor 'Jubilee' motif dial.",
+   "tags": [
+    "usopen"
+   ],
+   "sources": [
+    {
+     "label": "Galerie — Federer's colorful Rolex at the US Open",
+     "url": "https://galeriemagazine.com/?p=250549"
+    },
+    {
+     "label": "Euronews — US Open 2026 watches",
+     "url": "https://www.euronews.com/2026/09/17/watch-this-the-winning-timepieces-you-couldnt-miss-at-this-years-us-open"
+    }
+   ],
+   "note": "Case size reported differently (36 vs 41mm).",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Rolex",
+     "name": "Oyster Perpetual (multicolor Jubilee dial)",
+     "retailer": "chrono24",
+     "query": "Rolex Oyster Perpetual Jubilee dial",
+     "product_url": "",
+     "note": "Galerie reports the 36mm; others say 41mm"
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Colorful dial watch",
+     "retailer": "amazon",
+     "query": "men's colorful dial watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "012",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Harry Styles",
+   "context": "'Aperture' music video",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Harry Styles brought back the slim sneaker",
+   "detail": "He wore Prada's Collapse — a barely-there Re-Nylon and suede sneaker — for his comeback single.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Prada",
+     "name": "Collapse sneakers (Ivory)",
+     "retailer": "farfetch",
+     "query": "Prada Collapse sneakers",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Puma Speedcat (low-profile)",
+     "retailer": "amazon",
+     "query": "Puma Speedcat",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "013",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Kenneth Walker III",
+   "context": "Chiefs debut, Monday Night Football",
+   "date": "Sept 14, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Kenneth Walker III's all-white Chiefs debut",
+   "detail": "An all-white suit over a black shirt, finished with white loafers from Duke + Dexter.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC7) — NFL Week 1 arrivals, Sept 2026",
+     "url": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Duke + Dexter",
+     "name": "White loafers",
+     "retailer": "dukeanddexter",
+     "query": "white loafer",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "White two-piece suit",
+     "retailer": "amazon",
+     "query": "men's white two piece suit",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Black dress shirt",
+     "retailer": "amazon",
+     "query": "men's black dress shirt",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "014",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Mark Ronson",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Mark Ronson's malachite-dial gold Royal Oak",
+   "detail": "A 41mm Audemars Piguet Royal Oak in 18k yellow gold with a green malachite dial.",
+   "tags": [
+    "emmys"
+   ],
+   "sources": [
+    {
+     "label": "Watch Guys — every watch at the 2026 Emmys",
+     "url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+    },
+    {
+     "label": "Avi & Co. — watches at the 2026 Emmys",
+     "url": "https://www.aviandco.com/luxury-watches-spotted-at-the-2026-emmy-awards"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Audemars Piguet",
+     "name": "Royal Oak 41mm (yellow gold, malachite dial)",
+     "retailer": "chrono24",
+     "query": "Audemars Piguet Royal Oak malachite",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Tissot PRX (gold tone)",
+     "retailer": "amazon",
+     "query": "Tissot PRX gold",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Casio G-Shock GM-2100",
+     "retailer": "amazon",
+     "query": "Casio G-Shock GM-2100",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "015",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Jimmy Fallon",
+   "context": "US Open",
+   "date": "Sept 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Jimmy Fallon wore a 'Paul Newman' Daytona to the Open",
+   "detail": "A vintage Rolex Daytona ref. 6239 — the original 'Paul Newman' reference.",
+   "tags": [
+    "usopen"
+   ],
+   "sources": [
+    {
+     "label": "Chrono 10:10 — watches at the 2026 US Open",
+     "url": "https://chrono1010.com/en/blog/3662"
+    },
+    {
+     "label": "Esquire India — watches at US Open 2026",
+     "url": "https://www.esquireindia.co.in/style/watches-and-jewellery/best-watches-spotted-at-us-open-2026-so-far-roger-federers-hyped-up-rolex-to-kaia-gerbers-cartier"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Rolex",
+     "name": "Cosmograph Daytona 6239 (vintage)",
+     "retailer": "chrono24",
+     "query": "Rolex 6239",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Seiko Speedtimer SSC813 (panda dial)",
+     "retailer": "amazon",
+     "query": "Seiko Speedtimer SSC813",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "016",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Travis Scott",
+   "context": "The Odyssey premiere",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Travis Scott wore Nike's Moon Shoe to The Odyssey premiere",
+   "detail": "The low-profile, waffle-sole Moon Shoe OG — a track shoe turned summer staple — on the red carpet.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Nike",
+     "name": "Moon Shoe OG",
+     "retailer": "nike",
+     "query": "Moon Shoe",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Low-profile retro running sneaker",
+     "retailer": "amazon",
+     "query": "men's low profile retro running sneakers",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "017",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Jalen Hurts",
+   "context": "NFL Week 1 arrival",
+   "date": "Sept 13, 2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Jalen Hurts went double denim with 11s",
+   "detail": "A medium-wash denim button-down with matching jeans, grounded by Air Jordan 11s.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC7) — NFL Week 1 arrivals, Sept 2026",
+     "url": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Jordan",
+     "name": "Air Jordan 11",
+     "retailer": "nike",
+     "query": "air jordan 11",
+     "product_url": "",
+     "note": "Colorway not specified in source"
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Medium-wash denim shirt",
+     "retailer": "amazon",
+     "query": "men's medium wash denim button down shirt",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Medium-wash straight jeans",
+     "retailer": "amazon",
+     "query": "men's medium wash straight jeans",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "018",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Noah Wyle",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Noah Wyle's Cartier Tank à Guichets",
+   "detail": "The Pitt star wore the Cartier Privé Tank à Guichets in 18k rose gold.",
+   "tags": [
+    "emmys"
+   ],
+   "sources": [
+    {
+     "label": "Watch Guys — every watch at the 2026 Emmys",
+     "url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+    },
+    {
+     "label": "Avi & Co. — watches at the 2026 Emmys",
+     "url": "https://www.aviandco.com/luxury-watches-spotted-at-the-2026-emmy-awards"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Cartier",
+     "name": "Privé Tank à Guichets (rose gold)",
+     "retailer": "chrono24",
+     "query": "Cartier Tank a Guichets",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Rectangular dress watch",
+     "retailer": "amazon",
+     "query": "men's rectangular dress watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "019",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Russell Wilson",
+   "context": "US Open",
+   "date": "Sept 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Russell Wilson's gold Day-Date",
+   "detail": "A Rolex Day-Date 40 ref. 228238 in yellow gold.",
+   "tags": [
+    "usopen"
+   ],
+   "sources": [
+    {
+     "label": "Chrono 10:10 — watches at the 2026 US Open",
+     "url": "https://chrono1010.com/en/blog/3662"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Rolex",
+     "name": "Day-Date 40 228238",
+     "retailer": "chrono24",
+     "query": "Rolex 228238",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Gold fluted-bezel watch",
+     "retailer": "amazon",
+     "query": "men's gold fluted bezel watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "020",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Finn Wolfhard",
+   "context": "Out in 2026",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Finn Wolfhard proves the Samba still works",
+   "detail": "The OG Samba in Cloud White with the gum sole — no tricks.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "adidas",
+     "name": "Samba OG 'Cloud White' (B75806)",
+     "retailer": "adidas",
+     "query": "Samba OG",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "adidas Gazelle",
+     "retailer": "adidas",
+     "query": "Gazelle",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "021",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "A.J. Brown",
+   "context": "Patriots debut, NFL Week 1",
+   "date": "Sept 13, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "A.J. Brown's all-cream Patriots debut",
+   "detail": "Head-to-toe cream, broken up by a black Saint Laurent belt.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC7) — NFL Week 1 arrivals, Sept 2026",
+     "url": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Saint Laurent",
+     "name": "Black leather belt",
+     "retailer": "farfetch",
+     "query": "Saint Laurent leather belt black",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Cream overshirt",
+     "retailer": "amazon",
+     "query": "men's cream overshirt",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Cream pleated trousers",
+     "retailer": "amazon",
+     "query": "men's cream pleated trousers",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "022",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Patrick Ball",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Patrick Ball's Royal Oak Perpetual Calendar",
+   "detail": "An Audemars Piguet Royal Oak Perpetual Calendar 26674ST in steel with a blue dial.",
+   "tags": [
+    "emmys"
+   ],
+   "sources": [
+    {
+     "label": "Watch Guys — every watch at the 2026 Emmys",
+     "url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Audemars Piguet",
+     "name": "Royal Oak Perpetual Calendar 26674ST",
+     "retailer": "chrono24",
+     "query": "Audemars Piguet 26674ST",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Tissot PRX (blue dial)",
+     "retailer": "amazon",
+     "query": "Tissot PRX blue dial",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Casio G-Shock GA-2100 (blue)",
+     "retailer": "amazon",
+     "query": "Casio G-Shock GA-2100 blue",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "023",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Homer Gere",
+   "context": "US Open, first week",
+   "date": "Late Aug 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Homer Gere's US Open blazer-and-jeans formula",
+   "detail": "A blazer, crisp white collared shirt and jeans — the classic courtside uniform.",
+   "tags": [
+    "usopen",
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "Vogue (via Vogue PH) — US Open 2026 sightings",
+     "url": "https://vogue.ph/?p=257477"
+    }
+   ],
+   "note": "Brands not named in the source — all picks are Similar.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Similar",
+     "brand": "",
+     "name": "Navy unstructured blazer",
+     "retailer": "amazon",
+     "query": "men's navy unstructured blazer",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "White Oxford shirt",
+     "retailer": "amazon",
+     "query": "men's white oxford shirt",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Straight-leg jeans",
+     "retailer": "amazon",
+     "query": "men's straight leg jeans",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "024",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Oscar Isaac",
+   "context": "Beef season 2 (on screen)",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Beef's Oscar Isaac and the AJ1 'Chicago'",
+   "detail": "His character's OG Air Jordan 1 High 'Chicago' storyline broke sneakerheads' hearts.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "Character wardrobe, not a red-carpet look.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Jordan",
+     "name": "Air Jordan 1 High OG 'Chicago'",
+     "retailer": "ebay",
+     "query": "Air Jordan 1 High OG Chicago",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Air Jordan 1 Retro High OG (current colorways)",
+     "retailer": "nike",
+     "query": "Air Jordan 1 Retro High OG",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "025",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Dak Prescott",
+   "context": "Sunday Night Football arrival",
+   "date": "Sept 13, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Dak's navy pinstripe road-game suit",
+   "detail": "A navy pinstripe suit with brown loafers for the trip to face the Giants.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC7) — NFL Week 1 arrivals, Sept 2026",
+     "url": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/"
+    }
+   ],
+   "note": "Brands not named in the source — all picks are Similar.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Similar",
+     "brand": "",
+     "name": "Navy pinstripe suit",
+     "retailer": "amazon",
+     "query": "men's navy pinstripe suit",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Brown suede loafers",
+     "retailer": "amazon",
+     "query": "men's brown suede loafers",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "026",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Law Roach",
+   "context": "Emmy Awards",
+   "date": "Sept 14, 2026",
+   "category": "Wrist",
+   "timing": "Recent",
+   "headline": "Law Roach's pink-sapphire Daytona",
+   "detail": "A yellow-gold Rolex Cosmograph Daytona 126538TRO with a pink sapphire bezel.",
+   "tags": [
+    "emmys"
+   ],
+   "sources": [
+    {
+     "label": "Watch Guys — every watch at the 2026 Emmys",
+     "url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Rolex",
+     "name": "Cosmograph Daytona 126538TRO",
+     "retailer": "chrono24",
+     "query": "Rolex 126538TRO",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Gold chronograph watch",
+     "retailer": "amazon",
+     "query": "men's gold chronograph watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "027",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Callum Turner",
+   "context": "Off-duty, 2026",
+   "date": "2026",
+   "category": "Kicks",
+   "timing": "Recent",
+   "headline": "Callum Turner's post-honeymoon Goadomes",
+   "detail": "Nike's Air Max Goadome — the Air-cushioned answer to the 6-inch boot.",
+   "tags": [
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ Hong Kong — 7 celebrity-approved sneakers of 2026",
+     "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Nike",
+     "name": "Air Max Goadome Low SP",
+     "retailer": "farfetch",
+     "query": "Nike Air Max Goadome",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Sneaker boots",
+     "retailer": "amazon",
+     "query": "men's hiking sneaker boots",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "028",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Malik Nabers",
+   "context": "Sunday Night Football arrival",
+   "date": "Sept 13, 2026",
+   "category": "Fit",
+   "timing": "Recent",
+   "headline": "Malik Nabers: shirt and tie… with shorts",
+   "detail": "A burgundy wine jacket over a shirt-and-tie combo, finished with shorts for the home opener.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "ESPN (via ABC7) — NFL Week 1 arrivals, Sept 2026",
+     "url": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/"
+    }
+   ],
+   "note": "Brands not named in the source — all picks are Similar.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Similar",
+     "brand": "",
+     "name": "Burgundy blazer",
+     "retailer": "amazon",
+     "query": "men's burgundy blazer",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Tailored pleated shorts",
+     "retailer": "amazon",
+     "query": "men's tailored pleated shorts",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Silk tie",
+     "retailer": "amazon",
+     "query": "men's silk tie burgundy",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "029",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "A$AP Rocky",
+   "context": "Heading to the World Cup final, NYC",
+   "date": "July 2026",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "Rocky's World Cup final fit: LV 'Vans' + Chanel carpenters",
+   "detail": "Spotted outside his New York hotel before the final: red crocodile Louis Vuitton skate sneakers, Chanel Pre-Fall 2026 carpenter jeans, a white tee and iced-out chains.",
+   "tags": [
+    "asaprocky",
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "Highsnobiety — A$AP Rocky's World Cup fit",
+     "url": "https://www.highsnobiety.com/p/asap-rocky-brought-out-the-louis-vuitton-vans-for-his-world-cup-fit/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Louis Vuitton",
+     "name": "Crocodile skate sneaker (red)",
+     "retailer": "ebay",
+     "query": "Louis Vuitton crocodile skate sneaker red",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Chanel",
+     "name": "Pre-Fall 2026 carpenter jeans",
+     "retailer": "ebay",
+     "query": "Chanel carpenter jeans",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Red canvas skate shoes",
+     "retailer": "amazon",
+     "query": "red canvas skate shoes men",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "Carpenter jeans",
+     "retailer": "amazon",
+     "query": "men's carpenter jeans",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "030",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Shai Gilgeous-Alexander",
+   "context": "Conference Finals Game 1 tunnel",
+   "date": "May 2026",
+   "category": "Kicks",
+   "timing": "Evergreen",
+   "headline": "SGA's all-white tunnel fit + SHAI 001 'Slither'",
+   "detail": "Monochrome white with a white Chanel mini bag and the 'Slither' colorway of his signature shoe.",
+   "tags": [
+    "nba",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "The GAME — 2026 Conference Finals tunnel fits",
+     "url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Converse",
+     "name": "SHAI 001 'Slither'",
+     "retailer": "converse",
+     "query": "SHAI 001",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Chanel",
+     "name": "Mini bag (white)",
+     "retailer": "ebay",
+     "query": "Chanel mini bag white",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "All-white matching set",
+     "retailer": "amazon",
+     "query": "men's white matching set",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "031",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Jay-Z",
+   "context": "NBA Finals, Madison Square Garden",
+   "date": "June 2026",
+   "category": "Kicks",
+   "timing": "Evergreen",
+   "headline": "Jay-Z courtside at the Finals: Bode + white Air Force 1s",
+   "detail": "A Bode shirt and clean white Air Force 1s on the floor at Madison Square Garden.",
+   "tags": [
+    "jayz",
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "Complex — Best Dressed Rappers of 2026",
+     "url": "https://www.complex.com/style/a/mike-destefano/best-dressed-rappers-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Bode",
+     "name": "Shirt",
+     "retailer": "farfetch",
+     "query": "Bode shirt",
+     "product_url": "",
+     "note": "Exact Bode style not named in source"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Nike",
+     "name": "Air Force 1 '07 (white)",
+     "retailer": "nike",
+     "query": "air force 1 07 white",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Embroidered camp-collar shirt",
+     "retailer": "amazon",
+     "query": "men's embroidered camp collar shirt vintage",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "032",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Michael B. Jordan",
+   "context": "Oscars (Best Actor win)",
+   "date": "Mar 2026",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "Michael B. Jordan won Best Actor in LV + vintage Piaget",
+   "detail": "A custom Louis Vuitton tux and a 1970s Piaget 9297 Tank with a hobnail gold case and half-pavé dial.",
+   "tags": [
+    "oscars",
+    "watchspotting"
+   ],
+   "sources": [
+    {
+     "label": "Essence — Michael B. Jordan's Oscars win in custom Louis Vuitton",
+     "url": "https://www.essence.com/fashion/michael-b-jordan-oscars-win-custom-louis-vuitton/"
+    },
+    {
+     "label": "Kapoor Watch — Oscars 2026 watch spotting",
+     "url": "https://www.kapoorwatch.com/blogs/wp-json/wp/v2/posts/16275"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Louis Vuitton",
+     "name": "Custom tuxedo",
+     "retailer": "",
+     "query": "",
+     "product_url": "",
+     "note": "Custom piece — not for sale"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Piaget",
+     "name": "9297 Tank (vintage)",
+     "retailer": "chrono24",
+     "query": "Piaget 9297",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Black tuxedo",
+     "retailer": "amazon",
+     "query": "men's black tuxedo",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "Gold rectangular dress watch",
+     "retailer": "amazon",
+     "query": "men's gold rectangular dress watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "033",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "George Clooney",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Clooney's turquoise Aqua Terra",
+   "detail": "An Omega Seamaster Aqua Terra 41 with a gradient turquoise dial.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Golden Globes",
+     "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Omega",
+     "name": "Seamaster Aqua Terra 41 (turquoise)",
+     "retailer": "chrono24",
+     "query": "Omega Aqua Terra turquoise",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Tissot Gentleman Powermatic 80",
+     "retailer": "amazon",
+     "query": "Tissot Gentleman Powermatic 80",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "034",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Bad Bunny",
+   "context": "Grammy Awards",
+   "date": "Feb 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Bad Bunny's vintage Cartier Tortue",
+   "detail": "A vintage Cartier Tortue from the Collection Privée, ref. 2498E.",
+   "tags": [
+    "grammys"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Grammys",
+     "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Cartier",
+     "name": "Tortue CPCP 2498E (vintage)",
+     "retailer": "chrono24",
+     "query": "Cartier Tortue",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Gold cushion-case dress watch",
+     "retailer": "amazon",
+     "query": "men's gold cushion case dress watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "035",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "David Beckham",
+   "context": "Wimbledon",
+   "date": "July 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Beckham's updated Black Bay 58",
+   "detail": "The updated Tudor Black Bay 58 on a five-link bracelet.",
+   "tags": [
+    "wimbledon"
+   ],
+   "sources": [
+    {
+     "label": "Precision Watches — watches at Wimbledon 2026",
+     "url": "https://precisionwatches.com/journal/wimbledon-2026-watches/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Tudor",
+     "name": "Black Bay 58 (five-link)",
+     "retailer": "chrono24",
+     "query": "Tudor Black Bay 58",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Orient Kamasu diver",
+     "retailer": "amazon",
+     "query": "Orient Kamasu",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Seiko 5 Sports diver",
+     "retailer": "amazon",
+     "query": "Seiko 5 Sports",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "036",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "J-Hope",
+   "context": "Louis Vuitton SS27 show, Paris",
+   "date": "June 2026",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "J-Hope's pinstripes + panther tie at Louis Vuitton",
+   "detail": "A faded pinstripe suit, a classic white shirt, a panther-print necktie and a compact tan-and-black Louis Vuitton bag.",
+   "tags": [
+    "pfw",
+    "celebstyle"
+   ],
+   "sources": [
+    {
+     "label": "t2 Online — J-Hope at Louis Vuitton SS27",
+     "url": "https://t2online.in/goodlife/fashion-beauty/bts-s-j-hope-and-goblin-star-gong-yoo-bring-the-spotlight-to-louis-vuitton-s-paris-fashion-week-showcase/2005862"
+    }
+   ],
+   "note": "Suit label not named in source.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Louis Vuitton",
+     "name": "Compact handbag (tan/black)",
+     "retailer": "ebay",
+     "query": "Louis Vuitton compact bag men",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Pinstripe suit",
+     "retailer": "amazon",
+     "query": "men's pinstripe suit",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Leopard-print silk tie",
+     "retailer": "amazon",
+     "query": "leopard print silk tie men",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "White dress shirt",
+     "retailer": "amazon",
+     "query": "men's white dress shirt",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "037",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Laremy Tunsil",
+   "context": "NFL Week 1 arrival",
+   "date": "Sept 2025",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "Laremy Tunsil's red ALD x Porsche jacket",
+   "detail": "The red Aimé Leon Dore x Porsche jacket from his 2025 opener arrival.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "NFL.com — The Fit Files, Week 1 2025",
+     "url": "https://www.nfl.com/news/five-best-fits-of-week-1-2025-nfl-season"
+    }
+   ],
+   "note": "Sold out at retail — resale link.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Aimé Leon Dore x Porsche",
+     "name": "Red jacket",
+     "retailer": "ebay",
+     "query": "Aime Leon Dore Porsche jacket red",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Red racing jacket",
+     "retailer": "amazon",
+     "query": "men's red racing jacket",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "038",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Donovan Mitchell",
+   "context": "Conference Finals Game 1 tunnel",
+   "date": "May 2026",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "Spida's navy Rhude set",
+   "detail": "A matching navy Rhude set over a white tank.",
+   "tags": [
+    "nba",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "The GAME — 2026 Conference Finals tunnel fits",
+     "url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Rhude",
+     "name": "Navy matching set",
+     "retailer": "farfetch",
+     "query": "Rhude",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Navy matching tracksuit",
+     "retailer": "amazon",
+     "query": "men's navy matching tracksuit",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "039",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Timothée Chalamet",
+   "context": "Oscars",
+   "date": "Mar 2026",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "Timothée's Y2K white Givenchy suit",
+   "detail": "A custom all-white Givenchy suit with a Y2K edge.",
+   "tags": [
+    "oscars",
+    "redcarpet"
+   ],
+   "sources": [
+    {
+     "label": "Storyboard18 — Oscars 2026 red carpet",
+     "url": "https://storyboard18.com/photos/brand-makers/you-cant-miss-these-looks-from-the-oscars-2026-red-carpet-92415.htm"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Givenchy",
+     "name": "Custom white suit",
+     "retailer": "",
+     "query": "",
+     "product_url": "",
+     "note": "Custom piece — not for sale"
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "White suit",
+     "retailer": "amazon",
+     "query": "men's white suit slim",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "White dress shirt",
+     "retailer": "amazon",
+     "query": "men's white dress shirt",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "040",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Glen Powell",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Glen Powell went 38mm Aqua Terra",
+   "detail": "An Omega Seamaster Aqua Terra 38 in 18k Moonshine Gold with a blue dial.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Golden Globes",
+     "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Omega",
+     "name": "Seamaster Aqua Terra 38 (Moonshine Gold, blue dial)",
+     "retailer": "chrono24",
+     "query": "Omega Aqua Terra 38 Moonshine Gold",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Seiko Presage",
+     "retailer": "amazon",
+     "query": "Seiko Presage",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "041",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Harry Styles",
+   "context": "Grammy Awards",
+   "date": "Feb 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Harry Styles wore a gold Cartier Tank",
+   "detail": "A current-production Cartier Tank in yellow gold.",
+   "tags": [
+    "grammys"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Grammys",
+     "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Cartier",
+     "name": "Tank (yellow gold)",
+     "retailer": "chrono24",
+     "query": "Cartier Tank gold",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Rectangular gold watch",
+     "retailer": "amazon",
+     "query": "men's rectangular gold watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "042",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Richard E. Grant",
+   "context": "Wimbledon",
+   "date": "July 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Richard E. Grant wore two watches to Wimbledon",
+   "detail": "A small two-tone Cartier Santos on one wrist, a Breitling Navitimer on the other.",
+   "tags": [
+    "wimbledon"
+   ],
+   "sources": [
+    {
+     "label": "Precision Watches — watches at Wimbledon 2026",
+     "url": "https://precisionwatches.com/journal/wimbledon-2026-watches/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Cartier",
+     "name": "Santos (small, steel and gold)",
+     "retailer": "chrono24",
+     "query": "Cartier Santos two tone small",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Breitling",
+     "name": "Navitimer",
+     "retailer": "chrono24",
+     "query": "Breitling Navitimer",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Citizen Promaster Navihawk",
+     "retailer": "amazon",
+     "query": "Citizen Promaster Navihawk",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "043",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Kenny Moore II",
+   "context": "NFL Week 3 arrival",
+   "date": "Sept 2025",
+   "category": "Fit",
+   "timing": "Evergreen",
+   "headline": "Kenny Moore II's navy DB + Celine loafers",
+   "detail": "A custom cropped navy wool double-breasted jacket, Duane & Johnson washed straight-leg jeans and black Celine loafers.",
+   "tags": [
+    "nfl",
+    "tunnelfit"
+   ],
+   "sources": [
+    {
+     "label": "NFL.com — The Fit Files, Week 3 2025",
+     "url": "https://amp.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Custom",
+     "name": "Cropped navy double-breasted jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "",
+     "note": "Custom piece — not for sale"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Celine",
+     "name": "Black loafers",
+     "retailer": "farfetch",
+     "query": "Celine loafers black",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "",
+     "name": "Navy double-breasted blazer",
+     "retailer": "amazon",
+     "query": "men's navy double breasted blazer",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "",
+     "name": "Washed straight-leg jeans",
+     "retailer": "amazon",
+     "query": "men's washed straight leg jeans",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "044",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Patrick Schwarzenegger",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Patrick Schwarzenegger's gold Moonwatch",
+   "detail": "An 18k Moonshine Gold Omega Speedmaster Moonwatch Professional.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Golden Globes",
+     "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Omega",
+     "name": "Speedmaster Moonwatch (Moonshine Gold)",
+     "retailer": "chrono24",
+     "query": "Omega Speedmaster Moonshine gold",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Seiko Speedtimer chronograph",
+     "retailer": "amazon",
+     "query": "Seiko Speedtimer chronograph",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "045",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Kendrick Lamar",
+   "context": "Grammy Awards",
+   "date": "Feb 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Kendrick's diamond Tank Américaine",
+   "detail": "A diamond-set white-gold Cartier Tank Américaine.",
+   "tags": [
+    "grammys"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Grammys",
+     "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Cartier",
+     "name": "Tank Américaine (white gold, diamonds)",
+     "retailer": "chrono24",
+     "query": "Cartier Tank Americaine",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Rectangular silver watch",
+     "retailer": "amazon",
+     "query": "men's rectangular silver watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "046",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Nick Jonas",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Nick Jonas wore a Fossil to the Globes",
+   "detail": "The Fossil Carraway Automatic on brown croc-embossed leather — the most attainable watch on the carpet.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Golden Globes",
+     "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+    }
+   ],
+   "note": "Exact piece is affordable — lead with it.",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Fossil",
+     "name": "Carraway Automatic (brown leather)",
+     "retailer": "amazon",
+     "query": "Fossil Carraway Automatic",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Automatic dress watch",
+     "retailer": "amazon",
+     "query": "men's automatic dress watch brown leather",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "047",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "John Legend",
+   "context": "Grammy Awards",
+   "date": "Feb 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "John Legend's King Gold Hublot",
+   "detail": "A Hublot Big Bang Original King Gold with blue diamonds, 41mm.",
+   "tags": [
+    "grammys"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Grammys",
+     "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Hublot",
+     "name": "Big Bang Original King Gold Blue Diamonds 41mm",
+     "retailer": "chrono24",
+     "query": "Hublot Big Bang King Gold",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Gold chronograph watch",
+     "retailer": "amazon",
+     "query": "men's gold chronograph watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "048",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Colman Domingo",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Colman Domingo's Speedmaster 38",
+   "detail": "The Omega ambassador wore a diamond-set Speedmaster 38 with a green dial and green leather strap.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Golden Globes",
+     "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Omega",
+     "name": "Speedmaster 38 (diamond-set, green dial)",
+     "retailer": "chrono24",
+     "query": "Omega Speedmaster 38 green",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Seiko Speedtimer chronograph",
+     "retailer": "amazon",
+     "query": "Seiko Speedtimer chronograph",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "049",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Jeremy Allen White",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Jeremy Allen White's Louis Vuitton Tambour",
+   "detail": "A Louis Vuitton Tambour with a grey-and-gold two-tone case.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Teddy Baldassarre — watches at the 2026 Golden Globes",
+     "url": "https://teddybaldassarre.com/blogs/watches/favorite-watches-golden-globes-2026"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Louis Vuitton",
+     "name": "Tambour (two-tone)",
+     "retailer": "chrono24",
+     "query": "Louis Vuitton Tambour",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Integrated-bracelet steel watch",
+     "retailer": "amazon",
+     "query": "men's integrated bracelet steel watch",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "find": "050",
+   "status": "approved",
+   "priority": 1,
+   "added": "2026-10-08",
+   "celeb": "Walton Goggins",
+   "context": "Golden Globes",
+   "date": "Jan 2026",
+   "category": "Wrist",
+   "timing": "Evergreen",
+   "headline": "Walton Goggins' 1992 Cartier Tonneau",
+   "detail": "A 1992 Cartier Collection Tonneau in yellow gold with a sapphire cabochon.",
+   "tags": [
+    "goldenglobes"
+   ],
+   "sources": [
+    {
+     "label": "Luxury Bazaar — watch spotting, 2026 Golden Globes",
+     "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+    }
+   ],
+   "note": "",
+   "items": [
+    {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Cartier",
+     "name": "Collection Tonneau (1992, yellow gold)",
+     "retailer": "chrono24",
+     "query": "Cartier Tonneau",
+     "product_url": "",
+     "note": ""
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "",
+     "name": "Tonneau dress watch",
+     "retailer": "amazon",
+     "query": "tonneau dress watch men",
+     "product_url": "",
+     "note": ""
+    }
+   ],
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  }
+ ]
+}
