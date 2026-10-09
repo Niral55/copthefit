@@ -85,6 +85,9 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 .photo .ph { font: 500 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; text-align: center; padding: 16px; line-height: 1.5;
   position: absolute; inset: 0; display: grid; place-items: center; background: repeating-linear-gradient(-45deg, var(--paper) 0 8px, var(--tag) 8px 16px); }
 .mk { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); border: 2px solid #fff; font: 700 13px/22px var(--body); text-align: center; pointer-events: none; }
+.srch { font-size: 13px; }
+.leads { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.leads .kind { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; border: 1px solid var(--line); border-radius: 3px; padding: 1px 5px; }
 .cands { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
 .cands button { padding: 0; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); cursor: pointer; aspect-ratio: 4 / 5; overflow: hidden; }
 .cands img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -308,6 +311,15 @@ function photoUrl() {
   return "";
 }
 
+const KIND = { instagram: "IG post", video: "Video", x: "X post" };
+function leadSearches(d) {
+  const year = (d.date.match(/\d{4}/) || [""])[0];
+  const q = encodeURIComponent(`${d.celeb} ${d.context} ${year}`.trim());
+  return [["Instagram", `https://www.google.com/search?q=site%3Ainstagram.com+${q}`],
+          ["YouTube", `https://www.youtube.com/results?search_query=${q}`],
+          ["TikTok", `https://www.tiktok.com/search?q=${q}`]];
+}
+
 function renderEditor() {
   const d = DRAFT;
   const isNew = !d.find;
@@ -329,7 +341,9 @@ function renderEditor() {
           ${purl ? `<p class="hint" id="pinHint"></p>` : `<p class="hint">Tip: copy an image and press Ctrl/Cmd+V here to paste it.</p>`}
           <label class="f" for="credit">Photo credit<input id="credit" value="${esc((d.photo || {}).credit || "")}" placeholder="@account or photographer / agency"></label>
           ${(d.photo_candidates || []).length ? `<h2>Free photos found (public domain / CC)</h2><div class="cands">${d.photo_candidates.map((c, i) => `<button type="button" data-c="${i}" title="${esc(c.author)}, ${esc(c.license)}, ${esc(c.taken)}"><img src="${esc(c.image)}" alt="Free photo ${i + 1}" loading="lazy"></button>`).join("")}</div><p class="hint">Tap one to use it. The credit fills in.</p>` : ""}
-          ${d.photo_source ? `<a href="${esc(d.photo_source)}" target="_blank">Open the source page to find the photo ↗</a>` : ""}
+          ${d.celeb ? `<h2>Grab the cover from</h2>` : ""}${(d.photo_leads || []).length ? `<ol class="leads">${d.photo_leads.map((l, i) => `<li><span class="kind">${KIND[l.kind] || "Link"}</span> <a href="${esc(l.url)}" target="_blank" data-l="${i}">${esc(l.by || l.url)}${l.at ? ` · ${esc(l.at)}` : ""} ↗</a>${l.note ? `<div class="hint">${esc(l.note)}</div>` : ""}</li>`).join("")}</ol><p class="hint">Best first. Pause the video on a still, full-length moment, screenshot, then upload or paste it here. Opening a link fills the credit.</p>` : ""}
+          ${d.celeb ? `<div class="srch">Search: ${leadSearches(d).map(([n, u]) => `<a href="${esc(u)}" target="_blank">${n} ↗</a>`).join(" · ")}</div>` : ""}
+          ${d.photo_source ? `<a href="${esc(d.photo_source)}" target="_blank">Open the article ↗</a>` : ""}
         </div>
         <div class="panel">
           <h2>Ready to post?</h2>
@@ -379,6 +393,10 @@ function renderEditor() {
   $("#back").onclick = closeEditor;
   $("#upPhoto").onclick = () => pickFile(f => setPhoto(f));
   if ($("#clearPins")) $("#clearPins").onclick = () => { DRAFT.items.forEach(it => delete it.pin); renderPins(); };
+  $("#editView").querySelectorAll(".leads a").forEach(a => a.addEventListener("click", () => {
+    const l = DRAFT.photo_leads[+a.dataset.l], c = $("#credit");
+    if (c && !c.value.trim() && l.by) c.value = (l.kind === "video" ? "Video: " : "") + l.by;
+  }));
   $("#editView").querySelectorAll(".cands button").forEach(b => b.onclick = () => useCandidate(DRAFT.photo_candidates[+b.dataset.c]));
   $("#editView").querySelectorAll("input,textarea,select").forEach(el => el.addEventListener("input", () => { readForm(); renderReady(); }));
   $("#addItem").onclick = () => { readForm(); if (DRAFT.items.length >= 8) return; DRAFT.items.push({ label: "Similar", brand: "", name: "", retailer: "", query: "", product_url: "", note: "", _link: "" }); renderItems(); renderReady(); };

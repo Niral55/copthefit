@@ -31,7 +31,7 @@ async function renderQueue() {
   const missing = q.slice(0, 10).filter(f => !f.photo);
   $("#next").innerHTML = ready.slice(0, 6).map((f, i) => `<li><span class="d">${dayLabel(i)}</span><span>#${f.find} <b>${esc(f.celeb)}</b> · ${esc(f.headline)}</span></li>`).join("")
     || `<li><span class="d">–</span><span>${q.length ? "Nothing ready yet. Add cover photos to the fits below to start posting." : "Queue is empty. Approve or add fits to keep posting."}</span></li>`;
-  $("#needs").innerHTML = missing.length ? `<h2>Needs a cover photo</h2><ul class="q">${missing.map(f => `<li><span class="d">#${f.find}</span><span><b>${esc(f.celeb)}</b> · ${esc(f.context)}${(f.photo_candidates || []).map((c, i) => ` · <a href="${esc(c.page)}" target="_blank" title="${esc(c.license)}, ${esc(c.taken)}">free photo ${i + 1}</a>`).join("")}${f.photo_source ? ` · <a href="${esc(f.photo_source)}" target="_blank">photo source</a>` : ""}</span></li>`).join("")}</ul><p class="hint">${CFG && CFG.require_photo ? "Fits without a cover photo are skipped until you add one." : ""} Right-click the photo → <b>Cop the Fit: set as cover photo</b>.</p>` : "";
+  $("#needs").innerHTML = missing.length ? `<h2>Needs a cover photo</h2><ul class="q">${missing.map(f => `<li><span class="d">#${f.find}</span><span><b>${esc(f.celeb)}</b> · ${esc(f.context)}${(f.photo_candidates || []).map((c, i) => ` · <a href="${esc(c.page)}" target="_blank" title="${esc(c.license)}, ${esc(c.taken)}">free photo ${i + 1}</a>`).join("")}${(f.photo_leads || []).map(l => ` · <a href="${esc(l.url)}" target="_blank">${({ video: "video", x: "X" })[l.kind] || "IG"}: ${esc(l.by || "link")}${l.at ? " " + esc(l.at) : ""}</a>`).join("")}${f.photo_source ? ` · <a href="${esc(f.photo_source)}" target="_blank">article</a>` : ""} · <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(f.celeb + " " + f.context)}" target="_blank">search YouTube</a></span></li>`).join("")}</ul><p class="hint">${CFG && CFG.require_photo ? "Fits without a cover photo are skipped until you add one." : ""} Right-click the photo → <b>Cop the Fit: set as cover photo</b>.</p>` : "";
   const gh = `https://github.com/${s.owner}/${s.repo}`;
   $("#links").innerHTML = [s.site && `<a href="${esc(s.site)}" target="_blank">Open site</a>`,
     `<a href="${gh}/actions" target="_blank">Build &amp; post runs</a>`,
@@ -49,7 +49,7 @@ async function renderReview() {
       ${s.site ? `<img class="prev" src="${esc(s.site)}/slides/${f.find}/01.jpg" alt="Cover slide preview">` : ""}
       <div class="muted">${esc(f.detail)}</div>
       <ul class="items">${f.items.map(it => `<li><span class="lab ${it.label.toLowerCase()}">${it.label.toUpperCase()}</span>${esc(it.brand ? it.brand + " · " : "")}${esc(it.name)}</li>`).join("")}</ul>
-      <div class="muted">Source: ${f.sources.map(x => `<a href="${esc(x.url)}" target="_blank">${esc(x.label)}</a>`).join(", ")}${f.photo_source ? ` · <a href="${esc(f.photo_source)}" target="_blank">Photo of the look</a>` : ""}</div>
+      <div class="muted">Source: ${f.sources.map(x => `<a href="${esc(x.url)}" target="_blank">${esc(x.label)}</a>`).join(", ")}${(f.photo_leads || []).map(l => ` · <a href="${esc(l.url)}" target="_blank">${({ video: "Video", x: "X post" })[l.kind] || "IG post"}: ${esc(l.by || "link")}${l.at ? " " + esc(l.at) : ""}</a>`).join("")}</div>
       <div class="row">
         <button class="btn primary" data-act="next" type="button">Approve · post next</button>
         <button class="btn" data-act="approve" type="button">Approve</button>

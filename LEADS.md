@@ -21,7 +21,11 @@ Add 4–8 new male-celebrity fits from the last 7 days to `data/fits.json` as `"
    - `Similar`: 1–2 cheaper, buyable look-alikes, usually `amazon` + a plain search query. Never use the words dupe, fake, faux or replica.
    - One-off/custom pieces: no retailer, `note: "Custom piece — not for sale"`, plus a Similar pick.
    - `slide` numbers start at 2 and go up by 1.
-5. **Photo of the look:** set `photo_source` to the best page showing the outfit, so Niral can right-click the photo into the cover. Free photos from Wikimedia Commons are searched automatically by the build; when none exists, prefer, in order: the celebrity's own Instagram post, the team's or event's official post, then the article. Pick a clear, full-length shot without a watermark.
+5. **Where to grab the cover (`photo_leads`):** Niral screenshots the cover himself, so list 1–3 places that clearly show the outfit, best first:
+   1. The celebrity's own Instagram post of the look (`instagram.com/p/…` or `/reel/…`).
+   2. A video from the celebrity, team, league or event: YouTube, TikTok, or an Instagram reel (tunnel walks, arrival clips, vlogs, GRWM). Add `at` with the timestamp where the full outfit is clearest (e.g. "0:42").
+   3. The team's, league's or event's official Instagram post.
+   Each lead is `{"kind": "instagram" | "video", "url": "…", "by": "@account or channel", "at": "0:42", "note": "optional"}`. Never list Getty, Backgrid, Shutterstock, AP or other agency photos or footage, or anything watermarked. Only list links you actually found; if none, leave `photo_leads` empty. Keep `photo_source` as the article link.
 6. **Fields:** `find` (next free 3-digit number), `status: "review"`, `priority: 0`, `added` (today, YYYY-MM-DD), `celeb`, `context` (event), `date` (e.g. "Oct 12, 2026"), `category` (Fit, Kicks or Wrist), `timing: "Recent"`, `tags` (1–2 lowercase hashtags like "nfl", "tunnelfit"), `sources` ([{label: "Outlet — article", url}]), `note`, `posted_at: null`, `ig_media_id: null`, `ig_permalink: null`.
 
 ## Finish

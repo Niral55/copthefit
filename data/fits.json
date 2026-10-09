@@ -144,7 +144,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://fandomwire.com/emmys-2026-best-dressed-celebrities-ranked/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=Jdz1n5o2uJ0",
+     "by": "Entertainment Tonight (likely, '(Exclusive)' title format)",
+     "note": "2026 Emmys red carpet interview with Matthew Rhys and Keri Russell; channel not verified"
+    }
+   ]
   },
   {
    "find": "003",
@@ -239,6 +247,20 @@
      "author": "Nrbelex",
      "page": "https://commons.wikimedia.org/wiki/File:Carlos_Alcaraz_US_Open_2026_(cropped).jpg",
      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Carlos_Alcaraz_US_Open_2026_%28cropped%29.jpg/1920px-Carlos_Alcaraz_US_Open_2026_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/reel/DctPchKOVcw/",
+     "by": "@nike",
+     "note": "Cactus Jack x Nike campaign reel for Alcaraz's US Open return (embedded by Hypebeast); campaign footage, not the match walkout itself"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=w1-eIRgUCfQ",
+     "by": "US Open Tennis Championships (likely)",
+     "note": "Safiullin vs Alcaraz 1st round extended highlights; shows match kit, channel not verified"
     }
    ]
   },
@@ -590,7 +612,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=0MdE08vUIPI",
+     "by": "New Orleans Saints (likely)",
+     "note": "'Saints Arrive for Monday Night Football vs. Falcons' short; verify Cam Jordan's gold/black checkered jacket appears"
+    }
+   ]
   },
   {
    "find": "010",
@@ -659,7 +689,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.hola.com/us/celebrities/20260914923383/best-dressed-stars-2026-emmys/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=DIL5gOjjdb4",
+     "by": "Entertainment Tonight (likely, '(Exclusive)' title format)",
+     "note": "Sally Field and Colman Domingo crossover on the 2026 Emmys red carpet; channel not verified"
+    }
+   ]
   },
   {
    "find": "011",
@@ -716,7 +754,21 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://galeriemagazine.com/?p=250549",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=Rs2SPLJgvmE",
+     "by": "YouTube (likely US Open official; channel not verified)",
+     "note": "'AN ICON RETURNS - Roger Federer makes Arthur Ashe Stadium return'; check wrist close-ups"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=0q_1piLjPes",
+     "by": "YouTube (likely US Open official; channel not verified)",
+     "note": "Federer/McEnroe vs. Roddick/Agassi full exhibition match"
+    }
+   ]
   },
   {
    "find": "012",
@@ -769,7 +821,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=7sxVHYZ_PnA",
+     "by": "Harry Styles (official video, linked from YouTube's official blog)",
+     "note": "Official 'Aperture' music video; Prada Collapse slim sneakers"
+    }
+   ]
   },
   {
    "find": "013",
@@ -1007,7 +1067,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/rH5Nl04Ahdc",
+     "by": "YouTube Short (channel not verified)",
+     "note": "'Travis Scott arriving to the Premiere of Christopher Nolan's The Odyssey'; confirm it's not agency footage"
+    }
+   ]
   },
   {
    "find": "017",
@@ -1068,7 +1136,21 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "x",
+     "url": "https://x.com/Eagles/status/2099189733402247645",
+     "by": "@Eagles (X)",
+     "note": "Official team post of Week 1 tunnel arrival, Sept 13 2026 (embedded in SI article); X post, may be photo or clip"
+    },
+    {
+     "kind": "x",
+     "url": "https://x.com/NFL/status/2099200383771959683",
+     "by": "@NFL (X)",
+     "note": "Official league post of the arrival, Sept 13 2026; X post"
+    }
+   ]
   },
   {
    "find": "018",
@@ -1122,7 +1204,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/tfy-qYYeArs",
+     "by": "YouTube Short (channel not verified)",
+     "note": "'Noah Wyle and wife Sara Wyle have a sweet moment on the Emmy red carpet'; confirm it's the 2026 Emmys and not agency footage"
+    }
+   ]
   },
   {
    "find": "019",
@@ -1289,7 +1379,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "x",
+     "url": "https://x.com/NFL/status/2097797040331776062",
+     "by": "@NFL (X)",
+     "note": "Official NFL post 'A.J. Brown's @Patriots debut' from arrival day. Debut was actually Wed Sept 9, 2026 at Seattle, not Sept 13. X page couldn't be fetched, so the outfit isn't confirmed visible"
+    }
+   ]
   },
   {
    "find": "022",
@@ -1959,7 +2057,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.essence.com/fashion/michael-b-jordan-oscars-win-custom-louis-vuitton/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/juEH8ppE52s",
+     "by": "YouTube (unverified channel)",
+     "note": "Oscars 2026 red carpet short: Michael B. Jordan, Emma Stone & Timothée Chalamet"
+    }
+   ]
   },
   {
    "find": "033",
@@ -2009,7 +2115,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=NAedFXLOhC0",
+     "by": "YouTube (unverified channel)",
+     "note": "George & Amal Clooney red carpet, 2026 Golden Globes; the watch may only show briefly"
+    }
+   ]
   },
   {
    "find": "034",
@@ -2068,6 +2182,14 @@
      "author": "Amandamotz",
      "page": "https://commons.wikimedia.org/wiki/File:Bad_Bunny_Halftime_Show.jpg",
      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Bad_Bunny_Halftime_Show.jpg/1920px-Bad_Bunny_Halftime_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=gEiFbsKvD_E",
+     "by": "YouTube (unverified channel)",
+     "note": "Bad Bunny on the red carpet at the 2026 Grammys"
     }
    ]
   },
@@ -2132,7 +2254,21 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://precisionwatches.com/journal/wimbledon-2026-watches/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.tiktok.com/@wimbledon/video/7656860073410579734",
+     "by": "@wimbledon",
+     "note": "Official Wimbledon TikTok, posted June 29, 2026 (Day 1)"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=1yCHX6dRFns",
+     "by": "YouTube (unverified channel)",
+     "note": "All the celebrities at Wimbledon 2026, includes Beckham"
+    }
+   ]
   },
   {
    "find": "036",
@@ -2203,7 +2339,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://t2online.in/goodlife/fashion-beauty/bts-s-j-hope-and-goblin-star-gong-yoo-bring-the-spotlight-to-louis-vuitton-s-paris-fashion-week-showcase/2005862",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.tiktok.com/@parismatch/video/7654678085333306657",
+     "by": "@parismatch",
+     "note": "J-Hope at the LV show with BamBam, posted June 23, 2026"
+    }
+   ]
   },
   {
    "find": "037",
@@ -2263,6 +2407,14 @@
      "author": "All-Pro Reels",
      "page": "https://commons.wikimedia.org/wiki/File:Commanders_vs._Giants_2025_Laremy_Tunsil.jpg",
      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Commanders_vs._Giants_2025_Laremy_Tunsil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "x",
+     "url": "https://x.com/zach_pereles/status/1964696446210564562",
+     "by": "@zach_pereles (X)",
+     "note": "Tunsil, Deebo Samuel and Bobby Wagner arriving before Commanders-Giants, Sept 7, 2025. Reporter's post on X, not an official account"
     }
    ]
   },
@@ -2376,7 +2528,27 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://storyboard18.com/photos/brand-makers/you-cant-miss-these-looks-from-the-oscars-2026-red-carpet-92415.htm",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/4dqM8cv0d8Y",
+     "by": "YouTube (unverified channel)",
+     "note": "Timothée Chalamet at the Oscars 2026, all-white look"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/Bv9Rzrja4go",
+     "by": "YouTube (unverified channel)",
+     "note": "Oscars 2026: Timothée Chalamet red carpet"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/juEH8ppE52s",
+     "by": "YouTube (unverified channel)",
+     "note": "Oscars 2026 red carpet short with Chalamet"
+    }
+   ]
   },
   {
    "find": "040",
@@ -2427,7 +2599,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/7UAvYwmJuWY",
+     "by": "YouTube (unverified channel)",
+     "note": "Glen Powell in a blue velvet Brunello Cucinelli tux, Golden Globes 2026 red carpet; the watch may only show briefly"
+    }
+   ]
   },
   {
    "find": "041",
@@ -2521,6 +2701,20 @@
      "author": "Gage Skidmore",
      "page": "https://commons.wikimedia.org/wiki/File:Harry_Styles_wax_figure_(55129183784).jpg",
      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Harry_Styles_wax_figure_%2855129183784%29.jpg/1920px-Harry_Styles_wax_figure_%2855129183784%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.tiktok.com/@billboard/video/7602124377118739743",
+     "by": "@billboard",
+     "note": "Harry presenting Album of the Year on the Grammys stage, posted 2026-02-02"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.tiktok.com/@varietymagazine/video/7602124993090161934",
+     "by": "@varietymagazine",
+     "note": "Same AOTY presenting moment, posted 2026-02-02"
     }
    ]
   },
@@ -2712,7 +2906,15 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=HPgCnu0jsCM",
+     "by": "YouTube (channel unverified)",
+     "note": "'Exes Miley Cyrus, Patrick Schwarzenegger Reunite at Golden Globes 2026'. Could not confirm the channel (YouTube blocked), so check for agency watermarks"
+    }
+   ]
   },
   {
    "find": "045",
@@ -2815,7 +3017,21 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.tiktok.com/@goldenglobes/video/7594245571100019985",
+     "by": "@goldenglobes",
+     "note": "Official Golden Globes clip of Nick with Priyanka on the 2026 red carpet (posted 2026-01-11)"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=nheadE614SE",
+     "by": "YouTube (channel unverified)",
+     "note": "'WATCH: BLACKPINK's Lisa, Snoop Dogg & Nick Jonas Arrive at Golden Globes 2026 Red Carpet'"
+    }
+   ]
   },
   {
    "find": "047",
@@ -3021,7 +3237,21 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.tiktok.com/@e_entertainment/video/7594306896010497293",
+     "by": "@e_entertainment",
+     "note": "E! Glambot slow-mo, posted 2026-01-12. The search title says '2023' but the post date matches the 2026 Globes"
+    },
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/shorts/ogPx6x1nb5I",
+     "by": "YouTube (channel unverified)",
+     "note": "'Walton Goggins at the 2026 Golden Globes'"
+    }
+   ]
   }
  ]
 }

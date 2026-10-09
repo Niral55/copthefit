@@ -1,11 +1,25 @@
 {
   "manifest_version": 3,
   "name": "Cop the Fit Studio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grab product images and links for Cop the Fit posts, review new fits, and add fits to the site.",
-  "permissions": ["contextMenus", "storage"],
-  "host_permissions": ["<all_urls>"],
-  "background": { "service_worker": "bg.js" },
-  "action": { "default_popup": "popup.html", "default_title": "Cop the Fit Studio" },
-  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" }
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Cop the Fit Studio"
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
 }
