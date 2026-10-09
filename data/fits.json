@@ -566,7 +566,7 @@
   {
    "find": "009",
    "status": "approved",
-   "priority": 1,
+   "priority": 0,
    "added": "2026-10-08",
    "celeb": "Cameron Jordan",
    "context": "Monday Night Football arrival",
@@ -620,7 +620,11 @@
      "by": "New Orleans Saints (likely)",
      "note": "'Saints Arrive for Monday Night Football vs. Falcons' short; verify Cam Jordan's gold/black checkered jacket appears"
     }
-   ]
+   ],
+   "photo": {
+    "credit": "@New Orleans Saints Youtube"
+   },
+   "updated": "2026-10-09T14:31:07.388Z"
   },
   {
    "find": "010",
