@@ -3708,7 +3708,9 @@
      "query": "",
      "note": "",
      "slide": 2,
-     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/4a34f042d51941d393ae83faf5104043_9366/Anthony_Edwards_3_Shoes_Blue_KH8537_01_00_standard.jpg"
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/4a34f042d51941d393ae83faf5104043_9366/Anthony_Edwards_3_Shoes_Blue_KH8537_01_00_standard.jpg",
+     "id": "045e20",
+     "img": "images/cut/052-045e20.png"
     }
    ],
    "photo_leads": [
@@ -3785,7 +3787,9 @@
      "query": "",
      "note": "",
      "slide": 2,
-     "image_src": "https://images.soleretriever.com/sb/products/adidas_harden_vol_1_pioneer_LC5090-1786992586042.webp?width=1600&quality=90&fit=contain"
+     "image_src": "https://images.soleretriever.com/sb/products/adidas_harden_vol_1_pioneer_LC5090-1786992586042.webp?width=1600&quality=90&fit=contain",
+     "id": "951a88",
+     "img": "images/cut/053-951a88.png"
     }
    ],
    "photo_leads": [
@@ -4180,7 +4184,9 @@
      "query": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/086/390/256/original/1124742_01.jpg.jpeg?width=750",
      "note": "Kicks On SI names the 'First Game' colorway; HNHH describes it as white with red/crimson accents. 2023 retro (White/Midnight Navy-Varsity Crimson), $180 retail; StockX Buy Now $140 on Oct 9 (last sale $133). Image is GOAT's product shot of the same SKU (DM7535-101).",
-     "slide": 2
+     "slide": 2,
+     "id": "6daf13",
+     "img": "images/cut/057-6daf13.png"
     }
    ],
    "photo_options": [
@@ -4227,7 +4233,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "Shai Gilgeous-Alexander",
@@ -4261,7 +4268,9 @@
      "query": "",
      "image_src": "https://images.urbndata.com/is/image/UrbanOutfitters/105184493_092_b",
      "note": "Sources name the 501 Loose fit but not the wash. UO has 5 washes, but only sizes 30 and 32 were in stock; Nordstrom has Wild Raptor at $110 (https://www.nordstrom.com/s/501-loose-straight-leg-jeans-wild-raptor/8833910). image_src is UO's first product image and may be on-model; couldn't check it visually.",
-     "slide": 2
+     "slide": 2,
+     "id": "c334ca",
+     "img": "images/cut/058-c334ca.png"
     }
    ],
    "photo_options": [
@@ -4307,7 +4316,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "Lil Tecca",
@@ -4341,7 +4351,9 @@
      "query": "",
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/us-assets/GA-2100-1A1.png",
      "note": "Also at Walmart (https://www.walmart.com/ip/405925840).",
-     "slide": 2
+     "slide": 2,
+     "id": "b1ccce",
+     "img": "images/cut/059-b1ccce.png"
     },
     {
      "label": "Exact",
@@ -4353,7 +4365,9 @@
      "query": "",
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600ubb-1/assets/DW-5600UBB-1.png",
      "note": "The article gives a single $110 price line for the campaign, plus an Amazon listing at $93.99. Confirm this model's own price on Casio.",
-     "slide": 3
+     "slide": 3,
+     "id": "63aa30",
+     "img": "images/cut/059-63aa30.png"
     }
    ],
    "photo_options": [
@@ -4400,7 +4414,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   }
  ]
 }
