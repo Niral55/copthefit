@@ -4309,7 +4309,7 @@
    "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
    "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
    "find": "058",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -4317,7 +4317,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-09"
+   "photo_search": "2026-10-09",
+   "photo_src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkpy-Y9QYRcf_BZuC_bZ7rgzGcVKDWvle-kj4svVt7Ui3Vhv8Yf5vavmLUd9PrGovtyGFkE3SzC8ibhuzAB1Sdq6spvcYs2txGvoNs19CbQ4x7Tks3GxLizJVMGR34rlCpEbi41lkYryXHWikOkaJAqYpZYqZJKbiCpy7Ctt-MsUSDBuwu3vmKEOguaIk/s1280/levis-campaign-8.jpg",
+   "photo_src_page": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
+   "photo_src_credit": "Levi's / Mel Bles (via MyFaceHunter)",
+   "updated": "2026-10-09T20:48:44.416Z"
   },
   {
    "celeb": "Lil Tecca",
