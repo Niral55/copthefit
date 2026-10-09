@@ -12,7 +12,23 @@ from datetime import datetime, timezone
 
 import requests
 
-from common import load_config, load_fits, save_fits, queue, ready_queue, caption, ig_items
+import json
+
+from common import ROOT, load_config, load_fits, save_fits, queue, ready_queue, caption, ig_items
+
+STATUS = ROOT / "data" / "status.json"
+
+
+def record(result, message, **extra):
+    """Leave a note for the admin page: is Instagram connected, and what happened on the last run."""
+    try:
+        st = json.loads(STATUS.read_text()) if STATUS.exists() else {}
+    except ValueError:
+        st = {}
+    st["instagram"] = {"connected": bool(os.environ.get("IG_USER_ID") and os.environ.get("IG_ACCESS_TOKEN")),
+                       "last_run": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                       "result": result, "message": message, **extra}
+    STATUS.write_text(json.dumps(st, indent=1) + "\n")
 
 
 def api(path):
@@ -34,6 +50,7 @@ def main():
     cfg = load_config()
     if cfg.get("posting_paused"):
         print("posting_paused is true in config.json; nothing posted.")
+        record("paused", "Auto-posting is paused.")
         return
     doc = load_fits()
     want = os.environ.get("FIND", "").strip().zfill(3) if os.environ.get("FIND", "").strip() else ""
@@ -44,8 +61,10 @@ def main():
             sys.exit(f"#{want} isn't approved (or doesn't exist), so it can't be posted.")
     if not q:
         waiting = len(queue(doc))
-        print(f"Nothing ready to post. {waiting} queued fits are waiting for a cover photo." if waiting
-              else "Instagram queue is empty: add posts to it in the admin to keep posting.")
+        msg = (f"Nothing ready to post. {waiting} queued posts are waiting for a cover photo." if waiting
+               else "Instagram queue is empty: add posts to it in the admin to keep posting.")
+        print(msg)
+        record("empty", msg)
         return
     fit = q[0]
     site = cfg["site_url"].rstrip("/")
@@ -57,6 +76,7 @@ def main():
     dry = os.environ.get("DRY_RUN", "").lower() in ("1", "true", "yes")
     if not dry and not (os.environ.get("IG_USER_ID") and os.environ.get("IG_ACCESS_TOKEN")):
         print("IG_USER_ID / IG_ACCESS_TOKEN secrets aren't set yet; nothing posted.")
+        record("not_connected", f"Instagram isn't connected, so #{fit['find']} wasn't posted.")
         return
 
     if want:  # posted right after an edit: wait until the rebuilt slides are live
@@ -75,6 +95,7 @@ def main():
         sys.exit("Slides aren't live yet (run the Build and deploy workflow first): " + ", ".join(missing))
 
     if dry:
+        record("dry_run", f"Preview only: #{fit['find']} would post next.")
         print("DRY RUN, nothing posted.\n" + "\n".join(urls) + "\n---\n" + text)
         return
 
@@ -99,8 +120,14 @@ def main():
     fit["ig_media_id"] = media_id
     fit["ig_permalink"] = link
     save_fits(doc)
+    record("posted", f"Posted #{fit['find']} {fit['celeb']}.", find=fit["find"], permalink=link)
     print(f"Posted #{fit['find']}: {link}")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit as e:  # a failed post: tell the admin why
+        if e.code not in (None, 0):
+            record("error", str(e.code)[:300])
+        raise

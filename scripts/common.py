@@ -119,12 +119,13 @@ def hashtags(cfg, fit):
 
 def caption(cfg, fit):
     kw = (cfg.get("comment_keyword") or "").strip()
-    how = f"comment {kw} or tap the link in bio" if kw else "tap the link in bio and search"
+    short = cfg.get("site_url", "").replace("https://", "").rstrip("/") + "/" + str(int(fit["find"]))
+    exact_types = {i.get("type") for i in fit["items"] if i["label"] == "Exact"}
+    cheaper = any(i["label"] == "Similar" and i.get("type") in exact_types for i in fit["items"])
     outlet = fit["sources"][0]["label"].split(" — ")[0] if fit.get("sources") else ""
     parts = [
-        f"{fit['headline']}\nCop the fit → {how} #{fit['find']}"
-        + (" (get it for less there too)" if any(i["label"] == "Similar" for i in fit["items"]) and any(i["label"] == "Exact" for i in fit["items"]) else "")
-        + " · affiliate links",
+        f"{fit['headline']}\nCop the fit → " + (f"comment {kw}, or " if kw else "") + f"find #{fit['find']} at {short} (link in bio)"
+        + (" · get it for less there too" if cheaper else "") + " · affiliate links",
         fit["detail"],
         f"{fit['context']}, {fit['date']}." + (f" Spotted via {outlet}." if outlet else "")
         + (f" Photo: {fit['photo']['credit']}." if (fit.get("photo") or {}).get("credit") and photo_path(fit["find"]) else ""),

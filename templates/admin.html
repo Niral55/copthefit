@@ -65,6 +65,12 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 
 /* list */
 .list { display: flex; flex-direction: column; gap: 8px; }
+.status { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 8px; }
+.status .st { font: 12.5px var(--body); padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--tag); color: var(--ink); text-decoration: none; display: inline-flex; gap: 6px; align-items: center; }
+.status .st::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); flex: none; }
+.status .st.warn::before { background: var(--warn); }
+.status .st.bad::before { background: var(--bad); }
+.status a.st:hover { border-color: var(--ink); }
 .prods { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .prod { display: flex; flex-direction: column; gap: 8px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 12px; min-width: 0; }
 .prod.busy { opacity: .45; pointer-events: none; transition: opacity .15s; }
@@ -172,6 +178,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
       <button class="btn" id="bulkCovers" type="button" title="Pick several photos named by Find #, e.g. 029-asap-rocky.jpg">Bulk upload covers</button>
       <button class="btn primary" id="newPost" type="button">+ New post</button>
     </div>
+    <div class="status" id="status"></div>
     <p class="hint" id="tabHint"></p>
     <div class="bulk" id="bulk"></div>
     <div class="list" id="list"></div>
@@ -268,6 +275,7 @@ let STAMP = Date.now();
 
 /* ---------- state ---------- */
 let PRODUCTS = { products: [] };
+let STATUS = {}; // data/status.json: what the Instagram poster saw on its last run
 let DIRTY = false; // unsaved edits in the open post
 function confirmLeave() {
   if (!DIRTY && !(PENDING && (PENDING.photo || PENDING.items.size))) return true;
@@ -328,7 +336,28 @@ function renderTabs() {
   $("#tabHint").textContent = STAGES.find(s => s.id === TAB).hint;
 }
 
+// One line of health checks: is Instagram working, what posts next, are links earning, are covers showing.
+const README_IG = "https://github.com/Niral55/copthefit#3-instagram-auto-posting";
+function renderStatus() {
+  const ig = STATUS.instagram || null, q = DOC.fits.filter(f => f.status === "approved" && f.ig_queue).sort(queueOrder);
+  const ready = q.filter(f => !(CFG && CFG.require_photo) || (f.photo && f.photo.credit));
+  const when = d => { try { return new Date(d).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); } catch (e) { return d; } };
+  const chips = [];
+  if (ig && ig.connected === false) chips.push(`<a class="st bad" href="${README_IG}" target="_blank" rel="noopener">Instagram isn't connected, so nothing can post. How to connect ↗</a>`);
+  else if (!ig) chips.push(`<a class="st warn" href="${README_IG}" target="_blank" rel="noopener">Instagram: no posting run yet (connect it, then try Post now) ↗</a>`);
+  else if (ig.result === "error") chips.push(`<span class="st bad" title="${esc(ig.message)}">Last Instagram post failed (${esc(when(ig.last_run))}): ${esc(ig.message.slice(0, 90))}</span>`);
+  else if (ig.result === "posted") chips.push(`<span class="st">Last posted ${esc(when(ig.last_run))}${ig.permalink ? ` · <a href="${esc(ig.permalink)}" target="_blank" rel="noopener">view</a>` : ""}</span>`);
+  if (CFG && CFG.posting_paused) chips.push(`<a class="st warn" href="#settings" data-go="cfg">Daily auto-posting is paused</a>`);
+  else chips.push(ready.length ? `<span class="st">Next post: #${ready[0].find} ${esc(ready[0].celeb)} · daily at 12:05 PM ET · ${ready.length} ready</span>`
+    : `<span class="st warn">Instagram queue: ${q.length ? `${q.length} waiting for a cover photo` : "empty"}. Nothing will post.</span>`);
+  if (!hasAffIds()) chips.push(`<a class="st warn" href="#settings" data-go="cfg">Shop links aren't earning yet: add affiliate IDs</a>`);
+  if (CFG && CFG.site_photos !== "all") chips.push(`<a class="st warn" href="#settings" data-go="cfg">Cover photos are hidden on the website</a>`);
+  $("#status").innerHTML = chips.join("");
+  $("#status").querySelectorAll('[data-go="cfg"]').forEach(a => a.onclick = e => { e.preventDefault(); openCfg(); });
+}
+
 function renderList() {
+  renderStatus();
   renderTabs();
   const q = $("#q").value.trim().toLowerCase().replace(/^#/, "");
   let list = DOC.fits.filter(STAGES.find(x => x.id === TAB).test);
@@ -491,6 +520,7 @@ function renderEditor() {
           <div class="photo" id="photoBox">${purl ? `<div class="pw" id="pw"><img id="pimg" src="${esc(purl)}" alt="Cover photo. Click to pin items."></div>` : `<div class="ph">No photo yet.<br>Upload one, paste one, or pick a free photo below.</div>`}</div>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" id="upPhoto" type="button">Upload photo</button>${purl ? `<button class="btn sm" id="clearPins" type="button">Clear pins</button>` : ""}</div>
           ${purl ? `<p class="hint" id="pinHint"></p>` : `<p class="hint">Tip: copy an image and press Ctrl/Cmd+V here to paste it.</p>`}
+          ${purl && CFG && CFG.site_photos !== "all" ? `<p class="hint" style="color:var(--warn)">Used on Instagram. Hidden on the website by your settings (<a href="#settings" id="goCfg2">change</a>).</p>` : ""}
           <label class="f" for="credit">Photo credit<input id="credit" value="${esc((d.photo || {}).credit || "")}" placeholder="@account or photographer / agency"></label>
           ${(d.photo_candidates || []).length ? `<h2>Free photos found (public domain / CC)</h2><div class="cands">${d.photo_candidates.map((c, i) => `<button type="button" data-c="${i}" title="${esc(c.author)}, ${esc(c.license)}, ${esc(c.taken)}"><img src="${esc(c.image)}" alt="Free photo ${i + 1}" loading="lazy"></button>`).join("")}</div><p class="hint">Tap one to use it. The credit fills in.</p>` : ""}
           ${d.celeb ? `<h2>Grab the cover from</h2>` : ""}${(d.photo_leads || []).length ? `<ol class="leads">${d.photo_leads.map((l, i) => `<li><span class="kind">${KIND[l.kind] || "Link"}</span> <a href="${esc(l.url)}" target="_blank" data-l="${i}">${esc(l.by || l.url)}${l.at ? ` · ${esc(l.at)}` : ""} ↗</a>${l.note ? `<div class="hint">${esc(l.note)}</div>` : ""}</li>`).join("")}</ol><p class="hint">Best first. Pause the video on a still, full-length moment, screenshot, then upload or paste it here. Opening a link fills the credit.</p>` : ""}
@@ -546,6 +576,7 @@ function renderEditor() {
   renderPins();
   renderReady();
   DIRTY = false;
+  if ($("#goCfg2")) $("#goCfg2").onclick = e => { e.preventDefault(); if (confirmLeave()) openCfg(); };
   if ($("#goCfg")) $("#goCfg").onclick = e => { e.preventDefault(); if (confirmLeave()) openCfg(); };
   $("#back").onclick = () => { if (confirmLeave()) closeEditor(); };
   $("#upPhoto").onclick = () => pickFile(f => setPhoto(f));
@@ -584,6 +615,8 @@ function renderItems() {
       <span class="n">${i + 1}</span>
       <button class="img" type="button" data-up="${i}" aria-label="Upload image for item ${i + 1}">${src ? `<img src="${esc(src)}" alt="">` : "Add image"}</button>
       <div class="fields">
+        ${it.image_fetch && !src ? `<p class="aff" style="grid-column:1/-1;margin:0">Couldn't get the product photo automatically. Tap the image box to upload one.</p>` : ""}
+        ${it.image_replace_failed ? `<p class="aff" style="grid-column:1/-1;margin:0">A better product photo couldn't be downloaded; the current one was kept.</p>` : ""}
         <label class="f" for="ty${i}">Category<select id="ty${i}" data-k="type">${ITEM_TYPES.map(([v, l]) => `<option value="${v}"${(it.type || "") === v ? " selected" : ""}>${l}</option>`).join("")}</select></label>
         <label class="f" for="lab${i}">Exact or similar<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
         <label class="f" for="br${i}">Brand<input id="br${i}" data-k="brand" value="${esc(it.brand)}" placeholder="${it.label === "Similar" ? "(optional)" : "Rolex"}"></label>
@@ -1018,6 +1051,22 @@ function parseItems() {
   });
 }
 
+// The build and the Instagram poster change posts in the background (cut-out images, cover processing,
+// "posted" status). Saving an editor that was opened before those changes must not undo them.
+const BOT_ITEM_KEYS = ["img", "id", "image_fetch", "image_src", "image_replace", "image_replace_failed"];
+function keepBackgroundChanges(latest, fresh, action) {
+  for (const k of ["posted_at", "ig_media_id", "ig_permalink"]) if (latest[k]) fresh[k] = latest[k];
+  if (latest.status === "posted" && !["unpublish", "restore"].includes(action)) { fresh.status = "posted"; fresh.ig_queue = false; }
+  if (latest.photo) fresh.photo = { ...latest.photo, ...(fresh.photo || {}) };   // a cover added elsewhere stays; your credit edit wins
+  else if (!fresh.photo || !Object.keys(fresh.photo).length) delete fresh.photo;
+  const key = it => (it.brand || "") + "|" + (it.name || "");
+  fresh.items.forEach(it => {
+    const o = latest.items.find(x => it.id && x.id === it.id) || latest.items.find(x => !x.id && key(x) === key(it)) || latest.items.find(x => key(x) === key(it));
+    if (!o) return;
+    for (const k of BOT_ITEM_KEYS) { if (o[k] !== undefined) it[k] = o[k]; else delete it[k]; }
+  });
+}
+
 async function save(action) {
   readForm();
   const d = DRAFT;
@@ -1047,7 +1096,8 @@ async function save(action) {
         priority: action === "next" || action === "now" ? 0 : action === "unqueue" ? 1 : (f ? f.priority ?? 1 : 1),
         added: (f && f.added) || new Date().toISOString().slice(0, 10)
       };
-      if (!d.photo) delete fresh.photo;
+      if (f) keepBackgroundChanges(f, fresh, action);
+      else if (!d.photo) delete fresh.photo;
       if (f) Object.keys(f).forEach(k => delete f[k]); else { f = {}; doc.fits.push(f); }
       Object.assign(f, fresh);
       // image files for this commit
@@ -1095,7 +1145,7 @@ async function save(action) {
 /* ---------- boot ---------- */
 async function load() {
   flash("Loading…");
-  [DOC, CFG, PRODUCTS] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json"), GH.jsonOr("data/products.json", undefined, { products: [] })]);
+  [DOC, CFG, PRODUCTS, STATUS] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json"), GH.jsonOr("data/products.json", undefined, { products: [] }), GH.jsonOr("data/status.json", undefined, {})]);
   renderProdCount();
   flash("");
   const m = location.hash.match(/^#edit-(\d{3})$/); // a bookmarked or refreshed post opens directly

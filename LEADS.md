@@ -29,7 +29,7 @@ Add 4–8 new male-celebrity fits from the last 7 days to `data/fits.json` as `"
    2. A video from the celebrity, team, league or event: YouTube, TikTok, or an Instagram reel (tunnel walks, arrival clips, vlogs, GRWM). Add `at` with the timestamp where the full outfit is clearest (e.g. "0:42").
    3. The team's, league's or event's official Instagram post.
    Each lead is `{"kind": "instagram" | "video", "url": "…", "by": "@account or channel", "at": "0:42", "note": "optional"}`. Never list Getty, Backgrid, Shutterstock, AP or other agency photos or footage, or anything watermarked. Only list links you actually found; if none, leave `photo_leads` empty. Keep `photo_source` as the article link.
-7. **Fields:** `find` (next free 3-digit number), `status: "review"`, `priority: 0`, `added` (today, YYYY-MM-DD), `celeb`, `context` (event), `date` (e.g. "Oct 12, 2026"), `category` (Fit, Kicks or Wrist), `timing: "Recent"`, `tags` (1–2 lowercase hashtags like "nfl", "tunnelfit"), `sources` ([{label: "Outlet — article", url}]), `note`, `posted_at: null`, `ig_media_id: null`, `ig_permalink: null`.
+7. **Fields:** `find` (next free 3-digit number), `status: "review"`, `priority: 0`, `added` (today, YYYY-MM-DD), `celeb`, `context` (event), `date` (e.g. "Oct 12, 2026"), `category` (Fit, Kicks or Wrist), `tags` (1–2 lowercase hashtags like "nfl", "tunnelfit"), `sources` ([{label: "Outlet — article", url}]), `note`, `posted_at: null`, `ig_media_id: null`, `ig_permalink: null`.
 
 ## Finish
 1. Run `python scripts/check.py` and fix any errors.

@@ -257,9 +257,9 @@ function renderHome() {
 }
 
 function drawGrid() {
-  const list = FITS.filter(matches).sort((a, b) => +b.find - +a.find);
+  const list = FITS.filter(matches).sort((a, b) => (b.posted_at || "").localeCompare(a.posted_at || "") || +b.find - +a.find);
   const items = list.reduce((n, f) => n + f.items.length, 0);
-  document.getElementById("count").textContent = `${list.length} ${list.length === 1 ? "find" : "finds"} · ${items} items · newest first`;
+  document.getElementById("count").textContent = `${list.length} ${list.length === 1 ? "find" : "finds"} · ${items} items · latest first`;
   document.getElementById("grid").innerHTML = list.length ? list.map(f => `
     <a class="tagcard" href="${fitUrl(f)}">
       ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy"></span>`
@@ -287,6 +287,7 @@ function renderFit(f) {
           <dt>Where</dt><dd>${esc(f.context)}</dd>
           <dt>When</dt><dd>${esc(f.date)}</dd>
           <dt>Items</dt><dd>${exact} exact · ${f.items.length - exact} similar</dd>
+          ${f.ig ? `<dt>Post</dt><dd><a href="${esc(f.ig)}" target="_blank" rel="noopener">View on Instagram ↗</a></dd>` : ""}
         </dl>
       </aside>
       <div style="min-width:0">

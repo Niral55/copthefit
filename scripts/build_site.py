@@ -16,6 +16,30 @@ from common import ROOT, DIST, CUT_DIR, load_config, load_fits, raw_url, shop_ur
 e = lambda t: H.escape(str(t or ""), quote=True)
 
 
+MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)}
+
+
+def event_date(text):
+    """Best guess at when the look happened, from dates like "Sept 14, 2026", "Late Aug 2026", "2026"."""
+    from datetime import date
+    t = (text or "").lower()
+    y = re.search(r"(19|20)\d\d", t)
+    if not y:
+        return None
+    m = re.search(r"\b(" + "|".join(MONTHS) + r")[a-z]*\.?", t)
+    d = re.search(r"\b(\d{1,2})(?:st|nd|rd|th)?\b,?\s*(?:19|20)\d\d", t)
+    return date(int(y.group(0)), MONTHS[m.group(1)] if m else 7, int(d.group(1)) if (m and d) else 15)
+
+
+def timing(fit):
+    """"Recent" = the look is from the last ~4 months; older looks become "Evergreen" on their own."""
+    from datetime import date
+    d = event_date(fit.get("date"))
+    if d is None:
+        return fit.get("timing") or "Evergreen"
+    return "Recent" if (date.today() - d).days <= 120 else "Evergreen"
+
+
 def slugify(t):
     t = unicodedata.normalize("NFKD", t.replace("$", "s").replace("&", " and ")).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
@@ -111,7 +135,8 @@ def ssr_fit(cfg, f, raw, prev, nxt):
            + "</div>" + (f'<figcaption>Photo: {e(f["cover_credit"])}</figcaption>' if f["cover"] and f["cover_credit"] else "") + "</figure>",
            f'<div><div class="label">Find</div><div class="bignum">#{f["find"]}</div></div>',
            f'<dl><dt>Who</dt><dd>{e(f["celeb"])}</dd><dt>Where</dt><dd>{e(f["context"])}</dd><dt>When</dt><dd>{e(f["date"])}</dd>'
-           f'<dt>Items</dt><dd>{len(exact)} exact · {len(cheap)} similar</dd></dl></aside>',
+           f'<dt>Items</dt><dd>{len(exact)} exact · {len(cheap)} similar</dd>'
+           + (f'<dt>Post</dt><dd><a href="{e(f["ig"])}" target="_blank" rel="noopener">View on Instagram ↗</a></dd>' if f["ig"] else "") + '</dl></aside>',
            f'<div style="min-width:0"><p class="celeb">What {e(f["celeb"])} wore · {e(f["context"])}</p><h1>{e(f["headline"])}</h1><p class="detail">{e(f["detail"])}</p>']
     if exact:
         out.append('<h2 class="sect">The exact fit</h2><ol class="items">' + "".join(row(a, b) for a, b in exact) + "</ol>")
@@ -128,13 +153,13 @@ def ssr_fit(cfg, f, raw, prev, nxt):
 
 def ssr_home(public):
     cards = []
-    for f in sorted(public, key=lambda x: -int(x["find"])):
+    for f in sorted(public, key=lambda x: (x.get("posted_at") or "", int(x["find"])), reverse=True):
         pic = (f'<span class="pic photo"><img src="{e(f["cover"])}" alt="{e(f["celeb"])} at {e(f["context"])}" loading="lazy"></span>' if f["cover"]
                else f'<span class="pic"><img src="{e(f["image"])}" alt="" loading="lazy"></span>' if f["image"]
                else '<span class="pic"><span class="ph">Photo coming</span></span>')
         cards.append(f'<a class="tagcard" href="f/{f["slug"]}/">{pic}<span class="num">FIND #{f["find"]}</span><span class="who">{e(f["celeb"])}</span>'
                      f'<span class="hl">{e(f["headline"])}</span><span class="meta"><span>{e(f["category"])}</span><span>{len(f["items"])} items</span><span>{e(f["date"])}</span></span></a>')
-    return f'<p class="count">{len(public)} finds · newest first</p><div class="grid">' + "".join(cards) + "</div>"
+    return f'<p class="count">{len(public)} finds · latest first</p><div class="grid">' + "".join(cards) + "</div>"
 
 
 def main():
@@ -175,7 +200,7 @@ def main():
             cover, credit = f"img/photo-{fit['find']}.jpg", meta.get("credit", "")
         public.append(dict(cover=cover, cover_credit=credit, slug=f"{fit['find']}-{slugify(fit['celeb'])}-{slugify(re.sub(r'[,(].*$', '', fit['context']))}"[:72].strip("-") + "-" + NOUN.get(fit["category"], "outfit"),
             find=fit["find"], celeb=fit["celeb"], context=fit["context"], date=fit["date"],
-            category=fit["category"], timing=fit.get("timing", ""), headline=fit["headline"],
+            category=fit["category"], timing=timing(fit), posted_at=fit.get("posted_at") or "", headline=fit["headline"],
             detail=fit["detail"], sources=fit["sources"], note=fit.get("note", ""),
             image=first, ig=fit.get("ig_permalink") or "", items=items))
 
@@ -233,6 +258,16 @@ def main():
              ssr_fit(cfg, f, raw, public[n - 1] if n else None, public[n + 1] if n + 1 < len(public) else None),
              find=f["find"], base="../../")
         urls.append((url, (raw.get("updated") or raw.get("added") or "")[:10]))
+
+    # Short links: /029 and /29 jump to the post (easy to type from an Instagram caption)
+    for f in public:
+        target = f"{site}/f/{f['slug']}/"
+        stub = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>#{f["find"]} {e(f["celeb"])} · Cop the Fit</title>'
+                f'<link rel="canonical" href="{target}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={target}">'
+                f'<script>location.replace({json.dumps(target)} + location.search)</script></head><body><a href="{target}">Cop the Fit #{f["find"]}</a></body></html>\n')
+        for short in {f["find"], str(int(f["find"]))}:
+            (DIST / short).mkdir(exist_ok=True)
+            (DIST / short / "index.html").write_text(stub)
 
     # Disclosure & privacy (affiliate programs ask for this; linked in the footer)
     handle = (cfg.get("instagram_handle") or "").lstrip("@")

@@ -4,7 +4,7 @@ name: Build and deploy
 on:
   push:
     branches: [main]
-    paths-ignore: [data/products.json, extension/**, LEADS.md, README.md]  # these don't change the site
+    paths-ignore: [data/products.json, data/status.json, extension/**, LEADS.md, README.md]  # these don't change the site
   workflow_dispatch:
 
 permissions:
