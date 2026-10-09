@@ -145,13 +145,13 @@ def fetch_missing(doc):
             continue
         for it in f["items"]:
             key = f"{f['find']}-{it['slide']}"
-            if not it.get("product_url") or cutout_path(f["find"], it) or it.get("image_fetch"):
+            if not (it.get("product_url") or it.get("image_src")) or cutout_path(f["find"], it) or it.get("image_fetch"):
                 continue
             try:
-                src = page_image(it["product_url"])
+                src = it.get("image_src") or page_image(it["product_url"])
                 if not src:
                     raise ValueError("no product image on page")
-                r = requests.get(src, headers={"User-Agent": UA, "Referer": it["product_url"]}, timeout=25)
+                r = requests.get(src, headers={"User-Agent": UA, "Referer": it.get("product_url") or src}, timeout=25)
                 r.raise_for_status()
                 out = CUT_DIR / f"{f['find']}-{item_key(it)}.png"
                 remove_bg(Image.open(io.BytesIO(r.content))).save(out, optimize=True)
