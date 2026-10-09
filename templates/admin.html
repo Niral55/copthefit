@@ -523,7 +523,7 @@ async function bulkCovers(files) {
       return names;
     }, pend, `Covers: ${imgs.map(p => "#" + p.find).join(", ")}`);
     STAMP = Date.now();
-    flash(`Added covers for ${done.map(esc).join(", ")}. Credits were filled from each post's source; open a post to check it and pin the items.${skipped.length ? ` Skipped (no matching Find #): ${skipped.map(esc).join(", ")}.` : ""}`, "ok");
+    flash(`Added covers for ${done.map(esc).join(", ")}. They show up here in about 3–5 minutes, once the build finishes (refresh then). Credits were filled from each post's source; open a post to check it and pin the items.${skipped.length ? ` Skipped (no matching Find #): ${skipped.map(esc).join(", ")}.` : ""}`, "ok");
     renderList();
   } catch (e) { flash(esc(e.message), "err"); }
 }
