@@ -61,6 +61,14 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 
 /* list */
 .list { display: flex; flex-direction: column; gap: 8px; }
+.prods { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.prod { display: flex; flex-direction: column; gap: 8px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 12px; min-width: 0; }
+.prod .pic { aspect-ratio: 1; max-height: 220px; background: #fff; border-radius: 4px; display: grid; place-items: center; overflow: hidden; }
+.prod .pic img { width: 100%; height: 100%; object-fit: contain; }
+.prod .meta { font: 11px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.prod .raw { font-size: 12px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.prod .sug { font-size: 12.5px; border-left: 3px solid var(--accent); padding-left: 8px; }
+#openProducts b { font: 500 11px var(--mono); margin-left: 4px; }
 .cfg { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; align-items: start; }
 .cfg .panel { display: flex; flex-direction: column; gap: 10px; }
 .stores { display: flex; flex-direction: column; gap: 8px; }
@@ -140,7 +148,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
 <div class="wrap">
   <header>
     <a class="mark" href="./">Cop the <span>Fit</span><small>ADMIN</small></a>
-    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="openCfg" type="button">Affiliates &amp; settings</button><button class="btn" id="openSettings" type="button">GitHub</button><a class="btn" href="./" target="_blank">View site ↗</a></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="openProducts" type="button">Products <b id="prodCount"></b></button><button class="btn" id="openCfg" type="button">Affiliates &amp; settings</button><button class="btn" id="openSettings" type="button">GitHub</button><a class="btn" href="./" target="_blank">View site ↗</a></div>
   </header>
   <div id="flash"></div>
 
@@ -158,6 +166,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
 
   <section id="editView" hidden></section>
   <section id="cfgView" hidden></section>
+  <section id="prodView" hidden></section>
 </div>
 
 <dialog id="settings">
@@ -214,16 +223,19 @@ const GH = {
     return JSON.parse(GH.dec(f.content || (await GH.req(`/git/blobs/${f.sha}`)).content));
   },
   // Read the latest data, apply change(doc), and commit it together with any image files, in one commit.
-  async commit(change, files, message) {
+  async jsonOr(path, ref, fallback) { try { return await GH.json(path, ref); } catch (e) { if (e.status === 404) return fallback; throw e; } },
+  async commit(change, files, message, more = []) {
     const s = settings();
     for (let attempt = 0; attempt < 3; attempt++) {
       const ref = await GH.req(`/git/ref/heads/${encodeURIComponent(s.branch)}`);
       const head = ref.object.sha;
       const doc = await GH.json("data/fits.json", head);
       const result = change(doc);
+      const extra = [];
+      for (const m of more) { const j = await GH.jsonOr(m.path, head, m.empty); m.change(j); extra.push({ path: m.path, base64: GH.b64text(JSON.stringify(j, null, 1) + "\n"), json: j }); }
       const commit = await GH.req(`/git/commits/${head}`);
       const tree = [];
-      for (const f of [{ path: "data/fits.json", base64: GH.b64text(JSON.stringify(doc, null, 1) + "\n") }, ...files]) {
+      for (const f of [{ path: "data/fits.json", base64: GH.b64text(JSON.stringify(doc, null, 1) + "\n") }, ...files, ...extra]) {
         const blob = await GH.req(`/git/blobs`, { method: "POST", body: JSON.stringify({ content: f.base64, encoding: "base64" }) });
         tree.push({ path: f.path, mode: "100644", type: "blob", sha: blob.sha });
       }
@@ -232,6 +244,7 @@ const GH = {
       try {
         await GH.req(`/git/refs/heads/${encodeURIComponent(s.branch)}`, { method: "PATCH", body: JSON.stringify({ sha: c.sha }) });
         DOC = doc;
+        for (const m of more) if (m.done) m.done(extra.find(x => x.path === m.path).json);
         return result;
       } catch (e) { if (e.status !== 422 || attempt === 2) throw e; } // someone else saved first: redo on top
     }
@@ -241,6 +254,7 @@ const GH = {
 let STAMP = Date.now();
 
 /* ---------- state ---------- */
+let PRODUCTS = { products: [] };
 let DOC = null, CFG = null, TAB = "all", DRAFT = null, PENDING = null;
 const SEL = new Set(); // Find #s ticked in the list
 let SHOWN = [];      // Find #s currently listed (for Select all)
@@ -333,7 +347,8 @@ function renderBulk() {
   const all = SHOWN.length && shown === SHOWN.length;
   $("#bulk").innerHTML = !SHOWN.length ? "" : `<label><input type="checkbox" id="selAll"${all ? " checked" : ""}> Select all${SHOWN.length ? ` (${SHOWN.length})` : ""}</label>
     ${SEL.size ? `<span class="n">${SEL.size} selected</span>
-      ${Object.entries(BULK).map(([k, a]) => `<button class="btn sm${a.danger ? " danger" : k === "publish" ? " primary" : ""}" type="button" data-bulk="${k}">${a.label}</button>`).join("")}
+      ${Object.entries(BULK).map(([k, a]) => { const n = [...SEL].filter(x => { const f = DOC.fits.find(y => y.find === x); return f && a.apply(JSON.parse(JSON.stringify(f))); }).length;
+        return n ? `<button class="btn sm${a.danger ? " danger" : k === "publish" ? " primary" : ""}" type="button" data-bulk="${k}">${a.label}${n < SEL.size ? ` (${n})` : ""}</button>` : ""; }).join("")}
       <button class="btn sm" type="button" id="selClear">Clear</button>` : ""}`;
   const sa = $("#selAll");
   if (sa) { sa.indeterminate = shown > 0 && !all; sa.onchange = () => { SHOWN.forEach(n => sa.checked ? SEL.add(n) : SEL.delete(n)); renderList(); }; }
@@ -386,7 +401,7 @@ function openEditor(find, fromHistory) {
   DRAFT = JSON.parse(JSON.stringify(src));
   DRAFT.items.forEach(it => it._link = linkText(it));
   PENDING = { photo: null, items: new Map() }; // item object -> {b64, url}
-  $("#listView").hidden = true; $("#cfgView").hidden = true;
+  $("#listView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true;
   $("#editView").hidden = false;
   renderEditor();
   window.scrollTo(0, 0);
@@ -396,12 +411,13 @@ function closeEditor() {
   if (history.state && history.state.ed) { history.back(); return; } // popstate finishes closing
   showList();
 }
-function showList() { DRAFT = null; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#listView").hidden = false; renderList(); }
+function showList() { DRAFT = null; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true; $("#listView").hidden = false; renderList(); }
 window.addEventListener("popstate", () => {
   if (!DOC) return;
   const m = location.hash.match(/^#edit-(\d{3}|new)$/);
   if (m) { openEditor(m[1] === "new" ? null : m[1], true); return; }
   if (location.hash === "#settings") { openCfg(true); return; }
+  if (location.hash === "#products") { openProducts(true); return; }
   const t = location.hash.match(/^#tab-(\w+)$/);
   const tab = t && STAGES.some(x => x.id === t[1]) ? t[1] : "all";
   if (tab !== TAB) { TAB = tab; SEL.clear(); }
@@ -632,6 +648,72 @@ async function bulkCovers(files) {
 }
 
 
+
+/* ---------- saved products (from the extension's "Save product to Cop the Fit") ---------- */
+function renderProdCount() { const n = PRODUCTS.products.length; $("#prodCount").textContent = n ? n : ""; }
+function openProducts(fromHistory) {
+  if (!fromHistory) history.pushState({ prod: 1 }, "", "#products");
+  $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = false;
+  renderProducts(); window.scrollTo(0, 0);
+}
+function closeProducts() { if (history.state && history.state.prod) { history.back(); return; } showList(); }
+function prodPrice(p) { return p.price ? `${p.currency === "USD" || !p.currency ? "$" : p.currency + " "}${p.price}` : ""; }
+function renderProducts() {
+  const list = PRODUCTS.products;
+  const fits = DOC.fits.filter(f => f.status !== "rejected").sort((a, b) => +b.find - +a.find);
+  const opt = sel => `<option value="">Choose a post…</option>` + fits.map(f => `<option value="${f.find}"${f.find === sel ? " selected" : ""}>#${f.find} ${esc(f.celeb)} · ${esc(f.context)}${f.items.length >= 8 ? " (full)" : ""}</option>`).join("");
+  $("#prodView").innerHTML = `
+    <div class="ed-head"><div style="display:flex;gap:12px;align-items:baseline;flex-wrap:wrap"><button class="btn sm" id="prodBack" type="button">← All posts</button><h1 class="ed-title">Products</h1><span class="pill">${list.length} saved</span></div><button class="btn sm" id="prodRefresh" type="button">Refresh</button></div>
+    <p class="hint">Products you saved with right-click → <b>Save product to Cop the Fit</b> on any store page. Check the name, pick a post and add it: it becomes an item with its link and product image, and leaves this list.${list.some(p => !p.enriched) ? " Names marked “tidying…” are still being cleaned up (about a minute); press Refresh." : ""}</p>
+    <div class="prods">${list.map((p, i) => {
+      const sug = p.suggested_find && fits.find(f => f.find === p.suggested_find);
+      return `<div class="prod" data-i="${i}">
+        <div class="pic">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="meta">No image</span>`}</div>
+        <div class="meta">${esc(p.store)}${prodPrice(p) ? " · " + esc(prodPrice(p)) : ""} · <a href="${esc(p.url)}" target="_blank" rel="noopener">open ↗</a>${p.enriched === "ai" ? " · ✨ AI-tidied" : !p.enriched ? " · tidying…" : ""}</div>
+        <div class="raw" title="${esc(p.title_raw)}">${esc(p.title_raw)}</div>
+        <div class="two"><label class="f" for="pb${i}">Brand<input id="pb${i}" data-k="brand" value="${esc(p.brand)}"></label>
+          <label class="f" for="pt${i}">Type<select id="pt${i}" data-k="label"><option${p.label !== "Exact" ? " selected" : ""}>Similar</option><option${p.label === "Exact" ? " selected" : ""}>Exact</option></select></label></div>
+        <label class="f" for="pn${i}">Item name<input id="pn${i}" data-k="name" value="${esc(p.name || "")}" placeholder="Short name, e.g. Automatic tonneau watch"></label>
+        ${sug ? `<div class="sug">Suggested: <b>#${sug.find} ${esc(sug.celeb)}</b>${p.reason ? ` · ${esc(p.reason)}` : ""}</div>` : ""}
+        <label class="f" for="pf${i}">Add to post<select id="pf${i}" data-k="find">${opt(p.suggested_find || "")}</select></label>
+        <div style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn sm primary" type="button" data-add="${i}">Add to post</button><button class="btn sm danger" type="button" data-del="${i}">Delete</button></div>
+      </div>`; }).join("") || `<p class="empty">No saved products. On any store page, right-click → <b>Save product to Cop the Fit</b> (Chrome extension).</p>`}</div>`;
+  $("#prodBack").onclick = closeProducts;
+  $("#prodRefresh").onclick = async () => { PRODUCTS = await GH.jsonOr("data/products.json", undefined, { products: [] }); renderProdCount(); renderProducts(); };
+  const val = (i, k) => $("#prodView").querySelector(`.prod[data-i="${i}"] [data-k="${k}"]`).value.trim();
+  $("#prodView").querySelectorAll("[data-add]").forEach(b => b.onclick = () => addProduct(+b.dataset.add, { brand: val(b.dataset.add, "brand"), name: val(b.dataset.add, "name"), label: val(b.dataset.add, "label"), find: val(b.dataset.add, "find") }));
+  $("#prodView").querySelectorAll("[data-del]").forEach(b => b.onclick = () => deleteProduct(+b.dataset.del));
+}
+async function addProduct(i, v) {
+  const p = PRODUCTS.products[i];
+  if (!v.find) { flash("Pick which post to add it to.", "err"); return; }
+  if (!v.name) { flash("Give the item a name.", "err"); return; }
+  const f0 = DOC.fits.find(f => f.find === v.find);
+  if (f0.items.length >= 8) { flash(`#${v.find} already has 8 items (the Instagram limit). Remove one first.`, "err"); return; }
+  try {
+    flash("Adding…");
+    await GH.commit(doc => {
+      const f = doc.fits.find(x => x.find === v.find);
+      const item = { slide: f.items.length + 2, label: v.label === "Exact" ? "Exact" : "Similar", brand: v.brand, name: v.name, retailer: "", query: "", product_url: p.url, note: "" };
+      if (p.image) item.image_src = p.image;  // the build cuts out the background
+      f.items.push(item);
+      f.updated = new Date().toISOString();
+    }, [], `Add product to #${v.find}: ${v.brand ? v.brand + " " : ""}${v.name}`,
+    [{ path: "data/products.json", empty: { products: [] }, change: j => { j.products = j.products.filter(x => x.id !== p.id); }, done: j => { PRODUCTS = j; } }]);
+    renderProdCount(); renderProducts();
+    flash(`Added to #${v.find} as a ${v.label} item. The product image and link go live in about 3 minutes. <a href="#edit-${v.find}" id="goEdit">Open #${v.find}</a>`, "ok");
+    const g = $("#goEdit"); if (g) g.onclick = e => { e.preventDefault(); openEditor(v.find); };
+  } catch (e) { flash(esc(e.message), "err"); }
+}
+async function deleteProduct(i) {
+  const p = PRODUCTS.products[i];
+  try {
+    await GH.commit(() => null, [], `Remove saved product: ${(p.name || p.title_raw).slice(0, 50)}`,
+      [{ path: "data/products.json", empty: { products: [] }, change: j => { j.products = j.products.filter(x => x.id !== p.id); }, done: j => { PRODUCTS = j; } }]);
+    renderProdCount(); renderProducts();
+  } catch (e) { flash(esc(e.message), "err"); }
+}
+
 /* ---------- affiliates & site settings (config.json) ---------- */
 // Same rules the site uses when it builds a Shop link: store deep link > Amazon tag / eBay campaign > Skimlinks > Sovrn.
 function affLink(raw, cfg = CFG) {
@@ -676,7 +758,7 @@ function openCfg(fromHistory) {
   CFGDRAFT = JSON.parse(JSON.stringify(CFG));
   CFGDRAFT.affiliate = Object.assign({ amazon_tag: "", ebay_campaign_id: "", skimlinks_id: "", sovrn_key: "", stores: [] }, CFGDRAFT.affiliate || {});
   CFGDRAFT.affiliate.stores = CFGDRAFT.affiliate.stores || [];
-  $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = false;
+  $("#listView").hidden = true; $("#editView").hidden = true; $("#prodView").hidden = true; $("#cfgView").hidden = false;
   renderCfg(); window.scrollTo(0, 0);
 }
 function closeCfg() { if (history.state && history.state.cfg) { history.back(); return; } showList(); }
@@ -898,10 +980,12 @@ async function save(action) {
 /* ---------- boot ---------- */
 async function load() {
   flash("Loading…");
-  [DOC, CFG] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json")]);
+  [DOC, CFG, PRODUCTS] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json"), GH.jsonOr("data/products.json", undefined, { products: [] })]);
+  renderProdCount();
   flash("");
   const m = location.hash.match(/^#edit-(\d{3})$/); // a bookmarked or refreshed post opens directly
   if (location.hash === "#settings") { history.replaceState(null, "", location.pathname); openCfg(); }
+  else if (location.hash === "#products") { history.replaceState(null, "", location.pathname); openProducts(); }
   else if (m && DOC.fits.some(f => f.find === m[1])) { history.replaceState(null, "", location.pathname); openEditor(m[1]); } // list entry underneath, so Back lands on the list
   else {
     const t = location.hash.match(/^#tab-(\w+)$/);
@@ -913,6 +997,7 @@ async function load() {
 $("#q").addEventListener("input", renderList);
 $("#bulkCovers").onclick = () => { const inp = $("#bulkPick"); inp.value = ""; inp.onchange = () => { if (inp.files.length) bulkCovers([...inp.files]); }; inp.click(); };
 $("#newPost").onclick = () => openEditor(null);
+$("#openProducts").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openProducts(); };
 $("#openCfg").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openCfg(); };
 $("#openSettings").onclick = () => { const s = settings(); $("#sOwner").value = s.owner; $("#sRepo").value = s.repo; $("#sToken").value = s.token; $("#settings").showModal(); };
 $("#settingsForm").addEventListener("submit", e => {
