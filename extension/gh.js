@@ -12,7 +12,7 @@ const GH = {
     const s = await GH.settings();
     if (!s.owner || !s.token) throw new Error("Not connected yet. Open your Cop the Fit admin page once (it connects the extension automatically), then try again.");
     const r = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}${path}`, {
-      ...opts,
+      ...opts, cache: "no-store",
       headers: {
         Accept: "application/vnd.github+json",
         Authorization: `Bearer ${s.token}`,
@@ -39,13 +39,15 @@ const GH = {
   },
   b64text(t) { return GH.b64bytes(new TextEncoder().encode(t)); },
 
-  async readJson(path) {
+  // ref: a commit SHA to read from (avoids GitHub's briefly-stale branch reads); defaults to the branch.
+  async readJson(path, ref) {
     const s = await GH.settings();
-    const f = await GH.req(`/contents/${path}?ref=${encodeURIComponent(s.branch)}`);
+    const f = await GH.req(`/contents/${path}?ref=${encodeURIComponent(ref || s.branch)}`);
     const raw = f.content ? f.content : (await GH.req(`/git/blobs/${f.sha}`)).content;
     return { doc: JSON.parse(GH.b64decode(raw)), sha: f.sha };
   },
 
+  async headSha() { const s = await GH.settings(); return (await GH.req(`/git/ref/heads/${encodeURIComponent(s.branch)}`)).object.sha; },
   readFits() { return GH.readJson("data/fits.json"); },
   readConfig() { return GH.readJson("config.json").then(r => r.doc); },
 

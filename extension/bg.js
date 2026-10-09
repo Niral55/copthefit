@@ -3,6 +3,7 @@
 //    Products tab in the admin, where you add it to a post. AI tidies the name in the background.
 //  - "Set as cover photo" / "Add product image" (on an image): add it straight to a post.
 importScripts("gh.js");
+let SAVES = Promise.resolve(); // one save at a time
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.removeAll(() => {
@@ -13,7 +14,7 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
-  if (info.menuItemId === "ctf-save") return saveProduct(info, tab);
+  if (info.menuItemId === "ctf-save") { SAVES = SAVES.then(() => saveProduct(info, tab)); return; }
   if (!["ctf-grab", "ctf-photo"].includes(info.menuItemId)) return;
   const q = new URLSearchParams({
     mode: info.menuItemId === "ctf-photo" ? "photo" : "product",
@@ -102,9 +103,11 @@ async function saveProduct(info, tab) {
     };
     await say("Saving to Cop the Fit…");
     const s = await GH.settings();
-    for (let attempt = 0; attempt < 3; attempt++) {
+    for (let attempt = 0; attempt < 6; attempt++) {
+      // Read the list at the newest commit, add this product, write it back. If something else saved
+      // in between (another save, or the AI tidy-up), GitHub says 409/422: wait a moment and redo it.
       let doc = { products: [] }, sha;
-      try { const r = await GH.readJson("data/products.json"); doc = r.doc; sha = r.sha; } catch (e) { if (!/ 404/.test(e.message)) throw e; }
+      try { const r = await GH.readJson("data/products.json", await GH.headSha()); doc = r.doc; sha = r.sha; } catch (e) { if (!/ 404/.test(e.message)) throw e; }
       if (doc.products.some(x => x.url === product.url)) { await say("Already saved: it's in the Products tab."); return; }
       doc.products.unshift(product);
       try {
@@ -113,7 +116,10 @@ async function saveProduct(info, tab) {
           content: GH.b64text(JSON.stringify(doc, null, 1) + "\n") }) });
         await say(`Saved to Cop the Fit ✓ ${product.brand ? product.brand + " · " : ""}${product.title_raw.slice(0, 60)}`);
         return;
-      } catch (e) { if (attempt === 2 || !/ 409| 422/.test(e.message)) throw e; }
+      } catch (e) {
+        if (attempt === 5 || !/ 409| 422/.test(e.message)) throw e;
+        await new Promise(r => setTimeout(r, 800 + attempt * 700 + Math.random() * 500));
+      }
     }
   } catch (e) {
     await say("Couldn't save: " + (e.message || e), false);
