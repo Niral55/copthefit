@@ -129,6 +129,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
     <div class="bar">
       <div class="tabs" role="tablist" id="tabs"></div>
       <input class="grow" id="q" type="search" placeholder="Search name, headline or Find #" aria-label="Search posts">
+      <button class="btn" id="bulkCovers" type="button" title="Pick several photos named by Find #, e.g. 029-asap-rocky.jpg">Bulk upload covers</button>
       <button class="btn primary" id="newPost" type="button">+ New post</button>
     </div>
     <p class="hint" id="tabHint"></p>
@@ -151,6 +152,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
   </form>
 </dialog>
 <input type="file" id="filePick" accept="image/*" hidden>
+<input type="file" id="bulkPick" accept="image/*" multiple hidden>
 
 <script>
 "use strict";
@@ -487,6 +489,45 @@ function readForm() {
   if (DRAFT.photo || PENDING.photo) DRAFT.photo = { ...(DRAFT.photo || {}), credit: v("credit") };
 }
 
+
+/* ---------- bulk covers ---------- */
+// Files are matched to posts by the Find # at the start of the name: 029-asap-rocky.jpg -> #029.
+async function bulkCovers(files) {
+  const picked = [], skipped = [];
+  for (const file of files) {
+    const m = file.name.match(/^#?(\d{1,3})(?!\d)/);
+    const find = m && m[1].padStart(3, "0");
+    if (find && DOC.fits.some(f => f.find === find)) picked.push({ find, file }); else skipped.push(file.name);
+  }
+  if (!picked.length) { flash(`No files matched a post. Start each file name with its Find #, like 029-asap-rocky.jpg.`, "err"); return; }
+  try {
+    flash(`Uploading ${picked.length} cover${picked.length > 1 ? "s" : ""}…`);
+    const imgs = [];
+    for (const p of picked) imgs.push({ ...p, b64: (await toB64(p.file, "image/jpeg")).b64 });
+    const pend = [];
+    const done = await GH.commit(doc => {
+      pend.length = 0;
+      const names = [];
+      for (const p of imgs) {
+        const f = doc.fits.find(x => x.find === p.find);
+        const src = (f.sources || [])[0] || {};
+        const outlet = (src.label || "").split(" — ")[0];
+        const old = f.photo || {};
+        f.photo = { credit: old.credit || (outlet ? `via ${outlet}` : "source"), source_url: old.source_url || src.url || "" };
+        if (old.license) f.photo.license = old.license;
+        f.updated = new Date().toISOString();
+        pend.push({ path: `images/inbox/${p.find}-photo.jpg`, base64: p.b64 });
+        pend.push({ path: `images/inbox/${p.find}-photo.json`, base64: GH.b64text(JSON.stringify({ credit: f.photo.credit, source_url: f.photo.source_url, license: f.photo.license || "", pins: {} }) + "\n") });
+        names.push(`#${p.find} ${f.celeb}`);
+      }
+      return names;
+    }, pend, `Covers: ${imgs.map(p => "#" + p.find).join(", ")}`);
+    STAMP = Date.now();
+    flash(`Added covers for ${done.map(esc).join(", ")}. Credits were filled from each post's source; open a post to check it and pin the items.${skipped.length ? ` Skipped (no matching Find #): ${skipped.map(esc).join(", ")}.` : ""}`, "ok");
+    renderList();
+  } catch (e) { flash(esc(e.message), "err"); }
+}
+
 /* ---------- images ---------- */
 function pickFile(cb) {
   const inp = $("#filePick");
@@ -632,6 +673,7 @@ async function load() {
 }
 
 $("#q").addEventListener("input", renderList);
+$("#bulkCovers").onclick = () => { const inp = $("#bulkPick"); inp.value = ""; inp.onchange = () => { if (inp.files.length) bulkCovers([...inp.files]); }; inp.click(); };
 $("#newPost").onclick = () => openEditor(null);
 $("#openSettings").onclick = () => { const s = settings(); $("#sOwner").value = s.owner; $("#sRepo").value = s.repo; $("#sToken").value = s.token; $("#settings").showModal(); };
 $("#settingsForm").addEventListener("submit", e => {
