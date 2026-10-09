@@ -1308,7 +1308,9 @@
      "query": "",
      "product_url": "https://www.amazon.com/dp/B00BIQRSLY",
      "note": "",
-     "image_src": "https://m.media-amazon.com/images/I/71MXzjlVmSL._AC_SL1500_.jpg"
+     "image_src": "https://m.media-amazon.com/images/I/71MXzjlVmSL._AC_SL1500_.jpg",
+     "id": "40fb4b",
+     "img": "images/cut/019-40fb4b.png"
     }
    ],
    "posted_at": null,
