@@ -89,6 +89,7 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
   position: absolute; inset: 0; display: grid; place-items: center; background: repeating-linear-gradient(-45deg, var(--paper) 0 8px, var(--tag) 8px 16px); }
 .mk { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); border: 2px solid #fff; font: 700 13px/22px var(--body); text-align: center; pointer-events: none; }
 .srch { font-size: 13px; }
+.igrp { display: contents; }
 .leads { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
 .leads .kind { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; border: 1px solid var(--line); border-radius: 3px; padding: 1px 5px; }
 .cands { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
@@ -224,13 +225,18 @@ let STAMP = Date.now();
 
 /* ---------- state ---------- */
 let DOC = null, CFG = null, TAB = "all", DRAFT = null, PENDING = null;
+// The website and Instagram are separate: "Live on site" posts are all on the website right away;
+// the Instagram queue is its own list (ig_queue), drip-posted one a day.
 const STAGES = [
-  { id: "all", label: "All posts", hint: "Every post. Open any one to edit it. The pill shows where it is: lead, queue, posted or unpublished." },
-  { id: "review", label: "Leads", hint: "New fits the lead finder found. Add the photo, images and links, then approve or post." },
-  { id: "approved", label: "Queue", hint: "Approved posts, in posting order. One posts each day; posts without a cover photo wait." },
-  { id: "posted", label: "Posted", hint: "Live on Instagram. Edits here update the site." },
-  { id: "rejected", label: "Unpublished", hint: "Hidden from the site and the queue. Open one to restore it." }
+  { id: "all", label: "All posts", hint: "Every post. Open any one to edit it. Editing never schedules anything for Instagram.", test: () => true },
+  { id: "review", label: "Leads", hint: "New fits the lead finder found. Not on the site yet. Fill them in, then publish to the site.", test: f => f.status === "review" },
+  { id: "approved", label: "Live on site", hint: "On the website now, with all links live. Instagram is separate: use the Instagram queue to post one.", test: f => f.status === "approved" || f.status === "posted" },
+  { id: "queue", label: "Instagram queue", hint: "Posts waiting for Instagram, in order. One posts each day; posts without a cover photo wait.", test: f => f.status === "approved" && f.ig_queue },
+  { id: "posted", label: "On Instagram", hint: "Already posted to Instagram. Edits here update the site.", test: f => f.status === "posted" },
+  { id: "rejected", label: "Unpublished", hint: "Hidden from the site and Instagram. Open one to restore it.", test: f => f.status === "rejected" }
 ];
+const stageLabel = f => f.status === "review" ? "Lead" : f.status === "rejected" ? "Unpublished" : f.status === "posted" ? "On site · On Instagram"
+  : f.ig_queue ? "On site · Instagram queue" : "On site";
 
 function flash(text, kind = "") {
   $("#flash").innerHTML = text ? `<div class="msg ${kind}">${text}</div>` : "";
@@ -251,7 +257,7 @@ function readiness(f) {
 
 /* ---------- list view ---------- */
 function renderTabs() {
-  $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${s.id === "all" ? DOC.fits.length : DOC.fits.filter(f => f.status === s.id).length}</b></button>`).join("");
+  $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${DOC.fits.filter(s.test).length}</b></button>`).join("");
   $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; renderList(); });
   $("#tabHint").textContent = STAGES.find(s => s.id === TAB).hint;
 }
@@ -259,15 +265,15 @@ function renderTabs() {
 function renderList() {
   renderTabs();
   const q = $("#q").value.trim().toLowerCase().replace(/^#/, "");
-  let list = TAB === "all" ? DOC.fits.slice() : DOC.fits.filter(f => f.status === TAB);
-  list = TAB === "approved" ? list.sort(queueOrder) : list.sort((a, b) => +b.find - +a.find);
+  let list = DOC.fits.filter(STAGES.find(x => x.id === TAB).test);
+  list = TAB === "queue" ? list.sort(queueOrder) : list.sort((a, b) => +b.find - +a.find);
   if (q) list = list.filter(f => (/^\d+$/.test(q) ? f.find === q.padStart(3, "0") : (f.celeb + " " + f.headline + " " + f.context).toLowerCase().includes(q)));
   const requirePhoto = CFG && CFG.require_photo;
   let nextShown = false;
   $("#list").innerHTML = list.length ? list.map(f => {
     const r = readiness(f);
     let next = "";
-    if (TAB === "approved" && !nextShown && (!requirePhoto || r.photo)) { next = `<span class="chip next">Posts next</span>`; nextShown = true; }
+    if (TAB === "queue" && !nextShown && (!requirePhoto || r.photo)) { next = `<span class="chip next">Posts next</span>`; nextShown = true; }
     return `<button class="row" type="button" data-find="${f.find}">
       <span class="thumb">${f.photo ? `<img src="${GH.raw(`images/photos/${f.find}.jpg`)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('No photo'))">` : "No photo"}</span>
       <span style="min-width:0">
@@ -278,7 +284,7 @@ function renderList() {
           <span class="chip ${r.photo ? "ok" : "no"}">${r.photo ? "Photo" : "Needs photo"}</span>
           <span class="chip ${r.imgs === r.n ? "ok" : ""}">Images ${r.imgs}/${r.n}</span>
           <span class="chip ${r.links === r.linkable ? "ok" : ""}">Links ${r.links}/${r.linkable}</span>
-          ${TAB === "all" ? `<span class="chip">${esc((STAGES.find(s => s.id === f.status) || {}).label || f.status)}</span>` : ""}
+          ${TAB === "all" ? `<span class="chip">${esc(stageLabel(f))}</span>` : ""}
           ${f.ig_permalink ? `<span class="chip ok">On Instagram</span>` : ""}
         </span>
       </span>
@@ -346,7 +352,7 @@ function renderEditor() {
   $("#editView").innerHTML = `
     <div class="ed-head">
       <div style="display:flex;gap:12px;align-items:baseline;flex-wrap:wrap"><button class="btn sm" id="back" type="button">← All posts</button>
-        <h1 class="ed-title">${isNew ? "New post" : `#${d.find} ${esc(d.celeb)}`}</h1>${isNew ? "" : `<span class="pill">${esc(st ? st.label : d.status)}</span>`}</div>
+        <h1 class="ed-title">${isNew ? "New post" : `#${d.find} ${esc(d.celeb)}`}</h1>${isNew ? "" : `<span class="pill">${esc(stageLabel(d))}</span>`}</div>
       ${d.ig_permalink ? `<a href="${esc(d.ig_permalink)}" target="_blank">View on Instagram ↗</a>` : ""}
     </div>
     <div class="ed">
@@ -398,9 +404,11 @@ function renderEditor() {
     <div id="edMsg"></div>
     <div class="actions">
       <button class="btn" id="save" type="button">Save</button>
-      ${d.status !== "posted" ? `<button class="btn dark" id="approve" type="button">Save &amp; add to queue</button>
-      <button class="btn primary" id="postNext" type="button">Post next</button>
-      <button class="btn primary" id="postNow" type="button">Post now</button>` : ""}
+      ${isNew || d.status === "review" ? `<button class="btn dark" id="publish" type="button">Publish to site</button>` : ""}
+      ${d.status !== "posted" && d.status !== "rejected" ? `<span class="igrp" role="group" aria-label="Instagram">
+        ${d.ig_queue ? `<button class="btn" id="unqueue" type="button">Remove from Instagram queue</button>` : `<button class="btn" id="queue" type="button">Add to Instagram queue</button>`}
+        <button class="btn primary" id="postNext" type="button">Post next on Instagram</button>
+        <button class="btn primary" id="postNow" type="button">Post to Instagram now</button></span>` : ""}
       ${isNew ? "" : d.status === "rejected" ? `<button class="btn" id="restore" type="button">Restore to leads</button>` : `<button class="btn danger" id="unpublish" type="button">Unpublish</button>`}
     </div>`;
 
@@ -418,7 +426,7 @@ function renderEditor() {
   $("#editView").querySelectorAll("input,textarea,select").forEach(el => el.addEventListener("input", () => { readForm(); renderReady(); }));
   $("#addItem").onclick = () => { readForm(); if (DRAFT.items.length >= 8) return; DRAFT.items.push({ label: "Similar", brand: "", name: "", retailer: "", query: "", product_url: "", note: "", _link: "" }); renderItems(); renderReady(); };
   $("#save").onclick = () => save("save");
-  if ($("#approve")) $("#approve").onclick = () => save("approve");
+  for (const a of ["publish", "queue", "unqueue"]) if ($("#" + a)) $("#" + a).onclick = () => save(a);
   if ($("#postNext")) $("#postNext").onclick = () => save("next");
   if ($("#postNow")) $("#postNow").onclick = () => save("now");
   if ($("#unpublish")) $("#unpublish").onclick = () => save("unpublish");
@@ -631,13 +639,16 @@ async function save(action) {
     const pend = [];
     const pinMeta = {};
     items.forEach(it => { if (it.pin) pinMeta[String(it.slide)] = it.pin; });
-    const status = { save: d.status, approve: "approved", next: "approved", now: "approved", unpublish: "rejected", restore: "review" }[action];
+    const status = { save: d.status, publish: "approved", queue: "approved", unqueue: d.status, next: "approved", now: "approved", unpublish: "rejected", restore: "review" }[action];
+    // Instagram queue is only changed by the Instagram buttons, never by Save or Publish.
+    const igQueue = ["queue", "next", "now"].includes(action) ? true : ["unqueue", "unpublish", "restore"].includes(action) ? false : !!d.ig_queue;
     const find = await GH.commit(doc => {
       let f = d.find ? doc.fits.find(x => x.find === d.find) : null;
       const n = f ? f.find : String(Math.max(0, ...doc.fits.map(x => +x.find)) + 1).padStart(3, "0");
       const fresh = {
         ...(f || {}), ...d, find: n, items, status, updated: new Date().toISOString(),
-        priority: action === "next" || action === "now" ? 0 : (f ? f.priority ?? 1 : 1),
+        ig_queue: igQueue,
+        priority: action === "next" || action === "now" ? 0 : action === "unqueue" ? 1 : (f ? f.priority ?? 1 : 1),
         added: (f && f.added) || new Date().toISOString().slice(0, 10)
       };
       if (!d.photo) delete fresh.photo;
@@ -651,27 +662,31 @@ async function save(action) {
       }
       items.forEach((it, i) => { const p = PENDING.items.get(d.items[i]); if (p) pend.push({ path: `images/inbox/${n}-${it.slide}.png`, base64: p.b64 }); });
       return n;
-    }, pend, `${{ save: "Edit", approve: "Approve", next: "Post next", now: "Post now", unpublish: "Unpublish", restore: "Restore" }[action]} #${d.find || "new"}: ${d.celeb}`);
+    }, pend, `${{ save: "Edit", publish: "Publish", queue: "IG queue +", unqueue: "IG queue −", next: "Post next", now: "Post now", unpublish: "Unpublish", restore: "Restore" }[action]} #${d.find || "new"}: ${d.celeb}`);
     // GH.commit builds files inside change(); pass them by reference
     STAMP = Date.now();
 
     let note = "Saved. The site and slides update in about 3 minutes.";
-    if (action === "approve") note = "Added to the posting queue.";
-    if (action === "next") note = "Saved. This is the next post.";
-    if (action === "unpublish") note = "Unpublished. It's off the site and out of the queue.";
+    if (action === "save") note = d.status === "review" ? "Saved. Still a lead (not on the site)." : "Saved. The site updates in about 3 minutes. Instagram schedule unchanged.";
+    if (action === "publish") note = "Published to the site. It's live in about 3 minutes. Not added to Instagram.";
+    if (action === "queue") note = "Added to the Instagram queue (and live on the site).";
+    if (action === "unqueue") note = "Removed from the Instagram queue. Still on the site.";
+    if (action === "next") note = "Saved. This is the next Instagram post.";
+    if (action === "unpublish") note = "Unpublished. It's off the site and out of the Instagram queue.";
     if (action === "now") {
       try {
         await GH.req(`/actions/workflows/post.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: settings().branch, inputs: { dry_run: "false", find } }) });
         note = "Posting now: it goes live on Instagram as soon as the new slides are built (about 5 minutes).";
       } catch (e) {
         note = e.status === 403 || e.status === 404
-          ? "Saved and moved to the front of the queue. To post instantly, give the token Actions: Read and write. Otherwise it posts at the next daily slot."
-          : `Saved and moved to the front of the queue, but starting the post failed: ${esc(e.message)}`;
+          ? "Saved and moved to the front of the Instagram queue. To post instantly, give the token Actions: Read and write. Otherwise it posts at the next daily slot."
+          : `Saved and moved to the front of the Instagram queue, but starting the post failed: ${esc(e.message)}`;
       }
     }
     flash(note, "ok");
     closeEditor();
-    if (TAB !== "all" && status !== TAB) { TAB = status; renderList(); }
+    const saved = DOC.fits.find(x => x.find === find);
+    if (saved && !STAGES.find(x => x.id === TAB).test(saved)) { TAB = "all"; renderList(); }
   } catch (e) {
     msg(esc(e.message), "err");
   } finally {

@@ -44,8 +44,8 @@ def main():
             sys.exit(f"#{want} isn't approved (or doesn't exist), so it can't be posted.")
     if not q:
         waiting = len(queue(doc))
-        print(f"Nothing ready to post. {waiting} approved fits are waiting for a cover photo." if waiting
-              else "Queue is empty: approve more fits to keep posting.")
+        print(f"Nothing ready to post. {waiting} queued fits are waiting for a cover photo." if waiting
+              else "Instagram queue is empty: add posts to it in the admin to keep posting.")
         return
     fit = q[0]
     site = cfg["site_url"].rstrip("/")
@@ -94,6 +94,7 @@ def main():
     link = call("GET", media_id, fields="permalink").get("permalink", "")
 
     fit["status"] = "posted"
+    fit["ig_queue"] = False
     fit["posted_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     fit["ig_media_id"] = media_id
     fit["ig_permalink"] = link

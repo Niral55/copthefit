@@ -10,7 +10,7 @@ function showTab(name) {
 }
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
 
-const queue = doc => doc.fits.filter(f => f.status === "approved")
+const queue = doc => doc.fits.filter(f => f.status === "approved" && f.ig_queue)
   .sort((a, b) => (a.priority ?? 1) - (b.priority ?? 1) || +a.find - +b.find);
 
 function dayLabel(i) {
@@ -67,6 +67,7 @@ async function decide(find, act, btn) {
       const f = doc.fits.find(x => x.find === find);
       if (!f) throw new Error(`#${find} isn't in the data file anymore.`);
       f.status = act === "reject" ? "rejected" : "approved";
+      f.ig_queue = act !== "reject";
       if (act === "next") f.priority = 0;
       DOC = doc;
     }, `${act === "reject" ? "Reject" : "Approve"} #${find}`);
@@ -116,7 +117,7 @@ $("#aSave").onclick = async () => {
     const find = await GH.updateFits(doc => {
       const n = String(Math.max(0, ...doc.fits.map(f => +f.find)) + 1).padStart(3, "0");
       doc.fits.push({
-        find: n, status: "approved", priority: $("#aNext").checked ? 0 : 1, added: new Date().toISOString().slice(0, 10),
+        find: n, status: "approved", ig_queue: true, priority: $("#aNext").checked ? 0 : 1, added: new Date().toISOString().slice(0, 10),
         celeb: v("#aCeleb"), context: v("#aContext"), date: v("#aDate"), category: $("#aCat").value, timing: "Recent",
         headline: v("#aHead"), detail: v("#aDetail"), tags: [], sources: [{ label: v("#aSrcLabel"), url: v("#aSrcUrl") }],
         note: "", items, posted_at: null, ig_media_id: null, ig_permalink: null

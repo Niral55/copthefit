@@ -70,7 +70,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "002",
@@ -152,7 +153,8 @@
      "by": "Entertainment Tonight (likely, '(Exclusive)' title format)",
      "note": "2026 Emmys red carpet interview with Matthew Rhys and Keri Russell; channel not verified"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "003",
@@ -262,7 +264,8 @@
      "by": "US Open Tennis Championships (likely)",
      "note": "Safiullin vs Alcaraz 1st round extended highlights; shows match kit, channel not verified"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "004",
@@ -315,7 +318,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "005",
@@ -376,7 +380,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "006",
@@ -444,7 +449,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.deccanchronicle.com/amp/entertainment/hollywood/emmys-2026-red-carpet-the-best-dressed-stars-1987555",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "007",
@@ -498,7 +504,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://chrono1010.com/en/blog/3662",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "008",
@@ -561,7 +568,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "009",
@@ -624,7 +632,8 @@
    "photo": {
     "credit": "@New Orleans Saints Youtube"
    },
-   "updated": "2026-10-09T14:32:16.931Z"
+   "updated": "2026-10-09T14:32:16.931Z",
+   "ig_queue": true
   },
   {
    "find": "010",
@@ -701,7 +710,8 @@
      "by": "Entertainment Tonight (likely, '(Exclusive)' title format)",
      "note": "Sally Field and Colman Domingo crossover on the 2026 Emmys red carpet; channel not verified"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "011",
@@ -772,7 +782,8 @@
      "by": "YouTube (likely US Open official; channel not verified)",
      "note": "Federer/McEnroe vs. Roddick/Agassi full exhibition match"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "012",
@@ -833,7 +844,8 @@
      "by": "Harry Styles (official video, linked from YouTube's official blog)",
      "note": "Official 'Aperture' music video; Prada Collapse slim sneakers"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "013",
@@ -894,7 +906,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "014",
@@ -961,7 +974,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "015",
@@ -1018,7 +1032,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://chrono1010.com/en/blog/3662",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "016",
@@ -1080,7 +1095,8 @@
      "note": "'Travis Scott arriving to the Premiere of Christopher Nolan's The Odyssey'; confirm it's not agency footage"
     }
    ],
-   "updated": "2026-10-09T14:19:08.409Z"
+   "updated": "2026-10-09T14:19:08.409Z",
+   "ig_queue": true
   },
   {
    "find": "017",
@@ -1155,7 +1171,8 @@
      "by": "@NFL (X)",
      "note": "Official league post of the arrival, Sept 13 2026; X post"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "018",
@@ -1217,7 +1234,8 @@
      "by": "YouTube Short (channel not verified)",
      "note": "'Noah Wyle and wife Sara Wyle have a sweet moment on the Emmy red carpet'; confirm it's the 2026 Emmys and not agency footage"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "019",
@@ -1270,7 +1288,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://chrono1010.com/en/blog/3662",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "020",
@@ -1323,7 +1342,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "021",
@@ -1392,7 +1412,8 @@
      "by": "@NFL (X)",
      "note": "Official NFL post 'A.J. Brown's @Patriots debut' from arrival day. Debut was actually Wed Sept 9, 2026 at Seattle, not Sept 13. X page couldn't be fetched, so the outfit isn't confirmed visible"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "022",
@@ -1453,7 +1474,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "023",
@@ -1514,7 +1536,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://vogue.ph/?p=257477",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "024",
@@ -1567,7 +1590,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "025",
@@ -1618,7 +1642,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "026",
@@ -1668,7 +1693,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "027",
@@ -1721,7 +1747,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "028",
@@ -1782,7 +1809,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "029",
@@ -1861,7 +1889,8 @@
     "credit": "via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/asap-rocky-brought-out-the-louis-vuitton-vans-for-his-world-cup-fit/"
    },
-   "updated": "2026-10-09T14:10:40.350Z"
+   "updated": "2026-10-09T14:10:40.350Z",
+   "ig_queue": true
   },
   {
    "find": "030",
@@ -1925,7 +1954,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "031",
@@ -1992,7 +2022,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.complex.com/style/a/mike-destefano/best-dressed-rappers-2026",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "032",
@@ -2080,7 +2111,8 @@
     "credit": "via Essence",
     "source_url": "https://www.essence.com/fashion/michael-b-jordan-oscars-win-custom-louis-vuitton/"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "033",
@@ -2143,7 +2175,8 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "034",
@@ -2211,7 +2244,8 @@
      "by": "YouTube (unverified channel)",
      "note": "Bad Bunny on the red carpet at the 2026 Grammys"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "035",
@@ -2288,7 +2322,8 @@
      "by": "YouTube (unverified channel)",
      "note": "All the celebrities at Wimbledon 2026, includes Beckham"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "036",
@@ -2367,7 +2402,8 @@
      "by": "@parismatch",
      "note": "J-Hope at the LV show with BamBam, posted June 23, 2026"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "037",
@@ -2441,7 +2477,8 @@
     "credit": "via NFL.com",
     "source_url": "https://www.nfl.com/news/five-best-fits-of-week-1-2025-nfl-season"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "038",
@@ -2497,7 +2534,8 @@
     "credit": "via The GAME",
     "source_url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "039",
@@ -2583,7 +2621,8 @@
     "credit": "via Storyboard18",
     "source_url": "https://storyboard18.com/photos/brand-makers/you-cant-miss-these-looks-from-the-oscars-2026-red-carpet-92415.htm"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "040",
@@ -2647,7 +2686,8 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "041",
@@ -2756,7 +2796,8 @@
      "by": "@varietymagazine",
      "note": "Same AOTY presenting moment, posted 2026-02-02"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "042",
@@ -2822,7 +2863,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://precisionwatches.com/journal/wimbledon-2026-watches/",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "043",
@@ -2893,7 +2935,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://amp.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "044",
@@ -2954,7 +2997,8 @@
      "by": "YouTube (channel unverified)",
      "note": "'Exes Miley Cyrus, Patrick Schwarzenegger Reunite at Golden Globes 2026'. Could not confirm the channel (YouTube blocked), so check for agency watermarks"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "045",
@@ -3007,7 +3051,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_source": "https://www.luxurybazaar.com/grey-market/?p=41801",
-   "photo_search": "2026-10-08"
+   "photo_search": "2026-10-08",
+   "ig_queue": true
   },
   {
    "find": "046",
@@ -3071,7 +3116,8 @@
      "by": "YouTube (channel unverified)",
      "note": "'WATCH: BLACKPINK's Lisa, Snoop Dogg & Nick Jonas Arrive at Golden Globes 2026 Red Carpet'"
     }
-   ]
+   ],
+   "ig_queue": true
   },
   {
    "find": "047",
@@ -3126,7 +3172,8 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/?p=41801"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "048",
@@ -3184,7 +3231,8 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "049",
@@ -3239,7 +3287,8 @@
     "credit": "via Teddy Baldassarre",
     "source_url": "https://teddybaldassarre.com/blogs/watches/favorite-watches-golden-globes-2026"
    },
-   "updated": "2026-10-09T14:10:40.354Z"
+   "updated": "2026-10-09T14:10:40.354Z",
+   "ig_queue": true
   },
   {
    "find": "050",
@@ -3306,7 +3355,8 @@
      "by": "YouTube (channel unverified)",
      "note": "'Walton Goggins at the 2026 Golden Globes'"
     }
-   ]
+   ],
+   "ig_queue": true
   }
  ]
 }

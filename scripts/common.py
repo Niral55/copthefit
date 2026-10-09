@@ -135,8 +135,9 @@ def ig_items(fit):
 
 
 def queue(doc):
-    """Approved, unposted fits in posting order: news first, then backlog by Find #."""
-    q = [f for f in doc["fits"] if f["status"] == "approved"]
+    """The Instagram queue: live-on-site fits marked ig_queue, in posting order (Post next first, then by Find #).
+    The website is not drip-fed; every approved fit is on the site whether or not it's queued here."""
+    q = [f for f in doc["fits"] if f["status"] == "approved" and f.get("ig_queue")]
     return sorted(q, key=lambda f: (f.get("priority", 1), int(f["find"])))
 
 
