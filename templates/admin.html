@@ -55,6 +55,10 @@ textarea { min-height: 72px; resize: vertical; }
 input[type="checkbox"] { width: auto; }
 label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); min-width: 0; }
 .hint { font-size: 12.5px; color: var(--muted); margin: 0; }
+#flash { position: fixed; top: 14px; right: 14px; z-index: 60; width: min(440px, calc(100vw - 28px)); display: flex; flex-direction: column; gap: 8px; pointer-events: none; }
+#flash .msg { margin: 0; pointer-events: auto; box-shadow: 0 8px 28px rgba(0,0,0,.18); display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; background: var(--tag); }
+#flash .msg .x { border: 0; background: none; color: inherit; cursor: pointer; font-size: 16px; line-height: 1; padding: 0 2px; }
+#flash .msg .undo { border: 1px solid currentColor; background: none; color: inherit; border-radius: 4px; font: 600 12px var(--body); padding: 3px 8px; cursor: pointer; white-space: nowrap; }
 .msg { font-size: 13px; padding: 9px 12px; border-radius: 5px; background: var(--tag); border: 1px solid var(--line); margin: 10px 0; }
 .msg.ok { border-color: var(--ok); color: var(--ok); }
 .msg.err { border-color: var(--bad); color: var(--bad); }
@@ -63,6 +67,8 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 .list { display: flex; flex-direction: column; gap: 8px; }
 .prods { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .prod { display: flex; flex-direction: column; gap: 8px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 12px; min-width: 0; }
+.prod.busy { opacity: .45; pointer-events: none; transition: opacity .15s; }
+.prod .pic.none { aspect-ratio: auto; height: 120px; background: var(--paper); border: 1px dashed var(--line); }
 .prod .pic { aspect-ratio: 1; max-height: 220px; background: #fff; border-radius: 4px; display: grid; place-items: center; overflow: hidden; }
 .prod .pic img { width: 100%; height: 100%; object-fit: contain; }
 .prod .meta { font: 11px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
@@ -74,13 +80,15 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 .stores { display: flex; flex-direction: column; gap: 8px; }
 .store { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: end; padding-bottom: 8px; border-bottom: 1px dashed var(--line); }
 .store label:nth-of-type(2) { grid-column: 1 / -1; grid-row: 2; }
-.aff { font: 11px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.aff { font: 12px var(--body); text-transform: none; letter-spacing: 0; color: var(--warn); overflow-wrap: anywhere; }
 .aff.on { color: var(--ok, #3fb950); }
 .out { font: 12px var(--mono); overflow-wrap: anywhere; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 8px; min-height: 34px; }
-.rowwrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px; align-items: stretch; }
-.pick { display: grid; place-items: center; width: 40px; border: 1px solid var(--line); border-radius: 6px; background: var(--tag); cursor: pointer; }
+.rowwrap { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: stretch; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; }
+.rowwrap:hover { border-color: var(--ink); }
+.rowwrap .row { border: 0; background: transparent; border-radius: 0 6px 6px 0; }
+.pick { display: grid; place-items: center; width: 44px; cursor: pointer; border-right: 1px solid var(--line); }
 .pick input, .bulk input { width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; }
-.rowwrap.sel .row, .rowwrap.sel .pick { border-color: var(--accent); }
+.rowwrap.sel { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
 .bulk { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 10px 0; background: var(--paper); }
 .bulk label { display: flex; align-items: center; gap: 8px; font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
 .bulk .n { font: 500 13px var(--mono); color: var(--muted); margin-right: 4px; }
@@ -125,7 +133,7 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 .it .n { width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 700 12px var(--body); }
 .it .img { width: 76px; aspect-ratio: 1; border-radius: 4px; border: 1px dashed var(--line); background: var(--paper); display: grid; place-items: center; overflow: hidden; cursor: pointer; font: 9px var(--mono); color: var(--muted); text-transform: uppercase; text-align: center; padding: 0; }
 .it .img img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
-.it .fields { display: grid; grid-template-columns: 110px 1fr; gap: 8px; min-width: 0; }
+.it .fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 8px; min-width: 0; }
 .it .fields .wide { grid-column: 1 / -1; }
 .it .ctl { display: flex; flex-direction: column; gap: 4px; }
 .ready { display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 0; list-style: none; font-size: 13px; }
@@ -135,6 +143,11 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 dialog { border: 1px solid var(--line); border-radius: 8px; background: var(--tag); color: var(--ink); max-width: 440px; width: calc(100% - 32px); }
 dialog::backdrop { background: rgba(0,0,0,.35); }
 @media (max-width: 760px) {
+  .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; width: 100%; padding-bottom: 2px; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { white-space: nowrap; }
+  header .btn { padding: 7px 10px; font-size: 13px; }
+  .pick { width: 38px; }
   .ed { grid-template-columns: minmax(0, 1fr); }
   .it { grid-template-columns: 28px 64px minmax(0, 1fr); }
   .it .img { width: 64px; }
@@ -255,6 +268,16 @@ let STAMP = Date.now();
 
 /* ---------- state ---------- */
 let PRODUCTS = { products: [] };
+let DIRTY = false; // unsaved edits in the open post
+function confirmLeave() {
+  if (!DIRTY && !(PENDING && (PENDING.photo || PENDING.items.size))) return true;
+  const now = Date.now();
+  if (confirmLeave.at && now - confirmLeave.at < 6000) { confirmLeave.at = 0; DIRTY = false; flash(""); return true; }
+  confirmLeave.at = now;
+  flash("You have unsaved changes. Click again to leave without saving, or press Save.", "err");
+  return false;
+}
+window.addEventListener("beforeunload", e => { if (DRAFT && (DIRTY || (PENDING && (PENDING.photo || PENDING.items.size)))) { e.preventDefault(); e.returnValue = ""; } });
 let DOC = null, CFG = null, TAB = "all", DRAFT = null, PENDING = null;
 const SEL = new Set(); // Find #s ticked in the list
 let SHOWN = [];      // Find #s currently listed (for Select all)
@@ -271,9 +294,14 @@ const STAGES = [
 const stageLabel = f => f.status === "review" ? "Lead" : f.status === "rejected" ? "Unpublished" : f.status === "posted" ? "On site · On Instagram"
   : f.ig_queue ? "On site · Instagram queue" : "On site";
 
-function flash(text, kind = "") {
-  $("#flash").innerHTML = text ? `<div class="msg ${kind}">${text}</div>` : "";
-  if (kind === "ok") setTimeout(() => { if ($("#flash").textContent === new DOMParser().parseFromString(text, "text/html").body.textContent) $("#flash").innerHTML = ""; }, 8000);
+// Toast at the top-right. Errors stay until closed; others fade after a few seconds. action: {label, run} adds a button (e.g. Undo).
+function flash(text, kind = "", action) {
+  clearTimeout(flash.t);
+  if (!text) { $("#flash").innerHTML = ""; return; }
+  $("#flash").innerHTML = `<div class="msg ${kind}" role="${kind === "err" ? "alert" : "status"}"><span>${text}</span><span style="display:flex;gap:6px;align-items:center">${action ? `<button class="undo" type="button">${esc(action.label)}</button>` : ""}<button class="x" type="button" aria-label="Dismiss">×</button></span></div>`;
+  $("#flash .x").onclick = () => flash("");
+  if (action) $("#flash .undo").onclick = () => { flash(""); action.run(); };
+  if (kind !== "err" && !/…$/.test(text)) flash.t = setTimeout(() => flash(""), action ? 10000 : 6000);
 }
 
 const queueOrder = (a, b) => (a.priority ?? 1) - (b.priority ?? 1) || +a.find - +b.find;
@@ -414,6 +442,11 @@ function closeEditor() {
 function showList() { DRAFT = null; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true; $("#listView").hidden = false; renderList(); }
 window.addEventListener("popstate", () => {
   if (!DOC) return;
+  // Swiping/pressing Back out of a post with unsaved edits: stay, warn; doing it again within a few seconds leaves.
+  if (DRAFT && !$("#editView").hidden && !/^#edit-/.test(location.hash) && !confirmLeave()) {
+    history.pushState({ ed: DRAFT.find || "new" }, "", "#edit-" + (DRAFT.find || "new"));
+    return;
+  }
   const m = location.hash.match(/^#edit-(\d{3}|new)$/);
   if (m) { openEditor(m[1] === "new" ? null : m[1], true); return; }
   if (location.hash === "#settings") { openCfg(true); return; }
@@ -491,6 +524,7 @@ function renderEditor() {
 
         <div class="panel">
           <h2>Items (up to 8)</h2>
+          ${hasAffIds() ? "" : `<p class="msg" style="margin:0">Links won't earn until you add your affiliate IDs. <a href="#settings" id="goCfg">Affiliates &amp; settings</a></p>`}
           <div class="items" id="items"></div>
           <div><button class="btn sm" id="addItem" type="button">+ Add item</button></div>
           <p class="hint">Link: paste a product page, or write <code>retailer: search words</code> (${esc(retailers.join(", "))}), or <code>custom</code> for one-off pieces. Tap an image box to upload that item's product shot.</p>
@@ -511,7 +545,9 @@ function renderEditor() {
   renderItems();
   renderPins();
   renderReady();
-  $("#back").onclick = closeEditor;
+  DIRTY = false;
+  if ($("#goCfg")) $("#goCfg").onclick = e => { e.preventDefault(); if (confirmLeave()) openCfg(); };
+  $("#back").onclick = () => { if (confirmLeave()) closeEditor(); };
   $("#upPhoto").onclick = () => pickFile(f => setPhoto(f));
   if ($("#clearPins")) $("#clearPins").onclick = () => { DRAFT.items.forEach(it => delete it.pin); renderPins(); };
   $("#editView").querySelectorAll(".leads a").forEach(a => a.addEventListener("click", () => {
@@ -551,7 +587,7 @@ function renderItems() {
         <label class="f" for="ty${i}">Category<select id="ty${i}" data-k="type">${ITEM_TYPES.map(([v, l]) => `<option value="${v}"${(it.type || "") === v ? " selected" : ""}>${l}</option>`).join("")}</select></label>
         <label class="f" for="lab${i}">Exact or similar<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
         <label class="f" for="br${i}">Brand<input id="br${i}" data-k="brand" value="${esc(it.brand)}" placeholder="${it.label === "Similar" ? "(optional)" : "Rolex"}"></label>
-        <label class="f wide" for="nm${i}">Item<input id="nm${i}" data-k="name" value="${esc(it.name)}" placeholder="Cosmograph Daytona 126528LN"></label>
+        <label class="f" for="nm${i}">Item<input id="nm${i}" data-k="name" value="${esc(it.name)}" placeholder="Cosmograph Daytona 126528LN"></label>
         <label class="f wide" for="lk${i}">Link<input id="lk${i}" data-k="_link" value="${esc(it._link)}" placeholder="https://… or chrono24: Rolex 126528LN or custom"><span id="af${i}">${itemAff(it._link)}</span></label>
       </div>
       <div class="ctl">
@@ -672,7 +708,7 @@ function renderProducts() {
     <div class="prods">${list.map((p, i) => {
       const sug = p.suggested_find && fits.find(f => f.find === p.suggested_find);
       return `<div class="prod" data-i="${i}">
-        <div class="pic">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="meta">No image</span>`}</div>
+        <div class="pic${p.image ? "" : " none"}">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="meta">No image found on the page</span>`}</div>
         <div class="meta">${esc(p.store)}${prodPrice(p) ? " · " + esc(prodPrice(p)) : ""} · <a href="${esc(p.url)}" target="_blank" rel="noopener">open ↗</a>${p.enriched === "ai" ? " · ✨ AI-tidied" : !p.enriched ? " · tidying…" : ""}</div>
         <div class="raw" title="${esc(p.title_raw)}">${esc(p.title_raw)}</div>
         <div class="two"><label class="f" for="pb${i}">Brand<input id="pb${i}" data-k="brand" value="${esc(p.brand)}"></label>
@@ -684,11 +720,12 @@ function renderProducts() {
         <div style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn sm primary" type="button" data-add="${i}">Add to post</button><button class="btn sm danger" type="button" data-del="${i}">Delete</button></div>
       </div>`; }).join("") || `<p class="empty">No saved products. On any store page, right-click → <b>Save product to Cop the Fit</b> (Chrome extension).</p>`}</div>`;
   $("#prodBack").onclick = closeProducts;
-  $("#prodRefresh").onclick = async () => { PRODUCTS = await GH.jsonOr("data/products.json", undefined, { products: [] }); renderProdCount(); renderProducts(); };
+  $("#prodRefresh").onclick = async () => { $("#prodRefresh").textContent = "Refreshing…"; PRODUCTS = await GH.jsonOr("data/products.json", undefined, { products: [] }); renderProdCount(); renderProducts(); };
   const val = (i, k) => $("#prodView").querySelector(`.prod[data-i="${i}"] [data-k="${k}"]`).value.trim();
   $("#prodView").querySelectorAll("[data-add]").forEach(b => b.onclick = () => addProduct(+b.dataset.add, { brand: val(b.dataset.add, "brand"), name: val(b.dataset.add, "name"), label: val(b.dataset.add, "label"), type: val(b.dataset.add, "type"), find: val(b.dataset.add, "find") }));
   $("#prodView").querySelectorAll("[data-del]").forEach(b => b.onclick = () => deleteProduct(+b.dataset.del));
 }
+const cardBusy = (i, label, btn) => { const c = $("#prodView").querySelector(`.prod[data-i="${i}"]`); if (c) c.classList.add("busy"); const b = c && c.querySelector(btn); if (b) b.textContent = label; };
 async function addProduct(i, v) {
   const p = PRODUCTS.products[i];
   if (!v.find) { flash("Pick which post to add it to.", "err"); return; }
@@ -696,7 +733,7 @@ async function addProduct(i, v) {
   const f0 = DOC.fits.find(f => f.find === v.find);
   if (f0.items.length >= 8) { flash(`#${v.find} already has 8 items (the Instagram limit). Remove one first.`, "err"); return; }
   try {
-    flash("Adding…");
+    cardBusy(i, "Adding…", "[data-add]");
     await GH.commit(doc => {
       const f = doc.fits.find(x => x.find === v.find);
       const item = { slide: f.items.length + 2, label: v.label === "Exact" ? "Exact" : "Similar", brand: v.brand, name: v.name, retailer: "", query: "", product_url: p.url, note: "" };
@@ -709,14 +746,25 @@ async function addProduct(i, v) {
     renderProdCount(); renderProducts();
     flash(`Added to #${v.find} as a ${v.label} item. The product image and link go live in about 3 minutes. <a href="#edit-${v.find}" id="goEdit">Open #${v.find}</a>`, "ok");
     const g = $("#goEdit"); if (g) g.onclick = e => { e.preventDefault(); openEditor(v.find); };
-  } catch (e) { flash(esc(e.message), "err"); }
+  } catch (e) { flash(esc(e.message), "err"); renderProducts(); }
 }
 async function deleteProduct(i) {
   const p = PRODUCTS.products[i];
+  cardBusy(i, "Deleting…", "[data-del]");
   try {
     await GH.commit(() => null, [], `Remove saved product: ${(p.name || p.title_raw).slice(0, 50)}`,
       [{ path: "data/products.json", empty: { products: [] }, change: j => { j.products = j.products.filter(x => x.id !== p.id); }, done: j => { PRODUCTS = j; } }]);
     renderProdCount(); renderProducts();
+    flash(`Deleted “${esc((p.name || p.title_raw).slice(0, 50))}”.`, "ok", { label: "Undo", run: () => restoreProduct(p, i) });
+  } catch (e) { flash(esc(e.message), "err"); renderProducts(); }
+}
+async function restoreProduct(p, at) {
+  try {
+    flash("Restoring…");
+    await GH.commit(() => null, [], `Restore saved product: ${(p.name || p.title_raw).slice(0, 50)}`,
+      [{ path: "data/products.json", empty: { products: [] }, change: j => { if (!j.products.some(x => x.id === p.id)) j.products.splice(Math.min(at, j.products.length), 0, p); }, done: j => { PRODUCTS = j; } }]);
+    renderProdCount(); if (!$("#prodView").hidden) renderProducts();
+    flash("Restored.", "ok");
   } catch (e) { flash(esc(e.message), "err"); }
 }
 
@@ -741,14 +789,16 @@ function affLink(raw, cfg = CFG) {
   return { url: u.toString(), via: "" };
 }
 // What an item's Link box turns into (product page, "retailer: search words", or custom).
+const hasAffIds = () => { const a = (CFG && CFG.affiliate) || {}; return !!(a.amazon_tag || a.ebay_campaign_id || a.skimlinks_id || a.sovrn_key || (a.stores || []).length); };
 function itemAff(text) {
+  if (!hasAffIds()) return "";
   const t = (text || "").trim();
   if (!t || /^custom$/i.test(t)) return "";
   let raw = t;
   const m = t.match(/^([a-z0-9]+):\s*(.+)$/i);
   if (m && !/^https?$/i.test(m[1]) && CFG && CFG.retailers[m[1].toLowerCase()]) raw = CFG.retailers[m[1].toLowerCase()].search + encodeURIComponent(m[2]).replace(/%20/g, "+");
   const r = affLink(raw);
-  return r.via ? `<span class="aff on">✓ Affiliate link via ${esc(r.via)}</span>` : `<span class="aff">No affiliate ID for this store yet (add one in Affiliates &amp; settings)</span>`;
+  return r.via ? `<span class="aff on">✓ Affiliate link via ${esc(r.via)}</span>` : `<span class="aff">Won't earn yet: no affiliate ID for this store</span>`;
 }
 
 const STORE_PRESETS = {
@@ -954,6 +1004,7 @@ async function save(action) {
     }, pend, `${{ save: "Edit", publish: "Publish", queue: "IG queue +", unqueue: "IG queue −", next: "Post next", now: "Post now", unpublish: "Unpublish", restore: "Restore" }[action]} #${d.find || "new"}: ${d.celeb}`);
     // GH.commit builds files inside change(); pass them by reference
     STAMP = Date.now();
+    DIRTY = false; PENDING = { photo: null, items: new Map() }; // saved: nothing pending any more
 
     let note = "Saved. The site and slides update in about 3 minutes.";
     if (action === "save") note = d.status === "review" ? "Saved. Still a lead: press Publish to site to put it live." : d.status === "rejected" ? "Saved. Still unpublished." : "Saved and live: the site shows the change in about 3 minutes. Instagram schedule unchanged.";
@@ -1002,6 +1053,7 @@ async function load() {
 }
 
 $("#q").addEventListener("input", renderList);
+$("#editView").addEventListener("input", () => { DIRTY = true; });
 $("#bulkCovers").onclick = () => { const inp = $("#bulkPick"); inp.value = ""; inp.onchange = () => { if (inp.files.length) bulkCovers([...inp.files]); }; inp.click(); };
 $("#newPost").onclick = () => openEditor(null);
 $("#openProducts").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openProducts(); };

@@ -10,6 +10,7 @@ import sys
 import unicodedata
 
 from item_types import guess_type
+from icons import ICONS
 from common import ROOT, DIST, CUT_DIR, load_config, load_fits, raw_url, shop_url, retailer_name, cutout_path, photo_path, validate
 
 e = lambda t: H.escape(str(t or ""), quote=True)
@@ -73,6 +74,17 @@ def head(cfg, title, desc, url, image, kind="website", ld=None):
     return "\n".join(tags)
 
 
+def SECTIONS(exact, less, rest):
+    """Similar picks: cheaper takes on an exact piece go under "Get it for less"; the rest of the outfit under "Complete the look"."""
+    out = []
+    if less:
+        out.append((less, "Get it for less", "Cheaper takes on the pieces above. Not the exact items worn."))
+    if rest:
+        out.append((rest, "Complete the look", "The source didn't name these pieces, so these are close matches.") if exact
+                   else (rest, "Get the look", "The brands weren't reported, so these are similar picks."))
+    return out
+
+
 def ssr_fit(cfg, f, raw, prev, nxt):
     """Static version of the fit page (same markup the JS renders), so search engines see it without JS."""
     def row(pub, it):
@@ -80,7 +92,7 @@ def ssr_fit(cfg, f, raw, prev, nxt):
         act = (f'<a class="shop" href="{e(url)}" target="_blank" rel="sponsored nofollow noopener">Shop on {e(pub["retailer_name"] or "retailer")} ↗</a>'
                if url else '<span class="nosale">Not for sale</span>')
         img = (f'<img class="thumb" src="{e(pub["image"])}" alt="{e((pub["brand"] + " " + pub["name"]).strip())}" loading="lazy">'
-               if pub["image"] else '<span class="thumb ph">Image coming</span>')
+               if pub["image"] else f'<span class="thumb icon" title="{e(pub.get("type") or "item")}">{ICONS.get(pub.get("type"), ICONS["clothing"])}</span>')
         return (f'<li class="item has-img">{img}<div style="min-width:0">'
                 + (f'<div class="brand">{e(pub["brand"])}</div>' if pub["brand"] else "")
                 + f'<div class="name">{e(pub["name"])}</div>'
@@ -89,20 +101,22 @@ def ssr_fit(cfg, f, raw, prev, nxt):
     pairs = list(zip(f["items"], raw["items"]))
     exact = [p for p in pairs if p[0]["label"] == "Exact"]
     cheap = [p for p in pairs if p[0]["label"] != "Exact"]
+    exact_types = {p[0].get("type") for p in exact}
+    less = [p for p in cheap if exact and p[0].get("type") in exact_types]   # cheaper takes on an exact piece
+    rest = [p for p in cheap if p not in less]                              # pieces the source didn't name
     out = ['<a class="back" href="./">← All finds</a><article class="fit"><aside class="bigtag"><div class="hole" aria-hidden="true"></div>',
            '<figure class="look"><div class="frame">'
-           + (f'<img src="{e(f["cover"])}" alt="{e(f["celeb"])} at {e(f["context"])}">' if f["cover"] else '<div class="ph">Photo of the look coming</div>')
-           + "</div>" + (f'<figcaption>Photo: {e(f["cover_credit"])}</figcaption>' if f["cover_credit"] else "") + "</figure>",
+           + (f'<img src="{e(f["cover"])}" alt="{e(f["celeb"])} at {e(f["context"])}">' if f["cover"]
+              else f'<img class="product" src="{e(f["image"])}" alt="">' if f["image"] else '<div class="ph">Photo of the look coming</div>')
+           + "</div>" + (f'<figcaption>Photo: {e(f["cover_credit"])}</figcaption>' if f["cover"] and f["cover_credit"] else "") + "</figure>",
            f'<div><div class="label">Find</div><div class="bignum">#{f["find"]}</div></div>',
            f'<dl><dt>Who</dt><dd>{e(f["celeb"])}</dd><dt>Where</dt><dd>{e(f["context"])}</dd><dt>When</dt><dd>{e(f["date"])}</dd>'
            f'<dt>Items</dt><dd>{len(exact)} exact · {len(cheap)} similar</dd></dl></aside>',
            f'<div style="min-width:0"><p class="celeb">What {e(f["celeb"])} wore · {e(f["context"])}</p><h1>{e(f["headline"])}</h1><p class="detail">{e(f["detail"])}</p>']
     if exact:
         out.append('<h2 class="sect">The exact fit</h2><ol class="items">' + "".join(row(a, b) for a, b in exact) + "</ol>")
-    if cheap:
-        sub = "Similar pieces at a lower price. Not the exact items worn." if exact else "The brands weren't reported, so these are similar picks."
-        out.append(f'<h2 class="sect">{"Get it for less" if exact else "Get the look"}</h2><p class="sect-sub">{sub}</p><ol class="items cheap">'
-                   + "".join(row(a, b) for a, b in cheap) + "</ol>")
+    for group, title, sub in SECTIONS(exact, less, rest):
+        out.append(f'<h2 class="sect">{title}</h2><p class="sect-sub">{sub}</p><ol class="items cheap">' + "".join(row(a, b) for a, b in group) + "</ol>")
     out.append('<div class="sources"><h2>Spotted via</h2><ul>'
                + "".join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["label"])}</a></li>' for x in f["sources"]) + "</ul></div>")
     out.append('<nav class="pager">'
@@ -168,6 +182,7 @@ def main():
     aff = cfg.get("affiliate", {})
     js_cfg = dict(amazonTag=aff.get("amazon_tag", ""), ebayCampaignId=aff.get("ebay_campaign_id", ""),
                   skimlinksId=aff.get("skimlinks_id", ""), sovrnKey=aff.get("sovrn_key", ""), overrides={},
+                  icons=ICONS,
                   stores=[{"domain": st.get("domain", ""), "template": st.get("template", "")} for st in aff.get("stores", [])])
     dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     tpl = (ROOT / "templates" / "site.html").read_text()
@@ -218,6 +233,24 @@ def main():
              ssr_fit(cfg, f, raw, public[n - 1] if n else None, public[n + 1] if n + 1 < len(public) else None),
              find=f["find"], base="../../")
         urls.append((url, (raw.get("updated") or raw.get("added") or "")[:10]))
+
+    # Disclosure & privacy (affiliate programs ask for this; linked in the footer)
+    handle = (cfg.get("instagram_handle") or "").lstrip("@")
+    disc = f"""<a class="back" href="./">← All finds</a><article class="prose">
+<h1>Disclosure &amp; privacy</h1>
+<h2>Affiliate links</h2>
+<p>Cop the Fit identifies what celebrities wear and links to places to buy those pieces or similar ones. Many of those links are affiliate links: if you buy something after clicking one, the store may pay us a small commission. It costs you nothing extra and never changes the price.</p>
+<p>We work with programs such as Amazon Associates, eBay Partner Network and Skimlinks, and directly with some stores. As an Amazon Associate we earn from qualifying purchases.</p>
+<h2>How items are identified</h2>
+<p>“Exact” items are the pieces named by the reporting credited on each page. “Similar” picks are look-alikes we chose; they are not the items worn. Cop the Fit is not affiliated with or endorsed by the people or brands shown.</p>
+<h2>Photos</h2>
+<p>Photos are credited on each page. If you own a photo and want it credited differently or removed, contact us{f' on Instagram at <a href="https://www.instagram.com/{e(handle)}/">@{e(handle)}</a>' if handle else ''} and we'll act on it promptly.</p>
+<h2>Privacy</h2>
+<p>This site doesn't use accounts, ads or our own tracking cookies. It remembers your filter choice in your browser only. When you click through to a store, that store and the affiliate network may set their own cookies to credit the sale, under their privacy policies.</p>
+</article>"""
+    page("disclosure/index.html", head(cfg, "Disclosure & privacy · Cop the Fit", "How Cop the Fit uses affiliate links, identifies items and credits photos.", site + "/disclosure/", ""),
+         disc, find="static", base="../")
+    urls.append((site + "/disclosure/", ""))
 
     (DIST / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{e(u)}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "") + "</url>\n" for u, d in urls) + "</urlset>\n")

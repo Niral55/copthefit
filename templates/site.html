@@ -102,6 +102,8 @@ a { color: inherit; }
 .items.cheap { border-top-width: 1px; }
 .item .thumb { width: 84px; height: 84px; object-fit: contain; background: var(--tag); border: 1px solid var(--line); border-radius: 4px; }
 .item .thumb.ph { font-size: 9px; padding: 4px; }
+.item .thumb.icon { display: grid; place-items: center; color: var(--muted); background: var(--paper); }
+.look .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; }
 .item .slide { font: 500 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .item .lab { display: inline-block; font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; margin-bottom: 5px; }
 .lab.exact { background: var(--ink); color: var(--paper); }
@@ -120,6 +122,11 @@ a { color: inherit; }
 .pager a { text-decoration: none; font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .pager a:hover { color: var(--accent); }
 
+.prose { max-width: 68ch; padding-top: 6px; }
+.prose h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5.4vw, 52px); line-height: .95; text-transform: uppercase; margin: 0 0 18px; }
+.prose h2 { font-family: var(--display); font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 26px 0 6px; }
+.prose p { margin: 0 0 12px; font-size: 16px; }
+footer a { color: var(--ink); }
 footer { margin-top: 48px; padding-top: 18px; border-top: 2px solid var(--ink); font-size: 12.5px; color: var(--muted); display: grid; gap: 6px; }
 footer p { margin: 0; max-width: 80ch; }
 
@@ -135,6 +142,8 @@ footer p { margin: 0; max-width: 80ch; }
   .item.has-img { grid-template-columns: 64px minmax(0, 1fr); }
   .item.has-img .thumb { width: 64px; height: 64px; }
   .item.has-img .act { grid-column: 2; }
+  .pager { flex-direction: column; gap: 10px; }
+  .pager a:last-child { align-self: flex-end; text-align: right; }
 }
 @media (prefers-reduced-motion: reduce) { .tagcard { transition: none; } .tagcard:hover { transform: none; } }
 </style>
@@ -147,7 +156,7 @@ footer p { margin: 0; max-width: 80ch; }
   <p class="disclose">Links on this site are affiliate links. If you buy through them, we may earn a commission at no cost to you.</p>
   <main id="app"><!--__SSR__--></main>
   <footer>
-    <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>As an Amazon Associate I earn from qualifying purchases. <a href="disclosure/">Disclosure &amp; privacy</a></p>
     <p>Not affiliated with or endorsed by the people or brands named. Item IDs come from the reporting credited on each page. "Similar" picks are look-alikes we chose, not the item worn.</p>
   </footer>
 </div>
@@ -228,8 +237,8 @@ function renderHome() {
   app.innerHTML = `
     <div class="controls">
       <label class="search" for="q"><span>#</span><input id="q" type="search" placeholder="Find # (e.g. 014), name or brand" autocomplete="off" value="${esc(state.q)}"></label>
-      ${chipRow("cat", ["All", "Fit", "Kicks", "Wrist"], { Fit: "Fits" })}
-      ${chipRow("time", ["All", "Recent", "Evergreen"], {})}
+      ${chipRow("cat", ["All", "Fit", "Kicks", "Wrist"], { All: "Everything", Fit: "Fits" })}
+      ${chipRow("time", ["All", "Recent", "Evergreen"], { All: "Any time" })}
     </div>
     <p class="count" id="count"></p>
     <div class="grid" id="grid"></div>`;
@@ -271,7 +280,7 @@ function renderFit(f) {
     <article class="fit">
       <aside class="bigtag">
         <div class="hole" aria-hidden="true"></div>
-        <figure class="look"><div class="frame">${f.cover ? `<img src="${esc(f.cover)}" alt="${esc(f.celeb)} at ${esc(f.context)}">` : `<div class="ph">Photo of the look coming</div>`}</div>${f.cover_credit ? `<figcaption>Photo: ${esc(f.cover_credit)}</figcaption>` : ""}</figure>
+        <figure class="look"><div class="frame">${f.cover ? `<img src="${esc(f.cover)}" alt="${esc(f.celeb)} at ${esc(f.context)}">` : f.image ? `<img class="product" src="${esc(f.image)}" alt="">` : `<div class="ph">Photo of the look coming</div>`}</div>${f.cover && f.cover_credit ? `<figcaption>Photo: ${esc(f.cover_credit)}</figcaption>` : ""}</figure>
         <div><div class="label">Find</div><div class="bignum">#${f.find}</div></div>
         <dl>
           <dt>Who</dt><dd>${esc(f.celeb)}</dd>
@@ -292,7 +301,7 @@ function renderFit(f) {
               ? `<a class="shop" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop on ${esc(retailer)} ↗</a>`
               : `<span class="nosale">Not for sale</span>`;
             return `<li class="item has-img">
-              ${it.image ? `<img class="thumb" src="${esc(it.image)}" alt="${esc(it.name)}" loading="lazy">` : `<span class="thumb ph">Image coming</span>`}
+              ${it.image ? `<img class="thumb" src="${esc(it.image)}" alt="${esc((it.brand + " " + it.name).trim())}" loading="lazy">` : `<span class="thumb icon" title="${esc(it.type || "item")}">${(CONFIG.icons || {})[it.type] || (CONFIG.icons || {}).clothing || ""}</span>`}
               <div style="min-width:0">
                 ${it.brand ? `<div class="brand">${esc(it.brand)}</div>` : ""}
                 <div class="name">${esc(it.name)}</div>
@@ -302,8 +311,13 @@ function renderFit(f) {
             </li>`;
           };
           const exact = f.items.filter(i => i.label === "Exact"), cheap = f.items.filter(i => i.label !== "Exact");
+          const types = new Set(exact.map(i => i.type));
+          const less = exact.length ? cheap.filter(i => types.has(i.type)) : [], rest = cheap.filter(i => !less.includes(i));
+          const sect = (list, title, sub) => list.length ? `<h2 class="sect">${title}</h2><p class="sect-sub">${sub}</p><ol class="items cheap">${list.map(row).join("")}</ol>` : "";
           return (exact.length ? `<h2 class="sect">The exact fit</h2><ol class="items">${exact.map(row).join("")}</ol>` : "")
-            + (cheap.length ? `<h2 class="sect">${exact.length ? "Get it for less" : "Get the look"}</h2><p class="sect-sub">${exact.length ? "Similar pieces at a lower price. Not the exact items worn." : "The brands weren't reported, so these are similar picks."}</p><ol class="items cheap">${cheap.map(row).join("")}</ol>` : "");
+            + sect(less, "Get it for less", "Cheaper takes on the pieces above. Not the exact items worn.")
+            + (exact.length ? sect(rest, "Complete the look", "The source didn't name these pieces, so these are close matches.")
+                            : sect(rest, "Get the look", "The brands weren't reported, so these are similar picks."));
         })()}
         <div class="sources">
           <h2>Spotted via</h2>
@@ -318,6 +332,7 @@ function renderFit(f) {
 }
 
 function route() {
+  if (PAGE_FIND === "static") return; // a plain page (e.g. disclosure): keep its content
   if (!PAGE_FIND) readUrl();
   // Old links like #fit-029 now point to the post's own page.
   const m = location.hash.match(/^#fit-(\d{3})$/);
