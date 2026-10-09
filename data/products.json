@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Jordan 1 Retro High OG Chicago Lost and Found",
    "brand": "Jordan",
-   "name": "",
+   "name": "1 Retro High OG Chicago Lost and Found",
    "image": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Chicago-Reimagined-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1738193358",
    "price": "167",
    "currency": "USD",
    "added": "2026-10-09T17:53:30.879Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "sneakers"
   },
   {
    "id": "mv18j74pa4g9",
