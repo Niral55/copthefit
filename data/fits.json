@@ -3238,7 +3238,7 @@
   },
   {
    "find": "049",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Jeremy Allen White",
@@ -3289,8 +3289,8 @@
     "credit": "via Teddy Baldassarre",
     "source_url": "https://teddybaldassarre.com/blogs/watches/favorite-watches-golden-globes-2026"
    },
-   "updated": "2026-10-09T14:10:40.354Z",
-   "ig_queue": true
+   "updated": "2026-10-09T15:05:31.894Z",
+   "ig_queue": false
   },
   {
    "find": "050",
