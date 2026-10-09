@@ -1,83 +1,84 @@
 {
- "site_name": "Cop the Fit",
- "site_url": "https://niral55.github.io/copthefit",
- "instagram_handle": "",
- "comment_keyword": "",
- "posting_paused": false,
- "require_photo": true,
- "site_photos": "free",
- "custom_domain": "",
- "post_time_note": "The daily post runs at 16:05 UTC (12:05 PM New York in summer, 11:05 AM in winter). Change the cron line in .github/workflows/post.yml to move it.",
- "hashtag_base": [
-  "copthefit",
-  "mensfashion"
- ],
- "affiliate": {
-  "amazon_tag": "",
-  "ebay_campaign_id": "",
-  "skimlinks_id": "",
-  "sovrn_key": ""
- },
- "retailers": {
-  "farfetch": {
-   "name": "Farfetch",
-   "search": "https://www.farfetch.com/shopping/men/search/items.aspx?q=",
-   "program": "Skimlinks / Farfetch program"
+  "site_name": "Cop the Fit",
+  "site_url": "https://niral55.github.io/copthefit",
+  "instagram_handle": "",
+  "comment_keyword": "",
+  "posting_paused": true,
+  "require_photo": true,
+  "site_photos": "free",
+  "custom_domain": "",
+  "post_time_note": "The daily post runs at 16:05 UTC (12:05 PM New York in summer, 11:05 AM in winter). Change the cron line in .github/workflows/post.yml to move it.",
+  "hashtag_base": [
+    "copthefit",
+    "mensfashion"
+  ],
+  "affiliate": {
+    "amazon_tag": "",
+    "ebay_campaign_id": "",
+    "skimlinks_id": "",
+    "sovrn_key": "",
+    "stores": []
   },
-  "chrono24": {
-   "name": "Chrono24",
-   "search": "https://www.chrono24.com/search/index.htm?query=",
-   "program": "Awin (Chrono24 US) / Skimlinks"
-  },
-  "ebay": {
-   "name": "eBay",
-   "search": "https://www.ebay.com/sch/i.html?_nkw=",
-   "program": "eBay Partner Network"
-  },
-  "amazon": {
-   "name": "Amazon",
-   "search": "https://www.amazon.com/s?k=",
-   "program": "Amazon Associates tag"
-  },
-  "nike": {
-   "name": "Nike",
-   "search": "https://www.nike.com/w?q=",
-   "program": "Skimlinks / Nike program"
-  },
-  "adidas": {
-   "name": "adidas",
-   "search": "https://www.adidas.com/us/search?q=",
-   "program": "Skimlinks"
-  },
-  "newbalance": {
-   "name": "New Balance",
-   "search": "https://www.newbalance.com/search?q=",
-   "program": "Skimlinks"
-  },
-  "converse": {
-   "name": "Converse",
-   "search": "https://www.converse.com/search?q=",
-   "program": "Skimlinks"
-  },
-  "dukeanddexter": {
-   "name": "Duke + Dexter",
-   "search": "https://dukeanddexter.com/search?q=",
-   "program": "Skimlinks (if merchant participates)"
-  },
-  "jomashop": {
-   "name": "Jomashop",
-   "search": "https://www.jomashop.com/search?q=",
-   "program": "CJ / Skimlinks"
-  },
-  "stockx": {
-   "name": "StockX",
-   "search": "https://stockx.com/search?s=",
-   "program": "Impact / Skimlinks"
-  },
-  "goat": {
-   "name": "GOAT",
-   "search": "https://www.goat.com/search?query=",
-   "program": "Skimlinks"
+  "retailers": {
+    "farfetch": {
+      "name": "Farfetch",
+      "search": "https://www.farfetch.com/shopping/men/search/items.aspx?q=",
+      "program": "Skimlinks / Farfetch program"
+    },
+    "chrono24": {
+      "name": "Chrono24",
+      "search": "https://www.chrono24.com/search/index.htm?query=",
+      "program": "Awin (Chrono24 US) / Skimlinks"
+    },
+    "ebay": {
+      "name": "eBay",
+      "search": "https://www.ebay.com/sch/i.html?_nkw=",
+      "program": "eBay Partner Network"
+    },
+    "amazon": {
+      "name": "Amazon",
+      "search": "https://www.amazon.com/s?k=",
+      "program": "Amazon Associates tag"
+    },
+    "nike": {
+      "name": "Nike",
+      "search": "https://www.nike.com/w?q=",
+      "program": "Skimlinks / Nike program"
+    },
+    "adidas": {
+      "name": "adidas",
+      "search": "https://www.adidas.com/us/search?q=",
+      "program": "Skimlinks"
+    },
+    "newbalance": {
+      "name": "New Balance",
+      "search": "https://www.newbalance.com/search?q=",
+      "program": "Skimlinks"
+    },
+    "converse": {
+      "name": "Converse",
+      "search": "https://www.converse.com/search?q=",
+      "program": "Skimlinks"
+    },
+    "dukeanddexter": {
+      "name": "Duke + Dexter",
+      "search": "https://dukeanddexter.com/search?q=",
+      "program": "Skimlinks (if merchant participates)"
+    },
+    "jomashop": {
+      "name": "Jomashop",
+      "search": "https://www.jomashop.com/search?q=",
+      "program": "CJ / Skimlinks"
+    },
+    "stockx": {
+      "name": "StockX",
+      "search": "https://stockx.com/search?s=",
+      "program": "Impact / Skimlinks"
+    },
+    "goat": {
+      "name": "GOAT",
+      "search": "https://www.goat.com/search?query=",
+      "program": "Skimlinks"
+    }
   }
- }
 }
