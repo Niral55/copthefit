@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv19lymmrt7j",
+   "url": "https://stockx.com/nike-air-max-goadome-low-sp-black-metallic-silver-pale-citron",
+   "store": "stockx.com",
+   "title_raw": "Nike Air Max Goadome Low SP Black Metallic Silver Pale Citron",
+   "brand": "Nike",
+   "name": "",
+   "image": "https://images.stockx.com/images/Nike-Air-Max-Goadome-Low-SP-Black-Metallic-Silver-Pale-Citron-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1783526477",
+   "price": "143",
+   "currency": "USD",
+   "added": "2026-10-09T17:54:29.902Z",
+   "enriched": null
+  },
+  {
    "id": "mv19kp33yx7b",
    "url": "https://stockx.com/air-jordan-1-retro-high-og-chicago-reimagined-lost-and-found",
    "store": "stockx.com",
