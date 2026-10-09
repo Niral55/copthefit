@@ -105,7 +105,8 @@
      "query": "Thom Browne tuxedo",
      "product_url": "",
      "note": "MTM version is custom",
-     "image_src": "https://cdn-images.farfetch-contents.com/11/96/15/00/11961500_62929088_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/11/96/15/00/11961500_62929088_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -116,7 +117,8 @@
      "query": "Thom Browne oxford shirt",
      "product_url": "",
      "note": "",
-     "image_src": "https://cdn-images.farfetch-contents.com/35/83/39/57/35833957_73642365_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/35/83/39/57/35833957_73642365_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 4,
@@ -181,7 +183,9 @@
      "query": "Travis Scott Zoom Vapor 12",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/0FYAAeSwVbhqpVw6/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/0FYAAeSwVbhqpVw6/s-l1600.webp",
+     "id": "a9a02f",
+     "img": "images/cut/003-a9a02f.png"
     },
     {
      "slide": 3,
@@ -192,7 +196,9 @@
      "query": "Rolex 126528LN",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/CGsAAeSwCJlqtBAw/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/CGsAAeSwCJlqtBAw/s-l1600.webp",
+     "id": "637a65",
+     "img": "images/cut/003-637a65.png"
     },
     {
      "slide": 4,
@@ -271,7 +277,9 @@
      "query": "Asics Thom Browne Gel Kayano 14",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/G4kAAeSwK9ZpsKxZ/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/G4kAAeSwK9ZpsKxZ/s-l1600.webp",
+     "id": "5099f6",
+     "img": "images/cut/004-5099f6.png"
     },
     {
      "slide": 3,
@@ -398,7 +406,9 @@
      "query": "Audemars Piguet Code 11.59 white gold",
      "product_url": "",
      "note": "Outlets differ on the exact reference",
-     "image_src": "https://i.ebayimg.com/images/g/TOYAAeSwycZqbMtw/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/TOYAAeSwycZqbMtw/s-l1600.webp",
+     "id": "836c03",
+     "img": "images/cut/006-836c03.png"
     },
     {
      "slide": 4,
@@ -503,7 +513,9 @@
      "query": "9060",
      "product_url": "",
      "note": "",
-     "image_src": "https://nb.scene7.com/is/image/NB/u9060etn_nb_02_i?$pdpflexf2$&wid=880&hei=880"
+     "image_src": "https://nb.scene7.com/is/image/NB/u9060etn_nb_02_i?$pdpflexf2$&wid=880&hei=880",
+     "id": "644b5b",
+     "img": "images/cut/008-644b5b.png"
     },
     {
      "slide": 3,
@@ -688,7 +700,9 @@
      "query": "Rolex Oyster Perpetual Jubilee dial",
      "product_url": "",
      "note": "Galerie reports the 36mm; others say 41mm",
-     "image_src": "https://i.ebayimg.com/images/g/aBgAAeSwzh1quppV/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/aBgAAeSwzh1quppV/s-l1600.webp",
+     "id": "8ec783",
+     "img": "images/cut/011-8ec783.png"
     },
     {
      "slide": 3,
@@ -739,7 +753,8 @@
      "query": "Prada Collapse sneakers",
      "product_url": "",
      "note": "",
-     "image_src": "https://cdn-images.farfetch-contents.com/27/36/06/67/27360667_57238207_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/27/36/06/67/27360667_57238207_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -855,7 +870,9 @@
      "query": "Audemars Piguet Royal Oak malachite",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/qgMAAeSwif9qx9Hz/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/qgMAAeSwif9qx9Hz/s-l1600.webp",
+     "id": "629cd4",
+     "img": "images/cut/014-629cd4.png"
     },
     {
      "slide": 3,
@@ -920,7 +937,9 @@
      "query": "Rolex 6239",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/zIQAAOSwsbdk4P2w/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/zIQAAOSwsbdk4P2w/s-l1600.webp",
+     "id": "add6cb",
+     "img": "images/cut/015-add6cb.png"
     },
     {
      "slide": 3,
@@ -971,7 +990,9 @@
      "query": "Moon Shoe",
      "product_url": "",
      "note": "",
-     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/85000461-aebf-43eb-82a7-55a1da9d40f6/NIKE+MOON+SHOE+OG.png"
+     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/85000461-aebf-43eb-82a7-55a1da9d40f6/NIKE+MOON+SHOE+OG.png",
+     "id": "88b910",
+     "img": "images/cut/016-88b910.png"
     },
     {
      "slide": 3,
@@ -1137,7 +1158,9 @@
      "query": "Rolex 228238",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/S58AAeSwjdRqxDHm/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/S58AAeSwjdRqxDHm/s-l1600.webp",
+     "id": "5755f4",
+     "img": "images/cut/019-5755f4.png"
     },
     {
      "slide": 3,
@@ -1188,7 +1211,9 @@
      "query": "Samba OG",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/1t8AAeSw8pNqxqs6/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/1t8AAeSw8pNqxqs6/s-l1600.webp",
+     "id": "dc3c4a",
+     "img": "images/cut/020-dc3c4a.png"
     },
     {
      "slide": 3,
@@ -1300,7 +1325,9 @@
      "query": "Audemars Piguet 26674ST",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/o6UAAeSwAEhocWz-/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/o6UAAeSwAEhocWz-/s-l1600.webp",
+     "id": "771607",
+     "img": "images/cut/022-771607.png"
     },
     {
      "slide": 3,
@@ -1422,7 +1449,9 @@
      "query": "Air Jordan 1 High OG Chicago",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/N48AAeSwNrpqx66E/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/N48AAeSwNrpqx66E/s-l1600.webp",
+     "id": "d3f88b",
+     "img": "images/cut/024-d3f88b.png"
     },
     {
      "slide": 3,
@@ -1574,7 +1603,8 @@
      "query": "Nike Air Max Goadome",
      "product_url": "",
      "note": "",
-     "image_src": "https://cdn-images.farfetch-contents.com/36/81/33/48/36813348_69278725_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/36/81/33/48/36813348_69278725_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -1687,7 +1717,9 @@
      "query": "Louis Vuitton crocodile skate sneaker red",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/hbMAAeSwFkVquS~k/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/hbMAAeSwFkVquS~k/s-l1600.webp",
+     "id": "85067d",
+     "img": "images/cut/029-85067d.png"
     },
     {
      "slide": 3,
@@ -1759,7 +1791,9 @@
      "query": "SHAI 001",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/BuwAAeSwVg1qwLkq/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/BuwAAeSwVg1qwLkq/s-l1600.webp",
+     "id": "0673d7",
+     "img": "images/cut/030-0673d7.png"
     },
     {
      "slide": 3,
@@ -1821,7 +1855,8 @@
      "query": "Bode shirt",
      "product_url": "",
      "note": "Exact Bode style not named in source",
-     "image_src": "https://cdn-images.farfetch-contents.com/38/73/51/15/38735115_72668785_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/38/73/51/15/38735115_72668785_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -1832,7 +1867,9 @@
      "query": "air force 1 07 white",
      "product_url": "",
      "note": "",
-     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/AIR+FORCE+1+%2707.png"
+     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/AIR+FORCE+1+%2707.png",
+     "id": "e68ad0",
+     "img": "images/cut/031-e68ad0.png"
     },
     {
      "slide": 4,
@@ -2068,7 +2105,9 @@
      "query": "Tudor Black Bay 58",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/GoEAAeSwWrFqwoAv/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/GoEAAeSwWrFqwoAv/s-l1600.webp",
+     "id": "42e7c6",
+     "img": "images/cut/035-42e7c6.png"
     },
     {
      "slide": 3,
@@ -2373,7 +2412,9 @@
      "query": "Omega Aqua Terra 38 Moonshine Gold",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/UtIAAeSwLDppzDF7/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/UtIAAeSwLDppzDF7/s-l1600.webp",
+     "id": "a5df56",
+     "img": "images/cut/040-a5df56.png"
     },
     {
      "slide": 3,
@@ -2424,7 +2465,9 @@
      "query": "Cartier Tank gold",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/01IAAeSwqWZqwp5S/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/01IAAeSwqWZqwp5S/s-l1600.webp",
+     "id": "fc95af",
+     "img": "images/cut/041-fc95af.png"
     },
     {
      "slide": 3,
@@ -2517,7 +2560,9 @@
      "query": "Cartier Santos two tone small",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/TuQAAeSwFEJqyAdU/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/TuQAAeSwFEJqyAdU/s-l1600.webp",
+     "id": "48cffe",
+     "img": "images/cut/042-48cffe.png"
     },
     {
      "slide": 3,
@@ -2528,7 +2573,9 @@
      "query": "Breitling Navitimer",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/-agAAeSwSI1qvq61/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/-agAAeSwSI1qvq61/s-l1600.webp",
+     "id": "523ef2",
+     "img": "images/cut/042-523ef2.png"
     },
     {
      "slide": 4,
@@ -2650,7 +2697,9 @@
      "query": "Omega Speedmaster Moonshine gold",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/M8YAAeSwYntqsAjN/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/M8YAAeSwYntqsAjN/s-l1600.webp",
+     "id": "777b95",
+     "img": "images/cut/044-777b95.png"
     },
     {
      "slide": 3,
@@ -2701,7 +2750,9 @@
      "query": "Cartier Tank Americaine",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/FEoAAeSw6yBpmod4/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/FEoAAeSw6yBpmod4/s-l1600.webp",
+     "id": "49b0d3",
+     "img": "images/cut/045-49b0d3.png"
     },
     {
      "slide": 3,
@@ -2852,7 +2903,9 @@
      "query": "Omega Speedmaster 38 green",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
+     "id": "9fa28c",
+     "img": "images/cut/048-9fa28c.png"
     },
     {
      "slide": 3,
@@ -2953,7 +3006,9 @@
      "query": "Cartier Tonneau",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/KegAAeSw0zlolM56/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/KegAAeSw0zlolM56/s-l1600.webp",
+     "id": "a5211f",
+     "img": "images/cut/050-a5211f.png"
     },
     {
      "slide": 3,
