@@ -151,8 +151,15 @@ def fetch_missing(doc):
                 src = it.get("image_src") or page_image(it["product_url"])
                 if not src:
                     raise ValueError("no product image on page")
-                r = requests.get(src, headers={"User-Agent": UA, "Referer": it.get("product_url") or src}, timeout=25)
+                import time
+                for attempt in range(4):  # some CDNs rate-limit bursts (429): back off and retry
+                    r = requests.get(src, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/*,*/*",
+                                                   "Referer": it.get("product_url") or src}, timeout=25)
+                    if r.status_code != 429:
+                        break
+                    time.sleep(10 * (attempt + 1))
                 r.raise_for_status()
+                time.sleep(1.5)
                 out = CUT_DIR / f"{f['find']}-{item_key(it)}.png"
                 remove_bg(Image.open(io.BytesIO(r.content))).save(out, optimize=True)
                 it["img"] = out.relative_to(ROOT).as_posix()
