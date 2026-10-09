@@ -4318,10 +4318,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "photo_src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkpy-Y9QYRcf_BZuC_bZ7rgzGcVKDWvle-kj4svVt7Ui3Vhv8Yf5vavmLUd9PrGovtyGFkE3SzC8ibhuzAB1Sdq6spvcYs2txGvoNs19CbQ4x7Tks3GxLizJVMGR34rlCpEbi41lkYryXHWikOkaJAqYpZYqZJKbiCpy7Ctt-MsUSDBuwu3vmKEOguaIk/s1280/levis-campaign-8.jpg",
-   "photo_src_page": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
-   "photo_src_credit": "Levi's / Mel Bles (via MyFaceHunter)",
-   "updated": "2026-10-09T20:48:44.416Z"
+   "updated": "2026-10-09T20:48:44.416Z",
+   "photo": {
+    "credit": "Levi's / Mel Bles (via MyFaceHunter)",
+    "source_url": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html"
+   }
   },
   {
    "celeb": "Lil Tecca",
@@ -4420,10 +4421,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "photo_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/us-assets/GA2100-1A1_tecca4.jpg.transform/main-visual-pc/image.jpg",
-   "photo_src_page": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/",
-   "photo_src_credit": "Casio G-SHOCK",
-   "updated": "2026-10-09T20:48:13.090Z"
+   "updated": "2026-10-09T20:48:13.090Z",
+   "photo": {
+    "credit": "Casio G-SHOCK",
+    "source_url": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/"
+   }
   }
  ]
 }
