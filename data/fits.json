@@ -4407,7 +4407,7 @@
    "score_note": "Two G-Shocks around $110 on Casio.com; Lil Tecca is a multi-platinum rapper; official brand campaign images; social posts started Jul 24",
    "note": "Brand campaign, not a candid sighting. Casio says it runs through the end of 2026. The article names both watches as the campaign leads, and Casio's own product pages carry the 'tecca' campaign photos, which ties each model to him. I matched the photos by file name and alt text but couldn't open the images themselves.",
    "find": "059",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -4415,7 +4415,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-09"
+   "photo_search": "2026-10-09",
+   "photo_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/us-assets/GA2100-1A1_tecca4.jpg.transform/main-visual-pc/image.jpg",
+   "photo_src_page": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/",
+   "photo_src_credit": "Casio G-SHOCK",
+   "updated": "2026-10-09T20:48:13.090Z"
   }
  ]
 }
