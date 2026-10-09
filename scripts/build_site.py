@@ -52,6 +52,9 @@ def fit_desc(f):
 def head(cfg, title, desc, url, image, kind="website", ld=None):
     site = cfg["site_url"].rstrip("/")
     tags = [f"<title>{e(title)}</title>",
+            '<link rel="icon" href="favicon.svg" type="image/svg+xml">',
+            '<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">',
+            '<link rel="apple-touch-icon" href="apple-touch-icon.png">',
             f'<meta name="description" content="{e(desc)}">',
             f'<link rel="canonical" href="{e(url)}">',
             f'<meta property="og:site_name" content="Cop the Fit">',
@@ -220,6 +223,9 @@ def main():
     (DIST / "robots.txt").write_text(f"User-agent: *\nDisallow: /admin.html\n\nSitemap: {site}/sitemap.xml\n")
     (DIST / "fits.json").write_text(dump(public))
     shutil.copy(ROOT / "templates" / "admin.html", DIST / "admin.html")
+    for icon in ("favicon.svg", "favicon-32.png", "apple-touch-icon.png"):
+        shutil.copy(ROOT / "assets" / icon, DIST / icon)
+    shutil.copy(ROOT / "assets" / "favicon-32.png", DIST / "favicon.ico")  # browsers that ask for /favicon.ico
     (DIST / ".nojekyll").write_text("")
     if cfg.get("custom_domain"):
         (DIST / "CNAME").write_text(cfg["custom_domain"].strip() + "\n")

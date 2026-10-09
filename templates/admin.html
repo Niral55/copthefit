@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Cop the Fit Admin</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
 @font-face { font-family: "Big Shoulders Display"; font-weight: 800; font-display: swap; src: url(fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2"); }
 @font-face { font-family: "Big Shoulders Display"; font-weight: 900; font-display: swap; src: url(fonts/big-shoulders-display-latin-900-normal.woff2) format("woff2"); }
@@ -294,8 +297,11 @@ function blankFit() {
 
 function linkText(it) { return it.product_url || (it.retailer && it.query ? `${it.retailer}: ${it.query}` : (it.note && /custom/i.test(it.note) ? "custom" : "")); }
 
-function openEditor(find) {
+// Each open post gets a history entry (#edit-029), so the browser's Back button returns to the list.
+function openEditor(find, fromHistory) {
   const src = find ? DOC.fits.find(f => f.find === find) : blankFit();
+  if (!src) return;
+  if (!fromHistory) history.pushState({ ed: find || "new" }, "", "#edit-" + (find || "new"));
   DRAFT = JSON.parse(JSON.stringify(src));
   DRAFT.items.forEach(it => it._link = linkText(it));
   PENDING = { photo: null, items: new Map() }; // item object -> {b64, url}
@@ -305,7 +311,16 @@ function openEditor(find) {
   window.scrollTo(0, 0);
 }
 
-function closeEditor() { DRAFT = null; $("#editView").hidden = true; $("#listView").hidden = false; renderList(); }
+function closeEditor() {
+  if (history.state && history.state.ed) { history.back(); return; } // popstate finishes closing
+  showList();
+}
+function showList() { DRAFT = null; $("#editView").hidden = true; $("#listView").hidden = false; renderList(); }
+window.addEventListener("popstate", () => {
+  if (!DOC) return;
+  const m = location.hash.match(/^#edit-(\d{3}|new)$/);
+  if (m) openEditor(m[1] === "new" ? null : m[1], true); else showList();
+});
 
 function photoUrl() {
   if (PENDING.photo) return PENDING.photo.url;
@@ -669,7 +684,9 @@ async function load() {
   flash("Loading…");
   [DOC, CFG] = await Promise.all([GH.json("data/fits.json"), GH.json("config.json")]);
   flash("");
-  renderList();
+  const m = location.hash.match(/^#edit-(\d{3})$/); // a bookmarked or refreshed post opens directly
+  if (m && DOC.fits.some(f => f.find === m[1])) { history.replaceState(null, "", location.pathname); openEditor(m[1]); } // list entry underneath, so Back lands on the list
+  else { if (location.hash) history.replaceState(null, "", location.pathname); renderList(); }
 }
 
 $("#q").addEventListener("input", renderList);
