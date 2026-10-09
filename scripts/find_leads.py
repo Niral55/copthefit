@@ -52,6 +52,7 @@ SCHEMA = """Return ONLY a JSON array (inside ```json fences) of lead objects, be
  "items": [{"label": "Exact|Similar", "type": "watch|sneakers|shoes|clothing|bag|jewelry|accessory", "brand": "...", "name": "...",
             "product_url": "https://... or empty", "retailer": "key or empty", "query": "search words or empty",
             "image_src": "direct product image URL you saw, or empty", "note": ""}],
+ "photo_options": [{"image": "direct image URL of the person in this outfit", "page": "page it's on", "credit": "photographer / outlet"}],
  "photo_leads": [{"kind": "instagram|video|photo", "url": "https://...", "by": "@account or outlet", "at": "0:42", "note": ""}],
  "photo_source": "article url",
  "score": 0-100, "score_parts": {"shop": 0-40, "star": 0-25, "cover": 0-20, "fresh": 0-15}, "score_note": "one line", "note": ""}
@@ -123,7 +124,7 @@ Search the web, verify every item against its source, then answer.
     nxt = max(int(f["find"]) for f in doc["fits"]) + 1 if doc["fits"] else 1
     for raw in leads:
         lead = {k: v for k, v in raw.items() if k in {"celeb", "context", "date", "category", "headline", "detail", "tags", "sources", "items",
-                                                       "photo_leads", "photo_source", "score", "score_parts", "score_note", "note"}}
+                                                       "photo_leads", "photo_options", "photo_source", "score", "score_parts", "score_note", "note"}}
         lead.update(find=f"{nxt:03d}", status="review", ig_queue=False, priority=1, added=date.today().isoformat(), timing="Recent",
                     posted_at=None, ig_media_id=None, ig_permalink=None)
         lead.setdefault("note", "")

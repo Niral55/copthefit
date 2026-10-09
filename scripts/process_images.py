@@ -185,12 +185,38 @@ def fetch_missing(doc):
     return fails
 
 
+def fetch_covers(doc):
+    """"Use as cover" in the admin sets photo_src (a direct image URL of the look): download it as the cover photo."""
+    import requests
+    for f in doc["fits"]:
+        src = f.get("photo_src")
+        if not src:
+            continue
+        try:
+            r = requests.get(src, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/*,*/*", "Referer": f.get("photo_src_page") or src}, timeout=60)
+            r.raise_for_status()
+            img = Image.open(io.BytesIO(r.content)).convert("RGB")
+            img.thumbnail((1600, 1600))
+            PHOTO_DIR.mkdir(parents=True, exist_ok=True)
+            img.save(PHOTO_DIR / f"{f['find']}.jpg", quality=88, optimize=True)
+            old = f.get("photo") or {}
+            f["photo"] = {"credit": old.get("credit") or f.get("photo_src_credit") or "", "source_url": f.get("photo_src_page") or src}
+            for k in ("photo_src", "photo_src_page", "photo_src_credit", "photo_src_failed"):
+                f.pop(k, None)
+            print(f"cover {f['find']} from {src[:60]}")
+        except Exception as e:  # noqa: BLE001 - keep the lead, say why in the admin
+            f["photo_src_failed"] = f"{date.today().isoformat()}: {str(e)[:80]}"
+            f.pop("photo_src", None)
+            print(f"NO COVER {f['find']}: {e}")
+
+
 def main():
     CUT_DIR.mkdir(parents=True, exist_ok=True)
     INBOX.mkdir(parents=True, exist_ok=True)
     doc = load_fits()
     n = process_inbox(doc)
     if "--no-fetch" not in sys.argv:
+        fetch_covers(doc)
         fetch_missing(doc)
     save_fits(doc)
     print(f"inbox processed: {n}")
