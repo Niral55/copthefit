@@ -1,8 +1,4 @@
-<title>Cop the Fit</title>
-<meta name="description" content="Celebrity fits, identified. Look up any Cop the Fit post by its Find # and shop the exact pieces or similar ones.">
-<meta property="og:title" content="Cop the Fit">
-<meta property="og:description" content="Celebrity fits, identified. Search a Find # to shop the look.">
-<meta property="og:type" content="website">
+<!--__HEAD__-->
 <style>
 @font-face { font-family: "Big Shoulders Display"; font-weight: 700; font-display: swap; src: url(fonts/big-shoulders-display-latin-700-normal.woff2) format("woff2"); }
 @font-face { font-family: "Big Shoulders Display"; font-weight: 800; font-display: swap; src: url(fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2"); }
@@ -145,11 +141,11 @@ footer p { margin: 0; max-width: 80ch; }
 
 <div class="wrap">
   <header class="mast">
-    <a class="mark" href="#all">Cop the <span>Fit</span></a>
+    <a class="mark" href="./">Cop the <span>Fit</span></a>
     <p class="tagline">Celebrity fits, identified. Every post has a Find #. Look it up here to shop the exact piece or a similar one.</p>
   </header>
   <p class="disclose">Links on this site are affiliate links. If you buy through them, we may earn a commission at no cost to you.</p>
-  <main id="app"></main>
+  <main id="app"><!--__SSR__--></main>
   <footer>
     <p>As an Amazon Associate I earn from qualifying purchases.</p>
     <p>Not affiliated with or endorsed by the people or brands named. Item IDs come from the reporting credited on each page. "Similar" picks are look-alikes we chose, not the item worn.</p>
@@ -160,6 +156,8 @@ footer p { margin: 0; max-width: 80ch; }
 /* Affiliate IDs come from config.json at build time. */
 const CONFIG = /*__CONFIG__*/{ amazonTag: "", ebayCampaignId: "", skimlinksId: "", sovrnKey: "", overrides: {} };
 const FITS = /*__DATA__*/[];
+const PAGE_FIND = /*__PAGE__*/"";
+const fitUrl = f => "f/" + f.slug + "/";
 
 function shopUrl(fit, item) {
   const o = CONFIG.overrides[fit.find + "-" + item.slide];
@@ -206,7 +204,6 @@ function chipRow(key, opts, labels) {
 }
 
 function renderHome() {
-  document.title = "Cop the Fit";
   app.innerHTML = `
     <div class="controls">
       <label class="search" for="q"><span>#</span><input id="q" type="search" placeholder="Find # (e.g. 014), name or brand" autocomplete="off" value="${esc(state.q)}"></label>
@@ -218,7 +215,7 @@ function renderHome() {
   const q = document.getElementById("q");
   q.addEventListener("input", () => { state.q = q.value; drawGrid(); });
   q.addEventListener("keydown", e => {
-    if (e.key === "Enter") { const m = FITS.filter(matches); if (m.length === 1) location.hash = "fit-" + m[0].find; }
+    if (e.key === "Enter") { const m = FITS.filter(matches); if (m.length === 1) location.href = fitUrl(m[0]); }
   });
   app.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
     state[b.dataset.k] = b.dataset.v; save();
@@ -233,7 +230,7 @@ function drawGrid() {
   const items = list.reduce((n, f) => n + f.items.length, 0);
   document.getElementById("count").textContent = `${list.length} ${list.length === 1 ? "find" : "finds"} · ${items} items · newest first`;
   document.getElementById("grid").innerHTML = list.length ? list.map(f => `
-    <a class="tagcard" href="#fit-${f.find}">
+    <a class="tagcard" href="${fitUrl(f)}">
       ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy"></span>`
         : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy"></span>`
         : `<span class="pic"><span class="ph">Photo coming</span></span>`}
@@ -245,11 +242,10 @@ function drawGrid() {
 }
 
 function renderFit(f) {
-  document.title = `#${f.find} ${f.celeb} · Cop the Fit`;
   const i = FITS.indexOf(f), prev = FITS[i - 1], next = FITS[i + 1];
   const exact = f.items.filter(x => x.label === "Exact").length;
   app.innerHTML = `
-    <a class="back" href="#all">← All finds</a>
+    <a class="back" href="./">← All finds</a>
     <article class="fit">
       <aside class="bigtag">
         <div class="hole" aria-hidden="true"></div>
@@ -263,7 +259,7 @@ function renderFit(f) {
         </dl>
       </aside>
       <div style="min-width:0">
-        <p class="celeb">${esc(f.celeb)} · ${esc(f.category === "Fit" ? "Fit" : f.category)}</p>
+        <p class="celeb">What ${esc(f.celeb)} wore · ${esc(f.context)}</p>
         <h1>${esc(f.headline)}</h1>
         <p class="detail">${esc(f.detail)}</p>
         ${(() => {
@@ -292,17 +288,20 @@ function renderFit(f) {
           <ul>${f.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join("")}</ul>
         </div>
         <nav class="pager">
-          ${prev ? `<a href="#fit-${prev.find}">← #${prev.find} ${esc(prev.celeb)}</a>` : "<span></span>"}
-          ${next ? `<a href="#fit-${next.find}">#${next.find} ${esc(next.celeb)} →</a>` : "<span></span>"}
+          ${prev ? `<a href="${fitUrl(prev)}">← #${prev.find} ${esc(prev.celeb)}</a>` : "<span></span>"}
+          ${next ? `<a href="${fitUrl(next)}">#${next.find} ${esc(next.celeb)} →</a>` : "<span></span>"}
         </nav>
       </div>
     </article>`;
 }
 
 function route() {
+  // Old links like #fit-029 now point to the post's own page.
   const m = location.hash.match(/^#fit-(\d{3})$/);
-  const f = m && FITS.find(x => x.find === m[1]);
-  if (f) { renderFit(f); window.scrollTo(0, 0); } else { renderHome(); }
+  const old = m && FITS.find(x => x.find === m[1]);
+  if (old) { location.replace(fitUrl(old)); return; }
+  const f = PAGE_FIND && FITS.find(x => x.find === PAGE_FIND);
+  if (f) renderFit(f); else renderHome();
 }
 window.addEventListener("hashchange", route);
 route();
