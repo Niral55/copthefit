@@ -105,7 +105,8 @@
      "query": "Thom Browne tuxedo",
      "product_url": "",
      "note": "MTM version is custom",
-     "image_src": "https://cdn-images.farfetch-contents.com/11/96/15/00/11961500_62929088_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/11/96/15/00/11961500_62929088_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -116,7 +117,8 @@
      "query": "Thom Browne oxford shirt",
      "product_url": "",
      "note": "",
-     "image_src": "https://cdn-images.farfetch-contents.com/35/83/39/57/35833957_73642365_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/35/83/39/57/35833957_73642365_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 4,
@@ -751,7 +753,8 @@
      "query": "Prada Collapse sneakers",
      "product_url": "",
      "note": "",
-     "image_src": "https://cdn-images.farfetch-contents.com/27/36/06/67/27360667_57238207_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/27/36/06/67/27360667_57238207_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -1600,7 +1603,8 @@
      "query": "Nike Air Max Goadome",
      "product_url": "",
      "note": "",
-     "image_src": "https://cdn-images.farfetch-contents.com/36/81/33/48/36813348_69278725_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/36/81/33/48/36813348_69278725_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
@@ -1851,7 +1855,8 @@
      "query": "Bode shirt",
      "product_url": "",
      "note": "Exact Bode style not named in source",
-     "image_src": "https://cdn-images.farfetch-contents.com/38/73/51/15/38735115_72668785_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/38/73/51/15/38735115_72668785_1000.jpg",
+     "image_fetch": "failed 2026-10-09: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 3,
