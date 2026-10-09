@@ -698,13 +698,35 @@ function openProducts(fromHistory) {
 }
 function closeProducts() { if (history.state && history.state.prod) { history.back(); return; } showList(); }
 function prodPrice(p) { return p.price ? `${p.currency === "USD" || !p.currency ? "$" : p.currency + " "}${p.price}` : ""; }
+function pollProducts() {
+  clearTimeout(pollProducts.t);
+  if ($("#prodView").hidden || !PRODUCTS.products.some(p => !p.enriched)) return;
+  pollProducts.t = setTimeout(async () => {
+    try {
+      const fresh = await GH.jsonOr("data/products.json", undefined, { products: [] });
+      if ($("#prodView").hidden || $("#prodView").querySelector(".busy")) return pollProducts();
+      const typed = {};
+      $("#prodView").querySelectorAll(".prod").forEach(c => { const p = PRODUCTS.products[+c.dataset.i]; if (p) typed[p.id] = Object.fromEntries([...c.querySelectorAll("[data-k]")].map(el => [el.dataset.k, el.value])); });
+      PRODUCTS = fresh; renderProdCount(); renderProducts();
+      // put back anything you already typed or picked, only where the tidy-up left a field empty
+      $("#prodView").querySelectorAll(".prod").forEach(c => { const p = PRODUCTS.products[+c.dataset.i], t = p && typed[p.id]; if (!t) return;
+        c.querySelectorAll("[data-k]").forEach(el => {
+          if (!t[el.dataset.k] || !(el.dataset.k === "find" || el.dataset.k === "target" || !el.value)) return;
+          el.value = t[el.dataset.k];
+          if (el.dataset.k === "find") el.dispatchEvent(new Event("change")); // rebuild "Add as" for that post before restoring it
+        }); });
+    } catch (e) { /* try again next round */ }
+    pollProducts();
+  }, 15000);
+}
 function renderProducts() {
+  setTimeout(pollProducts);
   const list = PRODUCTS.products;
   const fits = DOC.fits.filter(f => f.status !== "rejected").sort((a, b) => +b.find - +a.find);
   const opt = sel => `<option value="">Choose a post…</option>` + fits.map(f => `<option value="${f.find}"${f.find === sel ? " selected" : ""}>#${f.find} ${esc(f.celeb)} · ${esc(f.context)}${f.items.length >= 8 ? " (full)" : ""}</option>`).join("");
   $("#prodView").innerHTML = `
     <div class="ed-head"><div style="display:flex;gap:12px;align-items:baseline;flex-wrap:wrap"><button class="btn sm" id="prodBack" type="button">← All posts</button><h1 class="ed-title">Products</h1><span class="pill">${list.length} saved</span></div><button class="btn sm" id="prodRefresh" type="button">Refresh</button></div>
-    <p class="hint">Products you saved with right-click → <b>Save product to Cop the Fit</b> on any store page. Check the name, pick a post and add it: it becomes an item with its link and product image, and leaves this list.${list.some(p => !p.enriched) ? " Names marked “tidying…” are still being cleaned up (about a minute); press Refresh." : ""}</p>
+    <p class="hint">Products you saved with right-click → <b>Save product to Cop the Fit</b> on any store page. Check the name, pick a post and add it: it becomes an item with its link and product image, and leaves this list.${list.some(p => !p.enriched) ? " Names marked “tidying…” fill in by themselves in about a minute." : ""}</p>
     <div class="prods">${list.map((p, i) => {
       const sug = p.suggested_find && fits.find(f => f.find === p.suggested_find);
       return `<div class="prod" data-i="${i}">
@@ -717,25 +739,60 @@ function renderProducts() {
         <label class="f" for="pn${i}">Item name<input id="pn${i}" data-k="name" value="${esc(p.name || "")}" placeholder="Short name, e.g. Automatic tonneau watch"></label>
         ${sug ? `<div class="sug">Suggested: <b>#${sug.find} ${esc(sug.celeb)}</b>${p.reason ? ` · ${esc(p.reason)}` : ""}</div>` : ""}
         <label class="f" for="pf${i}">Add to post<select id="pf${i}" data-k="find">${opt(p.suggested_find || "")}</select></label>
+        <label class="f" for="pa${i}">Add as<select id="pa${i}" data-k="target"></select></label>
         <div style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn sm primary" type="button" data-add="${i}">Add to post</button><button class="btn sm danger" type="button" data-del="${i}">Delete</button></div>
       </div>`; }).join("") || `<p class="empty">No saved products. On any store page, right-click → <b>Save product to Cop the Fit</b> (Chrome extension).</p>`}</div>`;
   $("#prodBack").onclick = closeProducts;
   $("#prodRefresh").onclick = async () => { $("#prodRefresh").textContent = "Refreshing…"; PRODUCTS = await GH.jsonOr("data/products.json", undefined, { products: [] }); renderProdCount(); renderProducts(); };
   const val = (i, k) => $("#prodView").querySelector(`.prod[data-i="${i}"] [data-k="${k}"]`).value.trim();
-  $("#prodView").querySelectorAll("[data-add]").forEach(b => b.onclick = () => addProduct(+b.dataset.add, { brand: val(b.dataset.add, "brand"), name: val(b.dataset.add, "name"), label: val(b.dataset.add, "label"), type: val(b.dataset.add, "type"), find: val(b.dataset.add, "find") }));
+  // "Add as": a new item, or fill an existing item of that post (best match picked automatically)
+  const fillTargets = i => {
+    const p = list[i], find = val(i, "find"), sel = $("#pa" + i), f = DOC.fits.find(x => x.find === find);
+    if (!f) { sel.innerHTML = `<option value="">New item</option>`; sel.disabled = true; return; }
+    sel.disabled = false;
+    const best = matchItem(f, { brand: val(i, "brand") || p.brand, name: val(i, "name") || p.name || p.title_raw });
+    sel.innerHTML = `<option value="">New item</option>` + f.items.map((it, k) => `<option value="${k}"${k === best ? " selected" : ""}>Fill item ${k + 1}: ${esc((it.brand ? it.brand + " " : "") + it.name).slice(0, 48)}${it.product_url ? "" : " (no link yet)"}</option>`).join("");
+  };
+  list.forEach((p, i) => { fillTargets(i); $("#pf" + i).addEventListener("change", () => fillTargets(i)); });
+  $("#prodView").querySelectorAll("[data-add]").forEach(b => b.onclick = () => addProduct(+b.dataset.add, { brand: val(b.dataset.add, "brand"), name: val(b.dataset.add, "name"), label: val(b.dataset.add, "label"), type: val(b.dataset.add, "type"), find: val(b.dataset.add, "find"), target: val(b.dataset.add, "target") }));
   $("#prodView").querySelectorAll("[data-del]").forEach(b => b.onclick = () => deleteProduct(+b.dataset.del));
 }
+// Which existing item a saved product most likely is: same brand and shared name words, preferring items without a link.
+function matchItem(f, p) {
+  const words = t => new Set((t || "").toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(w => w.length > 2 && !["the", "and", "men", "mens", "watch", "with"].includes(w)));
+  const pw = words(p.name), pb = (p.brand || "").toLowerCase();
+  let best = -1, score = 0;
+  f.items.forEach((it, k) => {
+    const iw = words(it.name); let sc = [...iw].filter(w => pw.has(w)).length;
+    if (pb && (it.brand || "").toLowerCase() === pb) sc += 2;
+    if (!it.product_url) sc += 0.5;
+    if (sc > score && sc >= 3) { score = sc; best = k; }
+  });
+  return best;
+}
+const stripBrand = (name, brand) => brand && name.toLowerCase().startsWith(brand.toLowerCase() + " ") ? name.slice(brand.length + 1).trim() : name;
 const cardBusy = (i, label, btn) => { const c = $("#prodView").querySelector(`.prod[data-i="${i}"]`); if (c) c.classList.add("busy"); const b = c && c.querySelector(btn); if (b) b.textContent = label; };
 async function addProduct(i, v) {
   const p = PRODUCTS.products[i];
   if (!v.find) { flash("Pick which post to add it to.", "err"); return; }
-  if (!v.name) { flash("Give the item a name.", "err"); return; }
+  v.name = stripBrand(v.name, v.brand);
+  const fill = v.target !== "" && v.target != null ? +v.target : -1;
+  if (fill < 0 && !v.name) { flash("Give the item a name.", "err"); return; }
   const f0 = DOC.fits.find(f => f.find === v.find);
-  if (f0.items.length >= 8) { flash(`#${v.find} already has 8 items (the Instagram limit). Remove one first.`, "err"); return; }
+  if (fill < 0 && f0.items.length >= 8) { flash(`#${v.find} already has 8 items (the Instagram limit). Remove one first.`, "err"); return; }
   try {
     cardBusy(i, "Adding…", "[data-add]");
     await GH.commit(doc => {
       const f = doc.fits.find(x => x.find === v.find);
+      if (fill >= 0) { // give an existing item this product's link and photo
+        const it = f.items[fill];
+        it.product_url = p.url; it.retailer = ""; it.query = ""; if (/custom piece/i.test(it.note || "")) it.note = "";
+        if (!it.brand && v.brand) it.brand = v.brand;
+        if (!it.type && v.type) it.type = v.type;
+        if (p.image) { if (it.img) it.image_replace = p.image; else { it.image_src = p.image; delete it.image_fetch; } }
+        f.updated = new Date().toISOString();
+        return;
+      }
       const item = { slide: f.items.length + 2, label: v.label === "Exact" ? "Exact" : "Similar", brand: v.brand, name: v.name, retailer: "", query: "", product_url: p.url, note: "" };
       if (v.type) item.type = v.type;
       if (p.image) item.image_src = p.image;  // the build cuts out the background
@@ -744,7 +801,7 @@ async function addProduct(i, v) {
     }, [], `Add product to #${v.find}: ${v.brand ? v.brand + " " : ""}${v.name}`,
     [{ path: "data/products.json", empty: { products: [] }, change: j => { j.products = j.products.filter(x => x.id !== p.id); }, done: j => { PRODUCTS = j; } }]);
     renderProdCount(); renderProducts();
-    flash(`Added to #${v.find} as a ${v.label} item. The product image and link go live in about 3 minutes. <a href="#edit-${v.find}" id="goEdit">Open #${v.find}</a>`, "ok");
+    flash(fill >= 0 ? `Filled item ${fill + 1} on #${v.find} with this link and photo. Live in about 3 minutes. <a href="#edit-${v.find}" id="goEdit">Open #${v.find}</a>` : `Added to #${v.find} as a ${v.label} item. The product image and link go live in about 3 minutes. <a href="#edit-${v.find}" id="goEdit">Open #${v.find}</a>`, "ok");
     const g = $("#goEdit"); if (g) g.onclick = e => { e.preventDefault(); openEditor(v.find); };
   } catch (e) { flash(esc(e.message), "err"); renderProducts(); }
 }
