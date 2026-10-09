@@ -10,23 +10,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p samples
+          mkdir -p samples/search
           python3 - <<'PY'
-          import json, urllib.request, urllib.parse
+          import json, urllib.request, urllib.parse, re
           UA = {"User-Agent": "CopTheFit/1.0 (https://github.com/Niral55/copthefit; photo credit bot)"}
-          d = json.load(open("data/fits.json"))
-          meta = {}
-          for f in d["fits"]:
-              for i, c in enumerate(f.get("photo_candidates") or []):
-                  title = urllib.parse.unquote(c["page"].split("/wiki/")[1])
-                  api = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"action": "query", "titles": title, "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 1600, "format": "json"})
-                  info = list(json.load(urllib.request.urlopen(urllib.request.Request(api, headers=UA)))["query"]["pages"].values())[0]["imageinfo"][0]
-                  em = info.get("extmetadata", {})
-                  meta[f"{f['find']}-{i}"] = {k: em.get(k, {}).get("value", "") for k in ("ImageDescription", "DateTimeOriginal", "Artist", "LicenseShortName", "Categories")}
-                  img = urllib.request.urlopen(urllib.request.Request(info["thumburl"], headers=UA)).read()
-                  open(f"samples/{f['find']}-{i}.jpg", "wb").write(img)
-          json.dump(meta, open("samples/meta.json", "w"), indent=1)
+          def get(params):
+              u = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(dict(params, format="json"))
+              return json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA)))
+          qs = {"007": "Travis Scott US Open 2026", "035": "David Beckham Wimbledon 2026", "042": "Richard E. Grant Wimbledon 2026",
+                "019": "Russell Wilson US Open 2026", "015": "Jimmy Fallon US Open 2026", "023": "Homer Gere US Open 2026",
+                "036": "J-Hope Louis Vuitton 2026", "016": "Travis Scott Odyssey premiere", "039": "Timothée Chalamet 2026 Academy Awards",
+                "032": "Michael B. Jordan 2026 Academy Awards", "033": "George Clooney 2026 Golden Globes", "029": "ASAP Rocky 2026",
+                "004": "Timothée Chalamet 2026", "027": "Callum Turner 2026", "040": "Glen Powell 2026"}
+          out = {}
+          for find, q in qs.items():
+              r = get({"action": "query", "generator": "search", "gsrsearch": q + " filetype:bitmap", "gsrnamespace": 6, "gsrlimit": 8,
+                       "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 900})
+              for n, p in enumerate((r.get("query") or {}).get("pages", {}).values()):
+                  ii = p["imageinfo"][0]; em = ii.get("extmetadata", {})
+                  v = lambda k: re.sub("<[^>]+>", "", em.get(k, {}).get("value", ""))[:160]
+                  lic = v("LicenseShortName")
+                  if re.search(r"NC|ND|copyright|fair use", lic, re.I): continue
+                  key = f"{find}-{n}"
+                  out[key] = {"title": p["title"], "date": v("DateTimeOriginal"), "desc": v("ImageDescription"), "artist": v("Artist"), "license": lic, "page": ii.get("descriptionurl")}
+                  try:
+                      open(f"samples/search/{key}.jpg", "wb").write(urllib.request.urlopen(urllib.request.Request(ii["thumburl"], headers=UA)).read())
+                  except Exception as e:
+                      out[key]["err"] = str(e)
+          json.dump(out, open("samples/search/meta.json", "w"), indent=1, ensure_ascii=False)
           PY
       - run: |
           git config user.name "copthefit-bot"; git config user.email "bot@users.noreply.github.com"
-          git add samples && git commit -qm "sample photos" && git push -q
+          git add samples && git commit -qm "sample search" && git push -q
