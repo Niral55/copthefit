@@ -10,6 +10,7 @@ Usage: python scripts/process_images.py [--no-fetch]
 """
 import io
 import json
+import time
 import re
 import sys
 from datetime import date
@@ -145,10 +146,11 @@ def fetch_missing(doc):
             continue
         for it in f["items"]:
             key = f"{f['find']}-{it['slide']}"
-            if not (it.get("product_url") or it.get("image_src")) or cutout_path(f["find"], it) or it.get("image_fetch"):
+            replace = it.get("image_replace")
+            if not replace and (not (it.get("product_url") or it.get("image_src")) or cutout_path(f["find"], it) or it.get("image_fetch")):
                 continue
             try:
-                src = it.get("image_src") or page_image(it["product_url"])
+                src = replace or it.get("image_src") or page_image(it["product_url"])
                 if not src:
                     raise ValueError("no product image on page")
                 import time
@@ -160,11 +162,22 @@ def fetch_missing(doc):
                     time.sleep(10 * (attempt + 1))
                 r.raise_for_status()
                 time.sleep(1.5)
-                out = CUT_DIR / f"{f['find']}-{item_key(it)}.png"
+                prev = cutout_path(f["find"], it)
+                out = CUT_DIR / f"{f['find']}-{item_key(it)}{'-v' + str(int(time.time())) if replace else ''}.png"
                 remove_bg(Image.open(io.BytesIO(r.content))).save(out, optimize=True)
                 it["img"] = out.relative_to(ROOT).as_posix()
+                if replace:  # swap in the better product shot, drop the old one
+                    it["image_src"] = replace
+                    it.pop("image_replace", None)
+                    if prev and prev != out:
+                        prev.unlink()
                 print(f"fetched {key}")
             except Exception as e:  # noqa: BLE001 - log and move on
+                if replace:  # keep the current image; try the replacement once only
+                    it.pop("image_replace", None)
+                    it["image_replace_failed"] = f"{date.today().isoformat()}: {str(e)[:80]}"
+                    fails.append(f"{key} (replacement) {it['name']}: {e}")
+                    continue
                 it["image_fetch"] = f"failed {date.today().isoformat()}: {str(e)[:80]}"
                 fails.append(f"{key} {it['name']}: {e}")
     for line in fails:

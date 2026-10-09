@@ -21,12 +21,14 @@ Add 4–8 new male-celebrity fits from the last 7 days to `data/fits.json` as `"
    - `Similar`: 1–2 cheaper, buyable look-alikes, usually `amazon` + a plain search query. Never use the words dupe, fake, faux or replica.
    - One-off/custom pieces: no retailer, `note: "Custom piece — not for sale"`, plus a Similar pick.
    - `slide` numbers start at 2 and go up by 1.
-5. **Where to grab the cover (`photo_leads`):** Niral screenshots the cover himself, so list 1–3 places that clearly show the outfit, best first:
+5. **Product images (`image_src`):** for every item, set `image_src` to a direct image URL of a clean studio product shot, so all slides look consistent: plain white or light background, product only (no box, hanger, hands, model or lifestyle scene), whole product visible. Watches: dial facing front. Sneakers: side profile, one shoe. Clothing: flat or ghost-mannequin front.
+   Source order: the brand's official store → StockX or GOAT → Farfetch, SSENSE, Mr Porter, END. or an authorized dealer. Never eBay seller photos, press/agency photos, or anything watermarked. Only use a URL you actually saw on the page. The image must show the same model as the item; if only a different version exists, leave `image_src` empty rather than show the wrong product.
+6. **Where to grab the cover (`photo_leads`):** Niral screenshots the cover himself, so list 1–3 places that clearly show the outfit, best first:
    1. The celebrity's own Instagram post of the look (`instagram.com/p/…` or `/reel/…`).
    2. A video from the celebrity, team, league or event: YouTube, TikTok, or an Instagram reel (tunnel walks, arrival clips, vlogs, GRWM). Add `at` with the timestamp where the full outfit is clearest (e.g. "0:42").
    3. The team's, league's or event's official Instagram post.
    Each lead is `{"kind": "instagram" | "video", "url": "…", "by": "@account or channel", "at": "0:42", "note": "optional"}`. Never list Getty, Backgrid, Shutterstock, AP or other agency photos or footage, or anything watermarked. Only list links you actually found; if none, leave `photo_leads` empty. Keep `photo_source` as the article link.
-6. **Fields:** `find` (next free 3-digit number), `status: "review"`, `priority: 0`, `added` (today, YYYY-MM-DD), `celeb`, `context` (event), `date` (e.g. "Oct 12, 2026"), `category` (Fit, Kicks or Wrist), `timing: "Recent"`, `tags` (1–2 lowercase hashtags like "nfl", "tunnelfit"), `sources` ([{label: "Outlet — article", url}]), `note`, `posted_at: null`, `ig_media_id: null`, `ig_permalink: null`.
+7. **Fields:** `find` (next free 3-digit number), `status: "review"`, `priority: 0`, `added` (today, YYYY-MM-DD), `celeb`, `context` (event), `date` (e.g. "Oct 12, 2026"), `category` (Fit, Kicks or Wrist), `timing: "Recent"`, `tags` (1–2 lowercase hashtags like "nfl", "tunnelfit"), `sources` ([{label: "Outlet — article", url}]), `note`, `posted_at: null`, `ig_media_id: null`, `ig_permalink: null`.
 
 ## Finish
 1. Run `python scripts/check.py` and fix any errors.
