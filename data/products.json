@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv19127j296l",
+   "url": "https://www.amazon.com/dp/B094YP9RHS",
+   "store": "amazon.com",
+   "title_raw": "Tissot PRX, Swiss Powermatic 80 Automatic, 40mm, Silver Dial, Men's Watch",
+   "brand": "",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-09T17:38:14.767Z",
+   "enriched": null
+  },
+  {
    "id": "mv18ykrnb642",
    "url": "https://us.louisvuitton.com/eng-us/products/tambour-automatic-40mm-steel-and-pink-gold-nvprod4540026v/W1SP10",
    "store": "us.louisvuitton.com",
