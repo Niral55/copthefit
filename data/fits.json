@@ -115,7 +115,9 @@
      "query": "Thom Browne oxford shirt",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/k7kAAeSwoW5qwFEO/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/k7kAAeSwoW5qwFEO/s-l1600.webp",
+     "id": "3d679d",
+     "img": "images/cut/002-3d679d.png"
     },
     {
      "slide": 4,
@@ -750,7 +752,9 @@
      "query": "Prada Collapse sneakers",
      "product_url": "",
      "note": "",
-     "image_src": "https://i.ebayimg.com/images/g/hR8AAeSwvA9qVkEO/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/hR8AAeSwvA9qVkEO/s-l1600.webp",
+     "id": "d28e32",
+     "img": "images/cut/012-d28e32.png"
     },
     {
      "slide": 3,
@@ -1599,7 +1603,9 @@
      "query": "Nike Air Max Goadome",
      "product_url": "",
      "note": "",
-     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/6ee19bfa-ae5c-4de7-986f-c75f909831b4/AIR+MAX+GOADOME+LOW+QS.png"
+     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/6ee19bfa-ae5c-4de7-986f-c75f909831b4/AIR+MAX+GOADOME+LOW+QS.png",
+     "id": "2ac7c1",
+     "img": "images/cut/027-2ac7c1.png"
     },
     {
      "slide": 3,
@@ -1850,7 +1856,9 @@
      "query": "Bode shirt",
      "product_url": "",
      "note": "Exact Bode style not named in source",
-     "image_src": "https://i.ebayimg.com/images/g/BrUAAeSwkAlqhzZP/s-l1600.webp"
+     "image_src": "https://i.ebayimg.com/images/g/BrUAAeSwkAlqhzZP/s-l1600.webp",
+     "id": "0d9afc",
+     "img": "images/cut/031-0d9afc.png"
     },
     {
      "slide": 3,
