@@ -3673,7 +3673,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "Anthony Edwards",
@@ -3706,7 +3707,8 @@
      "retailer": "adidas",
      "query": "Anthony Edwards 3 Cold Blooded",
      "note": "$130; released Sept 18, 2026",
-     "slide": 2
+     "slide": 2,
+     "image_fetch": "failed 2026-10-09: HTTPSConnectionPool(host='www.adidas.com', port=443): Read timed out. (read time"
     }
    ],
    "photo_leads": [
@@ -3736,7 +3738,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "James Harden",
@@ -3769,7 +3772,8 @@
      "retailer": "stockx",
      "query": "adidas Harden Vol 1 Pioneer 2026",
      "note": "$140 retail; StockX lists a release of Aug 30, 2026",
-     "slide": 2
+     "slide": 2,
+     "image_fetch": "failed 2026-10-09: no product image on page"
     }
    ],
    "photo_leads": [
@@ -3799,7 +3803,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "Travis Kelce",
@@ -3832,7 +3837,8 @@
      "retailer": "",
      "query": "",
      "note": "$4,950. The press describes it as midnight blue, but LV's US site lists this item (1AJRHB–1AJRHF) only in 'Lava Smoke'. Check the colorway before publishing. image_src left empty for that reason.",
-     "slide": 2
+     "slide": 2,
+     "image_fetch": "failed 2026-10-09: no product image on page"
     },
     {
      "label": "Similar",
@@ -3902,7 +3908,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "LeBron James",
@@ -3994,7 +4001,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   },
   {
    "celeb": "Jeremy Allen White",
@@ -4108,7 +4116,8 @@
    "timing": "Recent",
    "posted_at": null,
    "ig_media_id": null,
-   "ig_permalink": null
+   "ig_permalink": null,
+   "photo_search": "2026-10-09"
   }
  ]
 }
