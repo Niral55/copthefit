@@ -61,6 +61,13 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 
 /* list */
 .list { display: flex; flex-direction: column; gap: 8px; }
+.rowwrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px; align-items: stretch; }
+.pick { display: grid; place-items: center; width: 40px; border: 1px solid var(--line); border-radius: 6px; background: var(--tag); cursor: pointer; }
+.pick input, .bulk input { width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; }
+.rowwrap.sel .row, .rowwrap.sel .pick { border-color: var(--accent); }
+.bulk { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 10px 0; background: var(--paper); }
+.bulk label { display: flex; align-items: center; gap: 8px; font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.bulk .n { font: 500 13px var(--mono); color: var(--muted); margin-right: 4px; }
 .row { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 14px; align-items: center; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; cursor: pointer; text-align: left; color: inherit; font: inherit; width: 100%; }
 .row:hover { border-color: var(--ink); }
 .thumb { width: 64px; aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: var(--paper); display: grid; place-items: center; font: 9px var(--mono); color: var(--muted); text-transform: uppercase; text-align: center; }
@@ -137,6 +144,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
       <button class="btn primary" id="newPost" type="button">+ New post</button>
     </div>
     <p class="hint" id="tabHint"></p>
+    <div class="bulk" id="bulk"></div>
     <div class="list" id="list"></div>
   </section>
 
@@ -225,6 +233,8 @@ let STAMP = Date.now();
 
 /* ---------- state ---------- */
 let DOC = null, CFG = null, TAB = "all", DRAFT = null, PENDING = null;
+const SEL = new Set(); // Find #s ticked in the list
+let SHOWN = [];      // Find #s currently listed (for Select all)
 // The website and Instagram are separate: "Live on site" posts are all on the website right away;
 // the Instagram queue is its own list (ig_queue), drip-posted one a day.
 const STAGES = [
@@ -258,7 +268,7 @@ function readiness(f) {
 /* ---------- list view ---------- */
 function renderTabs() {
   $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${DOC.fits.filter(s.test).length}</b></button>`).join("");
-  $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; renderList(); });
+  $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; SEL.clear(); renderList(); });
   $("#tabHint").textContent = STAGES.find(s => s.id === TAB).hint;
 }
 
@@ -274,7 +284,7 @@ function renderList() {
     const r = readiness(f);
     let next = "";
     if (TAB === "queue" && !nextShown && (!requirePhoto || r.photo)) { next = `<span class="chip next">Posts next</span>`; nextShown = true; }
-    return `<button class="row" type="button" data-find="${f.find}">
+    return `<div class="rowwrap${SEL.has(f.find) ? " sel" : ""}"><label class="pick" title="Select #${f.find}"><input type="checkbox" data-pick="${f.find}"${SEL.has(f.find) ? " checked" : ""} aria-label="Select #${f.find} ${esc(f.celeb)}"></label><button class="row" type="button" data-find="${f.find}">
       <span class="thumb">${f.photo ? `<img src="${GH.raw(`images/photos/${f.find}.jpg`)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('No photo'))">` : "No photo"}</span>
       <span style="min-width:0">
         <span class="num">#${f.find} · ${esc(f.context)} · ${esc(f.date)}</span>
@@ -289,9 +299,60 @@ function renderList() {
         </span>
       </span>
       <span class="btn sm">Open</span>
-    </button>`;
+    </button></div>`;
   }).join("") : `<p class="empty">${q ? "Nothing matches that search." : TAB === "review" ? "No new leads right now. The lead finder adds more on Mondays and Thursdays, or press + New post." : "Nothing here yet."}</p>`;
   $("#list").querySelectorAll(".row").forEach(b => b.onclick = () => openEditor(b.dataset.find));
+  $("#list").querySelectorAll("[data-pick]").forEach(c => c.onchange = () => { c.checked ? SEL.add(c.dataset.pick) : SEL.delete(c.dataset.pick); c.closest(".rowwrap").classList.toggle("sel", c.checked); renderBulk(); });
+  SHOWN = list.map(f => f.find);
+  renderBulk();
+}
+
+/* ---------- bulk actions on selected posts (one commit, one site rebuild) ---------- */
+const BULK = {
+  publish: { label: "Publish to site", apply: f => { if (f.status === "review" || f.status === "rejected") { f.status = "approved"; return true; } } },
+  queue: { label: "Add to Instagram queue", apply: f => { if (f.status === "posted" || f.ig_queue) return; if (f.status !== "approved") f.status = "approved"; f.ig_queue = true; return true; } },
+  unqueue: { label: "Remove from Instagram queue", apply: f => { if (!f.ig_queue) return; f.ig_queue = false; f.priority = 1; return true; } },
+  unpublish: { label: "Unpublish", danger: true, apply: f => { if (f.status === "rejected") return; f.status = "rejected"; f.ig_queue = false; return true; } }
+};
+function renderBulk() {
+  const shown = SHOWN.filter(n => SEL.has(n)).length;
+  const all = SHOWN.length && shown === SHOWN.length;
+  $("#bulk").innerHTML = !SHOWN.length ? "" : `<label><input type="checkbox" id="selAll"${all ? " checked" : ""}> Select all${SHOWN.length ? ` (${SHOWN.length})` : ""}</label>
+    ${SEL.size ? `<span class="n">${SEL.size} selected</span>
+      ${Object.entries(BULK).map(([k, a]) => `<button class="btn sm${a.danger ? " danger" : k === "publish" ? " primary" : ""}" type="button" data-bulk="${k}">${a.label}</button>`).join("")}
+      <button class="btn sm" type="button" id="selClear">Clear</button>` : ""}`;
+  const sa = $("#selAll");
+  if (sa) { sa.indeterminate = shown > 0 && !all; sa.onchange = () => { SHOWN.forEach(n => sa.checked ? SEL.add(n) : SEL.delete(n)); renderList(); }; }
+  if ($("#selClear")) $("#selClear").onclick = () => { SEL.clear(); renderList(); };
+  $("#bulk").querySelectorAll("[data-bulk]").forEach(b => b.onclick = () => bulkAction(b.dataset.bulk));
+}
+async function bulkAction(kind) {
+  const a = BULK[kind], finds = [...SEL];
+  if (kind === "unpublish" && !confirmUnpublish(finds.length)) return;
+  $("#bulk").querySelectorAll("button").forEach(b => b.disabled = true);
+  try {
+    flash(`${a.label}: ${finds.length} post${finds.length > 1 ? "s" : ""}…`);
+    const changed = await GH.commit(doc => {
+      const out = [];
+      for (const n of finds) {
+        const f = doc.fits.find(x => x.find === n);
+        if (f && a.apply(f)) { f.updated = new Date().toISOString(); out.push(n); }
+      }
+      return out;
+    }, [], `${a.label}: ${finds.map(n => "#" + n).join(", ")}`);
+    SEL.clear();
+    const skipped = finds.length - changed.length;
+    flash(`${a.label}: ${changed.length} post${changed.length === 1 ? "" : "s"} updated${skipped ? `, ${skipped} already done or not allowed (e.g. already on Instagram)` : ""}. The site updates in about 3 minutes.`, "ok");
+    renderList();
+  } catch (e) { flash(esc(e.message), "err"); renderBulk(); }
+}
+function confirmUnpublish(n) {
+  // inline confirm without a browser dialog: second click within 5s confirms
+  const now = Date.now();
+  if (confirmUnpublish.at && now - confirmUnpublish.at < 5000) { confirmUnpublish.at = 0; return true; }
+  confirmUnpublish.at = now;
+  flash(`Unpublish ${n} post${n > 1 ? "s" : ""}? They'll come off the site and the Instagram queue. Click Unpublish again to confirm.`, "err");
+  return false;
 }
 
 /* ---------- editor ---------- */
