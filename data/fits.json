@@ -3789,7 +3789,8 @@
      "slide": 2,
      "image_src": "https://images.soleretriever.com/sb/products/adidas_harden_vol_1_pioneer_LC5090-1786992586042.webp?width=1600&quality=90&fit=contain",
      "id": "951a88",
-     "img": "images/cut/053-951a88.png"
+     "img": "images/cut/053-951a88.png",
+     "image_replace": "https://cdn.sanity.io/images/pu5wtzfc/production/96cd0cba4e8b43545575c59b3f351c720d833a44-2000x2000.jpg/adidas-harden-vol-1-pioneer-retro-release-LC5090.jpg?w=1600&h=1600&auto=format"
     }
    ],
    "photo_leads": [
@@ -4262,15 +4263,16 @@
      "label": "Exact",
      "type": "clothing",
      "brand": "Levi's",
-     "name": "501 Loose Fit Jeans",
-     "product_url": "https://www.urbanoutfitters.com/shop/levis-501-loose-fit-jean",
+     "name": "501 Loose Fit Jeans (light wash)",
+     "product_url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-loose-mens-jeans/p/0057U0009",
      "retailer": "",
      "query": "",
      "image_src": "https://images.urbndata.com/is/image/UrbanOutfitters/105184493_092_b",
-     "note": "Sources name the 501 Loose fit but not the wash. UO has 5 washes, but only sizes 30 and 32 were in stock; Nordstrom has Wild Raptor at $110 (https://www.nordstrom.com/s/501-loose-straight-leg-jeans-wild-raptor/8833910). image_src is UO's first product image and may be on-model; couldn't check it visually.",
+     "note": "",
      "slide": 2,
      "id": "c334ca",
-     "img": "images/cut/058-c334ca.png"
+     "img": "images/cut/058-c334ca.png",
+     "image_replace": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_0057U-0009_GLO_CL_FV?fmt=jpeg&qlt=90&wid=2000&hei=2500"
     }
    ],
    "photo_options": [
