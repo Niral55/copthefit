@@ -10,7 +10,7 @@ const GH = {
 
   async req(path, opts = {}) {
     const s = await GH.settings();
-    if (!s.owner || !s.token) throw new Error("Add your GitHub username and token in Settings first.");
+    if (!s.owner || !s.token) throw new Error("Not connected yet. Open your Cop the Fit admin page once (it connects the extension automatically), then try again.");
     const r = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}${path}`, {
       ...opts,
       headers: {

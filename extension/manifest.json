@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Cop the Fit Studio",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Save products from any store page, grab product images and cover photos, and review new fits for Cop the Fit.",
   "permissions": [
     "activeTab",
@@ -23,5 +23,16 @@
     "16": "icons/16.png",
     "48": "icons/48.png",
     "128": "icons/128.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.github.io/*/admin.html*"
+      ],
+      "js": [
+        "sync.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
 }
