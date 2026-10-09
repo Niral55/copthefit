@@ -3214,6 +3214,18 @@
      "product_url": "",
      "note": "",
      "type": "watch"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Fossil",
+     "name": "Fossil Carraway Automatic Beige Dial Watch",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.jomashop.com/fossil-carraway-automatic-beige-dial-watch-me3272.html",
+     "note": "",
+     "type": "watch",
+     "image_src": "https://cdn2.jomashop.com/media/catalog/product/f/o/fossil-carraway-automatic-beige-dial-watch-me3272.jpg"
     }
    ],
    "posted_at": null,
@@ -3236,7 +3248,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z"
+   "updated": "2026-10-09T17:48:07.799Z"
   },
   {
    "find": "047",
