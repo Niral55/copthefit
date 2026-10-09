@@ -48,6 +48,11 @@ def shop_url(cfg, item):
         return ""
     aff = cfg.get("affiliate", {})
     host = urlparse(u).hostname or ""
+    for st in aff.get("stores", []):  # network deep links, e.g. StockX via Impact, Chrono24 via Awin
+        d = (st.get("domain") or "").lower().lstrip(".").removeprefix("www.")
+        t = st.get("template") or ""
+        if d and "{url}" in t and (host == d or host.endswith("." + d)):
+            return t.replace("{url}", quote_plus(u))
     if host.endswith("amazon.com"):
         if aff.get("amazon_tag"):
             p = urlparse(u)

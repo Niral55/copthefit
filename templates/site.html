@@ -154,7 +154,7 @@ footer p { margin: 0; max-width: 80ch; }
 
 <script>
 /* Affiliate IDs come from config.json at build time. */
-const CONFIG = /*__CONFIG__*/{ amazonTag: "", ebayCampaignId: "", skimlinksId: "", sovrnKey: "", overrides: {} };
+const CONFIG = /*__CONFIG__*/{ amazonTag: "", ebayCampaignId: "", skimlinksId: "", sovrnKey: "", overrides: {}, stores: [] };
 const FITS = /*__DATA__*/[];
 const PAGE_FIND = /*__PAGE__*/"";
 const fitUrl = f => "f/" + f.slug + "/";
@@ -166,6 +166,10 @@ function shopUrl(fit, item) {
   let u;
   try { u = new URL(item.url); } catch (e) { return item.url; }
   const host = u.hostname;
+  for (const st of CONFIG.stores || []) {
+    const d = (st.domain || "").toLowerCase().replace(/^\./, "").replace(/^www\./, "");
+    if (d && (st.template || "").includes("{url}") && (host === d || host.endsWith("." + d))) return st.template.replace("{url}", encodeURIComponent(u.toString()));
+  }
   if (host.endsWith("amazon.com")) {
     if (CONFIG.amazonTag) u.searchParams.set("tag", CONFIG.amazonTag);
     return u.toString();

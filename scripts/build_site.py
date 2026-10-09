@@ -166,7 +166,8 @@ def main():
 
     aff = cfg.get("affiliate", {})
     js_cfg = dict(amazonTag=aff.get("amazon_tag", ""), ebayCampaignId=aff.get("ebay_campaign_id", ""),
-                  skimlinksId=aff.get("skimlinks_id", ""), sovrnKey=aff.get("sovrn_key", ""), overrides={})
+                  skimlinksId=aff.get("skimlinks_id", ""), sovrnKey=aff.get("sovrn_key", ""), overrides={},
+                  stores=[{"domain": st.get("domain", ""), "template": st.get("template", "")} for st in aff.get("stores", [])])
     dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     tpl = (ROOT / "templates" / "site.html").read_text()
     i = tpl.index("/*__CONFIG__*/")
