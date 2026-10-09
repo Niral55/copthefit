@@ -1,6 +1,6 @@
 # Lead finder instructions
 
-The scheduled Claude run follows this file **every morning**. Edit it to change what gets found.
+Claude follows this file whenever you press **Find leads** in the admin page (it runs on GitHub with the Anthropic API; nothing is scheduled). Edit it to change what gets found.
 
 ## Goal
 Cop the Fit makes money from affiliate sales. Find male-celebrity fits that people will **buy from**, fast enough to catch the spike right after the event, and add them to `data/fits.json` as leads (`"status": "review"`) for Niral to finish in the admin page's Leads tab. Quality beats quantity: skip anything you can't verify.

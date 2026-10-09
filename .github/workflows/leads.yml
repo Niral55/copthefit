@@ -1,0 +1,49 @@
+name: Find leads
+
+# Started by the "Find leads" button in the admin page (never on a schedule).
+# Claude (Anthropic API with web search) follows LEADS.md and adds new leads to the Leads tab.
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many leads (blank = let the event calendar decide)"
+        type: string
+        default: ""
+      focus:
+        description: "Optional focus, e.g. NBA tunnel fits, Grammys, sneakers"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: find-leads
+  cancel-in-progress: false
+
+jobs:
+  leads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Find leads
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          COUNT: ${{ inputs.count }}
+          FOCUS: ${{ inputs.focus }}
+        run: cd scripts && python find_leads.py
+      - name: Save the leads (and the run's status for the admin page)
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name "copthefit-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/fits.json data/status.json
+            git commit -qm "Leads: found by the Find leads button"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
+          fi

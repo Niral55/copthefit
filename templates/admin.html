@@ -179,6 +179,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
       <div class="tabs" role="tablist" id="tabs"></div>
       <input class="grow" id="q" type="search" placeholder="Search name, headline or Find #" aria-label="Search posts">
       <button class="btn" id="bulkCovers" type="button" title="Pick several photos named by Find #, e.g. 029-asap-rocky.jpg">Bulk upload covers</button>
+      <button class="btn" id="findLeads" type="button" title="Claude searches the web for new fits, following LEADS.md">Find leads</button>
       <button class="btn primary" id="newPost" type="button">+ New post</button>
     </div>
     <div class="status" id="status"></div>
@@ -202,6 +203,17 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
     <label class="f" for="sToken">Token<input id="sToken" type="password" autocomplete="off" placeholder="github_pat_…"></label>
     <p class="hint">Fine-grained token for only the copthefit repo with <b>Contents: Read and write</b>. Add <b>Actions: Read and write</b> to use Post now. It stays in this browser only.</p>
     <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" value="cancel" type="submit">Cancel</button><button class="btn primary" id="sSave" value="save" type="submit">Save</button></div>
+  </form>
+</dialog>
+<dialog id="leadsDlg">
+  <form method="dialog" id="leadsForm" style="display:flex;flex-direction:column;gap:10px">
+    <h2 style="margin:0;font:800 26px/1 var(--display);text-transform:uppercase">Find leads</h2>
+    <p class="hint" style="margin:0">Claude searches the web for new fits people will buy from, skips anything already on file, scores them, and adds them to Leads. Takes about 3–8 minutes; you can keep working.</p>
+    <div class="two">
+      <label class="f" for="lCount">How many<select id="lCount"><option value="">Auto (by event calendar)</option><option>2</option><option>4</option><option>6</option><option>8</option></select></label>
+      <label class="f" for="lFocus">Focus (optional)<input id="lFocus" placeholder="e.g. NBA tunnel fits, Grammys, sneakers"></label>
+    </div>
+    <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" value="cancel" type="submit">Cancel</button><button class="btn primary" value="go" type="submit">Find leads</button></div>
   </form>
 </dialog>
 <input type="file" id="filePick" accept="image/*" hidden>
@@ -353,6 +365,8 @@ function renderStatus() {
   if (CFG && CFG.posting_paused) chips.push(`<a class="st warn" href="#settings" data-go="cfg">Daily auto-posting is paused</a>`);
   else chips.push(ready.length ? `<span class="st">Next post: #${ready[0].find} ${esc(ready[0].celeb)} · daily at 12:05 PM ET · ${ready.length} ready</span>`
     : `<span class="st warn">Instagram queue: ${q.length ? `${q.length} waiting for a cover photo` : "empty"}. Nothing will post.</span>`);
+  const lr = STATUS.leads;
+  if (lr && lr.result === "error") chips.push(`<span class="st bad" title="${esc(lr.message)}">Last lead search failed: ${esc(lr.message.slice(0, 100))}</span>`);
   if (!hasAffIds()) chips.push(`<a class="st warn" href="#settings" data-go="cfg">Shop links aren't earning yet: add affiliate IDs</a>`);
   if (CFG && CFG.site_photos !== "all") chips.push(`<a class="st warn" href="#settings" data-go="cfg">Cover photos are hidden on the website</a>`);
   $("#status").innerHTML = chips.join("");
@@ -390,7 +404,7 @@ function renderList() {
       </span>
       <span class="btn sm">Open</span>
     </button></div>`;
-  }).join("") : `<p class="empty">${q ? "Nothing matches that search." : TAB === "review" ? "No new leads right now. The lead finder adds more on Mondays and Thursdays, or press + New post." : "Nothing here yet."}</p>`;
+  }).join("") : `<p class="empty">${q ? "Nothing matches that search." : TAB === "review" ? "No leads waiting. Press Find leads to have Claude search for new fits, or + New post to add one yourself." : "Nothing here yet."}</p>`;
   $("#list").querySelectorAll(".row").forEach(b => b.onclick = () => openEditor(b.dataset.find));
   $("#list").querySelectorAll("[data-pick]").forEach(c => c.onchange = () => { c.checked ? SEL.add(c.dataset.pick) : SEL.delete(c.dataset.pick); c.closest(".rowwrap").classList.toggle("sel", c.checked); renderBulk(); });
   SHOWN = list.map(f => f.find);
@@ -684,6 +698,41 @@ function readForm() {
   if (DRAFT.photo || PENDING.photo) DRAFT.photo = { ...(DRAFT.photo || {}), credit: v("credit") };
 }
 
+
+/* ---------- Find leads (GitHub Actions + Claude API; started by the button, never scheduled) ---------- */
+let LEAD_WATCH = null;
+async function startLeadSearch(count, focus) {
+  const btn = $("#findLeads");
+  try {
+    btn.disabled = true; btn.textContent = "Starting…";
+    await GH.req(`/actions/workflows/leads.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: settings().branch, inputs: { count, focus } }) });
+    const since = new Date().toISOString();
+    btn.textContent = "Finding leads…";
+    flash(`Finding leads${focus ? ` (${esc(focus)})` : ""}… this takes about 3–8 minutes. They'll show up in Leads, best first.`, "ok");
+    clearInterval(LEAD_WATCH);
+    let tries = 0;
+    LEAD_WATCH = setInterval(async () => {
+      tries++;
+      try {
+        const st = await GH.jsonOr("data/status.json", undefined, {});
+        const run = st.leads;
+        if (run && run.last_run > since) {
+          clearInterval(LEAD_WATCH); STATUS = st;
+          btn.disabled = false; btn.textContent = "Find leads";
+          if (run.result === "ok") {
+            DOC = await GH.json("data/fits.json");
+            if ($("#editView").hidden && $("#cfgView").hidden && $("#prodView").hidden) { TAB = "review"; renderList(); } else renderStatus();
+            flash(`${esc(run.message)}${(run.added || []).length ? " " + run.added.map(esc).join(", ") : ""}`, "ok");
+          } else { renderStatus(); flash(esc(run.message || "Lead search failed."), "err"); }
+        }
+      } catch (e) { /* keep waiting */ }
+      if (tries > 40) { clearInterval(LEAD_WATCH); btn.disabled = false; btn.textContent = "Find leads"; flash("Still no result after 20 minutes. Check the Find leads run on GitHub (Actions tab).", "err"); }
+    }, 30000);
+  } catch (e) {
+    btn.disabled = false; btn.textContent = "Find leads";
+    flash(e.status === 403 || e.status === 404 ? "Your GitHub token needs <b>Actions: Read and write</b> to start a lead search (same as Post now)." : esc(e.message), "err");
+  }
+}
 
 /* ---------- bulk covers ---------- */
 // Files are matched to posts by the Find # at the start of the name: 029-asap-rocky.jpg -> #029.
@@ -1171,6 +1220,8 @@ $("#q").addEventListener("input", renderList);
 $("#editView").addEventListener("input", () => { DIRTY = true; });
 $("#bulkCovers").onclick = () => { const inp = $("#bulkPick"); inp.value = ""; inp.onchange = () => { if (inp.files.length) bulkCovers([...inp.files]); }; inp.click(); };
 $("#newPost").onclick = () => openEditor(null);
+$("#findLeads").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } $("#leadsDlg").returnValue = ""; $("#leadsDlg").showModal(); };
+$("#leadsDlg").addEventListener("close", () => { if ($("#leadsDlg").returnValue === "go") startLeadSearch($("#lCount").value, $("#lFocus").value.trim()); });
 $("#openProducts").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openProducts(); };
 $("#openCfg").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openCfg(); };
 $("#openSettings").onclick = () => { const s = settings(); $("#sOwner").value = s.owner; $("#sRepo").value = s.repo; $("#sToken").value = s.token; $("#settings").showModal(); };

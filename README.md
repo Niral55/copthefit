@@ -73,7 +73,13 @@ Put your IDs in `config.json` → `affiliate`, commit, and every link on the sit
 - `ebay_campaign_id`: eBay Partner Network campaign ID
 - `skimlinks_id` (or `sovrn_key`): wraps every other retailer link
 
-### 5. Comment-to-DM (optional)
+### 5. Find leads button
+The admin page's **Find leads** button starts the `Find leads` GitHub workflow, where Claude (Anthropic API with web search) follows `LEADS.md`, skips anything already on file and adds scored leads to the Leads tab.
+- Add the repo secret `ANTHROPIC_API_KEY` (from console.anthropic.com). The same key powers the AI tidy-up of saved products.
+- Your admin token needs **Actions: Read and write** (same as Post now).
+- Cost is per search on your Anthropic API account (roughly cents to a couple of dollars a run, depending on how many leads). Change the model with the `LEADS_MODEL` variable if you want.
+
+### 6. Comment-to-DM (optional)
 Set up ManyChat: keyword **FIT** on any post → DM "Every link is here: <site_url>, search the Find # from the post." Then set `"comment_keyword": "FIT"` in `config.json`. Captions and the last slide switch to "Comment FIT".
 
 ## Files
