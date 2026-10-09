@@ -1,15 +1,12 @@
 {
  "leads": {
-  "last_run": "2026-10-09T19:31:50+00:00",
+  "last_run": "2026-10-09T20:21:23+00:00",
   "result": "ok",
-  "message": "Found 6 new leads.",
+  "message": "Found 3 new leads.",
   "added": [
-   "#051 Travis Kelce (76)",
-   "#052 Anthony Edwards (72)",
-   "#053 James Harden (72)",
-   "#054 Travis Kelce (72)",
-   "#055 LeBron James (71)",
-   "#056 Jeremy Allen White (56)"
+   "#057 LeBron James (67)",
+   "#058 Shai Gilgeous-Alexander (82)",
+   "#059 Lil Tecca (72)"
   ],
   "skipped": []
  }

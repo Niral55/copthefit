@@ -3704,11 +3704,11 @@
      "brand": "adidas",
      "name": "Anthony Edwards 3 \"Cold Blooded\" (KH8537)",
      "product_url": "https://www.adidas.com/us/anthony-edwards-3-shoes/KH8537.html",
-     "retailer": "adidas",
-     "query": "Anthony Edwards 3 Cold Blooded",
-     "note": "$130; released Sept 18, 2026",
+     "retailer": "",
+     "query": "",
+     "note": "",
      "slide": 2,
-     "image_fetch": "failed 2026-10-09: HTTPSConnectionPool(host='www.adidas.com', port=443): Read timed out. (read time"
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/4a34f042d51941d393ae83faf5104043_9366/Anthony_Edwards_3_Shoes_Blue_KH8537_01_00_standard.jpg"
     }
    ],
    "photo_leads": [
@@ -3739,7 +3739,19 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-09"
+   "photo_search": "2026-10-09",
+   "photo_options": [
+    {
+     "image": "https://twsn.net/.image/NjU6MDAwMDAwMDAwMTI1Njg3/nba-minnesota-timberwolves-media-day.jpg?profile=w2560&ar=16-9",
+     "page": "https://twsn.net/2026/10/02/anthony-edwards-path-to-becoming-a-complete-superstar-starts-with-lamelo-ball",
+     "credit": "Bruce Kluckhohn-Imagn Images (caption: Sep 28, 2026; Timberwolves guard Anthony Edwards (5) poses for a photograph on the team's media day at Target Center)"
+    },
+    {
+     "image": "https://wp.clutchpoints.com/wp-content/uploads/2026/10/Edwards-poses.jpg",
+     "page": "https://clutchpoints.com/nba/minnesota-timberwolves/timberwolves-news-anthony-edward-superteam-declaration-twist",
+     "credit": "Bruce Kluckhohn-Imagn Images (alt: Anthony Edwards (5) poses for a photograph on the team's media day at Target Center)"
+    }
+   ]
   },
   {
    "celeb": "James Harden",
@@ -3769,11 +3781,11 @@
      "brand": "adidas",
      "name": "Harden Vol. 1 \"Pioneer\" (2026, LC5090)",
      "product_url": "https://stockx.com/adidas-harden-vol-1-pioneer-2026",
-     "retailer": "stockx",
-     "query": "adidas Harden Vol 1 Pioneer 2026",
-     "note": "$140 retail; StockX lists a release of Aug 30, 2026",
+     "retailer": "",
+     "query": "",
+     "note": "",
      "slide": 2,
-     "image_fetch": "failed 2026-10-09: no product image on page"
+     "image_src": "https://images.soleretriever.com/sb/products/adidas_harden_vol_1_pioneer_LC5090-1786992586042.webp?width=1600&quality=90&fit=contain"
     }
    ],
    "photo_leads": [
@@ -3804,7 +3816,24 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-09"
+   "photo_search": "2026-10-09",
+   "photo_options": [
+    {
+     "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_92,w_5392,h_3033/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/cavs_insider/01m3q1tqjnb9m1yzzg0e.jpg",
+     "page": "https://www.si.com/nba/cavaliers/onsi/bringing-james-harden-off-the-bench-could-be-the-best-fit-for-cavs-lineup-01m3q1ryjv3y",
+     "credit": "Ken Blaze-Imagn Images via Reuters Connect (alt: Sep 28, 2026; Cleveland Cavaliers guard James Harden (1) poses for a photo during media day at Rocket Arena)"
+    },
+    {
+     "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_5392,h_3033/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/cavs_insider/01m40q7yemgrxgwb9v8d.jpg",
+     "page": "https://www.si.com/nba/cavaliers/onsi/this-current-member-of-the-cavaliers-is-most-likely-to-be-a-future-hall-of-famer-01m40q67xqjf",
+     "credit": "Ken Blaze-Imagn Images via Reuters Connect (alt: Sep 28, 2026; James Harden (1) poses for a photo during media day at Rocket Arena)"
+    },
+    {
+     "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_5392,h_3033/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/cavs_insider/01m465ek19sewce4r20f.jpg",
+     "page": "https://www.si.com/nba/cavaliers/onsi/james-harden-sends-strong-message-about-cavs-newest-playmaker-01m465c8yyt1",
+     "credit": "Ken Blaze-Imagn Images via Reuters Connect (alt: Sep 28, 2026; James Harden (1) poses for a photo during media day at Rocket Arena)"
+    }
+   ]
   },
   {
    "celeb": "Travis Kelce",
@@ -4118,6 +4147,260 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09"
+  },
+  {
+   "celeb": "LeBron James",
+   "context": "NBA Media Day 2026, Philadelphia 76ers (Camden, NJ)",
+   "date": "Sept 28, 2026",
+   "category": "Kicks",
+   "headline": "LeBron opens the Sixers era in his first signature shoe",
+   "detail": "For his first media day as a 76er, LeBron went back to his first signature shoe, the Nike Air Zoom Generation in the 'First Game' colorway. The 2023 retro sits on StockX below its $180 retail.",
+   "tags": [
+    "nba",
+    "sixers"
+   ],
+   "sources": [
+    {
+     "label": "Kicks On SI — Ranking the 10 Best Shoes of 2026 NBA Media Day",
+     "url": "https://www.si.com/fannation/sneakers/news/ranking-10-best-shoes-2026-nba-media-day"
+    },
+    {
+     "label": "HotNewHipHop — LeBron James Wears The Air Zoom Generation For 76ers Media Day",
+     "url": "https://www.hotnewhiphop.com/1011212-lebron-james-nike-air-zoom-generation-sneaker-news"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Nike",
+     "name": "Air Zoom Generation \"First Game\" (DM7535-101)",
+     "product_url": "https://stockx.com/nike-air-zoom-generation-first-game-2023",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/086/390/256/original/1124742_01.jpg.jpeg?width=750",
+     "note": "Kicks On SI names the 'First Game' colorway; HNHH describes it as white with red/crimson accents. 2023 retro (White/Midnight Navy-Varsity Crimson), $180 retail; StockX Buy Now $140 on Oct 9 (last sale $133). Image is GOAT's product shot of the same SKU (DM7535-101).",
+     "slide": 2
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://bloximages.chicago2.vip.townnews.com/hjnews.com/content/tncms/assets/v3/editorial/e/71/e713d97b-9905-5de6-9680-394cd789c0e8/6abb3602f3041.image.jpg",
+     "page": "https://www.hjnews.com/sports/nation/76ers-media-day-basketball/image_e713d97b-9905-5de6-9680-394cd789c0e8.html",
+     "credit": "AP Photo / Chris Szagola"
+    },
+    {
+     "image": "https://www.inquirer.com/resizer/v2/OGLYNAOZMJASFOKN5U5GMMJKNU.jpg?auth=bbf7646a6ed56459431dd03d531fe8fd6a526fa8532f714f1ac2e77e18e617fe&width=760&height=507&smart=true",
+     "page": "https://www.inquirer.com/photo/photos-sixers-media-day-20260928.html",
+     "credit": "Philadelphia Inquirer / Jose F. Moreno"
+    },
+    {
+     "image": "https://cdn.nba.com/manage/2026/09/lebron-e1790623276267.jpeg",
+     "page": "https://www.nba.com/news/5-takeaways-sixers-lebron-media-day-2026",
+     "credit": "NBA.com"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://www.hjnews.com/sports/nation/76ers-media-day-basketball/image_e713d97b-9905-5de6-9680-394cd789c0e8.html",
+     "by": "AP / Chris Szagola",
+     "at": "",
+     "note": "Caption has LeBron walking to his next station at media day, so this is the most likely full-length shot. Check that the shoes are in frame."
+    }
+   ],
+   "photo_source": "https://www.si.com/fannation/sneakers/news/ranking-10-best-shoes-2026-nba-media-day",
+   "score": 67,
+   "score_parts": {
+    "shop": 30,
+    "star": 25,
+    "cover": 10,
+    "fresh": 2
+   },
+   "score_note": "LeBron in a $140 StockX retro (below $180 retail); AP and Inquirer media-day photos; 11 days old",
+   "note": "This lead is media day (Sept 28). It is a different event from the rejected Oct 3 scrimmage LeBron 24 'Greater China' lead, and this shoe is cheap and easy to buy. The sources don't give a style code: the 2023 'First Game' retro (DM7535-101) is the one in stock, so it may not be the exact pair he wore. Photo captions confirm LeBron at Sixers media day, but none confirms the shoes are in frame. The Inquirer shot is a posed portrait and the NBA.com lead image has no caption, so check both before using them as the cover. Not added as a second lead: Ja Morant (Ja 4 'Triple White'), Haliburton (Hali 2), DeRozan (Kobe 10 Protro), SGA (V.A.A. AF1) and Booker (Futura Book 2) were all unreleased or PE at media day. Haaland's Phantom 6 'Baltic Blue' ($270) shows 'Coming Soon' on Nike and is $426 on StockX. Lamar Jackson's Sept 20 Converse SHAI 001 Lux 'Truffle' had no usable tunnel photo URL (Ravens arrivals gallery images are lazy-loaded). Future's Mowalola AJ14 Mule had no photo outside Instagram.",
+   "find": "057",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "Shai Gilgeous-Alexander",
+   "context": "Levi's 'Keep it Loose' Fall/Winter 2026 campaign",
+   "date": "Aug 3, 2026",
+   "category": "Fit",
+   "headline": "SGA's loose-fit Levi's 501s are a $110 buy",
+   "detail": "The Thunder MVP fronts Levi's fall 2026 campaign in 501 Loose jeans with an MA-1 bomber. The jeans are a regular Levi's line, around $110 at Urban Outfitters and Nordstrom.",
+   "tags": [
+    "nba",
+    "levis"
+   ],
+   "sources": [
+    {
+     "label": "FashionUnited — Levi's launches new campaign with Rosé and Shai Gilgeous-Alexander",
+     "url": "https://fashionunited.uk/press/fashion/keeping-it-loose-levis-launches-new-campaign-with-rose-and-shai-gilgeous-alexander/2026080489593"
+    },
+    {
+     "label": "MyFaceHunter — Levi's Keep it Loose FW2026 campaign",
+     "url": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "clothing",
+     "brand": "Levi's",
+     "name": "501 Loose Fit Jeans",
+     "product_url": "https://www.urbanoutfitters.com/shop/levis-501-loose-fit-jean",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://images.urbndata.com/is/image/UrbanOutfitters/105184493_092_b",
+     "note": "Sources name the 501 Loose fit but not the wash. UO has 5 washes, but only sizes 30 and 32 were in stock; Nordstrom has Wild Raptor at $110 (https://www.nordstrom.com/s/501-loose-straight-leg-jeans-wild-raptor/8833910). image_src is UO's first product image and may be on-model; couldn't check it visually.",
+     "slide": 2
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibkJ_-tX2D6Mh7I9o09bC-Qm25ry9wCZGW7I5mSfPPwGgb3hF-1d3ql_kYSuCxaoUjsGYZjhy0xyILfzlXhwKffkbSsopkv94vuDUS79tZ82gy3-Oa4G22TVa1gsJLnB918Cq6a-dKo-Bn5rDJnEl_UFDSpHXt2yIj2H4WqtaPXMYRsKO7nP91tx-8_5U/s1280/levis-campaign-9.jpg",
+     "page": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
+     "credit": "Levi's / Mel Bles (via MyFaceHunter)"
+    },
+    {
+     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkpy-Y9QYRcf_BZuC_bZ7rgzGcVKDWvle-kj4svVt7Ui3Vhv8Yf5vavmLUd9PrGovtyGFkE3SzC8ibhuzAB1Sdq6spvcYs2txGvoNs19CbQ4x7Tks3GxLizJVMGR34rlCpEbi41lkYryXHWikOkaJAqYpZYqZJKbiCpy7Ctt-MsUSDBuwu3vmKEOguaIk/s1280/levis-campaign-8.jpg",
+     "page": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
+     "credit": "Levi's / Mel Bles (via MyFaceHunter)"
+    },
+    {
+     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvWzUYHT1XrDauqNELi00emteRApVNE37HIbJrNzszdDHwPzXXwGo7yRqTsHNKGFpWCib44EfV7TijwkhgUbHhQhod6CdEEwElRe7L-SDLswLcRquBpW4gXGIIldweZpspzeCjtu50QXJyn4_ZwMs8x2ToKa_bjWWJGiw5pQgaPX1m31v333HrgPCNAKQ/s1280/levis-campaign-10.jpg",
+     "page": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
+     "credit": "Levi's / Mel Bles (via MyFaceHunter)"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
+     "by": "MyFaceHunter (Levi's campaign images)",
+     "note": "First image is captioned 'Shai Gilgeous-Alexander in 501 Loose jeans and MA-1 bomber jacket'"
+    }
+   ],
+   "photo_source": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html",
+   "score": 82,
+   "score_parts": {
+    "shop": 40,
+    "star": 25,
+    "cover": 15,
+    "fresh": 2
+   },
+   "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
+   "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
+   "find": "058",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "Lil Tecca",
+   "context": "G-SHOCK 'Shock Yourself' campaign (US)",
+   "date": "Jul 24, 2026",
+   "category": "Wrist",
+   "headline": "Lil Tecca's G-Shocks are just $110",
+   "detail": "Lil Tecca stars in G-Shock's 'Shock Yourself' campaign, which leads with the all-black GA2100-1A1 'CasiOak' and the matte DW5600UBB-1. Both are everyday G-Shocks at about $110 from Casio.",
+   "tags": [
+    "gshock",
+    "rapper"
+   ],
+   "sources": [
+    {
+     "label": "The Gadgeteer — G-SHOCK Shock Yourself campaign stars Lil Tecca",
+     "url": "https://the-gadgeteer.com/2026/08/03/g-shock-shock-yourself-campaign-lil-tecca/"
+    },
+    {
+     "label": "Casio US — DW5600UBB-1 product page (Tecca campaign images)",
+     "url": "https://www.casio.com/us/watches/gshock/product.DW-5600UBB-1/"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "watch",
+     "brand": "Casio G-Shock",
+     "name": "GA2100-1A1 Monochrome Black",
+     "product_url": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/us-assets/GA-2100-1A1.png",
+     "note": "Also at Walmart (https://www.walmart.com/ip/405925840).",
+     "slide": 2
+    },
+    {
+     "label": "Exact",
+     "type": "watch",
+     "brand": "Casio G-Shock",
+     "name": "DW5600UBB-1 Matte Black",
+     "product_url": "https://www.casio.com/us/watches/gshock/product.DW-5600UBB-1/",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600ubb-1/assets/DW-5600UBB-1.png",
+     "note": "The article gives a single $110 price line for the campaign, plus an Amazon listing at $93.99. Confirm this model's own price on Casio.",
+     "slide": 3
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://the-gadgeteer.com/wp-content/uploads/2026/08/Casio-G-Shock-Lil-Tecca-dw5600ubb-1-tecca14-v2.jpg",
+     "page": "https://the-gadgeteer.com/2026/08/03/g-shock-shock-yourself-campaign-lil-tecca/",
+     "credit": "Casio G-SHOCK (via The Gadgeteer)"
+    },
+    {
+     "image": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/us-assets/GA2100-1A1_tecca4.jpg.transform/main-visual-pc/image.jpg",
+     "page": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/",
+     "credit": "Casio G-SHOCK"
+    },
+    {
+     "image": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600ubb-1/us/DW5600UBB-1_Tecca2_v2.jpg.transform/main-visual-pc/image.jpg",
+     "page": "https://www.casio.com/us/watches/gshock/product.DW-5600UBB-1/",
+     "credit": "Casio G-SHOCK"
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/watch?v=YvHGfTdLc8o",
+     "by": "G-SHOCK (campaign film embedded in The Gadgeteer article)",
+     "at": "",
+     "note": "Chapter 1: Tecca plays a mad scientist in a lab full of watches"
+    }
+   ],
+   "photo_source": "https://the-gadgeteer.com/2026/08/03/g-shock-shock-yourself-campaign-lil-tecca/",
+   "score": 72,
+   "score_parts": {
+    "shop": 40,
+    "star": 15,
+    "cover": 15,
+    "fresh": 2
+   },
+   "score_note": "Two G-Shocks around $110 on Casio.com; Lil Tecca is a multi-platinum rapper; official brand campaign images; social posts started Jul 24",
+   "note": "Brand campaign, not a candid sighting. Casio says it runs through the end of 2026. The article names both watches as the campaign leads, and Casio's own product pages carry the 'tecca' campaign photos, which ties each model to him. I matched the photos by file name and alt text but couldn't open the images themselves.",
+   "find": "059",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
   }
  ]
 }
