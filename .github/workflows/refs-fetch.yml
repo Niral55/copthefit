@@ -1,0 +1,72 @@
+name: Fetch reference photos (temporary, not committed)
+on:
+  push:
+    branches: [refs-fetch]
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q requests beautifulsoup4
+      - run: |
+          mkdir -p refs
+          python3 - <<'PY'
+          import json, re, time, requests
+          from urllib.parse import urljoin
+          from bs4 import BeautifulSoup
+          UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36",
+                "Accept-Language": "en-US,en;q=0.9"}
+          def best_src(img, base):
+              ss = img.get("srcset") or img.get("data-srcset") or ""
+              if ss:
+                  parts = [p.strip().split(" ") for p in ss.split(",") if p.strip()]
+                  def w(p):
+                      try: return int(re.sub(r"\D", "", p[1])) if len(p) > 1 else 0
+                      except: return 0
+                  return urljoin(base, max(parts, key=w)[0])
+              s = img.get("data-src") or img.get("src") or ""
+              return urljoin(base, s) if s and not s.startswith("data:") else ""
+          d = json.load(open("data/fits.json"))
+          log = {}
+          for f in d["fits"]:
+              if f["status"] == "rejected": continue
+              names = [n.lower() for n in re.split(r"[\s.\-]+", f["celeb"]) if len(n) > 2]
+              last = names[-1] if names else f["celeb"].lower()
+              pages = [s["url"] for s in f.get("sources", [])] + ([f["photo_source"]] if f.get("photo_source") else [])
+              found = []
+              for url in dict.fromkeys(pages):
+                  try:
+                      html = requests.get(url, headers=UA, timeout=25).text
+                  except Exception as e:
+                      log.setdefault(f["find"], []).append(f"page fail {url}: {e}"); continue
+                  soup = BeautifulSoup(html, "html.parser")
+                  # images whose alt/caption/filename names the celeb first
+                  for img in soup.find_all("img"):
+                      fig = img.find_parent("figure")
+                      txt = " ".join([img.get("alt") or "", img.get("title") or "", fig.get_text(" ") if fig else ""]).lower()
+                      src = best_src(img, url)
+                      if src and (last in txt or last in src.lower()):
+                          found.append(src)
+                  og = soup.find("meta", property="og:image")
+                  if og and og.get("content"):
+                      found.append(urljoin(url, og["content"]))
+              n = 0
+              for src in dict.fromkeys(found):
+                  if n >= 3: break
+                  try:
+                      r = requests.get(src, headers={**UA, "Referer": pages[0] if pages else src}, timeout=25)
+                      if r.status_code != 200 or len(r.content) < 15000 or "image" not in r.headers.get("content-type", ""): continue
+                      ext = "png" if "png" in r.headers["content-type"] else "webp" if "webp" in r.headers["content-type"] else "jpg"
+                      n += 1
+                      open(f"refs/{f['find']}-{n}.{ext}", "wb").write(r.content)
+                  except Exception as e:
+                      log.setdefault(f["find"], []).append(f"img fail {src[:80]}: {e}")
+                  time.sleep(0.5)
+              log.setdefault(f["find"], []).append(f"saved {n}")
+          json.dump(log, open("refs/log.json", "w"), indent=1)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: refs
+          path: refs
+          retention-days: 1
