@@ -6,12 +6,13 @@
    "store": "us.louisvuitton.com",
    "title_raw": "Louis Vuitton Monterey, Automatic, 39mm, Yellow Gold",
    "brand": "Louis Vuitton",
-   "name": "",
+   "name": "Monterey",
    "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-louis-vuitton-monterey-automatic-39mm-yellow-gold--W0YG11_PM2_Front%20view.jpg",
    "price": "57000",
    "currency": "USD",
    "added": "2026-10-09T17:32:12.086Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv18kf75mtng",
