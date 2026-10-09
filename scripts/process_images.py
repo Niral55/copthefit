@@ -156,7 +156,7 @@ def fetch_missing(doc):
                 import time
                 for attempt in range(4):  # some CDNs rate-limit bursts (429): back off and retry
                     r = requests.get(src, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/*,*/*",
-                                                   "Referer": it.get("product_url") or src}, timeout=25)
+                                                   "Referer": it.get("product_url") or src}, timeout=60)
                     if r.status_code != 429:
                         break
                     time.sleep(10 * (attempt + 1))
