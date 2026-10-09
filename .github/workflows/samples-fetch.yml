@@ -1,0 +1,32 @@
+name: Fetch sample photos (temporary)
+on:
+  push:
+    branches: [samples-fetch]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p samples
+          python3 - <<'PY'
+          import json, urllib.request, urllib.parse
+          UA = {"User-Agent": "CopTheFit/1.0 (https://github.com/Niral55/copthefit; photo credit bot)"}
+          d = json.load(open("data/fits.json"))
+          meta = {}
+          for f in d["fits"]:
+              for i, c in enumerate(f.get("photo_candidates") or []):
+                  title = urllib.parse.unquote(c["page"].split("/wiki/")[1])
+                  api = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"action": "query", "titles": title, "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 1600, "format": "json"})
+                  info = list(json.load(urllib.request.urlopen(urllib.request.Request(api, headers=UA)))["query"]["pages"].values())[0]["imageinfo"][0]
+                  em = info.get("extmetadata", {})
+                  meta[f"{f['find']}-{i}"] = {k: em.get(k, {}).get("value", "") for k in ("ImageDescription", "DateTimeOriginal", "Artist", "LicenseShortName", "Categories")}
+                  img = urllib.request.urlopen(urllib.request.Request(info["thumburl"], headers=UA)).read()
+                  open(f"samples/{f['find']}-{i}.jpg", "wb").write(img)
+          json.dump(meta, open("samples/meta.json", "w"), indent=1)
+          PY
+      - run: |
+          git config user.name "copthefit-bot"; git config user.email "bot@users.noreply.github.com"
+          git add samples && git commit -qm "sample photos" && git push -q
