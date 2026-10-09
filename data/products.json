@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Nike Air Max Goadome Low SP Black Metallic Silver Pale Citron",
    "brand": "Nike",
-   "name": "",
+   "name": "Air Max Goadome Low SP Black Metallic Silver Pale Citron",
    "image": "https://images.stockx.com/images/Nike-Air-Max-Goadome-Low-SP-Black-Metallic-Silver-Pale-Citron-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1783526477",
    "price": "143",
    "currency": "USD",
    "added": "2026-10-09T17:54:29.902Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "sneakers"
   },
   {
    "id": "mv19kp33yx7b",
