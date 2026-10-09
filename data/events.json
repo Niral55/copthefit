@@ -1,0 +1,31 @@
+{
+ "note": "Season calendar for the lead finder. 'when' is when the event happens; 'lead' is when to look for fits (the morning after). Volume = how many leads that day is worth.",
+ "weekly": [
+  {"name": "NFL Sunday arrivals", "season": "Sep-Feb", "when": "Sunday", "lead": "Monday", "volume": "4-6", "sources": ["NFL.com The Fit Files", "team Instagram/TikTok arrival posts", "ESPN/ABC best arrivals", "LeagueFits"]},
+  {"name": "Monday/Thursday Night Football arrivals", "season": "Sep-Jan", "when": "Monday, Thursday", "lead": "Tuesday, Friday", "volume": "1-2", "sources": ["team Instagram/TikTok", "NFL on Prime/ESPN social"]},
+  {"name": "NBA tunnel fits", "season": "Oct-Jun", "when": "game nights", "lead": "daily", "volume": "2-3", "sources": ["LeagueFits", "team Instagram tunnel posts", "@nba tunnel videos", "Complex", "thegame.ph"]},
+  {"name": "Sneaker drops worn by celebs", "season": "all year", "when": "release weeks", "lead": "daily", "volume": "1-2", "sources": ["Hypebeast", "Highsnobiety", "UpscaleHype", "Sole Retriever", "Complex Sneakers"]}
+ ],
+ "annual": [
+  {"name": "Golden Globes", "month": "Jan", "lead": "next morning", "volume": "6-8", "focus": "watches, tailoring"},
+  {"name": "Paris/Milan Men's Fashion Week (FW)", "month": "Jan", "lead": "daily during the week", "volume": "3-5", "focus": "front-row celebs, sneakers"},
+  {"name": "Grammys", "month": "Feb", "lead": "next morning", "volume": "6-8", "focus": "rappers, jewelry, watches"},
+  {"name": "NBA All-Star Weekend", "month": "Feb", "lead": "Fri-Mon", "volume": "4-6", "focus": "sneakers, streetwear"},
+  {"name": "Super Bowl week", "month": "Feb", "lead": "daily that week", "volume": "4-6", "focus": "arrivals, halftime, celebs in suites"},
+  {"name": "Oscars", "month": "Mar", "lead": "next morning", "volume": "6-8", "focus": "watches, tailoring"},
+  {"name": "Coachella", "month": "Apr", "lead": "Mon after each weekend", "volume": "3-5", "focus": "streetwear, sneakers"},
+  {"name": "NFL Draft", "month": "Apr", "lead": "next morning", "volume": "4-6", "focus": "draft-night suits, watches"},
+  {"name": "Met Gala", "month": "May", "lead": "next morning", "volume": "6-8", "focus": "statement looks, watches"},
+  {"name": "Cannes Film Festival", "month": "May", "lead": "daily", "volume": "2-3", "focus": "watches, tailoring"},
+  {"name": "NBA Draft", "month": "Jun", "lead": "next morning", "volume": "3-5", "focus": "suits, sneakers"},
+  {"name": "Paris/Milan Men's Fashion Week (SS)", "month": "Jun", "lead": "daily during the week", "volume": "3-5", "focus": "front-row celebs"},
+  {"name": "Wimbledon", "month": "Jun-Jul", "lead": "daily", "volume": "1-2", "focus": "celebs in the Royal Box, watches"},
+  {"name": "BET Awards", "month": "Jun", "lead": "next morning", "volume": "4-6", "focus": "rappers, jewelry, sneakers"},
+  {"name": "ESPYs", "month": "Jul", "lead": "next morning", "volume": "4-6", "focus": "athletes"},
+  {"name": "US Open (tennis)", "month": "Aug-Sep", "lead": "daily", "volume": "1-2", "focus": "celebs courtside, watches"},
+  {"name": "NYFW / Venice / TIFF", "month": "Sep", "lead": "daily", "volume": "2-3", "focus": "actors, watches"},
+  {"name": "Emmys", "month": "Sep", "lead": "next morning", "volume": "6-8", "focus": "watches, tailoring"},
+  {"name": "ComplexCon", "month": "Nov", "lead": "Mon after", "volume": "3-5", "focus": "sneakers, streetwear"},
+  {"name": "Holiday gift season", "month": "Nov-Dec", "lead": "weekly", "volume": "2-3", "focus": "evergreen 'get the look' and under-$150 picks"}
+ ]
+}

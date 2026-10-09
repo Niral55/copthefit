@@ -3,12 +3,18 @@ import sys
 from datetime import date, timedelta
 
 from common import load_config, load_fits, validate, queue, ready_queue
+from dedupe import duplicates
 
 
 def main():
     cfg = load_config()
     doc = load_fits()
     errs = validate(doc, cfg)
+    for new, old, why in duplicates(doc):
+        errs.append(f"{new['find']}: repeat of #{old['find']} {old['celeb']} · {old['context']} ({why}); remove it")
+    for f in doc["fits"]:
+        if f["status"] == "review" and not isinstance(f.get("score"), (int, float)):
+            errs.append(f"{f['find']}: new leads need a score (see LEADS.md → Score)")
     for e in errs:
         print("ERROR", e)
     q = ready_queue(doc, cfg)

@@ -109,6 +109,9 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 .chip { font: 500 10.5px var(--mono); letter-spacing: .04em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); }
 .chip.ok { border-color: var(--ok); color: var(--ok); }
 .chip.no { border-color: var(--warn); color: var(--warn); }
+.chip.score { color: var(--ink); }
+.chip.score.mid { border-color: var(--warn); color: var(--warn); }
+.chip.score.hi { background: var(--ok); border-color: var(--ok); color: var(--paper); }
 .chip.next { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .empty { padding: 30px 0; color: var(--muted); }
 
@@ -293,7 +296,7 @@ let SHOWN = [];      // Find #s currently listed (for Select all)
 // the Instagram queue is its own list (ig_queue), drip-posted one a day.
 const STAGES = [
   { id: "all", label: "All posts", hint: "Every post. Open any one to edit it. Editing never schedules anything for Instagram.", test: () => true },
-  { id: "review", label: "Leads", hint: "New fits the lead finder found. Not on the site yet. Fill them in, then publish to the site.", test: f => f.status === "review" },
+  { id: "review", label: "Leads", hint: "New fits the lead finder found, best sales potential first (hover a score for why). Not on the site yet: fill them in, then publish.", test: f => f.status === "review" },
   { id: "approved", label: "Live on site", hint: "On the website now, with all links live. Instagram is separate: use the Instagram queue to post one.", test: f => f.status === "approved" || f.status === "posted" },
   { id: "queue", label: "Instagram queue", hint: "Posts waiting for Instagram, in order. One posts each day; posts without a cover photo wait.", test: f => f.status === "approved" && f.ig_queue },
   { id: "posted", label: "On Instagram", hint: "Already posted to Instagram. Edits here update the site.", test: f => f.status === "posted" },
@@ -361,7 +364,9 @@ function renderList() {
   renderTabs();
   const q = $("#q").value.trim().toLowerCase().replace(/^#/, "");
   let list = DOC.fits.filter(STAGES.find(x => x.id === TAB).test);
-  list = TAB === "queue" ? list.sort(queueOrder) : list.sort((a, b) => +b.find - +a.find);
+  list = TAB === "queue" ? list.sort(queueOrder)
+    : TAB === "review" ? list.sort((a, b) => (b.score ?? -1) - (a.score ?? -1) || +b.find - +a.find)   // best sales potential first
+    : list.sort((a, b) => +b.find - +a.find);
   if (q) list = list.filter(f => (/^\d+$/.test(q) ? f.find === q.padStart(3, "0") : (f.celeb + " " + f.headline + " " + f.context).toLowerCase().includes(q)));
   const requirePhoto = CFG && CFG.require_photo;
   let nextShown = false;
@@ -375,7 +380,7 @@ function renderList() {
         <span class="num">#${f.find} · ${esc(f.context)} · ${esc(f.date)}</span>
         <span class="who" style="display:block">${esc(f.celeb)}</span>
         <span class="hl">${esc(f.headline)}</span>
-        <span class="chips">${next}
+        <span class="chips">${next}${typeof f.score === "number" && f.status === "review" ? `<span class="chip score ${f.score >= 75 ? "hi" : f.score >= 55 ? "mid" : ""}" title="${esc(f.score_note || "")}${f.score_parts ? ` · shop ${f.score_parts.shop}/40 · star ${f.score_parts.star}/25 · cover ${f.score_parts.cover}/20 · fresh ${f.score_parts.fresh}/15` : ""}">Score ${f.score}</span>` : ""}
           <span class="chip ${r.photo ? "ok" : "no"}">${r.photo ? "Photo" : "Needs photo"}</span>
           <span class="chip ${r.imgs === r.n ? "ok" : ""}">Images ${r.imgs}/${r.n}</span>
           <span class="chip ${r.links === r.linkable ? "ok" : ""}">Links ${r.links}/${r.linkable}</span>
@@ -492,7 +497,7 @@ function photoUrl() {
   return "";
 }
 
-const KIND = { instagram: "IG post", video: "Video", x: "X post" };
+const KIND = { instagram: "IG post", video: "Video", x: "X post", photo: "Photo" };
 function leadSearches(d) {
   const year = (d.date.match(/\d{4}/) || [""])[0];
   const q = encodeURIComponent(`${d.celeb} ${d.context} ${year}`.trim());
@@ -512,6 +517,7 @@ function renderEditor() {
       <div style="display:flex;gap:12px;align-items:baseline;flex-wrap:wrap"><button class="btn sm" id="back" type="button">← All posts</button>
         <h1 class="ed-title">${isNew ? "New post" : `#${d.find} ${esc(d.celeb)}`}</h1>${isNew ? "" : `<span class="pill">${esc(stageLabel(d))}</span>`}</div>
       ${d.ig_permalink ? `<a href="${esc(d.ig_permalink)}" target="_blank">View on Instagram ↗</a>` : ""}
+      ${d.status === "review" && typeof d.score === "number" ? `<span class="hint" style="margin:0">Lead score ${d.score}/100${d.score_note ? ` · ${esc(d.score_note)}` : ""}</span>` : ""}
     </div>
     <div class="ed">
       <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
@@ -723,7 +729,9 @@ const ITEM_TYPES = [["", "Auto-detect"], ["watch", "Watch"], ["sneakers", "Sneak
 const typeOf = p => ITEM_TYPES.some(([v]) => v && v === p.category) ? p.category : "";
 
 /* ---------- saved products (from the extension's "Save product to Cop the Fit") ---------- */
-function renderProdCount() { const n = PRODUCTS.products.length; $("#prodCount").textContent = n ? n : ""; }
+function renderProdCount() {
+  if (!PRODUCTS || !Array.isArray(PRODUCTS.products)) PRODUCTS = { products: [] }; // missing or malformed file: treat as empty
+  if (!STATUS || typeof STATUS !== "object") STATUS = {}; const n = PRODUCTS.products.length; $("#prodCount").textContent = n ? n : ""; }
 function openProducts(fromHistory) {
   if (!fromHistory) history.pushState({ prod: 1 }, "", "#products");
   $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = false;
