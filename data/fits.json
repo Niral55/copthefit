@@ -3744,14 +3744,14 @@
    "photo_search": "2026-10-09",
    "photo_options": [
     {
-     "image": "https://twsn.net/.image/NjU6MDAwMDAwMDAwMTI1Njg3/nba-minnesota-timberwolves-media-day.jpg?profile=w2560&ar=16-9",
-     "page": "https://twsn.net/2026/10/02/anthony-edwards-path-to-becoming-a-complete-superstar-starts-with-lamelo-ball",
-     "credit": "Bruce Kluckhohn-Imagn Images (caption: Sep 28, 2026; Timberwolves guard Anthony Edwards (5) poses for a photograph on the team's media day at Target Center)"
+     "image": "https://braze-images.com/appboy/communication/assets/image_assets/images/6abb3c31ecfce200852ada80/original.jpg?1790655537",
+     "page": "https://www.nba.com/news/starting-5-september-29-2026",
+     "credit": "David Sherman/NBAE via Getty Images"
     },
     {
-     "image": "https://wp.clutchpoints.com/wp-content/uploads/2026/10/Edwards-poses.jpg",
-     "page": "https://clutchpoints.com/nba/minnesota-timberwolves/timberwolves-news-anthony-edward-superteam-declaration-twist",
-     "credit": "Bruce Kluckhohn-Imagn Images (alt: Anthony Edwards (5) poses for a photograph on the team's media day at Target Center)"
+     "image": "https://static.vecteezy.com/system/resources/previews/087/159/838/non_2x/minnesota-timberwolves-guard-anthony-edwards-poses-free-editorial_image.jpg",
+     "page": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838",
+     "credit": "Bruce Kluckhohn / Imagn Images"
     }
    ]
   },
@@ -3812,7 +3812,7 @@
    "score_note": "$140 retro on StockX/adidas; Harden; NBA league post; 11 days old",
    "note": "Kicks On SI doesn't give Harden's team; confirm it from the photo. Sneaker Freaker lists the release date as TBC, while StockX says Aug 30, 2026. StockX shows a $355 'related product' ask that may be the 2016 pair, so recheck the current price. Lower priority.",
    "find": "053",
-   "status": "review",
+   "status": "rejected",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -4191,19 +4191,14 @@
    ],
    "photo_options": [
     {
-     "image": "https://bloximages.chicago2.vip.townnews.com/hjnews.com/content/tncms/assets/v3/editorial/e/71/e713d97b-9905-5de6-9680-394cd789c0e8/6abb3602f3041.image.jpg",
-     "page": "https://www.hjnews.com/sports/nation/76ers-media-day-basketball/image_e713d97b-9905-5de6-9680-394cd789c0e8.html",
-     "credit": "AP Photo / Chris Szagola"
+     "image": "https://media.nbcsportsphiladelphia.com/2026/09/DSC02613.jpg",
+     "page": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/say-cheese-media-day-lebron-james-jaylen-brown-tyrese-maxey-joel-embiid/754421/",
+     "credit": "NBC Sports Philadelphia"
     },
     {
-     "image": "https://www.inquirer.com/resizer/v2/OGLYNAOZMJASFOKN5U5GMMJKNU.jpg?auth=bbf7646a6ed56459431dd03d531fe8fd6a526fa8532f714f1ac2e77e18e617fe&width=760&height=507&smart=true",
-     "page": "https://www.inquirer.com/photo/photos-sixers-media-day-20260928.html",
-     "credit": "Philadelphia Inquirer / Jose F. Moreno"
-    },
-    {
-     "image": "https://cdn.nba.com/manage/2026/09/lebron-e1790623276267.jpeg",
-     "page": "https://www.nba.com/news/5-takeaways-sixers-lebron-media-day-2026",
-     "credit": "NBA.com"
+     "image": "https://media.nbcsportsphiladelphia.com/2026/09/DSC02731-2.jpg",
+     "page": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/say-cheese-media-day-lebron-james-jaylen-brown-tyrese-maxey-joel-embiid/754421/",
+     "credit": "NBC Sports Philadelphia"
     }
    ],
    "photo_leads": [
