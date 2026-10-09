@@ -6,12 +6,13 @@
    "store": "us.louisvuitton.com",
    "title_raw": "Tambour, Automatic, 40mm, Steel and Rose Gold",
    "brand": "Louis Vuitton",
-   "name": "",
+   "name": "Tambour",
    "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tambour-automatic-40mm-steel-and-rose-gold--W1SP10_PM2_Front%20view.jpg",
    "price": "31500",
    "currency": "USD",
    "added": "2026-10-09T17:36:18.851Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "watch"
   },
   {
    "id": "mv18y1m1jfte",
