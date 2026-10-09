@@ -6,12 +6,13 @@
    "store": "amazon.com",
    "title_raw": "Tissot PRX, Swiss Powermatic 80 Automatic, 40mm, Silver Dial, Men's Watch",
    "brand": "",
-   "name": "",
+   "name": "Tissot PRX",
    "image": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg",
    "price": "",
    "currency": "USD",
    "added": "2026-10-09T17:38:14.767Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "watch"
   },
   {
    "id": "mv18ykrnb642",
