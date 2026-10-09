@@ -3518,6 +3518,597 @@
    ],
    "ig_queue": false,
    "updated": "2026-10-09T17:59:08.836Z"
+  },
+  {
+   "celeb": "Travis Kelce",
+   "context": "Chiefs vs. Raiders arrival, NFL Week 4 (Las Vegas)",
+   "date": "Oct 4, 2026",
+   "category": "Fit",
+   "headline": "Kelce's $94K Vegas arrival: Tom Ford and a skeleton Cartier",
+   "detail": "Kelce walked into Allegiant Stadium in a gray striped Tom Ford jacquard suit with python Chelsea boots, orange-lens Jacques Marie Mage aviators and a Bottega Veneta duffle. The real flex was on his wrist: a Santos de Cartier Skeleton valued around $77K.",
+   "tags": [
+    "nfl",
+    "chiefs"
+   ],
+   "sources": [
+    {
+     "label": "Complex — Travis Kelce Wears $94K to a Chiefs Game",
+     "url": "https://www.complex.com/style/a/bernadette-giacomazzo/travis-kelce-100k-outfit"
+    },
+    {
+     "label": "Yahoo Sports (NY Post) — Travis Kelce rocked $94,350 outfit to Raiders showdown",
+     "url": "https://sports.yahoo.com/articles/travis-kelce-rocked-94-350-171004184.html"
+    },
+    {
+     "label": "AOL — Travis Kelce Turns Up the Vegas Heat in $94,350 Look",
+     "url": "https://www.aol.com/articles/travis-kelce-turns-vegas-heat-145148000.html"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "watch",
+     "brand": "Cartier",
+     "name": "Santos de Cartier Skeleton",
+     "retailer": "chrono24",
+     "query": "Cartier Santos de Cartier Skeleton",
+     "note": "Sources value it at $77,000 but give no reference; that price points to a precious-metal version, not the steel WHSA0015. Confirm the case metal from photos before naming a reference.",
+     "slide": 2,
+     "product_url": ""
+    },
+    {
+     "label": "Exact",
+     "type": "clothing",
+     "brand": "Tom Ford",
+     "name": "Gray striped jacquard blazer",
+     "retailer": "farfetch",
+     "query": "Tom Ford striped jacquard blazer",
+     "note": "$5,270 per Complex/NY Post",
+     "slide": 3,
+     "product_url": ""
+    },
+    {
+     "label": "Exact",
+     "type": "clothing",
+     "brand": "Tom Ford",
+     "name": "Matching striped jacquard trousers",
+     "retailer": "farfetch",
+     "query": "Tom Ford jacquard trousers",
+     "note": "$1,720 per Complex/NY Post",
+     "slide": 4,
+     "product_url": ""
+    },
+    {
+     "label": "Exact",
+     "type": "shoes",
+     "brand": "Tom Ford",
+     "name": "Black python Chelsea boots",
+     "retailer": "farfetch",
+     "query": "Tom Ford python Chelsea boots",
+     "note": "$2,850. Complex names Tom Ford; NY Post/AOL give no brand for the boots.",
+     "slide": 5,
+     "product_url": ""
+    },
+    {
+     "label": "Exact",
+     "type": "bag",
+     "brand": "Bottega Veneta",
+     "name": "Duffle bag",
+     "retailer": "farfetch",
+     "query": "Bottega Veneta duffle bag",
+     "note": "$6,500; no model named. The Yahoo caption calls it dark red.",
+     "slide": 6,
+     "product_url": ""
+    },
+    {
+     "label": "Exact",
+     "type": "accessory",
+     "brand": "Jacques Marie Mage",
+     "name": "Leonard aviator sunglasses (orange lenses)",
+     "retailer": "farfetch",
+     "query": "Jacques Marie Mage Leonard sunglasses",
+     "note": "$1,010. Mr Porter carries Leonard acetate frames, but I could not confirm an orange-lens version is in stock.",
+     "slide": 7,
+     "product_url": ""
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "",
+     "name": "Square skeleton-dial steel watch",
+     "retailer": "amazon",
+     "query": "men's square skeleton dial watch steel roman numerals",
+     "note": "Cheaper alternative to the Cartier",
+     "slide": 8,
+     "product_url": ""
+    },
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "",
+     "name": "Gray pinstripe blazer",
+     "retailer": "amazon",
+     "query": "men's gray pinstripe slim fit blazer",
+     "note": "Cheaper take on the Tom Ford jacquard suit",
+     "slide": 9,
+     "product_url": ""
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://www.chiefs.com/photos/photos-chiefs-arrive-for-regular-season-week-4-vs-raiders",
+     "by": "Chiefs.com (Steve Sanders)",
+     "at": "photo 52 of 72",
+     "note": "Official team arrival gallery dated Oct 4, 2026. Kelce is photo 52; Mahomes is 30 and 34."
+    },
+    {
+     "kind": "photo",
+     "url": "https://www.complex.com/style/a/bernadette-giacomazzo/travis-kelce-100k-outfit",
+     "by": "Complex (Chris Unger/Getty Images)",
+     "note": "Getty arrival shot, so licensing is needed"
+    },
+    {
+     "kind": "photo",
+     "url": "https://www.aol.com/articles/travis-kelce-turns-vegas-heat-145148000.html",
+     "by": "AOL (Chris Unger/Getty)",
+     "note": "Same Getty arrival set"
+    }
+   ],
+   "photo_source": "https://www.complex.com/style/a/bernadette-giacomazzo/travis-kelce-100k-outfit",
+   "score": 76,
+   "score_parts": {
+    "shop": 30,
+    "star": 25,
+    "cover": 15,
+    "fresh": 6
+   },
+   "score_note": "Luxury pieces all named (Tom Ford on Farfetch, Cartier on Chrono24) plus cheaper picks; Travis Kelce; Chiefs team arrival gallery; 5 days old",
+   "note": "Could also go in Wrist, since Complex's headline is about the $77K watch. Getty and Chiefs photos only; I found no Kelce-owned Instagram post. Kelce wore a Louis Vuitton jacket on Sept 20 vs. the Colts, but that is a separate look and was not used here.",
+   "find": "051",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "Anthony Edwards",
+   "context": "NBA Media Day 2026, Timberwolves",
+   "date": "Sept 28, 2026",
+   "category": "Kicks",
+   "headline": "Ant debuts season with the AE 3 'Cold Blooded'",
+   "detail": "At Media Day, Edwards wore the launch colorway of his third adidas signature shoe, which Kicks On SI said matched the Wolves' new uniforms. It is a $130 general release on adidas.com.",
+   "tags": [
+    "nba",
+    "timberwolves"
+   ],
+   "sources": [
+    {
+     "label": "Kicks On SI — Ranking the 10 Best Shoes of 2026 NBA Media Day",
+     "url": "https://www.si.com/fannation/sneakers/news/ranking-10-best-shoes-2026-nba-media-day"
+    },
+    {
+     "label": "Complex — adidas Anthony Edwards 3: everything you need to know",
+     "url": "https://www.complex.com/sneakers/a/victor-deng/adidas-anthony-edwards-3-everything-you-need-to-know"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "adidas",
+     "name": "Anthony Edwards 3 \"Cold Blooded\" (KH8537)",
+     "product_url": "https://www.adidas.com/us/anthony-edwards-3-shoes/KH8537.html",
+     "retailer": "adidas",
+     "query": "Anthony Edwards 3 Cold Blooded",
+     "note": "$130; released Sept 18, 2026",
+     "slide": 2
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://x.com/NBA/status/2104686447609717105",
+     "by": "@NBA",
+     "at": "",
+     "note": "League Media Day post embedded by Kicks On SI"
+    }
+   ],
+   "photo_source": "https://www.si.com/fannation/sneakers/news/ranking-10-best-shoes-2026-nba-media-day",
+   "score": 72,
+   "score_parts": {
+    "shop": 40,
+    "star": 15,
+    "cover": 15,
+    "fresh": 2
+   },
+   "score_note": "$130 adidas general release in stock; Ant Edwards; NBA league post; 11 days old",
+   "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.",
+   "find": "052",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "James Harden",
+   "context": "NBA Media Day 2026",
+   "date": "Sept 28, 2026",
+   "category": "Kicks",
+   "headline": "Harden brings back the Vol. 1 'Pioneer' on Media Day",
+   "detail": "Harden went retro at Media Day with his first adidas signature shoe, the Harden Vol. 1, in the black-and-red 'Pioneer' colorway that just came back. It retailed for $140.",
+   "tags": [
+    "nba",
+    "mediaday"
+   ],
+   "sources": [
+    {
+     "label": "Kicks On SI — Ranking the 10 Best Shoes of 2026 NBA Media Day",
+     "url": "https://www.si.com/fannation/sneakers/news/ranking-10-best-shoes-2026-nba-media-day"
+    },
+    {
+     "label": "Sneaker Freaker — adidas Harden Vol. 1 Pioneer returning",
+     "url": "https://www.sneakerfreaker.com/performance/releases/adidas-harden-vol-1-pioneer-LC5090-price-buy-release-date"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "adidas",
+     "name": "Harden Vol. 1 \"Pioneer\" (2026, LC5090)",
+     "product_url": "https://stockx.com/adidas-harden-vol-1-pioneer-2026",
+     "retailer": "stockx",
+     "query": "adidas Harden Vol 1 Pioneer 2026",
+     "note": "$140 retail; StockX lists a release of Aug 30, 2026",
+     "slide": 2
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://x.com/NBA/status/2104624615263769063",
+     "by": "@NBA",
+     "at": "",
+     "note": "League Media Day post embedded by Kicks On SI"
+    }
+   ],
+   "photo_source": "https://www.si.com/fannation/sneakers/news/ranking-10-best-shoes-2026-nba-media-day",
+   "score": 72,
+   "score_parts": {
+    "shop": 40,
+    "star": 15,
+    "cover": 15,
+    "fresh": 2
+   },
+   "score_note": "$140 retro on StockX/adidas; Harden; NBA league post; 11 days old",
+   "note": "Kicks On SI doesn't give Harden's team; confirm it from the photo. Sneaker Freaker lists the release date as TBC, while StockX says Aug 30, 2026. StockX shows a $355 'related product' ask that may be the 2016 pair, so recheck the current price. Lower priority.",
+   "find": "053",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "Travis Kelce",
+   "context": "Chiefs vs. Colts arrival, Arrowhead (NFL Week 2)",
+   "date": "Sept 20, 2026",
+   "category": "Fit",
+   "headline": "Kelce goes floral in a $4,950 Louis Vuitton jacket",
+   "detail": "Kelce walked into Arrowhead before the overtime win over the Colts in a midnight-blue, embellished collarless Louis Vuitton jacket from the Spring 2026 men's line. He wore it over a plain white tee with loose black trousers, black suede loafers and dark sunglasses.",
+   "tags": [
+    "nfl",
+    "chiefs"
+   ],
+   "sources": [
+    {
+     "label": "People via Yahoo Sports — Kelce rocks embellished Louis Vuitton jacket before Chiefs-Colts",
+     "url": "https://sports.yahoo.com/articles/travis-kelce-rocks-embellished-louis-231653243.html"
+    },
+    {
+     "label": "The Sporting News via Yahoo Sports — Kelce steps out in nearly $5K Louis Vuitton jacket",
+     "url": "https://sports.yahoo.com/articles/travis-kelce-steps-nearly-5k-151400483.html"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "clothing",
+     "brand": "Louis Vuitton",
+     "name": "Embellished Collarless Jacket (Spring 2026 men's)",
+     "product_url": "https://us.louisvuitton.com/eng-us/products/embellished-collarless-jacket-nvprod7410035v/1AJRHF",
+     "retailer": "",
+     "query": "",
+     "note": "$4,950. The press describes it as midnight blue, but LV's US site lists this item (1AJRHB–1AJRHF) only in 'Lava Smoke'. Check the colorway before publishing. image_src left empty for that reason.",
+     "slide": 2
+    },
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "",
+     "name": "Navy floral jacquard collarless jacket",
+     "product_url": "",
+     "retailer": "amazon",
+     "query": "men navy floral jacquard collarless jacket",
+     "note": "",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "",
+     "name": "Loose black trousers",
+     "product_url": "",
+     "retailer": "amazon",
+     "query": "men black relaxed fit pleated trousers",
+     "note": "",
+     "slide": 4
+    },
+    {
+     "label": "Similar",
+     "type": "shoes",
+     "brand": "",
+     "name": "Black suede loafers",
+     "product_url": "",
+     "retailer": "amazon",
+     "query": "men black suede penny loafers",
+     "note": "",
+     "slide": 5
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/p/DdhqGrfFNZ3/",
+     "by": "@chiefs",
+     "at": "",
+     "note": "Chiefs arrival post embedded in the People story (People's lead image is credited to the Chiefs' Instagram)"
+    },
+    {
+     "kind": "photo",
+     "url": "https://sports.yahoo.com/articles/travis-kelce-steps-nearly-5k-151400483.html",
+     "by": "Imagn via The Sporting News/Yahoo",
+     "at": "",
+     "note": "Press photo with an IMAGN file name"
+    }
+   ],
+   "photo_source": "https://sports.yahoo.com/articles/travis-kelce-rocks-embellished-louis-231653243.html",
+   "score": 72,
+   "score_parts": {
+    "shop": 30,
+    "star": 25,
+    "cover": 15,
+    "fresh": 2
+   },
+   "score_note": "$4,950 LV jacket at LV.com plus cheaper picks; Kelce; Chiefs IG arrival post; 19 days old",
+   "note": "The watch reports conflict: People says a gold Cartier Santos Skeleton, while Yardbarker says a Rolex 'Rainbow'. Because of that I left the watch out. People also mentions an LV belt but names no model. Yardbarker calls the trousers Louis Vuitton (~$1,600), but People and The Sporting News don't name a brand, so the trousers are a Similar pick only.",
+   "find": "054",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "LeBron James",
+   "context": "76ers open scrimmage, Philadelphia",
+   "date": "Oct 3, 2026",
+   "category": "Kicks",
+   "headline": "LeBron laces the LeBron 24 'Greater China' in Philly",
+   "detail": "At his first Sixers open scrimmage, LeBron hooped in the khaki-and-sail Nike LeBron 24 'Greater China' with cloud motifs. The pair drops Oct 9 as a China-region release, so US buyers will be shopping resale.",
+   "tags": [
+    "nba",
+    "sixers"
+   ],
+   "sources": [
+    {
+     "label": "HotNewHipHop — LeBron James Breaks Out The LeBron 24 \"Greater China\"",
+     "url": "https://www.hotnewhiphop.com/1012032-nike-lebron-24-greater-china-sneaker-news-2"
+    },
+    {
+     "label": "Sole Retriever — Nike LeBron 24 Greater China (IX5105-200)",
+     "url": "https://www.soleretriever.com/sneaker-release-dates/nike/other/nike-lebron-24-greater-china-ix5105-200"
+    },
+    {
+     "label": "NBA.com — LeBron James 76ers open scrimmage",
+     "url": "https://nba.com/news/lebron-james-76ers-open-scrimmage"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Nike",
+     "name": "LeBron 24 \"Greater China\" (IX5105-200)",
+     "product_url": "",
+     "retailer": "stockx",
+     "query": "Nike LeBron 24 Greater China IX5105-200",
+     "note": "$190 retail; released Oct 9, 2026 in Greater China only, so US availability is via resale",
+     "slide": 2
+    },
+    {
+     "label": "Similar",
+     "type": "sneakers",
+     "brand": "Nike",
+     "name": "Nike LeBron 24 (other colorways)",
+     "product_url": "",
+     "retailer": "amazon",
+     "query": "Nike LeBron 24 basketball shoes",
+     "note": "",
+     "slide": 3
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://nba.com/news/lebron-james-76ers-open-scrimmage",
+     "by": "NBA.com / AP (Dan Gelston)",
+     "at": "",
+     "note": "Article photo from the Oct 3 scrimmage; check that the shoes are in frame"
+    },
+    {
+     "kind": "photo",
+     "url": "https://x.com/sixers/status/2106415424984232229",
+     "by": "@sixers",
+     "at": "",
+     "note": "Team post from the scrimmage, embedded in the NBA.com story; media not verified"
+    },
+    {
+     "kind": "photo",
+     "url": "https://x.com/sixers/status/2106429630882197691",
+     "by": "@sixers",
+     "at": "",
+     "note": "Second team post from the scrimmage; media not verified"
+    }
+   ],
+   "photo_source": "https://www.hotnewhiphop.com/1012032-nike-lebron-24-greater-china-sneaker-news-2",
+   "score": 71,
+   "score_parts": {
+    "shop": 30,
+    "star": 25,
+    "cover": 10,
+    "fresh": 6
+   },
+   "score_note": "LeBron in a shoe dropping today; China-only so resale on StockX/GOAT; AP/team scrimmage photos",
+   "note": "HNHH says 'Saturday', and NBA.com dates the open scrimmage Oct 3, 2026. HNHH's lead image is from the Sept 28 media day, not the scrimmage, so don't use it. StockX listed it at $190 retail but showed an €867 buy-now price before release; recheck the price. No clean studio image was found from an approved source (Sole Retriever has one: https://images.soleretriever.com/sb/products/nike_lebron_24_greater_china_IX5105-200-1790704607533.webp).",
+   "find": "055",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
+  },
+  {
+   "celeb": "Jeremy Allen White",
+   "context": "'The Social Reckoning' world premiere, Regal Union Square, New York",
+   "date": "Oct 4, 2026",
+   "category": "Wrist",
+   "headline": "Jeremy Allen White's gold LV Monterey premiere look",
+   "detail": "At the New York premiere of The Social Reckoning, White wore a custom Louis Vuitton navy pinstripe suit with a snake-print tie. He finished it with Louis Vuitton's yellow-gold Monterey watch, a 188-piece limited re-edition of the brand's 1988 design.",
+   "tags": [
+    "redcarpet",
+    "watchspotting"
+   ],
+   "sources": [
+    {
+     "label": "Red Carpet Fashion Awards — Menswear roundup: London to New York Film Festival",
+     "url": "https://www.redcarpet-fashionawards.com/2026/10/09/menswear-roundup-from-london-to-new-york-film-festival/"
+    },
+    {
+     "label": "Something About Rocks — Jeremy Allen White's dress watch collection",
+     "url": "https://somethingaboutrocks.com/jeremy-allen-white-inside-the-social-reckoning-stars-impressive-dress-watch-collection/"
+    },
+    {
+     "label": "AP/Invision via BDT — NY premiere of 'The Social Reckoning' (date/venue)",
+     "url": "https://www.bdtonline.com/news/nation_world/ny-premiere-of-the-social-reckoning/image_12fdfc8a-44b6-5490-ab4b-f80f17026bf9.html"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "watch",
+     "brand": "Louis Vuitton",
+     "name": "Monterey (yellow gold, limited to 188)",
+     "product_url": "",
+     "retailer": "chrono24",
+     "query": "Louis Vuitton Monterey",
+     "note": "Limited edition, so look for it on resale",
+     "slide": 2
+    },
+    {
+     "label": "Exact",
+     "type": "clothing",
+     "brand": "Louis Vuitton",
+     "name": "Custom navy pinstripe suit",
+     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "note": "Custom piece — not for sale",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "",
+     "name": "Navy pinstripe suit",
+     "product_url": "",
+     "retailer": "amazon",
+     "query": "men navy pinstripe suit slim fit",
+     "note": "",
+     "slide": 4
+    },
+    {
+     "label": "Similar",
+     "type": "accessory",
+     "brand": "",
+     "name": "Snake-print tie",
+     "product_url": "",
+     "retailer": "amazon",
+     "query": "men snake print silk tie",
+     "note": "",
+     "slide": 5
+    }
+   ],
+   "photo_leads": [
+    {
+     "kind": "video",
+     "url": "https://www.youtube.com/embed/-VXmn3PERUI",
+     "by": "Instagram @jpasc24 (via Whatfinger)",
+     "at": "",
+     "note": "Arrival clip of White at the NYC premiere"
+    },
+    {
+     "kind": "photo",
+     "url": "https://www.bdtonline.com/news/nation_world/ny-premiere-of-the-social-reckoning/image_12fdfc8a-44b6-5490-ab4b-f80f17026bf9.html",
+     "by": "CJ Rivera, Invision/AP",
+     "at": "",
+     "note": "AP red-carpet photo"
+    },
+    {
+     "kind": "photo",
+     "url": "https://www.redcarpet-fashionawards.com/2026/10/09/menswear-roundup-from-london-to-new-york-film-festival/",
+     "by": "Kristina Bumphrey/Variety via Getty Images",
+     "at": "",
+     "note": "Getty photo in the roundup"
+    }
+   ],
+   "photo_source": "https://www.redcarpet-fashionawards.com/2026/10/09/menswear-roundup-from-london-to-new-york-film-festival/",
+   "score": 56,
+   "score_parts": {
+    "shop": 20,
+    "star": 15,
+    "cover": 15,
+    "fresh": 6
+   },
+   "score_note": "Limited LV Monterey on resale only, custom suit; The Bear star; arrival video plus AP/Getty photos; 5 days old",
+   "note": "This could be a Wrist lead because the watch carries it. White is on file only for the Golden Globes. Getting the look relies mostly on cheaper picks. The watch sources name the Monterey but give no reference number or case size. I couldn't load GQ's write-up (gq.com/story/jeremy-allen-white-louis-vuitton-watch-10-5-26) to check it.",
+   "find": "056",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-09",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null
   }
  ]
 }
