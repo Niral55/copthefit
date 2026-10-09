@@ -15,6 +15,7 @@ import sys
 import requests
 
 from common import ROOT, load_fits
+from item_types import guess_type
 
 PRODUCTS = ROOT / "data" / "products.json"
 MODEL = os.environ.get("ENRICH_MODEL", "claude-haiku-5-5")
@@ -60,7 +61,7 @@ Recent posts (Find #, who, where, items):
 Reply with only a JSON object:
 {{"brand": "brand name, properly capitalised, or empty if unbranded/generic",
   "name": "short clean product name WITHOUT the brand, max 45 characters, the way a style editor would write it (e.g. 'Speedmaster Moonwatch', 'Automatic tonneau watch, brown leather'); no SEO keywords",
-  "category": "watch | sneakers | shoes | clothing | accessory | jewelry | bag | other",
+  "category": "watch | sneakers | shoes | clothing | accessory | jewelry | bag",
   "suggested_find": "the Find # of the post this product most likely belongs to, or null if none fits",
   "label": "Exact if it is the very item named in that post, otherwise Similar",
   "reason": "one short sentence on why that post (or why none)"}}"""
@@ -97,6 +98,8 @@ def main():
             else:
                 p["name"] = p.get("name") or basic_clean(p)
                 p["enriched"] = "basic"
+            if p.get("category") not in ("watch", "sneakers", "shoes", "clothing", "bag", "jewelry", "accessory"):
+                p["category"] = guess_type(p.get("title_raw", ""), p.get("brand", ""))
             print(f"{p['id']}: {p.get('brand')} | {p['name']} -> {p.get('suggested_find')}")
         except Exception as e:  # noqa: BLE001 - keep the product, try the basic cleanup
             print(f"{p['id']}: AI failed ({e}); using basic cleanup", file=sys.stderr)

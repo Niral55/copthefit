@@ -206,8 +206,11 @@ function writeUrl(push) {
 window.addEventListener("popstate", () => { if (PAGE_FIND) return; state.q = ""; state.cat = "All"; state.time = "All"; readUrl(); renderHome(); });
 const save = () => { try { localStorage.setItem("ctf-filters", JSON.stringify({ cat: state.cat, time: state.time })); } catch (e) {} };
 
+// Filter by what's in the post, not just its headline category: an outfit with a Rolex also shows under Wrist.
+const CAT_TYPES = { Kicks: ["sneakers", "shoes"], Wrist: ["watch"], Fit: ["clothing"] };
+const inCat = (f, cat) => f.category === cat || (cat !== "Fit" && f.items.some(i => (CAT_TYPES[cat] || []).includes(i.type)));
 function matches(f) {
-  if (state.cat !== "All" && f.category !== state.cat) return false;
+  if (state.cat !== "All" && !inCat(f, state.cat)) return false;
   if (state.time !== "All" && f.timing !== state.time) return false;
   const q = state.q.trim().toLowerCase().replace(/^#/, "");
   if (!q) return true;

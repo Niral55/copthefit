@@ -13,6 +13,7 @@ INBOX = ROOT / "images" / "inbox"
 DIST = ROOT / "dist"
 
 LABELS = ("Exact", "Similar")
+ITEM_TYPES = ("watch", "sneakers", "shoes", "clothing", "bag", "jewelry", "accessory")
 CATEGORIES = ("Fit", "Kicks", "Wrist")
 STATUSES = ("review", "approved", "posted", "rejected")
 
@@ -183,6 +184,8 @@ def validate(doc, cfg):
         for n, it in enumerate(items, start=2):
             if it.get("slide") != n:
                 errs.append(f"{fid}: item {it.get('name')} should be slide {n}")
+            if it.get("type") and it["type"] not in ITEM_TYPES:
+                errs.append(f"{fid}-{n}: type must be one of {ITEM_TYPES}")
             if it.get("label") not in LABELS:
                 errs.append(f"{fid}-{n}: label must be Exact or Similar")
             if it.get("retailer") and it["retailer"] not in cfg["retailers"]:

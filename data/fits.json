@@ -33,7 +33,8 @@
      "retailer": "",
      "query": "",
      "product_url": "",
-     "note": "Custom piece — not for sale"
+     "note": "Custom piece — not for sale",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -43,7 +44,8 @@
      "retailer": "",
      "query": "",
      "product_url": "",
-     "note": "Custom piece — not for sale"
+     "note": "Custom piece — not for sale",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -53,7 +55,8 @@
      "retailer": "amazon",
      "query": "men's cropped raw denim trucker jacket",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 5,
@@ -63,7 +66,8 @@
      "retailer": "amazon",
      "query": "men's wide leg raw denim jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -106,7 +110,8 @@
      "retailer": "farfetch",
      "query": "Thom Browne tuxedo",
      "product_url": "",
-     "note": "MTM version is custom"
+     "note": "MTM version is custom",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -119,7 +124,8 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/k7kAAeSwoW5qwFEO/s-l1600.webp",
      "id": "3d679d",
-     "img": "images/cut/002-3d679d.png"
+     "img": "images/cut/002-3d679d.png",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -129,7 +135,8 @@
      "retailer": "amazon",
      "query": "men's cashmere sweater vest",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 5,
@@ -139,7 +146,8 @@
      "retailer": "amazon",
      "query": "men's wingtip boots",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "shoes"
     }
    ],
    "posted_at": null,
@@ -194,7 +202,8 @@
      "query": "Travis Scott Zoom Vapor 12",
      "product_url": "",
      "note": "",
-     "id": "a9a02f"
+     "id": "a9a02f",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -207,7 +216,8 @@
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/daytona/126528ln-0001-55.jpg",
      "id": "637a65",
-     "img": "images/cut/003-637a65-v1791557355.png"
+     "img": "images/cut/003-637a65-v1791557355.png",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -217,7 +227,8 @@
      "retailer": "",
      "query": "",
      "product_url": "",
-     "note": "Custom piece — not for sale"
+     "note": "Custom piece — not for sale",
+     "type": "clothing"
     },
     {
      "slide": 5,
@@ -227,7 +238,8 @@
      "retailer": "nike",
      "query": "nikecourt tennis shorts",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -304,7 +316,8 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/G4kAAeSwK9ZpsKxZ/s-l1600.webp",
      "id": "5099f6",
-     "img": "images/cut/004-5099f6.png"
+     "img": "images/cut/004-5099f6.png",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -347,7 +360,8 @@
      "retailer": "amazon",
      "query": "men's fuzzy color block sweater vest",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -357,7 +371,8 @@
      "retailer": "amazon",
      "query": "men's black straight leg jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -367,7 +382,8 @@
      "retailer": "amazon",
      "query": "men's black leather chelsea boots",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "shoes"
     }
    ],
    "posted_at": null,
@@ -414,7 +430,8 @@
      "retailer": "farfetch",
      "query": "Celine white blazer",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -427,7 +444,8 @@
      "note": "Outlets differ on the exact reference",
      "image_src": "https://i.ebayimg.com/images/g/TOYAAeSwycZqbMtw/s-l1600.webp",
      "id": "836c03",
-     "img": "images/cut/006-836c03.png"
+     "img": "images/cut/006-836c03.png",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -437,7 +455,8 @@
      "retailer": "amazon",
      "query": "men's white tailored blazer",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -483,7 +502,8 @@
      "retailer": "chrono24",
      "query": "Richard Mille RM 56-01",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -493,7 +513,8 @@
      "retailer": "amazon",
      "query": "skeleton tonneau watch men",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -538,7 +559,8 @@
      "note": "",
      "image_src": "https://nb.scene7.com/is/image/NB/u9060etn_nb_02_i?$pdpflexf2$&wid=880&hei=880",
      "id": "644b5b",
-     "img": "images/cut/008-644b5b.png"
+     "img": "images/cut/008-644b5b.png",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -548,7 +570,8 @@
      "retailer": "amazon",
      "query": "men's mid wash denim jacket",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -558,7 +581,8 @@
      "retailer": "amazon",
      "query": "men's mid wash straight jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -601,7 +625,8 @@
      "retailer": "amazon",
      "query": "men's black gold checkered jacket",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -611,7 +636,8 @@
      "retailer": "amazon",
      "query": "men's black tailored trousers",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -673,7 +699,8 @@
      "retailer": "farfetch",
      "query": "Valentino mandarin collar jacket",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -683,7 +710,8 @@
      "retailer": "amazon",
      "query": "men's ivory wide leg trousers",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -693,7 +721,8 @@
      "retailer": "amazon",
      "query": "men's mandarin collar jacket",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -750,7 +779,8 @@
      "note": "Galerie reports the 36mm; others say 41mm",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/oyster-perpetual/126000-0009-93.jpg",
      "id": "8ec783",
-     "img": "images/cut/011-8ec783-v1791557403.png"
+     "img": "images/cut/011-8ec783-v1791557403.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -760,7 +790,8 @@
      "retailer": "amazon",
      "query": "men's colorful dial watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -819,7 +850,8 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/hR8AAeSwvA9qVkEO/s-l1600.webp",
      "id": "d28e32",
-     "img": "images/cut/012-d28e32.png"
+     "img": "images/cut/012-d28e32.png",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -829,7 +861,8 @@
      "retailer": "amazon",
      "query": "Puma Speedcat",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -880,7 +913,8 @@
      "retailer": "dukeanddexter",
      "query": "white loafer",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "shoes"
     },
     {
      "slide": 3,
@@ -890,7 +924,8 @@
      "retailer": "amazon",
      "query": "men's white two piece suit",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -900,7 +935,8 @@
      "retailer": "amazon",
      "query": "men's black dress shirt",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -949,7 +985,8 @@
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/audemars-piguet/royal-oak/15513ba-oo-1320ba-01-5b.jpg",
      "id": "629cd4",
-     "img": "images/cut/014-629cd4-v1791557406.png"
+     "img": "images/cut/014-629cd4-v1791557406.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -959,7 +996,8 @@
      "retailer": "amazon",
      "query": "Tissot PRX gold",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -969,7 +1007,8 @@
      "retailer": "amazon",
      "query": "Casio G-Shock GM-2100",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -1018,7 +1057,8 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/zIQAAOSwsbdk4P2w/s-l1600.webp",
      "id": "add6cb",
-     "img": "images/cut/015-add6cb.png"
+     "img": "images/cut/015-add6cb.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -1028,7 +1068,8 @@
      "retailer": "amazon",
      "query": "Seiko Speedtimer SSC813",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -1073,7 +1114,8 @@
      "note": "",
      "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/85000461-aebf-43eb-82a7-55a1da9d40f6/NIKE+MOON+SHOE+OG.png",
      "id": "88b910",
-     "img": "images/cut/016-88b910.png"
+     "img": "images/cut/016-88b910.png",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -1124,7 +1166,8 @@
      "retailer": "nike",
      "query": "air jordan 11",
      "product_url": "",
-     "note": "Colorway not specified in source"
+     "note": "Colorway not specified in source",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -1134,7 +1177,8 @@
      "retailer": "amazon",
      "query": "men's medium wash denim button down shirt",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -1144,7 +1188,8 @@
      "retailer": "amazon",
      "query": "men's medium wash straight jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -1204,7 +1249,8 @@
      "retailer": "chrono24",
      "query": "Cartier Tank a Guichets",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -1214,7 +1260,8 @@
      "retailer": "amazon",
      "query": "men's rectangular dress watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -1267,7 +1314,8 @@
      "note": "",
      "image_src": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-majesty/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228238-0005",
      "id": "5755f4",
-     "img": "images/cut/019-5755f4-v1791557409.png"
+     "img": "images/cut/019-5755f4-v1791557409.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -1277,7 +1325,8 @@
      "retailer": "amazon",
      "query": "men's gold fluted bezel watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -1290,7 +1339,8 @@
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71MXzjlVmSL._AC_SL1500_.jpg",
      "id": "40fb4b",
-     "img": "images/cut/019-40fb4b.png"
+     "img": "images/cut/019-40fb4b.png",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -1335,7 +1385,8 @@
      "note": "",
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Samba_OG_Shoes_White_B75806_01_00_standard.jpg",
      "id": "dc3c4a",
-     "img": "images/cut/020-dc3c4a-v1791557411.png"
+     "img": "images/cut/020-dc3c4a-v1791557411.png",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -1378,7 +1429,8 @@
      "retailer": "farfetch",
      "query": "Saint Laurent leather belt black",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "accessory"
     },
     {
      "slide": 3,
@@ -1388,7 +1440,8 @@
      "retailer": "amazon",
      "query": "men's cream overshirt",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -1398,7 +1451,8 @@
      "retailer": "amazon",
      "query": "men's cream pleated trousers",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -1449,7 +1503,8 @@
      "query": "Audemars Piguet 26674ST",
      "product_url": "",
      "note": "",
-     "id": "771607"
+     "id": "771607",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -1459,7 +1514,8 @@
      "retailer": "amazon",
      "query": "Tissot PRX blue dial",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -1469,7 +1525,8 @@
      "retailer": "amazon",
      "query": "Casio G-Shock GA-2100 blue",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -1512,7 +1569,8 @@
      "retailer": "amazon",
      "query": "men's navy unstructured blazer",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -1522,7 +1580,8 @@
      "retailer": "amazon",
      "query": "men's white oxford shirt",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -1532,7 +1591,8 @@
      "retailer": "amazon",
      "query": "men's straight leg jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -1577,7 +1637,8 @@
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/083/401/929/original/14741_01.jpg.jpeg?width=750",
      "id": "d3f88b",
-     "img": "images/cut/024-d3f88b-v1791557416.png"
+     "img": "images/cut/024-d3f88b-v1791557416.png",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -1587,7 +1648,8 @@
      "retailer": "nike",
      "query": "Air Jordan 1 Retro High OG",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -1630,7 +1692,8 @@
      "retailer": "amazon",
      "query": "men's navy pinstripe suit",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -1640,7 +1703,8 @@
      "retailer": "amazon",
      "query": "men's brown suede loafers",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "shoes"
     }
    ],
    "posted_at": null,
@@ -1682,7 +1746,8 @@
      "retailer": "chrono24",
      "query": "Rolex 126538TRO",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -1692,7 +1757,8 @@
      "retailer": "amazon",
      "query": "men's gold chronograph watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -1737,7 +1803,8 @@
      "note": "",
      "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/6ee19bfa-ae5c-4de7-986f-c75f909831b4/AIR+MAX+GOADOME+LOW+QS.png",
      "id": "2ac7c1",
-     "img": "images/cut/027-2ac7c1.png"
+     "img": "images/cut/027-2ac7c1.png",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -1780,7 +1847,8 @@
      "retailer": "amazon",
      "query": "men's burgundy blazer",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -1790,7 +1858,8 @@
      "retailer": "amazon",
      "query": "men's tailored pleated shorts",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -1800,7 +1869,8 @@
      "retailer": "amazon",
      "query": "men's silk tie burgundy",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "accessory"
     }
    ],
    "posted_at": null,
@@ -1846,7 +1916,8 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/hbMAAeSwFkVquS~k/s-l1600.webp",
      "id": "85067d",
-     "img": "images/cut/029-85067d.png"
+     "img": "images/cut/029-85067d.png",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -1856,7 +1927,8 @@
      "retailer": "ebay",
      "query": "Chanel carpenter jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -1866,7 +1938,8 @@
      "retailer": "amazon",
      "query": "red canvas skate shoes men",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "sneakers"
     },
     {
      "slide": 5,
@@ -1876,7 +1949,8 @@
      "retailer": "amazon",
      "query": "men's carpenter jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -1926,7 +2000,8 @@
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/117/897/064/original/1772772_01.jpg.jpeg?action=crop&width=750",
      "id": "0673d7",
-     "img": "images/cut/030-0673d7-v1791557420.png"
+     "img": "images/cut/030-0673d7-v1791557420.png",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -1936,7 +2011,8 @@
      "retailer": "ebay",
      "query": "Chanel mini bag white",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "bag"
     },
     {
      "slide": 4,
@@ -1946,7 +2022,8 @@
      "retailer": "amazon",
      "query": "men's white matching set",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -1992,7 +2069,8 @@
      "note": "Exact Bode style not named in source",
      "image_src": "https://i.ebayimg.com/images/g/BrUAAeSwkAlqhzZP/s-l1600.webp",
      "id": "0d9afc",
-     "img": "images/cut/031-0d9afc.png"
+     "img": "images/cut/031-0d9afc.png",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -2005,7 +2083,8 @@
      "note": "",
      "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/AIR+FORCE+1+%2707.png",
      "id": "e68ad0",
-     "img": "images/cut/031-e68ad0.png"
+     "img": "images/cut/031-e68ad0.png",
+     "type": "sneakers"
     },
     {
      "slide": 4,
@@ -2015,7 +2094,8 @@
      "retailer": "amazon",
      "query": "men's embroidered camp collar shirt vintage",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -2062,7 +2142,8 @@
      "retailer": "",
      "query": "",
      "product_url": "",
-     "note": "Custom piece — not for sale"
+     "note": "Custom piece — not for sale",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -2072,7 +2153,8 @@
      "retailer": "chrono24",
      "query": "Piaget 9297",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -2082,7 +2164,8 @@
      "retailer": "amazon",
      "query": "men's black tuxedo",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 5,
@@ -2092,7 +2175,8 @@
      "retailer": "amazon",
      "query": "men's gold rectangular dress watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2146,7 +2230,8 @@
      "retailer": "chrono24",
      "query": "Omega Aqua Terra turquoise",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2156,7 +2241,8 @@
      "retailer": "amazon",
      "query": "Tissot Gentleman Powermatic 80",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2210,7 +2296,8 @@
      "retailer": "chrono24",
      "query": "Cartier Tortue",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2220,7 +2307,8 @@
      "retailer": "amazon",
      "query": "men's gold cushion case dress watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2283,7 +2371,8 @@
      "note": "",
      "id": "42e7c6",
      "image_src": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m7939a1a0nu-0001",
-     "img": "images/cut/035-42e7c6-v1791557424.png"
+     "img": "images/cut/035-42e7c6-v1791557424.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2293,7 +2382,8 @@
      "retailer": "amazon",
      "query": "Orient Kamasu",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -2303,7 +2393,8 @@
      "retailer": "amazon",
      "query": "Seiko 5 Sports",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2360,7 +2451,8 @@
      "retailer": "ebay",
      "query": "Louis Vuitton compact bag men",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "bag"
     },
     {
      "slide": 3,
@@ -2370,7 +2462,8 @@
      "retailer": "amazon",
      "query": "men's pinstripe suit",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -2380,7 +2473,8 @@
      "retailer": "amazon",
      "query": "leopard print silk tie men",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "accessory"
     },
     {
      "slide": 5,
@@ -2390,7 +2484,8 @@
      "retailer": "amazon",
      "query": "men's white dress shirt",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -2441,7 +2536,8 @@
      "retailer": "ebay",
      "query": "Aime Leon Dore Porsche jacket red",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -2451,7 +2547,8 @@
      "retailer": "amazon",
      "query": "men's red racing jacket",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -2516,7 +2613,8 @@
      "retailer": "farfetch",
      "query": "Rhude",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -2526,7 +2624,8 @@
      "retailer": "amazon",
      "query": "men's navy matching tracksuit",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -2573,7 +2672,8 @@
      "retailer": "",
      "query": "",
      "product_url": "",
-     "note": "Custom piece — not for sale"
+     "note": "Custom piece — not for sale",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -2583,7 +2683,8 @@
      "retailer": "amazon",
      "query": "men's white suit slim",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 4,
@@ -2593,7 +2694,8 @@
      "retailer": "amazon",
      "query": "men's white dress shirt",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -2660,7 +2762,8 @@
      "query": "Omega Aqua Terra 38 Moonshine Gold",
      "product_url": "",
      "note": "",
-     "id": "a5df56"
+     "id": "a5df56",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2670,7 +2773,8 @@
      "retailer": "amazon",
      "query": "Seiko Presage",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2727,7 +2831,8 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/17311221_1_jpg.avif?height=4000&v=1766500805&width=4000",
      "id": "fc95af",
-     "img": "images/cut/041-fc95af-v1791557427.png"
+     "img": "images/cut/041-fc95af-v1791557427.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2737,7 +2842,8 @@
      "retailer": "amazon",
      "query": "men's rectangular gold watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2838,7 +2944,8 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/CRW2SA0033_0.png?height=5760&v=1749832741&width=4000",
      "id": "48cffe",
-     "img": "images/cut/042-48cffe-v1791557434.png"
+     "img": "images/cut/042-48cffe-v1791557434.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2851,7 +2958,8 @@
      "note": "",
      "image_src": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0138211b1a1-soldier_7d7651b2_thumbnail_1024.webp",
      "id": "523ef2",
-     "img": "images/cut/042-523ef2-v1791557437.png"
+     "img": "images/cut/042-523ef2-v1791557437.png",
+     "type": "watch"
     },
     {
      "slide": 4,
@@ -2861,7 +2969,8 @@
      "retailer": "amazon",
      "query": "Citizen Promaster Navihawk",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -2904,7 +3013,8 @@
      "retailer": "",
      "query": "",
      "product_url": "",
-     "note": "Custom piece — not for sale"
+     "note": "Custom piece — not for sale",
+     "type": "clothing"
     },
     {
      "slide": 3,
@@ -2914,7 +3024,8 @@
      "retailer": "farfetch",
      "query": "Celine loafers black",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "shoes"
     },
     {
      "slide": 4,
@@ -2924,7 +3035,8 @@
      "retailer": "amazon",
      "query": "men's navy double breasted blazer",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     },
     {
      "slide": 5,
@@ -2934,7 +3046,8 @@
      "retailer": "amazon",
      "query": "men's washed straight leg jeans",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "clothing"
     }
    ],
    "posted_at": null,
@@ -2980,7 +3093,8 @@
      "image_src": "https://i.ebayimg.com/images/g/uJEAAeSwy6tp-gk3/s-l1600.webp",
      "id": "777b95",
      "img": "images/cut/044-777b95.png",
-     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
+     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -2990,7 +3104,8 @@
      "retailer": "amazon",
      "query": "Seiko Speedtimer chronograph",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -3043,7 +3158,8 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/926-CRWJTA0068_1_f456be23-e418-4108-9ae4-dd12875327b5.jpg?height=4000&v=1788966228&width=4000",
      "id": "49b0d3",
-     "img": "images/cut/045-49b0d3-v1791557465.png"
+     "img": "images/cut/045-49b0d3-v1791557465.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -3053,7 +3169,8 @@
      "retailer": "amazon",
      "query": "men's rectangular silver watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -3095,7 +3212,8 @@
      "retailer": "amazon",
      "query": "Fossil Carraway Automatic",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -3151,7 +3269,8 @@
      "retailer": "chrono24",
      "query": "Hublot Big Bang King Gold",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -3161,7 +3280,8 @@
      "retailer": "amazon",
      "query": "men's gold chronograph watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -3211,7 +3331,8 @@
      "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
      "id": "9fa28c",
      "img": "images/cut/048-9fa28c.png",
-     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
+     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -3221,7 +3342,8 @@
      "retailer": "amazon",
      "query": "Seiko Speedtimer chronograph",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -3267,7 +3389,8 @@
      "retailer": "chrono24",
      "query": "Louis Vuitton Tambour",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -3277,7 +3400,8 @@
      "retailer": "amazon",
      "query": "men's integrated bracelet steel watch",
      "product_url": "",
-     "note": ""
+     "note": "",
+     "type": "watch"
     }
    ],
    "posted_at": null,
@@ -3326,7 +3450,8 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/KegAAeSw0zlolM56/s-l1600.webp",
      "id": "a5211f",
-     "img": "images/cut/050-a5211f.png"
+     "img": "images/cut/050-a5211f.png",
+     "type": "watch"
     },
     {
      "slide": 3,
@@ -3338,7 +3463,8 @@
      "product_url": "https://www.amazon.com/SEWOR-Automatic-Business-Tonneau-Mechanical/dp/B07HQ5FKXM/ref=sr_1_4?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.itFImJfrELbD_9lIncKvEzKMvHuT6W02kBD_szj-cvgVWeH-dv3xJFytsOnUHUwmIDISyx3R8oFdRSy--SDejvYx_kVyrTpl8Rm9Hb2QrOENp_mCHY_VBsc-I_mHNkOsT9BKH3aygCCBKQVl1YRkBt28vqofilyBezeBKHlv6azBHfZONutZF7uPNW0rcKAM_qLNnY2Q3nzLCIOHBdyi0iYZyDKMEfPfnSomVQEHBmmvm1eeScqXws7CMb3Zr7vvGqM9gYZpxD24rY39NcYtzaqINq3OiD10tSCapmbexjY.Fr8GJJxheNzyEEYNyvOp8R4zDiA9GWYSihuq1sXp_9M&dib_tag=se&keywords=tonneau%2Bautomatic%2Bwatch&plpRedirect=mhFallback&qid=1791558566&sr=8-4&th=1",
      "note": "",
      "id": "4df6c4",
-     "img": "images/cut/050-4df6c4.png"
+     "img": "images/cut/050-4df6c4.png",
+     "type": "watch"
     }
    ],
    "posted_at": null,

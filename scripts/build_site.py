@@ -9,6 +9,7 @@ import shutil
 import sys
 import unicodedata
 
+from item_types import guess_type
 from common import ROOT, DIST, CUT_DIR, load_config, load_fits, raw_url, shop_url, retailer_name, cutout_path, photo_path, validate
 
 e = lambda t: H.escape(str(t or ""), quote=True)
@@ -146,7 +147,7 @@ def main():
             if cut:
                 shutil.copy(cut, DIST / "img" / cut.name)
             items.append(dict(
-                slide=it["slide"], label=it["label"], brand=it.get("brand", ""), name=it["name"],
+                slide=it["slide"], label=it["label"], type=it.get("type") or guess_type(it["name"] + " " + it.get("note", ""), it.get("brand", "")), brand=it.get("brand", ""), name=it["name"],
                 retailer_name=retailer_name(cfg, it), url=raw_url(cfg, it), note=it.get("note", ""),
                 image=f"img/{cut.name}" if cut else ""))
         first = next((i["image"] for i in items if i["image"] and i["label"] == "Exact"), "") or \

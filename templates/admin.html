@@ -548,7 +548,8 @@ function renderItems() {
       <span class="n">${i + 1}</span>
       <button class="img" type="button" data-up="${i}" aria-label="Upload image for item ${i + 1}">${src ? `<img src="${esc(src)}" alt="">` : "Add image"}</button>
       <div class="fields">
-        <label class="f" for="lab${i}">Type<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
+        <label class="f" for="ty${i}">Category<select id="ty${i}" data-k="type">${ITEM_TYPES.map(([v, l]) => `<option value="${v}"${(it.type || "") === v ? " selected" : ""}>${l}</option>`).join("")}</select></label>
+        <label class="f" for="lab${i}">Exact or similar<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
         <label class="f" for="br${i}">Brand<input id="br${i}" data-k="brand" value="${esc(it.brand)}" placeholder="${it.label === "Similar" ? "(optional)" : "Rolex"}"></label>
         <label class="f wide" for="nm${i}">Item<input id="nm${i}" data-k="name" value="${esc(it.name)}" placeholder="Cosmograph Daytona 126528LN"></label>
         <label class="f wide" for="lk${i}">Link<input id="lk${i}" data-k="_link" value="${esc(it._link)}" placeholder="https://… or chrono24: Rolex 126528LN or custom"><span id="af${i}">${itemAff(it._link)}</span></label>
@@ -649,6 +650,9 @@ async function bulkCovers(files) {
 
 
 
+const ITEM_TYPES = [["", "Auto-detect"], ["watch", "Watch"], ["sneakers", "Sneakers"], ["shoes", "Shoes"], ["clothing", "Clothing"], ["bag", "Bag"], ["jewelry", "Jewelry"], ["accessory", "Accessory"]];
+const typeOf = p => ITEM_TYPES.some(([v]) => v && v === p.category) ? p.category : "";
+
 /* ---------- saved products (from the extension's "Save product to Cop the Fit") ---------- */
 function renderProdCount() { const n = PRODUCTS.products.length; $("#prodCount").textContent = n ? n : ""; }
 function openProducts(fromHistory) {
@@ -672,7 +676,8 @@ function renderProducts() {
         <div class="meta">${esc(p.store)}${prodPrice(p) ? " · " + esc(prodPrice(p)) : ""} · <a href="${esc(p.url)}" target="_blank" rel="noopener">open ↗</a>${p.enriched === "ai" ? " · ✨ AI-tidied" : !p.enriched ? " · tidying…" : ""}</div>
         <div class="raw" title="${esc(p.title_raw)}">${esc(p.title_raw)}</div>
         <div class="two"><label class="f" for="pb${i}">Brand<input id="pb${i}" data-k="brand" value="${esc(p.brand)}"></label>
-          <label class="f" for="pt${i}">Type<select id="pt${i}" data-k="label"><option${p.label !== "Exact" ? " selected" : ""}>Similar</option><option${p.label === "Exact" ? " selected" : ""}>Exact</option></select></label></div>
+          <label class="f" for="pc${i}">Category<select id="pc${i}" data-k="type">${ITEM_TYPES.map(([v, l]) => `<option value="${v}"${typeOf(p) === v ? " selected" : ""}>${l}</option>`).join("")}</select></label></div>
+        <div class="two"><label class="f" for="pt${i}">Exact or similar<select id="pt${i}" data-k="label"><option${p.label !== "Exact" ? " selected" : ""}>Similar</option><option${p.label === "Exact" ? " selected" : ""}>Exact</option></select></label><span></span></div>
         <label class="f" for="pn${i}">Item name<input id="pn${i}" data-k="name" value="${esc(p.name || "")}" placeholder="Short name, e.g. Automatic tonneau watch"></label>
         ${sug ? `<div class="sug">Suggested: <b>#${sug.find} ${esc(sug.celeb)}</b>${p.reason ? ` · ${esc(p.reason)}` : ""}</div>` : ""}
         <label class="f" for="pf${i}">Add to post<select id="pf${i}" data-k="find">${opt(p.suggested_find || "")}</select></label>
@@ -681,7 +686,7 @@ function renderProducts() {
   $("#prodBack").onclick = closeProducts;
   $("#prodRefresh").onclick = async () => { PRODUCTS = await GH.jsonOr("data/products.json", undefined, { products: [] }); renderProdCount(); renderProducts(); };
   const val = (i, k) => $("#prodView").querySelector(`.prod[data-i="${i}"] [data-k="${k}"]`).value.trim();
-  $("#prodView").querySelectorAll("[data-add]").forEach(b => b.onclick = () => addProduct(+b.dataset.add, { brand: val(b.dataset.add, "brand"), name: val(b.dataset.add, "name"), label: val(b.dataset.add, "label"), find: val(b.dataset.add, "find") }));
+  $("#prodView").querySelectorAll("[data-add]").forEach(b => b.onclick = () => addProduct(+b.dataset.add, { brand: val(b.dataset.add, "brand"), name: val(b.dataset.add, "name"), label: val(b.dataset.add, "label"), type: val(b.dataset.add, "type"), find: val(b.dataset.add, "find") }));
   $("#prodView").querySelectorAll("[data-del]").forEach(b => b.onclick = () => deleteProduct(+b.dataset.del));
 }
 async function addProduct(i, v) {
@@ -695,6 +700,7 @@ async function addProduct(i, v) {
     await GH.commit(doc => {
       const f = doc.fits.find(x => x.find === v.find);
       const item = { slide: f.items.length + 2, label: v.label === "Exact" ? "Exact" : "Similar", brand: v.brand, name: v.name, retailer: "", query: "", product_url: p.url, note: "" };
+      if (v.type) item.type = v.type;
       if (p.image) item.image_src = p.image;  // the build cuts out the background
       f.items.push(item);
       f.updated = new Date().toISOString();
@@ -890,6 +896,7 @@ function parseItems() {
     if (/\b(dupe|fake|faux|replica)\b/i.test(it.name)) throw new Error(`Item ${n}: avoid dupe/fake/faux/replica wording.`);
     const out = { ...it, slide: i + 2, brand: (it.brand || "").trim(), name: it.name.trim(), product_url: "", retailer: "", query: "" };
     delete out._link;
+    if (!out.type) delete out.type; // blank = detected automatically when the site builds
     const m = link.match(/^([a-z0-9]+)\s*:\s*(.+)$/i);
     if (/^https?:\/\//i.test(link)) out.product_url = link;
     else if (m && !/^https?$/i.test(m[1])) {
