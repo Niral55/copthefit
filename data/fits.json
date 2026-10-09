@@ -3787,10 +3787,9 @@
      "query": "",
      "note": "",
      "slide": 2,
-     "image_src": "https://images.soleretriever.com/sb/products/adidas_harden_vol_1_pioneer_LC5090-1786992586042.webp?width=1600&quality=90&fit=contain",
+     "image_src": "https://cdn.sanity.io/images/pu5wtzfc/production/96cd0cba4e8b43545575c59b3f351c720d833a44-2000x2000.jpg/adidas-harden-vol-1-pioneer-retro-release-LC5090.jpg?w=1600&h=1600&auto=format",
      "id": "951a88",
-     "img": "images/cut/053-951a88.png",
-     "image_replace": "https://cdn.sanity.io/images/pu5wtzfc/production/96cd0cba4e8b43545575c59b3f351c720d833a44-2000x2000.jpg/adidas-harden-vol-1-pioneer-retro-release-LC5090.jpg?w=1600&h=1600&auto=format"
+     "img": "images/cut/053-951a88-v1791577558.png"
     }
    ],
    "photo_leads": [
@@ -4267,12 +4266,11 @@
      "product_url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-loose-mens-jeans/p/0057U0009",
      "retailer": "",
      "query": "",
-     "image_src": "https://images.urbndata.com/is/image/UrbanOutfitters/105184493_092_b",
+     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_0057U-0009_GLO_CL_FV?fmt=jpeg&qlt=90&wid=2000&hei=2500",
      "note": "",
      "slide": 2,
      "id": "c334ca",
-     "img": "images/cut/058-c334ca.png",
-     "image_replace": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_0057U-0009_GLO_CL_FV?fmt=jpeg&qlt=90&wid=2000&hei=2500"
+     "img": "images/cut/058-c334ca-v1791577615.png"
     }
    ],
    "photo_options": [
