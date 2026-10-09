@@ -186,6 +186,20 @@ const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;"
 const app = document.getElementById("app");
 const state = { q: "", cat: "All", time: "All" };
 try { const s = JSON.parse(localStorage.getItem("ctf-filters") || "{}"); Object.assign(state, { cat: s.cat || "All", time: s.time || "All" }); } catch (e) {}
+// Filters and search live in the address (?cat=Kicks&q=rolex), so Back/Forward and swipe gestures step through them.
+function readUrl() {
+  const u = new URLSearchParams(location.search);
+  if (u.has("cat") || u.has("time") || u.has("q")) Object.assign(state, { cat: u.get("cat") || "All", time: u.get("time") || "All", q: u.get("q") || "" });
+}
+function writeUrl(push) {
+  const u = new URLSearchParams();
+  if (state.cat !== "All") u.set("cat", state.cat);
+  if (state.time !== "All") u.set("time", state.time);
+  if (state.q.trim()) u.set("q", state.q.trim());
+  const url = location.pathname + (u.toString() ? "?" + u : "");
+  if (url !== location.pathname + location.search) history[push ? "pushState" : "replaceState"](null, "", url);
+}
+window.addEventListener("popstate", () => { if (PAGE_FIND) return; state.q = ""; state.cat = "All"; state.time = "All"; readUrl(); renderHome(); });
 const save = () => { try { localStorage.setItem("ctf-filters", JSON.stringify({ cat: state.cat, time: state.time })); } catch (e) {} };
 
 function matches(f) {
@@ -213,12 +227,13 @@ function renderHome() {
     <p class="count" id="count"></p>
     <div class="grid" id="grid"></div>`;
   const q = document.getElementById("q");
-  q.addEventListener("input", () => { state.q = q.value; drawGrid(); });
+  q.addEventListener("input", () => { state.q = q.value; writeUrl(false); drawGrid(); });
   q.addEventListener("keydown", e => {
     if (e.key === "Enter") { const m = FITS.filter(matches); if (m.length === 1) location.href = fitUrl(m[0]); }
   });
   app.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
-    state[b.dataset.k] = b.dataset.v; save();
+    if (state[b.dataset.k] === b.dataset.v) return;
+    state[b.dataset.k] = b.dataset.v; save(); writeUrl(true);
     app.querySelectorAll(`.chip[data-k="${b.dataset.k}"]`).forEach(x => x.setAttribute("aria-pressed", x.dataset.v === state[b.dataset.k]));
     drawGrid();
   }));
@@ -296,6 +311,7 @@ function renderFit(f) {
 }
 
 function route() {
+  if (!PAGE_FIND) readUrl();
   // Old links like #fit-029 now point to the post's own page.
   const m = location.hash.match(/^#fit-(\d{3})$/);
   const old = m && FITS.find(x => x.find === m[1]);

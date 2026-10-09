@@ -268,7 +268,12 @@ function readiness(f) {
 /* ---------- list view ---------- */
 function renderTabs() {
   $("#tabs").innerHTML = STAGES.map(s => `<button class="tab" role="tab" type="button" data-t="${s.id}" aria-selected="${TAB === s.id}">${s.label}<b>${DOC.fits.filter(s.test).length}</b></button>`).join("");
-  $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; SEL.clear(); renderList(); });
+  $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => {
+    if (TAB === b.dataset.t) return;
+    TAB = b.dataset.t; SEL.clear();
+    history.pushState({ tab: TAB }, "", TAB === "all" ? location.pathname : "#tab-" + TAB); // swipe/Back returns to the previous tab
+    renderList();
+  });
   $("#tabHint").textContent = STAGES.find(s => s.id === TAB).hint;
 }
 
@@ -386,7 +391,11 @@ function showList() { DRAFT = null; $("#editView").hidden = true; $("#listView")
 window.addEventListener("popstate", () => {
   if (!DOC) return;
   const m = location.hash.match(/^#edit-(\d{3}|new)$/);
-  if (m) openEditor(m[1] === "new" ? null : m[1], true); else showList();
+  if (m) { openEditor(m[1] === "new" ? null : m[1], true); return; }
+  const t = location.hash.match(/^#tab-(\w+)$/);
+  const tab = t && STAGES.some(x => x.id === t[1]) ? t[1] : "all";
+  if (tab !== TAB) { TAB = tab; SEL.clear(); }
+  showList();
 });
 
 function photoUrl() {
@@ -762,7 +771,11 @@ async function load() {
   flash("");
   const m = location.hash.match(/^#edit-(\d{3})$/); // a bookmarked or refreshed post opens directly
   if (m && DOC.fits.some(f => f.find === m[1])) { history.replaceState(null, "", location.pathname); openEditor(m[1]); } // list entry underneath, so Back lands on the list
-  else { if (location.hash) history.replaceState(null, "", location.pathname); renderList(); }
+  else {
+    const t = location.hash.match(/^#tab-(\w+)$/);
+    if (t && STAGES.some(x => x.id === t[1])) TAB = t[1]; else if (location.hash) history.replaceState(null, "", location.pathname);
+    renderList();
+  }
 }
 
 $("#q").addEventListener("input", renderList);
