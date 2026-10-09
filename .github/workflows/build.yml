@@ -46,15 +46,24 @@ jobs:
         run: python scripts/process_images.py
 
       - name: Save new images back to the repo
+        # If someone saved (or another build saved images) meanwhile, start over from the newest version
+        # and process again, instead of failing and leaving the site un-updated.
         run: |
-          if [ -n "$(git status --porcelain images data)" ]; then
-            git config user.name "copthefit-bot"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "copthefit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            [ -z "$(git status --porcelain images data)" ] && break
             git add -A images data
-            git commit -m "Process product images [skip ci]"
-            git pull --rebase
-            git push
-          fi
+            git commit -qm "Process product images [skip ci]"
+            if git pull --rebase -q && git push -q; then break; fi
+            echo "Main moved on; redoing image processing on the newest version (attempt $attempt)"
+            git rebase --abort 2>/dev/null || true
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            python scripts/process_images.py
+            sleep $((attempt * 5))
+          done
+          git status --porcelain images data | grep -q . && { echo "Could not save images after 4 tries"; exit 1; } || true
 
       - run: python -m playwright install --with-deps chromium
 
