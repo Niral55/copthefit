@@ -2973,7 +2973,7 @@
      "image_src": "https://i.ebayimg.com/images/g/uJEAAeSwy6tp-gk3/s-l1600.webp",
      "id": "777b95",
      "img": "images/cut/044-777b95.png",
-     "image_replace": "https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001002-962548.png?w=1024"
+     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
     },
     {
      "slide": 3,
@@ -3211,7 +3211,7 @@
      "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
      "id": "9fa28c",
      "img": "images/cut/048-9fa28c.png",
-     "image_replace": "https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-38-co-axial-chronometer-chronograph-38-mm-32415385060001-afc962.png?w=1024"
+     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
     },
     {
      "slide": 3,
