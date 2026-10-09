@@ -9,5 +9,11 @@
    "#059 Lil Tecca (72)"
   ],
   "skipped": []
+ },
+ "instagram": {
+  "connected": false,
+  "last_run": "2026-10-09T20:47:53+00:00",
+  "result": "paused",
+  "message": "Auto-posting is paused."
  }
 }
