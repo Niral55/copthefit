@@ -3413,7 +3413,8 @@
      "product_url": "https://us.louisvuitton.com/eng-us/products/tambour-automatic-40mm-steel-and-pink-gold-nvprod4540026v/W1SP10",
      "note": "",
      "type": "watch",
-     "image_src": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tambour-automatic-40mm-steel-and-rose-gold--W1SP10_PM2_Front%20view.jpg"
+     "image_src": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tambour-automatic-40mm-steel-and-rose-gold--W1SP10_PM2_Front%20view.jpg",
+     "image_fetch": "failed 2026-10-09: 403 Client Error: Forbidden for url: https://us.louisvuitton.com/images/is/image"
     },
     {
      "slide": 5,
@@ -3425,7 +3426,9 @@
      "product_url": "https://www.amazon.com/dp/B094YP9RHS",
      "note": "",
      "type": "watch",
-     "image_src": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg"
+     "image_src": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg",
+     "id": "402d1d",
+     "img": "images/cut/049-402d1d.png"
     }
    ],
    "posted_at": null,
