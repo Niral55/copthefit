@@ -243,7 +243,7 @@ const STAGES = [
   { id: "approved", label: "Live on site", hint: "On the website now, with all links live. Instagram is separate: use the Instagram queue to post one.", test: f => f.status === "approved" || f.status === "posted" },
   { id: "queue", label: "Instagram queue", hint: "Posts waiting for Instagram, in order. One posts each day; posts without a cover photo wait.", test: f => f.status === "approved" && f.ig_queue },
   { id: "posted", label: "On Instagram", hint: "Already posted to Instagram. Edits here update the site.", test: f => f.status === "posted" },
-  { id: "rejected", label: "Unpublished", hint: "Hidden from the site and Instagram. Open one to restore it.", test: f => f.status === "rejected" }
+  { id: "rejected", label: "Unpublished", hint: "Hidden from the site and Instagram. Open one and press Restore to site to put it back.", test: f => f.status === "rejected" }
 ];
 const stageLabel = f => f.status === "review" ? "Lead" : f.status === "rejected" ? "Unpublished" : f.status === "posted" ? "On site · On Instagram"
   : f.ig_queue ? "On site · Instagram queue" : "On site";
@@ -479,7 +479,7 @@ function renderEditor() {
         ${d.ig_queue ? `<button class="btn" id="unqueue" type="button">Remove from Instagram queue</button>` : `<button class="btn" id="queue" type="button">Add to Instagram queue</button>`}
         <button class="btn primary" id="postNext" type="button">Post next on Instagram</button>
         <button class="btn primary" id="postNow" type="button">Post to Instagram now</button></span>` : ""}
-      ${isNew ? "" : d.status === "rejected" ? `<button class="btn" id="restore" type="button">Restore to leads</button>` : `<button class="btn danger" id="unpublish" type="button">Unpublish</button>`}
+      ${isNew ? "" : d.status === "rejected" ? `<button class="btn primary" id="restore" type="button">Restore to site</button>` : `<button class="btn danger" id="unpublish" type="button">Unpublish</button>`}
     </div>`;
 
   renderItems();
@@ -709,7 +709,7 @@ async function save(action) {
     const pend = [];
     const pinMeta = {};
     items.forEach(it => { if (it.pin) pinMeta[String(it.slide)] = it.pin; });
-    const status = { save: d.status, publish: "approved", queue: "approved", unqueue: d.status, next: "approved", now: "approved", unpublish: "rejected", restore: "review" }[action];
+    const status = { save: d.status, publish: "approved", queue: "approved", unqueue: d.status, next: "approved", now: "approved", unpublish: "rejected", restore: "approved" }[action];
     // Instagram queue is only changed by the Instagram buttons, never by Save or Publish.
     const igQueue = ["queue", "next", "now"].includes(action) ? true : ["unqueue", "unpublish", "restore"].includes(action) ? false : !!d.ig_queue;
     const find = await GH.commit(doc => {
@@ -737,12 +737,13 @@ async function save(action) {
     STAMP = Date.now();
 
     let note = "Saved. The site and slides update in about 3 minutes.";
-    if (action === "save") note = d.status === "review" ? "Saved. Still a lead (not on the site)." : "Saved. The site updates in about 3 minutes. Instagram schedule unchanged.";
+    if (action === "save") note = d.status === "review" ? "Saved. Still a lead: press Publish to site to put it live." : d.status === "rejected" ? "Saved. Still unpublished." : "Saved and live: the site shows the change in about 3 minutes. Instagram schedule unchanged.";
     if (action === "publish") note = "Published to the site. It's live in about 3 minutes. Not added to Instagram.";
     if (action === "queue") note = "Added to the Instagram queue (and live on the site).";
     if (action === "unqueue") note = "Removed from the Instagram queue. Still on the site.";
     if (action === "next") note = "Saved. This is the next Instagram post.";
     if (action === "unpublish") note = "Unpublished. It's off the site and out of the Instagram queue.";
+    if (action === "restore") note = "Restored. It's back on the site in about 3 minutes (not in the Instagram queue).";
     if (action === "now") {
       try {
         await GH.req(`/actions/workflows/post.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: settings().branch, inputs: { dry_run: "false", find } }) });
