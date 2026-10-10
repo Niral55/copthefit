@@ -375,11 +375,7 @@
      "page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
      "credit": "GQ Hong Kong (no credit given)"
     }
-   ],
-   "photo": {
-    "credit": "GQ Hong Kong (no credit given)",
-    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
-   }
+   ]
   },
   {
    "find": "005",
@@ -452,11 +448,7 @@
      "page": "https://www.detroitlions.com/photos/lions-at-panthers-week-4-arrival-photos",
      "credit": "Jeff Nguyen/Detroit Lions via AP"
     }
-   ],
-   "photo": {
-    "credit": "Jeff Nguyen/Detroit Lions via AP",
-    "source_url": "https://www.detroitlions.com/photos/lions-at-panthers-week-4-arrival-photos"
-   }
+   ]
   },
   {
    "find": "006",
@@ -1044,7 +1036,10 @@
    "photo": {
     "credit": "Rolling Stone UK (Image: Provided / Prada)",
     "source_url": "https://www.rollingstone.co.uk/style/harry-styles-aperture-music-video-custom-prada-57881/"
-   }
+   },
+   "photo_src": "https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2026/01/Prada-x-Harry-Styles_2-1024x768.jpg",
+   "photo_src_page": "https://www.rollingstone.co.uk/style/harry-styles-aperture-music-video-custom-prada-57881/",
+   "photo_src_credit": "Rolling Stone UK (Image: Provided / Prada)"
   },
   {
    "find": "013",
@@ -1437,11 +1432,7 @@
      "page": "https://www.philadelphiaeagles.com/photos/commanders-vs-eagles-arrival-photo-gallery-september-13-2026-nfl-week-1",
      "credit": "Devlynn Bunning / Philadelphia Eagles"
     }
-   ],
-   "photo": {
-    "credit": "Devlynn Bunning / Philadelphia Eagles",
-    "source_url": "https://www.philadelphiaeagles.com/photos/commanders-vs-eagles-arrival-photo-gallery-september-13-2026-nfl-week-1"
-   }
+   ]
   },
   {
    "find": "018",
@@ -1949,11 +1940,7 @@
      "page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
      "credit": "GQ Hong Kong (no credit given)"
     }
-   ],
-   "photo": {
-    "credit": "GQ Hong Kong (no credit given)",
-    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
-   }
+   ]
   },
   {
    "find": "025",
@@ -2444,11 +2431,7 @@
      "page": "https://www.xxlmag.com/jay-z-cardi-b-fat-joe-and-dj-khaled-attend-game-3-of-nba-finals/",
      "credit": "Al Bello/Getty Images; J. Conrad Williams Jr./Newsday RM via Getty Images (XXL)"
     }
-   ],
-   "photo": {
-    "credit": "Jesse D. Garrabrant/NBAE via Getty Images",
-    "source_url": "https://www.nbcnewyork.com/entertainment/entertainment-news/celebrity-row-knicks-spurs-game-3/6510383/"
-   }
+   ]
   },
   {
    "find": "032",
@@ -3487,11 +3470,7 @@
      "page": "https://www.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season",
      "credit": "NFL.com (no credit listed)"
     }
-   ],
-   "photo": {
-    "credit": "NFL.com (no credit listed)",
-    "source_url": "https://www.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season"
-   }
+   ]
   },
   {
    "find": "044",
