@@ -200,7 +200,7 @@ def fetch_covers(doc):
             PHOTO_DIR.mkdir(parents=True, exist_ok=True)
             img.save(PHOTO_DIR / f"{f['find']}.jpg", quality=88, optimize=True)
             old = f.get("photo") or {}
-            f["photo"] = {"credit": old.get("credit") or f.get("photo_src_credit") or "", "source_url": f.get("photo_src_page") or src}
+            f["photo"] = {"credit": f.get("photo_src_credit") or old.get("credit") or "", "source_url": f.get("photo_src_page") or src}
             for k in ("photo_src", "photo_src_page", "photo_src_credit", "photo_src_failed"):
                 f.pop(k, None)
             print(f"cover {f['find']} from {src[:60]}")
