@@ -4208,10 +4208,11 @@
      "credit": "Bruce Kluckhohn / Imagn Images"
     }
    ],
-   "photo_src": "https://static.vecteezy.com/system/resources/previews/087/159/838/non_2x/minnesota-timberwolves-guard-anthony-edwards-poses-free-editorial_image.jpg",
-   "photo_src_page": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838",
-   "photo_src_credit": "Bruce Kluckhohn / Imagn Images",
-   "updated": "2026-10-10T15:21:05.483Z"
+   "updated": "2026-10-10T15:21:05.483Z",
+   "photo": {
+    "credit": "Bruce Kluckhohn / Imagn Images",
+    "source_url": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838"
+   }
   },
   {
    "celeb": "James Harden",
