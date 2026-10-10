@@ -4187,7 +4187,7 @@
    "score_note": "$130 adidas general release in stock; Ant Edwards; NBA league post; 11 days old",
    "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.",
    "find": "052",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -4207,7 +4207,11 @@
      "page": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838",
      "credit": "Bruce Kluckhohn / Imagn Images"
     }
-   ]
+   ],
+   "photo_src": "https://static.vecteezy.com/system/resources/previews/087/159/838/non_2x/minnesota-timberwolves-guard-anthony-edwards-poses-free-editorial_image.jpg",
+   "photo_src_page": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838",
+   "photo_src_credit": "Bruce Kluckhohn / Imagn Images",
+   "updated": "2026-10-10T15:21:05.483Z"
   },
   {
    "celeb": "James Harden",
