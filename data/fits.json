@@ -182,9 +182,10 @@
      "credit": "Mike Blake/Reuters via GMA"
     }
    ],
-   "photo_src": "https://www.thewrap.com/wp-content/uploads/2026/09/GettyImages-2295298828-scaled.jpg?width=682&height=1024&fit=bounds",
-   "photo_src_page": "https://www.thewrap.com/industry-news/awards/emmys-red-carpet-2026-photo-gallery/",
-   "photo_src_credit": "Amy Sussman/Getty Images via TheWrap"
+   "photo": {
+    "credit": "Amy Sussman/Getty Images via TheWrap",
+    "source_url": "https://www.thewrap.com/industry-news/awards/emmys-red-carpet-2026-photo-gallery/"
+   }
   },
   {
    "find": "003",
@@ -318,9 +319,10 @@
      "credit": "Patrick Smith/Getty Images via GQ Hong Kong"
     }
    ],
-   "photo_src": "http://gqhongkong.com/wp-content/uploads/2026/09/GettyImages-2292904214-710x1024.jpg",
-   "photo_src_page": "https://gqhongkong.com/en/lifestyle-en/carlos-alcaraz-us-open-travis-scott-cactus-jack",
-   "photo_src_credit": "Clive Brunskill/Getty Images via GQ Hong Kong"
+   "photo": {
+    "credit": "Clive Brunskill/Getty Images via GQ Hong Kong",
+    "source_url": "https://gqhongkong.com/en/lifestyle-en/carlos-alcaraz-us-open-travis-scott-cactus-jack"
+   }
   },
   {
    "find": "004",
@@ -374,9 +376,10 @@
      "credit": "GQ Hong Kong (no credit given)"
     }
    ],
-   "photo_src": "http://gqhongkong.com/wp-content/uploads/2026/08/Asics-1024x768.webp",
-   "photo_src_page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_src_credit": "GQ Hong Kong (no credit given)"
+   "photo": {
+    "credit": "GQ Hong Kong (no credit given)",
+    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+   }
   },
   {
    "find": "005",
@@ -450,9 +453,10 @@
      "credit": "Jeff Nguyen/Detroit Lions via AP"
     }
    ],
-   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_auto/lions/bdnbqm8ugac3j4eja9kf.jpg",
-   "photo_src_page": "https://www.detroitlions.com/photos/lions-at-panthers-week-4-arrival-photos",
-   "photo_src_credit": "Jeff Nguyen/Detroit Lions via AP"
+   "photo": {
+    "credit": "Jeff Nguyen/Detroit Lions via AP",
+    "source_url": "https://www.detroitlions.com/photos/lions-at-panthers-week-4-arrival-photos"
+   }
   },
   {
    "find": "006",
@@ -543,9 +547,10 @@
      "credit": "NBC via Getty Images / HOLA!"
     }
    ],
-   "photo_src": "https://vip-media.nbcnewyork.com/2026/09/GettyImages-2295303763.jpg?quality=85&strip=all",
-   "photo_src_page": "https://www.nbcboston.com/entertainment/entertainment-news/2026-emmy-awards-style-best-looks-red-carpet/4014609/?amp=1",
-   "photo_src_credit": "Monica Schipper/Getty Images via NBC"
+   "photo": {
+    "credit": "Monica Schipper/Getty Images via NBC",
+    "source_url": "https://www.nbcboston.com/entertainment/entertainment-news/2026-emmy-awards-style-best-looks-red-carpet/4014609/?amp=1"
+   }
   },
   {
    "find": "007",
@@ -616,9 +621,10 @@
      "credit": "Chrono 10:10 (no credit given)"
     }
    ],
-   "photo_src": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_141,w_4798,h_2698/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/the_athlete_lifestyle_on_si/01m1h7pndk4cmjtkkbx9.jpg",
-   "photo_src_page": "https://www.si.com/onsi/athlete-lifestyle/all-the-celebrities-spotted-at-the-2026-us-open",
-   "photo_src_credit": "Charles Guerin / ABACAPRESS.COM via SI"
+   "photo": {
+    "credit": "Charles Guerin / ABACAPRESS.COM via SI",
+    "source_url": "https://www.si.com/onsi/athlete-lifestyle/all-the-celebrities-spotted-at-the-2026-us-open"
+   }
   },
   {
    "find": "008",
@@ -694,9 +700,10 @@
      "credit": "GQ Hong Kong (Getty ID 2275925336; no credit line)"
     }
    ],
-   "photo_src": "https://gqhongkong.com/wp-content/uploads/2026/09/2275925336-683x1024.webp",
-   "photo_src_page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_src_credit": "GQ Hong Kong (Getty ID 2275925336; no credit line)"
+   "photo": {
+    "credit": "GQ Hong Kong (Getty ID 2275925336; no credit line)",
+    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+   }
   },
   {
    "find": "009",
@@ -862,9 +869,10 @@
      "credit": "Getty Images via NPR/GPB"
     }
    ],
-   "photo_src": "https://www.hola.com/us/horizon/original_aspect_ratio/a134e32955e5-los-angeles-california-colman-domingo-attends-the-78th-primetime-emmy-awards-at.jpg",
-   "photo_src_page": "https://www.hola.com/us/celebrities/20260914923383/best-dressed-stars-2026-emmys/",
-   "photo_src_credit": "Amy Sussman/Getty Images via HOLA!"
+   "photo": {
+    "credit": "Amy Sussman/Getty Images via HOLA!",
+    "source_url": "https://www.hola.com/us/celebrities/20260914923383/best-dressed-stars-2026-emmys/"
+   }
   },
   {
    "find": "011",
@@ -952,9 +960,10 @@
      "credit": "Chrono 10:10 (no photographer listed)"
     }
    ],
-   "photo_src": "https://manofmany.com/wp-content/uploads/2026/08/Roger-Fed-Rolex-at-US-Open-2026.jpg",
-   "photo_src_page": "https://manofmany.com/watches/best-watches-from-2026-us-open-tennis",
-   "photo_src_credit": "Man of Many (Image: Supplied)"
+   "photo": {
+    "credit": "Man of Many (Image: Supplied)",
+    "source_url": "https://manofmany.com/watches/best-watches-from-2026-us-open-tennis"
+   }
   },
   {
    "find": "012",
@@ -1032,9 +1041,10 @@
      "credit": "Rolling Stone UK (Image: Provided / Prada)"
     }
    ],
-   "photo_src": "https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2026/01/Prada-x-Harry-Styles_1.jpg",
-   "photo_src_page": "https://www.rollingstone.co.uk/style/harry-styles-aperture-music-video-custom-prada-57881/",
-   "photo_src_credit": "Rolling Stone UK (Image: Provided / Prada)"
+   "photo": {
+    "credit": "Rolling Stone UK (Image: Provided / Prada)",
+    "source_url": "https://www.rollingstone.co.uk/style/harry-styles-aperture-music-video-custom-prada-57881/"
+   }
   },
   {
    "find": "013",
@@ -1185,9 +1195,10 @@
      "credit": "Lisa O'Connor / AFP via Getty Images, courtesy Audemars Piguet"
     }
    ],
-   "photo_src": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-mark-ronson-wearing-audemars-piguet-royal-oak-15513ba.png?v=1789502278",
-   "photo_src_page": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_src_credit": "WatchGuys (no photographer listed)"
+   "photo": {
+    "credit": "WatchGuys (no photographer listed)",
+    "source_url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+   }
   },
   {
    "find": "015",
@@ -1261,9 +1272,10 @@
      "credit": "Man of Many (Image: Supplied)"
     }
    ],
-   "photo_src": "https://ucarecdn.com/50fd88ed-0dd7-419b-9803-29a1af6fa9d7/file.jpeg",
-   "photo_src_page": "https://chrono1010.com/en/blog/3662",
-   "photo_src_credit": "Chrono 10:10 (no photographer listed)"
+   "photo": {
+    "credit": "Chrono 10:10 (no photographer listed)",
+    "source_url": "https://chrono1010.com/en/blog/3662"
+   }
   },
   {
    "find": "016",
@@ -1335,9 +1347,10 @@
      "credit": "GQ Hong Kong (Getty Images ID 2286144170)"
     }
    ],
-   "photo_src": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2026%2F07%2F14%2Ftravis-scott-unreleased-nike-moon-shoe-first-look-001.jpg?q=90&w=800&cbr=1&fit=max",
-   "photo_src_page": "https://hypebeast.com/2026/7/travis-scott-unreleased-nike-moon-shoe-first-look",
-   "photo_src_credit": "Dimitrios Kambouris / Getty Images for Universal Pictures"
+   "photo": {
+    "credit": "Dimitrios Kambouris / Getty Images for Universal Pictures",
+    "source_url": "https://hypebeast.com/2026/7/travis-scott-unreleased-nike-moon-shoe-first-look"
+   }
   },
   {
    "find": "017",
@@ -1425,9 +1438,10 @@
      "credit": "Devlynn Bunning / Philadelphia Eagles"
     }
    ],
-   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_png/eagles/newa2ts0yhq287abh1yi.png",
-   "photo_src_page": "https://www.philadelphiaeagles.com/photos/commanders-vs-eagles-arrival-photo-gallery-september-13-2026-nfl-week-1",
-   "photo_src_credit": "Devlynn Bunning / Philadelphia Eagles"
+   "photo": {
+    "credit": "Devlynn Bunning / Philadelphia Eagles",
+    "source_url": "https://www.philadelphiaeagles.com/photos/commanders-vs-eagles-arrival-photo-gallery-september-13-2026-nfl-week-1"
+   }
   },
   {
    "find": "018",
@@ -1501,9 +1515,10 @@
      "credit": "WatchGuys (no photographer listed)"
     }
    ],
-   "photo_src": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-noah-wyle-wearing-cartier-tank-a-guichets-rose-gold.png?v=1789502279",
-   "photo_src_page": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_src_credit": "WatchGuys (no photographer listed)"
+   "photo": {
+    "credit": "WatchGuys (no photographer listed)",
+    "source_url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+   }
   },
   {
    "find": "019",
@@ -1582,9 +1597,10 @@
      "credit": "Chrono 10:10 (no photographer listed)"
     }
    ],
-   "photo_src": "https://ucarecdn.com/ffe3bc80-170e-4a16-85df-d04ea8a51d6b/file.jpeg",
-   "photo_src_page": "https://chrono1010.com/en/blog/3662",
-   "photo_src_credit": "Chrono 10:10 (no photographer listed)"
+   "photo": {
+    "credit": "Chrono 10:10 (no photographer listed)",
+    "source_url": "https://chrono1010.com/en/blog/3662"
+   }
   },
   {
    "find": "020",
@@ -1638,9 +1654,10 @@
      "credit": "GQ Hong Kong (Getty Images ID 2256377266)"
     }
    ],
-   "photo_src": "http://gqhongkong.com/wp-content/uploads/2026/08/2256377266-765x1024.webp",
-   "photo_src_page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_src_credit": "GQ Hong Kong (Getty Images ID 2256377266)"
+   "photo": {
+    "credit": "GQ Hong Kong (Getty Images ID 2256377266)",
+    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+   }
   },
   {
    "find": "021",
@@ -1788,9 +1805,10 @@
      "credit": "WatchGuys (no photographer credited)"
     }
    ],
-   "photo_src": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-patrick-ball-wearing-audemars-piguet-royal-oak-perpetual-calendar-26674st.png?v=1789502277",
-   "photo_src_page": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_src_credit": "WatchGuys (no photographer credited)"
+   "photo": {
+    "credit": "WatchGuys (no photographer credited)",
+    "source_url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+   }
   },
   {
    "find": "023",
@@ -1864,9 +1882,10 @@
      "credit": "Getty Images via Vogue Philippines"
     }
    ],
-   "photo_src": "https://assets.vogue.ph/wp-content/uploads/2026/09/GettyImages-2291582090-1600x2465.webp",
-   "photo_src_page": "https://vogue.ph/?p=257477",
-   "photo_src_credit": "Getty Images via Vogue Philippines"
+   "photo": {
+    "credit": "Getty Images via Vogue Philippines",
+    "source_url": "https://vogue.ph/?p=257477"
+   }
   },
   {
    "find": "024",
@@ -1931,9 +1950,10 @@
      "credit": "GQ Hong Kong (no credit given)"
     }
    ],
-   "photo_src": "http://gqhongkong.com/wp-content/uploads/2026/08/AJ1-1024x511.webp",
-   "photo_src_page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_src_credit": "GQ Hong Kong (no credit given)"
+   "photo": {
+    "credit": "GQ Hong Kong (no credit given)",
+    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+   }
   },
   {
    "find": "025",
@@ -2050,9 +2070,10 @@
      "credit": "WatchGuys (no photographer credited)"
     }
    ],
-   "photo_src": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-law-roach-wearing-rolex-daytona-barbie-126538tro.png?v=1789502279",
-   "photo_src_page": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
-   "photo_src_credit": "WatchGuys (no photographer credited)"
+   "photo": {
+    "credit": "WatchGuys (no photographer credited)",
+    "source_url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
+   }
   },
   {
    "find": "027",
@@ -2106,9 +2127,10 @@
      "credit": "GQ Hong Kong (Getty-style numeric filename; no credit given)"
     }
    ],
-   "photo_src": "http://gqhongkong.com/wp-content/uploads/2026/08/2285812880-683x1024.webp",
-   "photo_src_page": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
-   "photo_src_credit": "GQ Hong Kong (Getty-style numeric filename; no credit given)"
+   "photo": {
+    "credit": "GQ Hong Kong (Getty-style numeric filename; no credit given)",
+    "source_url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
+   }
   },
   {
    "find": "028",
@@ -2335,9 +2357,10 @@
      "credit": "Oklahoma City Thunder on Instagram via The Game PH"
     }
    ],
-   "photo_src": "https://assets.thegame.ph/wp-content/uploads/2026/05/sga-3.webp",
-   "photo_src_page": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/",
-   "photo_src_credit": "Oklahoma City Thunder on Instagram via The Game PH"
+   "photo": {
+    "credit": "Oklahoma City Thunder on Instagram via The Game PH",
+    "source_url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
+   }
   },
   {
    "find": "031",
@@ -2422,9 +2445,10 @@
      "credit": "Al Bello/Getty Images; J. Conrad Williams Jr./Newsday RM via Getty Images (XXL)"
     }
    ],
-   "photo_src": "https://media.nbcnewyork.com/2026/06/GettyImages-2280028226-e1780969852283.jpg?quality=85&strip=all&resize=218%2C123",
-   "photo_src_page": "https://www.nbcnewyork.com/entertainment/entertainment-news/celebrity-row-knicks-spurs-game-3/6510383/",
-   "photo_src_credit": "Jesse D. Garrabrant/NBAE via Getty Images"
+   "photo": {
+    "credit": "Jesse D. Garrabrant/NBAE via Getty Images",
+    "source_url": "https://www.nbcnewyork.com/entertainment/entertainment-news/celebrity-row-knicks-spurs-game-3/6510383/"
+   }
   },
   {
    "find": "032",
@@ -2668,9 +2692,10 @@
      "credit": "AP (per filename) / Outlook Luxe"
     }
    ],
-   "photo_src": "https://www.realitytea.com/wp-content/uploads/sites/6/2026/02/Bad-Bunny-2.jpg?w=1024",
-   "photo_src_page": "https://www.realitytea.com/2026/02/03/bad-bunny-schiaparelli-tux-grammys-history/",
-   "photo_src_credit": "Gilbert Flores/Billboard via Getty Images"
+   "photo": {
+    "credit": "Gilbert Flores/Billboard via Getty Images",
+    "source_url": "https://www.realitytea.com/2026/02/03/bad-bunny-schiaparelli-tux-grammys-history/"
+   }
   },
   {
    "find": "035",
@@ -2765,9 +2790,10 @@
      "credit": "AP Photo/Kin Cheung"
     }
    ],
-   "photo_src": "https://www.lta.org.uk/siteassets/news/2026/july/2026-david-beckham-wimbledon.jpg?width=2000",
-   "photo_src_page": "https://www.lta.org.uk/fan-zone/grand-slam/wimbledon-championships/news/2026/2026-the-sporting-stars-and-celebrities-spotted-at-the-championships/",
-   "photo_src_credit": "LTA (no photographer listed)"
+   "photo": {
+    "credit": "LTA (no photographer listed)",
+    "source_url": "https://www.lta.org.uk/fan-zone/grand-slam/wimbledon-championships/news/2026/2026-the-sporting-stars-and-celebrities-spotted-at-the-championships/"
+   }
   },
   {
    "find": "036",
@@ -2865,9 +2891,10 @@
      "credit": "t2online (no credit listed)"
     }
    ],
-   "photo_src": "https://images.t2online.in/cdn-cgi/image/width=1200,quality=70/https://cms.t2online.in/api/images/1782244687179.jpg",
-   "photo_src_page": "https://t2online.in/goodlife/fashion-beauty/bts-s-j-hope-and-goblin-star-gong-yoo-bring-the-spotlight-to-louis-vuitton-s-paris-fashion-week-showcase/2005862",
-   "photo_src_credit": "t2online (no credit listed)"
+   "photo": {
+    "credit": "t2online (no credit listed)",
+    "source_url": "https://t2online.in/goodlife/fashion-beauty/bts-s-j-hope-and-goblin-star-gong-yoo-bring-the-spotlight-to-louis-vuitton-s-paris-fashion-week-showcase/2005862"
+   }
   },
   {
    "find": "037",
@@ -3286,9 +3313,10 @@
      "credit": "Emma McIntyre/Getty Images for The Recording Academy"
     }
    ],
-   "photo_src": "https://www.insidehook.com/wp-content/uploads/2026/02/GettyImages-2258962332.jpg?w=2542&resize=2542%2C3813",
-   "photo_src_page": "https://www.insidehook.com/style/harry-styles-grammys-2026",
-   "photo_src_credit": "Christopher Polk/Billboard via Getty Images"
+   "photo": {
+    "credit": "Christopher Polk/Billboard via Getty Images",
+    "source_url": "https://www.insidehook.com/style/harry-styles-grammys-2026"
+   }
   },
   {
    "find": "042",
@@ -3372,9 +3400,10 @@
      "credit": "LTA (no photographer listed)"
     }
    ],
-   "photo_src": "https://images.hellomagazine.com/horizon/original_aspect_ratio/e32c6e503f06-gettyimages-2284150047.jpg",
-   "photo_src_page": "https://www.hellomagazine.com/celebrities/910374/wimbledon-2026-day-3-celebrity-and-royal-arrivals/",
-   "photo_src_credit": "Getty Images via HELLO!"
+   "photo": {
+    "credit": "Getty Images via HELLO!",
+    "source_url": "https://www.hellomagazine.com/celebrities/910374/wimbledon-2026-day-3-celebrity-and-royal-arrivals/"
+   }
   },
   {
    "find": "043",
@@ -3459,9 +3488,10 @@
      "credit": "NFL.com (no credit listed)"
     }
    ],
-   "photo_src": "https://static.www.nfl.com/image/upload/f_auto,dpr_2.0,q_auto/league/nekgjqjgh0rh9ibphapz",
-   "photo_src_page": "https://www.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season",
-   "photo_src_credit": "NFL.com (no credit listed)"
+   "photo": {
+    "credit": "NFL.com (no credit listed)",
+    "source_url": "https://www.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season"
+   }
   },
   {
    "find": "044",
@@ -3535,9 +3565,10 @@
      "credit": "Getty Images/Omega"
     }
    ],
-   "photo_src": "https://www.luxurybazaar.com/grey-market/wp-content/uploads/2026/01/Patrick-Schwarzenegger-Omega-Speedmaster-Moonshine-Gold-Golden-Globes-2026-819x1024.jpg",
-   "photo_src_page": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_src_credit": "Getty Images/Omega"
+   "photo": {
+    "credit": "Getty Images/Omega",
+    "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+   }
   },
   {
    "find": "045",
@@ -3612,9 +3643,10 @@
      "credit": "AP (per filename) / Outlook Luxe"
     }
    ],
-   "photo_src": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2026%2F02%2F02%2Fwristcheck-kendrick-lamar-tank-americaine-small-watch-18k-white-gold-diamond-set-68th-annual-grammy-awards-tw.jpg?w=1080&cbr=1&q=90&fit=max",
-   "photo_src_page": "https://www.loupe.watch/watch-guides/grammys-2026",
-   "photo_src_credit": "Hypebeast (via Loupe)"
+   "photo": {
+    "credit": "Hypebeast (via Loupe)",
+    "source_url": "https://www.loupe.watch/watch-guides/grammys-2026"
+   }
   },
   {
    "find": "046",
@@ -3682,9 +3714,10 @@
      "credit": "Nicolas Gerardin/Fossil"
     }
    ],
-   "photo_src": "https://www.luxurybazaar.com/grey-market/wp-content/uploads/2026/01/Nick-Jonas-Fossil-Watch-Golden-Globes-2026-1024x904.jpg",
-   "photo_src_page": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/",
-   "photo_src_credit": "Nicolas Gerardin/Fossil"
+   "photo": {
+    "credit": "Nicolas Gerardin/Fossil",
+    "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
+   }
   },
   {
    "find": "047",
