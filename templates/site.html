@@ -260,16 +260,24 @@ function drawGrid() {
   const list = FITS.filter(matches).sort((a, b) => (b.posted_at || "").localeCompare(a.posted_at || "") || +b.find - +a.find);
   const items = list.reduce((n, f) => n + f.items.length, 0);
   document.getElementById("count").textContent = `${list.length} ${list.length === 1 ? "find" : "finds"} · ${items} items · latest first`;
-  document.getElementById("grid").innerHTML = list.length ? list.map(f => `
+  // Kicks / Wrist: show the item itself (Exact first), not the person wearing it
+  const itemPic = f => {
+    const t = CAT_TYPES[state.cat];
+    if (!t || state.cat === "Fit") return null;
+    const m = f.items.filter(i => i.image && t.includes(i.type));
+    return (m.find(i => i.label === "Exact") || m[0] || {}).image || null;
+  };
+  document.getElementById("grid").innerHTML = list.length ? list.map(f => { const ip = itemPic(f); return `
     <a class="tagcard" href="${fitUrl(f)}">
-      ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy"></span>`
+      ${ip ? `<span class="pic"><img src="${esc(ip)}" alt="" loading="lazy"></span>`
+        : f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy"></span>`
         : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy"></span>`
         : `<span class="pic"><span class="ph">Photo coming</span></span>`}
       <span class="num">FIND #${f.find}</span>
       <span class="who">${esc(f.celeb)}</span>
       <span class="hl">${esc(f.headline)}</span>
       <span class="meta"><span>${f.category === "Fit" ? "Fit" : f.category}</span><span>${f.items.length} items</span><span>${esc(f.date)}</span></span>
-    </a>`).join("") : `<p class="empty">No finds match that. Try a Find # like 014, a name, or a brand.</p>`;
+    </a>`; }).join("") : `<p class="empty">No finds match that. Try a Find # like 014, a name, or a brand.</p>`;
 }
 
 function renderFit(f) {
