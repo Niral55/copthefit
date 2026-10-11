@@ -32,7 +32,9 @@
     "011",
     "012",
     "013",
-    "014"
+    "014",
+    "015",
+    "016"
    ]
   },
   {
@@ -40,8 +42,8 @@
    "title": "Celebs who rock New Balance",
    "format": "5 celebs who wear X",
    "finds": [
-    "015",
-    "016"
+    "017",
+    "018"
    ]
   },
   {
@@ -49,9 +51,10 @@
    "title": "NBA stars' signature shoes under $150",
    "format": "His shoes are only $X",
    "finds": [
-    "017",
-    "018",
-    "019"
+    "019",
+    "020",
+    "021",
+    "022"
    ]
   },
   {
@@ -59,13 +62,13 @@
    "title": "The sneakers celebs actually wore in 2026",
    "format": "Same shoe / celeb sneakers",
    "finds": [
-    "020",
-    "021",
-    "022",
     "023",
     "024",
     "025",
-    "026"
+    "026",
+    "027",
+    "028",
+    "029"
    ]
   },
   {
@@ -73,12 +76,12 @@
    "title": "US Open & Wimbledon watches: $100k vs the lookalike",
    "format": "$10k vs $150",
    "finds": [
-    "027",
-    "028",
-    "029",
     "030",
     "031",
-    "032"
+    "032",
+    "033",
+    "034",
+    "035"
    ]
   },
   {
@@ -86,11 +89,11 @@
    "title": "Emmys watches: what they wore vs what you can buy",
    "format": "$10k vs $150",
    "finds": [
-    "033",
-    "034",
-    "035",
     "036",
-    "037"
+    "037",
+    "038",
+    "039",
+    "040"
    ]
   },
   {
@@ -98,12 +101,12 @@
    "title": "Golden Globes: everyone wore $20k Omegas... Nick Jonas wore a Fossil",
    "format": "Did he really wear that?",
    "finds": [
-    "038",
-    "039",
-    "040",
     "041",
     "042",
-    "043"
+    "043",
+    "044",
+    "045",
+    "046"
    ]
   },
   {
@@ -111,10 +114,10 @@
    "title": "Grammys watches: Cartier everywhere (and the affordable versions)",
    "format": "$10k vs $150",
    "finds": [
-    "044",
-    "045",
-    "046",
-    "047"
+    "047",
+    "048",
+    "049",
+    "050"
    ]
   },
   {
@@ -122,8 +125,11 @@
    "title": "Celeb staples under $100",
    "format": "Under $100 celeb fits",
    "finds": [
-    "048",
-    "049"
+    "051",
+    "052",
+    "053",
+    "054",
+    "055"
    ]
   },
   {
@@ -131,27 +137,30 @@
    "title": "Tunnel fits ranked",
    "format": "Tunnel fits ranked",
    "finds": [
-    "050",
-    "051",
-    "052"
+    "056",
+    "057",
+    "058",
+    "059",
+    "060",
+    "061"
    ]
   }
  ],
  "no_video": [
-  "053",
-  "054",
-  "055",
-  "056",
-  "057",
-  "058",
-  "059",
-  "060",
-  "061",
   "062",
   "063",
   "064",
   "065",
   "066",
-  "067"
+  "067",
+  "068",
+  "069",
+  "070",
+  "071",
+  "072",
+  "073",
+  "074",
+  "075",
+  "076"
  ]
 }

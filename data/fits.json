@@ -1026,6 +1026,153 @@
    "video": "samba"
   },
   {
+   "celeb": "Austin Butler",
+   "context": "Street sighting, Trancas Market, Malibu",
+   "date": "Aug 13, 2023",
+   "category": "Kicks",
+   "headline": "Austin Butler keeps it simple in $71 Sambas",
+   "detail": "Out picking up flowers in Malibu, Butler paired adidas Sambas with a white tee, adidas track pants and a NASA cap. Highsnobiety wrote up the sighting as a Samba moment.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Highsnobiety — Austin Butler adidas Samba",
+     "url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
+    },
+    {
+     "label": "Just Jared — Austin Butler Picks Up Flowers During a Day Out in Malibu",
+     "url": "https://www.justjared.com/2023/08/14/austin-butler-picks-up-flowers-during-a-day-out-in-malibu/"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "adidas",
+     "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
+     "product_url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
+     "price": "$71",
+     "note": "",
+     "slide": 2,
+     "id": "2ef185",
+     "img": "images/cut/015-2ef185.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://www.highsnobiety.com/static-assets/dato/1692007224-austin-butler-adidas-samba-001.jpg",
+     "page": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
+     "credit": "RMBI/LESE / BACKGRID via Highsnobiety"
+    },
+    {
+     "image": "https://www.highsnobiety.com/static-assets/dato/1692010843-austin-butler-adidas-samba-002.jpg",
+     "page": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
+     "credit": "RMBI/LESE / BACKGRID via Highsnobiety"
+    },
+    {
+     "image": "https://cdn01.justjared.com/wp-content/uploads/headlines/2023/08/austin-butler-picks-up-flowers-market-1.jpg",
+     "page": "https://www.justjared.com/2023/08/14/austin-butler-picks-up-flowers-during-a-day-out-in-malibu/",
+     "credit": "Just Jared"
+    }
+   ],
+   "photo_source": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
+   "score": 62,
+   "score_parts": {
+    "shop": 40,
+    "star": 15,
+    "cover": 10,
+    "fresh": 2
+   },
+   "score_note": "Samba OG ~$71 on StockX; Austin Butler; Backgrid street photos in a shoe-focused article",
+   "note": "Video: Every celeb owns these sneakers: adidas Samba. CAVEAT: neither source names the colorway (Highsnobiety just says 'adidas Sambas'). The item is set to white B75806 provisionally; view the photos and if the pair is black, switch to Samba OG Core Black/Cloud White/Gum (B75807). Photo framing not confirmed (captions are only agency credits); the article is about the shoes, so the feet are likely in frame. Could not view images in this session.",
+   "find": "015",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "samba",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "RMBI/LESE / BACKGRID via Highsnobiety",
+    "source_url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
+   }
+  },
+  {
+   "celeb": "Paul Mescal",
+   "context": "Fashion show appearance",
+   "date": "2023",
+   "category": "Kicks",
+   "headline": "Paul Mescal's go-to: white adidas Sambas",
+   "detail": "Mescal wore a vintage adidas tee with matching white Sambas to a fashion show, a look Style Girlfriend featured in its men's Samba outfit guide.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Style Girlfriend — Samba outfits for men",
+     "url": "https://stylegirlfriend.com/samba-outfit-men/"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "adidas",
+     "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
+     "product_url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
+     "price": "$71",
+     "note": "",
+     "slide": 2,
+     "id": "55698a",
+     "img": "images/cut/016-55698a.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://stylegirlfriend.com/wp-content/uploads/2023/03/paul-mescal-white-adidas-samba.png",
+     "page": "https://stylegirlfriend.com/samba-outfit-men/",
+     "credit": "GQ via Style Girlfriend"
+    },
+    {
+     "image": "https://stylegirlfriend.com/wp-content/uploads/2024/01/paul-mescal_esquire.jpg",
+     "page": "https://stylegirlfriend.com/samba-outfit-men/",
+     "credit": "@esquire via Style Girlfriend"
+    }
+   ],
+   "photo_source": "https://stylegirlfriend.com/samba-outfit-men/",
+   "score": 52,
+   "score_parts": {
+    "shop": 40,
+    "star": 15,
+    "cover": 10,
+    "fresh": 2
+   },
+   "score_note": "Samba OG ~$71; Paul Mescal; editorial photo in a Samba-styling article",
+   "note": "Video: Every celeb owns these sneakers: adidas Samba. WEAK SOURCE: Style Girlfriend's alt text only says 'Adidas sneakers'; 'white adidas Samba' comes from the image filename, inside an article about Samba outfits. Event and date are not named (uploaded Mar 2023, credit GQ). The second photo (Esquire, jeans + workwear jacket) is a different occasion and its shoe model is unconfirmed. Drop if the photo doesn't clearly show Sambas, or if you can't find a stronger source.",
+   "find": "016",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "samba",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "GQ via Style Girlfriend",
+    "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
+   }
+  },
+  {
    "celeb": "Hudson Williams",
    "context": "Paris Men's Fashion Week, off-duty sightseeing",
    "date": "Jan 22, 2026",
@@ -1053,7 +1200,7 @@
      "note": "",
      "slide": 2,
      "id": "053512",
-     "img": "images/cut/015-053512.png"
+     "img": "images/cut/017-053512.png"
     }
    ],
    "photo_options": [
@@ -1078,7 +1225,7 @@
    },
    "score_note": "Exact model+colorway in stock at $160; very fresh; hot name but same show as Arnaud.",
    "note": "Video: Celebs who rock New Balance. Same show as François Arnaud (Heated Rivalry), different person. Second photo is listed as a video still. Could not open images from this environment (proxy blocks image hosts); verify shoes are visible. Journeys image angle 'FS' assumed to be side profile; GOAT alt: https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/035/844/original/1114651_01.jpg.jpeg?width=750",
-   "find": "015",
+   "find": "017",
    "status": "review",
    "ig_queue": false,
    "priority": 1,
@@ -1095,7 +1242,7 @@
    "video": "newbalance"
   },
   {
-   "find": "016",
+   "find": "018",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1128,7 +1275,7 @@
      "note": "",
      "image_src": "https://images.stockx.com/images/New-Balance-9060-Earth-Shadow-Flat-Taupe.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1754423578",
      "id": "644b5b",
-     "img": "images/cut/016-644b5b-v1791737783.png",
+     "img": "images/cut/018-644b5b-v1791737783.png",
      "type": "sneakers"
     },
     {
@@ -1208,7 +1355,7 @@
      "slide": 2,
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/4a34f042d51941d393ae83faf5104043_9366/Anthony_Edwards_3_Shoes_Blue_KH8537_01_00_standard.jpg",
      "id": "045e20",
-     "img": "images/cut/017-045e20.png"
+     "img": "images/cut/019-045e20.png"
     }
    ],
    "photo_leads": [
@@ -1230,7 +1377,7 @@
    },
    "score_note": "$130 adidas general release in stock; Ant Edwards; NBA league post; 11 days old",
    "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.",
-   "find": "017",
+   "find": "019",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -1293,7 +1440,7 @@
      "note": "Kicks On SI names the 'First Game' colorway; HNHH describes it as white with red/crimson accents. 2023 retro (White/Midnight Navy-Varsity Crimson), $180 retail; StockX Buy Now $140 on Oct 9 (last sale $133). Image is GOAT's product shot of the same SKU (DM7535-101).",
      "slide": 2,
      "id": "6daf13",
-     "img": "images/cut/018-6daf13.png"
+     "img": "images/cut/020-6daf13.png"
     }
    ],
    "photo_options": [
@@ -1327,7 +1474,7 @@
    },
    "score_note": "LeBron in a $140 StockX retro (below $180 retail); AP and Inquirer media-day photos; 11 days old",
    "note": "This lead is media day (Sept 28). It is a different event from the rejected Oct 3 scrimmage LeBron 24 'Greater China' lead, and this shoe is cheap and easy to buy. The sources don't give a style code: the 2023 'First Game' retro (DM7535-101) is the one in stock, so it may not be the exact pair he wore. Photo captions confirm LeBron at Sixers media day, but none confirms the shoes are in frame. The Inquirer shot is a posed portrait and the NBA.com lead image has no caption, so check both before using them as the cover. Not added as a second lead: Ja Morant (Ja 4 'Triple White'), Haliburton (Hali 2), DeRozan (Kobe 10 Protro), SGA (V.A.A. AF1) and Booker (Futura Book 2) were all unreleased or PE at media day. Haaland's Phantom 6 'Baltic Blue' ($270) shows 'Coming Soon' on Nike and is $426 on StockX. Lamar Jackson's Sept 20 Converse SHAI 001 Lux 'Truffle' had no usable tunnel photo URL (Ravens arrivals gallery images are lazy-loaded). Future's Mowalola AJ14 Mule had no photo outside Instagram.",
-   "find": "018",
+   "find": "020",
    "status": "review",
    "ig_queue": false,
    "priority": 1,
@@ -1340,7 +1487,7 @@
    "video": "nbasig"
   },
   {
-   "find": "019",
+   "find": "021",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1374,7 +1521,7 @@
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/117/897/064/original/1772772_01.jpg.jpeg?action=crop&width=750",
      "id": "0673d7",
-     "img": "images/cut/019-0673d7-v1791557420.png",
+     "img": "images/cut/021-0673d7-v1791557420.png",
      "type": "sneakers"
     },
     {
@@ -1421,7 +1568,89 @@
    "video": "nbasig"
   },
   {
-   "find": "020",
+   "celeb": "Giannis Antetokounmpo",
+   "context": "Nike Giannis Freak 8 reveal (debut on foot)",
+   "date": "Mar 2, 2026",
+   "category": "Kicks",
+   "headline": "Giannis' own Freak 8 'South Beach' for $99",
+   "detail": "Nike revealed Giannis' eighth signature shoe in a hyper-pink debut colorway, which Giannis first wore in practice. It retails for $115 and launched Aug 1, 2026.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "House of Heat — Nike Giannis Freak 8 Hyper Pink IM5150-600",
+     "url": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600"
+    },
+    {
+     "label": "Sole Retriever — Nike Officially Unveils Giannis Antetokounmpo's Nike Giannis Freak 8",
+     "url": "https://www.soleretriever.com/news/articles/nike-giannis-freak-8-official-unveil-release-date-august-2026"
+    },
+    {
+     "label": "Nike — Giannis Antetokounmpo Nike Freak 8 official images",
+     "url": "https://about.nike.com/newsroom/releases/giannis-antetokounmpo-nike-freak-8-official-images"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Nike",
+     "name": "Giannis Freak 8 'South Beach' (Hyper Pink/Hyper Orange/Dynamic Yellow, IM5150-600)",
+     "product_url": "https://stockx.com/nike-giannis-freak-8-south-beach",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://cdn.sanity.io/images/pu5wtzfc/production/6fd40ca8a22eb938fb383a77787325af228ba1f3-2400x1500.jpg",
+     "price": "$99",
+     "note": "",
+     "slide": 2,
+     "id": "a8788b",
+     "img": "images/cut/022-a8788b.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://cdn.sanity.io/images/pu5wtzfc/production/2f0ebac4be4e96b5623a1b790b23c3b88caea6bc-2160x2698.jpg",
+     "page": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
+     "credit": "Nike via House of Heat"
+    },
+    {
+     "image": "https://cdn.sanity.io/images/pu5wtzfc/production/b92b44c72249e9c8792bc9542d6e4eec13f36f80-2025x2700.jpg",
+     "page": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
+     "credit": "Nike via House of Heat"
+    },
+    {
+     "image": "https://nmp.about.nike.com/about/prod/f5fb8d89-83bd-46b7-a49e-badb2a6e94b8/6g6a2855.jpeg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0Ijo3NiwidG9wIjo2MDEsIndpZHRoIjoxMzMwLCJoZWlnaHQiOjg4M30sInJlc2l6ZSI6eyJ3aWR0aCI6Mzg0MH19fQ%3D%3D&s=dc96ae214af8023bd0bfa24e8c30f0bddb8c47e2e40e198ead00329f319ed071",
+     "page": "https://about.nike.com/newsroom/releases/giannis-antetokounmpo-nike-freak-8-official-images",
+     "credit": "Nike"
+    }
+   ],
+   "photo_source": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
+   "score": 68,
+   "score_parts": {
+    "shop": 36,
+    "star": 22,
+    "cover": 5,
+    "fresh": 5
+   },
+   "score_note": "Exact debut colorway under retail; occasion is a practice/reveal, so on-foot photos still need checking.",
+   "note": "Video: NBA stars' signature shoes under $150. House of Heat: 'officially unveiled on foot during a recent practice session'. Sole Retriever (Mar 3, 2026) says he first wore it in practice (Instagram) and then debuted it in a game vs. the Celtics, but I found no game photo or date. The two House of Heat portrait images (one named 'Giannis Freak 8 Pink.jpg') and Nike's newsroom image have no captions, so view them and keep only on-foot shots of Giannis. StockX buy-now $99 (~$106 with fee); retail $115. StockX calls IM5150-600 'South Beach'; House of Heat calls it 'Hyper Pink'; Sneaker Freaker calls it 'Buckitos/Buckets'.",
+   "find": "022",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "nbasig",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Nike via House of Heat",
+    "source_url": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600"
+   }
+  },
+  {
+   "find": "023",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1455,7 +1684,7 @@
      "note": "Exact Bode style not named in source",
      "image_src": "https://i.ebayimg.com/images/g/BrUAAeSwkAlqhzZP/s-l1600.webp",
      "id": "0d9afc",
-     "img": "images/cut/020-0d9afc.png",
+     "img": "images/cut/023-0d9afc.png",
      "type": "clothing"
     },
     {
@@ -1469,7 +1698,7 @@
      "note": "",
      "image_src": "https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07-Product_V2.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1785333173",
      "id": "e68ad0",
-     "img": "images/cut/020-e68ad0-v1791738283.png",
+     "img": "images/cut/023-e68ad0-v1791738283.png",
      "type": "sneakers"
     },
     {
@@ -1506,7 +1735,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "021",
+   "find": "024",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1539,7 +1768,7 @@
      "note": "",
      "image_src": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Chicago-Reimagined-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1738193358",
      "id": "d3f88b",
-     "img": "images/cut/021-d3f88b-v1791738124.png",
+     "img": "images/cut/024-d3f88b-v1791738124.png",
      "type": "sneakers"
     },
     {
@@ -1571,7 +1800,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "022",
+   "find": "025",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1659,7 +1888,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "023",
+   "find": "026",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1692,7 +1921,7 @@
      "note": "",
      "image_src": "https://images.stockx.com/images/Nike-Air-Max-Goadome-Low-SP-Black-Metallic-Silver-Pale-Citron-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1783526477",
      "id": "2ac7c1",
-     "img": "images/cut/023-2ac7c1-v1791738127.png",
+     "img": "images/cut/026-2ac7c1-v1791738127.png",
      "type": "sneakers"
     }
    ],
@@ -1717,7 +1946,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "024",
+   "find": "027",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1750,7 +1979,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/G4kAAeSwK9ZpsKxZ/s-l1600.webp",
      "id": "5099f6",
-     "img": "images/cut/024-5099f6.png",
+     "img": "images/cut/027-5099f6.png",
      "type": "sneakers"
     },
     {
@@ -1765,7 +1994,7 @@
      "type": "sneakers",
      "image_src": "https://images.stockx.com/images/ASICS-Gel-Kayano-14-Thom-Browne-Grey-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1774377558",
      "id": "28ab5b",
-     "img": "images/cut/024-28ab5b.png"
+     "img": "images/cut/027-28ab5b.png"
     }
    ],
    "posted_at": null,
@@ -1785,7 +2014,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "025",
+   "find": "028",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1818,7 +2047,7 @@
      "note": "",
      "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/85000461-aebf-43eb-82a7-55a1da9d40f6/NIKE+MOON+SHOE+OG.png",
      "id": "88b910",
-     "img": "images/cut/025-88b910.png",
+     "img": "images/cut/028-88b910.png",
      "type": "sneakers"
     }
    ],
@@ -1861,7 +2090,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "026",
+   "find": "029",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -1899,7 +2128,7 @@
      "id": "a9a02f",
      "type": "sneakers",
      "image_src": "https://images.stockx.com/images/Nike-Court-Air-Zoom-Vapor-12-HC-Travis-Scott-Pale-Ivory.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1791213970",
-     "img": "images/cut/026-a9a02f.png"
+     "img": "images/cut/029-a9a02f.png"
     },
     {
      "slide": 3,
@@ -1912,7 +2141,7 @@
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/daytona/126528ln-0001-55.jpg",
      "id": "637a65",
-     "img": "images/cut/026-637a65-v1791557355.png",
+     "img": "images/cut/029-637a65-v1791557355.png",
      "type": "watch"
     },
     {
@@ -2001,7 +2230,7 @@
    "video": "sneakers26"
   },
   {
-   "find": "027",
+   "find": "030",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2076,7 +2305,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "028",
+   "find": "031",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2113,7 +2342,7 @@
      "note": "Galerie reports the 36mm; others say 41mm",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/oyster-perpetual/126000-0009-93.jpg",
      "id": "8ec783",
-     "img": "images/cut/028-8ec783-v1791557403.png",
+     "img": "images/cut/031-8ec783-v1791557403.png",
      "type": "watch"
     },
     {
@@ -2168,7 +2397,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "029",
+   "find": "032",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2205,7 +2434,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/zIQAAOSwsbdk4P2w/s-l1600.webp",
      "id": "add6cb",
-     "img": "images/cut/029-add6cb.png",
+     "img": "images/cut/032-add6cb.png",
      "type": "watch"
     },
     {
@@ -2246,7 +2475,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "030",
+   "find": "033",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2279,7 +2508,7 @@
      "note": "",
      "image_src": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-majesty/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228238-0005",
      "id": "5755f4",
-     "img": "images/cut/030-5755f4-v1791557409.png",
+     "img": "images/cut/033-5755f4-v1791557409.png",
      "type": "watch"
     },
     {
@@ -2304,7 +2533,7 @@
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71MXzjlVmSL._AC_SL1500_.jpg",
      "id": "40fb4b",
-     "img": "images/cut/030-40fb4b.png",
+     "img": "images/cut/033-40fb4b.png",
      "type": "watch"
     }
    ],
@@ -2329,7 +2558,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "031",
+   "find": "034",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2362,7 +2591,7 @@
      "note": "",
      "id": "42e7c6",
      "image_src": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m7939a1a0nu-0001",
-     "img": "images/cut/031-42e7c6-v1791557424.png",
+     "img": "images/cut/034-42e7c6-v1791557424.png",
      "type": "watch"
     },
     {
@@ -2428,7 +2657,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "032",
+   "find": "035",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2461,7 +2690,7 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/CRW2SA0033_0.png?height=5760&v=1749832741&width=4000",
      "id": "48cffe",
-     "img": "images/cut/032-48cffe-v1791557434.png",
+     "img": "images/cut/035-48cffe-v1791557434.png",
      "type": "watch"
     },
     {
@@ -2475,7 +2704,7 @@
      "note": "",
      "image_src": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0138211b1a1-soldier_7d7651b2_thumbnail_1024.webp",
      "id": "523ef2",
-     "img": "images/cut/032-523ef2-v1791557437.png",
+     "img": "images/cut/035-523ef2-v1791557437.png",
      "type": "watch"
     },
     {
@@ -2516,7 +2745,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "033",
+   "find": "036",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2553,7 +2782,7 @@
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/audemars-piguet/royal-oak/15513ba-oo-1320ba-01-5b.jpg",
      "id": "629cd4",
-     "img": "images/cut/033-629cd4-v1791557406.png",
+     "img": "images/cut/036-629cd4-v1791557406.png",
      "type": "watch"
     },
     {
@@ -2605,7 +2834,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "034",
+   "find": "037",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2683,7 +2912,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "035",
+   "find": "038",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2761,7 +2990,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "036",
+   "find": "039",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2827,7 +3056,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "037",
+   "find": "040",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2876,7 +3105,7 @@
      "note": "Outlets differ on the exact reference",
      "image_src": "https://i.ebayimg.com/images/g/TOYAAeSwycZqbMtw/s-l1600.webp",
      "id": "836c03",
-     "img": "images/cut/037-836c03.png",
+     "img": "images/cut/040-836c03.png",
      "type": "watch"
     },
     {
@@ -2922,7 +3151,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "038",
+   "find": "041",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -2956,7 +3185,7 @@
      "type": "watch",
      "image_src": "https://cdn2.jomashop.com/media/catalog/product/f/o/fossil-carraway-automatic-beige-dial-watch-me3272.jpg",
      "id": "2a2bf1",
-     "img": "images/cut/038-2a2bf1.png"
+     "img": "images/cut/041-2a2bf1.png"
     }
    ],
    "posted_at": null,
@@ -2994,7 +3223,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "039",
+   "find": "042",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3061,7 +3290,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "040",
+   "find": "043",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3129,7 +3358,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "041",
+   "find": "044",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3162,7 +3391,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/uJEAAeSwy6tp-gk3/s-l1600.webp",
      "id": "777b95",
-     "img": "images/cut/041-777b95.png",
+     "img": "images/cut/044-777b95.png",
      "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
      "type": "watch"
     },
@@ -3207,7 +3436,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "042",
+   "find": "045",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3240,7 +3469,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
      "id": "9fa28c",
-     "img": "images/cut/042-9fa28c.png",
+     "img": "images/cut/045-9fa28c.png",
      "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
      "type": "watch"
     },
@@ -3270,7 +3499,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "043",
+   "find": "046",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3339,7 +3568,7 @@
      "type": "watch",
      "image_src": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg",
      "id": "402d1d",
-     "img": "images/cut/043-402d1d.png"
+     "img": "images/cut/046-402d1d.png"
     }
    ],
    "posted_at": null,
@@ -3356,7 +3585,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "044",
+   "find": "047",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3445,7 +3674,7 @@
    "video": "grammyswatches"
   },
   {
-   "find": "045",
+   "find": "048",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3478,7 +3707,7 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/17311221_1_jpg.avif?height=4000&v=1766500805&width=4000",
      "id": "fc95af",
-     "img": "images/cut/045-fc95af-v1791557427.png",
+     "img": "images/cut/048-fc95af-v1791557427.png",
      "type": "watch"
     },
     {
@@ -3575,7 +3804,7 @@
    "video": "grammyswatches"
   },
   {
-   "find": "046",
+   "find": "049",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3608,7 +3837,7 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/926-CRWJTA0068_1_f456be23-e418-4108-9ae4-dd12875327b5.jpg?height=4000&v=1788966228&width=4000",
      "id": "49b0d3",
-     "img": "images/cut/046-49b0d3-v1791557465.png",
+     "img": "images/cut/049-49b0d3-v1791557465.png",
      "type": "watch"
     },
     {
@@ -3654,7 +3883,7 @@
    "video": "grammyswatches"
   },
   {
-   "find": "047",
+   "find": "050",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3746,7 +3975,7 @@
      "note": "",
      "slide": 2,
      "id": "c334ca",
-     "img": "images/cut/048-c334ca-v1791577615.png"
+     "img": "images/cut/051-c334ca-v1791577615.png"
     }
    ],
    "photo_options": [
@@ -3784,7 +4013,7 @@
    },
    "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
    "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
-   "find": "048",
+   "find": "051",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -3829,7 +4058,7 @@
      "note": "",
      "slide": 2,
      "id": "0d90ab",
-     "img": "images/cut/049-0d90ab.png"
+     "img": "images/cut/052-0d90ab.png"
     }
    ],
    "photo_options": [
@@ -3849,7 +4078,7 @@
    },
    "score_note": "Cheap, iconic A18 from the brand store; recognizable star, but only one 680px gallery photo and it's from 2022.",
    "note": "Video: The $20 beanie every celeb wears. Source caption (slide 8/13): 'Finn Wolfhard wore this brown Carhartt beanie with a tan button-down shirt, a T-shirt & brown pants at the 75th annual Cannes Film Festival' — no exact day given. Color is only 'brown' in the source, so it is mapped to Carhartt Brown. Only one photo option was found; no larger version is in the page HTML. This agent had no direct network access, so the image was NOT downloaded or viewed. Check for a Splash watermark and that the beanie is clearly visible. product_url follows carhartt.com's /p/knit-cuffed-beanie/A18 pattern; I verified that pattern on the EU/FR pages (A18-BRNOS = Carhartt Brown), but the US page could not be fetched. image_src is the Carhartt Brown studio shot from the carhartt.com product page HTML. The $20 is US list price: $19.99 at Scheels, and Gear Patrol (Jan 2026) gives $20 list, recently on sale for $12. Finn is already on file for adidas Samba, not this item.",
-   "find": "049",
+   "find": "052",
    "status": "review",
    "ig_queue": false,
    "priority": 1,
@@ -3866,7 +4095,223 @@
    "video": "staples"
   },
   {
-   "find": "050",
+   "celeb": "Kid Cudi",
+   "context": "Levi's 501 campaign",
+   "date": "Jan 2022",
+   "category": "Fit",
+   "headline": "Kid Cudi fronts Levi's 501s, the $77 jean",
+   "detail": "Kid Cudi starred in Levi's 501 campaign built around the Original 501 and the 501 '90s. It's the same five-pocket straight jean Levi's has sold for more than a century.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Fact Magazine — Kid Cudi stars in Levi's 501 campaign for 150th Anniversary",
+     "url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "clothing",
+     "brand": "Levi's",
+     "name": "501 Original Fit Jeans",
+     "product_url": "https://www.levi.com/US/en_US/p/005010114",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0114_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
+     "price": "$77",
+     "note": "",
+     "slide": 2,
+     "id": "a65f26",
+     "img": "images/cut/053-a65f26.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-001.jpg",
+     "page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
+     "credit": "Levi's / Fact Magazine"
+    },
+    {
+     "image": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-002.jpg",
+     "page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
+     "credit": "Levi's / Fact Magazine"
+    },
+    {
+     "image": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-005-scaled.jpg",
+     "page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
+     "credit": "Levi's / Fact Magazine"
+    }
+   ],
+   "photo_source": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
+   "score": 72,
+   "score_parts": {
+    "shop": 34,
+    "star": 18,
+    "cover": 12,
+    "fresh": 8
+   },
+   "score_note": "Real 501 campaign, $77 on sale at levi.com; 2022 so not fresh; same angle as SGA's 501 lead.",
+   "note": "Video: Celeb staples under $100. The source doesn't say which 501 wash he wears (campaign covers Original 501 and 501 '90s), so the product is the Original 501 in Stonewash Dark (00501-0114), $77 on sale (reg. $110). Not on Amazon via anything I could open, so it links to the Levi's store. The image_src is the levi.com og:image, which may be an on-model crop rather than a flat studio shot; swap if so. Could not open images from this environment; check that the photos are full-length with the jeans visible (images 002-005 have no captions). Overlaps SGA's Levi's 501 lead, so pick one.",
+   "find": "053",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "staples",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Levi's / Fact Magazine",
+    "source_url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
+   }
+  },
+  {
+   "celeb": "Austin Butler",
+   "context": "Street sighting, Upper West Side, New York City",
+   "date": "Sept 21, 2024",
+   "category": "Fit",
+   "headline": "Austin Butler's Carhartt Detroit look, ~$130",
+   "detail": "Out in New York, Austin Butler wore a black vintage Carhartt work jacket with a contrast collar, plus a trucker hat, straight jeans and lace-up boots. Carhartt's blanket-lined Detroit Jacket is the current version of that classic.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Biography — Austin Butler's Carhartt jacket",
+     "url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
+    },
+    {
+     "label": "Esquire (via AOL) — Austin Butler Is a Carhartt Guy",
+     "url": "https://www.aol.com/austin-butler-carhartt-guy-171900264.html"
+    }
+   ],
+   "items": [
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "Carhartt",
+     "name": "Relaxed Fit Duck Blanket-Lined Detroit Jacket (Black, 103828)",
+     "product_url": "https://www.amazon.com/dp/B07S192T2F",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://imgcdn.carhartt.com/is/image/Carhartt/EU_103828_BLK?fit=constrain,1&wid=798&hei=800&fmt=jpg",
+     "price": "$130",
+     "note": "",
+     "slide": 2,
+     "id": "9cc4ca",
+     "img": "images/cut/054-9cc4ca.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://hips.hearstapps.com/hmg-prod/images/austin-butler-is-seen-in-the-upper-west-side-on-september-news-photo-1727215638.jpg",
+     "page": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
+     "credit": "Getty Images / Biography"
+    },
+    {
+     "image": "https://hips.hearstapps.com/hmg-prod/images/austin-butler-carhartt-jacket-66f337c087209.jpg?crop=0.493xw:0.986xh;0,0&resize=1200:*",
+     "page": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
+     "credit": "Getty Images / Biography"
+    }
+   ],
+   "photo_source": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
+   "score": 66,
+   "score_parts": {
+    "shop": 22,
+    "star": 22,
+    "cover": 14,
+    "fresh": 8
+   },
+   "score_note": "Big name and a well-known Carhartt habit, but his jacket is vintage, so the link is only the closest Detroit Jacket.",
+   "note": "Video: Celeb staples under $100. The jacket is VINTAGE; Biography says the exact piece isn't sold and links the Carhartt Relaxed Fit Duck Blanket-Lined Detroit Jacket on Amazon ($130 per Biography, Sept 2024), so the item is labelled Similar. Amazon page not verified from here; carhartt.com lists 103828 at $129.99-$139.99 in Black or Carhartt Brown. His collar is described as contrasting brown, and the current black 103828 may not have that. Over $100. A Dec 2023 Polo Bar sighting in a similar jacket also exists (AOL/Esquire, Getty: James Devaney). Second photo is Biography's composite with a Carhartt product shot (it may show text or a product panel). Could not open images; check that it's full-length.",
+   "find": "054",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "staples",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Getty Images / Biography",
+    "source_url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
+   }
+  },
+  {
+   "celeb": "Seth Rogen",
+   "context": "Arriving at Jimmy Kimmel Live!",
+   "date": "Jan 3, 2023",
+   "category": "Kicks",
+   "headline": "Seth Rogen's shearling Birkenstock Bostons",
+   "detail": "Arriving at Jimmy Kimmel Live!, Seth Rogen wore Birkenstock's fleece-lined Boston clogs with a wool fleece cardigan and straight-leg pants, then changed into a suit for the show.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Highsnobiety — Seth Rogen's Birkenstock Bostons",
+     "url": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "shoes",
+     "brand": "Birkenstock",
+     "name": "Boston Shearling Suede (Taupe)",
+     "product_url": "https://www.goat.com/en-gb/sneakers/wmns-boston-shearling-suede-taupe",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/462/474/original/1028299.png.png?width=750",
+     "price": "$185",
+     "note": "",
+     "slide": 2,
+     "id": "18e20f",
+     "img": "images/cut/055-18e20f.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://www.highsnobiety.com/static-assets/dato/1672849175-seth-rogen-birkenstock-0.jpg",
+     "page": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
+     "credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety"
+    },
+    {
+     "image": "https://www.highsnobiety.com/static-assets/dato/1672848362-seth-rogen-birkenstock-1.jpg",
+     "page": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
+     "credit": "Highsnobiety"
+    }
+   ],
+   "photo_source": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
+   "score": 62,
+   "score_parts": {
+    "shop": 22,
+    "star": 20,
+    "cover": 14,
+    "fresh": 6
+   },
+   "score_note": "Clear source and a fun pick, but the color isn't stated, it costs about $185 and it's from 2023.",
+   "note": "Video: Celeb staples under $100. OVER BUDGET: the Boston Shearling is about $185 retail (the price is retail; GOAT showed no price). Highsnobiety names 'fleece-lined Boston clogs' but no color. Taupe is the common color, so confirm it against the photo (it may be Mink or another shade). The GOAT page is the women's-labelled listing (style 1028299); Birkenstock sizing is unisex EU. A non-wmns StockX/GOAT page would be better. Could not open images; check that the clogs are visible.",
+   "find": "055",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "staples",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety",
+    "source_url": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/"
+   }
+  },
+  {
+   "find": "056",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -3933,7 +4378,7 @@
    "video": "tunnel"
   },
   {
-   "find": "051",
+   "find": "057",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4011,7 +4456,7 @@
    "video": "tunnel"
   },
   {
-   "find": "052",
+   "find": "058",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4071,7 +4516,204 @@
    "video": "tunnel"
   },
   {
-   "find": "053",
+   "celeb": "Jalen Ramsey",
+   "context": "Steelers game arrival, NFL Week 8",
+   "date": "Oct 2025",
+   "category": "Kicks",
+   "headline": "Jalen Ramsey's tunnel kicks: Converse SHAI 001, $87",
+   "detail": "For his Week 8 arrival, the Steelers corner wore SGA's signature Converse SHAI 001 in the 'Charm Black' colorway.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Sole Retriever — LOOK GREAT, PLAY GREAT: NFL Week 8's Best Tunnel Fits",
+     "url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Converse",
+     "name": "SHAI 001 'Charm Black' (A18977C)",
+     "product_url": "https://stockx.com/converse-shai-001-charm-black",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/113/832/849/original/1672519_01.jpg.jpeg?width=750",
+     "price": "$87",
+     "note": "",
+     "slide": 2,
+     "id": "0aaf7e",
+     "img": "images/cut/059-0aaf7e.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://images.soleretriever.com/blog/a72c41712b6e04efdba7fbf77c841c59a631300f-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+     "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
+     "credit": "Sole Retriever"
+    }
+   ],
+   "photo_source": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
+   "score": 74,
+   "score_parts": {
+    "shop": 38,
+    "star": 18,
+    "cover": 8,
+    "fresh": 10
+   },
+   "score_note": "Exact style code, $87 on StockX (retail $130), well-known corner; only one Sole Retriever image.",
+   "note": "Video: Tunnel fits ranked. StockX Buy Now is $87 ($94 with fees); last sale was $140. The image_src is GOAT's product shot, because StockX exposed no image to me. The exact game date isn't in the source (Week 8, Oct 2025). The only photo is Sole Retriever's 1070x760 landscape crop, which may cut off the feet. Could not open it; check that the shoes are visible. Shai 001 overlaps SGA's 'Slither' lead (a different colorway and a different person).",
+   "find": "059",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "tunnel",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+   }
+  },
+  {
+   "celeb": "Khalil Mack",
+   "context": "Chargers vs. Vikings arrival, NFL Week 8",
+   "date": "Oct 2025",
+   "category": "Kicks",
+   "headline": "Khalil Mack's Nigel Sylvester AJ1 Lows",
+   "detail": "Mack arrived for the Chargers' Week 8 game against the Vikings in Nigel Sylvester's Air Jordan 1 Low OG 'Better With Time'.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "Sole Retriever — LOOK GREAT, PLAY GREAT: NFL Week 8's Best Tunnel Fits",
+     "url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Jordan",
+     "name": "Nigel Sylvester x Air Jordan 1 Low OG 'Better With Time' (IB8958-001)",
+     "product_url": "https://stockx.com/air-jordan-1-retro-low-og-nigel-sylvester-better-with-time",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/111/881/216/original/1536330_01.jpg.jpeg?width=750",
+     "price": "$229",
+     "note": "",
+     "slide": 2,
+     "id": "090166",
+     "img": "images/cut/060-090166.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://images.soleretriever.com/blog/a42aef81303fd23cf03a3f51673f3e669144cef9-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+     "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
+     "credit": "Sole Retriever"
+    }
+   ],
+   "photo_source": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
+   "score": 68,
+   "score_parts": {
+    "shop": 34,
+    "star": 16,
+    "cover": 8,
+    "fresh": 10
+   },
+   "score_note": "Exact style code, $229 on StockX; known veteran; only one image.",
+   "note": "Video: Tunnel fits ranked. StockX Buy Now is $229 (retail $150; last sale $377). The same style code is listed as 'Nitro' on GOAT and some blogs, and StockX calls it 'Better With Time'. The image_src is GOAT's product shot, because StockX exposed no image. The exact game date isn't in the source. The only photo is Sole Retriever's landscape crop. Could not open it; check that the shoes are visible.",
+   "find": "060",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "tunnel",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+   }
+  },
+  {
+   "celeb": "Stephon Castle",
+   "context": "NBA Finals Game 4 arrival, Spurs at Knicks, Madison Square Garden",
+   "date": "June 2026",
+   "category": "Kicks",
+   "headline": "Stephon Castle's Finals AJ4 'Black Cat' arrival",
+   "detail": "Arriving for Game 4 of the NBA Finals at the Garden, the Spurs guard wore a late-'90s Black Flag band tee, brown carpenter pants and Air Jordan 4 'Black Cat' sneakers.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "DM Fashion Book — Stephon Castle's NBA Finals Tunnel Fit Features Chrome Hearts and Air Jordan 4 'Black Cat'",
+     "url": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Jordan",
+     "name": "Air Jordan 4 Retro 'Black Cat' (2025, FV5029-010)",
+     "product_url": "https://stockx.com/air-jordan-4-retro-black-cat-2025",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/112/064/695/original/1567309_01.jpg.jpeg?width=750",
+     "price": "$284",
+     "note": "",
+     "slide": 2,
+     "id": "18a1c3",
+     "img": "images/cut/061-18a1c3.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://dmfashionbook.com/wp-content/uploads/2026/06/IMG_3828-810x1024.jpg",
+     "page": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
+     "credit": "@shotbybxfredo / DM Fashion Book"
+    },
+    {
+     "image": "https://dmfashionbook.com/wp-content/uploads/2026/06/IMG_3829-811x1024.jpg",
+     "page": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
+     "credit": "@shotbybxfredo / DM Fashion Book"
+    }
+   ],
+   "photo_source": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
+   "score": 70,
+   "score_parts": {
+    "shop": 30,
+    "star": 16,
+    "cover": 12,
+    "fresh": 12
+   },
+   "score_note": "Finals stage and an exact AJ4 at $284 on StockX; the pants are one-of-one Chrome Hearts, so the shoes are the only shoppable piece.",
+   "note": "Video: Tunnel fits ranked. The Finals game date isn't stated in the article (article dated Jun 11, 2026). The pants are one-of-one Chrome Hearts, not shoppable and not affordable, so only the AJ4 is listed. StockX Buy Now is $284 ($308 with fees); retail is $220. The image_src is GOAT's product shot. The photos are vertical 810x1024 shots by an IG photographer, hosted on dmfashionbook, so they should be full-length but are unverified. Could not open them; check that the shoes are visible.",
+   "find": "061",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-11",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "tunnel",
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "@shotbybxfredo / DM Fashion Book",
+    "source_url": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/"
+   }
+  },
+  {
+   "find": "062",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4148,7 +4790,7 @@
    "updated": "2026-10-09T15:10:40.749Z"
   },
   {
-   "find": "054",
+   "find": "063",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4221,7 +4863,7 @@
    ]
   },
   {
-   "find": "055",
+   "find": "064",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4287,7 +4929,7 @@
    "updated": "2026-10-09T15:10:40.749Z"
   },
   {
-   "find": "056",
+   "find": "065",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4361,7 +5003,7 @@
    "updated": "2026-10-09T15:10:40.749Z"
   },
   {
-   "find": "057",
+   "find": "066",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4416,7 +5058,7 @@
    "updated": "2026-10-09T15:10:40.749Z"
   },
   {
-   "find": "058",
+   "find": "067",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4482,7 +5124,7 @@
    "updated": "2026-10-09T15:10:40.749Z"
   },
   {
-   "find": "059",
+   "find": "068",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4566,7 +5208,7 @@
    ]
   },
   {
-   "find": "060",
+   "find": "069",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4611,7 +5253,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/k7kAAeSwoW5qwFEO/s-l1600.webp",
      "id": "3d679d",
-     "img": "images/cut/060-3d679d.png",
+     "img": "images/cut/069-3d679d.png",
      "type": "clothing"
     },
     {
@@ -4675,7 +5317,7 @@
    }
   },
   {
-   "find": "061",
+   "find": "070",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4778,7 +5420,7 @@
    }
   },
   {
-   "find": "062",
+   "find": "071",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4855,7 +5497,7 @@
    }
   },
   {
-   "find": "063",
+   "find": "072",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -4889,7 +5531,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/hbMAAeSwFkVquS~k/s-l1600.webp",
      "id": "85067d",
-     "img": "images/cut/063-85067d.png",
+     "img": "images/cut/072-85067d.png",
      "type": "sneakers"
     },
     {
@@ -4939,7 +5581,7 @@
    "ig_queue": false
   },
   {
-   "find": "064",
+   "find": "073",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -5032,7 +5674,7 @@
    "ig_queue": false
   },
   {
-   "find": "065",
+   "find": "074",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -5133,7 +5775,7 @@
    }
   },
   {
-   "find": "066",
+   "find": "075",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -5223,7 +5865,7 @@
    "ig_queue": false
   },
   {
-   "find": "067",
+   "find": "076",
    "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
@@ -5256,7 +5898,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/hR8AAeSwvA9qVkEO/s-l1600.webp",
      "id": "d28e32",
-     "img": "images/cut/067-d28e32.png",
+     "img": "images/cut/076-d28e32.png",
      "type": "sneakers"
     },
     {
@@ -5304,7 +5946,7 @@
    }
   },
   {
-   "find": "068",
+   "find": "077",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5337,7 +5979,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/KegAAeSw0zlolM56/s-l1600.webp",
      "id": "a5211f",
-     "img": "images/cut/068-a5211f.png",
+     "img": "images/cut/077-a5211f.png",
      "type": "watch"
     },
     {
@@ -5350,7 +5992,7 @@
      "product_url": "https://www.amazon.com/SEWOR-Automatic-Business-Tonneau-Mechanical/dp/B07HQ5FKXM/ref=sr_1_4?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.itFImJfrELbD_9lIncKvEzKMvHuT6W02kBD_szj-cvgVWeH-dv3xJFytsOnUHUwmIDISyx3R8oFdRSy--SDejvYx_kVyrTpl8Rm9Hb2QrOENp_mCHY_VBsc-I_mHNkOsT9BKH3aygCCBKQVl1YRkBt28vqofilyBezeBKHlv6azBHfZONutZF7uPNW0rcKAM_qLNnY2Q3nzLCIOHBdyi0iYZyDKMEfPfnSomVQEHBmmvm1eeScqXws7CMb3Zr7vvGqM9gYZpxD24rY39NcYtzaqINq3OiD10tSCapmbexjY.Fr8GJJxheNzyEEYNyvOp8R4zDiA9GWYSihuq1sXp_9M&dib_tag=se&keywords=tonneau%2Bautomatic%2Bwatch&plpRedirect=mhFallback&qid=1791558566&sr=8-4&th=1",
      "note": "",
      "id": "4df6c4",
-     "img": "images/cut/068-4df6c4.png",
+     "img": "images/cut/077-4df6c4.png",
      "type": "watch"
     }
    ],
@@ -5522,7 +6164,7 @@
    },
    "score_note": "Luxury pieces all named (Tom Ford on Farfetch, Cartier on Chrono24) plus cheaper picks; Travis Kelce; Chiefs team arrival gallery; 5 days old",
    "note": "Could also go in Wrist, since Complex's headline is about the $77K watch. Getty and Chiefs photos only; I found no Kelce-owned Instagram post. Kelce wore a Louis Vuitton jacket on Sept 20 vs. the Colts, but that is a separate look and was not used here. Rejected: too expensive for the average buyer.",
-   "find": "069",
+   "find": "078",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -5567,7 +6209,7 @@
      "slide": 2,
      "image_src": "https://sneakerbardetroit.com/wp-content/uploads/2026/07/adidas-harden-vol-1-pioneer-2026-lc5090.jpg",
      "id": "951a88",
-     "img": "images/cut/070-951a88-v1791577777.png"
+     "img": "images/cut/079-951a88-v1791577777.png"
     }
    ],
    "photo_leads": [
@@ -5589,7 +6231,7 @@
    },
    "score_note": "$140 retro on StockX/adidas; Harden; NBA league post; 11 days old",
    "note": "Kicks On SI doesn't give Harden's team; confirm it from the photo. Sneaker Freaker lists the release date as TBC, while StockX says Aug 30, 2026. StockX shows a $355 'related product' ask that may be the 2016 pair, so recheck the current price. Lower priority.",
-   "find": "070",
+   "find": "079",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -5711,7 +6353,7 @@
    },
    "score_note": "$4,950 LV jacket at LV.com plus cheaper picks; Kelce; Chiefs IG arrival post; 19 days old",
    "note": "The watch reports conflict: People says a gold Cartier Santos Skeleton, while Yardbarker says a Rolex 'Rainbow'. Because of that I left the watch out. People also mentions an LV belt but names no model. Yardbarker calls the trousers Louis Vuitton (~$1,600), but People and The Sporting News don't name a brand, so the trousers are a Similar pick only. Rejected: too expensive for the average buyer.",
-   "find": "071",
+   "find": "080",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -5804,7 +6446,7 @@
    },
    "score_note": "LeBron in a shoe dropping today; China-only so resale on StockX/GOAT; AP/team scrimmage photos",
    "note": "HNHH says 'Saturday', and NBA.com dates the open scrimmage Oct 3, 2026. HNHH's lead image is from the Sept 28 media day, not the scrimmage, so don't use it. StockX listed it at $190 retail but showed an €867 buy-now price before release; recheck the price. No clean studio image was found from an approved source (Sole Retriever has one: https://images.soleretriever.com/sb/products/nike_lebron_24_greater_china_IX5105-200-1790704607533.webp). Rejected: too expensive for the average buyer.",
-   "find": "072",
+   "find": "081",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -5919,7 +6561,7 @@
    },
    "score_note": "Limited LV Monterey on resale only, custom suit; The Bear star; arrival video plus AP/Getty photos; 5 days old",
    "note": "This could be a Wrist lead because the watch carries it. White is on file only for the Golden Globes. Getting the look relies mostly on cheaper picks. The watch sources name the Monterey but give no reference number or case size. I couldn't load GQ's write-up (gq.com/story/jeremy-allen-white-louis-vuitton-watch-10-5-26) to check it. Rejected: too expensive for the average buyer.",
-   "find": "073",
+   "find": "082",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -5929,721 +6571,6 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09"
-  },
-  {
-   "celeb": "Austin Butler",
-   "context": "Street sighting, Trancas Market, Malibu",
-   "date": "Aug 13, 2023",
-   "category": "Kicks",
-   "headline": "Austin Butler keeps it simple in $71 Sambas",
-   "detail": "Out picking up flowers in Malibu, Butler paired adidas Sambas with a white tee, adidas track pants and a NASA cap. Highsnobiety wrote up the sighting as a Samba moment.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Highsnobiety — Austin Butler adidas Samba",
-     "url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
-    },
-    {
-     "label": "Just Jared — Austin Butler Picks Up Flowers During a Day Out in Malibu",
-     "url": "https://www.justjared.com/2023/08/14/austin-butler-picks-up-flowers-during-a-day-out-in-malibu/"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "adidas",
-     "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
-     "product_url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
-     "price": "$71",
-     "note": "",
-     "slide": 2,
-     "id": "2ef185",
-     "img": "images/cut/074-2ef185.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://www.highsnobiety.com/static-assets/dato/1692007224-austin-butler-adidas-samba-001.jpg",
-     "page": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
-     "credit": "RMBI/LESE / BACKGRID via Highsnobiety"
-    },
-    {
-     "image": "https://www.highsnobiety.com/static-assets/dato/1692010843-austin-butler-adidas-samba-002.jpg",
-     "page": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
-     "credit": "RMBI/LESE / BACKGRID via Highsnobiety"
-    },
-    {
-     "image": "https://cdn01.justjared.com/wp-content/uploads/headlines/2023/08/austin-butler-picks-up-flowers-market-1.jpg",
-     "page": "https://www.justjared.com/2023/08/14/austin-butler-picks-up-flowers-during-a-day-out-in-malibu/",
-     "credit": "Just Jared"
-    }
-   ],
-   "photo_source": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
-   "score": 62,
-   "score_parts": {
-    "shop": 40,
-    "star": 15,
-    "cover": 10,
-    "fresh": 2
-   },
-   "score_note": "Samba OG ~$71 on StockX; Austin Butler; Backgrid street photos in a shoe-focused article",
-   "note": "Video: Every celeb owns these sneakers: adidas Samba. CAVEAT: neither source names the colorway (Highsnobiety just says 'adidas Sambas'). The item is set to white B75806 provisionally; view the photos and if the pair is black, switch to Samba OG Core Black/Cloud White/Gum (B75807). Photo framing not confirmed (captions are only agency credits); the article is about the shoes, so the feet are likely in frame. Could not view images in this session.",
-   "find": "074",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "samba",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "RMBI/LESE / BACKGRID via Highsnobiety",
-    "source_url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
-   }
-  },
-  {
-   "celeb": "Paul Mescal",
-   "context": "Fashion show appearance",
-   "date": "2023",
-   "category": "Kicks",
-   "headline": "Paul Mescal's go-to: white adidas Sambas",
-   "detail": "Mescal wore a vintage adidas tee with matching white Sambas to a fashion show, a look Style Girlfriend featured in its men's Samba outfit guide.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Style Girlfriend — Samba outfits for men",
-     "url": "https://stylegirlfriend.com/samba-outfit-men/"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "adidas",
-     "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
-     "product_url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
-     "price": "$71",
-     "note": "",
-     "slide": 2,
-     "id": "55698a",
-     "img": "images/cut/075-55698a.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://stylegirlfriend.com/wp-content/uploads/2023/03/paul-mescal-white-adidas-samba.png",
-     "page": "https://stylegirlfriend.com/samba-outfit-men/",
-     "credit": "GQ via Style Girlfriend"
-    },
-    {
-     "image": "https://stylegirlfriend.com/wp-content/uploads/2024/01/paul-mescal_esquire.jpg",
-     "page": "https://stylegirlfriend.com/samba-outfit-men/",
-     "credit": "@esquire via Style Girlfriend"
-    }
-   ],
-   "photo_source": "https://stylegirlfriend.com/samba-outfit-men/",
-   "score": 52,
-   "score_parts": {
-    "shop": 40,
-    "star": 15,
-    "cover": 10,
-    "fresh": 2
-   },
-   "score_note": "Samba OG ~$71; Paul Mescal; editorial photo in a Samba-styling article",
-   "note": "Video: Every celeb owns these sneakers: adidas Samba. WEAK SOURCE: Style Girlfriend's alt text only says 'Adidas sneakers'; 'white adidas Samba' comes from the image filename, inside an article about Samba outfits. Event and date are not named (uploaded Mar 2023, credit GQ). The second photo (Esquire, jeans + workwear jacket) is a different occasion and its shoe model is unconfirmed. Drop if the photo doesn't clearly show Sambas, or if you can't find a stronger source.",
-   "find": "075",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "samba",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "GQ via Style Girlfriend",
-    "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
-   }
-  },
-  {
-   "celeb": "Devin Booker",
-   "context": "Nike Book 2 debut game, Suns vs. Trail Blazers",
-   "date": "Nov 18, 2025",
-   "category": "Kicks",
-   "headline": "Booker's own Nike Book 2 'Rising' is down to $69",
-   "detail": "Booker debuted his second signature shoe, the Nike Book 2, in the black 'Rising' colorway against Portland. It retailed for $145 and now sells for about half that on resale.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Arizona Sports — Devin Booker debuts Nike Book 2; price, release date unveiled",
-     "url": "https://arizonasports.com/threads/nike-book-2-price-release-date/3602835/"
-    },
-    {
-     "label": "Nice Kicks — Nike Book 2 \"Rising\" IB6687-001",
-     "url": "https://www.nicekicks.com/?p=1328980"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Nike",
-     "name": "Book 2 'Rising' (Black/Multi-Color/Safety Orange, IB6687-001)",
-     "product_url": "https://stockx.com/nike-book-2-rising",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://www.nicekicks.com/files/2025/12/ib6687-001-1-1200x1200.jpg",
-     "price": "$69",
-     "note": "",
-     "slide": 2,
-     "id": "6fa388",
-     "img": "images/cut/077-6fa388.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://cdn.arizonasports.com/arizonasports/wp-content/uploads/2025/11/nike-book-2-release-date-5-e1763526914610.webp",
-     "page": "https://arizonasports.com/threads/nike-book-2-price-release-date/3602835/",
-     "credit": "Nike"
-    },
-    {
-     "image": "https://www.nicekicks.com/files/2025/12/G6FrwGHbMAAVnug-e1766513574519.jpg",
-     "page": "https://www.nicekicks.com/?p=1328980",
-     "credit": "Nice Kicks"
-    }
-   ],
-   "photo_source": "https://arizonasports.com/threads/nike-book-2-price-release-date/3602835/",
-   "score": 74,
-   "score_parts": {
-    "shop": 38,
-    "star": 20,
-    "cover": 10,
-    "fresh": 6
-   },
-   "score_note": "Exact colorway confirmed, cheap on StockX; photos not yet viewed for feet visibility.",
-   "note": "Video: NBA stars' signature shoes under $150. Arizona Sports captions the lead photo as Booker debuting the Book 2 in the game vs. Portland (Nike photo); the article says the 'Rising' (black) pair was worn in the game and 'Phoenix' (orange) at shootaround. StockX buy-now $69 ($76 with fee); retail $145. I could not view images from this environment (image hosts blocked), so check that both photo options actually show the shoes on his feet; the Nice Kicks hero filename looks like an X repost. The nicekicks product image is one of 10 studio angles; check it's the side profile (try -2 through -10 if not). Booker also wore Futura x Book 2 (unreleased) at 2026 Media Day per Kicks On SI.",
-   "find": "077",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "nbasig",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Nice Kicks",
-    "source_url": "https://www.nicekicks.com/?p=1328980"
-   }
-  },
-  {
-   "celeb": "Giannis Antetokounmpo",
-   "context": "Nike Giannis Freak 8 reveal (debut on foot)",
-   "date": "Mar 2, 2026",
-   "category": "Kicks",
-   "headline": "Giannis' own Freak 8 'South Beach' for $99",
-   "detail": "Nike revealed Giannis' eighth signature shoe in a hyper-pink debut colorway, which Giannis first wore in practice. It retails for $115 and launched Aug 1, 2026.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "House of Heat — Nike Giannis Freak 8 Hyper Pink IM5150-600",
-     "url": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600"
-    },
-    {
-     "label": "Sole Retriever — Nike Officially Unveils Giannis Antetokounmpo's Nike Giannis Freak 8",
-     "url": "https://www.soleretriever.com/news/articles/nike-giannis-freak-8-official-unveil-release-date-august-2026"
-    },
-    {
-     "label": "Nike — Giannis Antetokounmpo Nike Freak 8 official images",
-     "url": "https://about.nike.com/newsroom/releases/giannis-antetokounmpo-nike-freak-8-official-images"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Nike",
-     "name": "Giannis Freak 8 'South Beach' (Hyper Pink/Hyper Orange/Dynamic Yellow, IM5150-600)",
-     "product_url": "https://stockx.com/nike-giannis-freak-8-south-beach",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://cdn.sanity.io/images/pu5wtzfc/production/6fd40ca8a22eb938fb383a77787325af228ba1f3-2400x1500.jpg",
-     "price": "$99",
-     "note": "",
-     "slide": 2,
-     "id": "a8788b",
-     "img": "images/cut/079-a8788b.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://cdn.sanity.io/images/pu5wtzfc/production/2f0ebac4be4e96b5623a1b790b23c3b88caea6bc-2160x2698.jpg",
-     "page": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
-     "credit": "Nike via House of Heat"
-    },
-    {
-     "image": "https://cdn.sanity.io/images/pu5wtzfc/production/b92b44c72249e9c8792bc9542d6e4eec13f36f80-2025x2700.jpg",
-     "page": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
-     "credit": "Nike via House of Heat"
-    },
-    {
-     "image": "https://nmp.about.nike.com/about/prod/f5fb8d89-83bd-46b7-a49e-badb2a6e94b8/6g6a2855.jpeg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0Ijo3NiwidG9wIjo2MDEsIndpZHRoIjoxMzMwLCJoZWlnaHQiOjg4M30sInJlc2l6ZSI6eyJ3aWR0aCI6Mzg0MH19fQ%3D%3D&s=dc96ae214af8023bd0bfa24e8c30f0bddb8c47e2e40e198ead00329f319ed071",
-     "page": "https://about.nike.com/newsroom/releases/giannis-antetokounmpo-nike-freak-8-official-images",
-     "credit": "Nike"
-    }
-   ],
-   "photo_source": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
-   "score": 68,
-   "score_parts": {
-    "shop": 36,
-    "star": 22,
-    "cover": 5,
-    "fresh": 5
-   },
-   "score_note": "Exact debut colorway under retail; occasion is a practice/reveal, so on-foot photos still need checking.",
-   "note": "Video: NBA stars' signature shoes under $150. House of Heat: 'officially unveiled on foot during a recent practice session'. Sole Retriever (Mar 3, 2026) says he first wore it in practice (Instagram) and then debuted it in a game vs. the Celtics, but I found no game photo or date. The two House of Heat portrait images (one named 'Giannis Freak 8 Pink.jpg') and Nike's newsroom image have no captions, so view them and keep only on-foot shots of Giannis. StockX buy-now $99 (~$106 with fee); retail $115. StockX calls IM5150-600 'South Beach'; House of Heat calls it 'Hyper Pink'; Sneaker Freaker calls it 'Buckitos/Buckets'.",
-   "find": "079",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "nbasig",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Nike via House of Heat",
-    "source_url": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600"
-   }
-  },
-  {
-   "celeb": "Kid Cudi",
-   "context": "Levi's 501 campaign",
-   "date": "Jan 2022",
-   "category": "Fit",
-   "headline": "Kid Cudi fronts Levi's 501s, the $77 jean",
-   "detail": "Kid Cudi starred in Levi's 501 campaign built around the Original 501 and the 501 '90s. It's the same five-pocket straight jean Levi's has sold for more than a century.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Fact Magazine — Kid Cudi stars in Levi's 501 campaign for 150th Anniversary",
-     "url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "clothing",
-     "brand": "Levi's",
-     "name": "501 Original Fit Jeans",
-     "product_url": "https://www.levi.com/US/en_US/p/005010114",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0114_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
-     "price": "$77",
-     "note": "",
-     "slide": 2,
-     "id": "a65f26",
-     "img": "images/cut/081-a65f26.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-001.jpg",
-     "page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
-     "credit": "Levi's / Fact Magazine"
-    },
-    {
-     "image": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-002.jpg",
-     "page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
-     "credit": "Levi's / Fact Magazine"
-    },
-    {
-     "image": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-005-scaled.jpg",
-     "page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
-     "credit": "Levi's / Fact Magazine"
-    }
-   ],
-   "photo_source": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
-   "score": 72,
-   "score_parts": {
-    "shop": 34,
-    "star": 18,
-    "cover": 12,
-    "fresh": 8
-   },
-   "score_note": "Real 501 campaign, $77 on sale at levi.com; 2022 so not fresh; same angle as SGA's 501 lead.",
-   "note": "Video: Celeb staples under $100. The source doesn't say which 501 wash he wears (campaign covers Original 501 and 501 '90s), so the product is the Original 501 in Stonewash Dark (00501-0114), $77 on sale (reg. $110). Not on Amazon via anything I could open, so it links to the Levi's store. The image_src is the levi.com og:image, which may be an on-model crop rather than a flat studio shot; swap if so. Could not open images from this environment; check that the photos are full-length with the jeans visible (images 002-005 have no captions). Overlaps SGA's Levi's 501 lead, so pick one.",
-   "find": "081",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "staples",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Levi's / Fact Magazine",
-    "source_url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
-   }
-  },
-  {
-   "celeb": "Austin Butler",
-   "context": "Street sighting, Upper West Side, New York City",
-   "date": "Sept 21, 2024",
-   "category": "Fit",
-   "headline": "Austin Butler's Carhartt Detroit look, ~$130",
-   "detail": "Out in New York, Austin Butler wore a black vintage Carhartt work jacket with a contrast collar, plus a trucker hat, straight jeans and lace-up boots. Carhartt's blanket-lined Detroit Jacket is the current version of that classic.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Biography — Austin Butler's Carhartt jacket",
-     "url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
-    },
-    {
-     "label": "Esquire (via AOL) — Austin Butler Is a Carhartt Guy",
-     "url": "https://www.aol.com/austin-butler-carhartt-guy-171900264.html"
-    }
-   ],
-   "items": [
-    {
-     "label": "Similar",
-     "type": "clothing",
-     "brand": "Carhartt",
-     "name": "Relaxed Fit Duck Blanket-Lined Detroit Jacket (Black, 103828)",
-     "product_url": "https://www.amazon.com/dp/B07S192T2F",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://imgcdn.carhartt.com/is/image/Carhartt/EU_103828_BLK?fit=constrain,1&wid=798&hei=800&fmt=jpg",
-     "price": "$130",
-     "note": "",
-     "slide": 2,
-     "id": "9cc4ca",
-     "img": "images/cut/082-9cc4ca.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://hips.hearstapps.com/hmg-prod/images/austin-butler-is-seen-in-the-upper-west-side-on-september-news-photo-1727215638.jpg",
-     "page": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
-     "credit": "Getty Images / Biography"
-    },
-    {
-     "image": "https://hips.hearstapps.com/hmg-prod/images/austin-butler-carhartt-jacket-66f337c087209.jpg?crop=0.493xw:0.986xh;0,0&resize=1200:*",
-     "page": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
-     "credit": "Getty Images / Biography"
-    }
-   ],
-   "photo_source": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
-   "score": 66,
-   "score_parts": {
-    "shop": 22,
-    "star": 22,
-    "cover": 14,
-    "fresh": 8
-   },
-   "score_note": "Big name and a well-known Carhartt habit, but his jacket is vintage, so the link is only the closest Detroit Jacket.",
-   "note": "Video: Celeb staples under $100. The jacket is VINTAGE; Biography says the exact piece isn't sold and links the Carhartt Relaxed Fit Duck Blanket-Lined Detroit Jacket on Amazon ($130 per Biography, Sept 2024), so the item is labelled Similar. Amazon page not verified from here; carhartt.com lists 103828 at $129.99-$139.99 in Black or Carhartt Brown. His collar is described as contrasting brown, and the current black 103828 may not have that. Over $100. A Dec 2023 Polo Bar sighting in a similar jacket also exists (AOL/Esquire, Getty: James Devaney). Second photo is Biography's composite with a Carhartt product shot (it may show text or a product panel). Could not open images; check that it's full-length.",
-   "find": "082",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "staples",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Getty Images / Biography",
-    "source_url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
-   }
-  },
-  {
-   "celeb": "Seth Rogen",
-   "context": "Arriving at Jimmy Kimmel Live!",
-   "date": "Jan 3, 2023",
-   "category": "Kicks",
-   "headline": "Seth Rogen's shearling Birkenstock Bostons",
-   "detail": "Arriving at Jimmy Kimmel Live!, Seth Rogen wore Birkenstock's fleece-lined Boston clogs with a wool fleece cardigan and straight-leg pants, then changed into a suit for the show.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Highsnobiety — Seth Rogen's Birkenstock Bostons",
-     "url": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "shoes",
-     "brand": "Birkenstock",
-     "name": "Boston Shearling Suede (Taupe)",
-     "product_url": "https://www.goat.com/en-gb/sneakers/wmns-boston-shearling-suede-taupe",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/462/474/original/1028299.png.png?width=750",
-     "price": "$185",
-     "note": "",
-     "slide": 2,
-     "id": "18e20f",
-     "img": "images/cut/083-18e20f.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://www.highsnobiety.com/static-assets/dato/1672849175-seth-rogen-birkenstock-0.jpg",
-     "page": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
-     "credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety"
-    },
-    {
-     "image": "https://www.highsnobiety.com/static-assets/dato/1672848362-seth-rogen-birkenstock-1.jpg",
-     "page": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
-     "credit": "Highsnobiety"
-    }
-   ],
-   "photo_source": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
-   "score": 62,
-   "score_parts": {
-    "shop": 22,
-    "star": 20,
-    "cover": 14,
-    "fresh": 6
-   },
-   "score_note": "Clear source and a fun pick, but the color isn't stated, it costs about $185 and it's from 2023.",
-   "note": "Video: Celeb staples under $100. OVER BUDGET: the Boston Shearling is about $185 retail (the price is retail; GOAT showed no price). Highsnobiety names 'fleece-lined Boston clogs' but no color. Taupe is the common color, so confirm it against the photo (it may be Mink or another shade). The GOAT page is the women's-labelled listing (style 1028299); Birkenstock sizing is unisex EU. A non-wmns StockX/GOAT page would be better. Could not open images; check that the clogs are visible.",
-   "find": "083",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "staples",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety",
-    "source_url": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/"
-   }
-  },
-  {
-   "celeb": "Jalen Ramsey",
-   "context": "Steelers game arrival, NFL Week 8",
-   "date": "Oct 2025",
-   "category": "Kicks",
-   "headline": "Jalen Ramsey's tunnel kicks: Converse SHAI 001, $87",
-   "detail": "For his Week 8 arrival, the Steelers corner wore SGA's signature Converse SHAI 001 in the 'Charm Black' colorway.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Sole Retriever — LOOK GREAT, PLAY GREAT: NFL Week 8's Best Tunnel Fits",
-     "url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Converse",
-     "name": "SHAI 001 'Charm Black' (A18977C)",
-     "product_url": "https://stockx.com/converse-shai-001-charm-black",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/113/832/849/original/1672519_01.jpg.jpeg?width=750",
-     "price": "$87",
-     "note": "",
-     "slide": 2,
-     "id": "0aaf7e",
-     "img": "images/cut/085-0aaf7e.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://images.soleretriever.com/blog/a72c41712b6e04efdba7fbf77c841c59a631300f-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-     "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-     "credit": "Sole Retriever"
-    }
-   ],
-   "photo_source": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-   "score": 74,
-   "score_parts": {
-    "shop": 38,
-    "star": 18,
-    "cover": 8,
-    "fresh": 10
-   },
-   "score_note": "Exact style code, $87 on StockX (retail $130), well-known corner; only one Sole Retriever image.",
-   "note": "Video: Tunnel fits ranked. StockX Buy Now is $87 ($94 with fees); last sale was $140. The image_src is GOAT's product shot, because StockX exposed no image to me. The exact game date isn't in the source (Week 8, Oct 2025). The only photo is Sole Retriever's 1070x760 landscape crop, which may cut off the feet. Could not open it; check that the shoes are visible. Shai 001 overlaps SGA's 'Slither' lead (a different colorway and a different person).",
-   "find": "085",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "tunnel",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Sole Retriever",
-    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
-   }
-  },
-  {
-   "celeb": "Khalil Mack",
-   "context": "Chargers vs. Vikings arrival, NFL Week 8",
-   "date": "Oct 2025",
-   "category": "Kicks",
-   "headline": "Khalil Mack's Nigel Sylvester AJ1 Lows",
-   "detail": "Mack arrived for the Chargers' Week 8 game against the Vikings in Nigel Sylvester's Air Jordan 1 Low OG 'Better With Time'.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Sole Retriever — LOOK GREAT, PLAY GREAT: NFL Week 8's Best Tunnel Fits",
-     "url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Jordan",
-     "name": "Nigel Sylvester x Air Jordan 1 Low OG 'Better With Time' (IB8958-001)",
-     "product_url": "https://stockx.com/air-jordan-1-retro-low-og-nigel-sylvester-better-with-time",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/111/881/216/original/1536330_01.jpg.jpeg?width=750",
-     "price": "$229",
-     "note": "",
-     "slide": 2,
-     "id": "090166",
-     "img": "images/cut/086-090166.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://images.soleretriever.com/blog/a42aef81303fd23cf03a3f51673f3e669144cef9-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-     "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-     "credit": "Sole Retriever"
-    }
-   ],
-   "photo_source": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-   "score": 68,
-   "score_parts": {
-    "shop": 34,
-    "star": 16,
-    "cover": 8,
-    "fresh": 10
-   },
-   "score_note": "Exact style code, $229 on StockX; known veteran; only one image.",
-   "note": "Video: Tunnel fits ranked. StockX Buy Now is $229 (retail $150; last sale $377). The same style code is listed as 'Nitro' on GOAT and some blogs, and StockX calls it 'Better With Time'. The image_src is GOAT's product shot, because StockX exposed no image. The exact game date isn't in the source. The only photo is Sole Retriever's landscape crop. Could not open it; check that the shoes are visible.",
-   "find": "086",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "tunnel",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "Sole Retriever",
-    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
-   }
-  },
-  {
-   "celeb": "Stephon Castle",
-   "context": "NBA Finals Game 4 arrival, Spurs at Knicks, Madison Square Garden",
-   "date": "June 2026",
-   "category": "Kicks",
-   "headline": "Stephon Castle's Finals AJ4 'Black Cat' arrival",
-   "detail": "Arriving for Game 4 of the NBA Finals at the Garden, the Spurs guard wore a late-'90s Black Flag band tee, brown carpenter pants and Air Jordan 4 'Black Cat' sneakers.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "DM Fashion Book — Stephon Castle's NBA Finals Tunnel Fit Features Chrome Hearts and Air Jordan 4 'Black Cat'",
-     "url": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Jordan",
-     "name": "Air Jordan 4 Retro 'Black Cat' (2025, FV5029-010)",
-     "product_url": "https://stockx.com/air-jordan-4-retro-black-cat-2025",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/112/064/695/original/1567309_01.jpg.jpeg?width=750",
-     "price": "$284",
-     "note": "",
-     "slide": 2,
-     "id": "18a1c3",
-     "img": "images/cut/087-18a1c3.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://dmfashionbook.com/wp-content/uploads/2026/06/IMG_3828-810x1024.jpg",
-     "page": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
-     "credit": "@shotbybxfredo / DM Fashion Book"
-    },
-    {
-     "image": "https://dmfashionbook.com/wp-content/uploads/2026/06/IMG_3829-811x1024.jpg",
-     "page": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
-     "credit": "@shotbybxfredo / DM Fashion Book"
-    }
-   ],
-   "photo_source": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
-   "score": 70,
-   "score_parts": {
-    "shop": 30,
-    "star": 16,
-    "cover": 12,
-    "fresh": 12
-   },
-   "score_note": "Finals stage and an exact AJ4 at $284 on StockX; the pants are one-of-one Chrome Hearts, so the shoes are the only shoppable piece.",
-   "note": "Video: Tunnel fits ranked. The Finals game date isn't stated in the article (article dated Jun 11, 2026). The pants are one-of-one Chrome Hearts, not shoppable and not affordable, so only the AJ4 is listed. StockX Buy Now is $284 ($308 with fees); retail is $220. The image_src is GOAT's product shot. The photos are vertical 810x1024 shots by an IG photographer, hosted on dmfashionbook, so they should be full-length but are unverified. Could not open them; check that the shoes are visible.",
-   "find": "087",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-11",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "tunnel",
-   "photo_search": "2026-10-11",
-   "photo": {
-    "credit": "@shotbybxfredo / DM Fashion Book",
-    "source_url": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/"
-   }
   }
  ]
 }
