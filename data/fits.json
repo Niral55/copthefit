@@ -4925,7 +4925,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/DW-5600E-1V/assets/DW-5600UE-1.png",
      "price": "$64.92",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "669e5f",
+     "img": "images/cut/060-669e5f.png"
     }
    ],
    "photo_options": [
@@ -4964,9 +4966,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2019/05/speed-movie-keanu-reeves-g-shock-dw-5600c-1v.jpg",
-   "photo_src_page": "https://g-central.com/the-speed-g-shock-worn-by-keanu-reeves-quick-facts/",
-   "photo_src_credit": "20th Century Fox, 'Speed' (via G-Central)"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "20th Century Fox, 'Speed' (via G-Central)",
+    "source_url": "https://g-central.com/the-speed-g-shock-worn-by-keanu-reeves-quick-facts/"
+   }
   },
   {
    "celeb": "RM (Kim Namjoon, BTS)",
@@ -5000,7 +5004,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/DW-5600E-1V/assets/DW-5600UE-1.png",
      "price": "$64.92",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "05ade8",
+     "img": "images/cut/061-05ade8.png"
     }
    ],
    "photo_options": [
@@ -5039,9 +5045,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.esquirekorea.co.kr/resources/online/online_image/2025/06/10/8630676d-a841-4a4a-96f7-0129aefb27ff.png",
-   "photo_src_page": "https://www.esquirekorea.co.kr/article/1882948",
-   "photo_src_credit": "Esquire Korea"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Esquire Korea",
+    "source_url": "https://www.esquirekorea.co.kr/article/1882948"
+   }
   },
   {
    "celeb": "Benicio del Toro",
@@ -5075,7 +5083,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DWE/dwe-5600jb-1a9/assets/DWE-5600JB-1A9.png",
      "price": "$230",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "ac1f70",
+     "img": "images/cut/062-ac1f70.png"
     }
    ],
    "photo_options": [
@@ -5104,9 +5114,21 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2025/09/BENICIO-DEL-TORO-WEARING-G-SHOCK-DW-5600.webp",
-   "photo_src_page": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/",
-   "photo_src_credit": "OutNowCH (YouTube) via G-Central"
+   "photo_search": "2026-10-11",
+   "photo_candidates": [
+    {
+     "match": "month",
+     "taken": "2025-09-08",
+     "license": "CC BY-SA 4.0",
+     "author": "RON RAFFETY",
+     "page": "https://commons.wikimedia.org/wiki/File:Actor_Benicio_Del_Toro_-_World_Premier_%27One_Battle_After_Another%22.jpg",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Actor_Benicio_Del_Toro_-_World_Premier_%27One_Battle_After_Another%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    }
+   ],
+   "photo": {
+    "credit": "OutNowCH (YouTube) via G-Central",
+    "source_url": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/"
+   }
   },
   {
    "celeb": "V (Kim Taehyung, BTS)",
@@ -5136,7 +5158,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600ubb-1/assets/DW-5600UBB-1.png",
      "price": "$83.99",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "89f539",
+     "img": "images/cut/063-89f539.png"
     }
    ],
    "photo_options": [
@@ -5165,9 +5189,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2024/06/TAEHYUNG-V-JUNGKOOK-BTS-G-SHOCK-DW-5600-WATCH.jpg",
-   "photo_src_page": "https://www.g-central.com/taehyung-and-jungkook-of-bts-wear-g-shock-dw-5600-watches-during-military-service/",
-   "photo_src_credit": "G-Central"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "G-Central",
+    "source_url": "https://www.g-central.com/taehyung-and-jungkook-of-bts-wear-g-shock-dw-5600-watches-during-military-service/"
+   }
   },
   {
    "celeb": "Shia LaBeouf",
@@ -5197,7 +5223,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/ca/en/timepiece/product/watch/G/GW/GWM/GW-M5610U-1/assets/GW-M5610U-1.png.transform/main-visual-pc/image.png",
      "price": "$110",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "46d798",
+     "img": "images/cut/064-46d798.png"
     }
    ],
    "photo_options": [
@@ -5226,9 +5254,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2026/02/Shia-LaBeouf-wearing-G-Shock-watch.webp",
-   "photo_src_page": "https://www.g-central.com/shia-labeouf-has-been-wearing-a-g-shock-watch-lately/",
-   "photo_src_credit": "@indianajonessouthamerica via G-Central"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "@indianajonessouthamerica via G-Central",
+    "source_url": "https://www.g-central.com/shia-labeouf-has-been-wearing-a-g-shock-watch-lately/"
+   }
   },
   {
    "celeb": "Jungkook (BTS)",
@@ -5258,7 +5288,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600ubb-1/assets/DW-5600UBB-1.png",
      "price": "$83.99",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "4e0d40",
+     "img": "images/cut/065-4e0d40.png"
     }
    ],
    "photo_options": [
@@ -5287,9 +5319,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2024/06/TAEHYUNG-V-JUNGKOOK-BTS-G-SHOCK-DW-5600-WATCH.jpg",
-   "photo_src_page": "https://www.g-central.com/taehyung-and-jungkook-of-bts-wear-g-shock-dw-5600-watches-during-military-service/",
-   "photo_src_credit": "G-Central"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "G-Central",
+    "source_url": "https://www.g-central.com/taehyung-and-jungkook-of-bts-wear-g-shock-dw-5600-watches-during-military-service/"
+   }
   },
   {
    "celeb": "Ryan Gosling",
@@ -5327,7 +5361,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A1/A16/A168WA-1/us-assets/A168W-1.png",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "8f56c9",
+     "img": "images/cut/066-8f56c9.png"
     }
    ],
    "photo_options": [
@@ -5361,9 +5397,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://cdn.strapsco.com/wp-content/uploads/2021/02/affordable_watches_worn_by_celebrities_ryan_gosling_casio_a168wa.jpg",
-   "photo_src_page": "https://strapsco.com/affordable-watches-worn-by-celebrities/",
-   "photo_src_credit": "Strapsco"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Strapsco",
+    "source_url": "https://strapsco.com/affordable-watches-worn-by-celebrities/"
+   }
   },
   {
    "celeb": "Zohran Mamdani",
@@ -5401,7 +5439,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A1/A10/a1000ma-7/assets/A1000MA-7_front.jpg.transform/main-visual-pc/image.jpg",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "5045bf",
+     "img": "images/cut/067-5045bf.png"
     }
    ],
    "photo_options": [
@@ -5440,9 +5480,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.gearpatrol.com/wp-content/uploads/sites/2/2025/06/Casio-A1000MA-7E-Zohran-Mamdani-on-Wrist-jpg.webp",
-   "photo_src_page": "https://www.gearpatrol.com/?p=904295",
-   "photo_src_credit": "Gear Patrol"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Gear Patrol",
+    "source_url": "https://www.gearpatrol.com/?p=904295"
+   }
   },
   {
    "celeb": "Idris Elba",
@@ -5476,7 +5518,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A1/A16/A168WG-9/assets/A168WG-9.png",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "65f4cf",
+     "img": "images/cut/068-65f4cf.png"
     }
    ],
    "photo_options": [
@@ -5505,9 +5549,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://timeandtidewatches.com/wp-content/uploads/2022/07/Idris-Elba-2016-billboard-1548.jpg",
-   "photo_src_page": "https://timeandtidewatches.com/evolution-of-a-collection-idris-elbas-wrist-wear-is-as-versatile-as-his-performances/",
-   "photo_src_credit": "Time+Tide / Billboard"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Time+Tide / Billboard",
+    "source_url": "https://timeandtidewatches.com/evolution-of-a-collection-idris-elbas-wrist-wear-is-as-versatile-as-his-performances/"
+   }
   },
   {
    "celeb": "Bryan Cranston (Walter White)",
@@ -5545,7 +5591,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/C/CA/CA5/CA-53W-1/us-assets/CA53W-1.png",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "1c7179",
+     "img": "images/cut/069-1c7179.png"
     }
    ],
    "photo_options": [
@@ -5574,9 +5622,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/Walter-White-Casio-2.jpg?v=1684352248",
-   "photo_src_page": "https://teddybaldassarre.com/blogs/watches/walter-white-watch",
-   "photo_src_credit": "AMC / Teddy Baldassarre"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "AMC / Teddy Baldassarre",
+    "source_url": "https://teddybaldassarre.com/blogs/watches/walter-white-watch"
+   }
   },
   {
    "celeb": "Tyler, the Creator",
@@ -5610,7 +5660,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/M/MQ/MQ2/MQ-24-9BLL/us-assets/MQ-24-9BLL_1.jpg",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "75b4d4",
+     "img": "images/cut/070-75b4d4.png"
     }
    ],
    "photo_options": [
@@ -5639,9 +5691,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1682586597-tyler-the-creator-london-show-shutdown-01.jpg",
-   "photo_src_page": "https://highsnobiety.com/p/the-pope-tyler-the-creator-watch",
-   "photo_src_credit": "Getty Images / Brian Ach"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Getty Images / Brian Ach",
+    "source_url": "https://highsnobiety.com/p/the-pope-tyler-the-creator-watch"
+   }
   },
   {
    "celeb": "Barry Keoghan",
@@ -5675,7 +5729,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/europe/en-gb/timepiece/product/watch/A/A1/A16/A163WA-1Q/assets/A163WA-1Q_1.png",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "1cdab2",
+     "img": "images/cut/071-1cdab2.png"
     }
    ],
    "photo_options": [
@@ -5709,9 +5765,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2024/01/SALTBURN-BARRY-KEOGHAN-CASIO-WATCH.jpg",
-   "photo_src_page": "https://www.g-central.com/what-casio-watch-does-barry-keoghan-wear-in-saltburn/",
-   "photo_src_credit": "Amazon MGM Studios / G-Central"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Amazon MGM Studios / G-Central",
+    "source_url": "https://www.g-central.com/what-casio-watch-does-barry-keoghan-wear-in-saltburn/"
+   }
   },
   {
    "celeb": "Jay-Z",
@@ -5741,7 +5799,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "cf589a",
+     "img": "images/cut/072-cf589a.png"
     }
    ],
    "photo_options": [
@@ -5775,9 +5835,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://hiphopwired.com/wp-content/uploads/sites/43/2026/03/17743593144277.jpeg?w=753&strip=all&quality=80",
-   "photo_src_page": "https://blackamericaweb.com/2026/03/24/jay-z-covers-april-2026-issue-of-gq-magazine/",
-   "photo_src_credit": "Rashid Johnson courtesy of GQ"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Rashid Johnson courtesy of GQ",
+    "source_url": "https://blackamericaweb.com/2026/03/24/jay-z-covers-april-2026-issue-of-gq-magazine/"
+   }
   },
   {
    "celeb": "Harry Styles",
@@ -5811,7 +5873,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "996334",
+     "img": "images/cut/073-996334.png"
     }
    ],
    "photo_options": [
@@ -5850,9 +5914,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://imgix.bustle.com/uploads/image/2024/8/21/ae65250c/blu_a97594802.jpg?w=414&h=623&fit=crop&crop=focalpoint&dpr=2&fp-x=0.4874&fp-y=0.2081",
-   "photo_src_page": "https://www.wmagazine.com/fashion/harry-styles-black-shorts-adidas-jacket-sambas-london",
-   "photo_src_credit": "SplashNews.com / W Magazine"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "SplashNews.com / W Magazine",
+    "source_url": "https://www.wmagazine.com/fashion/harry-styles-black-shorts-adidas-jacket-sambas-london"
+   }
   },
   {
    "celeb": "A$AP Rocky",
@@ -5890,7 +5956,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "631c89",
+     "img": "images/cut/074-631c89.png"
     }
    ],
    "photo_options": [
@@ -5924,9 +5992,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1632552323-asap-rocky-adidas-originals-samba-buy-here-00.jpg",
-   "photo_src_page": "https://highsnobiety.com/p/asap-rocky-adidas-originals-samba-buy-here",
-   "photo_src_credit": "Highsnobiety (via @asapnast)"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Highsnobiety (via @asapnast)",
+    "source_url": "https://highsnobiety.com/p/asap-rocky-adidas-originals-samba-buy-here"
+   }
   },
   {
    "celeb": "Abdul Carter",
@@ -5956,7 +6026,9 @@
      "image_src": "https://images.soleretriever.com/blog/637520b2e84b21f2c46932107d15513f578227c3-1070x760.png",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "418095",
+     "img": "images/cut/075-418095.png"
     }
    ],
    "photo_options": [
@@ -5985,9 +6057,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://images.soleretriever.com/blog/ef5bf6ef59c5fc75ca01939b4ad38e8b2f14f4b8-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-   "photo_src_credit": "Sole Retriever"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+   }
   },
   {
    "celeb": "Finn Wolfhard",
@@ -6017,7 +6091,9 @@
      "image_src": "https://imgcdn.carhartt.com/is/image/Carhartt/EU_A18_BRN?fit=constrain,1&wid=798&hei=800&fmt=jpg",
      "price": "$20",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "0d90ab",
+     "img": "images/cut/076-0d90ab.png"
     }
    ],
    "photo_options": [
@@ -6046,9 +6122,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://i0.wp.com/media.hollywoodlife.com/uploads/2023/02/Stars-Wearing-Beanies-Knit-hats-gallery-10.jpg?w=680&quality=89&ssl=1",
-   "photo_src_page": "https://hollywoodlife.com/pics/celebrities-wearing-beanies-photos/",
-   "photo_src_credit": "Splashnews / HollywoodLife"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Splashnews / HollywoodLife",
+    "source_url": "https://hollywoodlife.com/pics/celebrities-wearing-beanies-photos/"
+   }
   },
   {
    "celeb": "Hudson Williams",
@@ -6078,7 +6156,9 @@
      "image_src": "https://images.journeys.com/images/products/1_898298_FS.JPG",
      "price": "$160",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "053512",
+     "img": "images/cut/077-053512.png"
     }
    ],
    "photo_options": [
@@ -6112,9 +6192,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://cdn.mos.cms.futurecdn.net/auLwyj8gnMiYjbX4A5q4jM-1920-80.png",
-   "photo_src_page": "https://www.marieclaire.com/fashion/celebrity-style/hudson-williams-new-balance-9060-sneakers/",
-   "photo_src_credit": "Backgrid / Marie Claire"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Backgrid / Marie Claire",
+    "source_url": "https://www.marieclaire.com/fashion/celebrity-style/hudson-williams-new-balance-9060-sneakers/"
+   }
   },
   {
    "celeb": "Josh Allen",
@@ -6144,7 +6226,9 @@
      "image_src": "https://stansshoes.com/cdn/shop/files/Mens-New-Balance-990v6-GreyCastlerock-left.jpg?v=1731010113",
      "price": "$200",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "aae47b",
+     "img": "images/cut/078-aae47b.png"
     }
    ],
    "photo_options": [
@@ -6173,9 +6257,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_58,w_5343,h_3005/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/kicks/01k29xm0hzap7ez6vmns.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/josh-allen-teases-new-balance-deal-at-bills-preseason-game",
-   "photo_src_credit": "Gregory Fisher-Imagn Images"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Gregory Fisher-Imagn Images",
+    "source_url": "https://www.si.com/fannation/sneakers/news/josh-allen-teases-new-balance-deal-at-bills-preseason-game"
+   }
   },
   {
    "celeb": "Jack Harlow",
@@ -6205,7 +6291,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/640/719/original/1120422_01.jpg.jpeg?action=crop&width=750",
      "price": "$110",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "5a5594",
+     "img": "images/cut/079-5a5594.png"
     }
    ],
    "photo_options": [
@@ -6234,9 +6322,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_1584%2Cy_766/MTk3NjM4NjAxNTYxODc2Mjc0/knicks-fans.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/celebrities-show-off-sneakers-at-madison-square-garden",
-   "photo_src_credit": "Brad Penner-USA TODAY Sports"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Brad Penner-USA TODAY Sports",
+    "source_url": "https://www.si.com/fannation/sneakers/news/celebrities-show-off-sneakers-at-madison-square-garden"
+   }
   },
   {
    "celeb": "Shohei Ohtani",
@@ -6266,7 +6356,9 @@
      "image_src": "https://img.hypeboost.com/products/new-balance-2002r-eclipse-raincloud/w900/img01.jpg",
      "price": "$180",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "8f8f42",
+     "img": "images/cut/080-8f8f42.png"
     }
    ],
    "photo_options": [
@@ -6295,9 +6387,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MjAzMDkwNDM5NzczODkwMTE1/shohei-ohtani.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game",
-   "photo_src_credit": "Sports Illustrated (no credit line)"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sports Illustrated (no credit line)",
+    "source_url": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game"
+   }
   },
   {
    "celeb": "Jameis Winston",
@@ -6327,7 +6421,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/077/813/908/original/1019489_01.jpg.jpeg?action=crop&width=750",
      "price": "$160",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "062fe0",
+     "img": "images/cut/081-062fe0.png"
     }
    ],
    "photo_options": [
@@ -6356,9 +6452,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/MjAwMjM3MDEwMzM2NjIxNjc2/jameis-winston.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/jameis-winston-wears-new-balance-shoes-in-saints-colors",
-   "photo_src_credit": "Sports Illustrated (no credit line)"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sports Illustrated (no credit line)",
+    "source_url": "https://www.si.com/fannation/sneakers/news/jameis-winston-wears-new-balance-shoes-in-saints-colors"
+   }
   },
   {
    "celeb": "Patrick Dempsey",
@@ -6388,7 +6486,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/091/229/780/original/1141880_01.jpg.jpeg?action=crop&width=750",
      "price": "$120",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "9c632a",
+     "img": "images/cut/082-9c632a.png"
     }
    ],
    "photo_options": [
@@ -6417,9 +6517,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1668873579-patrick-dempsey-suit-new-balance-outfit.jpg",
-   "photo_src_page": "https://highsnobiety.com/p/patrick-dempsey-suit-new-balance-outfit",
-   "photo_src_credit": "Highsnobiety (no credit line)"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Highsnobiety (no credit line)",
+    "source_url": "https://highsnobiety.com/p/patrick-dempsey-suit-new-balance-outfit"
+   }
   }
  ]
 }
