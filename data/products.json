@@ -1,20 +1,6 @@
 {
  "products": [
   {
-   "id": "mv42bzq2wmkr",
-   "url": "https://stockx.com/new-balance-9060-earth-shadow-flat-taupe",
-   "store": "stockx.com",
-   "title_raw": "New Balance 9060 Earth Shadow Flat Taupe",
-   "brand": "New Balance",
-   "name": "9060 Earth Shadow Flat Taupe",
-   "image": "https://images.stockx.com/images/New-Balance-9060-Earth-Shadow-Flat-Taupe.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1754423578",
-   "price": "59",
-   "currency": "USD",
-   "added": "2026-10-11T16:54:05.978Z",
-   "enriched": "basic",
-   "category": "sneakers"
-  },
-  {
    "id": "mv19lymmrt7j",
    "url": "https://stockx.com/nike-air-max-goadome-low-sp-black-metallic-silver-pale-citron",
    "store": "stockx.com",

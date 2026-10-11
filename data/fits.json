@@ -659,14 +659,15 @@
      "label": "Exact",
      "brand": "New Balance",
      "name": "9060 'Earth Shadow'",
-     "retailer": "newbalance",
-     "query": "9060",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/new-balance-9060-earth-shadow-flat-taupe",
      "note": "",
      "image_src": "https://nb.scene7.com/is/image/NB/u9060etn_nb_02_i?$pdpflexf2$&wid=880&hei=880",
      "id": "644b5b",
      "img": "images/cut/008-644b5b.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "image_replace": "https://images.stockx.com/images/New-Balance-9060-Earth-Shadow-Flat-Taupe.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1754423578"
     },
     {
      "slide": 3,
@@ -697,7 +698,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-11T16:54:37.639Z",
    "photo_options": [
     {
      "image": "https://gqhongkong.com/wp-content/uploads/2026/09/2275925336-683x1024.webp",
