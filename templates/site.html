@@ -59,8 +59,7 @@ a { color: inherit; }
 
 /* tag grid */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-.tagcard { position: relative; display: flex; flex-direction: column; gap: 6px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px 6px 6px 6px; padding: 16px 16px 14px 44px; text-decoration: none; min-width: 0; transition: transform .15s ease, border-color .15s ease; }
-.tagcard::before { content: ""; position: absolute; left: 15px; top: 20px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 1px solid var(--line); }
+.tagcard { position: relative; display: flex; flex-direction: column; gap: 6px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px 6px 6px 6px; padding: 16px 16px 14px; text-decoration: none; min-width: 0; transition: transform .15s ease, border-color .15s ease; }
 .tagcard:hover { transform: translateY(-2px); border-color: var(--ink); }
 .tagcard .pic { display: block; aspect-ratio: 4 / 5; margin: 0 0 6px; background: var(--paper); border-radius: 4px; overflow: hidden; }
 .tagcard .pic img { width: 100%; height: 100%; object-fit: contain; display: block; }
@@ -72,6 +71,10 @@ a { color: inherit; }
 .tagcard .pic .minis { position: absolute; left: 8px; bottom: 8px; display: flex; gap: 6px; }
 .tagcard .pic .mini { width: 52px; height: 52px; border-radius: 6px; background: #fff; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.35); display: block; }
 .tagcard .pic .mini img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.tagcard .pic .mini { position: relative; }
+.tagcard .pic .mini b { position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); background: var(--ink); color: var(--paper); font: 600 10px var(--mono); padding: 2px 5px; border-radius: 3px; white-space: nowrap; }
+.tagcard .pic .minis { bottom: 14px; }
+.item .price { font: 500 13px var(--mono); color: var(--muted); margin-top: 2px; }
 .look { margin: 0 0 16px; }
 .look .frame { aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: var(--paper); }
 .look .frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
@@ -260,6 +263,8 @@ function renderHome() {
   drawGrid();
 }
 
+// "Sept 28, 2026" / "Late Aug 2026" / "2026" → "SEP 2026" / "AUG 2026" / "2026" (cards only)
+const shortDate = d => { const y = (String(d).match(/\b(19|20)\d{2}\b/) || [""])[0]; const m = String(d).match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/i); return m ? `${m[1][0].toUpperCase()}${m[1].slice(1).toLowerCase()} ${y}`.trim() : (y || d); };
 function drawGrid() {
   const list = FITS.filter(matches).sort((a, b) => (b.posted_at || "").localeCompare(a.posted_at || "") || +b.find - +a.find);
   const items = list.reduce((n, f) => n + f.items.length, 0);
@@ -273,7 +278,7 @@ function drawGrid() {
       .slice(0, 3);
   };
   document.getElementById("grid").innerHTML = list.length ? list.map(f => { const m = minis(f); const strip = m.length
-      ? `<span class="minis">${m.map(i => `<span class="mini"><img src="${esc(i.image)}" alt="${esc(i.brand + " " + i.name)}" loading="lazy"></span>`).join("")}</span>` : ""; return `
+      ? `<span class="minis">${m.map(i => `<span class="mini"><img src="${esc(i.image)}" alt="${esc(i.brand + " " + i.name)}" loading="lazy">${i.price ? `<b>${esc(i.price)}</b>` : ""}</span>`).join("")}</span>` : ""; return `
     <a class="tagcard" href="${fitUrl(f)}">
       ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy">${strip}</span>`
         : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy">${strip}</span>`
@@ -281,7 +286,7 @@ function drawGrid() {
       <span class="num">FIND #${f.find}</span>
       <span class="who">${esc(f.celeb)}</span>
       <span class="hl">${esc(f.headline)}</span>
-      <span class="meta"><span>${f.category === "Fit" ? "Fit" : f.category}</span><span>${f.items.length} items</span><span>${esc(f.date)}</span></span>
+      <span class="meta"><span>${f.category === "Fit" ? "Fit" : f.category}</span><span>${f.items.length} ${f.items.length === 1 ? "item" : "items"}</span><span>${esc(shortDate(f.date))}</span></span>
     </a>`; }).join("") : `<p class="empty">No finds match that. Try a Find # like 014, a name, or a brand.</p>`;
 }
 
@@ -319,6 +324,7 @@ function renderFit(f) {
               <div style="min-width:0">
                 ${it.brand ? `<div class="brand">${esc(it.brand)}</div>` : ""}
                 <div class="name">${esc(it.name)}</div>
+                ${it.price ? `<div class="price">${esc(it.price)}</div>` : ""}
                 ${it.note ? `<div class="note">${esc(it.note)}</div>` : ""}
               </div>
               <div class="act">${act}</div>

@@ -659,6 +659,7 @@ function renderItems() {
         <label class="f" for="lab${i}">Exact or similar<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
         <label class="f" for="br${i}">Brand<input id="br${i}" data-k="brand" value="${esc(it.brand)}" placeholder="${it.label === "Similar" ? "(optional)" : "Rolex"}"></label>
         <label class="f" for="nm${i}">Item<input id="nm${i}" data-k="name" value="${esc(it.name)}" placeholder="Cosmograph Daytona 126528LN"></label>
+        <label class="f" for="pr${i}">Price<input id="pr${i}" data-k="price" value="${esc(it.price || "")}" placeholder="$110" inputmode="decimal"></label>
         <label class="f wide" for="lk${i}">Link<input id="lk${i}" data-k="_link" value="${esc(it._link)}" placeholder="https://… or chrono24: Rolex 126528LN or custom"><span id="af${i}">${itemAff(it._link)}</span></label>
       </div>
       <div class="ctl">
@@ -898,12 +899,14 @@ async function addProduct(i, v) {
         it.product_url = p.url; it.retailer = ""; it.query = ""; if (/custom piece/i.test(it.note || "")) it.note = "";
         if (!it.brand && v.brand) it.brand = v.brand;
         if (!it.type && v.type) it.type = v.type;
+        if (prodPrice(p)) it.price = prodPrice(p);
         if (p.image) { if (it.img) it.image_replace = p.image; else { it.image_src = p.image; delete it.image_fetch; } }
         f.updated = new Date().toISOString();
         return;
       }
       const item = { slide: f.items.length + 2, label: v.label === "Exact" ? "Exact" : "Similar", brand: v.brand, name: v.name, retailer: "", query: "", product_url: p.url, note: "" };
       if (v.type) item.type = v.type;
+      if (prodPrice(p)) item.price = prodPrice(p);
       if (p.image) item.image_src = p.image;  // the build cuts out the background
       f.items.push(item);
       f.updated = new Date().toISOString();
@@ -1125,6 +1128,8 @@ function parseItems() {
       out.note = out.note && !/custom piece/i.test(out.note) ? out.note : "Custom piece — not for sale";
     } else throw new Error(`Item ${n}: the link should be a web address, "retailer: search words", or custom.`);
     if (out.product_url || out.retailer) out.note = /custom piece/i.test(out.note || "") ? "" : (out.note || "");
+    const pr = (out.price || "").trim().replace(/\s+/g, "");
+    if (pr) out.price = /^[\d.,]+$/.test(pr) ? "$" + pr : pr; else delete out.price;
     return out;
   });
 }

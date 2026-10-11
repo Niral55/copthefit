@@ -187,7 +187,7 @@ def main():
                 shutil.copy(cut, DIST / "img" / cut.name)
             items.append(dict(
                 slide=it["slide"], label=it["label"], type=it.get("type") or guess_type(it["name"] + " " + it.get("note", ""), it.get("brand", "")), brand=it.get("brand", ""), name=it["name"],
-                retailer_name=retailer_name(cfg, it), url=raw_url(cfg, it), note=it.get("note", ""),
+                retailer_name=retailer_name(cfg, it), url=raw_url(cfg, it), note=it.get("note", ""), price=it.get("price", ""),
                 image=f"img/{cut.name}" if cut else ""))
         first = next((i["image"] for i in items if i["image"] and i["label"] == "Exact"), "") or \
             next((i["image"] for i in items if i["image"]), "")
