@@ -5960,7 +5960,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "2ef185",
+     "img": "images/cut/074-2ef185.png"
     }
    ],
    "photo_options": [
@@ -6000,9 +6002,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "samba",
-   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1692007224-austin-butler-adidas-samba-001.jpg",
-   "photo_src_page": "https://www.highsnobiety.com/p/austin-butler-adidas-samba",
-   "photo_src_credit": "RMBI/LESE / BACKGRID via Highsnobiety"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "RMBI/LESE / BACKGRID via Highsnobiety",
+    "source_url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
+   }
   },
   {
    "celeb": "Paul Mescal",
@@ -6030,7 +6034,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "55698a",
+     "img": "images/cut/075-55698a.png"
     }
    ],
    "photo_options": [
@@ -6065,9 +6071,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "samba",
-   "photo_src": "https://stylegirlfriend.com/wp-content/uploads/2023/03/paul-mescal-white-adidas-samba.png",
-   "photo_src_page": "https://stylegirlfriend.com/samba-outfit-men/",
-   "photo_src_credit": "GQ via Style Girlfriend"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "GQ via Style Girlfriend",
+    "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
+   }
   },
   {
    "celeb": "Devin Booker",
@@ -6099,7 +6107,9 @@
      "image_src": "https://www.nicekicks.com/files/2025/12/ib6687-001-1-1200x1200.jpg",
      "price": "$69",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "6fa388",
+     "img": "images/cut/077-6fa388.png"
     }
    ],
    "photo_options": [
@@ -6134,9 +6144,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "nbasig",
-   "photo_src": "https://cdn.arizonasports.com/arizonasports/wp-content/uploads/2025/11/nike-book-2-release-date-5-e1763526914610.webp",
-   "photo_src_page": "https://arizonasports.com/threads/nike-book-2-price-release-date/3602835/",
-   "photo_src_credit": "Nike"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Nike",
+    "source_url": "https://arizonasports.com/threads/nike-book-2-price-release-date/3602835/"
+   }
   },
   {
    "celeb": "Luka Dončić",
@@ -6168,7 +6180,9 @@
      "image_src": "https://images.soleretriever.com/blog/c4c2d57bcaa41c4e1eab0d2b041866933d8e49c7-1070x760.png?quality=90&fit=clip&auto=format&width=1600",
      "price": "$76",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "b915b2",
+     "img": "images/cut/078-b915b2.png"
     }
    ],
    "photo_options": [
@@ -6208,9 +6222,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "nbasig",
-   "photo_src": "https://www.nicekicks.com/files/2025/12/Luka-Doncic-1200x1500.jpg",
-   "photo_src_page": "https://www.nicekicks.com/luka-doncic-unveils-jordan-luka-5/",
-   "photo_src_credit": "Jordan Brand via Nice Kicks"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Jordan Brand via Nice Kicks",
+    "source_url": "https://www.nicekicks.com/luka-doncic-unveils-jordan-luka-5/"
+   }
   },
   {
    "celeb": "Giannis Antetokounmpo",
@@ -6246,7 +6262,9 @@
      "image_src": "https://cdn.sanity.io/images/pu5wtzfc/production/6fd40ca8a22eb938fb383a77787325af228ba1f3-2400x1500.jpg",
      "price": "$99",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "a8788b",
+     "img": "images/cut/079-a8788b.png"
     }
    ],
    "photo_options": [
@@ -6286,9 +6304,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "nbasig",
-   "photo_src": "https://cdn.sanity.io/images/pu5wtzfc/production/2f0ebac4be4e96b5623a1b790b23c3b88caea6bc-2160x2698.jpg",
-   "photo_src_page": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600",
-   "photo_src_credit": "Nike via House of Heat"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Nike via House of Heat",
+    "source_url": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600"
+   }
   },
   {
    "celeb": "Jayson Tatum",
@@ -6320,7 +6340,9 @@
      "image_src": "https://www.nicekicks.com/files/2025/09/jordan-tatum-4-OQBYxmNJ-1200x1200.jpg",
      "price": "$59",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "66c8ab",
+     "img": "images/cut/080-66c8ab.png"
     }
    ],
    "photo_options": [
@@ -6360,9 +6382,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "nbasig",
-   "photo_src": "https://andscape.com/wp-content/uploads/2025/09/005_ho25-jd-tatum4-athlete-storytelling-portrait-paired-a-retail-vertical-ac.jpg",
-   "photo_src_page": "https://andscape.com/features/inside-jayson-tatum-new-jordan-tatum-4-st-louis-sneakers-io5030-600/",
-   "photo_src_credit": "Jordan Brand via Andscape"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Jordan Brand via Andscape",
+    "source_url": "https://andscape.com/features/inside-jayson-tatum-new-jordan-tatum-4-st-louis-sneakers-io5030-600/"
+   }
   },
   {
    "celeb": "Kid Cudi",
@@ -6390,7 +6414,9 @@
      "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0114_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
      "price": "$77",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "a65f26",
+     "img": "images/cut/081-a65f26.png"
     }
    ],
    "photo_options": [
@@ -6430,9 +6456,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "staples",
-   "photo_src": "https://cms.factmagazines.com/wp-content/uploads/2022/01/Levi-501-001.jpg",
-   "photo_src_page": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary",
-   "photo_src_credit": "Levi's / Fact Magazine"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Levi's / Fact Magazine",
+    "source_url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
+   }
   },
   {
    "celeb": "Austin Butler",
@@ -6464,7 +6492,9 @@
      "image_src": "https://imgcdn.carhartt.com/is/image/Carhartt/EU_103828_BLK?fit=constrain,1&wid=798&hei=800&fmt=jpg",
      "price": "$130",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "9cc4ca",
+     "img": "images/cut/082-9cc4ca.png"
     }
    ],
    "photo_options": [
@@ -6499,9 +6529,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "staples",
-   "photo_src": "https://hips.hearstapps.com/hmg-prod/images/austin-butler-is-seen-in-the-upper-west-side-on-september-news-photo-1727215638.jpg",
-   "photo_src_page": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket",
-   "photo_src_credit": "Getty Images / Biography"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Getty Images / Biography",
+    "source_url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
+   }
   },
   {
    "celeb": "Seth Rogen",
@@ -6529,7 +6561,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/462/474/original/1028299.png.png?width=750",
      "price": "$185",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "18e20f",
+     "img": "images/cut/083-18e20f.png"
     }
    ],
    "photo_options": [
@@ -6564,9 +6598,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "staples",
-   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1672849175-seth-rogen-birkenstock-0.jpg",
-   "photo_src_page": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/",
-   "photo_src_credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety",
+    "source_url": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/"
+   }
   },
   {
    "celeb": "Bad Bunny",
@@ -6598,7 +6634,9 @@
      "image_src": "https://media.finishline.com/i/finishline/10001C_001_P1",
      "price": "$50",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "d51848",
+     "img": "images/cut/084-d51848.png"
     }
    ],
    "photo_options": [
@@ -6628,9 +6666,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "staples",
-   "photo_src": "https://headlineplanet.com/home/wp-content/uploads/2020/02/Bad-Bunny-Fallon-4.jpg",
-   "photo_src_page": "https://www.complex.com/style/how-to-wear-crocs-like-celebrities/lebron-james",
-   "photo_src_credit": "NBC / Headline Planet (via Complex)"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "NBC / Headline Planet (via Complex)",
+    "source_url": "https://www.complex.com/style/how-to-wear-crocs-like-celebrities/lebron-james"
+   }
   },
   {
    "celeb": "Jalen Ramsey",
@@ -6658,7 +6698,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/113/832/849/original/1672519_01.jpg.jpeg?width=750",
      "price": "$87",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "0aaf7e",
+     "img": "images/cut/085-0aaf7e.png"
     }
    ],
    "photo_options": [
@@ -6688,9 +6730,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "tunnel",
-   "photo_src": "https://images.soleretriever.com/blog/a72c41712b6e04efdba7fbf77c841c59a631300f-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-   "photo_src_credit": "Sole Retriever"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+   }
   },
   {
    "celeb": "Khalil Mack",
@@ -6718,7 +6762,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/111/881/216/original/1536330_01.jpg.jpeg?width=750",
      "price": "$229",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "090166",
+     "img": "images/cut/086-090166.png"
     }
    ],
    "photo_options": [
@@ -6748,9 +6794,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "tunnel",
-   "photo_src": "https://images.soleretriever.com/blog/a42aef81303fd23cf03a3f51673f3e669144cef9-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits",
-   "photo_src_credit": "Sole Retriever"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
+   }
   },
   {
    "celeb": "Stephon Castle",
@@ -6778,7 +6826,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/112/064/695/original/1567309_01.jpg.jpeg?width=750",
      "price": "$284",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "18a1c3",
+     "img": "images/cut/087-18a1c3.png"
     }
    ],
    "photo_options": [
@@ -6813,9 +6863,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "tunnel",
-   "photo_src": "https://dmfashionbook.com/wp-content/uploads/2026/06/IMG_3828-810x1024.jpg",
-   "photo_src_page": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/",
-   "photo_src_credit": "@shotbybxfredo / DM Fashion Book"
+   "photo_search": "2026-10-11",
+   "photo": {
+    "credit": "@shotbybxfredo / DM Fashion Book",
+    "source_url": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/"
+   }
   }
  ]
 }
