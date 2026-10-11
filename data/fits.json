@@ -2405,14 +2405,15 @@
      "label": "Exact",
      "brand": "Nike",
      "name": "Air Force 1 '07 (white)",
-     "retailer": "nike",
-     "query": "air force 1 07 white",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/nike-air-force-1-low-white-07",
      "note": "",
      "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/AIR+FORCE+1+%2707.png",
      "id": "e68ad0",
      "img": "images/cut/031-e68ad0.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "image_replace": "https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07-Product_V2.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1785333173"
     },
     {
      "slide": 4,
@@ -2432,7 +2433,7 @@
    "photo_source": "https://www.complex.com/style/a/mike-destefano/best-dressed-rappers-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-11T17:03:53.790Z",
    "photo_options": [
     {
      "image": "https://media.nbcnewyork.com/2026/06/GettyImages-2280028226-e1780969852283.jpg?quality=85&strip=all&resize=218%2C123",
