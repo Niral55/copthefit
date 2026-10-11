@@ -10,6 +10,7 @@ Claude follows this file whenever Niral asks for leads in chat (or presses **Fin
 5. **No watermarked stock previews** (Vecteezy, Alamy, Shutterstock comps) and no Instagram/TikTok/X CDN links (they expire).
 6. **Item `note` is shown on the public site.** Only customer-facing text goes there (e.g. "Custom piece — not for sale"). Never research notes, "confirm the price", other store links or doubts. Put those in the lead's top-level `note`.
 7. **Set `price`** on each item when the store page shows it (e.g. "$110").
+7b. **Link to stores Niral can earn on:** `product_url` goes to **Amazon, StockX or GOAT** first (sneakers → StockX/GOAT, watches and clothing → Amazon), and only falls back to a brand store if none of those sells the exact item. Always a specific product page, never a search.
 8. **Never repeat a fit** (run the dedupe check) and never re-add one Niral rejected.
 9. **If a lead can't meet all of this, drop it** and say so. Fewer good leads beat padded ones.
 
