@@ -68,6 +68,10 @@ a { color: inherit; }
   background: repeating-linear-gradient(-45deg, var(--paper) 0 8px, var(--tag) 8px 16px); }
 .tagcard .pic .ph { width: 100%; height: 100%; border: 0; }
 .tagcard .pic.photo img { object-fit: cover; object-position: center 20%; }
+.tagcard .pic { position: relative; }
+.tagcard .pic .minis { position: absolute; left: 8px; bottom: 8px; display: flex; gap: 6px; }
+.tagcard .pic .mini { width: 52px; height: 52px; border-radius: 6px; background: #fff; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.35); display: block; }
+.tagcard .pic .mini img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .look { margin: 0 0 16px; }
 .look .frame { aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: var(--paper); }
 .look .frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
@@ -260,18 +264,19 @@ function drawGrid() {
   const list = FITS.filter(matches).sort((a, b) => (b.posted_at || "").localeCompare(a.posted_at || "") || +b.find - +a.find);
   const items = list.reduce((n, f) => n + f.items.length, 0);
   document.getElementById("count").textContent = `${list.length} ${list.length === 1 ? "find" : "finds"} · ${items} items · latest first`;
-  // Kicks / Wrist: show the item itself (Exact first), not the person wearing it
-  const itemPic = f => {
-    const t = CAT_TYPES[state.cat];
-    if (!t || state.cat === "Fit") return null;
-    const m = f.items.filter(i => i.image && t.includes(i.type));
-    return (m.find(i => i.label === "Exact") || m[0] || {}).image || null;
+  // Mini product cards over the celeb photo: Exact pieces first; on Kicks/Wrist the matching pieces lead
+  const minis = f => {
+    const t = CAT_TYPES[state.cat] || [];
+    const seen = new Set(f.cover ? [] : [f.image]);
+    return f.items.filter(i => i.image && !seen.has(i.image) && seen.add(i.image))
+      .sort((a, b) => (t.includes(b.type) - t.includes(a.type)) || ((b.label === "Exact") - (a.label === "Exact")))
+      .slice(0, 3);
   };
-  document.getElementById("grid").innerHTML = list.length ? list.map(f => { const ip = itemPic(f); return `
+  document.getElementById("grid").innerHTML = list.length ? list.map(f => { const m = minis(f); const strip = m.length
+      ? `<span class="minis">${m.map(i => `<span class="mini"><img src="${esc(i.image)}" alt="${esc(i.brand + " " + i.name)}" loading="lazy"></span>`).join("")}</span>` : ""; return `
     <a class="tagcard" href="${fitUrl(f)}">
-      ${ip ? `<span class="pic"><img src="${esc(ip)}" alt="" loading="lazy"></span>`
-        : f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy"></span>`
-        : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy"></span>`
+      ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy">${strip}</span>`
+        : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy">${strip}</span>`
         : `<span class="pic"><span class="ph">Photo coming</span></span>`}
       <span class="num">FIND #${f.find}</span>
       <span class="who">${esc(f.celeb)}</span>
