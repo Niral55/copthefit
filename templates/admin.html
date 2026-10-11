@@ -659,7 +659,7 @@ function renderItems() {
         <label class="f" for="lab${i}">Exact or similar<select id="lab${i}" data-k="label"><option${it.label === "Exact" ? " selected" : ""}>Exact</option><option${it.label === "Similar" ? " selected" : ""}>Similar</option></select></label>
         <label class="f" for="br${i}">Brand<input id="br${i}" data-k="brand" value="${esc(it.brand)}" placeholder="${it.label === "Similar" ? "(optional)" : "Rolex"}"></label>
         <label class="f" for="nm${i}">Item<input id="nm${i}" data-k="name" value="${esc(it.name)}" placeholder="Cosmograph Daytona 126528LN"></label>
-        <label class="f" for="pr${i}">Price<input id="pr${i}" data-k="price" value="${esc(it.price || "")}" placeholder="$110" inputmode="decimal"></label>
+        <label class="f" for="pr${i}">Price<input id="pr${i}" data-k="price" value="${esc(it.price || "")}" placeholder="${esc(it.price_auto ? it.price_auto + " (store, " + it.price_checked + ")" : "$110")}" inputmode="decimal"></label>
         <label class="f wide" for="lk${i}">Link<input id="lk${i}" data-k="_link" value="${esc(it._link)}" placeholder="https://… or chrono24: Rolex 126528LN or custom"><span id="af${i}">${itemAff(it._link)}</span></label>
       </div>
       <div class="ctl">
@@ -1136,7 +1136,7 @@ function parseItems() {
 
 // The build and the Instagram poster change posts in the background (cut-out images, cover processing,
 // "posted" status). Saving an editor that was opened before those changes must not undo them.
-const BOT_ITEM_KEYS = ["img", "id", "image_fetch", "image_src", "image_replace", "image_replace_failed"];
+const BOT_ITEM_KEYS = ["img", "id", "image_fetch", "image_src", "image_replace", "image_replace_failed", "price_auto", "price_checked"];
 function keepBackgroundChanges(latest, fresh, action) {
   for (const k of ["posted_at", "ig_media_id", "ig_permalink"]) if (latest[k]) fresh[k] = latest[k];
   if (latest.status === "posted" && !["unpublish", "restore"].includes(action)) { fresh.status = "posted"; fresh.ig_queue = false; }

@@ -1,0 +1,41 @@
+name: Weekly price check
+
+# Reads each item's current price from its store page once a week (Mondays ~9am New York), or on demand.
+on:
+  schedule:
+    - cron: "52 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Check prices
+        run: cd scripts && python fetch_prices.py fetch "$RUNNER_TEMP/prices.json"
+      - name: Save (on the newest main, so nothing else is overwritten), then rebuild the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "copthefit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            (cd scripts && python fetch_prices.py apply "$RUNNER_TEMP/prices.json")
+            [ -z "$(git status --porcelain data/fits.json)" ] && echo "No price changes" && exit 0
+            git add data/fits.json && git commit -qm "Weekly price check" && git push -q && gh workflow run build.yml && exit 0
+            sleep 5
+          done
+          exit 1
