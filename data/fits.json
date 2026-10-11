@@ -219,12 +219,13 @@
      "label": "Exact",
      "brand": "Nike x Travis Scott",
      "name": "Zoom Vapor 12 HC (Cactus Jack)",
-     "retailer": "nike",
-     "query": "Travis Scott Zoom Vapor 12",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/nike-court-air-zoom-vapor-12-hc-travis-scott-pale-ivory",
      "note": "",
      "id": "a9a02f",
-     "type": "sneakers"
+     "type": "sneakers",
+     "image_src": "https://images.stockx.com/images/Nike-Court-Air-Zoom-Vapor-12-HC-Travis-Scott-Pale-Ivory.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1791213970"
     },
     {
      "slide": 3,
@@ -301,7 +302,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-11T16:52:46.540Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/09/GettyImages-2292904214-710x1024.jpg",
