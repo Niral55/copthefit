@@ -34,8 +34,8 @@ jobs:
           for i in 1 2 3 4 5; do
             git fetch -q origin main && git reset -q --hard origin/main
             (cd scripts && python fetch_prices.py apply "$RUNNER_TEMP/prices.json")
-            [ -z "$(git status --porcelain data/fits.json)" ] && echo "No price changes" && exit 0
-            git add data/fits.json && git commit -qm "Weekly price check" && git push -q && gh workflow run build.yml && exit 0
+            [ -z "$(git status --porcelain data/fits.json data/status.json)" ] && echo "No price changes" && exit 0
+            git add data/fits.json data/status.json && git commit -qm "Weekly price check" && git push -q && gh workflow run build.yml && exit 0
             sleep 5
           done
           exit 1

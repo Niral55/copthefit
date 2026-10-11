@@ -16,7 +16,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from common import load_fits, save_fits
+from common import ROOT, load_fits, save_fits
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml", "Accept-Language": "en-US,en;q=0.9"}
@@ -97,11 +97,20 @@ def fetch(out):
             print(f"#{fit['find']} {host}: {p or '-'}")
             time.sleep(1)
     json.dump(res, open(out, "w"), indent=1)
-    print(f"{sum(1 for v in res.values() if v)} of {len(res)} prices found")
+    found = sum(1 for v in res.values() if v)
+    print(f"{found} of {len(res)} prices found")
+    res["__summary__"] = f"{found} of {len(res)} store links had a readable price"
 
 
 def apply(src):
     res, doc, today = json.load(open(src)), load_fits(), date.today().isoformat()
+    st_path = ROOT / "data" / "status.json"  # so the admin (and Claude) can see how the last check went
+    try:
+        st = json.loads(st_path.read_text())
+    except (OSError, ValueError):
+        st = {}
+    st["prices"] = {"last_run": today, "message": res.pop("__summary__", "")}
+    st_path.write_text(json.dumps(st, indent=1) + "\n")
     for fit in doc["fits"]:
         for it in fit["items"]:
             k = key(fit, it)
