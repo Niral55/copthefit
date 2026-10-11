@@ -1638,11 +1638,10 @@
      "query": "",
      "product_url": "https://www.goat.com/sneakers/samba-og-b75806",
      "note": "",
-     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Samba_OG_Shoes_White_B75806_01_00_standard.jpg",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "id": "dc3c4a",
-     "img": "images/cut/020-dc3c4a-v1791557411.png",
-     "type": "sneakers",
-     "image_replace": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750"
+     "img": "images/cut/020-dc3c4a-v1791738087.png",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
@@ -1924,11 +1923,10 @@
      "query": "",
      "product_url": "https://stockx.com/air-jordan-1-retro-high-og-chicago-reimagined-lost-and-found",
      "note": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/083/401/929/original/14741_01.jpg.jpeg?width=750",
+     "image_src": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Chicago-Reimagined-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1738193358",
      "id": "d3f88b",
-     "img": "images/cut/024-d3f88b-v1791557416.png",
-     "type": "sneakers",
-     "image_replace": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Chicago-Reimagined-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1738193358"
+     "img": "images/cut/024-d3f88b-v1791738124.png",
+     "type": "sneakers"
     },
     {
      "slide": 3,
@@ -2109,11 +2107,10 @@
      "query": "",
      "product_url": "https://stockx.com/nike-air-max-goadome-low-sp-black-metallic-silver-pale-citron",
      "note": "",
-     "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/6ee19bfa-ae5c-4de7-986f-c75f909831b4/AIR+MAX+GOADOME+LOW+QS.png",
+     "image_src": "https://images.stockx.com/images/Nike-Air-Max-Goadome-Low-SP-Black-Metallic-Silver-Pale-Citron-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1783526477",
      "id": "2ac7c1",
-     "img": "images/cut/027-2ac7c1.png",
-     "type": "sneakers",
-     "image_replace": "https://images.stockx.com/images/Nike-Air-Max-Goadome-Low-SP-Black-Metallic-Silver-Pale-Citron-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1783526477"
+     "img": "images/cut/027-2ac7c1-v1791738127.png",
+     "type": "sneakers"
     }
    ],
    "posted_at": null,
