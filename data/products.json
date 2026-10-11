@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "adidas Samba OG Cloud White Core Black",
    "brand": "adidas",
-   "name": "",
+   "name": "Samba OG Cloud White Core Black",
    "image": "https://images.stockx.com/images/adidas-Samba-OG-Cloud-White-Core-Black-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1786416161",
    "price": "42",
    "currency": "USD",
    "added": "2026-10-11T16:57:39.988Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "sneakers"
   },
   {
    "id": "mv19lymmrt7j",
