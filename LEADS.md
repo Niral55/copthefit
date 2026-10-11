@@ -1,6 +1,17 @@
 # Lead finder instructions
 
-Claude follows this file whenever you press **Find leads** in the admin page (it runs on GitHub with the Anthropic API; nothing is scheduled). Edit it to change what gets found.
+Claude follows this file whenever Niral asks for leads in chat (or presses **Find leads** in the admin page, if the Anthropic API key is ever added). Nothing is scheduled. **These rules are fixed: don't loosen, reinterpret or "improve" them between runs. Only Niral changes them.**
+
+## Non-negotiables (every one of these has been a real mistake before)
+1. **Affordable only.** The main piece is roughly $300 or less from a mass-market brand. No Louis Vuitton, Rolex, Cartier, AP, Tom Ford or other luxury, even with cheaper picks.
+2. **Every item has a clean product image** (`image_src`): studio shot, plain background, product only, the right model and colorway.
+3. **Every lead has 2–3 photos of the person** (`photo_options`) that **clearly show the item being sold**: sneakers on his feet for Kicks, the watch on his wrist for Wrist, the full outfit for Fit. A headshot or waist-up crop does not count for Kicks.
+4. **Look at every image yourself before saving it.** Captions are not proof. Have the build download it (set `photo_src` / `image_replace`) and view the file, or view it in the browser. Drop anything that's the wrong person, wrong item, blurry, tiny, a collage, blank or a different event.
+5. **No watermarked stock previews** (Vecteezy, Alamy, Shutterstock comps) and no Instagram/TikTok/X CDN links (they expire).
+6. **Item `note` is shown on the public site.** Only customer-facing text goes there (e.g. "Custom piece — not for sale"). Never research notes, "confirm the price", other store links or doubts. Put those in the lead's top-level `note`.
+7. **Set `price`** on each item when the store page shows it (e.g. "$110").
+8. **Never repeat a fit** (run the dedupe check) and never re-add one Niral rejected.
+9. **If a lead can't meet all of this, drop it** and say so. Fewer good leads beat padded ones.
 
 ## Goal
 Cop the Fit makes money from affiliate sales. Find male-celebrity fits that people will **buy from**, fast enough to catch the spike right after the event, and add them to `data/fits.json` as leads (`"status": "review"`) for Niral to finish in the admin page's Leads tab. Quality beats quantity: skip anything you can't verify.
@@ -61,6 +72,7 @@ Example: `"score": 82, "score_parts": {"shop": 40, "star": 25, "cover": 15, "fre
 7. **Fields:** `find` (next free 3-digit number), `status: "review"`, `ig_queue: false`, `added` (today, YYYY-MM-DD), `celeb`, `context` (event), `date` (as exact as you know it, e.g. "Oct 12, 2026"; the site works out Recent/Evergreen from it), `category` (Fit, Kicks or Wrist), `tags` (1–2 lowercase hashtags like "nfl", "tunnelfit"), `sources` ([{label: "Outlet — article", url}]), `score`, `score_parts`, `score_note`, `photo_options`, `note`, `posted_at: null`, `ig_media_id: null`, `ig_permalink: null`.
 
 ## 6. Finish
+0. Re-read the Non-negotiables at the top and check every lead against each one.
 1. Run `python scripts/check.py`. It fails on repeats and on leads without a score: fix or remove those, then run it again until it passes.
 2. Commit only `data/fits.json` with the message `Leads: #NNN–#NNN` and push to `main`.
 3. Reply with a short list, highest score first: Find #, score, who, headline, why it should sell, source.
