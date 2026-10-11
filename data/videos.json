@@ -1,0 +1,157 @@
+{
+ "videos": [
+  {
+   "id": "gshock",
+   "title": "Celebs who wear a $100 G-Shock",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005"
+   ]
+  },
+  {
+   "id": "casio",
+   "title": "Celebs who wear a $25 Casio",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "006",
+    "007",
+    "008",
+    "009",
+    "010"
+   ]
+  },
+  {
+   "id": "samba",
+   "title": "Every celeb owns these sneakers: adidas Samba",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "011",
+    "012",
+    "013",
+    "014"
+   ]
+  },
+  {
+   "id": "newbalance",
+   "title": "Celebs who rock New Balance",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "015",
+    "016"
+   ]
+  },
+  {
+   "id": "nbasig",
+   "title": "NBA stars' signature shoes under $150",
+   "format": "His shoes are only $X",
+   "finds": [
+    "017",
+    "018",
+    "019"
+   ]
+  },
+  {
+   "id": "sneakers26",
+   "title": "The sneakers celebs actually wore in 2026",
+   "format": "Same shoe / celeb sneakers",
+   "finds": [
+    "020",
+    "021",
+    "022",
+    "023",
+    "024",
+    "025",
+    "026"
+   ]
+  },
+  {
+   "id": "tenniswatches",
+   "title": "US Open & Wimbledon watches: $100k vs the lookalike",
+   "format": "$10k vs $150",
+   "finds": [
+    "027",
+    "028",
+    "029",
+    "030",
+    "031",
+    "032"
+   ]
+  },
+  {
+   "id": "emmyswatches",
+   "title": "Emmys watches: what they wore vs what you can buy",
+   "format": "$10k vs $150",
+   "finds": [
+    "033",
+    "034",
+    "035",
+    "036",
+    "037"
+   ]
+  },
+  {
+   "id": "globeswatches",
+   "title": "Golden Globes: everyone wore $20k Omegas... Nick Jonas wore a Fossil",
+   "format": "Did he really wear that?",
+   "finds": [
+    "038",
+    "039",
+    "040",
+    "041",
+    "042",
+    "043"
+   ]
+  },
+  {
+   "id": "grammyswatches",
+   "title": "Grammys watches: Cartier everywhere (and the affordable versions)",
+   "format": "$10k vs $150",
+   "finds": [
+    "044",
+    "045",
+    "046",
+    "047"
+   ]
+  },
+  {
+   "id": "staples",
+   "title": "Celeb staples under $100",
+   "format": "Under $100 celeb fits",
+   "finds": [
+    "048",
+    "049"
+   ]
+  },
+  {
+   "id": "tunnel",
+   "title": "Tunnel fits ranked",
+   "format": "Tunnel fits ranked",
+   "finds": [
+    "050",
+    "051",
+    "052"
+   ]
+  }
+ ],
+ "no_video": [
+  "053",
+  "054",
+  "055",
+  "056",
+  "057",
+  "058",
+  "059",
+  "060",
+  "061",
+  "062",
+  "063",
+  "064",
+  "065",
+  "066",
+  "067"
+ ]
+}
