@@ -80,6 +80,10 @@ label.f { display: flex; flex-direction: column; gap: 4px; font: 500 11px var(--
 .status a.st:hover { border-color: var(--ink); }
 .prods { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .prod { display: flex; flex-direction: column; gap: 8px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 12px; min-width: 0; }
+.vid { display: flex; flex-direction: column; gap: 8px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 14px; }
+.vid .vrow { display: flex; gap: 8px; flex-wrap: wrap; }
+.vid .say { font-size: 13px; border-left: 3px solid var(--accent); padding-left: 8px; color: var(--muted); }
+.vids { display: grid; gap: 12px; }
 .prod.busy { opacity: .45; pointer-events: none; transition: opacity .15s; }
 .prod .pic.none { aspect-ratio: auto; height: 120px; background: var(--paper); border: 1px dashed var(--line); }
 .prod .pic { aspect-ratio: 1; max-height: 220px; background: #fff; border-radius: 4px; display: grid; place-items: center; overflow: hidden; }
@@ -177,7 +181,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
 <div class="wrap">
   <header>
     <a class="mark" href="./">Cop the <span>Fit</span><small>ADMIN</small></a>
-    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="openProducts" type="button">Products <b id="prodCount"></b></button><button class="btn" id="openCfg" type="button">Affiliates &amp; settings</button><button class="btn" id="openSettings" type="button">GitHub</button><a class="btn" href="./" target="_blank">View site ↗</a></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="openProducts" type="button">Products <b id="prodCount"></b></button><button class="btn" id="openVideos" type="button">Videos</button><button class="btn" id="openCfg" type="button">Affiliates &amp; settings</button><button class="btn" id="openSettings" type="button">GitHub</button><a class="btn" href="./" target="_blank">View site ↗</a></div>
   </header>
   <div id="flash"></div>
 
@@ -198,6 +202,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
   <section id="editView" hidden></section>
   <section id="cfgView" hidden></section>
   <section id="prodView" hidden></section>
+  <section id="vidView" hidden></section>
 </div>
 
 <dialog id="settings">
@@ -486,7 +491,7 @@ function openEditor(find, fromHistory) {
   DRAFT = JSON.parse(JSON.stringify(src));
   DRAFT.items.forEach(it => it._link = linkText(it));
   PENDING = { photo: null, items: new Map() }; // item object -> {b64, url}
-  $("#listView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true;
+  $("#listView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true; $("#vidView").hidden = true;
   $("#editView").hidden = false;
   renderEditor();
   window.scrollTo(0, 0);
@@ -496,7 +501,7 @@ function closeEditor() {
   if (history.state && history.state.ed) { history.back(); return; } // popstate finishes closing
   showList();
 }
-function showList() { DRAFT = null; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true; $("#listView").hidden = false; renderList(); }
+function showList() { DRAFT = null; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true; $("#vidView").hidden = true; $("#listView").hidden = false; renderList(); }
 window.addEventListener("popstate", () => {
   if (!DOC) return;
   // Swiping/pressing Back out of a post with unsaved edits: stay, warn; doing it again within a few seconds leaves.
@@ -508,6 +513,7 @@ window.addEventListener("popstate", () => {
   if (m) { openEditor(m[1] === "new" ? null : m[1], true); return; }
   if (location.hash === "#settings") { openCfg(true); return; }
   if (location.hash === "#products") { openProducts(true); return; }
+  if (location.hash === "#videos") { openVideos(true); return; }
   const t = location.hash.match(/^#tab-(\w+)$/);
   const tab = t && STAGES.some(x => x.id === t[1]) ? t[1] : "all";
   if (tab !== TAB) { TAB = tab; SEL.clear(); }
@@ -801,9 +807,86 @@ const typeOf = p => ITEM_TYPES.some(([v]) => v && v === p.category) ? p.category
 function renderProdCount() {
   if (!PRODUCTS || !Array.isArray(PRODUCTS.products)) PRODUCTS = { products: [] }; // missing or malformed file: treat as empty
   if (!STATUS || typeof STATUS !== "object") STATUS = {}; const n = PRODUCTS.products.length; $("#prodCount").textContent = n ? n : ""; }
+
+// ---------- Videos: listings → voiced reels (rendered on GitHub by .github/workflows/video.yml) ----------
+let VIDEOS = { videos: [] }, VID_WATCH = {};
+async function openVideos(fromHistory) {
+  if (!fromHistory) history.pushState({ vid: 1 }, "", "#videos");
+  $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = true; $("#vidView").hidden = false;
+  $("#vidView").innerHTML = `<p class="hint">Loading videos…</p>`; window.scrollTo(0, 0);
+  try {
+    [VIDEOS, STATUS] = await Promise.all([GH.jsonOr("data/videos.json", undefined, { videos: [] }), GH.jsonOr("data/status.json", undefined, {})]);
+    if (!STATUS || typeof STATUS !== "object") STATUS = {};
+  } catch (e) { $("#vidView").innerHTML = `<p class="msg err">${esc(e.message)}</p>`; return; }
+  renderVideos();
+}
+function closeVideos() { if (history.state && history.state.vid) { history.back(); return; } showList(); }
+function renderVideos() {
+  const by = Object.fromEntries(DOC.fits.map(f => [f.find, f]));
+  const st = STATUS.videos || {};
+  $("#vidView").innerHTML = `
+    <div class="ed-head"><div style="display:flex;gap:12px;align-items:baseline;flex-wrap:wrap"><button class="btn sm" id="vidBack" type="button">← All posts</button><h1 class="ed-title">Videos</h1><span class="pill">${VIDEOS.videos.length}</span></div></div>
+    <p class="hint" style="margin-bottom:12px">Each video turns its listings into a ~25s reel: AI voiceover, word-by-word captions, sound effects. Press <b>Make video</b>, wait about 5–10 minutes, then download it and add a trending sound in Instagram.</p>
+    <div class="vids">${VIDEOS.videos.map(v => {
+      const s = st[v.id] || {}, n = v.finds.length, busy = !!VID_WATCH[v.id];
+      const sc = v.script || {};
+      return `<div class="vid" data-id="${esc(v.id)}">
+        <div><b>${esc(v.title)}</b> <span class="hint">${n} listing${n === 1 ? "" : "s"}${n < 5 ? ` · add ${5 - n} more for a full video` : ""}</span></div>
+        <p class="hint">${v.finds.map(f => by[f] ? `#${f} ${esc(by[f].celeb)}` : `#${f}`).join(" · ")}</p>
+        ${sc.hook_say ? `<p class="say">“${esc(sc.hook_say)}”</p>` : `<p class="hint">Voiceover written automatically from the listings.</p>`}
+        ${busy ? `<p class="hint">Making the video… (about 5–10 minutes)</p>` : s.last_run ? `<p class="hint" style="color:${s.result === "ok" ? "var(--ok)" : "var(--warn)"}">${esc(s.message || "")} · ${esc(new Date(s.last_run).toLocaleString())}</p>` : ""}
+        <div class="vrow">
+          <button class="btn primary" type="button" data-make${busy ? " disabled" : ""}>${busy ? "Making…" : s.result === "ok" ? "Make again" : "Make video"}</button>
+          ${s.result === "ok" && !busy ? `<button class="btn" type="button" data-dl>Download MP4</button><button class="btn" type="button" data-cap>Copy caption</button>` : ""}
+        </div></div>`;
+    }).join("")}</div>`;
+  $("#vidBack").onclick = closeVideos;
+  $("#vidView").querySelectorAll(".vid").forEach(card => {
+    const id = card.dataset.id, s = (STATUS.videos || {})[id] || {};
+    const mk = card.querySelector("[data-make]"); if (mk) mk.onclick = () => makeVideo(id);
+    const dl = card.querySelector("[data-dl]"); if (dl) dl.onclick = () => downloadVideo(id, s.file || id + ".mp4", dl);
+    const cp = card.querySelector("[data-cap]"); if (cp) cp.onclick = async () => { try { await navigator.clipboard.writeText(s.caption || ""); flash("Caption copied.", "ok"); } catch (e) { flash("Couldn't copy: " + esc(e.message), "err"); } };
+  });
+}
+async function makeVideo(id) {
+  try {
+    await GH.req(`/actions/workflows/video.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: settings().branch, inputs: { video: id } }) });
+  } catch (e) { flash(`Couldn't start the video: ${esc(e.message)}`, "err"); return; }
+  const since = new Date().toISOString();
+  flash("Making the video… about 5–10 minutes. You can leave this page; it'll be here when it's done.", "ok");
+  let tries = 0;
+  VID_WATCH[id] = setInterval(async () => {
+    tries++;
+    try {
+      const st = await GH.jsonOr("data/status.json", undefined, {});
+      const run = (st.videos || {})[id];
+      if (run && run.last_run > since) {
+        clearInterval(VID_WATCH[id]); delete VID_WATCH[id]; STATUS = st;
+        flash(run.result === "ok" ? "Video ready. Download it from Videos." : esc(run.message || "Video failed."), run.result === "ok" ? "ok" : "err");
+        if (!$("#vidView").hidden) renderVideos();
+      }
+    } catch (e) { /* keep waiting */ }
+    if (tries > 50) { clearInterval(VID_WATCH[id]); delete VID_WATCH[id]; flash("Still no video after 25 minutes. Check the 'Make video' run on GitHub (Actions tab).", "err"); if (!$("#vidView").hidden) renderVideos(); }
+  }, 30000);
+  if (!$("#vidView").hidden) renderVideos();
+}
+async function downloadVideo(id, file, btn) {
+  const s = settings(), old = btn.textContent;
+  btn.disabled = true; btn.textContent = "Downloading…";
+  try {
+    const r = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}/contents/${encodeURIComponent(file)}?ref=videos`, {
+      cache: "no-store", headers: { Accept: "application/vnd.github.raw", Authorization: `Bearer ${s.token}`, "X-GitHub-Api-Version": "2022-11-28" } });
+    if (!r.ok) throw new Error(`GitHub ${r.status}`);
+    const url = URL.createObjectURL(await r.blob());
+    const a = Object.assign(document.createElement("a"), { href: url, download: `copthefit-${id}.mp4` });
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 60000);
+  } catch (e) { flash(`Download failed: ${esc(e.message)}`, "err"); }
+  btn.disabled = false; btn.textContent = old;
+}
+
 function openProducts(fromHistory) {
   if (!fromHistory) history.pushState({ prod: 1 }, "", "#products");
-  $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#prodView").hidden = false;
+  $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#vidView").hidden = true; $("#prodView").hidden = false;
   renderProducts(); window.scrollTo(0, 0);
 }
 function closeProducts() { if (history.state && history.state.prod) { history.back(); return; } showList(); }
@@ -985,7 +1068,7 @@ function openCfg(fromHistory) {
   CFGDRAFT = JSON.parse(JSON.stringify(CFG));
   CFGDRAFT.affiliate = Object.assign({ amazon_tag: "", ebay_campaign_id: "", skimlinks_id: "", sovrn_key: "", stores: [] }, CFGDRAFT.affiliate || {});
   CFGDRAFT.affiliate.stores = CFGDRAFT.affiliate.stores || [];
-  $("#listView").hidden = true; $("#editView").hidden = true; $("#prodView").hidden = true; $("#cfgView").hidden = false;
+  $("#listView").hidden = true; $("#editView").hidden = true; $("#prodView").hidden = true; $("#vidView").hidden = true; $("#cfgView").hidden = false;
   renderCfg(); window.scrollTo(0, 0);
 }
 function closeCfg() { if (history.state && history.state.cfg) { history.back(); return; } showList(); }
@@ -1236,6 +1319,7 @@ async function load() {
   const m = location.hash.match(/^#edit-(\d{3})$/); // a bookmarked or refreshed post opens directly
   if (location.hash === "#settings") { history.replaceState(null, "", location.pathname); openCfg(); }
   else if (location.hash === "#products") { history.replaceState(null, "", location.pathname); openProducts(); }
+  else if (location.hash === "#videos") { history.replaceState(null, "", location.pathname); openVideos(); }
   else if (m && DOC.fits.some(f => f.find === m[1])) { history.replaceState(null, "", location.pathname); openEditor(m[1]); } // list entry underneath, so Back lands on the list
   else {
     const t = location.hash.match(/^#tab-(\w+)$/);
@@ -1250,6 +1334,7 @@ $("#bulkCovers").onclick = () => { const inp = $("#bulkPick"); inp.value = ""; i
 $("#newPost").onclick = () => openEditor(null);
 $("#findLeads").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } $("#leadsDlg").returnValue = ""; $("#leadsDlg").showModal(); };
 $("#leadsDlg").addEventListener("close", () => { if ($("#leadsDlg").returnValue === "go") startLeadSearch($("#lCount").value, $("#lFocus").value.trim()); });
+$("#openVideos").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openVideos(); };
 $("#openProducts").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openProducts(); };
 $("#openCfg").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } openCfg(); };
 $("#openSettings").onclick = () => { const s = settings(); $("#sOwner").value = s.owner; $("#sRepo").value = s.repo; $("#sToken").value = s.token; $("#settings").showModal(); };

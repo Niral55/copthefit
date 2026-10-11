@@ -1,0 +1,81 @@
+name: Make video
+
+# Run by the "Make video" button in the admin page (Videos). Renders one video group from data/videos.json
+# with an AI voice (Kokoro, free/open-source), captions and sound effects, then saves the MP4 + caption to the
+# `videos` branch and records the result in data/status.json → videos.<id>.
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Video id from data/videos.json (e.g. gshock)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: video-${{ inputs.video }}
+  cancel-in-progress: true
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install voice + video tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg >/dev/null
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro>=0.9" soundfile pillow fonttools brotli requests
+      - name: Render
+        run: cd scripts && python make_video.py "${{ inputs.video }}" "$RUNNER_TEMP/out"
+      - name: Save the video (videos branch keeps only the latest MP4 per video)
+        run: |
+          git config user.name "copthefit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          V="${{ inputs.video }}"; OUT="$RUNNER_TEMP/out"; W="$RUNNER_TEMP/videos"; mkdir -p "$W"
+          export GIT_INDEX_FILE="$RUNNER_TEMP/videos.idx"
+          for i in 1 2 3; do
+            rm -f "$GIT_INDEX_FILE"
+            if git fetch -q origin videos 2>/dev/null; then git --work-tree="$W" checkout -q FETCH_HEAD -- . ; fi
+            cp "$OUT/$V.mp4" "$OUT/$V.txt" "$W/"
+            git --work-tree="$W" add -A
+            c=$(git commit-tree "$(git write-tree)" -m "Videos (latest $V)")
+            git push -q -f origin "$c:refs/heads/videos" && break
+            sleep 5
+          done
+      - name: Record result
+        if: always()
+        env:
+          RESULT: ${{ job.status }}
+        run: |
+          V="${{ inputs.video }}"; OUT="$RUNNER_TEMP/out"
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 - "$V" "$OUT" <<'PY'
+          import json, sys, os, datetime, subprocess
+          v, out = sys.argv[1], sys.argv[2]
+          p = "data/status.json"
+          try: st = json.load(open(p))
+          except Exception: st = {}
+          ok = os.environ.get("RESULT") == "success" and os.path.exists(f"{out}/{v}.mp4")
+          dur = ""
+          if ok:
+              try: dur = round(float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",f"{out}/{v}.mp4"]).decode().strip()), 1)
+              except Exception: pass
+          st.setdefault("videos", {})[v] = {
+              "last_run": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+              "result": "ok" if ok else "error",
+              "message": f"Ready: {dur}s" if ok else "Video failed. Check the 'Make video' run on GitHub (Actions tab).",
+              "file": f"{v}.mp4" if ok else "",
+              "caption": open(f"{out}/{v}.txt").read() if ok else "",
+          }
+          json.dump(st, open(p, "w"), indent=1); open(p, "a").write("\n")
+          PY
+            git add data/status.json && git commit -qm "Video $V [skip ci]" && git push -q && exit 0
+            sleep 5
+          done

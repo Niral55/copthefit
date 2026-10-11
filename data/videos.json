@@ -10,7 +10,78 @@
     "003",
     "004",
     "005"
-   ]
+   ],
+   "script": {
+    "hook_text": "Same $65 watch",
+    "hook_say": "Keanu Reeves could wear any watch on Earth. He picked a sixty-five dollar Casio.",
+    "keyword": "WATCH",
+    "lines": {
+     "002": {
+      "label": "Keanu Reeves",
+      "sub": "SPEED · $65",
+      "say": "It's the G-Shock fifty-six hundred. He wore it in Speed.",
+      "focus": [
+       0.45,
+       0.6
+      ]
+     },
+     "003": {
+      "label": "RM · BTS",
+      "sub": "$65",
+      "say": "RM left the army in the exact same one.",
+      "focus": [
+       0.5,
+       0.4
+      ]
+     },
+     "004": {
+      "label": "V · BTS",
+      "sub": "$84",
+      "say": "V wore the all-black version.",
+      "crop": [
+       0,
+       0,
+       0.5,
+       1
+      ],
+      "focus": [
+       0.5,
+       0.45
+      ]
+     },
+     "005": {
+      "label": "Shia LaBeouf",
+      "sub": "$110",
+      "say": "Shia LaBeouf? Spotted in a solar G-Shock.",
+      "focus": [
+       0.4,
+       0.5
+      ]
+     },
+     "001": {
+      "label": "Lil Tecca",
+      "sub": "G-SHOCK",
+      "say": "Now Lil Tecca is the face of it.",
+      "focus": [
+       0.6,
+       0.35
+      ]
+     }
+    },
+    "product_find": "002",
+    "product_title": "Casio G-Shock DW5600",
+    "product_price": "From $65",
+    "product_say": "Movie stars. K-pop idols. Rappers. One sixty-five dollar watch.",
+    "outro_say": "Who wore it best? Comment watch for the link.",
+    "caption": "Keanu, RM, V, Shia… all in the same $65 Casio 👀\nFind #001–#005 on our site. Comment WATCH and we'll DM you the link.\n#gshock #casio #watchspotting #celebstyle #bts",
+    "order": [
+     "002",
+     "003",
+     "004",
+     "005",
+     "001"
+    ]
+   }
   },
   {
    "id": "casio",
