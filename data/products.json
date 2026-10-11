@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Nike Air Force 1 Low '07 White",
    "brand": "Nike",
-   "name": "",
+   "name": "Air Force 1 Low '07 White",
    "image": "https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07-Product_V2.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1785333173",
    "price": "69",
    "currency": "USD",
    "added": "2026-10-11T17:03:26.251Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "sneakers"
   },
   {
    "id": "mv18j74pa4g9",
