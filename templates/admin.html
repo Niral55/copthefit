@@ -712,7 +712,7 @@ function renderReady() {
 function readForm() {
   const v = id => ($("#" + id) || {}).value?.trim() ?? "";
   Object.assign(DRAFT, { celeb: v("celeb"), category: v("category"), context: v("context"), date: v("date"), headline: v("headline"), detail: v("detail") });
-  DRAFT.sources[0] = { label: v("srcLabel"), url: v("srcUrl") };
+  DRAFT.sources[0] = { label: v("srcLabel"), url: fixUrl(v("srcUrl")) };
   if (DRAFT.photo || PENDING.photo) DRAFT.photo = { ...(DRAFT.photo || {}), credit: v("credit") };
   else if (DRAFT.photo_src) DRAFT.photo_src_credit = v("credit") || DRAFT.photo_src_credit || "";
 }
@@ -954,11 +954,13 @@ function affLink(raw, cfg = CFG) {
   if (a.sovrn_key) return { url: "https://redirect.viglink.com?key=" + encodeURIComponent(a.sovrn_key) + "&u=" + encodeURIComponent(u.toString()), via: "Sovrn" };
   return { url: u.toString(), via: "" };
 }
+// "amazon.com/dp/…" or "www.nike.com/…" → "https://…" (leaves "retailer: words", "custom" and full links alone)
+const fixUrl = s => { const t = (s || "").trim(); return /^(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)+(:\d+)?([/?#]\S*)?$/i.test(t) ? "https://" + t : t; };
 // What an item's Link box turns into (product page, "retailer: search words", or custom).
 const hasAffIds = () => { const a = (CFG && CFG.affiliate) || {}; return !!(a.amazon_tag || a.ebay_campaign_id || a.skimlinks_id || a.sovrn_key || (a.stores || []).length); };
 function itemAff(text) {
   if (!hasAffIds()) return "";
-  const t = (text || "").trim();
+  const t = fixUrl(text);
   if (!t || /^custom$/i.test(t)) return "";
   let raw = t;
   const m = t.match(/^([a-z0-9]+):\s*(.+)$/i);
@@ -1032,7 +1034,7 @@ function renderCfg() {
     $("#stores").querySelectorAll(".store").forEach(row => row.querySelectorAll("[data-k]").forEach(el => a.stores[+row.dataset.i][el.dataset.k] = el.value.trim()));
     c.site_photos = $("#cPhotos").value; c.posting_paused = $("#cPause").checked; c.instagram_handle = v("cHandle").replace(/^@/, "");
   };
-  const test = () => { read(); const t = $("#cTest").value.trim(); if (!t) { $("#cOut").textContent = "Paste a link to see what the Shop button will use."; return; } const r = affLink(t, c); $("#cOut").innerHTML = r.via ? `<b>✓ ${esc(r.via)}</b><br>${esc(r.url)}` : `No affiliate ID applies to this store yet.<br>${esc(r.url)}`; };
+  const test = () => { read(); const t = fixUrl($("#cTest").value); if (!t) { $("#cOut").textContent = "Paste a link to see what the Shop button will use."; return; } const r = affLink(t, c); $("#cOut").innerHTML = r.via ? `<b>✓ ${esc(r.via)}</b><br>${esc(r.url)}` : `No affiliate ID applies to this store yet.<br>${esc(r.url)}`; };
   $("#cfgView").querySelectorAll("input,select").forEach(el => el.addEventListener("input", test));
   test();
   $("#cfgBack").onclick = closeCfg;
@@ -1107,7 +1109,7 @@ function msg(text, kind = "") { $("#edMsg").innerHTML = text ? `<div class="msg 
 function parseItems() {
   return DRAFT.items.map((it, i) => {
     const n = i + 1;
-    const link = (it._link || "").trim();
+    const link = fixUrl(it._link);
     if (!(it.name || "").trim()) throw new Error(`Item ${n}: add the item name.`);
     if (/\b(dupe|fake|faux|replica)\b/i.test(it.name)) throw new Error(`Item ${n}: avoid dupe/fake/faux/replica wording.`);
     const out = { ...it, slide: i + 2, brand: (it.brand || "").trim(), name: it.name.trim(), product_url: "", retailer: "", query: "" };
