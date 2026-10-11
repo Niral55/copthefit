@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Nike Court Air Zoom Vapor 12 HC Travis Scott Pale Ivory",
    "brand": "Nike",
-   "name": "",
+   "name": "Court Air Zoom Vapor 12 HC Travis Scott Pale Ivory",
    "image": "https://images.stockx.com/images/Nike-Court-Air-Zoom-Vapor-12-HC-Travis-Scott-Pale-Ivory.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1791213970",
    "price": "555",
    "currency": "USD",
    "added": "2026-10-11T16:48:14.859Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "sneakers"
   },
   {
    "id": "mv4235oevxor",
