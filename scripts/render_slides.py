@@ -7,6 +7,7 @@ import json
 import sys
 from playwright.sync_api import sync_playwright
 
+from grade import graded_photo
 from common import ROOT, DIST, load_config, load_fits, caption, retailer_name, raw_url, cutout_path, photo_path, ig_items
 
 TEMPLATE = (ROOT / "templates" / "slide.html").as_uri()
@@ -19,7 +20,7 @@ def slides_for(cfg, fit):
     first_img = next((cutout_path(fit["find"], it) for it in items
                       if it["label"] == "Exact" and cutout_path(fit["find"], it)), None)
     outlet = fit["sources"][0]["label"].split(" — ")[0] if fit.get("sources") else ""
-    photo = photo_path(fit["find"])
+    photo = graded_photo(fit["find"])
     out = [dict(type="cover", find=fit["find"], headline=fit["headline"], context=fit["context"],
                 date=fit["date"], outlet=outlet, image=first_img.as_uri() if first_img else "",
                 photo=photo.as_uri() if photo else "", photo_credit=(fit.get("photo") or {}).get("credit", ""),

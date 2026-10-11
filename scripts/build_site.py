@@ -11,6 +11,7 @@ import unicodedata
 
 from item_types import guess_type
 from icons import ICONS
+from grade import graded_photo
 from common import ROOT, DIST, CUT_DIR, load_config, load_fits, raw_url, shop_url, retailer_name, cutout_path, photo_path, validate
 
 e = lambda t: H.escape(str(t or ""), quote=True)
@@ -192,7 +193,7 @@ def main():
         first = next((i["image"] for i in items if i["image"] and i["label"] == "Exact"), "") or \
             next((i["image"] for i in items if i["image"]), "")
         cover, credit = "", ""
-        ph = photo_path(fit["find"])
+        ph = graded_photo(fit["find"])
         mode = cfg.get("site_photos", "free")  # "free" = only public-domain/CC photos, "all", or "none"
         meta = fit.get("photo") or {}
         if ph and (mode == "all" or (mode == "free" and meta.get("license"))):
