@@ -15,5 +15,14 @@
   "last_run": "2026-10-11T20:11:29+00:00",
   "result": "paused",
   "message": "Auto-posting is paused."
+ },
+ "videos": {
+  "gshock": {
+   "last_run": "2026-10-11T23:20:02+00:00",
+   "result": "ok",
+   "message": "Ready: 32.2s",
+   "file": "gshock.mp4",
+   "caption": "Keanu, RM, V, Shia\u2026 all in the same $65 Casio \ud83d\udc40\nFind #001\u2013#005 on our site. Comment WATCH and we'll DM you the link.\n#gshock #casio #watchspotting #celebstyle #bts"
+  }
  }
 }
