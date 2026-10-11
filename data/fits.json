@@ -2105,14 +2105,15 @@
      "label": "Exact",
      "brand": "Nike",
      "name": "Air Max Goadome Low SP",
-     "retailer": "farfetch",
-     "query": "Nike Air Max Goadome",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/nike-air-max-goadome-low-sp-black-metallic-silver-pale-citron",
      "note": "",
      "image_src": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/6ee19bfa-ae5c-4de7-986f-c75f909831b4/AIR+MAX+GOADOME+LOW+QS.png",
      "id": "2ac7c1",
      "img": "images/cut/027-2ac7c1.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "image_replace": "https://images.stockx.com/images/Nike-Air-Max-Goadome-Low-SP-Black-Metallic-Silver-Pale-Citron-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1783526477"
     }
    ],
    "posted_at": null,
@@ -2121,7 +2122,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-11T17:00:33.345Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/2285812880-683x1024.webp",
