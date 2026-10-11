@@ -1,13 +1,13 @@
 {
  "title": "Celebs who wear a $100 G-Shock",
  "beats": [
-  {"kind": "photo", "find": "002", "dur": 1.5, "text": "Keanu's watch costs $65", "hook": true, "focus": [0.55, 0.55]},
-  {"kind": "photo", "find": "002", "dur": 2.5, "text": "Keanu Reeves", "sub": "SPEED · CASIO G-SHOCK", "focus": [0.45, 0.6]},
-  {"kind": "photo", "find": "003", "dur": 2.5, "text": "RM (BTS)", "sub": "$65", "focus": [0.5, 0.4]},
-  {"kind": "photo", "find": "004", "dur": 2.5, "text": "V (BTS)", "sub": "$84", "crop": [0, 0, 0.5, 1], "focus": [0.5, 0.45]},
+  {"kind": "intro", "dur": 2.0, "line1": "5 celebs.", "line2": "Same $65 watch.", "finds": ["002", "003", "004", "005", "001"], "crops": {"004": [0, 0, 0.5, 1]}},
+  {"kind": "photo", "find": "002", "dur": 2.3, "text": "Keanu Reeves", "sub": "SPEED · $65", "focus": [0.45, 0.6]},
+  {"kind": "photo", "find": "003", "dur": 2.2, "text": "RM (BTS)", "sub": "$65", "focus": [0.5, 0.4]},
+  {"kind": "photo", "find": "004", "dur": 2.2, "text": "V (BTS)", "sub": "$84", "crop": [0, 0, 0.5, 1], "focus": [0.5, 0.45]},
   {"kind": "photo", "find": "005", "dur": 2.0, "text": "Shia LaBeouf", "sub": "$110", "focus": [0.4, 0.5]},
-  {"kind": "photo", "find": "001", "dur": 1.5, "text": "Lil Tecca", "sub": "G-SHOCK", "focus": [0.6, 0.35]},
-  {"kind": "product", "find": "002", "dur": 1.5, "title": "Casio G-Shock DW5600", "price": "From $65"},
+  {"kind": "photo", "find": "001", "dur": 1.6, "text": "Lil Tecca", "sub": "G-SHOCK", "focus": [0.6, 0.35]},
+  {"kind": "product", "find": "002", "dur": 1.7, "title": "Casio G-Shock DW5600", "price": "From $65"},
   {"kind": "cta", "dur": 1.0, "keyword": "WATCH", "finds": "#001–#005", "loop_find": "002"}
  ]
 }

@@ -142,6 +142,32 @@ def render(spec, out):
             return fr
         segs.append((dur, draw))
 
+    def intro_seg(dur, line1, line2, finds, crops):
+        """Hook: rapid-fire flash of every celeb under a big two-line claim."""
+        imgs = []
+        for f in finds:
+            im = Image.open(graded_photo(f)).convert("RGB")
+            c = crops.get(f)
+            if c:
+                im = im.crop(tuple(int(a * s) for a, s in zip(c, (im.width, im.height, im.width, im.height))))
+            imgs.append(im)
+
+        def draw(i, n):
+            k = min(int(i / (n / len(imgs))), len(imgs) - 1)
+            t = (i % max(1, n // len(imgs))) / max(1, n // len(imgs))
+            fr = cover(imgs[k], (W, H), t, zoom=(1.15, 1.0))
+            fr = Image.blend(fr, Image.new("RGB", (W, H), (0, 0, 0)), 0.35)
+            pop = 1.0 + 0.18 * (1 - ease(i / 5))
+            y = big_text(fr, line1, 560, size=210, pop=pop)
+            big_text(fr, line2, y + 20, size=210, color=ACCENT, pop=pop)
+            # little progress dots = "5 of them" at a glance
+            d = ImageDraw.Draw(fr)
+            for j in range(len(imgs)):
+                x = W / 2 + (j - (len(imgs) - 1) / 2) * 60
+                d.ellipse((x - 14, 1500 - 14, x + 14, 1500 + 14), fill=ACCENT if j <= k else (90, 92, 104))
+            return fr
+        segs.append((dur, draw))
+
     def cta_seg(dur, keyword, finds, loop_find):
         img = Image.open(graded_photo(loop_find)).convert("RGB")
 
@@ -162,6 +188,8 @@ def render(spec, out):
         kind = b["kind"]
         if kind == "photo":
             photo_seg(b["find"], b["dur"], b["text"], b.get("sub", ""), b.get("crop"), tuple(b.get("focus", (0.5, 0.45))), b.get("hook", False))
+        elif kind == "intro":
+            intro_seg(b["dur"], b["line1"], b["line2"], b["finds"], b.get("crops", {}))
         elif kind == "product":
             product_seg(b["find"], b["dur"], b["title"], b["price"])
         elif kind == "cta":
