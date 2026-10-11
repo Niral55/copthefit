@@ -1634,14 +1634,15 @@
      "label": "Exact",
      "brand": "adidas",
      "name": "Samba OG 'Cloud White' (B75806)",
-     "retailer": "adidas",
-     "query": "Samba OG",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.goat.com/sneakers/samba-og-b75806",
      "note": "",
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Samba_OG_Shoes_White_B75806_01_00_standard.jpg",
      "id": "dc3c4a",
      "img": "images/cut/020-dc3c4a-v1791557411.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "image_replace": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750"
     }
    ],
    "posted_at": null,
@@ -1650,7 +1651,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-11T16:58:48.830Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/2256377266-765x1024.webp",
