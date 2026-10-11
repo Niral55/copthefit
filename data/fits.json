@@ -1920,14 +1920,15 @@
      "label": "Exact",
      "brand": "Jordan",
      "name": "Air Jordan 1 High OG 'Chicago'",
-     "retailer": "ebay",
-     "query": "Air Jordan 1 High OG Chicago",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/air-jordan-1-retro-high-og-chicago-reimagined-lost-and-found",
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/083/401/929/original/14741_01.jpg.jpeg?width=750",
      "id": "d3f88b",
      "img": "images/cut/024-d3f88b-v1791557416.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "image_replace": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Chicago-Reimagined-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1738193358"
     },
     {
      "slide": 3,
@@ -1947,7 +1948,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-11T16:59:31.941Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/AJ1-1024x511.webp",
