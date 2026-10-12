@@ -35,21 +35,23 @@
      "note": "Also at Walmart (https://www.walmart.com/ip/405925840).",
      "slide": 2,
      "id": "b1ccce",
-     "img": "images/cut/001-b1ccce.png"
+     "img": "images/cut/001-b1ccce.png",
+     "price": "$96"
     },
     {
      "label": "Exact",
      "type": "watch",
      "brand": "Casio G-Shock",
      "name": "DW5600UBB-1 Matte Black",
-     "product_url": "https://www.casio.com/us/watches/gshock/product.DW-5600UBB-1/",
+     "product_url": "https://www.amazon.com/Casio-DW5610UU-8-Classic-Utility-Chronograph/dp/B0DSLHKP4L/ref=sr_1_2?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.zv3GLCToDQYBCqAQjlcV9QkUnQj1dLOuu5j2IQdK4DLDlpWAL9P8CtGfAdZPkg1d4iaA5-gGHA5WrcZogrDR0G0yBECbh9B5yX2_VG4awLXyQrR9HqVNEG16t955WZCccZzmHeE3v60R2obxaeR0vh7MrHjgc5NjBBqse1QeCy0mVsvzhc9LfZ-3eF3jsdHYtVH_Cncs6Uoog4sf_6nhbjoVCzw9tuB72nQ9FafXy3iaBflvnusXCqBJaQC873nuPB3WCkxrxpfoP4NZDV4ZAtS1XNtZQ5hkY-GIFT_UPDA.gy9q_d35TEUcs-pt3_McDav8uQGAXCqfz55mnbTqSnY&dib_tag=se&keywords=casio+dw5600bb&plpRedirect=mhFallback&qid=1791824144&sr=8-2",
      "retailer": "",
      "query": "",
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600ubb-1/assets/DW-5600UBB-1.png",
      "note": "The article gives a single $110 price line for the campaign, plus an Amazon listing at $93.99. Confirm this model's own price on Casio.",
      "slide": 3,
      "id": "63aa30",
-     "img": "images/cut/001-63aa30.png"
+     "img": "images/cut/001-63aa30.png",
+     "price": "$105"
     }
    ],
    "photo_options": [
@@ -98,7 +100,7 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "updated": "2026-10-12T16:50:35.605Z",
+   "updated": "2026-10-12T16:58:07.186Z",
    "photo": {
     "credit": "Casio G-SHOCK",
     "source_url": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/"
