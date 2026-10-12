@@ -6439,8 +6439,8 @@
      "query": "",
      "note": "$4,950. The press describes it as midnight blue, but LV's US site lists this item (1AJRHB–1AJRHF) only in 'Lava Smoke'. Check the colorway before publishing. image_src left empty for that reason.",
      "slide": 2,
-     "id": "865eed",
-     "img": "images/cut/081-865eed.png"
+     "img": "images/cut/081-865eed.png",
+     "id": "865eed"
     },
     {
      "label": "Similar",
@@ -6452,17 +6452,17 @@
      "query": "men navy florhttps://www.hockerty.com/en-us/men/blazers/409664-cobalt-blue-floral-jacquard-collarless-jacketal jacquard collarless jacket",
      "note": "",
      "slide": 3,
-     "id": "5b994f",
-     "img": "images/cut/081-5b994f.png"
+     "img": "images/cut/081-5b994f.png",
+     "id": "5b994f"
     },
     {
      "label": "Similar",
      "type": "clothing",
-     "brand": "",
+     "brand": "Dockers",
      "name": "Loose black trousers",
-     "product_url": "",
-     "retailer": "amazon",
-     "query": "men black relaxed fit pleated trousers",
+     "product_url": "https://www.amazon.com/Dockers-Relaxed-Comfort-Pants-Pleated-Stretch/dp/B00YKRQ512/ref=sr_1_1?dib=eyJ2IjoiMSJ9.s_7mrNZZy7ZlrHjLsvLvolpazUwM5zhmsu5ELzPq52mrfU5c8aqczMQxAqqjM4HfoX2wkbgcv8X1619weUW9EFkxI09fEqb1yXcn6IPIrGDgEFv6SH1aLfhnT7j9tI4mF4E2-BHZOIXL-Je5NR-QKHpD-nCyRY1sMjnFHKbueHSc5Hs-1d1HCEEeBIMe09WFgUqYE4oXNhszBUdGLQqV5RxxBX4TwQuuZiUGrPREUobyhRiQNyNBU0xEPSLEgcJ01DXR0FKMsv1CthjfR8ajgDNCh4SqgCaSc60ZfHLB1NA.JrQCeeRFu9ZgFYIPRZfnegaqLvnOQ8ktQtY3CWSxV5c&dib_tag=se&keywords=dockers+Loose+black+trousers&qid=1791829252&sr=8-1",
+     "retailer": "",
+     "query": "",
      "note": "",
      "slide": 4
     },
@@ -6471,9 +6471,9 @@
      "type": "shoes",
      "brand": "",
      "name": "Black suede loafers",
-     "product_url": "",
-     "retailer": "amazon",
-     "query": "men black suede penny loafers",
+     "product_url": "https://www.amazon.com/DCZTELG-Loafers-Moccasins-Comfort-Driving/dp/B0BYJKBT33/ref=sr_1_9?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.1eHop4082aiU3sDeBRinlIli25clqapT_aoHfylMRWzbpty7ja5AItsSINX4i1DCejcDZmeu-zfysgNcd0_eB8saEFm24dE6GekY-LUDvUnIUcXhiwW85eLaQ1H2NviznGlnc9-XT_99AuBWxNb6TvjMj5BPq-50G6xJHUaUoY1ez7TkjywbHVaibYNtS8aLzpFxqOLZmojX6NqnHlEUdvkvOEioxf2QqINavrBmUKRGslcQWF4HH_s-o9hQdD0h8GZUBYubsH1Wnjx4PiHAD4UByvZUnCclLu1k_n8aFSE.B3Mw29qsJC0FnR00gzM5WTY20pGXWBcZ8aW9OEFatJg&dib_tag=se&keywords=mens%2Bblack%2Bsuede%2Bloafers&plpRedirect=mhFallback&qid=1791829100&sr=8-9&th=1&psc=1",
+     "retailer": "",
+     "query": "",
      "note": "",
      "slide": 5
     }
@@ -6514,7 +6514,7 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "updated": "2026-10-12T18:18:37.581Z"
+   "updated": "2026-10-12T18:21:06.074Z"
   },
   {
    "celeb": "LeBron James",
