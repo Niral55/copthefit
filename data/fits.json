@@ -6596,70 +6596,6 @@
    "photo_search": "2026-10-09"
   },
   {
-   "celeb": "Paul George",
-   "context": "NBA Media Day 2026, Boston Celtics (first media day after his trade to Boston)",
-   "date": "Sept 28, 2026",
-   "category": "Kicks",
-   "headline": "Paul George brings back his PG 2.5 PlayStation in Boston",
-   "detail": "At his first Celtics media day, Paul George went back to his own signature line in the white PlayStation x Nike PG 2.5, a $110-retail pair from 2019.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Basketpack — NBA Media Day 2026 : le récap des paires",
-     "url": "https://www.basketpack.fr/37660-nba-media-day-2026-le-recap-des-paires"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Nike",
-     "name": "PlayStation x Nike PG 2.5 'White' (BQ8388-100)",
-     "product_url": "https://www.goat.com/apparel/playstation-x-pg-2-5-white-bq8388-100",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/079/297/326/original/476815_01.jpg.jpeg?width=750",
-     "price": "",
-     "note": "",
-     "slide": 2,
-     "id": "09f719",
-     "img": "images/cut/083-09f719.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://www.basketpack.fr/wp-content/uploads/2026/09/nba-media-day-2026-recap-paires-3-1-768x1024.png.webp",
-     "page": "https://www.basketpack.fr/37660-nba-media-day-2026-le-recap-des-paires",
-     "credit": "Basketpack (photo via @brkicks)"
-    }
-   ],
-   "photo_source": "https://www.basketpack.fr/37660-nba-media-day-2026-le-recap-des-paires",
-   "score": 52,
-   "score_parts": {
-    "shop": 30,
-    "star": 15,
-    "cover": 5,
-    "fresh": 2
-   },
-   "score_note": "Own signature shoe, $110 retail but resale-only on GOAT; only one unverified photo; 2 weeks old",
-   "note": "Video: NBA players in their own signature shoes. WEAK LEAD, verify before using: (1) only ONE photo found and it was not viewed (no image download in this session); it is a 768x1024 png.webp rehosted from @brkicks Instagram and may be a graphic/collage or carry a BR Kicks logo, so drop it if so; rule needs 2-3 photos. (2) GOAT page showed no price (resale only, 2019 release, retail $110); fill price from GOAT/StockX or drop if resale is far above retail. (3) Only source is Basketpack (French); SI's media-day top 10 did not list George. Celtics team media-day photos would be better cover if they show the shoes.",
-   "find": "083",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-12",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "nbasig",
-   "photo_search": "2026-10-12",
-   "photo": {
-    "credit": "Basketpack (photo via @brkicks)",
-    "source_url": "https://www.basketpack.fr/37660-nba-media-day-2026-le-recap-des-paires"
-   }
-  },
-  {
    "celeb": "Shohei Ohtani",
    "context": "Rams vs. Saints, Thursday Night Football, SoFi Stadium",
    "date": "Dec 21, 2023",
@@ -6730,7 +6666,10 @@
    "photo": {
     "credit": "Kicks On SI",
     "source_url": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game"
-   }
+   },
+   "photo_src": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1024/mlb/dqdn8mc6nlgqspx9oxzc.jpg",
+   "photo_src_page": "https://www.mlb.com/dodgers/news/shohei-ohtani-goes-to-rams-thursday-night-football-game",
+   "photo_src_credit": "AP Images via MLB.com"
   },
   {
    "celeb": "Saquon Barkley",
@@ -6798,70 +6737,6 @@
    "photo": {
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
-   }
-  },
-  {
-   "celeb": "Tom Brady",
-   "context": "Michael Rubin's July 4th White Party, Hamptons",
-   "date": "Jul 4, 2023",
-   "category": "Kicks",
-   "headline": "Tom Brady wore $115 AF1s to the White Party",
-   "detail": "At Michael Rubin's star-packed White Party, Brady skipped the designer stuff and wore a well-worn pair of all-white Nike Air Force 1 Lows.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Kicks On SI — Tom Brady Wears Cheap Nike Shoes to Hamptons Party",
-     "url": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Nike",
-     "name": "Air Force 1 '07 'Triple White' (CW2288-111)",
-     "product_url": "https://www.nike.com/t/air-force-1-07-mens-shoes-jBrhbr/CW2288-111",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_651%2Cy_329/MTk5MTQ2NzgzMDg1OTYzMDI1/nike-air-force.jpg",
-     "price": "$115",
-     "note": "",
-     "slide": 2,
-     "id": "393d7c",
-     "img": "images/cut/086-393d7c.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MTk5MTQ2NzM2Mzc4MTkzODc2/brady-kraft.jpg",
-     "page": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party",
-     "credit": "Kicks On SI"
-    }
-   ],
-   "photo_source": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party",
-   "score": 62,
-   "score_parts": {
-    "shop": 36,
-    "star": 20,
-    "cover": 3,
-    "fresh": 3
-   },
-   "score_note": "GOAT-level name + cheap exact shoe; single unverified photo, 2023.",
-   "note": "Video: 5 celebs who wear white Air Force 1s. Photos NOT visually checked (no image download/viewing available this run) - confirm shoes are visible on feet before using; SI images are 16:9 crops of the originals. Only 1 photo (filename 'brady-kraft', likely Brady with Robert Kraft; no credit given, may be a social screenshot). SI says 'Nike Air Force 1 Low' all-white, no style code; '07 CW2288-111 is the current equivalent. Price $115 = Nike list (via BroBible link).",
-   "find": "086",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-12",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "af1",
-   "photo_search": "2026-10-12",
-   "photo": {
-    "credit": "Kicks On SI",
-    "source_url": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party"
    }
   }
  ]
