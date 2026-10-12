@@ -6621,7 +6621,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/079/297/326/original/476815_01.jpg.jpeg?width=750",
      "price": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "09f719",
+     "img": "images/cut/083-09f719.png"
     }
    ],
    "photo_options": [
@@ -6651,9 +6653,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "nbasig",
-   "photo_src": "https://www.basketpack.fr/wp-content/uploads/2026/09/nba-media-day-2026-recap-paires-3-1-768x1024.png.webp",
-   "photo_src_page": "https://www.basketpack.fr/37660-nba-media-day-2026-le-recap-des-paires",
-   "photo_src_credit": "Basketpack (photo via @brkicks)"
+   "photo_search": "2026-10-12",
+   "photo": {
+    "credit": "Basketpack (photo via @brkicks)",
+    "source_url": "https://www.basketpack.fr/37660-nba-media-day-2026-le-recap-des-paires"
+   }
   },
   {
    "celeb": "Shohei Ohtani",
@@ -6685,7 +6689,9 @@
      "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_440%2Cy_332/MjAzMDkwNjA4NjE5NzkxNTQy/new-balance.jpg",
      "price": "$144",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "2ca114",
+     "img": "images/cut/084-2ca114.png"
     }
    ],
    "photo_options": [
@@ -6720,9 +6726,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "newbalance",
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MjAzMDkwNDM5NzczODkwMTE1/shohei-ohtani.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game",
-   "photo_src_credit": "Kicks On SI"
+   "photo_search": "2026-10-12",
+   "photo": {
+    "credit": "Kicks On SI",
+    "source_url": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game"
+   }
   },
   {
    "celeb": "Saquon Barkley",
@@ -6754,7 +6762,9 @@
      "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_651%2Cy_329/MTk5MTQ2NzgzMDg1OTYzMDI1/nike-air-force.jpg",
      "price": "$115",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "be973d",
+     "img": "images/cut/085-be973d.png"
     }
    ],
    "photo_options": [
@@ -6784,9 +6794,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "af1",
-   "photo_src": "https://images.soleretriever.com/blog/348887cb2da80b5560dcdeb96b1ba925875a3df4-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits",
-   "photo_src_credit": "Sole Retriever"
+   "photo_search": "2026-10-12",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
+   }
   },
   {
    "celeb": "Tom Brady",
@@ -6814,7 +6826,9 @@
      "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_651%2Cy_329/MTk5MTQ2NzgzMDg1OTYzMDI1/nike-air-force.jpg",
      "price": "$115",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "393d7c",
+     "img": "images/cut/086-393d7c.png"
     }
    ],
    "photo_options": [
@@ -6844,9 +6858,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "video": "af1",
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MTk5MTQ2NzM2Mzc4MTkzODc2/brady-kraft.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party",
-   "photo_src_credit": "Kicks On SI"
+   "photo_search": "2026-10-12",
+   "photo": {
+    "credit": "Kicks On SI",
+    "source_url": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party"
+   }
   }
  ]
 }
