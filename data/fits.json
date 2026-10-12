@@ -89,7 +89,7 @@
    "score_note": "Two G-Shocks around $110 on Casio.com; Lil Tecca is a multi-platinum rapper; official brand campaign images; social posts started Jul 24",
    "note": "Brand campaign, not a candid sighting. Casio says it runs through the end of 2026. The article names both watches as the campaign leads, and Casio's own product pages carry the 'tecca' campaign photos, which ties each model to him. I matched the photos by file name and alt text but couldn't open the images themselves.",
    "find": "001",
-   "status": "approved",
+   "status": "rejected",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -98,7 +98,7 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "updated": "2026-10-11T17:07:40.520Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo": {
     "credit": "Casio G-SHOCK",
     "source_url": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/"
@@ -905,7 +905,7 @@
   },
   {
    "find": "013",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Finn Wolfhard",
@@ -947,7 +947,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-11T16:58:48.830Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/2256377266-765x1024.webp",
@@ -1243,7 +1243,7 @@
   },
   {
    "find": "018",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "François Arnaud",
@@ -1307,7 +1307,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-11T16:54:37.639Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://gqhongkong.com/wp-content/uploads/2026/09/2275925336-683x1024.webp",
@@ -1378,7 +1378,7 @@
    "score_note": "$130 adidas general release in stock; Ant Edwards; NBA league post; 11 days old",
    "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.",
    "find": "019",
-   "status": "approved",
+   "status": "rejected",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -1399,7 +1399,7 @@
      "credit": "Bruce Kluckhohn / Imagn Images"
     }
    ],
-   "updated": "2026-10-10T15:21:05.483Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo": {
     "credit": "Bruce Kluckhohn / Imagn Images",
     "source_url": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838"
@@ -1488,7 +1488,7 @@
   },
   {
    "find": "021",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Shai Gilgeous-Alexander",
@@ -1553,7 +1553,7 @@
    "photo_source": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://assets.thegame.ph/wp-content/uploads/2026/05/sga-3.webp",
@@ -1651,7 +1651,7 @@
   },
   {
    "find": "023",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Jay-Z",
@@ -1719,7 +1719,7 @@
    "photo_source": "https://www.complex.com/style/a/mike-destefano/best-dressed-rappers-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-11T17:04:06.469Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://media.nbcnewyork.com/2026/06/GettyImages-2280028226-e1780969852283.jpg?quality=85&strip=all&resize=218%2C123",
@@ -1736,7 +1736,7 @@
   },
   {
    "find": "024",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Oscar Isaac",
@@ -1789,7 +1789,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-11T16:59:31.941Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/AJ1-1024x511.webp",
@@ -1801,7 +1801,7 @@
   },
   {
    "find": "025",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Jalen Hurts",
@@ -1877,7 +1877,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_png/eagles/newa2ts0yhq287abh1yi.png",
@@ -1889,7 +1889,7 @@
   },
   {
    "find": "026",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Callum Turner",
@@ -1931,7 +1931,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-11T17:00:33.345Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/2285812880-683x1024.webp",
@@ -1947,7 +1947,7 @@
   },
   {
    "find": "027",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Timothée Chalamet",
@@ -2003,7 +2003,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-11T16:51:58.816Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/Asics-1024x768.webp",
@@ -2015,7 +2015,7 @@
   },
   {
    "find": "028",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Travis Scott",
@@ -2064,7 +2064,7 @@
      "note": "'Travis Scott arriving to the Premiere of Christopher Nolan's The Odyssey'; confirm it's not agency footage"
     }
    ],
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "photo_options": [
     {
@@ -2091,7 +2091,7 @@
   },
   {
    "find": "029",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Carlos Alcaraz",
@@ -2205,7 +2205,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-11T16:52:46.540Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/09/GettyImages-2292904214-710x1024.jpg",
@@ -2231,7 +2231,7 @@
   },
   {
    "find": "030",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Travis Scott",
@@ -2285,7 +2285,7 @@
    "photo_source": "https://chrono1010.com/en/blog/3662",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_141,w_4798,h_2698/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/the_athlete_lifestyle_on_si/01m1h7pndk4cmjtkkbx9.jpg",
@@ -2306,7 +2306,7 @@
   },
   {
    "find": "031",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Roger Federer",
@@ -2377,7 +2377,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://manofmany.com/wp-content/uploads/2026/08/Roger-Fed-Rolex-at-US-Open-2026.jpg",
@@ -2398,7 +2398,7 @@
   },
   {
    "find": "032",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Jimmy Fallon",
@@ -2455,7 +2455,7 @@
    "photo_source": "https://chrono1010.com/en/blog/3662",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://ucarecdn.com/50fd88ed-0dd7-419b-9803-29a1af6fa9d7/file.jpeg",
@@ -2476,7 +2476,7 @@
   },
   {
    "find": "033",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Russell Wilson",
@@ -2543,7 +2543,7 @@
    "photo_source": "https://chrono1010.com/en/blog/3662",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T17:11:54.934Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://ucarecdn.com/ffe3bc80-170e-4a16-85df-d04ea8a51d6b/file.jpeg",
@@ -2559,7 +2559,7 @@
   },
   {
    "find": "034",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "David Beckham",
@@ -2637,7 +2637,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.lta.org.uk/siteassets/news/2026/july/2026-david-beckham-wimbledon.jpg?width=2000",
@@ -2658,7 +2658,7 @@
   },
   {
    "find": "035",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Richard E. Grant",
@@ -2725,7 +2725,7 @@
    "photo_source": "https://precisionwatches.com/journal/wimbledon-2026-watches/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://images.hellomagazine.com/horizon/original_aspect_ratio/e32c6e503f06-gettyimages-2284150047.jpg",
@@ -2746,7 +2746,7 @@
   },
   {
    "find": "036",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Mark Ronson",
@@ -2814,7 +2814,7 @@
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-mark-ronson-wearing-audemars-piguet-royal-oak-15513ba.png?v=1789502278",
@@ -2835,7 +2835,7 @@
   },
   {
    "find": "037",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Noah Wyle",
@@ -2897,7 +2897,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-noah-wyle-wearing-cartier-tank-a-guichets-rose-gold.png?v=1789502279",
@@ -2913,7 +2913,7 @@
   },
   {
    "find": "038",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Patrick Ball",
@@ -2975,7 +2975,7 @@
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-patrick-ball-wearing-audemars-piguet-royal-oak-perpetual-calendar-26674st.png?v=1789502277",
@@ -2991,7 +2991,7 @@
   },
   {
    "find": "039",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Law Roach",
@@ -3041,7 +3041,7 @@
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-law-roach-wearing-rolex-daytona-barbie-126538tro.png?v=1789502279",
@@ -3057,7 +3057,7 @@
   },
   {
    "find": "040",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Oscar Isaac",
@@ -3126,7 +3126,7 @@
    "photo_source": "https://www.deccanchronicle.com/amp/entertainment/hollywood/emmys-2026-red-carpet-the-best-dressed-stars-1987555",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://vip-media.nbcnewyork.com/2026/09/GettyImages-2295303763.jpg?quality=85&strip=all",
@@ -3152,7 +3152,7 @@
   },
   {
    "find": "041",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Nick Jonas",
@@ -3208,7 +3208,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T17:48:07.799Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.luxurybazaar.com/grey-market/wp-content/uploads/2026/01/Nick-Jonas-Fossil-Watch-Golden-Globes-2026-1024x904.jpg",
@@ -3224,7 +3224,7 @@
   },
   {
    "find": "042",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "George Clooney",
@@ -3285,13 +3285,13 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "globeswatches"
   },
   {
    "find": "043",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Glen Powell",
@@ -3353,13 +3353,13 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "globeswatches"
   },
   {
    "find": "044",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Patrick Schwarzenegger",
@@ -3421,7 +3421,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.luxurybazaar.com/grey-market/wp-content/uploads/2026/01/Patrick-Schwarzenegger-Omega-Speedmaster-Moonshine-Gold-Golden-Globes-2026-819x1024.jpg",
@@ -3437,7 +3437,7 @@
   },
   {
    "find": "045",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Colman Domingo",
@@ -3494,13 +3494,13 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "globeswatches"
   },
   {
    "find": "046",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Jeremy Allen White",
@@ -3580,13 +3580,13 @@
     "credit": "via Teddy Baldassarre",
     "source_url": "https://teddybaldassarre.com/blogs/watches/favorite-watches-golden-globes-2026"
    },
-   "updated": "2026-10-09T17:39:44.092Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "globeswatches"
   },
   {
    "find": "047",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Bad Bunny",
@@ -3654,7 +3654,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.realitytea.com/wp-content/uploads/sites/6/2026/02/Bad-Bunny-2.jpg?w=1024",
@@ -3675,7 +3675,7 @@
   },
   {
    "find": "048",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Harry Styles",
@@ -3784,7 +3784,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.insidehook.com/wp-content/uploads/2026/02/GettyImages-2258962332.jpg?w=2542&resize=2542%2C3813",
@@ -3805,7 +3805,7 @@
   },
   {
    "find": "049",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Kendrick Lamar",
@@ -3858,7 +3858,7 @@
    "photo_source": "https://www.luxurybazaar.com/grey-market/?p=41801",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2026%2F02%2F02%2Fwristcheck-kendrick-lamar-tank-americaine-small-watch-18k-white-gold-diamond-set-68th-annual-grammy-awards-tw.jpg?w=1080&cbr=1&q=90&fit=max",
@@ -3884,7 +3884,7 @@
   },
   {
    "find": "050",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "John Legend",
@@ -3937,7 +3937,7 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/?p=41801"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "grammyswatches"
   },
@@ -4014,7 +4014,7 @@
    "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
    "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
    "find": "051",
-   "status": "approved",
+   "status": "rejected",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -4023,7 +4023,7 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "updated": "2026-10-11T17:16:16.735Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo": {
     "credit": "Levi's / Mel Bles (via MyFaceHunter)",
     "source_url": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html"
@@ -4312,7 +4312,7 @@
   },
   {
    "find": "056",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Cameron Jordan",
@@ -4373,13 +4373,13 @@
    "photo": {
     "credit": "@New Orleans Saints Youtube"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "tunnel"
   },
   {
    "find": "057",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Laremy Tunsil",
@@ -4451,13 +4451,13 @@
     "credit": "via NFL.com",
     "source_url": "https://www.nfl.com/news/five-best-fits-of-week-1-2025-nfl-season"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "tunnel"
   },
   {
    "find": "058",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Donovan Mitchell",
@@ -4511,7 +4511,7 @@
     "credit": "via The GAME",
     "source_url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false,
    "video": "tunnel"
   },
@@ -4714,7 +4714,7 @@
   },
   {
    "find": "062",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Uchenna Nwosu",
@@ -4787,11 +4787,11 @@
    "photo_source": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z"
+   "updated": "2026-10-12T16:29:35.173Z"
   },
   {
    "find": "063",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Aidan Hutchinson",
@@ -4853,7 +4853,7 @@
    "photo_source": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_auto/lions/bdnbqm8ugac3j4eja9kf.jpg",
@@ -4864,7 +4864,7 @@
   },
   {
    "find": "064",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Kenneth Walker III",
@@ -4926,11 +4926,11 @@
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z"
+   "updated": "2026-10-12T16:29:35.173Z"
   },
   {
    "find": "065",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "A.J. Brown",
@@ -5000,11 +5000,11 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z"
+   "updated": "2026-10-12T16:29:35.173Z"
   },
   {
    "find": "066",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Dak Prescott",
@@ -5055,11 +5055,11 @@
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z"
+   "updated": "2026-10-12T16:29:35.173Z"
   },
   {
    "find": "067",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Malik Nabers",
@@ -5121,11 +5121,11 @@
    "photo_source": "https://abc7news.com/post/nfl-week-1s-best-arrivals-led-joe-burrow-lamar-jackson/19826926/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z"
+   "updated": "2026-10-12T16:29:35.173Z"
   },
   {
    "find": "068",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Kenny Moore II",
@@ -5198,7 +5198,7 @@
    "photo_source": "https://amp.nfl.com/news/five-best-fits-of-week-3-2025-nfl-season",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://static.www.nfl.com/image/upload/f_auto,dpr_2.0,q_auto/league/nekgjqjgh0rh9ibphapz",
@@ -5209,7 +5209,7 @@
   },
   {
    "find": "069",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Matthew Rhys",
@@ -5293,7 +5293,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.thewrap.com/wp-content/uploads/2026/09/GettyImages-2295298828-scaled.jpg?width=682&height=1024&fit=bounds",
@@ -5318,7 +5318,7 @@
   },
   {
    "find": "070",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Colman Domingo",
@@ -5396,7 +5396,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.hola.com/us/horizon/original_aspect_ratio/a134e32955e5-los-angeles-california-colman-domingo-attends-the-78th-primetime-emmy-awards-at.jpg",
@@ -5421,7 +5421,7 @@
   },
   {
    "find": "071",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Homer Gere",
@@ -5483,7 +5483,7 @@
    "photo_source": "https://vogue.ph/?p=257477",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://assets.vogue.ph/wp-content/uploads/2026/09/GettyImages-2291582090-1600x2465.webp",
@@ -5498,7 +5498,7 @@
   },
   {
    "find": "072",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "A$AP Rocky",
@@ -5577,12 +5577,12 @@
     "credit": "via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/asap-rocky-brought-out-the-louis-vuitton-vans-for-his-world-cup-fit/"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false
   },
   {
    "find": "073",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Michael B. Jordan",
@@ -5670,12 +5670,12 @@
     "credit": "via Essence",
     "source_url": "https://www.essence.com/fashion/michael-b-jordan-oscars-win-custom-louis-vuitton/"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false
   },
   {
    "find": "074",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "J-Hope",
@@ -5756,7 +5756,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://images.t2online.in/cdn-cgi/image/width=1200,quality=70/https://cms.t2online.in/api/images/1782244687179.jpg",
@@ -5776,7 +5776,7 @@
   },
   {
    "find": "075",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Timothée Chalamet",
@@ -5861,12 +5861,12 @@
     "credit": "via Storyboard18",
     "source_url": "https://storyboard18.com/photos/brand-makers/you-cant-miss-these-looks-from-the-oscars-2026-red-carpet-92415.htm"
    },
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "ig_queue": false
   },
   {
    "find": "076",
-   "status": "approved",
+   "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Harry Styles",
@@ -5927,7 +5927,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-09T15:10:40.749Z",
+   "updated": "2026-10-12T16:29:35.173Z",
    "photo_options": [
     {
      "image": "https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2026/01/Prada-x-Harry-Styles_1.jpg",
