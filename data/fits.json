@@ -1246,7 +1246,9 @@
      "note": "",
      "slide": 2,
      "id": "053512",
-     "img": "images/cut/017-053512.png"
+     "img": "images/cut/017-053512.png",
+     "price_auto": "$159.99",
+     "price_checked": "2026-10-12"
     }
    ],
    "photo_options": [
@@ -2337,7 +2339,9 @@
      "note": "",
      "slide": 2,
      "id": "be973d",
-     "img": "images/cut/030-be973d.png"
+     "img": "images/cut/030-be973d.png",
+     "price_auto": "$115",
+     "price_checked": "2026-10-12"
     }
    ],
    "photo_options": [
