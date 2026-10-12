@@ -1,14 +1,8 @@
 {
  "leads": {
-  "last_run": "2026-10-09T20:21:23+00:00",
-  "result": "ok",
-  "message": "Found 3 new leads.",
-  "added": [
-   "#057 LeBron James (67)",
-   "#058 Shai Gilgeous-Alexander (82)",
-   "#059 Lil Tecca (72)"
-  ],
-  "skipped": []
+  "last_run": "2026-10-12T17:10:38+00:00",
+  "result": "error",
+  "message": "Add the ANTHROPIC_API_KEY repo secret to use Find leads (GitHub \u2192 Settings \u2192 Secrets and variables \u2192 Actions)."
  },
  "instagram": {
   "connected": false,
