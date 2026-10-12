@@ -6,12 +6,13 @@
    "store": "amazon.com",
    "title_raw": "DCZTELG Penny Loafers for Men Casual Slip On Dress Moccasins Comfort Driving Boat Shoes",
    "brand": "DCZTELG",
-   "name": "",
+   "name": "Penny Loafers for Men Casual Slip On Dress Moccasins",
    "image": "https://m.media-amazon.com/images/I/51QUAvnXTNL._AC_SL1500_.jpg",
    "price": "",
    "currency": "USD",
    "added": "2026-10-12T18:18:33.264Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "shoes"
   },
   {
    "id": "mv5ks01qrcwh",
