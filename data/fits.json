@@ -6892,7 +6892,7 @@
    ],
    "photo_options": [
     {
-     "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_auto/bills/trgazkzaui74fignsltt.jpg",
+     "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg",
      "page": "https://www.buffalobills.com/photos/best-arrival-photos-from-the-2025-buffalo-bills-season",
      "credit": "Bill Wippert / Buffalo Bills"
     },
@@ -6930,7 +6930,8 @@
    "photo": {
     "credit": "Bill Wippert / Buffalo Bills",
     "source_url": "https://www.buffalobills.com/photos/best-arrival-photos-from-the-2025-buffalo-bills-season"
-   }
+   },
+   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg"
   },
   {
    "celeb": "Jalen Hurts",
@@ -6970,7 +6971,7 @@
    ],
    "photo_options": [
     {
-     "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_png/eagles/vhqqdazc1oo2kygtveep.png",
+     "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/eagles/vhqqdazc1oo2kygtveep.jpg",
      "page": "https://www.philadelphiaeagles.com/photos/lions-eagles-arrival-photo-gallery-sunday-night-football-week-11-nfl",
      "credit": "Devlynn Bunning / Philadelphia Eagles"
     },
@@ -7008,7 +7009,8 @@
    "photo": {
     "credit": "Devlynn Bunning / Philadelphia Eagles",
     "source_url": "https://www.philadelphiaeagles.com/photos/lions-eagles-arrival-photo-gallery-sunday-night-football-week-11-nfl"
-   }
+   },
+   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/eagles/vhqqdazc1oo2kygtveep.jpg"
   },
   {
    "celeb": "Travis Hunter",
@@ -7533,7 +7535,7 @@
    ],
    "photo_options": [
     {
-     "image": "https://bamfstyle.com/wp-content/uploads/2023/03/TLOUJoel-MAIN3.jpg",
+     "image": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2023/03/TLOUJoel-MAIN3.jpg",
      "page": "https://bamfstyle.com/2023/03/15/last-of-us-pascal/amp/",
      "credit": "HBO via BAMF Style"
     },
@@ -7570,85 +7572,7 @@
    "photo_search": "2026-10-12",
    "photo_src_page": "https://bamfstyle.com/2023/03/15/last-of-us-pascal/amp/",
    "photo_src_credit": "HBO via BAMF Style",
-   "photo_src_failed": "2026-10-12: 429 Client Error: Too Many Requests for url: https://bamfstyle.com/wp-content/up"
-  },
-  {
-   "celeb": "Benicio del Toro",
-   "title": "Benicio's J Balvin G-Shock",
-   "subtitle": "One Battle After Another press tour",
-   "context": "One Battle After Another promotional tour, incl. London premiere",
-   "date": "Sept 2025",
-   "category": "Wrist",
-   "headline": "Benicio del Toro's press-tour watch: a $230 G-Shock",
-   "detail": "On the One Battle After Another press run, del Toro wore G-Shock's DWE-5600 J Balvin collaboration, a square 5600 with a swappable bezel and strap. He wore it to the London premiere too.",
-   "tags": [
-    "gshock",
-    "premiere"
-   ],
-   "sources": [
-    {
-     "label": "G-Central — Benicio del Toro wore the G-Shock DWE-5600 J Balvin collab during One Battle After Another promotional tour",
-     "url": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "watch",
-     "brand": "Casio G-Shock",
-     "name": "G-Shock x J Balvin DWE-5600JB-1A9",
-     "product_url": "https://stockx.com/casio-g-shock-x-jbalvin-the-origin-dwe-5600jb-1a9er-black",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://scarce.co/cdn/shop/files/DWE-5600JB-1A9_12_1200x1200.jpg?v=1744125459",
-     "price": "$230",
-     "note": "",
-     "slide": 2,
-     "id": "969230",
-     "img": "images/cut/093-969230.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://www.g-central.com/wp-content/uploads/2025/09/BENICIO-DEL-TORO-WEARING-G-SHOCK-DW-5600.webp",
-     "page": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/",
-     "credit": "OutNowCH (YouTube) via G-Central"
-    }
-   ],
-   "photo_source": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/",
-   "score": 59,
-   "score_parts": {
-    "shop": 26,
-    "star": 17,
-    "cover": 8,
-    "fresh": 8
-   },
-   "score_note": "Clear ID of a buyable G-Shock on an Oscar-season star; weak cover options",
-   "note": "Only one photo found, a YouTube interview still (OutNowCH). G-Central also embeds Getty image 2235822947 (London premiere, watch credited in the caption), but that's a Getty embed, not a usable direct image. Look for a premiere shot with the wrist visible. StockX shows a $230 buy-now ask (retail $230; one last sale at $140). Casio US page: https://www.casio.com/us/watches/gshock/product.DWE-5600JB-1A9/. The image is a retailer packshot (Scarce, AU). Check that it's a clean white-background shot. G-Central doesn't give the London premiere date. Del Toro also wore a DW-5000SS-1 at an Armani show in 2024 (separate G-Central post).",
-   "find": "093",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-12",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "photo_search": "2026-10-12",
-   "photo_candidates": [
-    {
-     "match": "month",
-     "taken": "2025-09-08",
-     "license": "CC BY-SA 4.0",
-     "author": "RON RAFFETY",
-     "page": "https://commons.wikimedia.org/wiki/File:Actor_Benicio_Del_Toro_-_World_Premier_%27One_Battle_After_Another%22.jpg",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Actor_Benicio_Del_Toro_-_World_Premier_%27One_Battle_After_Another%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    }
-   ],
-   "photo": {
-    "credit": "OutNowCH (YouTube) via G-Central",
-    "source_url": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/"
-   }
+   "photo_src": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2023/03/TLOUJoel-MAIN3.jpg"
   }
  ]
 }
