@@ -89,67 +89,58 @@ a { color: inherit; }
 /* fit page */
 .back { display: inline-flex; gap: 8px; align-items: center; font: 500 14px var(--body); padding-block: 16px 10px; text-decoration: none; color: var(--ink); }
 .back:hover { color: var(--accent); }
-.fit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 36px; align-items: start; }
-.shot { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--tag); }
-.shot .frame { position: relative; aspect-ratio: 4 / 5; background: var(--paper); }
-.shot .frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
-.shot .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; }
-.shot .frame .ph { width: 100%; height: 100%; font-size: 11px; }
+.fit { --hero: clamp(520px, calc(100vh - 140px), 900px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 36px; align-items: start; }
+.shot { position: sticky; top: max(16px, calc((100vh - var(--hero)) / 2)); display: flex; flex-direction: column; height: var(--hero); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--tag); }
+.shot .frame { position: relative; flex: 1; min-height: 0; background: var(--paper); }
+.shot .frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+.shot .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; box-sizing: border-box; }
+.shot .frame .ph { position: absolute; inset: 0; font-size: 11px; }
 .shot .credit { position: absolute; left: 12px; bottom: 10px; font: 11px var(--body); color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.8); }
-.shot .bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; border-top: 1px solid var(--line); }
+.shot .bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; border-top: 1px solid var(--line); flex: none; }
 .shot .bar > div { padding: 14px 22px; min-width: 0; }
 .shot .bar > div + div { border-left: 1px solid var(--line); }
 .shot .k { font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
 .shot .who { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; overflow-wrap: anywhere; }
 .shot .num { font-family: var(--display); font-weight: 900; font-size: 34px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.buy { min-width: 0; }
 .eyebrow { font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
-.fit h1 { font-family: var(--display); font-weight: 900; font-size: clamp(36px, 4.4vw, 56px); line-height: .92; text-transform: uppercase; margin: 0 0 8px; text-wrap: balance; overflow-wrap: anywhere; }
-.fit .sub { font-size: 18px; margin: 0 0 18px; }
+.fit h1 { font-family: var(--display); font-weight: 900; font-size: clamp(36px, 4.4vw, 60px); line-height: .92; text-transform: uppercase; margin: 0 0 8px; text-wrap: balance; overflow-wrap: anywhere; }
+.fit .sub { font-size: 18px; margin: 0 0 16px; }
 .pcard { border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 12px; margin-bottom: 12px; }
 .pcard.featured { border: 2px solid var(--accent); }
-.pcard .pimg { position: relative; background: #f3f1ee; border-radius: 4px; aspect-ratio: 5 / 2; overflow: hidden; }
+.pcard .pimg { position: relative; background: #f3f1ee; border-radius: 4px; aspect-ratio: 2 / 1; overflow: hidden; color: #555; }
 .pcard .pimg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 4% 8%; box-sizing: border-box; }
+.pcard .picon { position: absolute; inset: 0; display: grid; place-items: center; }
+.pcard .picon svg { width: 40%; height: 40%; }
 .pcard .pbody { padding: 14px 10px 6px; }
-.pcard.row { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 1fr); gap: 4px; align-items: center; }
-.pcard.row .pimg { aspect-ratio: 1; }
-.pcard.row .pbody { padding: 6px 10px 6px 16px; }
-.pcard.row .pname { font-size: 21px; }
-.pcard.row .pprice b { font-size: 28px; }
-.pcard.row .top { flex-direction: column; gap: 6px; }
+.pcard.row { display: grid; grid-template-columns: minmax(0, 46%) minmax(0, 1fr); gap: 6px; align-items: center; }
+.pcard.row .pimg { aspect-ratio: 4 / 3; }
+.pcard.row .pbody { padding: 4px 8px 4px 16px; }
+.pcard.row .pname { font-size: 24px; }
+.pcard.row .pprice b { font-size: 30px; }
+.pcard.row .top { flex-direction: column; gap: 10px; }
 .pcard.row .pprice { text-align: left; }
-.pcard.row .cta { margin-top: 10px; padding: 11px 14px; font-size: 15px; }
-.pcard.row .cta-note { text-align: left; }
+.pcard.row .cta { margin-top: 12px; padding: 12px 14px; font-size: 16px; }
 .pcard .top { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
 .badge { display: inline-block; font: 600 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; background: var(--accent); color: var(--accent-ink); margin-bottom: 8px; }
+.badge.muted { background: var(--line); color: var(--ink); }
 .pcard .brand { font: 600 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.pcard .pname { font: 600 26px/1.15 var(--body); margin: 2px 0; overflow-wrap: anywhere; }
+.pcard .pname { font: 600 28px/1.15 var(--body); margin: 2px 0; overflow-wrap: anywhere; }
 .pcard .cw { font: 15px var(--mono); color: var(--ink); opacity: .85; }
 .pcard .pprice { text-align: right; flex: none; }
 .pcard .pprice b { display: block; font-family: var(--display); font-weight: 800; font-size: 36px; line-height: 1; }
-.pcard .pprice small { display: block; font-size: 12.5px; color: var(--muted); margin-top: 4px; max-width: 22ch; }
-.cta { display: flex; justify-content: center; align-items: center; gap: 8px; width: 100%; margin-top: 14px; text-decoration: none; font: 700 17px var(--body); background: var(--accent); color: var(--accent-ink); padding: 14px 16px; border-radius: 6px; }
+.pcard .pprice small { display: block; font-size: 12.5px; color: var(--muted); margin-top: 4px; max-width: 26ch; }
+.cta { display: flex; justify-content: center; align-items: center; gap: 8px; width: 100%; margin-top: 14px; text-decoration: none; font: 700 17px var(--body); background: var(--accent); color: var(--accent-ink); padding: 14px 16px; border-radius: 6px; box-sizing: border-box; }
 .cta:hover { filter: brightness(1.08); }
 .cta-note { text-align: center; font-size: 13px; color: var(--muted); margin: 8px 0 0; }
-.pcard details { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; font-size: 14px; }
-.pcard summary { cursor: pointer; font-weight: 500; list-style: none; display: flex; justify-content: space-between; }
-.pcard summary::-webkit-details-marker { display: none; }
-.pcard summary::after { content: "⌄"; }
-.pcard details[open] summary::after { content: "⌃"; }
-.pcard details p { margin: 6px 0 0; color: var(--muted); }
+.pdet { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; font-size: 14px; display: grid; gap: 4px; }
+.pdet span { color: var(--muted); }
 .nosale { display: block; text-align: center; margin-top: 14px; font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-.sect { font-family: var(--display); font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 16px 0 2px; }
-.sect-sub { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
-.mini { display: grid; grid-template-columns: 108px minmax(0, 1fr) auto; gap: 14px; align-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 10px; margin-bottom: 8px; }
-.mini .mimg { width: 108px; height: 108px; background: #f3f1ee; border-radius: 4px; display: grid; place-items: center; overflow: hidden; color: #555; }
-.mini .mimg img { width: 100%; height: 100%; object-fit: contain; padding: 8px; box-sizing: border-box; }
-.mini .mname { font-weight: 600; font-size: 16px; line-height: 1.25; overflow-wrap: anywhere; }
-.mini .mprice { font: 500 13px var(--mono); color: var(--muted); margin-top: 3px; }
-.ghost { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; text-decoration: none; font: 600 13px var(--body); border: 1.5px solid var(--accent); color: var(--accent); padding: 9px 12px; border-radius: 6px; }
-.ghost:hover { background: var(--accent); color: var(--accent-ink); }
 .disclaim { font-size: 12.5px; color: var(--muted); margin: 4px 0 0; }
-.sighting { margin-top: 26px; }
+.sighting { margin-top: 22px; }
+.below .sighting { margin-top: 36px; padding-top: 26px; border-top: 1px solid var(--line); }
 .sighting h2 { font-family: var(--display); font-weight: 800; font-size: 26px; text-transform: uppercase; margin: 0 0 6px; }
-.sighting p { margin: 0 0 12px; font-size: 16px; max-width: 64ch; }
+.sighting p { margin: 0 0 12px; font-size: 16px; max-width: 70ch; }
 .srcline { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
 .srcline a { color: var(--ink); }
 .pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--line); }
@@ -166,18 +157,19 @@ footer { margin-top: 48px; padding-top: 18px; border-top: 2px solid var(--ink); 
 footer p { margin: 0; max-width: 80ch; }
 
 @media (max-width: 720px) {
-  .fit { grid-template-columns: minmax(0, 1fr); gap: 18px; }
-  .shot { position: static; }
-  .shot .frame { aspect-ratio: 4 / 4.2; }
+  .fit { grid-template-columns: minmax(0, 1fr); gap: 18px; height: auto; }
+  .shot { position: static; height: auto; }
+  .shot .frame { flex: none; aspect-ratio: 4 / 4.2; }
   .shot .who { font-size: 24px; }
-  .pcard .pname { font-size: 21px; }
-  .pcard.row { grid-template-columns: 38% minmax(0, 1fr); }
-  .pcard.row .pbody { padding: 4px 4px 4px 10px; }
-  .pcard.row .cta-note { display: none; }
-  .pcard .pprice b { font-size: 28px; }
-  .mini { grid-template-columns: 84px minmax(0, 1fr); }
-  .mini .mimg { width: 84px; height: 84px; }
-  .mini .ghost { grid-column: 1 / -1; justify-content: center; }
+  .pcard .pname, .pcard.row .pname { font-size: 20px; }
+  .pcard.row { grid-template-columns: 40% minmax(0, 1fr); }
+  .pcard.row .pimg { aspect-ratio: 1; }
+  .pcard.row .pbody { padding: 2px 2px 2px 10px; }
+  .pcard.row .top { gap: 4px; }
+  .pcard .pprice b, .pcard.row .pprice b { font-size: 26px; }
+  .pcard.row .pprice small { display: none; }
+  .pcard.row .cta { font-size: 14px; padding: 10px; }
+  .pcard.row .xl { display: none; }
   .pager { flex-direction: column; gap: 10px; }
   .pager a:last-child { align-self: flex-end; text-align: right; }
   .buybar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; gap: 10px; align-items: center; padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--tag); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(0,0,0,.25); }
@@ -335,41 +327,42 @@ const RESALE = /stockx|goat/i;
 function renderFit(f) {
   const i = FITS.indexOf(f), prev = FITS[i - 1], next = FITS[i + 1];
   const exact = f.items.filter(x => x.label === "Exact"), cheap = f.items.filter(x => x.label !== "Exact");
-  const types = new Set(exact.map(x => x.type));
-  const less = exact.length ? cheap.filter(x => types.has(x.type)) : [], rest = cheap.filter(x => !less.includes(x));
   const featured = exact.find(x => shopUrl(f, x)) || exact[0];
+  const ordered = [...(featured ? [featured] : []), ...exact.filter(x => x !== featured), ...cheap];
+  const single = ordered.length === 1;
   const asOf = it => it.price && it.price_date ? `Price as of ${new Date(it.price_date + "T12:00").toLocaleDateString("en-US", { month: "short", day: "numeric" })}.` : "";
+  const icon = it => (CONFIG.icons || {})[it.type] || (CONFIG.icons || {}).clothing || "";
   const card = it => {
     const url = shopUrl(f, it), retailer = it.retailer_name || "the store", resale = RESALE.test(retailer), nm = splitName(it.name);
-    const verb = resale ? "Check sizes on" : "Shop on";
-    return `<section class="pcard${it === featured ? " featured" : ""}${exact.length > 1 ? " row" : ""}">
-      ${it.image ? `<div class="pimg"><img src="${esc(it.image)}" alt="${esc((it.brand + " " + it.name).trim())}"></div>` : ""}
+    const isExact = it.label === "Exact";
+    const badge = isExact ? (it === featured ? `Featured<span class="xl"> · Exact model</span>` : "Exact model") : "Similar option";
+    const label = isExact ? (resale ? `Check sizes<span class="xl"> on ${esc(retailer)}</span>` : `Shop<span class="xl"> on ${esc(retailer)}</span>`) : "Shop similar";
+    const priceNote = resale ? "Price varies by size. Fees may apply." : asOf(it);
+    const det = [nm.det, resale ? asOf(it) : ""].filter(Boolean).join(" · ");
+    return `<section class="pcard${it === featured ? " featured" : ""}${isExact ? "" : " sim"}${single ? "" : " row"}">
+      <div class="pimg">${it.image ? `<img src="${esc(it.image)}" alt="${esc((it.brand + " " + it.name).trim())}" loading="lazy">` : `<span class="picon">${icon(it)}</span>`}</div>
       <div class="pbody">
-        <span class="badge">${it === featured ? "Featured · " : ""}Exact model</span>
+        ${single ? "" : `<span class="badge${isExact ? "" : " muted"}">${badge}</span>`}
         <div class="top">
           <div style="min-width:0">
-            ${it.brand ? `<div class="brand">${esc(it.brand)}</div>` : ""}
-            <div class="pname">${esc(nm.name)}</div>
+            ${it.brand && (single || !isExact) ? `<div class="brand">${esc(it.brand)}</div>` : ""}
+            <div class="pname">${esc(!single && isExact && it.brand ? `${it.brand} ${nm.name}` : nm.name)}</div>
             ${nm.cw ? `<div class="cw">${esc(nm.cw)}</div>` : ""}
           </div>
-          ${it.price ? `<div class="pprice"><b>${resale ? "From " : ""}${esc(it.price)}</b><small>${resale ? "Price varies by size. Fees may apply." : esc(asOf(it))}</small></div>` : ""}
+          ${it.price ? `<div class="pprice"><b>${resale ? "From " : ""}${esc(it.price)}</b>${priceNote ? `<small>${esc(priceNote)}</small>` : ""}</div>` : ""}
         </div>
-        ${url ? `<a class="cta" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">${verb} ${esc(retailer)} ↗</a><p class="cta-note">You'll complete your purchase on ${esc(retailer)}.</p>`
+        ${url ? `<a class="cta" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">${label} ↗</a>${single ? `<p class="cta-note">You'll complete your purchase on ${esc(retailer)}.</p>` : ""}`
               : `<span class="nosale">${esc(it.note || "Not for sale")}</span>`}
-        ${nm.det || (resale && asOf(it)) ? `<details><summary>Product details</summary><p>${esc([nm.det, resale ? asOf(it) : ""].filter(Boolean).join(" · "))}</p></details>` : ""}
+        ${single && det ? `<div class="pdet"><b>Product details</b><span>${esc(det)}</span></div>` : ""}
       </div>
     </section>`;
   };
-  const mini = it => {
-    const url = shopUrl(f, it), nm = splitName(it.name);
-    return `<div class="mini">
-      <div class="mimg">${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy">` : (CONFIG.icons || {})[it.type] || (CONFIG.icons || {}).clothing || ""}</div>
-      <div style="min-width:0"><div class="mname">${esc((it.brand ? it.brand + " " : "") + nm.name)}</div>${it.price ? `<div class="mprice">${esc(it.price)}${it.retailer_name ? " · " + esc(it.retailer_name) : ""}</div>` : it.retailer_name ? `<div class="mprice">${esc(it.retailer_name)}</div>` : ""}</div>
-      ${url ? `<a class="ghost" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop similar ↗</a>` : ""}
-    </div>`;
-  };
-  const sect = (list, title, sub) => list.length ? `<h2 class="sect">${title}</h2><p class="sect-sub">${sub}</p>${list.map(mini).join("")}` : "";
-  const pieces = f.items.length;
+  const sighting = `<section class="sighting">
+      <h2>The sighting</h2>
+      <p>${esc(f.detail)}</p>
+      <div class="srcline"><span>Sources:</span>${f.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label.split(" — ")[0])} ↗</a>`).join("")}${f.ig ? `<a href="${esc(f.ig)}" target="_blank" rel="noopener">Instagram post ↗</a>` : ""}</div>
+    </section>`;
+  const disclaim = cheap.length ? `<p class="disclaim">Similar options recreate the look; they are not confirmed items worn.</p>` : "";
   app.innerHTML = `
     <a class="back" href="./">← All finds</a>
     <article class="fit">
@@ -381,26 +374,21 @@ function renderFit(f) {
           <div><div class="k">Find</div><div class="num">#${f.find}</div></div>
         </div>
       </aside>
-      <div style="min-width:0">
-        <p class="eyebrow">Find #${f.find} · ${pieces > 1 ? `${pieces} pieces` : exact.length ? "Exact model" : "Get the look"}</p>
+      <div class="buy">
+        <p class="eyebrow">Find #${f.find} · ${single ? (exact.length ? "Exact model" : "Get the look") : `${ordered.length} pieces`}</p>
         <h1>${esc(f.title || f.headline)}</h1>
         <p class="sub">${esc(f.subtitle || f.context)}${f.date ? ` · ${esc(f.date)}` : ""}</p>
-        ${exact.map(card).join("")}
-        ${sect(less, "Get it for less", "Cheaper takes on the exact piece.")}
-        ${exact.length ? sect(rest, "Complete the look", "The source didn't name these pieces, so these are close matches.")
-                       : sect(rest, "Get the look", "The brands weren't reported, so these are similar picks.")}
-        ${cheap.length ? `<p class="disclaim">Similar options recreate the look; they are not confirmed items worn.</p>` : ""}
-        <section class="sighting">
-          <h2>The sighting</h2>
-          <p>${esc(f.detail)}</p>
-          <div class="srcline"><span>Sources:</span>${f.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label.split(" — ")[0])} ↗</a>`).join("")}${f.ig ? `<a href="${esc(f.ig)}" target="_blank" rel="noopener">Instagram post ↗</a>` : ""}</div>
-        </section>
-        <nav class="pager">
-          ${prev ? `<a href="${fitUrl(prev)}">← Previous find</a>` : "<span></span>"}
-          ${next ? `<a href="${fitUrl(next)}">Next find →</a>` : "<span></span>"}
-        </nav>
+        <div class="plist${ordered.length > 3 ? " more" : ""}">
+          ${ordered.map(card).join("")}
+          ${single ? sighting : disclaim}
+        </div>
       </div>
     </article>
+    ${single ? "" : `<div class="below">${sighting}</div>`}
+    <nav class="pager">
+      ${prev ? `<a href="${fitUrl(prev)}">← Previous find</a>` : "<span></span>"}
+      ${next ? `<a href="${fitUrl(next)}">Next find →</a>` : "<span></span>"}
+    </nav>
     ${featured && shopUrl(f, featured) ? `<div class="buybar"><div class="bt"><b>${esc(splitName(featured.name).name)}</b>${featured.price ? `${RESALE.test(featured.retailer_name || "") ? "From " : ""}${esc(featured.price)}` : esc(featured.retailer_name || "")}</div><a class="cta" href="${esc(shopUrl(f, featured))}" target="_blank" rel="sponsored nofollow noopener">${RESALE.test(featured.retailer_name || "") ? "Check sizes" : "Shop"} ↗</a></div>` : ""}`;
   document.body.classList.toggle("has-buybar", !!(featured && shopUrl(f, featured)));
 }
