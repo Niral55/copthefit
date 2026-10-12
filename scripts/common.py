@@ -76,13 +76,32 @@ def shop_url(cfg, item):
     return u
 
 
+STORE_NAMES = {"louisvuitton": "Louis Vuitton", "ralphlauren": "Ralph Lauren", "newbalance": "New Balance", "footlocker": "Foot Locker",
+               "finishline": "Finish Line", "urbanoutfitters": "Urban Outfitters", "mrporter": "Mr Porter", "jdsports": "JD Sports",
+               "gshock": "G-Shock", "casio": "Casio", "stockx": "StockX", "goat": "GOAT", "hm": "H&M", "ssense": "SSENSE",
+               "farfetch": "Farfetch", "nordstrom": "Nordstrom", "macys": "Macy's", "tomford": "Tom Ford", "bottegaveneta": "Bottega Veneta",
+               "saintlaurent": "Saint Laurent", "ysl": "Saint Laurent", "fearofgod": "Fear of God", "levi": "Levi's", "carhartt-wip": "Carhartt WIP",
+               "endclothing": "END.", "soleretriever": "Sole Retriever", "tommy": "Tommy Hilfiger", "dickies": "Dickies", "rayban": "Ray-Ban", "ray-ban": "Ray-Ban"}
+
+
+def _store_from_host(host):
+    """'us.louisvuitton.com' → 'Louis Vuitton', 'shop.casio.com' → 'Casio' (skip country/shop subdomains)."""
+    parts = [p for p in host.split(".") if p]
+    if not parts:
+        return ""
+    if len(parts) >= 3 and parts[-2] in ("co", "com") and len(parts[-1]) == 2:  # example.co.uk
+        parts = parts[:-1]
+    label = parts[-2] if len(parts) >= 2 else parts[0]
+    return STORE_NAMES.get(label, label.replace("-", " ").title())
+
+
 def retailer_name(cfg, item):
     if item.get("product_url"):
         host = (urlparse(item["product_url"]).hostname or "").replace("www.", "")
         for r in cfg["retailers"].values():
             if (urlparse(r["search"]).hostname or "").replace("www.", "") == host:
                 return r["name"]
-        return host.split(".")[0].capitalize() if host else ""
+        return _store_from_host(host)
     r = cfg["retailers"].get(item.get("retailer") or "")
     return r["name"] if r else ""
 
