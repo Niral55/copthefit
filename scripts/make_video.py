@@ -82,9 +82,9 @@ def build_script(v, fits):
                  "price": sc.get("product_price") or (f"From {low}" if low else "")})
     kw = sc.get("keyword") or "LINK"
     segs.append({"kind": "outro", "loop_find": finds[0], "keyword": kw,
-                 "say": sc.get("outro_say") or f"Who wore it best? Comment {kw.lower()} and we'll send you the link."})
+                 "say": sc.get("outro_say") or f"Comment {kw.lower()}, and we'll send you every piece from this video."})
     first, last = finds[0], finds[-1]
-    caption = sc.get("caption") or (f"{v['title']} 👀\nFind #{first}–#{last} on our site. Comment {kw} and we'll DM you the link.\n"
+    caption = sc.get("caption") or (f"{v['title']} 👀\nFind #{first}–#{last} on our site. Comment {kw} and we'll DM you every piece from this video.\n"
                                     "#celebstyle #fitcheck #copthefit")
     return segs, caption
 

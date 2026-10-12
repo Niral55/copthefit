@@ -19,7 +19,7 @@
      "002": {
       "label": "Keanu Reeves",
       "sub": "SPEED · $65",
-      "say": "It's the G-Shock fifty-six hundred. He wore it in Speed.",
+      "say": "He wore a G-Shock in Speed, and it barely looks different today.",
       "focus": [
        0.45,
        0.6
@@ -37,7 +37,7 @@
      "004": {
       "label": "V · BTS",
       "sub": "$84",
-      "say": "V wore the all-black version.",
+      "say": "V wore the all-black version. Different model, same idea.",
       "crop": [
        0,
        0,
@@ -69,11 +69,11 @@
      }
     },
     "product_find": "002",
-    "product_title": "Casio G-Shock DW5600",
+    "product_title": "Casio G-Shock",
     "product_price": "From $65",
-    "product_say": "Movie stars. K-pop idols. Rappers. One sixty-five dollar watch.",
-    "outro_say": "Who wore it best? Comment watch for the link.",
-    "caption": "Keanu, RM, V, Shia… all in the same $65 Casio 👀\nFind #001–#005 on our site. Comment WATCH and we'll DM you the link.\n#gshock #casio #watchspotting #celebstyle #bts",
+    "product_say": "Movie stars. K-pop idols. Rappers. All in a G-Shock, from sixty-five dollars.",
+    "outro_say": "Comment watch, and we'll send you every version they wore.",
+    "caption": "Keanu, RM, V, Shia… all in a G-Shock from $65 👀\nComment WATCH and we'll DM you every version they wore (#001–#005).\n#gshock #casio #watchspotting #celebstyle #bts",
     "order": [
      "002",
      "003",
