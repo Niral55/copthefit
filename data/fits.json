@@ -6885,8 +6885,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/112/011/452/original/U990WO6.png.png?width=750",
      "price": "$101",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='image.goat.com', port=443): Max retries exceeded with "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -6925,7 +6924,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_auto/bills/trgazkzaui74fignsltt.jpg",
+   "photo_src_page": "https://www.buffalobills.com/photos/best-arrival-photos-from-the-2025-buffalo-bills-season",
+   "photo_src_credit": "Bill Wippert / Buffalo Bills"
   },
   {
    "celeb": "Jalen Hurts",
@@ -6958,8 +6960,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/854/583/original/HV4580_200.png.png?width=750",
      "price": "$100",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='image.goat.com', port=443): Max retries exceeded with "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -6998,7 +6999,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/t_lazy/f_png/eagles/vhqqdazc1oo2kygtveep.png",
+   "photo_src_page": "https://www.philadelphiaeagles.com/photos/lions-eagles-arrival-photo-gallery-sunday-night-football-week-11-nfl",
+   "photo_src_credit": "Devlynn Bunning / Philadelphia Eagles"
   },
   {
    "celeb": "Travis Hunter",
@@ -7031,8 +7035,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/063/523/222/original/757256_01.jpg.jpeg?width=750",
      "price": "$61",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='image.goat.com', port=443): Max retries exceeded with "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -7061,7 +7064,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://images.soleretriever.com/blog/798426b3af2610aba1a54a903547fa9e6108c9c7-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-2-best-tunnel-fits",
+   "photo_src_credit": "Sole Retriever"
   },
   {
    "celeb": "Kayvon Thibodeaux",
@@ -7094,8 +7100,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/107/672/566/original/1424268_01.jpg.jpeg?width=750",
      "price": "$102",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='image.goat.com', port=443): Max retries exceeded with "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -7124,7 +7129,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://images.soleretriever.com/blog/e7ab0e18d1b637723ac06c7539fd1536acbfc069-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits",
+   "photo_src_credit": "Sole Retriever"
   },
   {
    "celeb": "Lamar Jackson",
@@ -7161,8 +7169,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/108/941/908/original/1488076_01.jpg.jpeg?width=750",
      "price": "$272",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='image.goat.com', port=443): Max retries exceeded with "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -7191,7 +7198,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://images.soleretriever.com/blog/bc6b25d41b93d882d3cbaf6614a1d0f83f3ca777-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-3-best-tunnel-fits",
+   "photo_src_credit": "Sole Retriever"
   },
   {
    "celeb": "Davante Adams",
@@ -7224,8 +7234,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/112/064/695/original/1567309_01.jpg.jpeg?width=750",
      "price": "$284",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='image.goat.com', port=443): Max retries exceeded with "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -7254,7 +7263,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://images.soleretriever.com/blog/caf71ed36a806fe303143025426f18396d87b030-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+   "photo_src_page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-6-best-tunnel-fits",
+   "photo_src_credit": "Sole Retriever"
   },
   {
    "celeb": "Noah Wyle",
@@ -7291,8 +7303,7 @@
      "image_src": "https://www.mjewelry.com/cdn/shop/files/442054_110602_494a8a46-f1d7-4a01-8484-c96cd205e078.webp?v=1778389440",
      "price": "$225",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='www.mjewelry.com', port=443): Max retries exceeded wit"
+     "slide": 2
     },
     {
      "label": "Exact",
@@ -7305,8 +7316,7 @@
      "image_src": "https://products.blains.com/600/140/1405421.jpg",
      "price": "$64.99",
      "note": "",
-     "slide": 3,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='products.blains.com', port=443): Max retries exceeded "
+     "slide": 3
     }
    ],
    "photo_options": [
@@ -7345,7 +7355,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2026/02/PittRobbyS1-MAIN2.jpg?resize=350%2C700&ssl=1",
+   "photo_src_page": "https://bamfstyle.com/2026/02/19/the-pitt-robby-season1-hoodie/amp/",
+   "photo_src_credit": "Warrick Page / HBO Max via BAMF Style"
   },
   {
    "celeb": "Jeremy Allen White",
@@ -7378,8 +7391,7 @@
      "image_src": "https://www.birkenstock.com/on/demandware.static/-/Sites-master-catalog-amer/default/dw603e58b9/61196/61196.jpg",
      "price": "$160",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='www.birkenstock.com', port=443): Max retries exceeded "
+     "slide": 2
     },
     {
      "label": "Exact",
@@ -7392,8 +7404,7 @@
      "image_src": "https://nomanwalksalone.com/cdn/shop/files/Merz_b_Schwanen_Exclusive_215_White_Organic_Cotton_Crewneck_Tee_Tshirt_5_1024x.jpg?v=1752592596",
      "price": "$115",
      "note": "",
-     "slide": 3,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='nomanwalksalone.com', port=443): Max retries exceeded "
+     "slide": 3
     }
    ],
    "photo_options": [
@@ -7432,7 +7443,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2023/08/BearCarmy-MAIN2.jpg",
+   "photo_src_page": "https://bamfstyle.com/2023/08/14/the-bear-carmy/amp/",
+   "photo_src_credit": "FX / Hulu via BAMF Style"
   },
   {
    "celeb": "Pedro Pascal",
@@ -7469,8 +7483,7 @@
      "image_src": "https://www.gearpatrol.com/wp-content/uploads/sites/2/2023/03/1632777066-55166_FnT_Flannel_Lined_Waxed_Trucker_Field_Tan_01-jpg.webp?w=1920",
      "price": "$298",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='www.gearpatrol.com', port=443): Max retries exceeded w"
+     "slide": 2
     },
     {
      "label": "Exact",
@@ -7483,8 +7496,7 @@
      "image_src": "https://cdn.media.amplience.net/i/scheelspoc/88947548814",
      "price": "$239.95",
      "note": "",
-     "slide": 3,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='cdn.media.amplience.net', port=443): Max retries excee"
+     "slide": 3
     }
    ],
    "photo_options": [
@@ -7523,7 +7535,10 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-12"
+   "photo_search": "2026-10-12",
+   "photo_src": "https://bamfstyle.com/wp-content/uploads/2023/03/TLOUJoel-MAIN3.jpg",
+   "photo_src_page": "https://bamfstyle.com/2023/03/15/last-of-us-pascal/amp/",
+   "photo_src_credit": "HBO via BAMF Style"
   },
   {
    "celeb": "Benicio del Toro",
@@ -7556,8 +7571,7 @@
      "image_src": "https://scarce.co/cdn/shop/files/DWE-5600JB-1A9_12_1200x1200.jpg?v=1744125459",
      "price": "$230",
      "note": "",
-     "slide": 2,
-     "image_fetch": "failed 2026-10-12: HTTPSConnectionPool(host='scarce.co', port=443): Max retries exceeded with url: "
+     "slide": 2
     }
    ],
    "photo_options": [
@@ -7596,7 +7610,10 @@
      "page": "https://commons.wikimedia.org/wiki/File:Actor_Benicio_Del_Toro_-_World_Premier_%27One_Battle_After_Another%22.jpg",
      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Actor_Benicio_Del_Toro_-_World_Premier_%27One_Battle_After_Another%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     }
-   ]
+   ],
+   "photo_src": "https://www.g-central.com/wp-content/uploads/2025/09/BENICIO-DEL-TORO-WEARING-G-SHOCK-DW-5600.webp",
+   "photo_src_page": "https://www.g-central.com/benicio-del-toro-wore-the-g-shock-dwe-5600-j-balvin-collab-during-one-battle-after-another-promotional-tour/",
+   "photo_src_credit": "OutNowCH (YouTube) via G-Central"
   }
  ]
 }
