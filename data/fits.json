@@ -6464,7 +6464,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "5c3502",
+     "img": "images/cut/081-5c3502.png"
     },
     {
      "label": "Similar",
@@ -6475,7 +6477,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "95e55e",
+     "img": "images/cut/081-95e55e.png"
     }
    ],
    "photo_leads": [
