@@ -6444,11 +6444,11 @@
     {
      "label": "Similar",
      "type": "clothing",
-     "brand": "",
+     "brand": "Hockerty",
      "name": "Navy floral jacquard collarless jacket",
      "product_url": "",
      "retailer": "amazon",
-     "query": "men navy floral jacquard collarless jacket",
+     "query": "men navy florhttps://www.hockerty.com/en-us/men/blazers/409664-cobalt-blue-floral-jacquard-collarless-jacketal jacquard collarless jacket",
      "note": "",
      "slide": 3
     },
@@ -6510,7 +6510,8 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_search": "2026-10-09"
+   "photo_search": "2026-10-09",
+   "updated": "2026-10-12T18:18:37.581Z"
   },
   {
    "celeb": "LeBron James",
