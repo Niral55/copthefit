@@ -59,29 +59,21 @@ a { color: inherit; }
 
 /* tag grid */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-.tagcard { position: relative; display: flex; flex-direction: column; gap: 10px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 12px 12px 12px; min-width: 0; transition: transform .15s ease, border-color .15s ease; }
+.tagcard { position: relative; display: flex; flex-direction: column; gap: 6px; background: var(--tag); border: 1px solid var(--line); border-radius: 6px 6px 6px 6px; padding: 16px 16px 14px; text-decoration: none; min-width: 0; transition: transform .15s ease, border-color .15s ease; }
 .tagcard:hover { transform: translateY(-2px); border-color: var(--ink); }
-.tagcard .cardlink { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: inherit; min-width: 0; flex: 1; }
-.tagcard .pic { position: relative; display: block; aspect-ratio: 4 / 5; margin: 0 0 8px; background: var(--paper); border-radius: 4px; overflow: hidden; }
+.tagcard .pic { display: block; aspect-ratio: 4 / 5; margin: 0 0 6px; background: var(--paper); border-radius: 4px; overflow: hidden; }
 .tagcard .pic img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .ph { display: grid; place-items: center; text-align: center; padding: 8px; border: 1px dashed var(--line); border-radius: 4px; color: var(--muted); font: 500 10.5px var(--mono); letter-spacing: .08em; text-transform: uppercase;
   background: repeating-linear-gradient(-45deg, var(--paper) 0 8px, var(--tag) 8px 16px); }
 .tagcard .pic .ph { width: 100%; height: 100%; border: 0; }
 .tagcard .pic.photo img { object-fit: cover; object-position: center 20%; }
-.tagcard .inset { position: absolute; right: 8px; top: 8px; width: 30%; aspect-ratio: 1; background: #fff; border-radius: 6px; padding: 6px; box-sizing: border-box; box-shadow: 0 4px 14px rgba(0,0,0,.4); }
-.tagcard .inset img { width: 100%; height: 100%; object-fit: contain; }
-.tagcard .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; min-width: 0; }
-.tagcard .row .who { font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
-.tagcard .price { font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1; white-space: nowrap; text-align: right; }
-.tagcard .price small { display: inline; margin-right: 4px; font: 500 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.tagcard .piece { font-size: 13.5px; line-height: 1.3; color: var(--muted); min-height: 2.6em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.tagcard .piece em { font-style: normal; color: var(--accent); white-space: nowrap; }
-.shopbtn { display: flex; justify-content: center; align-items: center; gap: 6px; text-decoration: none; font: 600 13px var(--body); border: 1px solid var(--line); color: var(--ink); padding: 9px 10px; border-radius: 6px; }
-.shopbtn:hover { background: var(--accent); color: var(--accent-ink); }
-.hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 8px 16px; flex-wrap: wrap; margin: 4px 0 14px; }
-.hero h2 { font-family: var(--display); font-weight: 900; font-size: clamp(34px, 5.4vw, 60px); line-height: .9; text-transform: uppercase; margin: 0; }
-.hero h2 span { color: var(--accent); }
-.hero .count { margin: 0; }
+.tagcard .pic { position: relative; }
+.tagcard .pic .minis { position: absolute; left: 8px; bottom: 8px; display: flex; gap: 6px; }
+.tagcard .pic .mini { width: 52px; height: 52px; border-radius: 6px; background: #fff; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.35); display: block; }
+.tagcard .pic .mini img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.tagcard .pic .mini { position: relative; }
+.tagcard .pic .mini b { position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); background: var(--ink); color: var(--paper); font: 600 10px var(--mono); padding: 2px 5px; border-radius: 3px; white-space: nowrap; }
+.tagcard .pic .minis { bottom: 14px; }
 .chip.cheap { border-color: var(--accent); color: var(--accent); }
 .chip.cheap[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .search svg { color: var(--muted); flex: none; }
@@ -100,9 +92,9 @@ a { color: inherit; }
 /* fit page */
 .back { display: inline-flex; gap: 8px; align-items: center; font: 500 14px var(--body); padding-block: 16px 10px; text-decoration: none; color: var(--ink); }
 .back:hover { color: var(--accent); }
-.fit { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.fit { --pw: clamp(340px, calc((100vh - 120px) * .66), 50%); display: grid; grid-template-columns: var(--pw) minmax(0, 1fr); gap: 32px; align-items: start; }
 .shot { position: sticky; top: 16px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--tag); }
-.shot .frame { position: relative; aspect-ratio: 4 / 5; max-height: calc(100vh - 130px); background: var(--paper); }
+.shot .frame { position: relative; height: calc(100vh - 120px - 78px); min-height: 440px; background: var(--paper); }
 .shot .frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
 .shot .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; box-sizing: border-box; }
 .shot .frame .ph { position: absolute; inset: 0; font-size: 11px; }
@@ -170,7 +162,8 @@ footer p { margin: 0; max-width: 80ch; }
 @media (max-width: 720px) {
   .fit { grid-template-columns: minmax(0, 1fr); gap: 18px; height: auto; }
   .shot { position: static; height: auto; }
-  .shot .frame { max-height: none; }
+  .fit { grid-template-columns: minmax(0, 1fr); }
+  .shot .frame { height: auto; min-height: 0; aspect-ratio: 4 / 5; }
   .shot .who { font-size: 24px; }
   .pcard .pname, .pcard.row .pname { font-size: 20px; }
   .pcard.row { grid-template-columns: 40% minmax(0, 1fr); }
@@ -316,24 +309,24 @@ function drawGrid() {
   const list = FITS.filter(matches).sort((a, b) => (b.posted_at || "").localeCompare(a.posted_at || "") || +b.find - +a.find);
   const items = list.reduce((n, f) => n + f.items.length, 0);
   document.getElementById("count").textContent = `${list.length} ${list.length === 1 ? "find" : "finds"} · latest first`;
-  const SHOE = ["sneakers", "shoes"];
-  document.getElementById("grid").innerHTML = list.length ? list.map(f => {
-    const it = lead(f), nm = it ? splitName(it.name) : { name: "" }, url = it ? shopUrl(f, it) : "";
-    const resale = it && RESALE.test(it.retailer_name || ""), more = f.items.length - 1;
-    const piece = it ? `${it.brand && !nm.name.toLowerCase().includes(it.brand.toLowerCase().split(" ")[0]) ? it.brand + " " : ""}${nm.name.replace(/\s+,/g, ",")}${nm.cw ? ` “${nm.cw}”` : ""}` : "";
-    const inset = it && it.image && (f.cover || it.image !== f.image) ? `<span class="inset"><img src="${esc(it.image)}" alt="${esc(piece)}" loading="lazy"></span>` : "";
-    return `
-    <article class="tagcard">
-      <a class="cardlink" href="${fitUrl(f)}">
-        ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy">${inset}</span>`
-          : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy"></span>`
-          : `<span class="pic"><span class="ph">Photo coming</span></span>`}
-        <span class="num">FIND #${f.find}</span>
-        <span class="row"><span class="who">${esc(f.celeb)}</span>${it && it.price ? `<span class="price">${resale ? "<small>From</small>" : ""}${esc(it.price)}</span>` : ""}</span>
-        <span class="piece">${esc(piece)}${more > 0 ? ` <em>+${more} more</em>` : ""}</span>
-      </a>
-      ${url ? `<a class="shopbtn" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop this piece ↗</a>` : `<a class="shopbtn" href="${fitUrl(f)}">See the find →</a>`}
-    </article>`; }).join("") : `<p class="empty">No finds match that. Try a Find # like 014, a name, or a brand.</p>`;
+  const minis = f => {
+    const t = CAT_TYPES[state.cat] || [];
+    const seen = new Set(f.cover ? [] : [f.image]);
+    return f.items.filter(i => i.image && !seen.has(i.image) && seen.add(i.image))
+      .sort((a, b) => (t.includes(b.type) - t.includes(a.type)) || ((b.label === "Exact") - (a.label === "Exact")))
+      .slice(0, 3);
+  };
+  document.getElementById("grid").innerHTML = list.length ? list.map(f => { const m = minis(f); const strip = m.length
+      ? `<span class="minis">${m.map(i => `<span class="mini"><img src="${esc(i.image)}" alt="${esc(i.brand + " " + i.name)}" loading="lazy">${i.price ? `<b>${esc(i.price)}</b>` : ""}</span>`).join("")}</span>` : ""; return `
+    <a class="tagcard" href="${fitUrl(f)}">
+      ${f.cover ? `<span class="pic photo"><img src="${esc(f.cover)}" alt="${esc(f.celeb)}" loading="lazy">${strip}</span>`
+        : f.image ? `<span class="pic"><img src="${esc(f.image)}" alt="" loading="lazy">${strip}</span>`
+        : `<span class="pic"><span class="ph">Photo coming</span></span>`}
+      <span class="num">FIND #${f.find}</span>
+      <span class="who">${esc(f.celeb)}</span>
+      <span class="hl">${esc(f.headline)}</span>
+      <span class="meta"><span>${f.category === "Fit" ? "Fit" : f.category}</span><span>${f.items.length} ${f.items.length === 1 ? "item" : "items"}</span><span>${esc(shortDate(f.date))}</span></span>
+    </a>`; }).join("") : `<p class="empty">No finds match that. Try a Find # like 014, a name, or a brand.</p>`;
 }
 
 // "Giannis Freak 8 'South Beach' (IM5150-600)" → name, colorway, details
