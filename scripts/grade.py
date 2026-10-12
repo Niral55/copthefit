@@ -59,7 +59,8 @@ def graded_photo(find):
     src = photo_path(find)
     if not src or load_config().get("photo_grade") is False:
         return src
-    dst = CACHE / f"{find}-v{VERSION}.jpg"
-    if not dst.exists() or dst.stat().st_mtime < src.stat().st_mtime:
+    st = src.stat()  # key on the file itself, so a renumbered/replaced photo never reuses an old grade
+    dst = CACHE / f"{find}-v{VERSION}-{st.st_size}-{int(st.st_mtime)}.jpg"
+    if not dst.exists():
         grade(src, dst)
     return dst

@@ -87,47 +87,66 @@ a { color: inherit; }
 .empty { padding: 40px 0; color: var(--muted); }
 
 /* fit page */
-.back { display: inline-block; font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .06em; padding-block: 18px 6px; text-decoration: none; color: var(--muted); }
-.back:hover { color: var(--ink); }
-.fit { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 28px; align-items: start; padding-top: 10px; }
-.bigtag { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); background: var(--tag); border: 1px solid var(--line); border-radius: 6px; padding: 22px; }
-.bigtag .hole { width: 16px; height: 16px; border-radius: 50%; background: var(--paper); border: 1px solid var(--line); margin-bottom: 14px; }
-.bigtag .label { font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.bigtag .bignum { font-family: var(--display); font-weight: 900; font-size: 96px; line-height: .85; color: var(--accent); font-variant-numeric: tabular-nums; }
-.bigtag dl { margin: 18px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
-.bigtag dt { font: 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding-top: 2px; }
-.bigtag dd { margin: 0; min-width: 0; }
-.fit h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5.4vw, 56px); line-height: .95; text-transform: uppercase; margin: 0 0 4px; text-wrap: balance; overflow-wrap: anywhere; }
-.fit .celeb { font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 14px; }
-.fit .detail { max-width: 62ch; margin: 0 0 22px; font-size: 16px; }
-.items { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
-.item { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); }
-.item.has-img { grid-template-columns: 84px minmax(0, 1fr) auto; }
-.sect { font-family: var(--display); font-weight: 800; font-size: 26px; text-transform: uppercase; margin: 26px 0 8px; }
-.sect:first-of-type { margin-top: 4px; }
-.sect-sub { margin: -4px 0 10px; color: var(--muted); font-size: 13px; }
-.items.cheap { border-top-width: 1px; }
-.item .thumb { width: 84px; height: 84px; object-fit: contain; background: var(--tag); border: 1px solid var(--line); border-radius: 4px; }
-.item .thumb.ph { font-size: 9px; padding: 4px; }
-.item .thumb.icon { display: grid; place-items: center; color: var(--muted); background: var(--paper); }
-.look .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; }
-.item .slide { font: 500 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
-.item .lab { display: inline-block; font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; margin-bottom: 5px; }
-.lab.exact { background: var(--ink); color: var(--paper); }
-.lab.similar { background: var(--chip-similar); color: var(--ink); }
-.item .brand { font: 600 12px var(--body); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-.item .name { font-size: 16px; font-weight: 500; line-height: 1.3; }
-.item .note { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
-.shop { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; text-decoration: none; font: 600 13px var(--body); background: var(--accent); color: var(--accent-ink); padding: 10px 14px; border-radius: 4px; }
-.shop:hover { filter: brightness(1.08); }
-.nosale { font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-.sources { margin-top: 26px; font-size: 13px; color: var(--muted); }
-.sources h2 { font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; margin: 0 0 6px; color: var(--muted); }
-.sources ul { margin: 0; padding-left: 18px; }
-.sources a { color: var(--ink); }
+.back { display: inline-flex; gap: 8px; align-items: center; font: 500 14px var(--body); padding-block: 16px 10px; text-decoration: none; color: var(--ink); }
+.back:hover { color: var(--accent); }
+.fit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 36px; align-items: start; }
+.shot { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--tag); }
+.shot .frame { position: relative; aspect-ratio: 4 / 5; background: var(--paper); }
+.shot .frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+.shot .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; }
+.shot .frame .ph { width: 100%; height: 100%; font-size: 11px; }
+.shot .credit { position: absolute; left: 12px; bottom: 10px; font: 11px var(--body); color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.8); }
+.shot .bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; border-top: 1px solid var(--line); }
+.shot .bar > div { padding: 14px 22px; min-width: 0; }
+.shot .bar > div + div { border-left: 1px solid var(--line); }
+.shot .k { font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.shot .who { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; overflow-wrap: anywhere; }
+.shot .num { font-family: var(--display); font-weight: 900; font-size: 34px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.eyebrow { font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.fit h1 { font-family: var(--display); font-weight: 900; font-size: clamp(40px, 5.6vw, 68px); line-height: .92; text-transform: uppercase; margin: 0 0 8px; text-wrap: balance; overflow-wrap: anywhere; }
+.fit .sub { font-size: 18px; margin: 0 0 18px; }
+.pcard { border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 12px; margin-bottom: 12px; }
+.pcard.featured { border: 2px solid var(--accent); }
+.pcard .pimg { position: relative; background: #f3f1ee; border-radius: 4px; aspect-ratio: 2 / 1; overflow: hidden; }
+.pcard .pimg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 4% 8%; box-sizing: border-box; }
+.pcard .pbody { padding: 14px 10px 6px; }
+.pcard .top { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+.badge { display: inline-block; font: 600 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; background: var(--accent); color: var(--accent-ink); margin-bottom: 8px; }
+.pcard .brand { font: 600 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.pcard .pname { font: 600 26px/1.15 var(--body); margin: 2px 0; overflow-wrap: anywhere; }
+.pcard .cw { font: 15px var(--mono); color: var(--ink); opacity: .85; }
+.pcard .pprice { text-align: right; flex: none; }
+.pcard .pprice b { display: block; font-family: var(--display); font-weight: 800; font-size: 36px; line-height: 1; }
+.pcard .pprice small { display: block; font-size: 12.5px; color: var(--muted); margin-top: 4px; max-width: 22ch; }
+.cta { display: flex; justify-content: center; align-items: center; gap: 8px; width: 100%; margin-top: 14px; text-decoration: none; font: 700 17px var(--body); background: var(--accent); color: var(--accent-ink); padding: 14px 16px; border-radius: 6px; }
+.cta:hover { filter: brightness(1.08); }
+.cta-note { text-align: center; font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+.pcard details { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; font-size: 14px; }
+.pcard summary { cursor: pointer; font-weight: 500; list-style: none; display: flex; justify-content: space-between; }
+.pcard summary::-webkit-details-marker { display: none; }
+.pcard summary::after { content: "⌄"; }
+.pcard details[open] summary::after { content: "⌃"; }
+.pcard details p { margin: 6px 0 0; color: var(--muted); }
+.nosale { display: block; text-align: center; margin-top: 14px; font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.sect { font-family: var(--display); font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 22px 0 2px; }
+.sect-sub { margin: 0 0 10px; color: var(--muted); font-size: 13px; }
+.mini { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 14px; align-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 10px; margin-bottom: 8px; }
+.mini .mimg { width: 76px; height: 76px; background: #f3f1ee; border-radius: 4px; display: grid; place-items: center; overflow: hidden; color: #555; }
+.mini .mimg img { width: 100%; height: 100%; object-fit: contain; padding: 6px; box-sizing: border-box; }
+.mini .mname { font-weight: 600; font-size: 15px; line-height: 1.25; overflow-wrap: anywhere; }
+.mini .mprice { font: 500 13px var(--mono); color: var(--muted); margin-top: 3px; }
+.ghost { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; text-decoration: none; font: 600 13px var(--body); border: 1.5px solid var(--accent); color: var(--accent); padding: 9px 12px; border-radius: 6px; }
+.ghost:hover { background: var(--accent); color: var(--accent-ink); }
+.disclaim { font-size: 12.5px; color: var(--muted); margin: 4px 0 0; }
+.sighting { margin-top: 26px; }
+.sighting h2 { font-family: var(--display); font-weight: 800; font-size: 26px; text-transform: uppercase; margin: 0 0 6px; }
+.sighting p { margin: 0 0 12px; font-size: 16px; max-width: 64ch; }
+.srcline { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.srcline a { color: var(--ink); }
 .pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--line); }
-.pager a { text-decoration: none; font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+.pager a { text-decoration: none; font: 500 15px var(--body); }
 .pager a:hover { color: var(--accent); }
+.buybar { display: none; }
 
 .prose { max-width: 68ch; padding-top: 6px; }
 .prose h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5.4vw, 52px); line-height: .95; text-transform: uppercase; margin: 0 0 18px; }
@@ -139,18 +158,21 @@ footer p { margin: 0; max-width: 80ch; }
 
 @media (max-width: 720px) {
   .fit { grid-template-columns: minmax(0, 1fr); gap: 18px; }
-  .bigtag { position: static; display: grid; grid-template-columns: auto 1fr; gap: 0 18px; align-items: end; }
-  .bigtag .hole { display: none; }
-  .look { grid-column: 1 / -1; max-width: 260px; }
-  .bigtag .bignum { font-size: 72px; }
-  .bigtag dl { grid-column: 1 / -1; }
-  .item { grid-template-columns: 26px minmax(0, 1fr); }
-  .item .act { grid-column: 2; }
-  .item.has-img { grid-template-columns: 64px minmax(0, 1fr); }
-  .item.has-img .thumb { width: 64px; height: 64px; }
-  .item.has-img .act { grid-column: 2; }
+  .shot { position: static; }
+  .shot .frame { aspect-ratio: 4 / 4.2; }
+  .shot .who { font-size: 24px; }
+  .pcard .pname { font-size: 21px; }
+  .pcard .pprice b { font-size: 28px; }
+  .mini { grid-template-columns: 60px minmax(0, 1fr); }
+  .mini .mimg { width: 60px; height: 60px; }
+  .mini .ghost { grid-column: 1 / -1; justify-content: center; }
   .pager { flex-direction: column; gap: 10px; }
   .pager a:last-child { align-self: flex-end; text-align: right; }
+  .buybar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; gap: 10px; align-items: center; padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--tag); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(0,0,0,.25); }
+  .buybar .bt { min-width: 0; flex: 1; font-size: 13px; line-height: 1.25; }
+  .buybar .bt b { display: block; font-size: 15px; }
+  .buybar .cta { width: auto; margin: 0; padding: 11px 14px; font-size: 14px; white-space: nowrap; }
+  body.has-buybar { padding-bottom: 76px; }
 }
 @media (prefers-reduced-motion: reduce) { .tagcard { transition: none; } .tagcard:hover { transform: none; } }
 </style>
@@ -158,7 +180,7 @@ footer p { margin: 0; max-width: 80ch; }
 <div class="wrap">
   <header class="mast">
     <a class="mark" href="./">Cop the <span>Fit</span></a>
-    <p class="tagline">Celebrity fits, identified. Every post has a Find #. Look it up here to shop the exact piece or a similar one.</p>
+    <p class="tagline">Celebrity style. Found for you.</p>
   </header>
   <p class="disclose">Links on this site are affiliate links. If you buy through them, we may earn a commission at no cost to you.</p>
   <main id="app"><!--__SSR__--></main>
@@ -290,65 +312,85 @@ function drawGrid() {
     </a>`; }).join("") : `<p class="empty">No finds match that. Try a Find # like 014, a name, or a brand.</p>`;
 }
 
+// "Giannis Freak 8 'South Beach' (IM5150-600)" → name, colorway, details
+function splitName(n) {
+  const det = (n.match(/\(([^)]*)\)/) || [])[1] || "";
+  const cw = (n.match(/['‘’"“”]([^'‘’"“”]+)['‘’"“”]/) || [])[1] || "";
+  const name = n.replace(/\([^)]*\)/g, "").replace(/['‘’"“”][^'‘’"“”]+['‘’"“”]/, "").replace(/\s+/g, " ").trim();
+  return { name: name || n, cw, det };
+}
+const RESALE = /stockx|goat/i;
 function renderFit(f) {
   const i = FITS.indexOf(f), prev = FITS[i - 1], next = FITS[i + 1];
-  const exact = f.items.filter(x => x.label === "Exact").length;
+  const exact = f.items.filter(x => x.label === "Exact"), cheap = f.items.filter(x => x.label !== "Exact");
+  const types = new Set(exact.map(x => x.type));
+  const less = exact.length ? cheap.filter(x => types.has(x.type)) : [], rest = cheap.filter(x => !less.includes(x));
+  const featured = exact.find(x => shopUrl(f, x)) || exact[0];
+  const asOf = it => it.price && it.price_date ? `Price as of ${new Date(it.price_date + "T12:00").toLocaleDateString("en-US", { month: "short", day: "numeric" })}.` : "";
+  const card = it => {
+    const url = shopUrl(f, it), retailer = it.retailer_name || "the store", resale = RESALE.test(retailer), nm = splitName(it.name);
+    const verb = resale ? "Check sizes on" : "Shop on";
+    return `<section class="pcard${it === featured ? " featured" : ""}">
+      ${it.image ? `<div class="pimg"><img src="${esc(it.image)}" alt="${esc((it.brand + " " + it.name).trim())}"></div>` : ""}
+      <div class="pbody">
+        <span class="badge">${it === featured ? "Featured · " : ""}Exact model</span>
+        <div class="top">
+          <div style="min-width:0">
+            ${it.brand ? `<div class="brand">${esc(it.brand)}</div>` : ""}
+            <div class="pname">${esc(nm.name)}</div>
+            ${nm.cw ? `<div class="cw">${esc(nm.cw)}</div>` : ""}
+          </div>
+          ${it.price ? `<div class="pprice"><b>${resale ? "From " : ""}${esc(it.price)}</b><small>${resale ? "Price varies by size. Fees may apply." : esc(asOf(it))}</small></div>` : ""}
+        </div>
+        ${url ? `<a class="cta" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">${verb} ${esc(retailer)} ↗</a><p class="cta-note">You'll complete your purchase on ${esc(retailer)}.</p>`
+              : `<span class="nosale">${esc(it.note || "Not for sale")}</span>`}
+        ${nm.det || (resale && asOf(it)) ? `<details><summary>Product details</summary><p>${esc([nm.det, resale ? asOf(it) : ""].filter(Boolean).join(" · "))}</p></details>` : ""}
+      </div>
+    </section>`;
+  };
+  const mini = it => {
+    const url = shopUrl(f, it), nm = splitName(it.name);
+    return `<div class="mini">
+      <div class="mimg">${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy">` : (CONFIG.icons || {})[it.type] || (CONFIG.icons || {}).clothing || ""}</div>
+      <div style="min-width:0"><div class="mname">${esc((it.brand ? it.brand + " " : "") + nm.name)}</div>${it.price ? `<div class="mprice">${esc(it.price)}${it.retailer_name ? " · " + esc(it.retailer_name) : ""}</div>` : it.retailer_name ? `<div class="mprice">${esc(it.retailer_name)}</div>` : ""}</div>
+      ${url ? `<a class="ghost" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop similar ↗</a>` : ""}
+    </div>`;
+  };
+  const sect = (list, title, sub) => list.length ? `<h2 class="sect">${title}</h2><p class="sect-sub">${sub}</p>${list.map(mini).join("")}` : "";
+  const pieces = f.items.length;
   app.innerHTML = `
     <a class="back" href="./">← All finds</a>
     <article class="fit">
-      <aside class="bigtag">
-        <div class="hole" aria-hidden="true"></div>
-        <figure class="look"><div class="frame">${f.cover ? `<img src="${esc(f.cover)}" alt="${esc(f.celeb)} at ${esc(f.context)}">` : f.image ? `<img class="product" src="${esc(f.image)}" alt="">` : `<div class="ph">Photo of the look coming</div>`}</div>${f.cover && f.cover_credit ? `<figcaption>Photo: ${esc(f.cover_credit)}</figcaption>` : ""}</figure>
-        <div><div class="label">Find</div><div class="bignum">#${f.find}</div></div>
-        <dl>
-          <dt>Who</dt><dd>${esc(f.celeb)}</dd>
-          <dt>Where</dt><dd>${esc(f.context)}</dd>
-          <dt>When</dt><dd>${esc(f.date)}</dd>
-          <dt>Items</dt><dd>${exact} exact · ${f.items.length - exact} similar</dd>
-          ${f.ig ? `<dt>Post</dt><dd><a href="${esc(f.ig)}" target="_blank" rel="noopener">View on Instagram ↗</a></dd>` : ""}
-        </dl>
+      <aside class="shot">
+        <div class="frame">${f.cover ? `<img src="${esc(f.cover)}" alt="${esc(f.celeb)} at ${esc(f.context)}">` : f.image ? `<img class="product" src="${esc(f.image)}" alt="">` : `<div class="ph">Photo of the look coming</div>`}
+          ${f.cover && f.cover_credit ? `<span class="credit">Photo: ${esc(f.cover_credit)}</span>` : ""}</div>
+        <div class="bar">
+          <div><div class="k">Spotted on</div><div class="who">${esc(f.celeb)}</div></div>
+          <div><div class="k">Find</div><div class="num">#${f.find}</div></div>
+        </div>
       </aside>
       <div style="min-width:0">
-        <p class="celeb">What ${esc(f.celeb)} wore · ${esc(f.context)}</p>
+        <p class="eyebrow">Find #${f.find} · ${pieces > 1 ? `${pieces} pieces` : exact.length ? "Exact model" : "Get the look"}</p>
         <h1>${esc(f.headline)}</h1>
-        <p class="detail">${esc(f.detail)}</p>
-        ${(() => {
-          const row = it => {
-            const url = shopUrl(f, it);
-            const retailer = it.retailer_name || "retailer";
-            const act = url
-              ? `<a class="shop" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop on ${esc(retailer)}${it.price ? ` · ${esc(it.price)}` : ""} ↗</a>`
-              : `<span class="nosale">Not for sale</span>`;
-            return `<li class="item has-img">
-              ${it.image ? `<img class="thumb" src="${esc(it.image)}" alt="${esc((it.brand + " " + it.name).trim())}" loading="lazy">` : `<span class="thumb icon" title="${esc(it.type || "item")}">${(CONFIG.icons || {})[it.type] || (CONFIG.icons || {}).clothing || ""}</span>`}
-              <div style="min-width:0">
-                ${it.brand ? `<div class="brand">${esc(it.brand)}</div>` : ""}
-                <div class="name">${esc(it.name)}</div>
-                ${it.price && it.price_date ? `<div class="price">Price as of ${esc(new Date(it.price_date + "T12:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }))}</div>` : ""}
-                ${it.note ? `<div class="note">${esc(it.note)}</div>` : ""}
-              </div>
-              <div class="act">${act}</div>
-            </li>`;
-          };
-          const exact = f.items.filter(i => i.label === "Exact"), cheap = f.items.filter(i => i.label !== "Exact");
-          const types = new Set(exact.map(i => i.type));
-          const less = exact.length ? cheap.filter(i => types.has(i.type)) : [], rest = cheap.filter(i => !less.includes(i));
-          const sect = (list, title, sub) => list.length ? `<h2 class="sect">${title}</h2><p class="sect-sub">${sub}</p><ol class="items cheap">${list.map(row).join("")}</ol>` : "";
-          return (exact.length ? `<h2 class="sect">The exact fit</h2><ol class="items">${exact.map(row).join("")}</ol>` : "")
-            + sect(less, "Get it for less", "Cheaper takes on the pieces above. Not the exact items worn.")
-            + (exact.length ? sect(rest, "Complete the look", "The source didn't name these pieces, so these are close matches.")
-                            : sect(rest, "Get the look", "The brands weren't reported, so these are similar picks."));
-        })()}
-        <div class="sources">
-          <h2>Spotted via</h2>
-          <ul>${f.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join("")}</ul>
-        </div>
+        <p class="sub">${esc(f.context)}${f.date ? ` · ${esc(f.date)}` : ""}</p>
+        ${exact.map(card).join("")}
+        ${sect(less, "Get it for less", "Cheaper takes on the exact piece.")}
+        ${exact.length ? sect(rest, "Complete the look", "The source didn't name these pieces, so these are close matches.")
+                       : sect(rest, "Get the look", "The brands weren't reported, so these are similar picks.")}
+        ${cheap.length ? `<p class="disclaim">Similar options recreate the look; they are not confirmed items worn.</p>` : ""}
+        <section class="sighting">
+          <h2>The sighting</h2>
+          <p>${esc(f.detail)}</p>
+          <div class="srcline"><span>Sources:</span>${f.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label.split(" — ")[0])} ↗</a>`).join("")}${f.ig ? `<a href="${esc(f.ig)}" target="_blank" rel="noopener">Instagram post ↗</a>` : ""}</div>
+        </section>
         <nav class="pager">
-          ${prev ? `<a href="${fitUrl(prev)}">← #${prev.find} ${esc(prev.celeb)}</a>` : "<span></span>"}
-          ${next ? `<a href="${fitUrl(next)}">#${next.find} ${esc(next.celeb)} →</a>` : "<span></span>"}
+          ${prev ? `<a href="${fitUrl(prev)}">← Previous find</a>` : "<span></span>"}
+          ${next ? `<a href="${fitUrl(next)}">Next find →</a>` : "<span></span>"}
         </nav>
       </div>
-    </article>`;
+    </article>
+    ${featured && shopUrl(f, featured) ? `<div class="buybar"><div class="bt"><b>${esc(splitName(featured.name).name)}</b>${featured.price ? `${RESALE.test(featured.retailer_name || "") ? "From " : ""}${esc(featured.price)}` : esc(featured.retailer_name || "")}</div><a class="cta" href="${esc(shopUrl(f, featured))}" target="_blank" rel="sponsored nofollow noopener">${RESALE.test(featured.retailer_name || "") ? "Check sizes" : "Shop"} ↗</a></div>` : ""}`;
+  document.body.classList.toggle("has-buybar", !!(featured && shopUrl(f, featured)));
 }
 
 function route() {
