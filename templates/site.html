@@ -92,9 +92,9 @@ a { color: inherit; }
 /* fit page */
 .back { display: inline-flex; gap: 8px; align-items: center; font: 500 14px var(--body); padding-block: 16px 10px; text-decoration: none; color: var(--ink); }
 .back:hover { color: var(--accent); }
-.fit { --pw: clamp(340px, calc((100vh - 120px) * .66), 50%); display: grid; grid-template-columns: var(--pw) minmax(0, 1fr); gap: 32px; align-items: start; }
+.fit { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1fr); gap: 32px; align-items: start; }
 .shot { position: sticky; top: 16px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--tag); }
-.shot .frame { position: relative; height: calc(100vh - 120px - 78px); min-height: 440px; background: var(--paper); }
+.shot .frame { position: relative; aspect-ratio: 4 / 5; max-height: calc(100vh - 130px); background: var(--paper); }
 .shot .frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
 .shot .frame img.product { object-fit: contain; object-position: center; background: var(--tag); padding: 12%; box-sizing: border-box; }
 .shot .frame .ph { position: absolute; inset: 0; font-size: 11px; }
@@ -162,8 +162,7 @@ footer p { margin: 0; max-width: 80ch; }
 @media (max-width: 720px) {
   .fit { grid-template-columns: minmax(0, 1fr); gap: 18px; height: auto; }
   .shot { position: static; height: auto; }
-  .fit { grid-template-columns: minmax(0, 1fr); }
-  .shot .frame { height: auto; min-height: 0; aspect-ratio: 4 / 5; }
+  .shot .frame { max-height: none; }
   .shot .who { font-size: 24px; }
   .pcard .pname, .pcard.row .pname { font-size: 20px; }
   .pcard.row { grid-template-columns: 40% minmax(0, 1fr); }
