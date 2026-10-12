@@ -139,7 +139,8 @@
     "026",
     "027",
     "028",
-    "029"
+    "029",
+    "030"
    ]
   },
   {
@@ -147,12 +148,12 @@
    "title": "US Open & Wimbledon watches: $100k vs the lookalike",
    "format": "$10k vs $150",
    "finds": [
-    "030",
     "031",
     "032",
     "033",
     "034",
-    "035"
+    "035",
+    "036"
    ]
   },
   {
@@ -160,11 +161,11 @@
    "title": "Emmys watches: what they wore vs what you can buy",
    "format": "$10k vs $150",
    "finds": [
-    "036",
     "037",
     "038",
     "039",
-    "040"
+    "040",
+    "041"
    ]
   },
   {
@@ -172,12 +173,12 @@
    "title": "Golden Globes: everyone wore $20k Omegas... Nick Jonas wore a Fossil",
    "format": "Did he really wear that?",
    "finds": [
-    "041",
     "042",
     "043",
     "044",
     "045",
-    "046"
+    "046",
+    "047"
    ]
   },
   {
@@ -185,10 +186,10 @@
    "title": "Grammys watches: Cartier everywhere (and the affordable versions)",
    "format": "$10k vs $150",
    "finds": [
-    "047",
     "048",
     "049",
-    "050"
+    "050",
+    "051"
    ]
   },
   {
@@ -196,11 +197,11 @@
    "title": "Celeb staples under $100",
    "format": "Under $100 celeb fits",
    "finds": [
-    "051",
     "052",
     "053",
     "054",
-    "055"
+    "055",
+    "056"
    ]
   },
   {
@@ -208,17 +209,16 @@
    "title": "Tunnel fits ranked",
    "format": "Tunnel fits ranked",
    "finds": [
-    "056",
     "057",
     "058",
     "059",
     "060",
-    "061"
+    "061",
+    "062"
    ]
   }
  ],
  "no_video": [
-  "062",
   "063",
   "064",
   "065",
@@ -232,6 +232,7 @@
   "073",
   "074",
   "075",
-  "076"
+  "076",
+  "077"
  ]
 }

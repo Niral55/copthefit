@@ -2248,7 +2248,75 @@
    "video": "sneakers26"
   },
   {
+   "celeb": "Saquon Barkley",
+   "context": "Eagles at Buccaneers arrival, NFL Week 4, Tampa",
+   "date": "Sept 28, 2025",
+   "category": "Kicks",
+   "headline": "Saquon's $115 white AF1s + jorts",
+   "detail": "The Madden 26 cover star kept his Week 4 tunnel fit simple: jorts and a crisp pair of all-white Nike Air Force 1 Lows before beating Tampa.",
+   "tags": [],
+   "sources": [
+    {
+     "label": "BroBible — NFL Fashion Week 4: What Star Running Back Went Back To The Basics With Crisp White Nike Air Force 1 '07?",
+     "url": "https://brobible.com/sports/article/nfl-fashion-week-4-what-star-running-back-went-back-to-the-basics-with-crisp-white-nike-air-force-1-07/"
+    },
+    {
+     "label": "Sole Retriever — Look Great, Play Great: NFL Week 4 Best Tunnel Fits",
+     "url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
+    }
+   ],
+   "items": [
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "Nike",
+     "name": "Air Force 1 '07 'Triple White' (CW2288-111)",
+     "product_url": "https://www.nike.com/t/air-force-1-07-mens-shoes-jBrhbr/CW2288-111",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_651%2Cy_329/MTk5MTQ2NzgzMDg1OTYzMDI1/nike-air-force.jpg",
+     "price": "$115",
+     "note": "",
+     "slide": 2,
+     "id": "be973d",
+     "img": "images/cut/030-be973d.png"
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://images.soleretriever.com/blog/348887cb2da80b5560dcdeb96b1ba925875a3df4-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+     "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits",
+     "credit": "Sole Retriever"
+    }
+   ],
+   "photo_source": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits",
+   "score": 68,
+   "score_parts": {
+    "shop": 36,
+    "star": 22,
+    "cover": 4,
+    "fresh": 6
+   },
+   "score_note": "Star RB, exact cheap shoe, tunnel fit; only one photo (may be a collage).",
+   "note": "Video: 5 celebs who wear white Air Force 1s. Photos NOT visually checked (no image download/viewing available this run) - confirm shoes are visible on feet before using; SI images are 16:9 crops of the originals. Only 1 photo found (Sole Retriever 1070x760 image, may be a collage graphic). BroBible names 'all-white Nike Air Force 1 Lows' and links Nike CW2288-111; jorts not identified to a product. Price $115 = Nike list price shown in BroBible (Oct 2025); product image is Nike's shot via SI. Not checked on StockX/GOAT (search budget ran out).",
    "find": "030",
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-12",
+   "timing": "Recent",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "video": "sneakers26",
+   "photo_search": "2026-10-12",
+   "photo": {
+    "credit": "Sole Retriever",
+    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
+   }
+  },
+  {
+   "find": "031",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2323,7 +2391,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "031",
+   "find": "032",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2360,7 +2428,7 @@
      "note": "Galerie reports the 36mm; others say 41mm",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/oyster-perpetual/126000-0009-93.jpg",
      "id": "8ec783",
-     "img": "images/cut/031-8ec783-v1791557403.png",
+     "img": "images/cut/032-8ec783-v1791557403.png",
      "type": "watch"
     },
     {
@@ -2415,7 +2483,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "032",
+   "find": "033",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2452,7 +2520,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/zIQAAOSwsbdk4P2w/s-l1600.webp",
      "id": "add6cb",
-     "img": "images/cut/032-add6cb.png",
+     "img": "images/cut/033-add6cb.png",
      "type": "watch"
     },
     {
@@ -2493,7 +2561,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "033",
+   "find": "034",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2526,7 +2594,7 @@
      "note": "",
      "image_src": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-majesty/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228238-0005",
      "id": "5755f4",
-     "img": "images/cut/033-5755f4-v1791557409.png",
+     "img": "images/cut/034-5755f4-v1791557409.png",
      "type": "watch"
     },
     {
@@ -2551,7 +2619,7 @@
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71MXzjlVmSL._AC_SL1500_.jpg",
      "id": "40fb4b",
-     "img": "images/cut/033-40fb4b.png",
+     "img": "images/cut/034-40fb4b.png",
      "type": "watch"
     }
    ],
@@ -2576,7 +2644,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "034",
+   "find": "035",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2609,7 +2677,7 @@
      "note": "",
      "id": "42e7c6",
      "image_src": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m7939a1a0nu-0001",
-     "img": "images/cut/034-42e7c6-v1791557424.png",
+     "img": "images/cut/035-42e7c6-v1791557424.png",
      "type": "watch"
     },
     {
@@ -2675,7 +2743,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "035",
+   "find": "036",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2708,7 +2776,7 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/CRW2SA0033_0.png?height=5760&v=1749832741&width=4000",
      "id": "48cffe",
-     "img": "images/cut/035-48cffe-v1791557434.png",
+     "img": "images/cut/036-48cffe-v1791557434.png",
      "type": "watch"
     },
     {
@@ -2722,7 +2790,7 @@
      "note": "",
      "image_src": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0138211b1a1-soldier_7d7651b2_thumbnail_1024.webp",
      "id": "523ef2",
-     "img": "images/cut/035-523ef2-v1791557437.png",
+     "img": "images/cut/036-523ef2-v1791557437.png",
      "type": "watch"
     },
     {
@@ -2763,7 +2831,7 @@
    "video": "tenniswatches"
   },
   {
-   "find": "036",
+   "find": "037",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2800,7 +2868,7 @@
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/audemars-piguet/royal-oak/15513ba-oo-1320ba-01-5b.jpg",
      "id": "629cd4",
-     "img": "images/cut/036-629cd4-v1791557406.png",
+     "img": "images/cut/037-629cd4-v1791557406.png",
      "type": "watch"
     },
     {
@@ -2852,7 +2920,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "037",
+   "find": "038",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -2930,7 +2998,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "038",
+   "find": "039",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3008,7 +3076,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "039",
+   "find": "040",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3074,7 +3142,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "040",
+   "find": "041",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3123,7 +3191,7 @@
      "note": "Outlets differ on the exact reference",
      "image_src": "https://i.ebayimg.com/images/g/TOYAAeSwycZqbMtw/s-l1600.webp",
      "id": "836c03",
-     "img": "images/cut/040-836c03.png",
+     "img": "images/cut/041-836c03.png",
      "type": "watch"
     },
     {
@@ -3169,7 +3237,7 @@
    "video": "emmyswatches"
   },
   {
-   "find": "041",
+   "find": "042",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3203,7 +3271,7 @@
      "type": "watch",
      "image_src": "https://cdn2.jomashop.com/media/catalog/product/f/o/fossil-carraway-automatic-beige-dial-watch-me3272.jpg",
      "id": "2a2bf1",
-     "img": "images/cut/041-2a2bf1.png"
+     "img": "images/cut/042-2a2bf1.png"
     }
    ],
    "posted_at": null,
@@ -3241,7 +3309,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "042",
+   "find": "043",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3308,7 +3376,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "043",
+   "find": "044",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3376,7 +3444,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "044",
+   "find": "045",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3409,7 +3477,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/uJEAAeSwy6tp-gk3/s-l1600.webp",
      "id": "777b95",
-     "img": "images/cut/044-777b95.png",
+     "img": "images/cut/045-777b95.png",
      "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
      "type": "watch"
     },
@@ -3454,7 +3522,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "045",
+   "find": "046",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3487,7 +3555,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
      "id": "9fa28c",
-     "img": "images/cut/045-9fa28c.png",
+     "img": "images/cut/046-9fa28c.png",
      "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
      "type": "watch"
     },
@@ -3517,7 +3585,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "046",
+   "find": "047",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3586,7 +3654,7 @@
      "type": "watch",
      "image_src": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg",
      "id": "402d1d",
-     "img": "images/cut/046-402d1d.png"
+     "img": "images/cut/047-402d1d.png"
     }
    ],
    "posted_at": null,
@@ -3603,7 +3671,7 @@
    "video": "globeswatches"
   },
   {
-   "find": "047",
+   "find": "048",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3692,7 +3760,7 @@
    "video": "grammyswatches"
   },
   {
-   "find": "048",
+   "find": "049",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3725,7 +3793,7 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/17311221_1_jpg.avif?height=4000&v=1766500805&width=4000",
      "id": "fc95af",
-     "img": "images/cut/048-fc95af-v1791557427.png",
+     "img": "images/cut/049-fc95af-v1791557427.png",
      "type": "watch"
     },
     {
@@ -3822,7 +3890,7 @@
    "video": "grammyswatches"
   },
   {
-   "find": "049",
+   "find": "050",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3855,7 +3923,7 @@
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/926-CRWJTA0068_1_f456be23-e418-4108-9ae4-dd12875327b5.jpg?height=4000&v=1788966228&width=4000",
      "id": "49b0d3",
-     "img": "images/cut/049-49b0d3-v1791557465.png",
+     "img": "images/cut/050-49b0d3-v1791557465.png",
      "type": "watch"
     },
     {
@@ -3901,7 +3969,7 @@
    "video": "grammyswatches"
   },
   {
-   "find": "050",
+   "find": "051",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -3993,7 +4061,7 @@
      "note": "",
      "slide": 2,
      "id": "c334ca",
-     "img": "images/cut/051-c334ca-v1791577615.png"
+     "img": "images/cut/052-c334ca-v1791577615.png"
     }
    ],
    "photo_options": [
@@ -4031,7 +4099,7 @@
    },
    "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
    "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
-   "find": "051",
+   "find": "052",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -4076,7 +4144,7 @@
      "note": "",
      "slide": 2,
      "id": "0d90ab",
-     "img": "images/cut/052-0d90ab.png"
+     "img": "images/cut/053-0d90ab.png"
     }
    ],
    "photo_options": [
@@ -4096,7 +4164,7 @@
    },
    "score_note": "Cheap, iconic A18 from the brand store; recognizable star, but only one 680px gallery photo and it's from 2022.",
    "note": "Video: The $20 beanie every celeb wears. Source caption (slide 8/13): 'Finn Wolfhard wore this brown Carhartt beanie with a tan button-down shirt, a T-shirt & brown pants at the 75th annual Cannes Film Festival' — no exact day given. Color is only 'brown' in the source, so it is mapped to Carhartt Brown. Only one photo option was found; no larger version is in the page HTML. This agent had no direct network access, so the image was NOT downloaded or viewed. Check for a Splash watermark and that the beanie is clearly visible. product_url follows carhartt.com's /p/knit-cuffed-beanie/A18 pattern; I verified that pattern on the EU/FR pages (A18-BRNOS = Carhartt Brown), but the US page could not be fetched. image_src is the Carhartt Brown studio shot from the carhartt.com product page HTML. The $20 is US list price: $19.99 at Scheels, and Gear Patrol (Jan 2026) gives $20 list, recently on sale for $12. Finn is already on file for adidas Samba, not this item.",
-   "find": "052",
+   "find": "053",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -4141,7 +4209,7 @@
      "note": "",
      "slide": 2,
      "id": "a65f26",
-     "img": "images/cut/053-a65f26.png"
+     "img": "images/cut/054-a65f26.png"
     }
    ],
    "photo_options": [
@@ -4171,7 +4239,7 @@
    },
    "score_note": "Real 501 campaign, $77 on sale at levi.com; 2022 so not fresh; same angle as SGA's 501 lead.",
    "note": "Video: Celeb staples under $100. The source doesn't say which 501 wash he wears (campaign covers Original 501 and 501 '90s), so the product is the Original 501 in Stonewash Dark (00501-0114), $77 on sale (reg. $110). Not on Amazon via anything I could open, so it links to the Levi's store. The image_src is the levi.com og:image, which may be an on-model crop rather than a flat studio shot; swap if so. Could not open images from this environment; check that the photos are full-length with the jeans visible (images 002-005 have no captions). Overlaps SGA's Levi's 501 lead, so pick one.",
-   "find": "053",
+   "find": "054",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -4220,7 +4288,7 @@
      "note": "",
      "slide": 2,
      "id": "9cc4ca",
-     "img": "images/cut/054-9cc4ca.png"
+     "img": "images/cut/055-9cc4ca.png"
     }
    ],
    "photo_options": [
@@ -4245,7 +4313,7 @@
    },
    "score_note": "Big name and a well-known Carhartt habit, but his jacket is vintage, so the link is only the closest Detroit Jacket.",
    "note": "Video: Celeb staples under $100. The jacket is VINTAGE; Biography says the exact piece isn't sold and links the Carhartt Relaxed Fit Duck Blanket-Lined Detroit Jacket on Amazon ($130 per Biography, Sept 2024), so the item is labelled Similar. Amazon page not verified from here; carhartt.com lists 103828 at $129.99-$139.99 in Black or Carhartt Brown. His collar is described as contrasting brown, and the current black 103828 may not have that. Over $100. A Dec 2023 Polo Bar sighting in a similar jacket also exists (AOL/Esquire, Getty: James Devaney). Second photo is Biography's composite with a Carhartt product shot (it may show text or a product panel). Could not open images; check that it's full-length.",
-   "find": "054",
+   "find": "055",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -4290,7 +4358,7 @@
      "note": "",
      "slide": 2,
      "id": "18e20f",
-     "img": "images/cut/055-18e20f.png"
+     "img": "images/cut/056-18e20f.png"
     }
    ],
    "photo_options": [
@@ -4315,7 +4383,7 @@
    },
    "score_note": "Clear source and a fun pick, but the color isn't stated, it costs about $185 and it's from 2023.",
    "note": "Video: Celeb staples under $100. OVER BUDGET: the Boston Shearling is about $185 retail (the price is retail; GOAT showed no price). Highsnobiety names 'fleece-lined Boston clogs' but no color. Taupe is the common color, so confirm it against the photo (it may be Mink or another shade). The GOAT page is the women's-labelled listing (style 1028299); Birkenstock sizing is unisex EU. A non-wmns StockX/GOAT page would be better. Could not open images; check that the clogs are visible.",
-   "find": "055",
+   "find": "056",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -4333,7 +4401,7 @@
    "updated": "2026-10-12T16:48:56.816Z"
   },
   {
-   "find": "056",
+   "find": "057",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -4400,7 +4468,7 @@
    "video": "tunnel"
   },
   {
-   "find": "057",
+   "find": "058",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -4478,7 +4546,7 @@
    "video": "tunnel"
   },
   {
-   "find": "058",
+   "find": "059",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -4565,7 +4633,7 @@
      "note": "",
      "slide": 2,
      "id": "0aaf7e",
-     "img": "images/cut/059-0aaf7e.png"
+     "img": "images/cut/060-0aaf7e.png"
     }
    ],
    "photo_options": [
@@ -4585,7 +4653,7 @@
    },
    "score_note": "Exact style code, $87 on StockX (retail $130), well-known corner; only one Sole Retriever image.",
    "note": "Video: Tunnel fits ranked. StockX Buy Now is $87 ($94 with fees); last sale was $140. The image_src is GOAT's product shot, because StockX exposed no image to me. The exact game date isn't in the source (Week 8, Oct 2025). The only photo is Sole Retriever's 1070x760 landscape crop, which may cut off the feet. Could not open it; check that the shoes are visible. Shai 001 overlaps SGA's 'Slither' lead (a different colorway and a different person).",
-   "find": "059",
+   "find": "060",
    "status": "review",
    "ig_queue": false,
    "priority": 1,
@@ -4629,7 +4697,7 @@
      "note": "",
      "slide": 2,
      "id": "090166",
-     "img": "images/cut/060-090166.png"
+     "img": "images/cut/061-090166.png"
     }
    ],
    "photo_options": [
@@ -4649,7 +4717,7 @@
    },
    "score_note": "Exact style code, $229 on StockX; known veteran; only one image.",
    "note": "Video: Tunnel fits ranked. StockX Buy Now is $229 (retail $150; last sale $377). The same style code is listed as 'Nitro' on GOAT and some blogs, and StockX calls it 'Better With Time'. The image_src is GOAT's product shot, because StockX exposed no image. The exact game date isn't in the source. The only photo is Sole Retriever's landscape crop. Could not open it; check that the shoes are visible.",
-   "find": "060",
+   "find": "061",
    "status": "review",
    "ig_queue": false,
    "priority": 1,
@@ -4693,7 +4761,7 @@
      "note": "",
      "slide": 2,
      "id": "18a1c3",
-     "img": "images/cut/061-18a1c3.png"
+     "img": "images/cut/062-18a1c3.png"
     }
    ],
    "photo_options": [
@@ -4718,7 +4786,7 @@
    },
    "score_note": "Finals stage and an exact AJ4 at $284 on StockX; the pants are one-of-one Chrome Hearts, so the shoes are the only shoppable piece.",
    "note": "Video: Tunnel fits ranked. The Finals game date isn't stated in the article (article dated Jun 11, 2026). The pants are one-of-one Chrome Hearts, not shoppable and not affordable, so only the AJ4 is listed. StockX Buy Now is $284 ($308 with fees); retail is $220. The image_src is GOAT's product shot. The photos are vertical 810x1024 shots by an IG photographer, hosted on dmfashionbook, so they should be full-length but are unverified. Could not open them; check that the shoes are visible.",
-   "find": "061",
+   "find": "062",
    "status": "approved",
    "ig_queue": false,
    "priority": 1,
@@ -4736,7 +4804,7 @@
    "updated": "2026-10-12T16:48:56.816Z"
   },
   {
-   "find": "062",
+   "find": "063",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -4813,7 +4881,7 @@
    "updated": "2026-10-12T16:29:35.173Z"
   },
   {
-   "find": "063",
+   "find": "064",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -4886,7 +4954,7 @@
    ]
   },
   {
-   "find": "064",
+   "find": "065",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -4952,7 +5020,7 @@
    "updated": "2026-10-12T16:29:35.173Z"
   },
   {
-   "find": "065",
+   "find": "066",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5026,7 +5094,7 @@
    "updated": "2026-10-12T16:29:35.173Z"
   },
   {
-   "find": "066",
+   "find": "067",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5081,7 +5149,7 @@
    "updated": "2026-10-12T16:29:35.173Z"
   },
   {
-   "find": "067",
+   "find": "068",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5147,7 +5215,7 @@
    "updated": "2026-10-12T16:29:35.173Z"
   },
   {
-   "find": "068",
+   "find": "069",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5231,7 +5299,7 @@
    ]
   },
   {
-   "find": "069",
+   "find": "070",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5276,7 +5344,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/k7kAAeSwoW5qwFEO/s-l1600.webp",
      "id": "3d679d",
-     "img": "images/cut/069-3d679d.png",
+     "img": "images/cut/070-3d679d.png",
      "type": "clothing"
     },
     {
@@ -5340,7 +5408,7 @@
    }
   },
   {
-   "find": "070",
+   "find": "071",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5443,7 +5511,7 @@
    }
   },
   {
-   "find": "071",
+   "find": "072",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5520,7 +5588,7 @@
    }
   },
   {
-   "find": "072",
+   "find": "073",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5554,7 +5622,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/hbMAAeSwFkVquS~k/s-l1600.webp",
      "id": "85067d",
-     "img": "images/cut/072-85067d.png",
+     "img": "images/cut/073-85067d.png",
      "type": "sneakers"
     },
     {
@@ -5604,7 +5672,7 @@
    "ig_queue": false
   },
   {
-   "find": "073",
+   "find": "074",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5697,7 +5765,7 @@
    "ig_queue": false
   },
   {
-   "find": "074",
+   "find": "075",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5798,7 +5866,7 @@
    }
   },
   {
-   "find": "075",
+   "find": "076",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5888,7 +5956,7 @@
    "ig_queue": false
   },
   {
-   "find": "076",
+   "find": "077",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -5921,7 +5989,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/hR8AAeSwvA9qVkEO/s-l1600.webp",
      "id": "d28e32",
-     "img": "images/cut/076-d28e32.png",
+     "img": "images/cut/077-d28e32.png",
      "type": "sneakers"
     },
     {
@@ -5969,7 +6037,7 @@
    }
   },
   {
-   "find": "077",
+   "find": "078",
    "status": "rejected",
    "priority": 1,
    "added": "2026-10-08",
@@ -6002,7 +6070,7 @@
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/KegAAeSw0zlolM56/s-l1600.webp",
      "id": "a5211f",
-     "img": "images/cut/077-a5211f.png",
+     "img": "images/cut/078-a5211f.png",
      "type": "watch"
     },
     {
@@ -6015,7 +6083,7 @@
      "product_url": "https://www.amazon.com/SEWOR-Automatic-Business-Tonneau-Mechanical/dp/B07HQ5FKXM/ref=sr_1_4?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.itFImJfrELbD_9lIncKvEzKMvHuT6W02kBD_szj-cvgVWeH-dv3xJFytsOnUHUwmIDISyx3R8oFdRSy--SDejvYx_kVyrTpl8Rm9Hb2QrOENp_mCHY_VBsc-I_mHNkOsT9BKH3aygCCBKQVl1YRkBt28vqofilyBezeBKHlv6azBHfZONutZF7uPNW0rcKAM_qLNnY2Q3nzLCIOHBdyi0iYZyDKMEfPfnSomVQEHBmmvm1eeScqXws7CMb3Zr7vvGqM9gYZpxD24rY39NcYtzaqINq3OiD10tSCapmbexjY.Fr8GJJxheNzyEEYNyvOp8R4zDiA9GWYSihuq1sXp_9M&dib_tag=se&keywords=tonneau%2Bautomatic%2Bwatch&plpRedirect=mhFallback&qid=1791558566&sr=8-4&th=1",
      "note": "",
      "id": "4df6c4",
-     "img": "images/cut/077-4df6c4.png",
+     "img": "images/cut/078-4df6c4.png",
      "type": "watch"
     }
    ],
@@ -6187,7 +6255,7 @@
    },
    "score_note": "Luxury pieces all named (Tom Ford on Farfetch, Cartier on Chrono24) plus cheaper picks; Travis Kelce; Chiefs team arrival gallery; 5 days old",
    "note": "Could also go in Wrist, since Complex's headline is about the $77K watch. Getty and Chiefs photos only; I found no Kelce-owned Instagram post. Kelce wore a Louis Vuitton jacket on Sept 20 vs. the Colts, but that is a separate look and was not used here. Rejected: too expensive for the average buyer.",
-   "find": "078",
+   "find": "079",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -6232,7 +6300,7 @@
      "slide": 2,
      "image_src": "https://sneakerbardetroit.com/wp-content/uploads/2026/07/adidas-harden-vol-1-pioneer-2026-lc5090.jpg",
      "id": "951a88",
-     "img": "images/cut/079-951a88-v1791577777.png"
+     "img": "images/cut/080-951a88-v1791577777.png"
     }
    ],
    "photo_leads": [
@@ -6254,7 +6322,7 @@
    },
    "score_note": "$140 retro on StockX/adidas; Harden; NBA league post; 11 days old",
    "note": "Kicks On SI doesn't give Harden's team; confirm it from the photo. Sneaker Freaker lists the release date as TBC, while StockX says Aug 30, 2026. StockX shows a $355 'related product' ask that may be the 2016 pair, so recheck the current price. Lower priority.",
-   "find": "079",
+   "find": "080",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -6376,7 +6444,7 @@
    },
    "score_note": "$4,950 LV jacket at LV.com plus cheaper picks; Kelce; Chiefs IG arrival post; 19 days old",
    "note": "The watch reports conflict: People says a gold Cartier Santos Skeleton, while Yardbarker says a Rolex 'Rainbow'. Because of that I left the watch out. People also mentions an LV belt but names no model. Yardbarker calls the trousers Louis Vuitton (~$1,600), but People and The Sporting News don't name a brand, so the trousers are a Similar pick only. Rejected: too expensive for the average buyer.",
-   "find": "080",
+   "find": "081",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -6469,7 +6537,7 @@
    },
    "score_note": "LeBron in a shoe dropping today; China-only so resale on StockX/GOAT; AP/team scrimmage photos",
    "note": "HNHH says 'Saturday', and NBA.com dates the open scrimmage Oct 3, 2026. HNHH's lead image is from the Sept 28 media day, not the scrimmage, so don't use it. StockX listed it at $190 retail but showed an €867 buy-now price before release; recheck the price. No clean studio image was found from an approved source (Sole Retriever has one: https://images.soleretriever.com/sb/products/nike_lebron_24_greater_china_IX5105-200-1790704607533.webp). Rejected: too expensive for the average buyer.",
-   "find": "081",
+   "find": "082",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -6584,7 +6652,7 @@
    },
    "score_note": "Limited LV Monterey on resale only, custom suit; The Bear star; arrival video plus AP/Getty photos; 5 days old",
    "note": "This could be a Wrist lead because the watch carries it. White is on file only for the Golden Globes. Getting the look relies mostly on cheaper picks. The watch sources name the Monterey but give no reference number or case size. I couldn't load GQ's write-up (gq.com/story/jeremy-allen-white-louis-vuitton-watch-10-5-26) to check it. Rejected: too expensive for the average buyer.",
-   "find": "082",
+   "find": "083",
    "status": "rejected",
    "ig_queue": false,
    "priority": 1,
@@ -6594,147 +6662,6 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09"
-  },
-  {
-   "celeb": "Shohei Ohtani",
-   "context": "Rams vs. Saints, Thursday Night Football, SoFi Stadium",
-   "date": "Dec 21, 2023",
-   "category": "Kicks",
-   "headline": "Ohtani's Rams-game 2002Rs",
-   "detail": "Days after signing with the Dodgers, Ohtani showed up at SoFi for Rams-Saints in a black leather jacket and New Balance 2002R 'Eclipse Raincloud' sneakers.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "Kicks On SI — Shohei Ohtani Wears New Balance Sneakers to Rams Game",
-     "url": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game"
-    },
-    {
-     "label": "MLB.com — Shohei gets star treatment at Rams game",
-     "url": "https://www.mlb.com/dodgers/news/shohei-ohtani-goes-to-rams-thursday-night-football-game"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "New Balance",
-     "name": "2002R 'Eclipse Raincloud'",
-     "product_url": "https://stockx.com/new-balance-2002r-eclipse-raincloud",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_440%2Cy_332/MjAzMDkwNjA4NjE5NzkxNTQy/new-balance.jpg",
-     "price": "$144",
-     "note": "",
-     "slide": 2,
-     "id": "2ca114",
-     "img": "images/cut/084-2ca114.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MjAzMDkwNDM5NzczODkwMTE1/shohei-ohtani.jpg",
-     "page": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game",
-     "credit": "Kicks On SI"
-    },
-    {
-     "image": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1024/mlb/dqdn8mc6nlgqspx9oxzc.jpg",
-     "page": "https://www.mlb.com/dodgers/news/shohei-ohtani-goes-to-rams-thursday-night-football-game",
-     "credit": "AP Images via MLB.com"
-    }
-   ],
-   "photo_source": "https://www.si.com/fannation/sneakers/off-court/shohei-ohtani-wears-new-balance-sneakers-to-rams-game",
-   "score": 66,
-   "score_parts": {
-    "shop": 30,
-    "star": 25,
-    "cover": 5,
-    "fresh": 6
-   },
-   "score_note": "Huge name, cheap exact shoe; photos unverified for feet, 2023.",
-   "note": "Video: 5 celebs who wear New Balance. Photos NOT visually checked (no image download/viewing available this run) - confirm shoes are visible on feet before using; SI images are 16:9 crops of the originals. Price $144 is the StockX average resale quoted by SI (Dec 2023) - refresh; StockX URL taken from SI's own buy link, not opened. product image is New Balance's shot via SI (16:9 crop). Alt Ohtani lead: NB 9060 black/castlerock/rain cloud (U9060BLK) at Angels spring training, Feb 14, 2023 (Kicks On SI).",
-   "find": "084",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-12",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "newbalance",
-   "photo_search": "2026-10-12",
-   "photo": {
-    "credit": "AP Images via MLB.com",
-    "source_url": "https://www.mlb.com/dodgers/news/shohei-ohtani-goes-to-rams-thursday-night-football-game"
-   }
-  },
-  {
-   "celeb": "Saquon Barkley",
-   "context": "Eagles at Buccaneers arrival, NFL Week 4, Tampa",
-   "date": "Sept 28, 2025",
-   "category": "Kicks",
-   "headline": "Saquon's $115 white AF1s + jorts",
-   "detail": "The Madden 26 cover star kept his Week 4 tunnel fit simple: jorts and a crisp pair of all-white Nike Air Force 1 Lows before beating Tampa.",
-   "tags": [],
-   "sources": [
-    {
-     "label": "BroBible — NFL Fashion Week 4: What Star Running Back Went Back To The Basics With Crisp White Nike Air Force 1 '07?",
-     "url": "https://brobible.com/sports/article/nfl-fashion-week-4-what-star-running-back-went-back-to-the-basics-with-crisp-white-nike-air-force-1-07/"
-    },
-    {
-     "label": "Sole Retriever — Look Great, Play Great: NFL Week 4 Best Tunnel Fits",
-     "url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
-    }
-   ],
-   "items": [
-    {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "Nike",
-     "name": "Air Force 1 '07 'Triple White' (CW2288-111)",
-     "product_url": "https://www.nike.com/t/air-force-1-07-mens-shoes-jBrhbr/CW2288-111",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_651%2Cy_329/MTk5MTQ2NzgzMDg1OTYzMDI1/nike-air-force.jpg",
-     "price": "$115",
-     "note": "",
-     "slide": 2,
-     "id": "be973d",
-     "img": "images/cut/085-be973d.png"
-    }
-   ],
-   "photo_options": [
-    {
-     "image": "https://images.soleretriever.com/blog/348887cb2da80b5560dcdeb96b1ba925875a3df4-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
-     "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits",
-     "credit": "Sole Retriever"
-    }
-   ],
-   "photo_source": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits",
-   "score": 68,
-   "score_parts": {
-    "shop": 36,
-    "star": 22,
-    "cover": 4,
-    "fresh": 6
-   },
-   "score_note": "Star RB, exact cheap shoe, tunnel fit; only one photo (may be a collage).",
-   "note": "Video: 5 celebs who wear white Air Force 1s. Photos NOT visually checked (no image download/viewing available this run) - confirm shoes are visible on feet before using; SI images are 16:9 crops of the originals. Only 1 photo found (Sole Retriever 1070x760 image, may be a collage graphic). BroBible names 'all-white Nike Air Force 1 Lows' and links Nike CW2288-111; jorts not identified to a product. Price $115 = Nike list price shown in BroBible (Oct 2025); product image is Nike's shot via SI. Not checked on StockX/GOAT (search budget ran out).",
-   "find": "085",
-   "status": "review",
-   "ig_queue": false,
-   "priority": 1,
-   "added": "2026-10-12",
-   "timing": "Recent",
-   "posted_at": null,
-   "ig_media_id": null,
-   "ig_permalink": null,
-   "video": "af1",
-   "photo_search": "2026-10-12",
-   "photo": {
-    "credit": "Sole Retriever",
-    "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
-   }
   }
  ]
 }
