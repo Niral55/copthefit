@@ -24,8 +24,10 @@ from common import ROOT, load_fits
 from grade import graded_photo
 
 W, H, FPS, SR = R.W, R.H, R.FPS, 24000
-VOICE = os.environ.get("VIDEO_VOICE", "am_michael")
+VOICE = os.environ.get("VIDEO_VOICE", "am_michael")          # Kokoro backup voice
 SPEED = float(os.environ.get("VIDEO_SPEED", "1.08"))
+EDGE_VOICE = os.environ.get("VIDEO_EDGE_VOICE", "en-US-AndrewMultilingualNeural")  # main voice (Microsoft neural)
+EDGE_RATE = os.environ.get("VIDEO_EDGE_RATE", "+6%")
 PAD = 0.18  # silence after each line
 
 
@@ -90,10 +92,47 @@ def build_script(v, fits):
 # ---------- voice ----------
 
 _PIPE = None
+USED = set()  # which voice engine actually spoke (recorded next to the video)
 
 
 def tts(text):
-    """→ (float32 audio @24kHz, [(word, start_s, end_s)])"""
+    """→ (float32 audio @24kHz, [(word, start_s, end_s)]). Microsoft neural voice first, then Kokoro, then silence."""
+    try:
+        return tts_edge(text)
+    except Exception as e:  # noqa: BLE001 (no network / package missing → fall back)
+        print("edge voice unavailable:", str(e)[:120], file=sys.stderr)
+    return tts_kokoro(text)
+
+
+def tts_edge(text):
+    import asyncio
+    import edge_tts
+
+    async def run():
+        audio, words = bytearray(), []
+        try:
+            com = edge_tts.Communicate(text, EDGE_VOICE, rate=EDGE_RATE, boundary="WordBoundary")
+        except TypeError:  # older edge-tts: word boundaries are the default
+            com = edge_tts.Communicate(text, EDGE_VOICE, rate=EDGE_RATE)
+        async for ch in com.stream():
+            if ch["type"] == "audio":
+                audio += ch["data"]
+            elif ch["type"] == "WordBoundary":
+                st = ch["offset"] / 1e7
+                words.append((ch["text"], st, st + ch["duration"] / 1e7))
+        return bytes(audio), words
+
+    mp3, words = asyncio.run(run())
+    if not mp3:
+        raise RuntimeError("no audio returned")
+    pcm = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", "-", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
+                         input=mp3, capture_output=True, check=True).stdout
+    audio = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768
+    USED.add(f"neural ({EDGE_VOICE})")
+    return audio, words or _even(text, len(audio) / SR)
+
+
+def tts_kokoro(text):
     global _PIPE
     try:
         if _PIPE is None:
@@ -110,8 +149,10 @@ def tts(text):
         audio = np.concatenate(chunks) if chunks else np.zeros(int(SR * 0.5), np.float32)
         if not words:
             words = _even(text, len(audio) / SR)
+        USED.add("kokoro")
         return audio, words
     except ImportError:
+        USED.add("silent draft")
         n = len(text.split())
         dur = 0.3 + n * 0.34
         return np.zeros(int(SR * dur), np.float32), _even(text, dur)
@@ -125,7 +166,7 @@ def _even(text, dur):
 
 # ---------- sound effects (synthesised, so there's nothing to license) ----------
 
-def whoosh(dur=0.32, vol=0.22):
+def whoosh(dur=0.32, vol=0.07):
     n = int(SR * dur)
     rng = np.random.default_rng(7)
     noise = rng.standard_normal(n)
@@ -141,7 +182,7 @@ def whoosh(dur=0.32, vol=0.22):
     return (out / (np.abs(out).max() or 1) * vol).astype(np.float32)
 
 
-def kaching(vol=0.3):
+def kaching(vol=0.13):
     n = int(SR * 0.7)
     t = np.arange(n) / SR
     bell = sum(np.sin(2 * math.pi * f * t) * np.exp(-t * d) for f, d in ((1568, 6), (2093, 7), (3136, 9), (4186, 11)))
@@ -321,6 +362,7 @@ def make(vid, out_dir):
     proc.wait()
     wav.unlink()
     (out_dir / f"{vid}.txt").write_text(caption)
+    (out_dir / f"{vid}.voice").write_text(", ".join(sorted(USED)))
     print(f"wrote {mp4} ({t0:.1f}s)")
     return mp4, caption, round(t0, 1)
 
