@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv5ks01qrcwh",
+   "url": "https://www.amazon.com/dp/B078DDZL32",
+   "store": "amazon.com",
+   "title_raw": "Dockers Men's Relaxed Fit Signature Khaki Lux Cotton Stretch Pants - Pleated",
+   "brand": "DOCKERS",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/61viRoc3uIL._AC_SL1500_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-12T18:18:12.158Z",
+   "enriched": null
+  },
+  {
    "id": "mv18j74pa4g9",
    "url": "https://www.nordstromrack.com/s/tissot-porto-chronograph-croc-embossed-leather-strap-watch-31mm/7561360",
    "store": "nordstromrack.com",
