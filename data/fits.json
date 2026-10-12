@@ -6439,7 +6439,8 @@
      "query": "",
      "note": "$4,950. The press describes it as midnight blue, but LV's US site lists this item (1AJRHB–1AJRHF) only in 'Lava Smoke'. Check the colorway before publishing. image_src left empty for that reason.",
      "slide": 2,
-     "image_fetch": "failed 2026-10-09: no product image on page"
+     "id": "865eed",
+     "img": "images/cut/081-865eed.png"
     },
     {
      "label": "Similar",
@@ -6450,7 +6451,9 @@
      "retailer": "amazon",
      "query": "men navy florhttps://www.hockerty.com/en-us/men/blazers/409664-cobalt-blue-floral-jacquard-collarless-jacketal jacquard collarless jacket",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "5b994f",
+     "img": "images/cut/081-5b994f.png"
     },
     {
      "label": "Similar",
