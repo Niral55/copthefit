@@ -107,7 +107,7 @@ a { color: inherit; }
 .fit .sub { font-size: 18px; margin: 0 0 18px; }
 .pcard { border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 12px; margin-bottom: 12px; }
 .pcard.featured { border: 2px solid var(--accent); }
-.pcard .pimg { position: relative; background: #f3f1ee; border-radius: 4px; aspect-ratio: 2 / 1; overflow: hidden; }
+.pcard .pimg { position: relative; background: #f3f1ee; border-radius: 4px; aspect-ratio: 5 / 2; overflow: hidden; }
 .pcard .pimg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 4% 8%; box-sizing: border-box; }
 .pcard .pbody { padding: 14px 10px 6px; }
 .pcard.row { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 1fr); gap: 4px; align-items: center; }
@@ -137,12 +137,12 @@ a { color: inherit; }
 .pcard details[open] summary::after { content: "⌃"; }
 .pcard details p { margin: 6px 0 0; color: var(--muted); }
 .nosale { display: block; text-align: center; margin-top: 14px; font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-.sect { font-family: var(--display); font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 22px 0 2px; }
-.sect-sub { margin: 0 0 10px; color: var(--muted); font-size: 13px; }
-.mini { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 14px; align-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 10px; margin-bottom: 8px; }
-.mini .mimg { width: 76px; height: 76px; background: #f3f1ee; border-radius: 4px; display: grid; place-items: center; overflow: hidden; color: #555; }
-.mini .mimg img { width: 100%; height: 100%; object-fit: contain; padding: 6px; box-sizing: border-box; }
-.mini .mname { font-weight: 600; font-size: 15px; line-height: 1.25; overflow-wrap: anywhere; }
+.sect { font-family: var(--display); font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 16px 0 2px; }
+.sect-sub { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+.mini { display: grid; grid-template-columns: 108px minmax(0, 1fr) auto; gap: 14px; align-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--tag); padding: 10px; margin-bottom: 8px; }
+.mini .mimg { width: 108px; height: 108px; background: #f3f1ee; border-radius: 4px; display: grid; place-items: center; overflow: hidden; color: #555; }
+.mini .mimg img { width: 100%; height: 100%; object-fit: contain; padding: 8px; box-sizing: border-box; }
+.mini .mname { font-weight: 600; font-size: 16px; line-height: 1.25; overflow-wrap: anywhere; }
 .mini .mprice { font: 500 13px var(--mono); color: var(--muted); margin-top: 3px; }
 .ghost { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; text-decoration: none; font: 600 13px var(--body); border: 1.5px solid var(--accent); color: var(--accent); padding: 9px 12px; border-radius: 6px; }
 .ghost:hover { background: var(--accent); color: var(--accent-ink); }
@@ -175,8 +175,8 @@ footer p { margin: 0; max-width: 80ch; }
   .pcard.row .pbody { padding: 4px 4px 4px 10px; }
   .pcard.row .cta-note { display: none; }
   .pcard .pprice b { font-size: 28px; }
-  .mini { grid-template-columns: 60px minmax(0, 1fr); }
-  .mini .mimg { width: 60px; height: 60px; }
+  .mini { grid-template-columns: 84px minmax(0, 1fr); }
+  .mini .mimg { width: 84px; height: 84px; }
   .mini .ghost { grid-column: 1 / -1; justify-content: center; }
   .pager { flex-direction: column; gap: 10px; }
   .pager a:last-child { align-self: flex-end; text-align: right; }
