@@ -22,6 +22,11 @@ def lead_rules(f):
             e.append(f"{n}: luxury piece '{it.get('brand')} {it['name']}' (leads must be affordable, LEADS.md rule 1)")
         if not (it.get("image_src") or it.get("img")):
             e.append(f"{n}: item '{it['name']}' has no product image (rule 2)")
+    t = (f.get("title") or "").strip()
+    if not t or len(t) > 48 or "$" in t:
+        e.append(f"{n}: needs a short page title (≤ 40 chars, no prices) (rule 9)")
+    if not (f.get("subtitle") or "").strip():
+        e.append(f"{n}: needs a page subtitle, e.g. 'Spotted at practice' (rule 9)")
     opts = [o for o in f.get("photo_options") or [] if o.get("image")]
     if not opts and not f.get("photo"):
         e.append(f"{n}: no photos of the person (rule 3)")

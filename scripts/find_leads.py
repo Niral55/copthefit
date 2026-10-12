@@ -47,7 +47,7 @@ def context(doc, cfg):
 
 SCHEMA = """Return ONLY a JSON array (inside ```json fences) of lead objects, best first, each like:
 {"celeb": "...", "context": "event", "date": "Oct 12, 2026", "category": "Fit|Kicks|Wrist",
- "headline": "<=60 chars", "detail": "1-2 sentences in your own words", "tags": ["nfl"],
+ "headline": "<=60 chars", "title": "<=40 chars, person + piece, no prices", "subtitle": "where he was spotted, plain words", "detail": "1-2 sentences in your own words", "tags": ["nfl"],
  "sources": [{"label": "Outlet — article", "url": "https://..."}],
  "items": [{"label": "Exact|Similar", "type": "watch|sneakers|shoes|clothing|bag|jewelry|accessory", "brand": "...", "name": "...",
             "product_url": "https://... or empty", "retailer": "key or empty", "query": "search words or empty",
@@ -123,7 +123,7 @@ Search the web, verify every item against its source, then answer.
     added, skipped = [], []
     nxt = max(int(f["find"]) for f in doc["fits"]) + 1 if doc["fits"] else 1
     for raw in leads:
-        lead = {k: v for k, v in raw.items() if k in {"celeb", "context", "date", "category", "headline", "detail", "tags", "sources", "items",
+        lead = {k: v for k, v in raw.items() if k in {"celeb", "context", "date", "category", "headline", "title", "subtitle", "detail", "tags", "sources", "items",
                                                        "photo_leads", "photo_options", "photo_source", "score", "score_parts", "score_note", "note"}}
         lead.update(find=f"{nxt:03d}", status="review", ig_queue=False, priority=1, added=date.today().isoformat(), timing="Recent",
                     posted_at=None, ig_media_id=None, ig_permalink=None)
