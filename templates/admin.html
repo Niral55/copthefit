@@ -583,6 +583,10 @@ function renderEditor() {
             <label class="f" for="date">When<input id="date" value="${esc(d.date)}" placeholder="Oct 12, 2026"></label>
           </div>
           <label class="f" for="headline">Headline (cover text)<input id="headline" maxlength="90" value="${esc(d.headline)}" placeholder="Hurts went double denim with 11s"></label>
+          <div class="two">
+            <label class="f" for="ptitle">Page title (short, no prices)<input id="ptitle" maxlength="48" value="${esc(d.title || "")}" placeholder="Giannis' South Beach kicks"></label>
+            <label class="f" for="psub">Page subtitle<input id="psub" maxlength="60" value="${esc(d.subtitle || "")}" placeholder="Spotted at practice"></label>
+          </div>
           <label class="f" for="detail">What they wore<textarea id="detail" placeholder="One or two sentences, in your own words.">${esc(d.detail)}</textarea></label>
           <div class="two">
             <label class="f" for="srcLabel">Source<input id="srcLabel" value="${esc((d.sources[0] || {}).label)}" placeholder="ESPN — Week 6 arrivals"></label>
@@ -718,7 +722,8 @@ function renderReady() {
 
 function readForm() {
   const v = id => ($("#" + id) || {}).value?.trim() ?? "";
-  Object.assign(DRAFT, { celeb: v("celeb"), category: v("category"), context: v("context"), date: v("date"), headline: v("headline"), detail: v("detail") });
+  Object.assign(DRAFT, { celeb: v("celeb"), category: v("category"), context: v("context"), date: v("date"), headline: v("headline"), detail: v("detail"), title: v("ptitle"), subtitle: v("psub") });
+  if (!DRAFT.title) delete DRAFT.title; if (!DRAFT.subtitle) delete DRAFT.subtitle;
   DRAFT.sources[0] = { label: v("srcLabel"), url: fixUrl(v("srcUrl")) };
   if (DRAFT.photo || PENDING.photo) DRAFT.photo = { ...(DRAFT.photo || {}), credit: v("credit") };
   else if (DRAFT.photo_src) DRAFT.photo_src_credit = v("credit") || DRAFT.photo_src_credit || "";

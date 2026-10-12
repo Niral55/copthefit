@@ -105,7 +105,9 @@
     "credit": "Casio G-SHOCK",
     "source_url": "https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/"
    },
-   "video": "gshock"
+   "video": "gshock",
+   "title": "Lil Tecca's G-Shocks",
+   "subtitle": "Casio G-Shock campaign"
   },
   {
    "celeb": "Keanu Reeves",
@@ -180,7 +182,9 @@
     "source_url": "https://g-central.com/the-speed-g-shock-worn-by-keanu-reeves-quick-facts/"
    },
    "video": "gshock",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Keanu's Speed G-Shock",
+   "subtitle": "On screen in Speed"
   },
   {
    "celeb": "RM (Kim Namjoon, BTS)",
@@ -258,7 +262,9 @@
     "credit": "Esquire Korea",
     "source_url": "https://www.esquirekorea.co.kr/article/1882948"
    },
-   "video": "gshock"
+   "video": "gshock",
+   "title": "RM's army-exit G-Shock",
+   "subtitle": "Leaving military service"
   },
   {
    "celeb": "V (Kim Taehyung, BTS)",
@@ -322,7 +328,9 @@
     "credit": "G-Central",
     "source_url": "https://www.g-central.com/taehyung-and-jungkook-of-bts-wear-g-shock-dw-5600-watches-during-military-service/"
    },
-   "video": "gshock"
+   "video": "gshock",
+   "title": "V's all-black G-Shock",
+   "subtitle": "During military service"
   },
   {
    "celeb": "Shia LaBeouf",
@@ -387,7 +395,9 @@
     "source_url": "https://www.g-central.com/shia-labeouf-has-been-wearing-a-g-shock-watch-lately/"
    },
    "video": "gshock",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Shia's solar G-Shock",
+   "subtitle": "Spotted at the Salvable premiere"
   },
   {
    "celeb": "Idris Elba",
@@ -456,7 +466,9 @@
     "source_url": "https://timeandtidewatches.com/evolution-of-a-collection-idris-elbas-wrist-wear-is-as-versatile-as-his-performances/"
    },
    "video": "casio",
-   "updated": "2026-10-12T16:51:25.870Z"
+   "updated": "2026-10-12T16:51:25.870Z",
+   "title": "Idris Elba's gold Casio",
+   "subtitle": "Spotted out"
   },
   {
    "celeb": "Bryan Cranston (Walter White)",
@@ -529,7 +541,9 @@
     "source_url": "https://teddybaldassarre.com/blogs/watches/walter-white-watch"
    },
    "video": "casio",
-   "updated": "2026-10-12T16:54:01.539Z"
+   "updated": "2026-10-12T16:54:01.539Z",
+   "title": "Walter White's Casio",
+   "subtitle": "On screen in Breaking Bad"
   },
   {
    "celeb": "Tyler, the Creator",
@@ -598,7 +612,9 @@
     "source_url": "https://highsnobiety.com/p/the-pope-tyler-the-creator-watch"
    },
    "video": "casio",
-   "updated": "2026-10-12T16:53:44.461Z"
+   "updated": "2026-10-12T16:53:44.461Z",
+   "title": "Tyler's everyday Casio",
+   "subtitle": "His everyday watch"
   },
   {
    "celeb": "Barry Keoghan",
@@ -672,7 +688,9 @@
     "source_url": "https://www.g-central.com/what-casio-watch-does-barry-keoghan-wear-in-saltburn/"
    },
    "video": "casio",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Barry Keoghan's Saltburn Casio",
+   "subtitle": "On screen in Saltburn"
   },
   {
    "celeb": "Zohran Mamdani",
@@ -755,7 +773,9 @@
     "source_url": "https://www.gearpatrol.com/?p=904295"
    },
    "video": "casio",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Mamdani's Casio",
+   "subtitle": "Spotted in Queens"
   },
   {
    "celeb": "Harry Styles",
@@ -834,7 +854,9 @@
     "source_url": "https://www.wmagazine.com/fashion/harry-styles-black-shorts-adidas-jacket-sambas-london"
    },
    "video": "samba",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Harry's London Sambas",
+   "subtitle": "Spotted in London"
   },
   {
    "celeb": "A$AP Rocky",
@@ -912,7 +934,9 @@
     "source_url": "https://stock-x.prezly.com/get-the-look-shop-the-adidas-samba-sneaker"
    },
    "video": "samba",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "A$AP Rocky's white Sambas",
+   "subtitle": "Street style"
   },
   {
    "find": "013",
@@ -1035,7 +1059,9 @@
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
    },
-   "video": "samba"
+   "video": "samba",
+   "title": "Abdul Carter's cow-print Sambas",
+   "subtitle": "Giants game arrival"
   },
   {
    "celeb": "Austin Butler",
@@ -1114,7 +1140,9 @@
     "credit": "RMBI/LESE / BACKGRID via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Austin Butler's Sambas",
+   "subtitle": "Spotted in Malibu"
   },
   {
    "celeb": "Paul Mescal",
@@ -1184,7 +1212,9 @@
     "credit": "GQ via Style Girlfriend",
     "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Paul Mescal's white Sambas",
+   "subtitle": "At a fashion show"
   },
   {
    "celeb": "Hudson Williams",
@@ -1254,7 +1284,9 @@
     "source_url": "https://www.marieclaire.com/fashion/celebrity-style/hudson-williams-new-balance-9060-sneakers/"
    },
    "video": "newbalance",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Hudson Williams' 9060s",
+   "subtitle": "Spotted in Paris"
   },
   {
    "find": "018",
@@ -1499,7 +1531,9 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "video": "nbasig"
+   "video": "nbasig",
+   "title": "LeBron's First Game kicks",
+   "subtitle": "Sixers media day"
   },
   {
    "find": "021",
@@ -1663,7 +1697,9 @@
     "credit": "Nike via House of Heat",
     "source_url": "https://houseofheat.co/nike/nike-giannis-freak-8-hyper-pink-im5150-600"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Giannis' South Beach kicks",
+   "subtitle": "Spotted at practice"
   },
   {
    "find": "023",
@@ -2313,7 +2349,9 @@
    "photo": {
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
-   }
+   },
+   "title": "Saquon's white AF1s",
+   "subtitle": "Eagles game arrival"
   },
   {
    "find": "031",
@@ -4179,7 +4217,9 @@
     "source_url": "https://hollywoodlife.com/pics/celebrities-wearing-beanies-photos/"
    },
    "video": "staples",
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Finn Wolfhard's Carhartt beanie",
+   "subtitle": "At Cannes"
   },
   {
    "celeb": "Kid Cudi",
@@ -4254,7 +4294,9 @@
     "credit": "Levi's / Fact Magazine",
     "source_url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Kid Cudi's Levi's 501s",
+   "subtitle": "Levi's 501 campaign"
   },
   {
    "celeb": "Austin Butler",
@@ -4328,7 +4370,9 @@
     "credit": "Getty Images / Biography",
     "source_url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Austin Butler's Carhartt jacket",
+   "subtitle": "Spotted in New York"
   },
   {
    "celeb": "Seth Rogen",
@@ -4398,7 +4442,9 @@
     "credit": "Hollywood To You/Star Max/GC Images via Getty / Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/seth-rogen-birkenstock/"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Seth Rogen's Bostons",
+   "subtitle": "Arriving at Jimmy Kimmel Live!"
   },
   {
    "find": "057",
@@ -4667,7 +4713,9 @@
    "photo": {
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
-   }
+   },
+   "title": "Jalen Ramsey's SHAI 001s",
+   "subtitle": "Steelers game arrival"
   },
   {
    "celeb": "Khalil Mack",
@@ -4731,7 +4779,9 @@
    "photo": {
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
-   }
+   },
+   "title": "Khalil Mack's AJ1 Lows",
+   "subtitle": "Chargers game arrival"
   },
   {
    "celeb": "Stephon Castle",
@@ -4801,7 +4851,9 @@
     "credit": "@shotbybxfredo / DM Fashion Book",
     "source_url": "https://dmfashionbook.com/stephon-castles-nba-finals-tunnel-fit-features-chrome-hearts-and-air-jordan-4-black-cat/"
    },
-   "updated": "2026-10-12T16:48:56.816Z"
+   "updated": "2026-10-12T16:48:56.816Z",
+   "title": "Stephon Castle's Black Cat 4s",
+   "subtitle": "NBA Finals arrival"
   },
   {
    "find": "063",

@@ -32,6 +32,13 @@ def event_date(text):
     return date(int(y.group(0)), MONTHS[m.group(1)] if m else 7, int(d.group(1)) if (m and d) else 15)
 
 
+def short_title(h):
+    """Page title fallback: the cover headline without prices ("Lil Tecca's G-Shocks are just $110" → "Lil Tecca's G-Shocks")."""
+    t = re.sub(r"\s*(?:,|:|—|-)?\s*(?:is|are)?\s*(?:still\s+)?(?:just|only|under|for|a|an)?\s*~?\$[\d,.]+\+?\s*(?:buy|jean|watch)?\.?$", "", h, flags=re.I).strip()
+    t = re.sub(r"[,\s]+(?:the|a|an)?\s*$", "", t, flags=re.I)
+    return t or h
+
+
 def timing(fit):
     """"Recent" = the look is from the last ~4 months; older looks become "Evergreen" on their own."""
     from datetime import date
@@ -201,7 +208,7 @@ def main():
             cover, credit = f"img/photo-{fit['find']}.jpg", meta.get("credit", "")
         public.append(dict(cover=cover, cover_credit=credit, slug=f"{fit['find']}-{slugify(fit['celeb'])}-{slugify(re.sub(r'[,(].*$', '', fit['context']))}"[:72].strip("-") + "-" + NOUN.get(fit["category"], "outfit"),
             find=fit["find"], celeb=fit["celeb"], context=fit["context"], date=fit["date"],
-            category=fit["category"], timing=timing(fit), posted_at=fit.get("posted_at") or "", headline=fit["headline"],
+            category=fit["category"], timing=timing(fit), posted_at=fit.get("posted_at") or "", headline=fit["headline"], title=fit.get("title") or short_title(fit["headline"]), subtitle=fit.get("subtitle") or fit["context"],
             detail=fit["detail"], sources=fit["sources"], note=fit.get("note", ""),
             image=first, ig=fit.get("ig_permalink") or "", items=items))
 
