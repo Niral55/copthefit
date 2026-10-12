@@ -4506,9 +4506,9 @@
      "label": "Exact",
      "brand": "Rhude",
      "name": "Navy matching set",
-     "retailer": "farfetch",
-     "query": "Rhude",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.goat.com/apparel/rhude-hamptons-towel-track-jacket-navy-ps26ja021146025",
      "note": "",
      "type": "clothing"
     },
@@ -4533,7 +4533,7 @@
     "credit": "via The GAME",
     "source_url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
    },
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-12T17:09:08.105Z",
    "ig_queue": false,
    "video": "tunnel"
   },
