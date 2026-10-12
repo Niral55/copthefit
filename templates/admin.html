@@ -893,6 +893,8 @@ function openProducts(fromHistory) {
   if (!fromHistory) history.pushState({ prod: 1 }, "", "#products");
   $("#listView").hidden = true; $("#editView").hidden = true; $("#cfgView").hidden = true; $("#vidView").hidden = true; $("#prodView").hidden = false;
   renderProducts(); window.scrollTo(0, 0);
+  // the post list in "Add to post" must be current (posts get added, renumbered or delisted elsewhere)
+  GH.json("data/fits.json").then(d => { DOC = d; if (!$("#prodView").hidden) renderProducts(); }).catch(() => {});
 }
 function closeProducts() { if (history.state && history.state.prod) { history.back(); return; } showList(); }
 function prodPrice(p) { return p.price ? `${p.currency === "USD" || !p.currency ? "$" : p.currency + " "}${p.price}` : ""; }
@@ -941,7 +943,7 @@ function renderProducts() {
         <div style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn sm primary" type="button" data-add="${i}">Add to post</button><button class="btn sm danger" type="button" data-del="${i}">Delete</button></div>
       </div>`; }).join("") || `<p class="empty">No saved products. On any store page, right-click → <b>Save product to Cop the Fit</b> (Chrome extension).</p>`}</div>`;
   $("#prodBack").onclick = closeProducts;
-  $("#prodRefresh").onclick = async () => { $("#prodRefresh").textContent = "Refreshing…"; PRODUCTS = await GH.jsonOr("data/products.json", undefined, { products: [] }); renderProdCount(); renderProducts(); };
+  $("#prodRefresh").onclick = async () => { $("#prodRefresh").textContent = "Refreshing…"; [PRODUCTS, DOC] = await Promise.all([GH.jsonOr("data/products.json", undefined, { products: [] }), GH.json("data/fits.json")]); renderProdCount(); renderProducts(); };
   const val = (i, k) => $("#prodView").querySelector(`.prod[data-i="${i}"] [data-k="${k}"]`).value.trim();
   // "Add as": a new item, or fill an existing item of that post (best match picked automatically)
   const fillTargets = i => {
