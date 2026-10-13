@@ -6328,33 +6328,33 @@
      "type": "clothing",
      "brand": "Tom Ford",
      "name": "Gray striped jacquard blazer",
-     "retailer": "farfetch",
-     "query": "Tom Ford striped jacquard blazer",
+     "retailer": "",
+     "query": "",
      "note": "$5,270 per Complex/NY Post",
      "slide": 3,
-     "product_url": ""
+     "product_url": "https://www.farfetch.com/shopping/men/tom-ford-double-breasted-pinstripe-blazer-item-37426981.aspx"
     },
     {
      "label": "Exact",
      "type": "clothing",
      "brand": "Tom Ford",
      "name": "Matching striped jacquard trousers",
-     "retailer": "farfetch",
-     "query": "Tom Ford jacquard trousers",
+     "retailer": "",
+     "query": "",
      "note": "$1,720 per Complex/NY Post",
      "slide": 4,
-     "product_url": ""
+     "product_url": "https://www.farfetch.com/shopping/men/tom-ford-pinstripe-pattern-wool-trousers-item-39956361.aspx"
     },
     {
      "label": "Exact",
      "type": "shoes",
      "brand": "Tom Ford",
      "name": "Black python Chelsea boots",
-     "retailer": "farfetch",
-     "query": "Tom Ford python Chelsea boots",
+     "retailer": "",
+     "query": "",
      "note": "$2,850. Complex names Tom Ford; NY Post/AOL give no brand for the boots.",
      "slide": 5,
-     "product_url": ""
+     "product_url": "https://farfetch.com/shopping/men/tom-ford/chelsea-boots-2/items.aspx"
     },
     {
      "label": "Exact",
@@ -6446,7 +6446,7 @@
     "credit": "@.",
     "source_url": ""
    },
-   "updated": "2026-10-12T18:15:44.910Z",
+   "updated": "2026-10-13T03:21:27.068Z",
    "title": "Kelce's Tom Ford + Cartier",
    "subtitle": "Chiefs game arrival in Vegas"
   },
