@@ -8317,11 +8317,23 @@
      "retailer": "",
      "query": "",
      "image_src": "https://www.highsnobiety.com/static-assets/dato/1749732598-nike-jordan-1-mid-mystic-navy-mint-foam-0.jpg",
-     "price": "From $64",
+     "price": "From$64",
      "note": "Price varies by size; final fees are shown at checkout.",
      "slide": 2,
      "id": "6d2cde",
      "img": "images/cut/097-6d2cde.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "Brunello Cucinelli",
+     "name": "Wool and cashmere bomber jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.clothbase.com/items/4d2b5b5f_brunello-cucinelli-wool-and-cashmere-bomber-jacket_brunello-cucinelli",
+     "note": "",
+     "price": "$3777.0",
+     "image_src": "https://cdn.clothbase.com/uploads/0ac364ad-5951-48ad-b8f3-9ad8a292b3dc/P00681205.jpg",
+     "slide": 3
     }
    ],
    "photo_options": [
@@ -8363,7 +8375,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "find": "097",
-   "photo_search": "2026-10-13"
+   "photo_search": "2026-10-13",
+   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1665251513-ben-affleck-air-jordan-1-mid-outfit1.jpg",
+   "photo_src_page": "https://www.highsnobiety.com/p/ben-affleck-air-jordan-1-mid-sneakers-outfit/",
+   "photo_src_credit": "Backgrid via Highsnobiety",
+   "updated": "2026-10-13T18:07:43.516Z"
   },
   {
    "celeb": "Bradley Cooper",
