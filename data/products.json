@@ -6,12 +6,13 @@
    "store": "asos.com",
    "title_raw": "AllSaints Clover wool blend tailored blazer in taupe brown - part of a set",
    "brand": "AllSaints",
-   "name": "",
+   "name": "Clover wool blend tailored blazer in taupe brown",
    "image": "https://images.asos-media.com/products/allsaints-clover-wool-blend-tailored-blazer-in-taupe-brown-part-of-a-set/210229910-1-feathertaupe",
    "price": "",
    "currency": "",
    "added": "2026-10-13T06:44:47.903Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv6bdwa4d44n",
