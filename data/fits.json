@@ -8350,7 +8350,7 @@
      "retailer": "",
      "query": "",
      "image_src": "https://www.highsnobiety.com/static-assets/dato/1749732598-nike-jordan-1-mid-mystic-navy-mint-foam-0.jpg",
-     "price": "From$64",
+     "price": "$64",
      "note": "Price varies by size; final fees are shown at checkout.",
      "slide": 4,
      "id": "6d2cde",
@@ -8388,7 +8388,7 @@
    "score_note": "Exact affordable item available; recognizable actor or artist; editorial photos; evergreen story.",
    "note": "Video hook: Follow the coffee cup down to the mint Jordans. Highsnobiety dates the school run October 7, 2022; both photographs show the same blue jacket/trousers. StockX product page displayed $64 lowest ask in the available indexed view; recheck before a price-focused video.",
    "status": "approved",
-   "ig_queue": false,
+   "ig_queue": true,
    "priority": 1,
    "added": "2026-10-13",
    "timing": "Evergreen",
@@ -8397,7 +8397,7 @@
    "ig_permalink": null,
    "find": "097",
    "photo_search": "2026-10-13",
-   "updated": "2026-10-13T19:34:07.189Z",
+   "updated": "2026-10-13T19:40:09.314Z",
    "photo": {
     "credit": "Backgrid via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/ben-affleck-air-jordan-1-mid-sneakers-outfit/"
