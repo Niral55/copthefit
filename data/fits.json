@@ -4631,22 +4631,24 @@
      "label": "Exact",
      "brand": "Aimé Leon Dore x Porsche",
      "name": "Red jacket",
-     "retailer": "ebay",
-     "query": "Aime Leon Dore Porsche jacket red",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/aime-leon-dore-x-porsche-993-turbo-leather-club-jacket-tango-red",
      "note": "",
-     "type": "clothing"
+     "type": "clothing",
+     "price": "$1,000"
     },
     {
      "slide": 3,
      "label": "Similar",
      "brand": "",
      "name": "Red racing jacket",
-     "retailer": "amazon",
-     "query": "men's red racing jacket",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/Aelfric-Eden-Oversized-Motorcycle-Streetwear/dp/B0D945G1G2/ref=sr_1_5?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.ZX49t2mKGdBTTp3VsBKM6ECO7i4QbOgr_RNrOxkbfcOZKhZuq3oPAujBIfC4tFYqY4DQ3YNA3xApftAwy4iUt_vzM6EPDVNf9eocSg8hXPHH6g7G5LnIC6Vfvof0qdi5Po0biL0hfqBQso_QnP2Vr5w9-hThnN0U9sISCYWXbi9p6JuktyiKm5I-UWQ4m-7b-XquYlzPGEm12WOvJaA_0jcIHM3i4jipzP0lhJ0GcWmG77BtVC6lrEtFaZTveGlfeJ_77qC_PnI3mHjaUn5oolhDU8VA0DRVAH19sCjUVXc._GVRUzzXHCb_IKIgaysCCX0lnVQgt3X9PTdCHB73zmQ&dib_tag=se&keywords=red%2Brace%2Bcar%2Bjacket&plpRedirect=mhFallback&qid=1791861950&sr=8-5&th=1&psc=1",
      "note": "",
-     "type": "clothing"
+     "type": "clothing",
+     "price": "$90"
     }
    ],
    "posted_at": null,
@@ -4676,7 +4678,7 @@
     "credit": "via NFL.com",
     "source_url": "https://www.nfl.com/news/five-best-fits-of-week-1-2025-nfl-season"
    },
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-13T03:26:52.294Z",
    "ig_queue": false,
    "video": "tunnel",
    "title": "Laremy Tunsil's ALD jacket",
