@@ -1,62 +1,6 @@
 {
  "products": [
   {
-   "id": "mv72svs8zkei",
-   "url": "https://www.farfetch.com/pl/shopping/women/mancini-1979-john-braided-suede-belt-item-36252702.aspx",
-   "store": "farfetch.com",
-   "title_raw": "John braided suede belt",
-   "brand": "MANCINI 1979",
-   "name": "John braided suede belt",
-   "image": "https://cdn-images.farfetch-contents.com/36/25/27/02/36252702_72707196_1000.jpg?ov=true",
-   "price": "485.00",
-   "currency": "PLN",
-   "added": "2026-10-13T19:30:32.552Z",
-   "enriched": "basic",
-   "category": "accessory"
-  },
-  {
-   "id": "mv72rjc7od6x",
-   "url": "https://www.nordstrom.com/s/frame-relaxed-fit-jeans-momentum/8444826",
-   "store": "nordstrom.com",
-   "title_raw": "Relaxed Fit Jeans",
-   "brand": "FRAME",
-   "name": "Relaxed Fit Jeans",
-   "image": "https://n.nordstrommedia.com/it/23db40fe-1d59-4ae0-b7a4-7d64ac1e0984.jpeg",
-   "price": "278.00",
-   "currency": "USD",
-   "added": "2026-10-13T19:29:29.767Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv72r4b7nqlr",
-   "url": "https://www.goat.com/apparel/ader-error-langle-sweatshirt-blue-bn01sssw0102bl",
-   "store": "goat.com",
-   "title_raw": "Buy Ader Error Langle Sweatshirt 'Blue' - BN01SSSW0102BL | GOAT",
-   "brand": "",
-   "name": "Buy Ader Error Langle Sweatshirt 'Blue'",
-   "image": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/664/746/original/1390933_01.jpg.jpeg?width=750",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-13T19:29:10.291Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv72q7wcf1k1",
-   "url": "https://stockx.com/paly-wool-baseball-p-hat-brown",
-   "store": "stockx.com",
-   "title_raw": "Paly Wool Baseball P Hat Brown",
-   "brand": "Paly",
-   "name": "Wool Baseball P Hat Brown",
-   "image": "https://images.stockx.com/images/Paly-Wool-Baseball-P-Hat-Brown.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1774031689",
-   "price": "784",
-   "currency": "USD",
-   "added": "2026-10-13T19:28:28.284Z",
-   "enriched": "basic",
-   "category": "accessory"
-  },
-  {
    "id": "mv6bn1pew5uk",
    "url": "https://www.farfetch.com/om/shopping/women/vivetta-bow-detail-ballet-flats-item-32280969.aspx",
    "store": "farfetch.com",

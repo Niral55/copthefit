@@ -8593,16 +8593,63 @@
    ],
    "items": [
     {
+     "label": "Similar",
+     "brand": "Paly",
+     "name": "Wool Baseball P Hat Brown",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/paly-wool-baseball-p-hat-brown",
+     "note": "",
+     "price": "$784",
+     "image_src": "https://images.stockx.com/images/Paly-Wool-Baseball-P-Hat-Brown.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1774031689",
+     "slide": 2
+    },
+    {
+     "label": "Similar",
+     "brand": "",
+     "name": "Buy Ader Error Langle Sweatshirt 'Blue'",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.goat.com/apparel/ader-error-langle-sweatshirt-blue-bn01sssw0102bl",
+     "note": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/664/746/original/1390933_01.jpg.jpeg?width=750",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "MANCINI 1979",
+     "name": "John braided suede belt",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.farfetch.com/pl/shopping/women/mancini-1979-john-braided-suede-belt-item-36252702.aspx",
+     "note": "",
+     "price": "PLN485.00",
+     "image_src": "https://cdn-images.farfetch-contents.com/36/25/27/02/36252702_72707196_1000.jpg?ov=true",
+     "slide": 4
+    },
+    {
+     "label": "Similar",
+     "brand": "FRAME",
+     "name": "Relaxed Fit Jeans",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.nordstrom.com/s/frame-relaxed-fit-jeans-momentum/8444826",
+     "note": "",
+     "price": "$278.00",
+     "image_src": "https://n.nordstrommedia.com/it/23db40fe-1d59-4ae0-b7a4-7d64ac1e0984.jpeg",
+     "slide": 5
+    },
+    {
      "type": "shoes",
      "retailer": "",
      "query": "",
-     "slide": 2,
+     "slide": 6,
      "label": "Exact",
      "brand": "Blundstone",
      "name": "585 Classic Chelsea Boots (Rustic Brown)",
      "product_url": "https://www.amazon.com/dp/B007DIXXU6",
      "image_src": "https://www.blundstone.com/cdn/shop/files/product-image_2026-08-18_585-USA_p_profile_1.jpg?v=1790053621",
-     "price": "From $175.96",
+     "price": "From$175.96",
      "note": "Price varies by size and seller.",
      "id": "d14725",
      "img": "images/cut/100-d14725.png"
@@ -8633,7 +8680,8 @@
    },
    "score_note": "Identified Blundstone 585 with Amazon offers; strong actor recognition; one usable photo; evergreen.",
    "note": "INCOMPLETE DRAFT — added at Niral’s explicit request on October 13, 2026 despite the usual two-photo requirement. One verified unwatermarked full-length photo is available; a second suitable photo remains outstanding. The model and Rustic Brown finish are identified by GQ and Esquire. Amazon B007DIXXU6 showed new/used offers from $175.96; brand store lists $219.95. Recheck the selected size, seller and condition before a price-focused video. Video hook: Jacob Elordi’s boots look better when they look worn.",
-   "find": "100"
+   "find": "100",
+   "updated": "2026-10-13T19:31:37.602Z"
   },
   {
    "status": "review",
