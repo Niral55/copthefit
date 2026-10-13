@@ -6,12 +6,13 @@
    "store": "nordstrom.com",
    "title_raw": "Relaxed Fit Jeans",
    "brand": "FRAME",
-   "name": "",
+   "name": "Relaxed Fit Jeans",
    "image": "https://n.nordstrommedia.com/it/23db40fe-1d59-4ae0-b7a4-7d64ac1e0984.jpeg",
    "price": "278.00",
    "currency": "USD",
    "added": "2026-10-13T19:29:29.767Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv72r4b7nqlr",
