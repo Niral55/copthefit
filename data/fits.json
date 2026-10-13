@@ -6929,9 +6929,8 @@
    "photo_search": "2026-10-12",
    "photo": {
     "credit": "Bill Wippert / Buffalo Bills",
-    "source_url": "https://www.buffalobills.com/photos/best-arrival-photos-from-the-2025-buffalo-bills-season"
-   },
-   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg"
+    "source_url": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg"
+   }
   },
   {
    "celeb": "Jalen Hurts",
@@ -7008,9 +7007,8 @@
    "photo_search": "2026-10-12",
    "photo": {
     "credit": "Devlynn Bunning / Philadelphia Eagles",
-    "source_url": "https://www.philadelphiaeagles.com/photos/lions-eagles-arrival-photo-gallery-sunday-night-football-week-11-nfl"
-   },
-   "photo_src": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/eagles/vhqqdazc1oo2kygtveep.jpg"
+    "source_url": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/eagles/vhqqdazc1oo2kygtveep.jpg"
+   }
   },
   {
    "celeb": "Travis Hunter",
@@ -7570,9 +7568,10 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-12",
-   "photo_src_page": "https://bamfstyle.com/2023/03/15/last-of-us-pascal/amp/",
-   "photo_src_credit": "HBO via BAMF Style",
-   "photo_src": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2023/03/TLOUJoel-MAIN3.jpg"
+   "photo": {
+    "credit": "HBO via BAMF Style",
+    "source_url": "https://bamfstyle.com/2023/03/15/last-of-us-pascal/amp/"
+   }
   }
  ]
 }
