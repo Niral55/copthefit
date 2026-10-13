@@ -599,7 +599,8 @@ function renderEditor() {
           <h2>Items (up to 8)</h2>
           ${hasAffIds() ? "" : `<p class="msg" style="margin:0">Links won't earn until you add your affiliate IDs. <a href="#settings" id="goCfg">Affiliates &amp; settings</a></p>`}
           <div class="items" id="items"></div>
-          <div><button class="btn sm" id="addItem" type="button">+ Add item</button></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn sm" id="addItem" type="button">+ Add item</button>
+            ${PRODUCTS.products.length ? `<select id="addSaved" class="btn sm" aria-label="Add a saved product" style="max-width:340px"><option value="">+ Add saved product (${PRODUCTS.products.length})…</option>${PRODUCTS.products.map((p, i) => `<option value="${i}">${esc(((p.brand ? p.brand + " " : "") + (p.name || p.title_raw || "")).slice(0, 60))}${prodPrice(p) ? " · " + esc(prodPrice(p)) : ""}${p.store ? " · " + esc(p.store) : ""}</option>`).join("")}</select>` : ""}</div>
           <p class="hint">Link: paste a product page, or write <code>retailer: search words</code> (${esc(retailers.join(", "))}), or <code>custom</code> for one-off pieces. Tap an image box to upload that item's product shot.</p>
         </div>
       </div>
@@ -639,6 +640,18 @@ function renderEditor() {
   }));
   $("#editView").querySelectorAll(".cands button").forEach(b => b.onclick = () => useCandidate(DRAFT.photo_candidates[+b.dataset.c]));
   $("#editView").querySelectorAll("input,textarea,select").forEach(el => el.addEventListener("input", () => { readForm(); renderReady(); }));
+  if ($("#addSaved")) $("#addSaved").onchange = e => {
+    const p = PRODUCTS.products[+e.target.value]; e.target.value = "";
+    if (!p) return;
+    readForm();
+    if (DRAFT.items.length >= 8) { flash("This post already has 8 items (the Instagram limit). Remove one first.", "err"); return; }
+    const it = { label: DRAFT.items.some(x => x.label === "Exact") ? "Similar" : "Exact", brand: p.brand || "", name: stripBrand(p.name || p.title_raw || "", p.brand || ""), retailer: "", query: "", product_url: p.url, note: "", _link: p.url, _saved: p.id };
+    if (p.type) it.type = p.type;
+    if (prodPrice(p)) it.price = prodPrice(p);
+    if (p.image) it.image_src = p.image;  // the build cuts out the background
+    DRAFT.items.push(it); DIRTY = true; renderItems(); renderPins(); renderReady();
+    flash("Added from your saved products. Check Exact/Similar, then save. It leaves your saved list when you save.", "ok");
+  };
   $("#addItem").onclick = () => { readForm(); if (DRAFT.items.length >= 8) return; DRAFT.items.push({ label: "Similar", brand: "", name: "", retailer: "", query: "", product_url: "", note: "", _link: "" }); renderItems(); renderReady(); };
   $("#save").onclick = () => save("save");
   for (const a of ["publish", "queue", "unqueue"]) if ($("#" + a)) $("#" + a).onclick = () => save(a);
@@ -662,7 +675,7 @@ function renderEditor() {
 function renderItems() {
   $("#items").innerHTML = DRAFT.items.map((it, i) => {
     const pend = PENDING.items.get(it);
-    const src = pend ? pend.url : it.img && DRAFT.find ? GH.raw(it.img) : "";
+    const src = pend ? pend.url : it.img && DRAFT.find ? GH.raw(it.img) : it.image_src || "";
     return `<div class="it" data-i="${i}">
       <span class="n">${i + 1}</span>
       <button class="img" type="button" data-up="${i}" aria-label="Upload image for item ${i + 1}">${src ? `<img src="${esc(src)}" alt="">` : "Add image"}</button>
@@ -1236,7 +1249,7 @@ function parseItems() {
     if (!(it.name || "").trim()) throw new Error(`Item ${n}: add the item name.`);
     if (/\b(dupe|fake|faux|replica)\b/i.test(it.name)) throw new Error(`Item ${n}: avoid dupe/fake/faux/replica wording.`);
     const out = { ...it, slide: i + 2, brand: (it.brand || "").trim(), name: it.name.trim(), product_url: "", retailer: "", query: "" };
-    delete out._link;
+    delete out._link; delete out._saved;
     if (!out.type) delete out.type; // blank = detected automatically when the site builds
     const m = link.match(/^([a-z0-9]+)\s*:\s*(.+)$/i);
     if (/^https?:\/\//i.test(link)) out.product_url = link;
@@ -1284,6 +1297,7 @@ async function save(action) {
     if ((PENDING.photo || d.photo) && !(d.photo && d.photo.credit)) throw new Error("Add the photo credit.");
     if (action === "now" && !(PENDING.photo || d.photo)) throw new Error("Add a cover photo before posting.");
     const items = parseItems();
+    const usedSaved = d.items.map(it => it._saved).filter(Boolean);
     busy(true); msg("Saving…");
 
     const pend = [];
@@ -1313,7 +1327,8 @@ async function save(action) {
       }
       items.forEach((it, i) => { const p = PENDING.items.get(d.items[i]); if (p) pend.push({ path: `images/inbox/${n}-${it.slide}.png`, base64: p.b64 }); });
       return n;
-    }, pend, `${{ save: "Edit", publish: "Publish", queue: "IG queue +", unqueue: "IG queue −", next: "Post next", now: "Post now", unpublish: "Unpublish", restore: "Restore" }[action]} #${d.find || "new"}: ${d.celeb}`);
+    }, pend, `${{ save: "Edit", publish: "Publish", queue: "IG queue +", unqueue: "IG queue −", next: "Post next", now: "Post now", unpublish: "Unpublish", restore: "Restore" }[action]} #${d.find || "new"}: ${d.celeb}`,
+      usedSaved.length ? [{ path: "data/products.json", empty: { products: [] }, change: j => { j.products = j.products.filter(x => !usedSaved.includes(x.id)); }, done: j => { PRODUCTS = j; renderProdCount(); } }] : []);
     // GH.commit builds files inside change(); pass them by reference
     STAMP = Date.now();
     DIRTY = false; PENDING = { photo: null, items: new Map() }; // saved: nothing pending any more
