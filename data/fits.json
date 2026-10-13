@@ -3661,7 +3661,11 @@
      "id": "9fa28c",
      "img": "images/cut/046-9fa28c.png",
      "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
-     "type": "watch"
+     "type": "watch",
+     "pin": [
+      0.1381,
+      0.8154
+     ]
     },
     {
      "slide": 3,
@@ -3684,7 +3688,7 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-13T02:55:47.218Z",
+   "updated": "2026-10-13T02:58:27.081Z",
    "ig_queue": false,
    "video": "globeswatches",
    "title": "Colman Domingo's Speedmaster",
