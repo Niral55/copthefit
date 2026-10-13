@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv6bn1pew5uk",
+   "url": "https://www.farfetch.com/om/shopping/women/vivetta-bow-detail-ballet-flats-item-32280969.aspx",
+   "store": "farfetch.com",
+   "title_raw": "bow-detail ballet flats",
+   "brand": "Vivetta",
+   "name": "",
+   "image": "https://cdn-images.farfetch-contents.com/32/28/09/69/32280969_62286538_1000.jpg?ov=true",
+   "price": "307.00",
+   "currency": "USD",
+   "added": "2026-10-13T06:50:10.658Z",
+   "enriched": null
+  },
+  {
    "id": "mv6bgu03o10r",
    "url": "https://stockx.com/carhartt-wip-aaron-regular-tapered-jeans-blue-rinsed",
    "store": "stockx.com",
