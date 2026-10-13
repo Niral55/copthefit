@@ -6,12 +6,13 @@
    "store": "us.mossbros.com",
    "title_raw": "Slim Fit Blue Twisted Suit",
    "brand": "",
-   "name": "",
+   "name": "Slim Fit Blue Twisted Suit",
    "image": "https://content.moss.co.uk/images/extraextralarge/",
    "price": "647.50",
    "currency": "",
    "added": "2026-10-13T06:28:10.096Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv69t7si7eyk",
