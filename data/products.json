@@ -6,12 +6,13 @@
    "store": "farfetch.com",
    "title_raw": "relaxed jeans regular waist 1980 D-Eeper",
    "brand": "Diesel",
-   "name": "",
+   "name": "relaxed jeans regular waist 1980 D-Eeper",
    "image": "https://cdn-images.farfetch-contents.com/32/49/40/23/32494023_62970025_1000.jpg",
    "price": "225.00",
    "currency": "USD",
    "added": "2026-10-13T05:29:39.483Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv68q4cmqxqo",
