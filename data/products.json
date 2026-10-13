@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv72svs8zkei",
+   "url": "https://www.farfetch.com/pl/shopping/women/mancini-1979-john-braided-suede-belt-item-36252702.aspx",
+   "store": "farfetch.com",
+   "title_raw": "John braided suede belt",
+   "brand": "MANCINI 1979",
+   "name": "",
+   "image": "https://cdn-images.farfetch-contents.com/36/25/27/02/36252702_72707196_1000.jpg?ov=true",
+   "price": "485.00",
+   "currency": "PLN",
+   "added": "2026-10-13T19:30:32.552Z",
+   "enriched": null
+  },
+  {
    "id": "mv72rjc7od6x",
    "url": "https://www.nordstrom.com/s/frame-relaxed-fit-jeans-momentum/8444826",
    "store": "nordstrom.com",
