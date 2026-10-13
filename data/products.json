@@ -6,12 +6,13 @@
    "store": "next.us",
    "title_raw": "Armani Exchange Regular Fit Logo T-Shirt",
    "brand": "Armani Exchange",
-   "name": "",
+   "name": "Regular Fit Logo T-Shirt",
    "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/F21058s.jpg",
    "price": "",
    "currency": "",
    "added": "2026-10-13T05:30:47.320Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv68rhy3h81u",
