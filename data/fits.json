@@ -8568,7 +8568,7 @@
    }
   },
   {
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8611,8 +8611,8 @@
      "price": "$784",
      "image_src": "https://images.stockx.com/images/Paly-Wool-Baseball-P-Hat-Brown.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1774031689",
      "slide": 2,
-     "id": "a4b1d4",
-     "img": "images/cut/100-a4b1d4.png"
+     "img": "images/cut/100-a4b1d4.png",
+     "id": "a4b1d4"
     },
     {
      "label": "Similar",
@@ -8624,8 +8624,8 @@
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/664/746/original/1390933_01.jpg.jpeg?width=750",
      "slide": 3,
-     "id": "b094b3",
-     "img": "images/cut/100-b094b3.png"
+     "img": "images/cut/100-b094b3.png",
+     "id": "b094b3"
     },
     {
      "label": "Similar",
@@ -8651,8 +8651,8 @@
      "price": "$278.00",
      "image_src": "https://n.nordstrommedia.com/it/23db40fe-1d59-4ae0-b7a4-7d64ac1e0984.jpeg",
      "slide": 5,
-     "id": "d9e39a",
-     "img": "images/cut/100-d9e39a.png"
+     "img": "images/cut/100-d9e39a.png",
+     "id": "d9e39a"
     },
     {
      "type": "shoes",
@@ -8696,7 +8696,10 @@
    "score_note": "Identified Blundstone 585 with Amazon offers; strong actor recognition; one usable photo; evergreen.",
    "note": "INCOMPLETE DRAFT — added at Niral’s explicit request on October 13, 2026 despite the usual two-photo requirement. One verified unwatermarked full-length photo is available; a second suitable photo remains outstanding. The model and Rustic Brown finish are identified by GQ and Esquire. Amazon B007DIXXU6 showed new/used offers from $175.96; brand store lists $219.95. Recheck the selected size, seller and condition before a price-focused video. Video hook: Jacob Elordi’s boots look better when they look worn.",
    "find": "100",
-   "updated": "2026-10-13T19:31:37.602Z"
+   "updated": "2026-10-13T19:37:40.015Z",
+   "photo_src": "https://media.gq.com/photos/69f22b7b5ba286cd59b12d63/master/w_2560%2Cc_limit/BGUS_3552478_004.jpg",
+   "photo_src_page": "https://www.gq.com/story/jacob-elordi-blundstone-boots",
+   "photo_src_credit": "Backgrid via GQ"
   },
   {
    "status": "approved",
