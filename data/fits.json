@@ -1233,26 +1233,13 @@
     {
      "label": "Exact",
      "brand": "Gucci",
-     "name": "Gucci x adidas Trefoil Print Jacket",
-     "retailer": "",
-     "query": "",
-     "product_url": "https://stockx.com/gucci-x-adidas-trefoil-print-jacket-green-ivory",
-     "note": "",
-     "price": "$580",
-     "slide": 2,
-     "img": "images/cut/016-d71959.png",
-     "id": "d71959"
-    },
-    {
-     "label": "Exact",
-     "brand": "Gucci",
      "name": "Gucci x adidas Cotton Jersey T-Shirt",
      "retailer": "",
      "query": "",
      "product_url": "https://stockx.com/gucci-x-adidas-cotton-jersey-t-shirt-white-red?country=US&currencyCode=USD&size=M&utm_source=google&utm_medium=cpc&utm_campaign=verified_pmax_apparel_highcm_new_us&utm_campaignid=24218941888&content=&keyword=&utm_content=6744862654&gad_source=1&gad_campaignid=24207991827&gbraid=0AAAAADePu3DONd24sVwlRhETUnMUmgRRr&gclid=CjwKCAjwirLWBhBBEiwAlItbEqLrChGsR9Gl310Qaa77gjuZiMhvlit1iC4ktjszTh4Y3kFFVAGHhxoCc1EQAvD_BwE",
      "note": "",
      "price": "$587",
-     "slide": 3,
+     "slide": 2,
      "img": "images/cut/016-2ae034.png",
      "id": "2ae034"
     },
@@ -1265,9 +1252,22 @@
      "product_url": "https://www.adidas.com/us/skateboarding-chino-pants-plus/KC6321.html",
      "note": "",
      "price": "$60",
-     "slide": 4,
+     "slide": 3,
      "img": "images/cut/016-02aa4d.png",
      "id": "02aa4d"
+    },
+    {
+     "label": "Exact",
+     "brand": "Gucci",
+     "name": "Gucci x adidas Trefoil Print Jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/gucci-x-adidas-trefoil-print-jacket-green-ivory",
+     "note": "",
+     "price": "$580",
+     "slide": 4,
+     "img": "images/cut/016-d71959.png",
+     "id": "d71959"
     },
     {
      "label": "Exact",
@@ -1283,21 +1283,6 @@
      "slide": 5,
      "id": "55698a",
      "img": "images/cut/016-55698a.png"
-    },
-    {
-     "label": "Similar",
-     "type": "clothing",
-     "brand": "adidas",
-     "name": "Adicolor Classics Beckenbauer Track Jacket (Green)",
-     "product_url": "https://www.adidas.com/us/adicolor-classics-beckenbauer-track-jacket/IA4777.html",
-     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d2457f5c6bb4425e88e9af0e008e046d_9366/Adicolor_Classics_Beckenbauer_Track_Jacket_Green_IA4777_01_laydown.jpg",
-     "price": "$80",
-     "retailer": "",
-     "query": "",
-     "note": "",
-     "slide": 6,
-     "id": "6e95b5",
-     "img": "images/cut/016-6e95b5.png"
     }
    ],
    "photo_options": [
@@ -1337,7 +1322,7 @@
     "credit": "GQ via Style Girlfriend",
     "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
    },
-   "updated": "2026-10-13T05:16:58.488Z",
+   "updated": "2026-10-13T20:00:18.943Z",
    "title": "Paul Mescal's white Sambas",
    "subtitle": "At a fashion show"
   },
