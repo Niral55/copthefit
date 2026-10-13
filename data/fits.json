@@ -8522,7 +8522,9 @@
      "product_url": "https://www.amazon.com/dp/B007DIXXU6",
      "image_src": "https://www.blundstone.com/cdn/shop/files/product-image_2026-08-18_585-USA_p_profile_1.jpg?v=1790053621",
      "price": "From $175.96",
-     "note": "Price varies by size and seller."
+     "note": "Price varies by size and seller.",
+     "id": "d14725",
+     "img": "images/cut/100-d14725.png"
     }
    ],
    "photo_options": [
@@ -8600,7 +8602,9 @@
      "product_url": "https://stockx.com/adidas-stan-smith-white-green-og",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/337/713/original/8880_01.jpg.jpeg?action=crop&width=750",
      "price": "From $49",
-     "note": "White-and-green option for the look. Price varies by size; marketplace fee included in the displayed starting price."
+     "note": "White-and-green option for the look. Price varies by size; marketplace fee included in the displayed starting price.",
+     "id": "1340bb",
+     "img": "images/cut/101-1340bb.png"
     }
    ],
    "photo_options": [
