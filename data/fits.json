@@ -6676,22 +6676,11 @@
      "type": "sneakers",
      "brand": "Nike",
      "name": "LeBron 24 \"Greater China\" (IX5105-200)",
-     "product_url": "",
-     "retailer": "stockx",
-     "query": "Nike LeBron 24 Greater China IX5105-200",
+     "product_url": "https://stockx.com/nike-lebron-24-greater-china?size=7",
+     "retailer": "",
+     "query": "",
      "note": "$190 retail; released Oct 9, 2026 in Greater China only, so US availability is via resale",
      "slide": 2
-    },
-    {
-     "label": "Similar",
-     "type": "sneakers",
-     "brand": "Nike",
-     "name": "Nike LeBron 24 (other colorways)",
-     "product_url": "",
-     "retailer": "amazon",
-     "query": "Nike LeBron 24 basketball shoes",
-     "note": "",
-     "slide": 3
     }
    ],
    "photo_leads": [
@@ -6738,7 +6727,11 @@
    "ig_permalink": null,
    "photo_search": "2026-10-09",
    "title": "LeBron's LeBron 24s",
-   "subtitle": "Sixers open scrimmage"
+   "subtitle": "Sixers open scrimmage",
+   "photo": {
+    "credit": "@kicksvisionofficial"
+   },
+   "updated": "2026-10-13T02:38:53.310Z"
   },
   {
    "celeb": "Jeremy Allen White",
