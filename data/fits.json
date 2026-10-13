@@ -6892,11 +6892,6 @@
    ],
    "photo_options": [
     {
-     "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg",
-     "page": "https://www.buffalobills.com/photos/best-arrival-photos-from-the-2025-buffalo-bills-season",
-     "credit": "Bill Wippert / Buffalo Bills"
-    },
-    {
      "image": "https://images.soleretriever.com/blog/a05773b5723fb6bc5553821a65c7c6bac5a69bf4-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
      "page": "https://www.soleretriever.com/news/articles/nfl-week-1-best-tunnel-fits-2025",
      "credit": "Sole Retriever"
@@ -6905,6 +6900,11 @@
      "image": "https://images.soleretriever.com/blog/56b957b48631d3b82d3d9c3c8a2b7caf9031b193-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
      "page": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-11-best-tunnel-fits",
      "credit": "Sole Retriever"
+    },
+    {
+     "image": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg",
+     "page": "https://www.buffalobills.com/photos/best-arrival-photos-from-the-2025-buffalo-bills-season",
+     "credit": "Bill Wippert / Buffalo Bills"
     }
    ],
    "photo_source": "https://www.soleretriever.com/news/articles/nfl-week-1-best-tunnel-fits-2025",
@@ -6930,7 +6930,10 @@
    "photo": {
     "credit": "Bill Wippert / Buffalo Bills",
     "source_url": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/bills/trgazkzaui74fignsltt.jpg"
-   }
+   },
+   "photo_src": "https://images.soleretriever.com/blog/a05773b5723fb6bc5553821a65c7c6bac5a69bf4-1070x760.png?quality=85&fit=clip&auto=format&width=1600",
+   "photo_src_page": "https://www.soleretriever.com/news/articles/nfl-week-1-best-tunnel-fits-2025",
+   "photo_src_credit": "Sole Retriever"
   },
   {
    "celeb": "Jalen Hurts",
