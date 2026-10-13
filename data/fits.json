@@ -3814,7 +3814,9 @@
      "query": "Cartier Tortue",
      "product_url": "",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "id": "cf569f",
+     "img": "images/cut/048-cf569f.png"
     },
     {
      "slide": 3,
