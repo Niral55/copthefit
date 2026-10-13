@@ -2222,7 +2222,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "358d2c",
+     "img": "images/cut/028-358d2c.png"
     }
    ],
    "posted_at": null,
@@ -2344,7 +2346,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "60d449",
+     "img": "images/cut/029-60d449.png"
     },
     {
      "label": "Similar",
@@ -2357,7 +2361,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 6
+     "slide": 6,
+     "id": "01fffa",
+     "img": "images/cut/029-01fffa.png"
     }
    ],
    "posted_at": null,
@@ -2535,7 +2541,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://media.richardmille.com/wp-content/uploads/2020/02/15140945/richard-mille-rm-56-01-tourbillon-sapphire-96416.jpg?dpr=1&width=2000",
-     "price": "Price on request"
+     "price": "Price on request",
+     "id": "704801",
+     "img": "images/cut/031-704801.png"
     },
     {
      "label": "Similar",
@@ -2548,7 +2556,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "1e9221",
+     "img": "images/cut/031-1e9221.png"
     }
    ],
    "posted_at": null,
@@ -2631,7 +2641,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "de08d7",
+     "img": "images/cut/032-de08d7.png"
     }
    ],
    "posted_at": null,
@@ -2726,7 +2738,8 @@
      "query": "",
      "product_url": "https://www.amazon.com/Prospex-Speedtimer-Chronograph-Sports-SSC813P1/dp/B09QPK4MPV",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_fetch": "failed 2026-10-13: no product image on page"
     },
     {
      "label": "Similar",
@@ -2739,7 +2752,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "a57c94",
+     "img": "images/cut/033-a57c94.png"
     }
    ],
    "posted_at": null,
@@ -2832,7 +2847,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "2da40f",
+     "img": "images/cut/034-2da40f.png"
     }
    ],
    "posted_at": null,
@@ -2906,7 +2923,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://www.orientwatchusa.com/cdn/shop/files/kamasu-4336362.png?v=1787002521&width=1200",
-     "price": "$375"
+     "price": "$375",
+     "id": "34c04b",
+     "img": "images/cut/035-34c04b.png"
     },
     {
      "label": "Similar",
@@ -2919,7 +2938,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "695fb0",
+     "img": "images/cut/035-695fb0.png"
     }
    ],
    "posted_at": null,
@@ -3027,7 +3048,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://citizenwatch.widen.net/content/ijhd4ruruu/webp",
-     "price": "$695"
+     "price": "$695",
+     "id": "f0d070",
+     "img": "images/cut/036-f0d070.png"
     },
     {
      "label": "Similar",
@@ -3040,7 +3063,8 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "image_fetch": "failed 2026-10-13: 404 Client Error: Not Found for url: https://timex.com/cdn/shop/files/TW2Y23900."
     }
    ],
    "posted_at": null,
@@ -3123,7 +3147,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5704b2fb/product-pictures/4679ced0-3b8f-4fd9-b780-cd7b9ccadd31_T137-410-33-021-00_shadow.png",
-     "price": "$575"
+     "price": "$575",
+     "id": "90c534",
+     "img": "images/cut/037-90c534.png"
     },
     {
      "slide": 4,
@@ -3136,7 +3162,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GM/gm2/gm-2100b-3a/assets/GM-2100B-3A.png",
-     "price": "$300"
+     "price": "$300",
+     "id": "a9e074",
+     "img": "images/cut/037-a9e074.png"
     },
     {
      "label": "Similar",
@@ -3149,7 +3177,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "9aef9d",
+     "img": "images/cut/037-9aef9d.png"
     }
    ],
    "posted_at": null,
@@ -3217,7 +3247,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://wristaficionado.com/cdn/shop/files/cartier-tank-a-guichets-wgta0235-rose-gold-alligator-strap-2025-cartier-1154329937.png?crop=center&height=1200&v=1743787301&width=1200",
-     "price": "Price on request"
+     "price": "Price on request",
+     "id": "56a04c",
+     "img": "images/cut/038-56a04c.png"
     },
     {
      "label": "Similar",
@@ -3230,7 +3262,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "aacd49",
+     "img": "images/cut/038-aacd49.png"
     }
    ],
    "posted_at": null,
@@ -3298,7 +3332,8 @@
      "id": "771607",
      "type": "watch",
      "image_src": "https://cdn.watchbase.com/watch/lg/audemars-piguet/royal-oak/26674st-oo-1320st-01-6c.jpg",
-     "price": "$124,200"
+     "price": "$124,200",
+     "img": "images/cut/039-771607.png"
     },
     {
      "slide": 3,
@@ -3311,7 +3346,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9b840963/product-pictures/739cc440-025b-42e8-a5f9-ae33b31479b2_T137-410-11-041-00_shadow.png",
-     "price": "$450"
+     "price": "$450",
+     "id": "da111f",
+     "img": "images/cut/039-da111f.png"
     },
     {
      "slide": 4,
@@ -3335,7 +3372,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "a93801",
+     "img": "images/cut/039-a93801.png"
     }
    ],
    "posted_at": null,
@@ -3394,7 +3433,9 @@
      "note": "",
      "type": "watch",
      "image_src": "https://www.watchguys.com/cdn/shop/files/Rolex_Daytona_126538TRO_Barbie.webp?v=1791255194&width=1200",
-     "price": "$1,000,000"
+     "price": "$1,000,000",
+     "id": "1f3f6d",
+     "img": "images/cut/040-1f3f6d.png"
     },
     {
      "label": "Similar",
@@ -3407,7 +3448,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "0b94c7",
+     "img": "images/cut/040-0b94c7.png"
     }
    ],
    "posted_at": null,
@@ -3638,7 +3681,8 @@
      "note": "",
      "type": "watch",
      "image_src": "https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-41-mm-22010412103006-5059c4.png?w=1024",
-     "price": "$7,400"
+     "price": "$7,400",
+     "image_fetch": "failed 2026-10-13: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
     },
     {
      "slide": 3,
@@ -3662,7 +3706,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "62d1f6",
+     "img": "images/cut/043-62d1f6.png"
     }
    ],
    "posted_at": null,
@@ -3723,7 +3769,8 @@
      "id": "a5df56",
      "type": "watch",
      "image_src": "https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22050382003001-4f0d48.png?w=1024",
-     "price": "$42,200"
+     "price": "$42,200",
+     "image_fetch": "failed 2026-10-13: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
     },
     {
      "label": "Similar",
@@ -3736,7 +3783,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "b36d06",
+     "img": "images/cut/044-b36d06.png"
     }
    ],
    "posted_at": null,
@@ -3825,7 +3874,8 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "image_fetch": "failed 2026-10-13: 404 Client Error: Not Found for url: https://timex.com/cdn/shop/files/TW2W60300_"
     }
    ],
    "posted_at": null,
@@ -3977,7 +4027,8 @@
      "note": "",
      "type": "watch",
      "image_src": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--W1SP10_PM2_Front%20view.jpg?wid=1200&hei=630",
-     "price": "$31,500"
+     "price": "$31,500",
+     "image_fetch": "failed 2026-10-13: 403 Client Error: Forbidden for url: https://us.louisvuitton.com/images/is/image"
     },
     {
      "slide": 3,
@@ -4018,7 +4069,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "5bbfbe",
+     "img": "images/cut/047-5bbfbe.png"
     }
    ],
    "posted_at": null,
@@ -4084,7 +4137,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "daa649",
+     "img": "images/cut/048-daa649.png"
     }
    ],
    "posted_at": null,
@@ -4181,7 +4236,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "cb4d83",
+     "img": "images/cut/049-cb4d83.png"
     }
    ],
    "posted_at": null,
@@ -4316,7 +4373,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "76fb78",
+     "img": "images/cut/050-76fb78.png"
     }
    ],
    "posted_at": null,
@@ -4384,7 +4443,9 @@
      "product_url": "https://www.hublot.com/en/collection/big-bang/big-bang-gold-blue-diamonds-41mm",
      "note": "",
      "type": "watch",
-     "image_src": "https://cdn.watchbase.com/watch/lg/hublot/big-bang/341-px-7180-lr-1204-b7.jpg"
+     "image_src": "https://cdn.watchbase.com/watch/lg/hublot/big-bang/341-px-7180-lr-1204-b7.jpg",
+     "id": "b8c40e",
+     "img": "images/cut/051-b8c40e.png"
     },
     {
      "label": "Similar",
@@ -4397,7 +4458,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "56d910",
+     "img": "images/cut/051-56d910.png"
     }
    ],
    "posted_at": null,
@@ -4845,7 +4908,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "edbd99",
+     "img": "images/cut/057-edbd99.png"
     }
    ],
    "posted_at": null,
@@ -4989,7 +5054,9 @@
      "query": "",
      "product_url": "https://www.goat.com/apparel/rhude-hamptons-towel-track-jacket-navy-ps26ja021146025",
      "note": "",
-     "type": "clothing"
+     "type": "clothing",
+     "id": "c70725",
+     "img": "images/cut/059-c70725.png"
     },
     {
      "label": "Similar",
@@ -5002,7 +5069,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "564f4b",
+     "img": "images/cut/059-564f4b.png"
     }
    ],
    "posted_at": null,
@@ -5804,7 +5873,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "4c9682",
+     "img": "images/cut/070-4c9682.png"
     }
    ],
    "posted_at": null,
@@ -5986,7 +6057,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "7439a4",
+     "img": "images/cut/072-7439a4.png"
     },
     {
      "label": "Similar",
@@ -5999,7 +6072,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 3
+     "slide": 3,
+     "id": "d23370",
+     "img": "images/cut/072-d23370.png"
     },
     {
      "label": "Similar",
@@ -6012,7 +6087,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "50abb5",
+     "img": "images/cut/072-50abb5.png"
     }
    ],
    "posted_at": null,
@@ -6107,7 +6184,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "6f9767",
+     "img": "images/cut/073-6f9767.png"
     }
    ],
    "posted_at": null,
@@ -6185,7 +6264,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "e45832",
+     "img": "images/cut/074-e45832.png"
     },
     {
      "label": "Similar",
@@ -6198,7 +6279,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "20bd40",
+     "img": "images/cut/074-20bd40.png"
     }
    ],
    "posted_at": null,
@@ -6291,7 +6374,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 5
+     "slide": 5,
+     "id": "b377dc",
+     "img": "images/cut/075-b377dc.png"
     }
    ],
    "posted_at": null,
@@ -6385,7 +6470,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "96c2df",
+     "img": "images/cut/076-96c2df.png"
     }
    ],
    "posted_at": null,
@@ -6684,7 +6771,9 @@
      "note": "$1,010. Mr Porter carries Leonard acetate frames, but I could not confirm an orange-lens version is in stock.",
      "slide": 7,
      "product_url": "https://dandeutschopticaloutlook.com/products/jacques-marie-mage-leonard",
-     "price": "$960"
+     "price": "$960",
+     "id": "626658",
+     "img": "images/cut/079-626658.png"
     },
     {
      "label": "Similar",
