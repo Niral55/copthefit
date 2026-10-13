@@ -8701,9 +8701,10 @@
    "note": "INCOMPLETE DRAFT — added at Niral’s explicit request on October 13, 2026 despite the usual two-photo requirement. One verified unwatermarked full-length photo is available; a second suitable photo remains outstanding. The model and Rustic Brown finish are identified by GQ and Esquire. Amazon B007DIXXU6 showed new/used offers from $175.96; brand store lists $219.95. Recheck the selected size, seller and condition before a price-focused video. Video hook: Jacob Elordi’s boots look better when they look worn.",
    "find": "100",
    "updated": "2026-10-13T19:37:40.015Z",
-   "photo_src": "https://media.gq.com/photos/69f22b7b5ba286cd59b12d63/master/w_2560%2Cc_limit/BGUS_3552478_004.jpg",
-   "photo_src_page": "https://www.gq.com/story/jacob-elordi-blundstone-boots",
-   "photo_src_credit": "Backgrid via GQ"
+   "photo": {
+    "credit": "Backgrid via GQ",
+    "source_url": "https://www.gq.com/story/jacob-elordi-blundstone-boots"
+   }
   },
   {
    "status": "approved",
