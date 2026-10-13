@@ -8027,7 +8027,7 @@
      "retailer": "",
      "query": "",
      "image_src": "https://m.media-amazon.com/images/I/91ryksq5a6L._AC_SY300_SX300_QL70_ML2_.jpg",
-     "price": "From $63.94",
+     "price": "From$63.94",
      "note": "",
      "slide": 2,
      "id": "288656",
@@ -8064,7 +8064,7 @@
    },
    "score_note": "Exact affordable item available; recognizable actor or artist; editorial photos; evergreen story.",
    "note": "Video hook: What watch does Mark Wahlberg wear to a casino? A Timex. Amazon black/yellow variant B00093CZV0 has new offers from $63.94; price may vary by seller. Use the 100-lap T5E231, not the 30-lap model linked in some older roundups. Event date corroborated by People/AOL September 29 coverage; GQ article published October 2, 2026.",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8073,7 +8073,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "find": "094",
-   "photo_search": "2026-10-13"
+   "photo_search": "2026-10-13",
+   "photo_src": "https://media.revistagq.com/photos/6abe3e338ad08bf2f8756c91/master/w_1600%2Cc_limit/2297835869",
+   "photo_src_page": "https://www.revistagq.com/articulo/mark-wahlberg-timex-ironman-100-lap-reloj-deportivo-fotos-precio-comprar",
+   "photo_src_credit": "Louis Grasse/Getty Images via GQ España",
+   "updated": "2026-10-13T19:38:48.945Z"
   },
   {
    "celeb": "Adam Sandler",
