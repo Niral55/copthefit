@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Paly Wool Baseball P Hat Brown",
    "brand": "Paly",
-   "name": "",
+   "name": "Wool Baseball P Hat Brown",
    "image": "https://images.stockx.com/images/Paly-Wool-Baseball-P-Hat-Brown.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1774031689",
    "price": "784",
    "currency": "USD",
    "added": "2026-10-13T19:28:28.284Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "accessory"
   },
   {
    "id": "mv6bn1pew5uk",
