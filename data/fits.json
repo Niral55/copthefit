@@ -8477,6 +8477,158 @@
    "ig_permalink": null,
    "find": "099",
    "photo_search": "2026-10-13"
+  },
+  {
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-13",
+   "timing": "Evergreen",
+   "photo_search": "2026-10-13",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "celeb": "Jacob Elordi",
+   "title": "Jacob Elordi’s Blundstone boots",
+   "subtitle": "Shopping in Beverly Hills",
+   "context": "James Perse shopping, Beverly Hills",
+   "date": "Apr 17, 2026",
+   "category": "Fit",
+   "headline": "Jacob Elordi’s everyday boots are Blundstones",
+   "detail": "Elordi paired a bright blue sweatshirt and loose jeans with rustic brown Blundstone 585 boots while shopping in Beverly Hills. The Australian Chelsea boots make a practical anchor for the relaxed outfit.",
+   "tags": [
+    "blundstone",
+    "streetstyle"
+   ],
+   "sources": [
+    {
+     "label": "GQ — Jacob Elordi’s Blundstone boots",
+     "url": "https://www.gq.com/story/jacob-elordi-blundstone-boots"
+    },
+    {
+     "label": "Esquire — Elordi’s Blundstone 585 boots",
+     "url": "https://www.esquire.com/style/mens-fashion/a71163878/jacob-elordi-blundstone-boots-2026/"
+    }
+   ],
+   "items": [
+    {
+     "type": "shoes",
+     "retailer": "",
+     "query": "",
+     "slide": 2,
+     "label": "Exact",
+     "brand": "Blundstone",
+     "name": "585 Classic Chelsea Boots (Rustic Brown)",
+     "product_url": "https://www.amazon.com/dp/B007DIXXU6",
+     "image_src": "https://www.blundstone.com/cdn/shop/files/product-image_2026-08-18_585-USA_p_profile_1.jpg?v=1790053621",
+     "price": "From $175.96",
+     "note": "Price varies by size and seller."
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://media.gq.com/photos/69f22b7b5ba286cd59b12d63/master/w_2560%2Cc_limit/BGUS_3552478_004.jpg",
+     "page": "https://www.gq.com/story/jacob-elordi-blundstone-boots",
+     "credit": "Backgrid via GQ"
+    }
+   ],
+   "photo_source": "https://www.gq.com/story/jacob-elordi-blundstone-boots",
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://www.gq.com/story/jacob-elordi-blundstone-boots",
+     "by": "GQ / Backgrid",
+     "note": "Full-length photograph with both boots visible."
+    }
+   ],
+   "score": 67,
+   "score_parts": {
+    "shop": 30,
+    "star": 25,
+    "cover": 10,
+    "fresh": 2
+   },
+   "score_note": "Identified Blundstone 585 with Amazon offers; strong actor recognition; one usable photo; evergreen.",
+   "note": "INCOMPLETE DRAFT — added at Niral’s explicit request on October 13, 2026 despite the usual two-photo requirement. One verified unwatermarked full-length photo is available; a second suitable photo remains outstanding. The model and Rustic Brown finish are identified by GQ and Esquire. Amazon B007DIXXU6 showed new/used offers from $175.96; brand store lists $219.95. Recheck the selected size, seller and condition before a price-focused video. Video hook: Jacob Elordi’s boots look better when they look worn.",
+   "find": "100"
+  },
+  {
+   "status": "review",
+   "ig_queue": false,
+   "priority": 1,
+   "added": "2026-10-13",
+   "timing": "Evergreen",
+   "photo_search": "2026-10-13",
+   "posted_at": null,
+   "ig_media_id": null,
+   "ig_permalink": null,
+   "celeb": "Paul Mescal",
+   "title": "Paul Mescal’s corner-shop Stan Smiths",
+   "subtitle": "On a London corner-shop run",
+   "context": "London errands in a Ragyard track jacket and white GAA shorts",
+   "date": "May 2020",
+   "category": "Kicks",
+   "headline": "Paul Mescal made a corner-shop run a style moment",
+   "detail": "Mescal’s London errands outfit paired a reworked Ragyard track jacket and white Gaelic football shorts with worn adidas Stan Smith sneakers. A classic white-and-green Stan Smith is offered here as a similar option for the look.",
+   "tags": [
+    "stansmith",
+    "streetstyle"
+   ],
+   "sources": [
+    {
+     "label": "British GQ — Paul Mescal’s summer shorts outfit",
+     "url": "https://www.gq-magazine.co.uk/fashion/article/paul-mescal-shorts"
+    },
+    {
+     "label": "VICE — Paul Mescal’s London errands photograph",
+     "url": "https://www.vice.com/en/article/paul-mescal-shorts-gin-tin-summer-energy/"
+    },
+    {
+     "label": "Highsnobiety — Paul Mescal’s summer style",
+     "url": "https://www.highsnobiety.com/p/paul-mescal-summer-style/"
+    }
+   ],
+   "items": [
+    {
+     "type": "sneakers",
+     "retailer": "",
+     "query": "",
+     "slide": 2,
+     "label": "Similar",
+     "brand": "adidas",
+     "name": "Stan Smith White/Green OG (M20324)",
+     "product_url": "https://stockx.com/adidas-stan-smith-white-green-og",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/337/713/original/8880_01.jpg.jpeg?action=crop&width=750",
+     "price": "From $49",
+     "note": "White-and-green option for the look. Price varies by size; marketplace fee included in the displayed starting price."
+    }
+   ],
+   "photo_options": [
+    {
+     "image": "https://www.vice.com/wp-content/uploads/sites/2/2020/05/1590579491313-ClickNM_Paul_Mescal_3831321.jpeg",
+     "page": "https://www.vice.com/en/article/paul-mescal-shorts-gin-tin-summer-energy/",
+     "credit": "Click News and Media via VICE"
+    }
+   ],
+   "photo_source": "https://www.vice.com/en/article/paul-mescal-shorts-gin-tin-summer-energy/",
+   "photo_leads": [
+    {
+     "kind": "photo",
+     "url": "https://www.vice.com/en/article/paul-mescal-shorts-gin-tin-summer-energy/",
+     "by": "VICE / Click News and Media",
+     "note": "Full-length photograph showing the outfit and sneakers; use the clean first photograph."
+    }
+   ],
+   "score": 57,
+   "score_parts": {
+    "shop": 20,
+    "star": 25,
+    "cover": 10,
+    "fresh": 2
+   },
+   "score_note": "Affordable Stan Smith option; actor recognition; exact original colorway still unresolved; evergreen.",
+   "note": "INCOMPLETE DRAFT — added at Niral’s explicit request on October 13, 2026 despite the usual photo and exact-colorway requirements. GQ identifies the original sneakers as adidas Stan Smith, but the exact SKU/colorway is not confirmed. The buyable M20324 White/Green OG is intentionally labeled Similar, not Exact; do not claim it is the original colorway. StockX showed $42 lowest ask/$49 including marketplace fee; size 10 was $88/$95 including fee. One clean full-length VICE photograph is available; the other VICE image is an annotated copy of the same photo, so it was excluded. A second suitable photograph remains outstanding. Video hook: How did a trip for drinks and crisps become a fashion reference?",
+   "find": "101"
   }
  ]
 }
