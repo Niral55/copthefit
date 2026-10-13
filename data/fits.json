@@ -8153,10 +8153,11 @@
    "ig_permalink": null,
    "find": "095",
    "photo_search": "2026-10-13",
-   "photo_src": "https://media.gq.com.mx/photos/67c50f61d9b765a89005c70b/16:9/w_2560%2Cc_limit/oscar-2025-tenis-de-adam-sandler-under-armour-stephen-curry-11.jpg",
-   "photo_src_page": "https://www.gq.com.mx/articulo/oscar-2025-tenis-de-adam-sandler-under-armour-stephen-curry-11",
-   "photo_src_credit": "Getty Images via GQ México",
-   "updated": "2026-10-13T17:55:45.849Z"
+   "updated": "2026-10-13T17:55:45.849Z",
+   "photo": {
+    "credit": "Getty Images via GQ México",
+    "source_url": "https://www.gq.com.mx/articulo/oscar-2025-tenis-de-adam-sandler-under-armour-stephen-curry-11"
+   }
   },
   {
    "celeb": "Kendrick Lamar",
