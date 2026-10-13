@@ -1,20 +1,6 @@
 {
  "products": [
   {
-   "id": "mv6zmk8les4n",
-   "url": "https://www.amazon.com/dp/B0DSQ1DQZV",
-   "store": "amazon.com",
-   "title_raw": "GAP Men's Relaxed Fit Denim Jeans",
-   "brand": "GAP",
-   "name": "Men's Relaxed Fit Denim Jeans",
-   "image": "https://m.media-amazon.com/images/I/511arGlXLmL._AC_SL1400_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-13T18:01:38.805Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv6zkpy632u8",
    "url": "https://www.amazon.com/dp/B0007CKNT4",
    "store": "amazon.com",
