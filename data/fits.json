@@ -3627,7 +3627,7 @@
   },
   {
    "find": "046",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Colman Domingo",
@@ -3672,9 +3672,9 @@
      "label": "Similar",
      "brand": "",
      "name": "Seiko Speedtimer chronograph",
-     "retailer": "amazon",
-     "query": "Seiko Speedtimer chronograph",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/SEIKO-Prospex-Speedtimer-Solar-SSC933/dp/B0CM811Y2J/ref=sr_1_6?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.cZbTn1eadva79zkl19xngYm_l0ICZOrmkIEVFU4rK2YN9hLLzahosCizWcNXEIDMx6N_MD406ythpoYxydyfebWqnJSNlQCUVb4uh7A9pZApS7kIbn7YDbRAgsiZD6Nnyv018FH_y8LQo56pL3FSDlsAhtZmh8vecit_432geVoMqHT9fncMdA7HsvsYeqEG6VBcDfIyzQWzEWapP84xrr1fCUiRLmoc0QF734VrW7IldtTRzSBsO5aQfsbT6oMaEAltuGuEV6obUfQ9uJhhl5qLBjGkAVEDwTMAnZT8S2c.fv0Uk47wXPg6GfRiMUVdzDtMdH5a9umqS__qTt0nx6U&dib_tag=se&keywords=seiko+speedtimer+chronograph&plpRedirect=mhFallback&qid=1791860325&sr=8-6",
      "note": "",
      "type": "watch"
     }
@@ -3688,7 +3688,7 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-13T02:58:27.081Z",
+   "updated": "2026-10-13T03:10:50.299Z",
    "ig_queue": false,
    "video": "globeswatches",
    "title": "Colman Domingo's Speedmaster",
