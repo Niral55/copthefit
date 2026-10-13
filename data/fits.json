@@ -8436,7 +8436,7 @@
      "retailer": "",
      "query": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/116/680/923/original/1658844_01.jpg.jpeg?action=crop&width=750",
-     "price": "From $94",
+     "price": "From$94",
      "note": "Price varies by size; marketplace fee included in the displayed starting price.",
      "slide": 2,
      "id": "2c8843",
@@ -8483,7 +8483,10 @@
    "ig_permalink": null,
    "find": "098",
    "photo_search": "2026-10-13",
-   "updated": "2026-10-13T19:34:07.189Z"
+   "updated": "2026-10-13T19:39:26.891Z",
+   "photo_src": "https://www.justjared.com/wp-content/uploads/2026/07/bradley-cooper-workout-in-paris-02-428x642.jpg",
+   "photo_src_page": "https://www.justjared.com/2026/07/27/bradley-cooper-spotted-looking-so-fit-after-a-workout-in-paris/",
+   "photo_src_credit": "MEGA/GC Images via Just Jared"
   },
   {
    "celeb": "Nicolas Cage",
