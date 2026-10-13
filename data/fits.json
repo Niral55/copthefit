@@ -1123,7 +1123,9 @@
      "product_url": "https://www.amazon.com/dp/B00JMICFQS",
      "note": "",
      "type": "accessory",
-     "image_src": "https://m.media-amazon.com/images/I/61owjQSkL4L._AC_SL1000_.jpg"
+     "image_src": "https://m.media-amazon.com/images/I/61owjQSkL4L._AC_SL1000_.jpg",
+     "id": "9324f9",
+     "img": "images/cut/015-9324f9.png"
     },
     {
      "slide": 3,
@@ -1136,7 +1138,9 @@
      "note": "",
      "type": "clothing",
      "price": "$45",
-     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/373f2d919a9f4564be314a0fd5d98603_9366/Essentials_Single_Jersey_Tapered_Open_Hem_3-Stripes_Pants_Blue_GK8997_21_model.jpg"
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/373f2d919a9f4564be314a0fd5d98603_9366/Essentials_Single_Jersey_Tapered_Open_Hem_3-Stripes_Pants_Blue_GK8997_21_model.jpg",
+     "id": "d2c25f",
+     "img": "images/cut/015-d2c25f.png"
     },
     {
      "label": "Exact",
@@ -4290,7 +4294,9 @@
      "product_url": "https://www.amazon.com/dp/B0F2STZLD1",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/61pKJYyoFuL._AC_SL1500_.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "bc23a3",
+     "img": "images/cut/049-bc23a3.png"
     },
     {
      "label": "Similar",
@@ -4302,7 +4308,8 @@
      "note": "",
      "price": "$307.00",
      "image_src": "https://cdn-images.farfetch-contents.com/32/28/09/69/32280969_62286538_1000.jpg?ov=true",
-     "slide": 5
+     "slide": 5,
+     "image_fetch": "failed 2026-10-13: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     }
    ],
    "posted_at": null,
@@ -7442,7 +7449,9 @@
      "note": "",
      "type": "clothing",
      "price": "$150",
-     "image_src": "https://images.stockx.com/images/Jordan-Air-Flight-MVP-Jacket-Black.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1761329215"
+     "image_src": "https://images.stockx.com/images/Jordan-Air-Flight-MVP-Jacket-Black.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1761329215",
+     "id": "51072b",
+     "img": "images/cut/085-51072b.png"
     }
    ],
    "photo_options": [
