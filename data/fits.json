@@ -1189,7 +1189,7 @@
      "id": "d71959"
     },
     {
-     "label": "Similar",
+     "label": "Exact",
      "brand": "Gucci",
      "name": "Gucci x adidas Cotton Jersey T-Shirt",
      "retailer": "",
@@ -1198,8 +1198,8 @@
      "note": "",
      "price": "$587",
      "slide": 3,
-     "id": "2ae034",
-     "img": "images/cut/016-2ae034.png"
+     "img": "images/cut/016-2ae034.png",
+     "id": "2ae034"
     },
     {
      "label": "Exact",
@@ -1267,7 +1267,7 @@
     "credit": "GQ via Style Girlfriend",
     "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
    },
-   "updated": "2026-10-13T04:27:36.880Z",
+   "updated": "2026-10-13T05:16:58.488Z",
    "title": "Paul Mescal's white Sambas",
    "subtitle": "At a fashion show"
   },
