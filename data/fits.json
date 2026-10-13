@@ -8514,7 +8514,7 @@
      "retailer": "",
      "query": "",
      "image_src": "https://www.watch-id.com/sites/default/files/upload/sighting/armitron-alarm-chronograph-sports-watch.jpg",
-     "price": "From $18.48",
+     "price": "From$18.48",
      "note": "",
      "slide": 2,
      "id": "622b87",
@@ -8560,7 +8560,11 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "find": "099",
-   "photo_search": "2026-10-13"
+   "photo_search": "2026-10-13",
+   "photo_src": "https://www.watch-id.com/sites/default/files/upload/sighting/armitron-alarm-chronograph-sports-watch-nicholas-cage-willys-wonderland-2.jpg",
+   "photo_src_page": "https://www.watch-id.com/sightings/armitron-pro-49-black-nicolas-cage-willys-wonderland",
+   "photo_src_credit": "Screen Media Films via Watch ID",
+   "updated": "2026-10-13T19:34:30.599Z"
   },
   {
    "status": "review",
