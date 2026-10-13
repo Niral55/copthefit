@@ -1,0 +1,45 @@
+name: Fetch video assets
+
+# Downloads the images listed in reels/<video>/sources.json ({"name": "https://…"}) into reels/<video>/assets/<name>.jpg
+# so they can be checked and used by make_video.py. reels/** doesn't trigger a site build.
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Folder under reels/ (e.g. mamdani)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q requests pillow
+      - name: Download
+        run: |
+          python3 - "${{ inputs.video }}" <<'PY'
+          import json, sys, io, pathlib, requests
+          from PIL import Image
+          d = pathlib.Path("reels") / sys.argv[1]
+          out = d / "assets"; out.mkdir(parents=True, exist_ok=True)
+          UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
+          log = {}
+          for name, url in json.loads((d / "sources.json").read_text()).items():
+              try:
+                  r = requests.get(url, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/*,*/*"}, timeout=60)
+                  r.raise_for_status()
+                  Image.open(io.BytesIO(r.content)).convert("RGB").save(out / f"{name}.jpg", quality=92)
+                  log[name] = "ok"
+              except Exception as e:
+                  log[name] = f"failed: {str(e)[:120]}"
+          (d / "assets.log.json").write_text(json.dumps(log, indent=1) + "\n")
+          print(json.dumps(log, indent=1))
+          PY
+      - name: Save
+        run: |
+          git config user.name "copthefit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reels && git commit -qm "Video assets: ${{ inputs.video }} [skip ci]" && git pull -q --rebase && git push -q || true
