@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv72rjc7od6x",
+   "url": "https://www.nordstrom.com/s/frame-relaxed-fit-jeans-momentum/8444826",
+   "store": "nordstrom.com",
+   "title_raw": "Relaxed Fit Jeans",
+   "brand": "FRAME",
+   "name": "",
+   "image": "https://n.nordstrommedia.com/it/23db40fe-1d59-4ae0-b7a4-7d64ac1e0984.jpeg",
+   "price": "278.00",
+   "currency": "USD",
+   "added": "2026-10-13T19:29:29.767Z",
+   "enriched": null
+  },
+  {
    "id": "mv72r4b7nqlr",
    "url": "https://www.goat.com/apparel/ader-error-langle-sweatshirt-blue-bn01sssw0102bl",
    "store": "goat.com",
