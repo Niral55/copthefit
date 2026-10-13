@@ -2735,10 +2735,11 @@
      "name": "Seiko Speedtimer SSC813 (panda dial)",
      "retailer": "",
      "query": "",
-     "product_url": "https://www.amazon.com/Prospex-Speedtimer-Chronograph-Sports-SSC813P1/dp/B09QPK4MPV",
+     "product_url": "https://www.amazon.com/SEIKO-SBDL085-PROSPEX-SPEEDTIMER-Chronograph/dp/B09CPX644Y/ref=sr_1_6?crid=2NKF4YNWBFVT9&dib=eyJ2IjoiMSJ9.3H4iO3JMeLMRBTA9Er7vy_MmQlD254w_c6xpRGfMTWCpYtjfVsM2UC9QayYRmaUqExNhYVVDvrDjJVKWzVQ5_piptqeT3CLL8WvQ1tJY66i1XjbRamwETcUOhrjy418hKkONBf-0ruoycHPOFMLNp4yTNS_pePegCMAjcMZBjhv90iXG-GKch5wn9ha1-AU4SKpiDUyKfPEBPqsOcZJYv70qMFjBPhyTFKMgcNEPQTi0oBbQzrqTPXb8eRSt6Vwj-6mxjEqCqNhCXwd2rwyY9W4phgf8HcUjfox_ARQLfgA.cNbQ1Kar72s70rfPbHG7NJzinXl4LvJeX37_wYwwGgA&dib_tag=se&keywords=Seiko+Men%27s+SSC813+Prospex+Solar+Chronograph+Watch&qid=1791870659&sprefix=seiko+men%27s+ssc813+prospex+solar+chronograph+watch%2Caps%2C119&sr=8-6",
      "note": "",
      "type": "watch",
-     "image_fetch": "failed 2026-10-13: no product image on page"
+     "image_fetch": "failed 2026-10-13: no product image on page",
+     "price": "$1000"
     },
     {
      "label": "Similar",
@@ -2762,7 +2763,7 @@
    "photo_source": "https://chrono1010.com/en/blog/3662",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-13T05:51:24.927Z",
    "photo_options": [
     {
      "image": "https://ucarecdn.com/50fd88ed-0dd7-419b-9803-29a1af6fa9d7/file.jpeg",
