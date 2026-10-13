@@ -567,6 +567,18 @@
    ],
    "items": [
     {
+     "slide": 2,
+     "label": "Exact",
+     "brand": "GOLF WANG",
+     "name": "GOLF WANG Chenille G Logo Hat 'Dark Brown'",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.goat.com/apparel/golf-wang-chenille-g-logo-hat-dark-brown-fw24h1025brow",
+     "note": "",
+     "type": "accessory",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/105/621/114/original/1518774_01.jpg.jpeg?width=750"
+    },
+    {
      "label": "Exact",
      "type": "watch",
      "brand": "Casio",
@@ -577,21 +589,9 @@
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/M/MQ/MQ2/MQ-24-9BLL/us-assets/MQ-24-9BLL_1.jpg",
      "price": "$37",
      "note": "",
-     "slide": 2,
+     "slide": 3,
      "id": "75b4d4",
      "img": "images/cut/008-75b4d4.png"
-    },
-    {
-     "slide": 3,
-     "label": "Exact",
-     "brand": "",
-     "name": "Buy GOLF WANG Chenille G Logo Hat 'Dark Brown'",
-     "retailer": "",
-     "query": "",
-     "product_url": "https://www.goat.com/apparel/golf-wang-chenille-g-logo-hat-dark-brown-fw24h1025brow",
-     "note": "",
-     "type": "accessory",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/105/621/114/original/1518774_01.jpg.jpeg?width=750"
     }
    ],
    "photo_options": [
@@ -626,7 +626,7 @@
     "source_url": "https://highsnobiety.com/p/the-pope-tyler-the-creator-watch"
    },
    "video": "casio",
-   "updated": "2026-10-13T19:45:46.889Z",
+   "updated": "2026-10-13T19:47:12.316Z",
    "title": "Tyler's everyday Casio",
    "subtitle": "His everyday watch"
   },
