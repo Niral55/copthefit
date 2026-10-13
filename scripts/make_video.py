@@ -93,6 +93,7 @@ def build_script(v, fits):
 
 _PIPE = None
 USED = set()  # which voice engine actually spoke (recorded next to the video)
+EDGE_ERR = []  # why the neural voice failed, if it did
 
 
 def tts(text):
@@ -101,6 +102,7 @@ def tts(text):
         return tts_edge(text)
     except Exception as e:  # noqa: BLE001 (no network / package missing → fall back)
         print("edge voice unavailable:", str(e)[:120], file=sys.stderr)
+        EDGE_ERR.append(f"{type(e).__name__}: {str(e)[:100]}")
     return tts_kokoro(text)
 
 
@@ -470,7 +472,7 @@ def make_story(v, fits, out_dir):
     wav.unlink()
     caption = sc.get("caption") or v["title"]
     (out_dir / f"{vid}.txt").write_text(caption)
-    (out_dir / f"{vid}.voice").write_text(", ".join(sorted(USED)) + (" + music" if sc.get("music", True) else ""))
+    (out_dir / f"{vid}.voice").write_text(", ".join(sorted(USED)) + (" + music" if sc.get("music", True) else "") + (f" (neural failed: {EDGE_ERR[0]})" if EDGE_ERR and not any(u.startswith("neural") for u in USED) else ""))
     print(f"wrote {mp4} ({t0:.1f}s)")
     return mp4, caption, round(t0, 1)
 
