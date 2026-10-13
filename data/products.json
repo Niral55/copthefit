@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv694xvwaz7q",
+   "url": "https://restockar.com/products/boredom-kills-cotton-summer-set-top",
+   "store": "restockar.com",
+   "title_raw": "Boredom Kills Cotton Summer Set Top",
+   "brand": "Boredom Kills",
+   "name": "",
+   "image": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Top-front.jpg?v=1755134174&width=1920",
+   "price": "120",
+   "currency": "USD",
+   "added": "2026-10-13T05:40:06.668Z",
+   "enriched": null
+  },
+  {
    "id": "mv68z6ocp2tw",
    "url": "https://stockx.com/jordan-air-flight-mvp-jacket-black",
    "store": "stockx.com",
