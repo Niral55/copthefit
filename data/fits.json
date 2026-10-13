@@ -7380,6 +7380,19 @@
      "slide": 2,
      "id": "7816ff",
      "img": "images/cut/085-7816ff.png"
+    },
+    {
+     "slide": 3,
+     "label": "Exact",
+     "brand": "Jordan",
+     "name": "Air Flight MVP Jacket Black",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/jordan-air-flight-mvp-jacket-black",
+     "note": "",
+     "type": "clothing",
+     "price": "$150",
+     "image_src": "https://images.stockx.com/images/Jordan-Air-Flight-MVP-Jacket-Black.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1761329215"
     }
    ],
    "photo_options": [
@@ -7423,7 +7436,7 @@
     "credit": "Devlynn Bunning / Philadelphia Eagles",
     "source_url": "https://static.clubs.nfl.com/image/upload/t_new_photo_album/f_auto/eagles/vhqqdazc1oo2kygtveep.jpg"
    },
-   "updated": "2026-10-13T02:21:17.947Z"
+   "updated": "2026-10-13T19:47:47.853Z"
   },
   {
    "celeb": "Travis Hunter",
