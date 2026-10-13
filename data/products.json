@@ -6,12 +6,13 @@
    "store": "farfetch.com",
    "title_raw": "John braided suede belt",
    "brand": "MANCINI 1979",
-   "name": "",
+   "name": "John braided suede belt",
    "image": "https://cdn-images.farfetch-contents.com/36/25/27/02/36252702_72707196_1000.jpg?ov=true",
    "price": "485.00",
    "currency": "PLN",
    "added": "2026-10-13T19:30:32.552Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "accessory"
   },
   {
    "id": "mv72rjc7od6x",
