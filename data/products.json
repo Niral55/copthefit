@@ -6,12 +6,13 @@
    "store": "adidas.com",
    "title_raw": "Essentials Single Jersey Tapered Open Hem 3-Stripes Pants",
    "brand": "adidas",
-   "name": "",
+   "name": "Essentials Single Jersey Tapered Open Hem 3-Stripes Pants",
    "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/373f2d919a9f4564be314a0fd5d98603_9366/Essentials_Single_Jersey_Tapered_Open_Hem_3-Stripes_Pants_Blue_GK8997_21_model.jpg",
    "price": "45",
    "currency": "USD",
    "added": "2026-10-13T05:23:04.130Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv5y82kl1hqz",
