@@ -725,7 +725,7 @@
      "retailer": "",
      "query": "",
      "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A1/A10/a1000ma-7/assets/A1000MA-7_front.jpg.transform/main-visual-pc/image.jpg",
-     "price": "",
+     "price": "$160",
      "note": "",
      "slide": 2,
      "id": "5045bf",
@@ -758,7 +758,7 @@
     "fresh": 2
    },
    "score_note": "A1000MA-7 on casio.com/us; NYC mayor, huge 2025 name; editorial wrist shots",
-   "note": "Video: Celebs who wear a $25 Casio. Model confirmed by Gear Patrol, WatchPro, Bloomberg Línea, Boing Boing. Politician rather than athlete/musician/actor (he did release rap music as Mr. Cardamom). Price is above the ~$75 target: Bloomberg Línea says ~US$115, Gear Patrol/US list ~$100; casio.com/us price loads by JS and wasn't visible, so price left blank. Bloomberg photo is a speaking shot; confirm the watch is visible. Gear Patrol image name says on-wrist; view all before use. No direct network for curl here, so images were not downloaded/viewed by me.",
+   "note": "Video: Celebs who wear a $25 Casio. Model confirmed by Gear Patrol, WatchPro, Bloomberg Línea, Boing Boing. Politician rather than athlete/musician/actor (he did release rap music as Mr. Cardamom). Price is above the ~$75 target: Bloomberg Línea says ~US$115, Gear Patrol/US list ~$100; casio.com/us price loads by JS and wasn't visible, so price left blank. Bloomberg photo is a speaking shot; confirm the watch is visible. Gear Patrol image name says on-wrist; view all before use. No direct network for curl here, so images were not downloaded/viewed by me.\nFill Oct 13: $160 is the Gear Patrol figure (via Boing Boing); casio.com doesn't show the price in page HTML.",
    "find": "010",
    "status": "approved",
    "ig_queue": false,
@@ -1228,6 +1228,19 @@
      "slide": 5,
      "id": "55698a",
      "img": "images/cut/016-55698a.png"
+    },
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "adidas",
+     "name": "Adicolor Classics Beckenbauer Track Jacket (Green)",
+     "product_url": "https://www.adidas.com/us/adicolor-classics-beckenbauer-track-jacket/IA4777.html",
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d2457f5c6bb4425e88e9af0e008e046d_9366/Adicolor_Classics_Beckenbauer_Track_Jacket_Green_IA4777_01_laydown.jpg",
+     "price": "$80",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 6
     }
    ],
    "photo_options": [
@@ -1251,7 +1264,7 @@
     "fresh": 2
    },
    "score_note": "Samba OG ~$71; Paul Mescal; editorial photo in a Samba-styling article",
-   "note": "Video: Every celeb owns these sneakers: adidas Samba. WEAK SOURCE: Style Girlfriend's alt text only says 'Adidas sneakers'; 'white adidas Samba' comes from the image filename, inside an article about Samba outfits. Event and date are not named (uploaded Mar 2023, credit GQ). The second photo (Esquire, jeans + workwear jacket) is a different occasion and its shoe model is unconfirmed. Drop if the photo doesn't clearly show Sambas, or if you can't find a stronger source.",
+   "note": "Video: Every celeb owns these sneakers: adidas Samba. WEAK SOURCE: Style Girlfriend's alt text only says 'Adidas sneakers'; 'white adidas Samba' comes from the image filename, inside an article about Samba outfits. Event and date are not named (uploaded Mar 2023, credit GQ). The second photo (Esquire, jeans + workwear jacket) is a different occasion and its shoe model is unconfirmed. Drop if the photo doesn't clearly show Sambas, or if you can't find a stronger source.\nFill Oct 13: Added an affordable adidas green track jacket (laydown image) for the $580 Gucci x adidas piece. The existing 'Similar' Gucci x adidas tee ($587) isn't affordable; consider dropping it.",
    "find": "016",
    "status": "approved",
    "ig_queue": false,
@@ -1366,7 +1379,7 @@
      "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: 9060 Earth Shadow: StockX retail $150, last sale $141 (a size-specific Buy Now showed $60). GAP Amazon items left as-is: Amazon pages can't be fetched from here, so I couldn't add images or check prices.",
    "items": [
     {
      "slide": 2,
@@ -1380,7 +1393,8 @@
      "image_src": "https://images.stockx.com/images/New-Balance-9060-Earth-Shadow-Flat-Taupe.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1754423578",
      "id": "644b5b",
      "img": "images/cut/018-644b5b-v1791737783.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "price": "$141"
     },
     {
      "slide": 3,
@@ -1467,7 +1481,8 @@
      "slide": 2,
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/4a34f042d51941d393ae83faf5104043_9366/Anthony_Edwards_3_Shoes_Blue_KH8537_01_00_standard.jpg",
      "id": "045e20",
-     "img": "images/cut/019-045e20.png"
+     "img": "images/cut/019-045e20.png",
+     "price": "$130"
     }
    ],
    "photo_leads": [
@@ -1488,7 +1503,7 @@
     "fresh": 2
    },
    "score_note": "$130 adidas general release in stock; Ant Edwards; NBA league post; 11 days old",
-   "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.",
+   "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.\nFill Oct 13: Retail $130 (Just Fresh Kicks).",
    "find": "019",
    "status": "approved",
    "ig_queue": false,
@@ -1554,7 +1569,8 @@
      "note": "Kicks On SI names the 'First Game' colorway; HNHH describes it as white with red/crimson accents. 2023 retro (White/Midnight Navy-Varsity Crimson), $180 retail; StockX Buy Now $140 on Oct 9 (last sale $133). Image is GOAT's product shot of the same SKU (DM7535-101).",
      "slide": 2,
      "id": "6daf13",
-     "img": "images/cut/020-6daf13.png"
+     "img": "images/cut/020-6daf13.png",
+     "price": "$154"
     }
    ],
    "photo_options": [
@@ -1587,7 +1603,7 @@
     "fresh": 2
    },
    "score_note": "LeBron in a $140 StockX retro (below $180 retail); AP and Inquirer media-day photos; 11 days old",
-   "note": "This lead is media day (Sept 28). It is a different event from the rejected Oct 3 scrimmage LeBron 24 'Greater China' lead, and this shoe is cheap and easy to buy. The sources don't give a style code: the 2023 'First Game' retro (DM7535-101) is the one in stock, so it may not be the exact pair he wore. Photo captions confirm LeBron at Sixers media day, but none confirms the shoes are in frame. The Inquirer shot is a posed portrait and the NBA.com lead image has no caption, so check both before using them as the cover. Not added as a second lead: Ja Morant (Ja 4 'Triple White'), Haliburton (Hali 2), DeRozan (Kobe 10 Protro), SGA (V.A.A. AF1) and Booker (Futura Book 2) were all unreleased or PE at media day. Haaland's Phantom 6 'Baltic Blue' ($270) shows 'Coming Soon' on Nike and is $426 on StockX. Lamar Jackson's Sept 20 Converse SHAI 001 Lux 'Truffle' had no usable tunnel photo URL (Ravens arrivals gallery images are lazy-loaded). Future's Mowalola AJ14 Mule had no photo outside Instagram.",
+   "note": "This lead is media day (Sept 28). It is a different event from the rejected Oct 3 scrimmage LeBron 24 'Greater China' lead, and this shoe is cheap and easy to buy. The sources don't give a style code: the 2023 'First Game' retro (DM7535-101) is the one in stock, so it may not be the exact pair he wore. Photo captions confirm LeBron at Sixers media day, but none confirms the shoes are in frame. The Inquirer shot is a posed portrait and the NBA.com lead image has no caption, so check both before using them as the cover. Not added as a second lead: Ja Morant (Ja 4 'Triple White'), Haliburton (Hali 2), DeRozan (Kobe 10 Protro), SGA (V.A.A. AF1) and Booker (Futura Book 2) were all unreleased or PE at media day. Haaland's Phantom 6 'Baltic Blue' ($270) shows 'Coming Soon' on Nike and is $426 on StockX. Lamar Jackson's Sept 20 Converse SHAI 001 Lux 'Truffle' had no usable tunnel photo URL (Ravens arrivals gallery images are lazy-loaded). Future's Mowalola AJ14 Mule had no photo outside Instagram.\nFill Oct 13: StockX Buy Now $154 (retail $180, last sale $150).",
    "find": "020",
    "status": "approved",
    "ig_queue": false,
@@ -1629,21 +1645,22 @@
      "url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: SHAI 001 Premium Slither A24274C: StockX retail $150, last sale $125, Buy Now $106. Renamed only to add the style code; revert if you want the original name. Chanel mini bag: sources only say 'white Chanel mini bag' with no model, so left unchanged. 'All-white matching set' also left as-is, because the outfit isn't described beyond 'monochromatic all-white'.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Converse",
-     "name": "SHAI 001 'Slither'",
-     "retailer": "converse",
-     "query": "SHAI 001",
-     "product_url": "",
+     "name": "SHAI 001 Premium 'Slither' (A24274C)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/converse-shai-001-premium-slither",
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/117/897/064/original/1772772_01.jpg.jpeg?action=crop&width=750",
      "id": "0673d7",
      "img": "images/cut/021-0673d7-v1791557420.png",
-     "type": "sneakers"
+     "type": "sneakers",
+     "price": "$125"
     },
     {
      "slide": 3,
@@ -2175,7 +2192,7 @@
      "url": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: The Odyssey Moon Shoe was gifted only to the cast and crew (Highsnobiety). It has aged black leather and a burgundy fuzzy Swoosh. The added Similar is the general-release Moon Shoe OG IX3952-002 (Anthracite/Safety Orange/Black), $105 on Nike.com.",
    "items": [
     {
      "slide": 2,
@@ -2191,6 +2208,19 @@
      "img": "images/cut/028-88b910.png",
      "type": "sneakers",
      "price": "$1500"
+    },
+    {
+     "label": "Similar",
+     "type": "sneakers",
+     "brand": "Nike",
+     "name": "Moon Shoe OG (Anthracite/Black)",
+     "product_url": "https://www.nike.com/t/moon-shoe-og-mens-shoes-QjBip6mn",
+     "image_src": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8580b98f-f56e-470a-b8ad-0782845ab644/NIKE+MOON+SHOE+OG.png",
+     "price": "$105",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -2258,7 +2288,7 @@
      "url": "https://chrono1010.com/en/blog/3662"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Vapor 12 Travis JJ2180-100: StockX Buy Now $555 (retail $170, last sale $611). 126528LN: Chrono24 listings run about $205k to $270k (cheapest seen: unworn 2026 at $204,995); retail is $39,350. It has a yellow gold Oyster bracelet, a black dial with white subdials and a black Cerachrom bezel with a red '100'. The Invicta has a gold-tone case and bracelet with a charcoal dial ($25.99 sale, was $299). I couldn't view the image, so check it matches. The ombré vest and shorts have no product page and are left unchanged.",
    "items": [
     {
      "slide": 2,
@@ -2272,21 +2302,23 @@
      "id": "a9a02f",
      "type": "sneakers",
      "image_src": "https://images.stockx.com/images/Nike-Court-Air-Zoom-Vapor-12-HC-Travis-Scott-Pale-Ivory.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1791213970",
-     "img": "images/cut/029-a9a02f.png"
+     "img": "images/cut/029-a9a02f.png",
+     "price": "$555"
     },
     {
      "slide": 3,
      "label": "Exact",
      "brand": "Rolex",
      "name": "Cosmograph Daytona 126528LN 'Le Mans'",
-     "retailer": "chrono24",
-     "query": "Rolex 126528LN",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.chrono24.com/rolex/ref-126528ln.htm",
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/daytona/126528ln-0001-55.jpg",
      "id": "637a65",
      "img": "images/cut/029-637a65-v1791557355.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$205,000"
     },
     {
      "slide": 4,
@@ -2300,15 +2332,30 @@
      "type": "clothing"
     },
     {
-     "slide": 5,
      "label": "Similar",
-     "brand": "",
-     "name": "Nike tennis shorts",
-     "retailer": "nike",
-     "query": "nikecourt tennis shorts",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Invicta",
+     "name": "Speedway Vertexia 44mm Gold-Tone Chronograph (69471)",
+     "product_url": "https://invictastores.com/products/invicta-speedway-mens-watch-44mm-gold-69471",
+     "image_src": "https://invictastores.com/cdn/shop/files/69471_catalogshot.jpg?v=1776729588",
+     "price": "$25.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 5
+    },
+    {
+     "label": "Similar",
+     "type": "clothing",
+     "brand": "Nike",
+     "name": "NikeCourt Advantage Dri-FIT 8\" Tennis Shorts (White)",
+     "product_url": "https://www.nike.com/t/nikecourt-advantage-mens-dri-fit-8-tennis-shorts-cCYH6Bt5/FZ9322-100",
+     "image_src": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ed75a93a-457b-4075-9c7c-f3224ca76da8/M+NKCT+DF+ADVTG+8IN+SHORT.png",
+     "price": "$75",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 6
     }
    ],
    "posted_at": null,
@@ -2473,29 +2520,33 @@
      "url": "https://www.esquireindia.co.in/style/watches-and-jewellery/best-watches-spotted-at-us-open-2026-so-far-roger-federers-hyped-up-rolex-to-kaia-gerbers-cartier"
     }
    ],
-   "note": "Reports differ on the exact reference (RM 56-01 vs RM 75-01).",
+   "note": "Reports differ on the exact reference (RM 56-01 vs RM 75-01).\nFill Oct 13: RM 56-01 is a 5-piece limited edition with no public price (RM historical-models page; Chrono24 listing id28605789 is 'price on request' and wouldn't load). Invicta S1 Rally is a black skeleton tonneau on rubber, rose-gold case tone; $119.99 is a sale price (list $579). Images not visually checked (downloads blocked here).",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Richard Mille",
      "name": "RM 56-01 (reported)",
-     "retailer": "chrono24",
-     "query": "Richard Mille RM 56-01",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.richardmille.com/historical-models/rm-56-01-tourbillon-sapphire",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://media.richardmille.com/wp-content/uploads/2020/02/15140945/richard-mille-rm-56-01-tourbillon-sapphire-96416.jpg?dpr=1&width=2000",
+     "price": "Price on request"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Skeleton tonneau watch",
-     "retailer": "amazon",
-     "query": "skeleton tonneau watch men",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Invicta",
+     "name": "S1 Rally Endocore Automatic Skeleton 43mm (69002)",
+     "product_url": "https://invictastores.com/products/invicta-s1-rally-automatic-mens-watch-w-skeleton-dial-43mm-black-69002",
+     "image_src": "https://invictastores.com/cdn/shop/files/69002_catalogshot.jpg?v=1776729657",
+     "price": "$119.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -2550,32 +2601,35 @@
      "url": "https://www.euronews.com/2026/09/17/watch-this-the-winning-timepieces-you-couldnt-miss-at-this-years-us-open"
     }
    ],
-   "note": "Case size reported differently (36 vs 41mm).",
+   "note": "Case size reported differently (36 vs 41mm).\nFill Oct 13: Rolex US lists OP 36 m126000-0016 'Multicoloured, Jubilee motif' at $6,750; existing watchbase image is ref 126000-0009, so check it matches. Timex is a steel 36mm with a smooth bezel and light-blue dial, so it matches the OP shape but not the multicolour pattern. I couldn't find an affordable multicolour-dial OP lookalike I could verify.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Rolex",
      "name": "Oyster Perpetual (multicolor Jubilee dial)",
-     "retailer": "chrono24",
-     "query": "Rolex Oyster Perpetual Jubilee dial",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.rolex.com/en-us/watches/oyster-perpetual/m126000-0016",
      "note": "Galerie reports the 36mm; others say 41mm",
      "image_src": "https://cdn.watchbase.com/watch/lg/rolex/oyster-perpetual/126000-0009-93.jpg",
      "id": "8ec783",
      "img": "images/cut/032-8ec783-v1791557403.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$6,750"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Colorful dial watch",
-     "retailer": "amazon",
-     "query": "men's colorful dial watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Legacy Day and Date 36mm Stainless Steel Bracelet (TW2V68400)",
+     "product_url": "https://timex.com/products/timex-legacy-day-and-date-36mm-stainless-steel-bracelet-watch-tw2v68400",
+     "image_src": "https://timex.com/cdn/shop/files/TW2V68400.png?v=1785852669",
+     "price": "$179",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -2644,32 +2698,46 @@
      "url": "https://www.esquireindia.co.in/style/watches-and-jewellery/best-watches-spotted-at-us-open-2026-so-far-roger-federers-hyped-up-rolex-to-kaia-gerbers-cartier"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: 6239 price is Grays Antiques' asking price of GBP 73,500 (about $98k), and the page doesn't say whether it's sold. The SSC813 has been dropped from Seiko US (its page 404s). I took the Amazon URL from search results, but Amazon blocks fetching, so it has no price or image and runs around $500 anyway. The Timex Marlin has a silver dial with black subdials (panda) on a steel bracelet, $249.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Rolex",
      "name": "Cosmograph Daytona 6239 (vintage)",
-     "retailer": "chrono24",
-     "query": "Rolex 6239",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://graysantiques.com/product/rolex-vintage-daytona-hand-winding-ref-6239-full-set-box-and-papers-1968",
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/zIQAAOSwsbdk4P2w/s-l1600.webp",
      "id": "add6cb",
      "img": "images/cut/033-add6cb.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "~$98,000"
     },
     {
      "slide": 3,
      "label": "Similar",
-     "brand": "",
+     "brand": "Seiko",
      "name": "Seiko Speedtimer SSC813 (panda dial)",
-     "retailer": "amazon",
-     "query": "Seiko Speedtimer SSC813",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/Prospex-Speedtimer-Chronograph-Sports-SSC813P1/dp/B09QPK4MPV",
      "note": "",
      "type": "watch"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Marlin Chronograph Tachymeter 40mm Bracelet (TW2W10400)",
+     "product_url": "https://timex.com/products/marlin-chronograph-tachymeter-40mm-stainless-steel-bracelet-watch-tw2w10400",
+     "image_src": "https://timex.com/cdn/shop/files/TW2W10400_dd5a6297-7759-46c7-b5c2-c167770b197b.png?v=1785863167",
+     "price": "$249",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -2720,35 +2788,25 @@
      "url": "https://chrono1010.com/en/blog/3662"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Rolex m228238-0005 has a champagne dial with diamond baguette markers, $55,150. The Timex has a gold-tone/two-tone fluted bezel and a black sunray dial; $127.50 is a sale price (reg $150, low stock). I left the Peugeot (Amazon B00BIQRSLY) unchanged because Amazon can't be fetched here, so its price is unverified.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Rolex",
      "name": "Day-Date 40 228238",
-     "retailer": "chrono24",
-     "query": "Rolex 228238",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.rolex.com/en-us/watches/day-date/m228238-0005",
      "note": "",
      "image_src": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-majesty/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228238-0005",
      "id": "5755f4",
      "img": "images/cut/034-5755f4-v1791557409.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$55,150"
     },
     {
      "slide": 3,
-     "label": "Similar",
-     "brand": "",
-     "name": "Gold fluted-bezel watch",
-     "retailer": "amazon",
-     "query": "men's gold fluted bezel watch",
-     "product_url": "",
-     "note": "",
-     "type": "watch"
-    },
-    {
-     "slide": 4,
      "label": "Similar",
      "brand": "Peugeot",
      "name": "Men's Big Face Day Date Roman Numeral Fluted Bezel Steel",
@@ -2760,6 +2818,19 @@
      "id": "40fb4b",
      "img": "images/cut/034-40fb4b.png",
      "type": "watch"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Legacy 36mm Fluted Bezel Two-Tone Bracelet (TW2Y27900)",
+     "product_url": "https://timex.com/products/timex-legacy-36mm-stainless-steel-bracelet-watch-tw2y27900",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y27900_52d4736e-55e6-4643-bc28-1b0eb13d1731.png?v=1785857382",
+     "price": "$127.50",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -2805,43 +2876,48 @@
      "url": "https://precisionwatches.com/journal/wimbledon-2026-watches/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Kamasu is $375 at Orient USA (sale; reg $580), which is over budget, so I added the Invicta 8926OB (black dial, steel bracelet, $179.99 sale). I swapped the vague 'Seiko 5 Sports diver' for it because the Seiko 5 SRPD55 is $350 at Seiko US.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Tudor",
      "name": "Black Bay 58 (five-link)",
-     "retailer": "chrono24",
-     "query": "Tudor Black Bay 58",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.tudorwatch.com/en/watches/black-bay-58/m7939a1a0nu-0001",
      "note": "",
      "id": "42e7c6",
      "image_src": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m7939a1a0nu-0001",
      "img": "images/cut/035-42e7c6-v1791557424.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$5,350"
     },
     {
      "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Orient Kamasu diver",
-     "retailer": "amazon",
-     "query": "Orient Kamasu",
-     "product_url": "",
+     "brand": "Orient",
+     "name": "Kamasu Diver Black (RA-AA0001B39B)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.orientwatchusa.com/products/ra-aa0001b39b",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.orientwatchusa.com/cdn/shop/files/kamasu-4336362.png?v=1787002521&width=1200",
+     "price": "$375"
     },
     {
-     "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "Seiko 5 Sports diver",
-     "retailer": "amazon",
-     "query": "Seiko 5 Sports",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Invicta",
+     "name": "Pro Diver Automatic 40mm Steel (8926OB)",
+     "product_url": "https://invictastores.com/products/invicta-pro-diver-automatic-men-s-watch-40mm-steel-8926ob",
+     "image_src": "https://invictastores.com/cdn/shop/files/8926ob_catalogshot_455173_okaylpxzowrhwv4t.jpg?v=1778892217",
+     "price": "$179.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -2906,46 +2982,63 @@
      "url": "https://precisionwatches.com/journal/wimbledon-2026-watches/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Santos W2SA0033 is 27mm two-tone, $11,500 at Watches of Switzerland. Navitimer AB0138211B1A1 is the black-dial version (matches the existing image), $10,700. Navihawk CB5840-59E is $695 and shows sold out at Citizen US, and its image is webp. The affordable pick is the Timex Addison for the Santos: square two-tone case, white Roman dial. I didn't find a verified Navitimer lookalike under $250.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Cartier",
      "name": "Santos (small, steel and gold)",
-     "retailer": "chrono24",
-     "query": "Cartier Santos two tone small",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.watchesofswitzerland.com/products/cartier-santos-w2sa0033-17311655",
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/CRW2SA0033_0.png?height=5760&v=1749832741&width=4000",
      "id": "48cffe",
      "img": "images/cut/036-48cffe-v1791557434.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$11,500"
     },
     {
      "slide": 3,
      "label": "Exact",
      "brand": "Breitling",
      "name": "Navitimer",
-     "retailer": "chrono24",
-     "query": "Breitling Navitimer",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.breitling.com/us-en/watches/navitimer/navitimer-b01-chronograph-43-my22/AB0138211B1A1/",
      "note": "",
      "image_src": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0138211b1a1-soldier_7d7651b2_thumbnail_1024.webp",
      "id": "523ef2",
      "img": "images/cut/036-523ef2-v1791557437.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$10,700"
     },
     {
      "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "Citizen Promaster Navihawk",
-     "retailer": "amazon",
-     "query": "Citizen Promaster Navihawk",
-     "product_url": "",
+     "brand": "Citizen",
+     "name": "Promaster Navihawk A-T (CB5840-59E)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.citizenwatch.com/us/en/product/CB5840-59E",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://citizenwatch.widen.net/content/ijhd4ruruu/webp",
+     "price": "$695"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Addison 23mm Two-Tone Bracelet (TW2Y23900)",
+     "product_url": "https://timex.com/products/addison-23mm-stainless-steel-bracelet-watch-tw2y23900",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y23900.png?v=1785853464",
+     "price": "$159",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -3000,43 +3093,61 @@
      "url": "https://www.aviandco.com/luxury-watches-spotted-at-the-2026-emmy-awards"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: AP price is the US suggested retail from La Cote des Montres; the AP site shows no price. The PRX gold quartz is now $575 at Tissot US, over budget. GM-2100B-3A has a green dial and resin strap; casio.com shows no price, so $300 is the MSRP listed by NY Watch Store (which sells it for $180). The Timex (gold/two-tone, fluted, emerald dial, $189) is the in-budget pick.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Audemars Piguet",
      "name": "Royal Oak 41mm (yellow gold, malachite dial)",
-     "retailer": "chrono24",
-     "query": "Audemars Piguet Royal Oak malachite",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak/15513BA.OO.1320BA.01.html",
      "note": "",
      "image_src": "https://cdn.watchbase.com/watch/lg/audemars-piguet/royal-oak/15513ba-oo-1320ba-01-5b.jpg",
      "id": "629cd4",
      "img": "images/cut/037-629cd4-v1791557406.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$81,900"
     },
     {
      "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Tissot PRX (gold tone)",
-     "retailer": "amazon",
-     "query": "Tissot PRX gold",
-     "product_url": "",
+     "brand": "Tissot",
+     "name": "PRX 40mm Gold PVD (T137.410.33.021.00)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.tissotwatches.com/en-us/T1374103302100.html",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5704b2fb/product-pictures/4679ced0-3b8f-4fd9-b780-cd7b9ccadd31_T137-410-33-021-00_shadow.png",
+     "price": "$575"
     },
     {
      "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "Casio G-Shock GM-2100",
-     "retailer": "amazon",
-     "query": "Casio G-Shock GM-2100",
-     "product_url": "",
+     "brand": "Casio",
+     "name": "G-Shock GM-2100B-3A (green dial, steel bezel)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.casio.com/us/watches/gshock/product.GM-2100B-3A/",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GM/gm2/gm-2100b-3a/assets/GM-2100B-3A.png",
+     "price": "$300"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Legacy 36mm Gold-Tone Fluted Bezel, Green Dial (TW2W87400)",
+     "product_url": "https://timex.com/products/timex-legacy-36mm-stainless-steel-bracelet-watch-tw2w87400",
+     "image_src": "https://timex.com/cdn/shop/files/TW2W87400.png?v=1785853070",
+     "price": "$189",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -3091,29 +3202,33 @@
      "url": "https://www.aviandco.com/luxury-watches-spotted-at-the-2026-emmy-awards"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: The rose-gold reference is WGTA0235. WatchesBySJX gives a launch price of EUR 43,000 ex-tax for gold; the dealer page says price on request. Check the dealer image is a clean shot. The Timex is a gold-tone (not rose) rectangle on black croc-grain leather, $159, currently pre-order.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Cartier",
      "name": "Privé Tank à Guichets (rose gold)",
-     "retailer": "chrono24",
-     "query": "Cartier Tank a Guichets",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://wristaficionado.com/products/cartier-tank-a-guichets-wgta0235-rose-gold-alligator-strap-2025",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://wristaficionado.com/cdn/shop/files/cartier-tank-a-guichets-wgta0235-rose-gold-alligator-strap-2025-cartier-1154329937.png?crop=center&height=1200&v=1743787301&width=1200",
+     "price": "Price on request"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Rectangular dress watch",
-     "retailer": "amazon",
-     "query": "men's rectangular dress watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "1976 Lexington Reissue 21mm Gold-Tone (TW2Y56200)",
+     "product_url": "https://timex.com/products/timex-1976-lexington-reissue-21mm-leather-strap-watch-tw2y56200",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y56200.png?v=1791211304",
+     "price": "$159",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -3167,30 +3282,34 @@
      "url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: AP price is the US suggested retail from La Cote des Montres. PRX blue quartz is now $450 at Tissot US. I left 'Casio G-Shock GA-2100 (blue)' unchanged: there's no navy GA-2100-2A page on casio.com/us (only the turquoise 2A2), and Casio pages don't show prices. The Timex Falcon Eye has a metallic blue textured dial on a steel bracelet, $269, slightly over budget.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Audemars Piguet",
      "name": "Royal Oak Perpetual Calendar 26674ST",
-     "retailer": "chrono24",
-     "query": "Audemars Piguet 26674ST",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.audemarspiguet.com/us/en/watch-collection/royal-oak/26674ST.OO.1320ST.01",
      "note": "",
      "id": "771607",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://cdn.watchbase.com/watch/lg/audemars-piguet/royal-oak/26674st-oo-1320st-01-6c.jpg",
+     "price": "$124,200"
     },
     {
      "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Tissot PRX (blue dial)",
-     "retailer": "amazon",
-     "query": "Tissot PRX blue dial",
-     "product_url": "",
+     "brand": "Tissot",
+     "name": "PRX 40mm Quartz Blue (T137.410.11.041.00)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.tissotwatches.com/en-us/T1374101104100.html",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9b840963/product-pictures/739cc440-025b-42e8-a5f9-ae33b31479b2_T137-410-11-041-00_shadow.png",
+     "price": "$450"
     },
     {
      "slide": 4,
@@ -3202,6 +3321,19 @@
      "product_url": "",
      "note": "",
      "type": "watch"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Q Timex Falcon Eye Chronograph 40mm Blue (TW2W33700)",
+     "product_url": "https://timex.com/products/q-timex-falcon-eye-chronograph-40mm-stainless-steel-bracelet-watch-tw2w33700",
+     "image_src": "https://timex.com/cdn/shop/files/TW2W33700.png?v=1785856550",
+     "price": "$269",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -3247,29 +3379,33 @@
      "url": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: 126538TRO is the yellow-gold 'Barbie' Daytona (pink dial, pink sapphire bezel, pink leather). The Watch Guys listing shows $1,000,000 and SOLD, so swap in a live listing if you have one. The Invicta Speedway is an all-gold chronograph with a silver dial, $149.99 sale. It has no pink dial; I didn't find a verified pink one.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Rolex",
      "name": "Cosmograph Daytona 126538TRO",
-     "retailer": "chrono24",
-     "query": "Rolex 126538TRO",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.watchguys.com/products/rolex-daytona-126538tro",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.watchguys.com/cdn/shop/files/Rolex_Daytona_126538TRO_Barbie.webp?v=1791255194&width=1200",
+     "price": "$1,000,000"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Gold chronograph watch",
-     "retailer": "amazon",
-     "query": "men's gold chronograph watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Invicta",
+     "name": "Speedway Torvane Chronograph 39.5mm Gold (17312)",
+     "product_url": "https://invictastores.com/products/invicta-speedway-men-s-watch-39-5mm-gold-17312",
+     "image_src": "https://invictastores.com/cdn/shop/files/17312_catalogshot_31843_49a179b7-0268-4c46-a67a-828cc59d2314.jpg?v=1779302494",
+     "price": "$149.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -3412,7 +3548,7 @@
      "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
     }
    ],
-   "note": "Exact piece is affordable — lead with it.",
+   "note": "Exact piece is affordable — lead with it.\nFill Oct 13: Price is the $245 retail shown on BeRitzy (selling at $192.31). Fossil.com and Jomashop pages load prices with JS, so they weren't readable here.",
    "items": [
     {
      "slide": 2,
@@ -3426,7 +3562,8 @@
      "type": "watch",
      "image_src": "https://cdn2.jomashop.com/media/catalog/product/f/o/fossil-carraway-automatic-beige-dial-watch-me3272.jpg",
      "id": "2a2bf1",
-     "img": "images/cut/042-2a2bf1.png"
+     "img": "images/cut/042-2a2bf1.png",
+     "price": "$245"
     }
    ],
    "posted_at": null,
@@ -3486,18 +3623,20 @@
      "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Omega 220.10.41.21.03.006 is listed with a turquoise dial, $7,400. I left 'Tissot Gentleman Powermatic 80' unchanged because the US variant I found (T127.407.11.091.01) has a green dial and costs $950; I'd drop it. The Timex is steel with a light-blue dial on a bracelet, $179.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Omega",
      "name": "Seamaster Aqua Terra 41 (turquoise)",
-     "retailer": "chrono24",
-     "query": "Omega Aqua Terra turquoise",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-41-mm-22010412103006",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-41-mm-22010412103006-5059c4.png?w=1024",
+     "price": "$7,400"
     },
     {
      "slide": 3,
@@ -3509,6 +3648,19 @@
      "product_url": "",
      "note": "",
      "type": "watch"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Legacy Day and Date 36mm Light Blue (TW2V68400)",
+     "product_url": "https://timex.com/products/timex-legacy-day-and-date-36mm-stainless-steel-bracelet-watch-tw2v68400",
+     "image_src": "https://timex.com/cdn/shop/files/TW2V68400.png?v=1785852669",
+     "price": "$179",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -3555,30 +3707,34 @@
      "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Omega 220.50.38.20.03.001 is Moonshine gold on a gold bracelet with a blue dial, $42,200; check it matches what he wore (leather vs bracelet). I replaced 'Seiko Presage' (a whole collection, $400+) with the Invicta, which is a two-tone diver with a blue dial, $149.99 sale. It isn't a close shape match, so a better gold/blue dress pick would be welcome.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Omega",
      "name": "Seamaster Aqua Terra 38 (Moonshine Gold, blue dial)",
-     "retailer": "chrono24",
-     "query": "Omega Aqua Terra 38 Moonshine Gold",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22050382003001",
      "note": "",
      "id": "a5df56",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22050382003001-4f0d48.png?w=1024",
+     "price": "$42,200"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Seiko Presage",
-     "retailer": "amazon",
-     "query": "Seiko Presage",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Invicta",
+     "name": "Pro Diver 43mm Steel and Gold, Blue Dial (1773)",
+     "product_url": "https://invictastores.com/products/invicta-pro-diver-men-s-watch-43mm-steel-gold-1773",
+     "image_src": "https://invictastores.com/cdn/shop/files/1773_iysi1j.png?v=1779837508",
+     "price": "$149.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -3625,7 +3781,7 @@
      "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: I left the Exact unchanged because I couldn't confirm which Moonshine Speedmaster he wore. Omega's all-gold bracelet version 310.60.42.50.10.001 has a green dial, $50,900: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010001 (use it only if the dial matches). I trimmed the SBDL089 URL to the clean /dp/ form; its $900 is kept as is. The Timex has a champagne dial, black subdials, gold-tone pushers and a tachymeter on black leather, $219.",
    "items": [
     {
      "slide": 2,
@@ -3645,16 +3801,29 @@
     {
      "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Seiko Prospex SPEEDTIMER Men's Solar Chronograph Wristwatch",
+     "brand": "Seiko",
+     "name": "Prospex Speedtimer Solar Chronograph SBDL089",
      "retailer": "",
      "query": "",
-     "product_url": "https://www.amazon.com/SBDL089-PROSPEX-SPEEDTIMER-Chronograph-Shipped/dp/B09CPYG8S9/ref=sr_1_38?crid=27ITOKX6IHIKB&dib=eyJ2IjoiMSJ9.EpOAt9CIpOaWMvS68SXwAM89Sw4yZFddn5GqZmBNRHicyUoupA7qAXR0TBqkSE1rSdmAiZoi-XatmCS4xc8auVpNydcWeIOTfjKKtMeWjWoCEIY4J4Kum1jOnqrW8O8tbzJOWVmlnm0QrrWD7I_fhDYhCKilAS8mqwk92l1P7rTJtw22t1H2QmTgd_nb8rAgSNPlXDXPafBiKDMDvYwzNjrT4zJzXCzvGm6oPs9zmrrGY6Wf_aPPphMx4Wsa4QAFsGMIqvI6yjeW5zDPRl-8tu5R98Udy7w3UkNbklqf-8c.-WgpCTYFk6OgmQhs3ql6CvVDNAcaR_1vAloaZ5sa5Ms&dib_tag=se&keywords=seiko%2Bspeedtimer%2Bchronograph%2Bgold%2Bdial&qid=1791860002&sprefix=seiko%2Bspeedtimer%2Bchronograph%2Bgold%2Bdial%2Caps%2C93&sr=8-38&th=1",
+     "product_url": "https://www.amazon.com/dp/B09CPYG8S9",
      "note": "",
      "type": "watch",
      "price": "$900",
      "id": "1293dc",
      "img": "images/cut/045-1293dc.png"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Marlin Chronograph Tachymeter 40mm Two-Tone (TW2W60300)",
+     "product_url": "https://timex.com/products/marlin-chronograph-tachymeter-40mm-leather-strap-watch-tw2w60300",
+     "image_src": "https://timex.com/cdn/shop/files/TW2W60300_9b82ff70-c1df-4055-8e6a-fe4e0fb6b1df.png?v=1788226943",
+     "price": "$219",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -3708,16 +3877,16 @@
      "url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Omega 324.15.38.50.60.001 (steel, green dial, 52-diamond bezel) is marked 'no longer available' with no price, and Chrono24 couldn't be fetched, so I left the price blank. I cleaned the SSC933 Amazon URL; it's unverified because Amazon blocks fetching and isn't on Seiko US. The Timex has a green dial, black subdials and a green tachymeter bezel on steel, $269, slightly over $250.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Omega",
      "name": "Speedmaster 38 (diamond-set, green dial)",
-     "retailer": "chrono24",
-     "query": "Omega Speedmaster 38 green",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.omegawatches.com/en-us/watch-omega-speedmaster-38-co-axial-chronometer-chronograph-38-mm-32415385060001",
      "note": "",
      "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
      "id": "9fa28c",
@@ -3727,19 +3896,33 @@
      "pin": [
       0.1381,
       0.8154
-     ]
+     ],
+     "image_replace": "https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-38-co-axial-chronometer-chronograph-38-mm-32415385060001-afc962.png?w=1024"
     },
     {
      "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Seiko Speedtimer chronograph",
+     "brand": "Seiko",
+     "name": "Prospex Speedtimer Solar Chronograph SSC933",
      "retailer": "",
      "query": "",
-     "product_url": "https://www.amazon.com/SEIKO-Prospex-Speedtimer-Solar-SSC933/dp/B0CM811Y2J/ref=sr_1_6?channelId=500&clpRedir=Y&dib=eyJ2IjoiMSJ9.cZbTn1eadva79zkl19xngYm_l0ICZOrmkIEVFU4rK2YN9hLLzahosCizWcNXEIDMx6N_MD406ythpoYxydyfebWqnJSNlQCUVb4uh7A9pZApS7kIbn7YDbRAgsiZD6Nnyv018FH_y8LQo56pL3FSDlsAhtZmh8vecit_432geVoMqHT9fncMdA7HsvsYeqEG6VBcDfIyzQWzEWapP84xrr1fCUiRLmoc0QF734VrW7IldtTRzSBsO5aQfsbT6oMaEAltuGuEV6obUfQ9uJhhl5qLBjGkAVEDwTMAnZT8S2c.fv0Uk47wXPg6GfRiMUVdzDtMdH5a9umqS__qTt0nx6U&dib_tag=se&keywords=seiko+speedtimer+chronograph&plpRedirect=mhFallback&qid=1791860325&sr=8-6",
+     "product_url": "https://www.amazon.com/dp/B0CM811Y2J",
      "note": "",
      "type": "watch",
      "image_fetch": "failed 2026-10-13: no product image on page"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Q Timex Chronograph 40mm Racing Green (TW2Y88500)",
+     "product_url": "https://timex.com/products/q-timex-chronograph-40mm-stainless-steel-bracelet-watch-tw2y88500",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y88500.png?v=1789419068",
+     "price": "$269",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -3778,32 +3961,23 @@
      "url": "https://teddybaldassarre.com/blogs/watches/favorite-watches-golden-globes-2026"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: LV W1SP10 is steel and rose gold with a grey dial, $31,500. The two Exact rows are the same watch, so consider deleting one. The Timex is two-tone with a black dial ($127.50 sale) but has a fluted bezel, unlike the Tambour. I left the Tissot PRX (Amazon B094YP9RHS) without a price because Amazon can't be fetched; PRX quartz is $450 at Tissot US.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Louis Vuitton",
      "name": "Tambour (two-tone)",
-     "retailer": "chrono24",
-     "query": "Louis Vuitton Tambour",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://us.louisvuitton.com/eng-us/products/tambour-automatic-40mm-steel-rose-gold-nvprod4540026v/W1SP10",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--W1SP10_PM2_Front%20view.jpg?wid=1200&hei=630",
+     "price": "$31,500"
     },
     {
      "slide": 3,
-     "label": "Similar",
-     "brand": "",
-     "name": "Integrated-bracelet steel watch",
-     "retailer": "amazon",
-     "query": "men's integrated bracelet steel watch",
-     "product_url": "",
-     "note": "",
-     "type": "watch"
-    },
-    {
-     "slide": 4,
      "label": "Exact",
      "brand": "Louis Vuitton",
      "name": "Tambour",
@@ -3813,10 +3987,11 @@
      "note": "",
      "type": "watch",
      "image_src": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tambour-automatic-40mm-steel-and-rose-gold--W1SP10_PM2_Front%20view.jpg",
-     "image_fetch": "failed 2026-10-09: 403 Client Error: Forbidden for url: https://us.louisvuitton.com/images/is/image"
+     "image_fetch": "failed 2026-10-09: 403 Client Error: Forbidden for url: https://us.louisvuitton.com/images/is/image",
+     "price": "$31,500"
     },
     {
-     "slide": 5,
+     "slide": 4,
      "label": "Similar",
      "brand": "Tissot",
      "name": "Tissot PRX",
@@ -3828,6 +4003,19 @@
      "image_src": "https://m.media-amazon.com/images/I/61EEVNdTXZL._AC_SL1026_.jpg",
      "id": "402d1d",
      "img": "images/cut/047-402d1d.png"
+    },
+    {
+     "label": "Similar",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Legacy 36mm Two-Tone Bracelet, Black Dial (TW2Y27900)",
+     "product_url": "https://timex.com/products/timex-legacy-36mm-stainless-steel-bracelet-watch-tw2y27900",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y27900_52d4736e-55e6-4643-bc28-1b0eb13d1731.png?v=1785857382",
+     "price": "$127.50",
+     "retailer": "",
+     "query": "",
+     "note": "",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -3866,7 +4054,7 @@
      "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Complex's Grammys roundup gives his yellow-gold CPCP Tortue at $17,000. I found no live product page: the 2498E at Swiss Watch Expo is rose gold and sold, and Analog:Shift's Tortues are sold. The Timex is a gold-tone square case with a champagne dial on brown leather, $129; it's square rather than cushion.",
    "items": [
     {
      "slide": 2,
@@ -3879,18 +4067,21 @@
      "note": "",
      "type": "watch",
      "id": "cf569f",
-     "img": "images/cut/048-cf569f.png"
+     "img": "images/cut/048-cf569f.png",
+     "price": "$17,000"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Gold cushion-case dress watch",
-     "retailer": "amazon",
-     "query": "men's gold cushion case dress watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "Addison 23mm Gold-Tone Leather Strap (TW2Y90700)",
+     "product_url": "https://timex.com/products/addison-23mm-leather-strap-watch-tw2y90700",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y90700.png?v=1791211397",
+     "price": "$129",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -3959,32 +4150,35 @@
      "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: I couldn't confirm the exact Tank reference. I used the Tank Louis Cartier Medium in yellow gold (WGTA0211), $16,000 at Watches of Switzerland. The existing image is WoS item 17311221, a different listing, so check they match. The Timex is a gold-tone rectangle with a white/silver dial on black leather, $159, pre-order.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Cartier",
      "name": "Tank (yellow gold)",
-     "retailer": "chrono24",
-     "query": "Cartier Tank gold",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.watchesofswitzerland.com/products/cartier-tank-louis-cartier-wgta0211-17311723",
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/17311221_1_jpg.avif?height=4000&v=1766500805&width=4000",
      "id": "fc95af",
      "img": "images/cut/049-fc95af-v1791557427.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$16,000"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Rectangular gold watch",
-     "retailer": "amazon",
-     "query": "men's rectangular gold watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "1976 Lexington Reissue 21mm Gold-Tone (TW2Y56200)",
+     "product_url": "https://timex.com/products/timex-1976-lexington-reissue-21mm-leather-strap-watch-tw2y56200",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y56200.png?v=1791211304",
+     "price": "$159",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -4091,32 +4285,35 @@
      "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: WJTA0068 (white gold, diamond case and bracelet) is $59,000 at WoS, which matches the existing image. Complex quoted $69,000, which may be a different size. The Timex is a silver-tone rectangle with a silver dial on brown croc-grain leather, $149.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Cartier",
      "name": "Tank Américaine (white gold, diamonds)",
-     "retailer": "chrono24",
-     "query": "Cartier Tank Americaine",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.watchesofswitzerland.com/products/cartier-american-tank-wjta0068-17311738",
      "note": "",
      "image_src": "https://www.watchesofswitzerland.com/cdn/shop/files/926-CRWJTA0068_1_f456be23-e418-4108-9ae4-dd12875327b5.jpg?height=4000&v=1788966228&width=4000",
      "id": "49b0d3",
      "img": "images/cut/050-49b0d3-v1791557465.png",
-     "type": "watch"
+     "type": "watch",
+     "price": "$59,000"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Rectangular silver watch",
-     "retailer": "amazon",
-     "query": "men's rectangular silver watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "1976 Lexington Reissue Inspired 21mm Silver-Tone (TW2Y88200)",
+     "product_url": "https://timex.com/products/timex-1976-lexington-reissue-inspired-21mm-leather-strap-watch-tw2y88200",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y88200.png?v=1787932618",
+     "price": "$149",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -4172,29 +4369,32 @@
      "url": "https://www.luxurybazaar.com/grey-market/?p=41801"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: The reference is 341.PX.7180.LR.1204 (Big Bang Gold Blue Diamonds 41). The Hublot URL came from search results but failed to fetch, and I found no price on Hublot, WatchBase or The Watch Pages, so the price is still blank. The Invicta is a big gold case with a blue dial, $149.99 sale.",
    "items": [
     {
      "slide": 2,
      "label": "Exact",
      "brand": "Hublot",
      "name": "Big Bang Original King Gold Blue Diamonds 41mm",
-     "retailer": "chrono24",
-     "query": "Hublot Big Bang King Gold",
-     "product_url": "",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.hublot.com/en/collection/big-bang/big-bang-gold-blue-diamonds-41mm",
      "note": "",
-     "type": "watch"
+     "type": "watch",
+     "image_src": "https://cdn.watchbase.com/watch/lg/hublot/big-bang/341-px-7180-lr-1204-b7.jpg"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Gold chronograph watch",
-     "retailer": "amazon",
-     "query": "men's gold chronograph watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Invicta",
+     "name": "Pro Diver SCUBA 50mm Gold, Blue Dial (22798)",
+     "product_url": "https://invictastores.com/products/invicta-pro-diver-scuba-men-s-watch-50mm-gold-blue-22798",
+     "image_src": "https://invictastores.com/cdn/shop/files/22798_catalogshot_173078.jpg?v=1778892763",
+     "price": "$149.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -4246,7 +4446,8 @@
      "note": "",
      "slide": 2,
      "id": "c334ca",
-     "img": "images/cut/052-c334ca-v1791577615.png"
+     "img": "images/cut/052-c334ca-v1791577615.png",
+     "price": "$77"
     }
    ],
    "photo_options": [
@@ -4283,7 +4484,7 @@
     "fresh": 2
    },
    "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
-   "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
+   "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.\nFill Oct 13: $77 is levi.com's sale price for 501 Loose 'In My Bronco' light wash (0057U-0009, list $110); the Amazon price couldn't be checked.",
    "find": "052",
    "status": "approved",
    "ig_queue": false,
@@ -4617,7 +4818,7 @@
      "url": "https://abc11.com/post/nfl-week-4s-best-arrivals-led-cleveland-browns-mascot/19898446/"
     }
    ],
-   "note": "Brands not named in the source — all picks are Similar.",
+   "note": "Brands not named in the source — all picks are Similar.\nFill Oct 13: Cam Jordan wore a gold and black checkered jacket with black pants (ABC11 Week 4 arrivals); no brands are named. I couldn't find a real branded gold/black check jacket on a fetchable store page (Amazon can't be fetched from here), so the jacket Similar is unchanged. The Uniqlo $29.90 price is a sale price.",
    "items": [
     {
      "slide": 2,
@@ -4631,15 +4832,17 @@
      "type": "clothing"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Black tailored trousers",
-     "retailer": "amazon",
-     "query": "men's black tailored trousers",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Uniqlo",
+     "name": "Smart Ankle Pants (Black)",
+     "product_url": "https://www.uniqlo.com/us/en/products/E482886-000/00?colorDisplayCode=09",
+     "image_src": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/482886/item/usgoods_09_482886_3x4.jpg",
+     "price": "$29.90",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -4772,7 +4975,7 @@
      "url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Rhude price not verified: the GOAT page isn't reachable from here. Mitchell wore a navy Rhude matching set with a white tank (thegame.ph). The adidas page only has on-model photos, so this image_src is a model shot. Swap it if check.py rejects it.",
    "items": [
     {
      "slide": 2,
@@ -4786,15 +4989,17 @@
      "type": "clothing"
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Navy matching tracksuit",
-     "retailer": "amazon",
-     "query": "men's navy matching tracksuit",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "adidas",
+     "name": "Firebird Track Jacket (Night Indigo)",
+     "product_url": "https://www.adidas.com/us/firebird-track-jacket/KD8313.html",
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/de633634a4994c578db2cbbd8fb9dbd4_9366/Firebird_Track_Jacket_Blue_KD8313_21_model.jpg",
+     "price": "$80",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -5547,7 +5752,7 @@
      "url": "https://fandomwire.com/emmys-2026-best-dressed-celebrities-ranked/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Thom Browne tuxedo and bib-front shirt: no matching product pages found (made-to-measure), so left unchanged. Cashmere vest left unchanged: J.Crew's Brushed Cashmere V-neck Sweater-vest (CE443) and Uniqlo's Merino V-Neck Vest pages don't show a price. Florsheim Rucci is on sale at $129.99 (was $155).",
    "items": [
     {
      "slide": 2,
@@ -5586,15 +5791,17 @@
      "type": "clothing"
     },
     {
-     "slide": 5,
      "label": "Similar",
-     "brand": "",
-     "name": "Wingtip boots",
-     "retailer": "amazon",
-     "query": "men's wingtip boots",
-     "product_url": "",
+     "type": "shoes",
+     "brand": "Florsheim",
+     "name": "Rucci Wingtip Lace Up Boot (Black)",
+     "product_url": "https://www.florsheim.com/shop/style/13417.html",
+     "image_src": "https://www.florsheim.com/shop/images/13417-001.jpg",
+     "price": "$129.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "shoes"
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -5763,40 +5970,46 @@
      "url": "https://vogue.ph/?p=257477"
     }
    ],
-   "note": "Brands not named in the source — all picks are Similar.",
+   "note": "Brands not named in the source — all picks are Similar.\nFill Oct 13: A&F Collins Blazer is a linen blend (the page doesn't say whether it's unstructured); the image is the Deep Navy prod1 shot. The Levi's 501 is on sale ($84.95 list). The Levi's image is the main gallery shot (CM_DA), which may be on-model, so check it. The original listing's jean wash is unknown.",
    "items": [
     {
-     "slide": 2,
      "label": "Similar",
-     "brand": "",
-     "name": "Navy unstructured blazer",
-     "retailer": "amazon",
-     "query": "men's navy unstructured blazer",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Abercrombie & Fitch",
+     "name": "The A&F Collins Blazer (Deep Navy)",
+     "product_url": "https://www.abercrombie.com/shop/us/p/the-a-and-f-collins-tailored-classic-linen-blend-blazer-58944850",
+     "image_src": "https://img.abercrombie.com/is/image/anf/KIC_132-5031-00106-200_prod1?policy=product-medium&wid=350&hei=438",
+     "price": "$160",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 2
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "White Oxford shirt",
-     "retailer": "amazon",
-     "query": "men's white oxford shirt",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Uniqlo",
+     "name": "Oxford Oversized Shirt (White)",
+     "product_url": "https://www.uniqlo.com/us/en/products/E479996-000/00?colorDisplayCode=00",
+     "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/479996/item/goods_00_479996_3x4.jpg",
+     "price": "$39.90",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 3
     },
     {
-     "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "Straight-leg jeans",
-     "retailer": "amazon",
-     "query": "men's straight leg jeans",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Levi's",
+     "name": "501 Original Jeans (Light Stonewash)",
+     "product_url": "https://www.levi.com/US/en_US/clothing/men/jeans/straight/501-original-mens-jeans/p/005010134",
+     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0134_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=2000&hei=2500",
+     "price": "$50.97",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -5842,7 +6055,7 @@
      "url": "https://www.highsnobiety.com/p/asap-rocky-brought-out-the-louis-vuitton-vans-for-his-world-cup-fit/"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: Levi's 568 Carpenter is $37.98 on sale (was $84.95), with a flat-lay image. Red skate shoes left unchanged: the Vans product pages are JS-only with no image or price, and Zappos showed Vans Authentic Red at $60 but no image URL. The LV croc sneaker and Chanel carpenter jeans have no product pages, so they're left unchanged.",
    "items": [
     {
      "slide": 2,
@@ -5881,15 +6094,17 @@
      "type": "sneakers"
     },
     {
-     "slide": 5,
      "label": "Similar",
-     "brand": "",
-     "name": "Carpenter jeans",
-     "retailer": "amazon",
-     "query": "men's carpenter jeans",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Levi's",
+     "name": "568 Loose Straight Carpenter Jeans (Medium Wash)",
+     "product_url": "https://www.levi.com/US/en_US/clothing/men/jeans/loose/568TM-loose-straight-carpenter-mens-jeans/p/558490033",
+     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_55849-0033_GLO_CL_FV?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=2000&hei=2500",
+     "price": "$37.98",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -5932,7 +6147,7 @@
      "url": "https://www.kapoorwatch.com/blogs/wp-json/wp/v2/posts/16275"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: MBJ's watch is a vintage early-1970s Piaget Tank ref 9297: rectangular gold case, pavé diamond dial, black leather strap (manabouttown). It's from his own collection and no Chrono24 listing exists, so the exact item is left unchanged. The Timex is a gold-tone rectangular case on a black croc-grain strap, but it has a white/silver dial and is listed as pre-order. The H&M price ($70.99 sale, was $119) comes from the blazers category grid, not the product page. The H&M og:image may be on-model, so check it.",
    "items": [
     {
      "slide": 2,
@@ -5957,26 +6172,30 @@
      "type": "watch"
     },
     {
-     "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "Black tuxedo",
-     "retailer": "amazon",
-     "query": "men's black tuxedo",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "H&M",
+     "name": "Slim-Fit Wool-Blend Tuxedo Jacket (Black)",
+     "product_url": "https://www2.hm.com/en_us/productpage.1297362001.html",
+     "image_src": "https://image.hm.com/assets/hm/71/f4/71f4dfeacffb3a0459cafbd2108ca6b61a2d3a44.jpg?imwidth=1260",
+     "price": "$70.99",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 4
     },
     {
-     "slide": 5,
      "label": "Similar",
-     "brand": "",
-     "name": "Gold rectangular dress watch",
-     "retailer": "amazon",
-     "query": "men's gold rectangular dress watch",
-     "product_url": "",
+     "type": "watch",
+     "brand": "Timex",
+     "name": "1976 Lexington Reissue 21mm (Gold-Tone, Black Leather)",
+     "product_url": "https://timex.com/products/timex-1976-lexington-reissue-21mm-leather-strap-watch-tw2y56200",
+     "image_src": "https://timex.com/cdn/shop/files/TW2Y56200.png?v=1791211304",
+     "price": "$159",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "watch"
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -6023,7 +6242,7 @@
      "url": "https://t2online.in/goodlife/fashion-beauty/bts-s-j-hope-and-goblin-star-gong-yoo-bring-the-spotlight-to-louis-vuitton-s-paris-fashion-week-showcase/2005862"
     }
    ],
-   "note": "Suit label not named in source.",
+   "note": "Suit label not named in source.\nFill Oct 13: LV SS27 show (June 23, 2026): no source describes j-hope's bag model, so it's left unchanged. The only leopard silk ties I found (ties.com) are sold out, so that tie is left unchanged. Pinstripe suit left unchanged: the only affordable one found (Banana Republic Factory) is navy and out of stock.",
    "items": [
     {
      "slide": 2,
@@ -6059,15 +6278,17 @@
      "type": "accessory"
     },
     {
-     "slide": 5,
      "label": "Similar",
-     "brand": "",
-     "name": "White dress shirt",
-     "retailer": "amazon",
-     "query": "men's white dress shirt",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Uniqlo",
+     "name": "Super Non-Iron Slim Shirt, Button Down Collar (White)",
+     "product_url": "https://www.uniqlo.com/us/en/products/E456588-000/00?colorDisplayCode=00",
+     "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/456588/item/goods_00_456588_3x4.jpg",
+     "price": "$49.90",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -6126,7 +6347,7 @@
      "url": "https://storyboard18.com/photos/brand-makers/you-cant-miss-these-looks-from-the-oscars-2026-red-carpet-92415.htm"
     }
    ],
-   "note": "",
+   "note": "Fill Oct 13: White suit Similar left unchanged: H&M's white suit pages don't expose images or colors, and A&F, Uniqlo and J.Crew Factory have no white suit jacket. Givenchy custom suit has no product page.",
    "items": [
     {
      "slide": 2,
@@ -6151,15 +6372,17 @@
      "type": "clothing"
     },
     {
-     "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "White dress shirt",
-     "retailer": "amazon",
-     "query": "men's white dress shirt",
-     "product_url": "",
+     "type": "clothing",
+     "brand": "Uniqlo",
+     "name": "Super Non-Iron Slim Shirt, Button Down Collar (White)",
+     "product_url": "https://www.uniqlo.com/us/en/products/E456588-000/00?colorDisplayCode=00",
+     "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/456588/item/goods_00_456588_3x4.jpg",
+     "price": "$49.90",
+     "retailer": "",
+     "query": "",
      "note": "",
-     "type": "clothing"
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -6389,13 +6612,14 @@
      "type": "watch",
      "brand": "Cartier",
      "name": "Santos de Cartier Skeleton",
-     "retailer": "chrono24",
-     "query": "Cartier Santos de Cartier Skeleton",
+     "retailer": "",
+     "query": "",
      "note": "Sources value it at $77,000 but give no reference; that price points to a precious-metal version, not the steel WHSA0015. Confirm the case metal from photos before naming a reference.",
      "slide": 2,
-     "product_url": "",
+     "product_url": "https://www.chrono24.com/cartier/ref-whsa0015.htm",
      "id": "56dc61",
-     "img": "images/cut/079-56dc61.png"
+     "img": "images/cut/079-56dc61.png",
+     "price": "$33,500"
     },
     {
      "label": "Exact",
@@ -6452,11 +6676,12 @@
      "type": "accessory",
      "brand": "Jacques Marie Mage",
      "name": "Leonard aviator sunglasses (orange lenses)",
-     "retailer": "farfetch",
-     "query": "Jacques Marie Mage Leonard sunglasses",
+     "retailer": "",
+     "query": "",
      "note": "$1,010. Mr Porter carries Leonard acetate frames, but I could not confirm an orange-lens version is in stock.",
      "slide": 7,
-     "product_url": ""
+     "product_url": "https://dandeutschopticaloutlook.com/products/jacques-marie-mage-leonard",
+     "price": "$960"
     },
     {
      "label": "Similar",
@@ -6511,7 +6736,7 @@
     "fresh": 6
    },
    "score_note": "Luxury pieces all named (Tom Ford on Farfetch, Cartier on Chrono24) plus cheaper picks; Travis Kelce; Chiefs team arrival gallery; 5 days old",
-   "note": "Could also go in Wrist, since Complex's headline is about the $77K watch. Getty and Chiefs photos only; I found no Kelce-owned Instagram post. Kelce wore a Louis Vuitton jacket on Sept 20 vs. the Colts, but that is a separate look and was not used here. Rejected: too expensive for the average buyer.",
+   "note": "Could also go in Wrist, since Complex's headline is about the $77K watch. Getty and Chiefs photos only; I found no Kelce-owned Instagram post. Kelce wore a Louis Vuitton jacket on Sept 20 vs. the Colts, but that is a separate look and was not used here. Rejected: too expensive for the average buyer.\nFill Oct 13: Santos Skeleton: linked to Chrono24 for steel large WHSA0015 (retail $33,500 per WatchMaxx). Check the metal: Kelce has also worn a rose-gold Santos Skeleton ($77k, JCK). JMM Leonard is $960 at Dan Deutsch Optical; none of its colorways is described as having orange lenses, so the variant is unconfirmed. Tom Ford blazer, trousers and boots: Farfetch pages can't be fetched from here, so prices are unverified and the boots still point to a Farfetch category page. BV duffle and the vague square skeleton watch and gray pinstripe blazer Similars are unchanged: Stuhrling's square skeleton is sold out and on leather, and the BR Factory pinstripe is navy and out of stock.",
    "find": "079",
    "status": "rejected",
    "ig_queue": false,
@@ -6649,16 +6874,17 @@
      "note": "$4,950. The press describes it as midnight blue, but LV's US site lists this item (1AJRHB–1AJRHF) only in 'Lava Smoke'. Check the colorway before publishing. image_src left empty for that reason.",
      "slide": 2,
      "img": "images/cut/081-865eed.png",
-     "id": "865eed"
+     "id": "865eed",
+     "price": "$4,950"
     },
     {
      "label": "Similar",
      "type": "clothing",
      "brand": "Hockerty",
      "name": "Navy floral jacquard collarless jacket",
-     "product_url": "",
-     "retailer": "amazon",
-     "query": "men navy florhttps://www.hockerty.com/en-us/men/blazers/409664-cobalt-blue-floral-jacquard-collarless-jacketal jacquard collarless jacket",
+     "product_url": "https://www.hockerty.com/en-us/men/blazers/409664-cobalt-blue-floral-jacquard-collarless-jacket",
+     "retailer": "",
+     "query": "",
      "note": "",
      "slide": 3,
      "img": "images/cut/081-5b994f.png",
@@ -6716,7 +6942,7 @@
     "fresh": 2
    },
    "score_note": "$4,950 LV jacket at LV.com plus cheaper picks; Kelce; Chiefs IG arrival post; 19 days old",
-   "note": "The watch reports conflict: People says a gold Cartier Santos Skeleton, while Yardbarker says a Rolex 'Rainbow'. Because of that I left the watch out. People also mentions an LV belt but names no model. Yardbarker calls the trousers Louis Vuitton (~$1,600), but People and The Sporting News don't name a brand, so the trousers are a Similar pick only. Rejected: too expensive for the average buyer.",
+   "note": "The watch reports conflict: People says a gold Cartier Santos Skeleton, while Yardbarker says a Rolex 'Rainbow'. Because of that I left the watch out. People also mentions an LV belt but names no model. Yardbarker calls the trousers Louis Vuitton (~$1,600), but People and The Sporting News don't name a brand, so the trousers are a Similar pick only. Rejected: too expensive for the average buyer.\nFill Oct 13: LV 1AJRHF is $4,950 (color 'Lava Smoke') on louisvuitton.com. The Hockerty URL had been pasted into the item's 'query' field; moved it to product_url (also clear retailer/query). Hockerty blocks fetching, so its price is unverified. Dockers and loafer prices not filled: Amazon pages can't be fetched from here.",
    "find": "081",
    "status": "approved",
    "ig_queue": false,
@@ -6772,7 +6998,8 @@
      "note": "$190 retail; released Oct 9, 2026 in Greater China only, so US availability is via resale",
      "slide": 2,
      "id": "315b67",
-     "img": "images/cut/082-315b67.png"
+     "img": "images/cut/082-315b67.png",
+     "price": "$190"
     }
    ],
    "photo_leads": [
@@ -6807,7 +7034,7 @@
     "fresh": 6
    },
    "score_note": "LeBron in a shoe dropping today; China-only so resale on StockX/GOAT; AP/team scrimmage photos",
-   "note": "HNHH says 'Saturday', and NBA.com dates the open scrimmage Oct 3, 2026. HNHH's lead image is from the Sept 28 media day, not the scrimmage, so don't use it. StockX listed it at $190 retail but showed an €867 buy-now price before release; recheck the price. No clean studio image was found from an approved source (Sole Retriever has one: https://images.soleretriever.com/sb/products/nike_lebron_24_greater_china_IX5105-200-1790704607533.webp). Rejected: too expensive for the average buyer.",
+   "note": "HNHH says 'Saturday', and NBA.com dates the open scrimmage Oct 3, 2026. HNHH's lead image is from the Sept 28 media day, not the scrimmage, so don't use it. StockX listed it at $190 retail but showed an €867 buy-now price before release; recheck the price. No clean studio image was found from an approved source (Sole Retriever has one: https://images.soleretriever.com/sb/products/nike_lebron_24_greater_china_IX5105-200-1790704607533.webp). Rejected: too expensive for the average buyer.\nFill Oct 13: Retail $190 (Hypebeast), released Oct 9, 2026 in Greater China only. StockX currently asks about €867 with no sales yet, so the linked page will show much more than $190.",
    "find": "082",
    "status": "approved",
    "ig_queue": false,
