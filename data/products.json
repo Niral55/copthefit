@@ -1,20 +1,6 @@
 {
  "products": [
   {
-   "id": "mv6ztqf8xvl7",
-   "url": "https://www.amazon.com/dp/B09GNGJW8M",
-   "store": "amazon.com",
-   "title_raw": "Amazon Essentials Men's Skinny-fit Stretch Chino Khaki Pant, Casual Business Wear",
-   "brand": "Amazon Essentials",
-   "name": "Men's Skinny-fit Stretch Chino Khaki Pant",
-   "image": "https://m.media-amazon.com/images/I/61muG1K3DFL._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-13T18:07:13.412Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv6bn1pew5uk",
    "url": "https://www.farfetch.com/om/shopping/women/vivetta-bow-detail-ballet-flats-item-32280969.aspx",
    "store": "farfetch.com",
