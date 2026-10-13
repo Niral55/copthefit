@@ -148,6 +148,14 @@ Format: Tunnel fits ranked · 6 listings
 | #061 | Khalil Mack | Jordan Nigel Sylvester x Air Jordan 1 Low OG 'Better With Ti | $229 | lead | yes |
 | #062 | Stephon Castle | Jordan Air Jordan 4 Retro 'Black Cat' (2025, FV5029-010) | $284 | live | yes |
 
+## 13. NYC's mayor wears a $160 Casio
+
+Format: story · 1 listing (needs 4 more for a 5-celeb video)
+
+| Find # | Who | Item | Price | Status | Cover |
+|---|---|---|---|---|---|
+| #010 | Zohran Mamdani | Casio Vintage A1000MA-7VT (silver steel) |  | live | yes |
+
 ## No video yet (candidates to delist)
 
 | Find # | Who | Item | Price | Status | Cover |

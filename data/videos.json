@@ -216,6 +216,105 @@
     "061",
     "062"
    ]
+  },
+  {
+   "id": "mamdani",
+   "title": "NYC's mayor wears a $160 Casio",
+   "format": "story",
+   "finds": [
+    "010"
+   ],
+   "script": {
+    "music": true,
+    "keyword": "CASIO",
+    "beats": [
+     {
+      "img": "asset:gp_portrait",
+      "text": "The mayor's $160 watch",
+      "focus": [
+       0.5,
+       0.35
+      ],
+      "zoom": [
+       1.0,
+       1.08
+      ],
+      "min": 1.8,
+      "say": "New York's new mayor could wear any watch in the world."
+     },
+     {
+      "img": "asset:gp_portrait",
+      "text": "A Casio.",
+      "focus": [
+       0.37,
+       0.8
+      ],
+      "zoom": [
+       2.0,
+       2.25
+      ],
+      "say": "He picked a Casio."
+     },
+     {
+      "img": "asset:watchpro",
+      "crop": [
+       0.4,
+       0.08,
+       1.0,
+       1.0
+      ],
+      "text": "On the subway",
+      "focus": [
+       0.6,
+       0.5
+      ],
+      "say": "He wore it on the subway, on the campaign trail,"
+     },
+     {
+      "img": "asset:giga_presser",
+      "text": "At City Hall",
+      "focus": [
+       0.78,
+       0.6
+      ],
+      "zoom": [
+       1.05,
+       1.18
+      ],
+      "say": "and now he wears it at City Hall."
+     },
+     {
+      "img": "asset:bloomberg",
+      "focus": [
+       0.47,
+       0.4
+      ],
+      "zoom": [
+       1.0,
+       1.08
+      ],
+      "stamp": "SOLD OUT",
+      "stamp_on": "sold",
+      "say": "When he won, it sold out on Casio's U.S. site."
+     },
+     {
+      "img": "asset:watch_goldsilver",
+      "text": "Resellers noticed",
+      "focus": [
+       0.5,
+       0.5
+      ],
+      "say": "Resellers started marking it up."
+     }
+    ],
+    "product_find": "010",
+    "product_title": "Casio Vintage",
+    "product_price": "$160",
+    "product_say": "The Casio Vintage. A hundred and sixty dollars at retail.",
+    "outro_img": "asset:gp_portrait",
+    "outro_say": "Comment Casio, and we'll send you where it's still in stock.",
+    "caption": "New York's mayor wears a $160 Casio ⌚ It sold out after he won.\nComment CASIO and we'll DM you where it's still in stock (Find #010).\n#casio #casiovintage #watchspotting #nyc #celebstyle"
+   }
   }
  ],
  "no_video": [

@@ -267,11 +267,221 @@ def load_photo(find, crop=None):
     return im
 
 
+# ---------- background music (synthesised lo-fi bed, so there's nothing to license) ----------
+
+def lofi(dur, bpm=86, vol=0.055):
+    """Soft Rhodes-style chords + kick/hat + vinyl hiss. Quiet enough to sit under the voice."""
+    n = int(SR * dur)
+    t = np.arange(n) / SR
+    out = np.zeros(n)
+    beat = 60 / bpm
+    bar = beat * 4
+    chords = [(57, 60, 64, 67), (53, 57, 60, 64), (48, 52, 55, 59), (55, 59, 62, 65)]  # Am7 Fmaj7 Cmaj7 G7
+    hz = lambda m: 440 * 2 ** ((m - 69) / 12)
+    for b in range(int(dur / bar) + 1):
+        st = b * bar
+        i0, i1 = int(st * SR), min(n, int((st + bar) * SR))
+        if i0 >= n:
+            break
+        tt = t[i0:i1] - st
+        env = (1 - np.exp(-tt * 18)) * np.exp(-tt * 0.9)
+        for m in chords[b % 4]:
+            f = hz(m)
+            out[i0:i1] += (np.sin(2 * math.pi * f * tt) + 0.3 * np.sin(4 * math.pi * f * tt) * np.exp(-tt * 3)) * env * 0.18
+        f = hz(chords[b % 4][0] - 12)  # bass
+        out[i0:i1] += np.sin(2 * math.pi * f * tt) * np.exp(-tt * 1.2) * 0.35
+    rng = np.random.default_rng(11)
+    for k in range(int(dur / beat) + 1):
+        st = k * beat
+        i0 = int(st * SR)
+        if i0 >= n:
+            break
+        if k % 2 == 0:  # kick on 1 and 3
+            m = min(n - i0, int(SR * 0.25))
+            tt = np.arange(m) / SR
+            out[i0:i0 + m] += np.sin(2 * math.pi * (50 + 70 * np.exp(-tt * 30)) * tt) * np.exp(-tt * 14) * 0.9
+        for h in (0, 0.5):  # soft hats on eighths
+            j0 = int((st + h * beat) * SR)
+            m = min(n - j0, int(SR * 0.05))
+            if m > 0:
+                out[j0:j0 + m] += rng.standard_normal(m) * np.exp(-np.arange(m) / SR * 90) * 0.12
+    out += rng.standard_normal(n) * 0.01  # vinyl hiss
+    fade = np.minimum(1, np.minimum(t / 0.6, (dur - t) / 1.2))
+    out *= np.clip(fade, 0, 1)
+    return (out / (np.abs(out).max() or 1) * vol).astype(np.float32)
+
+
+def thud(vol=0.22):
+    n = int(SR * 0.35)
+    tt = np.arange(n) / SR
+    out = np.sin(2 * math.pi * (45 + 60 * np.exp(-tt * 25)) * tt) * np.exp(-tt * 9)
+    out += np.random.default_rng(5).standard_normal(n) * np.exp(-tt * 60) * 0.4
+    return (out / np.abs(out).max() * vol).astype(np.float32)
+
+
+# ---------- "story" videos: one listing told in beats, each with its own image ----------
+
+def story_image(vid, fits, ref):
+    """asset:<name> → reels/<vid>/assets/<name>.jpg · photo:<find> → cover photo · product:<find> → product cut-out on white"""
+    kind, _, name = ref.partition(":")
+    if kind == "asset":
+        return Image.open(ROOT / "reels" / vid / "assets" / f"{name}.jpg").convert("RGB")
+    if kind == "photo":
+        return load_photo(name)
+    it = next(i for i in fits[name]["items"] if i.get("img"))
+    prod = Image.open(ROOT / it["img"]).convert("RGBA")
+    bg = Image.new("RGBA", (int(prod.width * 1.6), int(prod.height * 1.6)), (243, 241, 238, 255))
+    bg.alpha_composite(prod, ((bg.width - prod.width) // 2, (bg.height - prod.height) // 2))
+    return bg.convert("RGB")
+
+
+def fit_frame(img, z, focus, fit):
+    """Fill 9:16. fit=True: whole image centred over a blurred copy of itself (for wide shots)."""
+    if not fit:
+        return zoom_cover(img, z, focus)
+    bg = zoom_cover(img, 1.0, (0.5, 0.5)).resize((W // 12, H // 12)).filter(ImageFilter.GaussianBlur(3)).resize((W, H))
+    bg = Image.blend(bg, Image.new("RGB", (W, H), (0, 0, 0)), 0.35)
+    s = W / img.width * z
+    im = img.resize((int(img.width * s), int(img.height * s)), Image.LANCZOS)
+    x = int((W - im.width) * focus[0])
+    bg.paste(im, (x, int((H - im.height) / 2)))
+    return bg
+
+
+def stamp(fr, text, k):
+    """Rubber-stamp text slamming in (k: 0→1)."""
+    sc = 1.0 + 1.2 * (1 - R.ease(k))
+    fnt = R.font(R.DISPLAY, int(200 * sc))
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(lay)
+    tw = d.textlength(text, font=fnt)
+    x, y = (W - tw) / 2, H * 0.42 - 100 * sc
+    d.rounded_rectangle((x - 40, y - 10, x + tw + 40, y + 230 * sc), radius=18, outline=(235, 52, 52, 255), width=int(14 * sc))
+    d.text((x, y), text, font=fnt, fill=(235, 52, 52, 255))
+    lay = lay.rotate(-11, resample=Image.BICUBIC, center=(W / 2, H * 0.45))
+    a = int(255 * min(1, k * 3))
+    lay.putalpha(lay.getchannel("A").point(lambda v: v * a // 255))
+    fr.paste(lay, (0, 0), lay)
+
+
+def make_story(v, fits, out_dir):
+    vid, sc = v["id"], v["script"]
+    beats = list(sc["beats"])
+    pf = sc.get("product_find") or v["finds"][0]
+    beats.append({"kind": "product", "say": sc["product_say"], "title": sc["product_title"], "price": sc["product_price"], "find": pf})
+    kw = sc.get("keyword") or "LINK"
+    beats.append({"kind": "outro", "say": sc.get("outro_say") or f"Comment {kw.lower()}, and we'll send you the link.",
+                  "keyword": kw, "img": sc.get("outro_img") or beats[0]["img"]})
+
+    t0, track, timeline = 0.0, [], []
+    for b in beats:
+        audio, words = tts(b["say"])
+        dur = max(len(audio) / SR + PAD, b.get("min", 1.2))
+        timeline.append((b, t0, dur, words))
+        track.append(np.concatenate([audio, np.zeros(int(SR * dur) - len(audio), np.float32)]))
+        t0 += dur
+    mix = np.concatenate(track)
+    for b, start, dur, words in timeline:
+        if start > 0:
+            add(mix, whoosh(), max(0, start - 0.12))
+        if b.get("stamp"):
+            trig = b.get("stamp_on", "sold").lower()
+            b["_stamp_at"] = next((w[1] for w in words if w[0].lower().strip(".,!?") == trig), dur * 0.5)
+            add(mix, thud(), start + b["_stamp_at"])
+        if b.get("kind") == "product":
+            b["_price_at"] = next((w[1] for w in words if re.search(r"\d|dollar|hundred", w[0], re.I)), 0.5)
+            add(mix, kaching(), start + b["_price_at"])
+    if sc.get("music", True):
+        mix = mix + lofi(len(mix) / SR)
+    peak = np.abs(mix).max() or 1
+    mix = mix / peak * 0.95 if peak > 0.95 else mix
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    wav = out_dir / f"{vid}.wav"
+    with wave.open(str(wav), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(SR)
+        w.writeframes((mix * 32767).astype(np.int16).tobytes())
+    mp4 = out_dir / f"{vid}.mp4"
+    proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+                             "-i", "-", "-i", str(wav), "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+                             "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(mp4)], stdin=subprocess.PIPE)
+    prev, XF = None, 7  # crossfade frames
+    for b, start, dur, words in timeline:
+        n = int(round(dur * FPS))
+        kind = b.get("kind", "photo")
+        if kind == "product":
+            it = next(i for i in fits[b["find"]]["items"] if i.get("img"))
+            prod = Image.open(ROOT / it["img"]).convert("RGBA")
+            prod = prod.crop(prod.getchannel("A").getbbox() or (0, 0, prod.width, prod.height))
+            prod.thumbnail((760, 760))
+            if prod.width < 760 and prod.height < 760:
+                k_ = 760 / max(prod.size)
+                prod = prod.resize((int(prod.width * k_), int(prod.height * k_)), Image.LANCZOS)
+        else:
+            img = story_image(vid, fits, b["img"])
+            if b.get("crop"):
+                c = b["crop"]
+                img = img.crop((int(c[0] * img.width), int(c[1] * img.height), int(c[2] * img.width), int(c[3] * img.height)))
+            z0, z1 = b.get("zoom", [1.04, 1.16])
+            if kind == "outro":
+                bgo = Image.blend(fit_frame(img, 1.0, b.get("focus", [0.5, 0.45]), False).filter(ImageFilter.GaussianBlur(16)), Image.new("RGB", (W, H), R.BG), 0.55)
+        for i in range(n):
+            t = i / FPS
+            if kind == "product":
+                fr = Image.new("RGB", (W, H), R.BG)
+                d = ImageDraw.Draw(fr)
+                d.ellipse((W / 2 - 460, 620 - 460, W / 2 + 460, 620 + 460), fill=(28, 30, 38))
+                s_ = 0.55 + 0.45 * R.ease(t / 0.35)
+                p = prod.resize((int(prod.width * s_), int(prod.height * s_)), Image.LANCZOS)
+                fr.paste(p, (int((W - p.width) / 2), int(620 - p.height / 2 + math.sin(t * 3) * 10)), p)
+                y = R.big_text(fr, b["title"], 1130, size=100, stroke=0)
+                if t >= b["_price_at"]:
+                    R.big_text(fr, b["price"], y + 20, size=170, color=R.ACCENT, stroke=0, pop=1.0 + 0.2 * (1 - R.ease((t - b["_price_at"]) / 0.2)))
+                captions(fr, words, t, y=1620)
+            elif kind == "outro":
+                fr = bgo.copy()
+                y = R.big_text(fr, f"Comment {b['keyword']}", 560, size=190, color=R.ACCENT)
+                R.big_text(fr, "for the link", y + 10, size=110)
+                captions(fr, words, t, y=1400)
+            else:
+                z = z0 + (z1 - z0) * (t / max(dur, 0.1))
+                fr = fit_frame(img, z, b.get("focus", [0.5, 0.45]), b.get("fit", False))
+                top_shade(fr)
+                if b.get("text"):
+                    pop = 1.0 + 0.14 * (1 - R.ease(t / 0.2))
+                    y = R.big_text(fr, b["text"], 210, size=b.get("size", 130), pop=pop)
+                    if b.get("sub"):
+                        fnt2 = R.font(R.MONO, 46)
+                        d = ImageDraw.Draw(fr)
+                        tw = d.textlength(b["sub"], font=fnt2)
+                        d.rounded_rectangle(((W - tw) / 2 - 22, y + 18, (W + tw) / 2 + 22, y + 86), radius=12, fill=R.ACCENT)
+                        d.text(((W - tw) / 2, y + 26), b["sub"], font=fnt2, fill=R.BG)
+                if b.get("stamp") and t >= b["_stamp_at"]:
+                    stamp(fr, b["stamp"], (t - b["_stamp_at"]) / 0.18)
+                captions(fr, words, t)
+            if prev is not None and i < XF:  # crossfade from the last frame of the previous beat
+                fr = Image.blend(prev, fr, (i + 1) / (XF + 1))
+            proc.stdin.write(fr.tobytes())
+        prev = fr
+    proc.stdin.close()
+    proc.wait()
+    wav.unlink()
+    caption = sc.get("caption") or v["title"]
+    (out_dir / f"{vid}.txt").write_text(caption)
+    (out_dir / f"{vid}.voice").write_text(", ".join(sorted(USED)) + (" + music" if sc.get("music", True) else ""))
+    print(f"wrote {mp4} ({t0:.1f}s)")
+    return mp4, caption, round(t0, 1)
+
+
 def make(vid, out_dir):
     R.ensure_fonts()
     fits = {f["find"]: f for f in load_fits()["fits"]}
     vids = json.loads((ROOT / "data" / "videos.json").read_text())["videos"]
     v = next(x for x in vids if x["id"] == vid)
+    if v.get("format") == "story":
+        return make_story(v, fits, out_dir)
     segs, caption = build_script(v, fits)
 
     # voice first: it sets the timing
