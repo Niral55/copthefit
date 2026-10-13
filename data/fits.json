@@ -919,7 +919,9 @@
      "product_url": "https://www.goat.com/apparel/gucci-x-the-north-face-print-jacket-beige-ebony-0047-1fw210301xtnf-beig",
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/094/087/392/original/1301462_01.jpg.jpeg?width=750",
-     "slide": 2
+     "slide": 2,
+     "id": "cf5284",
+     "img": "images/cut/012-cf5284.png"
     },
     {
      "label": "Similar",
@@ -930,7 +932,9 @@
      "product_url": "https://www.amazon.com/dp/B07XD5CVBS",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/512iJIGjcVL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "cfb14e",
+     "img": "images/cut/012-cfb14e.png"
     },
     {
      "label": "Exact",
@@ -3197,7 +3201,9 @@
      "product_url": "https://www.amazon.com/dp/B0CWCZ5V6T",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71M5XGNlPqL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "af24ce",
+     "img": "images/cut/037-af24ce.png"
     },
     {
      "label": "Similar",
@@ -3208,7 +3214,9 @@
      "product_url": "https://www.amazon.com/dp/B0DGKRFB6V",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/81RuzhgXHpL._AC_SL1500_.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "07072c",
+     "img": "images/cut/037-07072c.png"
     }
    ],
    "posted_at": null,
