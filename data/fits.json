@@ -8074,10 +8074,11 @@
    "ig_permalink": null,
    "find": "094",
    "photo_search": "2026-10-13",
-   "photo_src": "https://media.revistagq.com/photos/6abe3e338ad08bf2f8756c91/master/w_1600%2Cc_limit/2297835869",
-   "photo_src_page": "https://www.revistagq.com/articulo/mark-wahlberg-timex-ironman-100-lap-reloj-deportivo-fotos-precio-comprar",
-   "photo_src_credit": "Louis Grasse/Getty Images via GQ España",
-   "updated": "2026-10-13T19:38:48.945Z"
+   "updated": "2026-10-13T19:38:48.945Z",
+   "photo": {
+    "credit": "Louis Grasse/Getty Images via GQ España",
+    "source_url": "https://www.revistagq.com/articulo/mark-wahlberg-timex-ironman-100-lap-reloj-deportivo-fotos-precio-comprar"
+   }
   },
   {
    "celeb": "Adam Sandler",
@@ -8484,9 +8485,10 @@
    "find": "098",
    "photo_search": "2026-10-13",
    "updated": "2026-10-13T19:39:26.891Z",
-   "photo_src": "https://www.justjared.com/wp-content/uploads/2026/07/bradley-cooper-workout-in-paris-02-428x642.jpg",
-   "photo_src_page": "https://www.justjared.com/2026/07/27/bradley-cooper-spotted-looking-so-fit-after-a-workout-in-paris/",
-   "photo_src_credit": "MEGA/GC Images via Just Jared"
+   "photo": {
+    "credit": "MEGA/GC Images via Just Jared",
+    "source_url": "https://www.justjared.com/2026/07/27/bradley-cooper-spotted-looking-so-fit-after-a-workout-in-paris/"
+   }
   },
   {
    "celeb": "Nicolas Cage",
