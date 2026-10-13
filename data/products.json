@@ -6,12 +6,13 @@
    "store": "goat.com",
    "title_raw": "Buy Gucci x The North Face Print Jacket 'Beige/Ebony' - 0047 1FW210301XTNF BEIG | GOAT",
    "brand": "",
-   "name": "",
+   "name": "Buy Gucci x The North Face Print Jacket 'Beige/Ebony'",
    "image": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/094/087/392/original/1301462_01.jpg.jpeg?width=750",
    "price": "",
    "currency": "",
    "added": "2026-10-13T05:26:06.022Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv68kqnby3iu",
