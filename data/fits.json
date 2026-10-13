@@ -3178,49 +3178,26 @@
      "price": "$81,900"
     },
     {
-     "slide": 3,
-     "label": "Similar",
-     "brand": "Tissot",
-     "name": "PRX 40mm Gold PVD (T137.410.33.021.00)",
-     "retailer": "",
-     "query": "",
-     "product_url": "https://www.tissotwatches.com/en-us/T1374103302100.html",
-     "note": "",
-     "type": "watch",
-     "image_src": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5704b2fb/product-pictures/4679ced0-3b8f-4fd9-b780-cd7b9ccadd31_T137-410-33-021-00_shadow.png",
-     "price": "$575",
-     "id": "90c534",
-     "img": "images/cut/037-90c534.png"
-    },
-    {
-     "slide": 4,
      "label": "Similar",
      "brand": "Casio",
-     "name": "G-Shock GM-2100B-3A (green dial, steel bezel)",
+     "name": "MTP-VD03G-3A Men's Standard Gold Tone Stanless Steel Green",
      "retailer": "",
      "query": "",
-     "product_url": "https://www.casio.com/us/watches/gshock/product.GM-2100B-3A/",
+     "product_url": "https://www.amazon.com/dp/B0CWCZ5V6T",
      "note": "",
-     "type": "watch",
-     "image_src": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GM/gm2/gm-2100b-3a/assets/GM-2100B-3A.png",
-     "price": "$300",
-     "id": "a9e074",
-     "img": "images/cut/037-a9e074.png"
+     "image_src": "https://m.media-amazon.com/images/I/71M5XGNlPqL._AC_SL1500_.jpg",
+     "slide": 3
     },
     {
      "label": "Similar",
-     "type": "watch",
-     "brand": "Timex",
-     "name": "Legacy 36mm Gold-Tone Fluted Bezel, Green Dial (TW2W87400)",
-     "product_url": "https://timex.com/products/timex-legacy-36mm-stainless-steel-bracelet-watch-tw2w87400",
-     "image_src": "https://timex.com/cdn/shop/files/TW2W87400.png?v=1785853070",
-     "price": "$189",
+     "brand": "SAPPHERO",
+     "name": "Men's Watch Octagonal Stainless Steel 50M Waterproof",
      "retailer": "",
      "query": "",
+     "product_url": "https://www.amazon.com/dp/B0DGKRFB6V",
      "note": "",
-     "slide": 5,
-     "id": "9aef9d",
-     "img": "images/cut/037-9aef9d.png"
+     "image_src": "https://m.media-amazon.com/images/I/81RuzhgXHpL._AC_SL1500_.jpg",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -3229,7 +3206,7 @@
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-13T20:01:47.414Z",
    "photo_options": [
     {
      "image": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-mark-ronson-wearing-audemars-piguet-royal-oak-15513ba.png?v=1789502278",
