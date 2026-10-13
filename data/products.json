@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv6ztqf8xvl7",
+   "url": "https://www.amazon.com/dp/B09GNGJW8M",
+   "store": "amazon.com",
+   "title_raw": "Amazon Essentials Men's Skinny-fit Stretch Chino Khaki Pant, Casual Business Wear",
+   "brand": "Amazon Essentials",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/61muG1K3DFL._AC_SL1500_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-13T18:07:13.412Z",
+   "enriched": null
+  },
+  {
    "id": "mv6zr2ss7nk8",
    "url": "https://www.clothbase.com/items/4d2b5b5f_brunello-cucinelli-wool-and-cashmere-bomber-jacket_brunello-cucinelli",
    "store": "clothbase.com",
