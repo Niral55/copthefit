@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv6z537bfwxd",
+   "url": "https://www.amazon.com/dp/B0DZ2W8SSJ",
+   "store": "amazon.com",
+   "title_raw": "Men's Adam Sandler 97th Hoodie Sky Blue Hooded Fleece Bomber Jacket",
+   "brand": "SJ Outerwear",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/61ygL6wLVZL._AC_SL1080_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-13T17:48:03.576Z",
+   "enriched": null
+  },
+  {
    "id": "mv6bn1pew5uk",
    "url": "https://www.farfetch.com/om/shopping/women/vivetta-bow-detail-ballet-flats-item-32280969.aspx",
    "store": "farfetch.com",
