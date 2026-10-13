@@ -954,7 +954,7 @@
   },
   {
    "find": "013",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Finn Wolfhard",
@@ -997,7 +997,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-12T17:01:21.738Z",
+   "updated": "2026-10-13T04:00:43.839Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/2256377266-765x1024.webp",
@@ -1445,7 +1445,7 @@
    "score_note": "$130 adidas general release in stock; Ant Edwards; NBA league post; 11 days old",
    "note": "The adidas product URL came from Complex's link and was not opened directly (adidas blocked the fetch). No studio image was captured. The Sneaker News gallery is a fallback: https://sneakernews.com/wp-content/uploads/2026/08/adidas-anthony-edwards-3-ae3-cold-blooded-lc5090.jpg. Media Day was Sept 28, just before the Sept 29 window.",
    "find": "019",
-   "status": "rejected",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -1466,7 +1466,7 @@
      "credit": "Bruce Kluckhohn / Imagn Images"
     }
    ],
-   "updated": "2026-10-13T02:41:17.772Z",
+   "updated": "2026-10-13T04:00:43.839Z",
    "photo": {
     "credit": "Bruce Kluckhohn / Imagn Images",
     "source_url": "https://www.vecteezy.com/editorial/sports/nba/minnesota-timberwolves-media-day-414560/minnesota-timberwolves-guard-anthony-edwards-poses-87159838"
@@ -4240,7 +4240,7 @@
    "score_note": "$110 Levi's 501 Loose at UO/Nordstrom; reigning MVP SGA; official campaign photos; Aug 3 campaign, so older than the window",
    "note": "Brand campaign, not a candid sighting. Dedupe: SGA is on file only for the Conference Finals tunnel fit (May 2026). Sources also name Baggy Barrel jeans and an Authentic PO hoodie, but not which shot shows which. The MA-1 bomber is named but its model isn't, and levi.com blocked fetching, so there's no jacket item. Image captions came from the MyFaceHunter page; I couldn't open the images themselves.",
    "find": "052",
-   "status": "rejected",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -4249,7 +4249,7 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "photo_search": "2026-10-09",
-   "updated": "2026-10-12T17:06:48.943Z",
+   "updated": "2026-10-13T04:00:43.839Z",
    "photo": {
     "credit": "Levi's / Mel Bles (via MyFaceHunter)",
     "source_url": "https://www.myfacehunter.com/2026/08/levis-keep-it-loose-fw2026-campaign-rose-shai-gilgeous-alexander.html"
@@ -4621,7 +4621,7 @@
   },
   {
    "find": "058",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Laremy Tunsil",
@@ -4699,7 +4699,7 @@
     "credit": "via NFL.com",
     "source_url": "https://www.nfl.com/news/five-best-fits-of-week-1-2025-nfl-season"
    },
-   "updated": "2026-10-13T03:26:52.294Z",
+   "updated": "2026-10-13T04:00:43.839Z",
    "ig_queue": false,
    "video": "tunnel",
    "title": "Laremy Tunsil's ALD jacket",
@@ -6153,7 +6153,7 @@
   },
   {
    "find": "077",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Harry Styles",
@@ -6216,7 +6216,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-13T03:59:35.504Z",
+   "updated": "2026-10-13T04:00:43.839Z",
    "photo_options": [
     {
      "image": "https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2026/01/Prada-x-Harry-Styles_1.jpg",
@@ -6762,7 +6762,7 @@
    "score_note": "LeBron in a shoe dropping today; China-only so resale on StockX/GOAT; AP/team scrimmage photos",
    "note": "HNHH says 'Saturday', and NBA.com dates the open scrimmage Oct 3, 2026. HNHH's lead image is from the Sept 28 media day, not the scrimmage, so don't use it. StockX listed it at $190 retail but showed an €867 buy-now price before release; recheck the price. No clean studio image was found from an approved source (Sole Retriever has one: https://images.soleretriever.com/sb/products/nike_lebron_24_greater_china_IX5105-200-1790704607533.webp). Rejected: too expensive for the average buyer.",
    "find": "082",
-   "status": "rejected",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-09",
@@ -6777,7 +6777,7 @@
     "credit": "@kicksvisionofficial",
     "source_url": ""
    },
-   "updated": "2026-10-13T02:38:53.310Z"
+   "updated": "2026-10-13T04:00:43.839Z"
   },
   {
    "celeb": "Jeremy Allen White",
