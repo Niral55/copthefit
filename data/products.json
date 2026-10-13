@@ -6,12 +6,13 @@
    "store": "vanquishe.com",
    "title_raw": "Louis Vuitton Show JHope Suit",
    "brand": "",
-   "name": "",
+   "name": "Louis Vuitton Show JHope Suit",
    "image": "https://www.vanquishe.com/wp-content/uploads/2026/06/Louis-Vuitton-Show-JHope-Suit.webp",
    "price": "172.00",
    "currency": "USD",
    "added": "2026-10-13T06:30:26.125Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv6auqr4mtwh",
