@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv69ot09ngwm",
+   "url": "https://www.amazon.com/dp/B0CWCZ5V6T",
+   "store": "amazon.com",
+   "title_raw": "Casio MTP-VD03G-3A Men's Standard Gold Tone Stanless Steel Green Dial 3-Hand Analog Watch",
+   "brand": "Casio",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/71M5XGNlPqL._AC_SL1500_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-13T05:55:33.465Z",
+   "enriched": null
+  },
+  {
    "id": "mv69cslzrvfd",
    "url": "https://www.goat.com/apparel/golf-wang-chenille-g-logo-hat-dark-brown-fw24h1025brow",
    "store": "goat.com",
