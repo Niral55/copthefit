@@ -1,20 +1,6 @@
 {
  "products": [
   {
-   "id": "mv6bn1pew5uk",
-   "url": "https://www.farfetch.com/om/shopping/women/vivetta-bow-detail-ballet-flats-item-32280969.aspx",
-   "store": "farfetch.com",
-   "title_raw": "bow-detail ballet flats",
-   "brand": "Vivetta",
-   "name": "bow-detail ballet flats",
-   "image": "https://cdn-images.farfetch-contents.com/32/28/09/69/32280969_62286538_1000.jpg?ov=true",
-   "price": "307.00",
-   "currency": "USD",
-   "added": "2026-10-13T06:50:10.658Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv6bgu03o10r",
    "url": "https://stockx.com/carhartt-wip-aaron-regular-tapered-jeans-blue-rinsed",
    "store": "stockx.com",
@@ -39,20 +25,6 @@
    "price": "",
    "currency": "",
    "added": "2026-10-13T06:44:47.903Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv6bdwa4d44n",
-   "url": "https://www.amazon.com/dp/B0F2STZLD1",
-   "store": "amazon.com",
-   "title_raw": "Men's Rayon Suit Two Pieces Festive Activities Shawl Lapel Double Breasted Buttons Jacket and Pants Set",
-   "brand": "Yaflonjaa",
-   "name": "Men's Rayon Suit Two Pieces Festive Activities Shawl Lapel",
-   "image": "https://m.media-amazon.com/images/I/61pKJYyoFuL._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-13T06:43:03.724Z",
    "enriched": "basic",
    "category": "clothing"
   },
