@@ -8239,10 +8239,11 @@
    "ig_permalink": null,
    "find": "096",
    "photo_search": "2026-10-13",
-   "photo_src": "https://media.gq.com.mx/photos/67a637d7e1ae2a23e511f9d9/master/w_1600%2Cc_limit/Kendrick%2520Lamar_conferencia_Super_Bowl.jpg",
-   "photo_src_page": "https://www.gq.com.mx/articulo/kendrick-lamar-tenis-unaffected-x-asics-gel-kayano-20-obsidian-grey-caracteristicas-precio-disponibilidad",
-   "photo_src_credit": "Getty Images via GQ México",
-   "updated": "2026-10-13T17:57:53.100Z"
+   "updated": "2026-10-13T17:57:53.100Z",
+   "photo": {
+    "credit": "Getty Images via GQ México",
+    "source_url": "https://www.gq.com.mx/articulo/kendrick-lamar-tenis-unaffected-x-asics-gel-kayano-20-obsidian-grey-caracteristicas-precio-disponibilidad"
+   }
   },
   {
    "celeb": "Ben Affleck",
