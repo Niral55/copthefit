@@ -175,6 +175,7 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
   .it .fields { grid-template-columns: 1fr; }
   .three { grid-template-columns: 1fr; }
 }
+.drop { outline: 2px dashed var(--accent, #8b93ff) !important; outline-offset: 3px; background-color: rgba(139,147,255,.08) !important; }
 </style>
 </head>
 <body>
@@ -622,6 +623,9 @@ function renderEditor() {
   if ($("#goCfg")) $("#goCfg").onclick = e => { e.preventDefault(); if (confirmLeave()) openCfg(); };
   $("#back").onclick = () => { if (confirmLeave()) closeEditor(); };
   $("#upPhoto").onclick = () => pickFile(f => setPhoto(f));
+  const coverUrl = url => { DRAFT.photo_src = url; DRAFT.photo_src_page = ""; DRAFT.photo_src_credit = ""; delete DRAFT.photo_src_failed; PICKED_COVER = true; DIRTY = true; readForm(); renderEditor(); DIRTY = true; flash("Cover set from that image. It downloads when you save.", "ok"); };
+  dropZone($("#photoBox"), f => setPhoto(f), coverUrl);
+  dropZone($("#upPhoto"), f => setPhoto(f), coverUrl);
   if ($("#clearPins")) $("#clearPins").onclick = () => { DRAFT.items.forEach(it => delete it.pin); renderPins(); };
   $("#editView").querySelectorAll("[data-opt]").forEach(b => b.onclick = () => {
     const o = DRAFT.photo_options[+b.dataset.opt];
@@ -682,7 +686,13 @@ function renderItems() {
   $("#items").querySelectorAll(".it").forEach(row => {
     const i = +row.dataset.i;
     row.querySelectorAll("[data-k]").forEach(el => el.addEventListener("input", () => { DRAFT.items[i][el.dataset.k] = el.value; if (el.dataset.k === "_link") $("#af" + i).innerHTML = itemAff(el.value); renderReady(); }));
-    row.querySelector("[data-up]").onclick = () => pickFile(f => toB64(f, "image/png").then(p => { PENDING.items.set(DRAFT.items[i], p); renderItems(); renderReady(); }));
+    const upItem = f => toB64(f, "image/png").then(p => { PENDING.items.set(DRAFT.items[i], p); renderItems(); renderReady(); });
+    row.querySelector("[data-up]").onclick = () => pickFile(upItem);
+    dropZone(row.querySelector("[data-up]"), upItem, url => {
+      const it = DRAFT.items[i];
+      if (it.img) it.image_replace = url; else { it.image_src = url; delete it.image_fetch; }
+      DIRTY = true; flash("Product image set from that link. It downloads and gets cut out when you save.", "ok"); renderReady();
+    });
     row.querySelectorAll("[data-mv]").forEach(b => b.onclick = () => { const j = i + +b.dataset.mv; [DRAFT.items[i], DRAFT.items[j]] = [DRAFT.items[j], DRAFT.items[i]]; renderItems(); renderPins(); });
     row.querySelector("[data-rm]").onclick = () => { PENDING.items.delete(DRAFT.items[i]); DRAFT.items.splice(i, 1); renderItems(); renderPins(); renderReady(); };
   });
@@ -1151,6 +1161,26 @@ function renderCfg() {
 }
 
 /* ---------- images ---------- */
+// Drag and drop: files from the computer, or an image dragged in from another browser tab (its web address).
+function dropZone(el, onFiles, onUrl, multi) {
+  if (!el) return;
+  let depth = 0;
+  el.addEventListener("dragenter", e => { e.preventDefault(); depth++; el.classList.add("drop"); });
+  el.addEventListener("dragover", e => { e.preventDefault(); e.dataTransfer.dropEffect = "copy"; });
+  el.addEventListener("dragleave", () => { if (--depth <= 0) { depth = 0; el.classList.remove("drop"); } });
+  el.addEventListener("drop", e => {
+    e.preventDefault(); e.stopPropagation(); depth = 0; el.classList.remove("drop");
+    const files = [...(e.dataTransfer.files || [])].filter(f => f.type.startsWith("image/"));
+    if (files.length) return onFiles(multi ? files : files[0]);
+    const html = e.dataTransfer.getData("text/html");
+    const url = (html.match(/<img[^>]+src="([^"]+)"/i) || [])[1] || (e.dataTransfer.getData("text/uri-list") || e.dataTransfer.getData("text/plain") || "").split("\n")[0].trim();
+    if (/^https?:\/\//.test(url) && onUrl) return onUrl(url.replace(/&amp;/g, "&"));
+    flash("That wasn't an image. Drop an image file, or drag a picture from another tab.", "err");
+  });
+}
+window.addEventListener("dragover", e => e.preventDefault());  // a missed drop shouldn't open the image in place of the admin page
+window.addEventListener("drop", e => e.preventDefault());
+
 function pickFile(cb) {
   const inp = $("#filePick");
   inp.value = "";
@@ -1337,6 +1367,7 @@ async function load() {
 
 $("#q").addEventListener("input", renderList);
 $("#editView").addEventListener("input", () => { DIRTY = true; });
+dropZone($("#bulkCovers"), files => bulkCovers(files), null, true);
 $("#bulkCovers").onclick = () => { const inp = $("#bulkPick"); inp.value = ""; inp.onchange = () => { if (inp.files.length) bulkCovers([...inp.files]); }; inp.click(); };
 $("#newPost").onclick = () => openEditor(null);
 $("#findLeads").onclick = () => { if (!DOC) { flash("Connect GitHub first.", "err"); return; } $("#leadsDlg").returnValue = ""; $("#leadsDlg").showModal(); };
