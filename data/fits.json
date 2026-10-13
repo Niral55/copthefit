@@ -8318,7 +8318,9 @@
      "note": "",
      "price": "$3777.0",
      "image_src": "https://cdn.clothbase.com/uploads/0ac364ad-5951-48ad-b8f3-9ad8a292b3dc/P00681205.jpg",
-     "slide": 2
+     "slide": 2,
+     "id": "4041c2",
+     "img": "images/cut/097-4041c2.png"
     },
     {
      "label": "Similar",
@@ -8329,7 +8331,9 @@
      "product_url": "https://www.amazon.com/dp/B09GNGJW8M",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/61muG1K3DFL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "abf92b",
+     "img": "images/cut/097-abf92b.png"
     },
     {
      "label": "Exact",
@@ -8387,10 +8391,11 @@
    "ig_permalink": null,
    "find": "097",
    "photo_search": "2026-10-13",
-   "photo_src": "https://www.highsnobiety.com/static-assets/dato/1665251513-ben-affleck-air-jordan-1-mid-outfit1.jpg",
-   "photo_src_page": "https://www.highsnobiety.com/p/ben-affleck-air-jordan-1-mid-sneakers-outfit/",
-   "photo_src_credit": "Backgrid via Highsnobiety",
-   "updated": "2026-10-13T18:08:07.312Z"
+   "updated": "2026-10-13T18:08:07.312Z",
+   "photo": {
+    "credit": "Backgrid via Highsnobiety",
+    "source_url": "https://www.highsnobiety.com/p/ben-affleck-air-jordan-1-mid-sneakers-outfit/"
+   }
   },
   {
    "celeb": "Bradley Cooper",
