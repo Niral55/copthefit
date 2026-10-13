@@ -650,7 +650,7 @@ function renderEditor() {
     if (prodPrice(p)) it.price = prodPrice(p);
     if (p.image) it.image_src = p.image;  // the build cuts out the background
     DRAFT.items.push(it); DIRTY = true; renderItems(); renderPins(); renderReady();
-    flash("Added from your saved products. Check Exact/Similar, then save. It leaves your saved list when you save.", "ok");
+    save("save", { stay: true, note: `Added ${esc((it.brand ? it.brand + " " : "") + it.name)} and saved. It's off your saved products list; the product photo is ready in about 3 minutes.` });  // saved right away (keeps the post's status) and removed from your saved products
   };
   $("#addItem").onclick = () => { readForm(); if (DRAFT.items.length >= 8) return; DRAFT.items.push({ label: "Similar", brand: "", name: "", retailer: "", query: "", product_url: "", note: "", _link: "" }); renderItems(); renderReady(); };
   $("#save").onclick = () => save("save");
@@ -1285,7 +1285,7 @@ function keepBackgroundChanges(latest, fresh, action) {
   });
 }
 
-async function save(action) {
+async function save(action, opts = {}) {
   readForm();
   const d = DRAFT;
   const busy = on => $("#editView").querySelectorAll(".actions button").forEach(b => b.disabled = on);
@@ -1351,8 +1351,9 @@ async function save(action) {
           : `Saved and moved to the front of the Instagram queue, but starting the post failed: ${esc(e.message)}`;
       }
     }
-    flash(note, "ok");
+    flash(opts.note || note, "ok");
     closeEditor();
+    if (opts.stay) { openEditor(find); return; }
     const saved = DOC.fits.find(x => x.find === find);
     if (saved && !STAGES.find(x => x.id === TAB).test(saved)) { TAB = "all"; renderList(); }
   } catch (e) {
