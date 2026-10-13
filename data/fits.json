@@ -8098,6 +8098,28 @@
    ],
    "items": [
     {
+     "label": "Similar",
+     "brand": "SJ Outerwear",
+     "name": "Men's Adam Sandler 97th Hoodie Sky Blue Hooded Fleece",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0DZ2W8SSJ",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/61ygL6wLVZL._AC_SL1080_.jpg",
+     "slide": 2
+    },
+    {
+     "label": "Similar",
+     "brand": "AND1",
+     "name": "Men's Home Court Advantage Short",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0GYZZHPGW",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/71LwsadtuPL._AC_SL1500_.jpg",
+     "slide": 3
+    },
+    {
      "label": "Exact",
      "type": "sneakers",
      "brand": "Under Armour",
@@ -8108,7 +8130,7 @@
      "image_src": "https://media.gq.com/photos/67c5ff2d2fa1fdba7a12a142/3:4/w_748%2Cc_limit/under-armour-curry.jpg",
      "price": "$64",
      "note": "Price varies by size; marketplace fee included in the displayed starting price.",
-     "slide": 2,
+     "slide": 4,
      "id": "09ce5d",
      "img": "images/cut/095-09ce5d.png"
     }
@@ -8153,7 +8175,7 @@
    "ig_permalink": null,
    "find": "095",
    "photo_search": "2026-10-13",
-   "updated": "2026-10-13T17:55:45.849Z",
+   "updated": "2026-10-13T18:03:24.139Z",
    "photo": {
     "credit": "Getty Images via GQ México",
     "source_url": "https://www.gq.com.mx/articulo/oscar-2025-tenis-de-adam-sandler-under-armour-stephen-curry-11"
