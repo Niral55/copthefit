@@ -6,12 +6,13 @@
    "store": "farfetch.com",
    "title_raw": "bow-detail ballet flats",
    "brand": "Vivetta",
-   "name": "",
+   "name": "bow-detail ballet flats",
    "image": "https://cdn-images.farfetch-contents.com/32/28/09/69/32280969_62286538_1000.jpg?ov=true",
    "price": "307.00",
    "currency": "USD",
    "added": "2026-10-13T06:50:10.658Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv6bgu03o10r",
