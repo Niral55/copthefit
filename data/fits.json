@@ -249,7 +249,7 @@
    "score_note": "Exact model ID by Esquire Korea, ~$65; global star with a dated event",
    "note": "Video: Celebs who wear a $100 G-Shock. Esquire Korea IDs it as the DW-5600UE-1DR (Korean-market code). In the US, Casio sells the UE-1 under the DW5600E-1V listing, and Walmart reviewers report receiving the UE-1. V is in the G-Central photo too, but he wore a Cartier that day, so crop to RM. I couldn't open the images to confirm the wrist is visible.",
    "find": "003",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-11",
@@ -264,7 +264,8 @@
    },
    "video": "gshock",
    "title": "RM's army-exit G-Shock",
-   "subtitle": "Leaving military service"
+   "subtitle": "Leaving military service",
+   "updated": "2026-10-13T19:34:07.189Z"
   },
   {
    "celeb": "V (Kim Taehyung, BTS)",
@@ -5203,7 +5204,7 @@
    "score_note": "Exact style code, $229 on StockX; known veteran; only one image.",
    "note": "Video: Tunnel fits ranked. StockX Buy Now is $229 (retail $150; last sale $377). The same style code is listed as 'Nitro' on GOAT and some blogs, and StockX calls it 'Better With Time'. The image_src is GOAT's product shot, because StockX exposed no image. The exact game date isn't in the source. The only photo is Sole Retriever's landscape crop. Could not open it; check that the shoes are visible.",
    "find": "061",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-11",
@@ -5218,7 +5219,8 @@
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-8-best-tunnel-fits"
    },
    "title": "Khalil Mack's AJ1 Lows",
-   "subtitle": "Chargers game arrival"
+   "subtitle": "Chargers game arrival",
+   "updated": "2026-10-13T19:34:07.189Z"
   },
   {
    "celeb": "Stephon Castle",
@@ -8169,7 +8171,7 @@
    },
    "score_note": "Exact affordable item available; recognizable actor or artist; editorial photos; evergreen story.",
    "note": "Video hook: Everyone dressed for the red carpet. Sandler dressed for overtime. StockX adult SKU 3026617-300: lowest ask $57, $64 with marketplace fee; size 10 listing $115/$122 with fee. Do not link the GS model 3027829-300. Both photos are from the Oscars ceremony; the GQ US hero is a collage and was excluded.",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8179,7 +8181,7 @@
    "ig_permalink": null,
    "find": "095",
    "photo_search": "2026-10-13",
-   "updated": "2026-10-13T18:03:24.139Z",
+   "updated": "2026-10-13T19:34:07.189Z",
    "photo": {
     "credit": "Getty Images via GQ México",
     "source_url": "https://www.gq.com.mx/articulo/oscar-2025-tenis-de-adam-sandler-under-armour-stephen-curry-11"
@@ -8268,7 +8270,7 @@
    },
    "score_note": "Exact affordable item available; recognizable actor or artist; editorial photos; evergreen story.",
    "note": "Video hook: Look closer at Kendrick’s shoes. Where are the laces? StockX lowest ask $165, $175 including marketplace fee; some sizes can exceed the affordable target, so recheck the intended size before making a price claim. Two different seated press-conference photographs show the shoes.",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8278,7 +8280,7 @@
    "ig_permalink": null,
    "find": "096",
    "photo_search": "2026-10-13",
-   "updated": "2026-10-13T18:02:46.067Z",
+   "updated": "2026-10-13T19:34:07.189Z",
    "photo": {
     "credit": "Getty Images via GQ México",
     "source_url": "https://www.gq.com.mx/articulo/kendrick-lamar-tenis-unaffected-x-asics-gel-kayano-20-obsidian-grey-caracteristicas-precio-disponibilidad"
@@ -8381,7 +8383,7 @@
    },
    "score_note": "Exact affordable item available; recognizable actor or artist; editorial photos; evergreen story.",
    "note": "Video hook: Follow the coffee cup down to the mint Jordans. Highsnobiety dates the school run October 7, 2022; both photographs show the same blue jacket/trousers. StockX product page displayed $64 lowest ask in the available indexed view; recheck before a price-focused video.",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8391,7 +8393,7 @@
    "ig_permalink": null,
    "find": "097",
    "photo_search": "2026-10-13",
-   "updated": "2026-10-13T18:08:07.312Z",
+   "updated": "2026-10-13T19:34:07.189Z",
    "photo": {
     "credit": "Backgrid via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/ben-affleck-air-jordan-1-mid-sneakers-outfit/"
@@ -8467,7 +8469,7 @@
    },
    "score_note": "Exact affordable item available; recognizable actor or artist; editorial photos; evergreen story.",
    "note": "Video hook: These are Jordans, but probably not the Jordans you expected. Exact adult SKU HJ6777-018; not the Panda HJ6777-001 or children’s versions. StockX lowest ask $87/$94 including marketplace fee; original retail $115. Clean side-profile product photograph opened on the matching GOAT product page.",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8476,7 +8478,8 @@
    "ig_media_id": null,
    "ig_permalink": null,
    "find": "098",
-   "photo_search": "2026-10-13"
+   "photo_search": "2026-10-13",
+   "updated": "2026-10-13T19:34:07.189Z"
   },
   {
    "celeb": "Nicolas Cage",
@@ -8684,7 +8687,7 @@
    "updated": "2026-10-13T19:31:37.602Z"
   },
   {
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-13",
@@ -8765,7 +8768,7 @@
    "photo_src": "https://www.vice.com/wp-content/uploads/sites/2/2020/05/1590579491313-ClickNM_Paul_Mescal_3831321.jpeg",
    "photo_src_page": "https://www.vice.com/en/article/paul-mescal-shorts-gin-tin-summer-energy/",
    "photo_src_credit": "Click News and Media via VICE",
-   "updated": "2026-10-13T19:33:31.107Z"
+   "updated": "2026-10-13T19:34:07.189Z"
   }
  ]
 }
