@@ -142,7 +142,7 @@ def fetch_missing(doc):
     import requests
     fails = []
     for f in doc["fits"]:
-        if f["status"] not in ("approved", "review"):
+        if f["status"] not in ("approved", "review", "rejected"):  # unpublished too, so they're ready to restore
             continue
         for it in f["items"]:
             key = f"{f['find']}-{it['slide']}"
