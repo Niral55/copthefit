@@ -301,7 +301,7 @@ def main():
     (DIST / "robots.txt").write_text(f"User-agent: *\nDisallow: /admin.html\n\nSitemap: {site}/sitemap.xml\n")
     (DIST / "fits.json").write_text(dump(public))
     shutil.copy(ROOT / "templates" / "admin.html", DIST / "admin.html")
-    for icon in ("favicon.svg", "favicon-32.png", "apple-touch-icon.png"):
+    for icon in ("favicon.svg", "favicon-32.png", "apple-touch-icon.png", "admin-favicon.svg", "admin-favicon-32.png", "admin-apple-touch-icon.png"):
         shutil.copy(ROOT / "assets" / icon, DIST / icon)
     shutil.copy(ROOT / "assets" / "favicon-32.png", DIST / "favicon.ico")  # browsers that ask for /favicon.ico
     (DIST / ".nojekyll").write_text("")
