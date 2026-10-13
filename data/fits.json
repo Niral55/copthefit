@@ -1139,6 +1139,19 @@
      "note": "",
      "type": "accessory",
      "image_src": "https://m.media-amazon.com/images/I/61owjQSkL4L._AC_SL1000_.jpg"
+    },
+    {
+     "slide": 4,
+     "label": "Exact",
+     "brand": "adidas",
+     "name": "Essentials Single Jersey Tapered Open Hem 3-Stripes Pants",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.adidas.com/us/essentials-single-jersey-tapered-open-hem-3-stripes-pants/GK8997.html",
+     "note": "",
+     "type": "clothing",
+     "price": "$45",
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/373f2d919a9f4564be314a0fd5d98603_9366/Essentials_Single_Jersey_Tapered_Open_Hem_3-Stripes_Pants_Blue_GK8997_21_model.jpg"
     }
    ],
    "photo_options": [
@@ -1183,7 +1196,7 @@
     "credit": "RMBI/LESE / BACKGRID via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
    },
-   "updated": "2026-10-13T19:53:12.483Z",
+   "updated": "2026-10-13T19:53:34.552Z",
    "title": "Austin Butler's Sambas",
    "subtitle": "Spotted in Malibu"
   },
