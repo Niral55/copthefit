@@ -1,20 +1,6 @@
 {
  "products": [
   {
-   "id": "mv6zkpy632u8",
-   "url": "https://www.amazon.com/dp/B0007CKNT4",
-   "store": "amazon.com",
-   "title_raw": "Wrangler Mens Relaxed Fit JeanJeans",
-   "brand": "Wrangler",
-   "name": "Mens Relaxed Fit JeanJeans",
-   "image": "https://m.media-amazon.com/images/I/71imR03CFrL._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-13T18:00:12.894Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv6zdnecvl81",
    "url": "https://www.amazon.com/dp/B0GYZ9VMGH",
    "store": "amazon.com",
