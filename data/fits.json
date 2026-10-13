@@ -2356,14 +2356,13 @@
      "brand": "Nike",
      "name": "NikeCourt Advantage Dri-FIT 8\" Tennis Shorts (White)",
      "product_url": "https://www.nike.com/t/nikecourt-advantage-mens-dri-fit-8-tennis-shorts-cCYH6Bt5/FZ9322-100",
-     "image_src": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ed75a93a-457b-4075-9c7c-f3224ca76da8/M+NKCT+DF+ADVTG+8IN+SHORT.png",
      "price": "$75",
      "retailer": "",
      "query": "",
      "note": "",
      "slide": 6,
      "id": "01fffa",
-     "img": "images/cut/029-01fffa.png"
+     "image_fetch": "failed 2026-10-13: store photo shows a model, not the product alone — upload a product-only image"
     }
    ],
    "posted_at": null,
@@ -4903,14 +4902,13 @@
      "brand": "Uniqlo",
      "name": "Smart Ankle Pants (Black)",
      "product_url": "https://www.uniqlo.com/us/en/products/E482886-000/00?colorDisplayCode=09",
-     "image_src": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/482886/item/usgoods_09_482886_3x4.jpg",
      "price": "$29.90",
      "retailer": "",
      "query": "",
      "note": "",
      "slide": 3,
      "id": "edbd99",
-     "img": "images/cut/057-edbd99.png"
+     "image_fetch": "failed 2026-10-13: store photo shows a model, not the product alone — upload a product-only image"
     }
    ],
    "posted_at": null,
@@ -5064,14 +5062,13 @@
      "brand": "adidas",
      "name": "Firebird Track Jacket (Night Indigo)",
      "product_url": "https://www.adidas.com/us/firebird-track-jacket/KD8313.html",
-     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/de633634a4994c578db2cbbd8fb9dbd4_9366/Firebird_Track_Jacket_Blue_KD8313_21_model.jpg",
      "price": "$80",
      "retailer": "",
      "query": "",
      "note": "",
      "slide": 3,
      "id": "564f4b",
-     "img": "images/cut/059-564f4b.png"
+     "image_fetch": "failed 2026-10-13: store photo shows a model, not the product alone — upload a product-only image"
     }
    ],
    "posted_at": null,
@@ -6082,14 +6079,13 @@
      "brand": "Levi's",
      "name": "501 Original Jeans (Light Stonewash)",
      "product_url": "https://www.levi.com/US/en_US/clothing/men/jeans/straight/501-original-mens-jeans/p/005010134",
-     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0134_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=2000&hei=2500",
      "price": "$50.97",
      "retailer": "",
      "query": "",
      "note": "",
      "slide": 4,
      "id": "50abb5",
-     "img": "images/cut/072-50abb5.png"
+     "image_fetch": "failed 2026-10-13: store photo shows a model, not the product alone — upload a product-only image"
     }
    ],
    "posted_at": null,
