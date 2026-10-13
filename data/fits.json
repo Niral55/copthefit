@@ -1177,6 +1177,28 @@
    "items": [
     {
      "label": "Exact",
+     "brand": "Gucci",
+     "name": "Gucci x adidas Trefoil Print Jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/gucci-x-adidas-trefoil-print-jacket-green-ivory",
+     "note": "",
+     "price": "$580",
+     "slide": 2
+    },
+    {
+     "label": "Exact",
+     "brand": "Adidas",
+     "name": "SKATEBOARDING CHINO PANTS",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.adidas.com/us/skateboarding-chino-pants-plus/KC6321.html",
+     "note": "",
+     "price": "$60",
+     "slide": 3
+    },
+    {
+     "label": "Exact",
      "type": "sneakers",
      "brand": "adidas",
      "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
@@ -1186,7 +1208,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 2,
+     "slide": 4,
      "id": "55698a",
      "img": "images/cut/016-55698a.png"
     }
@@ -1228,7 +1250,7 @@
     "credit": "GQ via Style Girlfriend",
     "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
    },
-   "updated": "2026-10-12T16:48:56.816Z",
+   "updated": "2026-10-13T04:25:05.684Z",
    "title": "Paul Mescal's white Sambas",
    "subtitle": "At a fashion show"
   },
