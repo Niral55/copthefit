@@ -1114,22 +1114,7 @@
    ],
    "items": [
     {
-     "label": "Exact",
-     "type": "sneakers",
-     "brand": "adidas",
-     "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
-     "product_url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
-     "retailer": "",
-     "query": "",
-     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
-     "price": "$71",
-     "note": "",
      "slide": 2,
-     "id": "2ef185",
-     "img": "images/cut/015-2ef185.png"
-    },
-    {
-     "slide": 3,
      "label": "Similar",
      "brand": "e4Hats.com",
      "name": "NASA Logo Embroidered Patched Mesh Back Cap",
@@ -1141,7 +1126,7 @@
      "image_src": "https://m.media-amazon.com/images/I/61owjQSkL4L._AC_SL1000_.jpg"
     },
     {
-     "slide": 4,
+     "slide": 3,
      "label": "Exact",
      "brand": "adidas",
      "name": "Essentials Single Jersey Tapered Open Hem 3-Stripes Pants",
@@ -1152,6 +1137,21 @@
      "type": "clothing",
      "price": "$45",
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/373f2d919a9f4564be314a0fd5d98603_9366/Essentials_Single_Jersey_Tapered_Open_Hem_3-Stripes_Pants_Blue_GK8997_21_model.jpg"
+    },
+    {
+     "label": "Exact",
+     "type": "sneakers",
+     "brand": "adidas",
+     "name": "Samba OG 'Cloud White / Core Black / Gum' (B75806)",
+     "product_url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
+     "retailer": "",
+     "query": "",
+     "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
+     "price": "$71",
+     "note": "",
+     "slide": 4,
+     "id": "2ef185",
+     "img": "images/cut/015-2ef185.png"
     }
    ],
    "photo_options": [
@@ -1196,7 +1196,7 @@
     "credit": "RMBI/LESE / BACKGRID via Highsnobiety",
     "source_url": "https://www.highsnobiety.com/p/austin-butler-adidas-samba"
    },
-   "updated": "2026-10-13T19:53:34.552Z",
+   "updated": "2026-10-13T19:53:47.598Z",
    "title": "Austin Butler's Sambas",
    "subtitle": "Spotted in Malibu"
   },
