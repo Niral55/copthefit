@@ -1966,7 +1966,7 @@
   },
   {
    "find": "026",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Callum Turner",
@@ -2000,7 +2000,11 @@
      "id": "2ac7c1",
      "img": "images/cut/026-2ac7c1.png",
      "type": "sneakers",
-     "price": "$154"
+     "price": "$154",
+     "pin": [
+      0.405,
+      0.8756
+     ]
     }
    ],
    "posted_at": null,
@@ -2009,7 +2013,7 @@
    "photo_source": "https://gqhongkong.com/en/uncategorized/7-famous-guy-approved-sneakers-that-got-our-attention-in-2026",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-12T17:04:14.611Z",
+   "updated": "2026-10-13T03:31:24.111Z",
    "photo_options": [
     {
      "image": "http://gqhongkong.com/wp-content/uploads/2026/08/2285812880-683x1024.webp",
