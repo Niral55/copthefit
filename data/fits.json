@@ -4889,29 +4889,16 @@
    "note": "Brands not named in the source — all picks are Similar.\nFill Oct 13: Cam Jordan wore a gold and black checkered jacket with black pants (ABC11 Week 4 arrivals); no brands are named. I couldn't find a real branded gold/black check jacket on a fetchable store page (Amazon can't be fetched from here), so the jacket Similar is unchanged. The Uniqlo $29.90 price is a sale price.",
    "items": [
     {
-     "slide": 2,
-     "label": "Similar",
-     "brand": "",
-     "name": "Black and gold check jacket",
-     "retailer": "amazon",
-     "query": "men's black gold checkered jacket",
-     "product_url": "",
-     "note": "",
-     "type": "clothing"
-    },
-    {
-     "label": "Similar",
-     "type": "clothing",
-     "brand": "Uniqlo",
-     "name": "Smart Ankle Pants (Black)",
-     "product_url": "https://www.uniqlo.com/us/en/products/E482886-000/00?colorDisplayCode=09",
-     "price": "$29.90",
+     "label": "Exact",
+     "brand": "Andersson Bell",
+     "name": "Patchwork Zip-Up Jacket",
      "retailer": "",
      "query": "",
+     "product_url": "https://www.fwrd.com/product-andersson-bell-patchwork-zipup-jacket-in-multicolor/ANBF-MO9/",
      "note": "",
-     "slide": 3,
-     "id": "edbd99",
-     "image_fetch": "failed 2026-10-13: store photo shows a model, not the product alone — upload a product-only image"
+     "price": "$257",
+     "image_src": "https://is4.fwrdassets.com/images/p/fw/p/ANBF-MO9_V1.jpg",
+     "slide": 2
     }
    ],
    "posted_at": null,
@@ -4930,7 +4917,7 @@
    "photo": {
     "credit": "@New Orleans Saints Youtube"
    },
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-13T19:44:45.534Z",
    "ig_queue": false,
    "video": "tunnel",
    "title": "Cam Jordan's Saints-colors fit",
