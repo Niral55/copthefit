@@ -1185,8 +1185,19 @@
      "note": "",
      "price": "$580",
      "slide": 2,
-     "id": "d71959",
-     "img": "images/cut/016-d71959.png"
+     "img": "images/cut/016-d71959.png",
+     "id": "d71959"
+    },
+    {
+     "label": "Similar",
+     "brand": "Gucci",
+     "name": "Gucci x adidas Cotton Jersey T-Shirt",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/gucci-x-adidas-cotton-jersey-t-shirt-white-red?country=US&currencyCode=USD&size=M&utm_source=google&utm_medium=cpc&utm_campaign=verified_pmax_apparel_highcm_new_us&utm_campaignid=24218941888&content=&keyword=&utm_content=6744862654&gad_source=1&gad_campaignid=24207991827&gbraid=0AAAAADePu3DONd24sVwlRhETUnMUmgRRr&gclid=CjwKCAjwirLWBhBBEiwAlItbEqLrChGsR9Gl310Qaa77gjuZiMhvlit1iC4ktjszTh4Y3kFFVAGHhxoCc1EQAvD_BwE",
+     "note": "",
+     "price": "$587",
+     "slide": 3
     },
     {
      "label": "Exact",
@@ -1197,9 +1208,9 @@
      "product_url": "https://www.adidas.com/us/skateboarding-chino-pants-plus/KC6321.html",
      "note": "",
      "price": "$60",
-     "slide": 3,
-     "id": "02aa4d",
-     "img": "images/cut/016-02aa4d.png"
+     "slide": 4,
+     "img": "images/cut/016-02aa4d.png",
+     "id": "02aa4d"
     },
     {
      "label": "Exact",
@@ -1212,7 +1223,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/577/109/original/437050_01.jpg.jpeg?width=750",
      "price": "$71",
      "note": "",
-     "slide": 4,
+     "slide": 5,
      "id": "55698a",
      "img": "images/cut/016-55698a.png"
     }
@@ -1254,7 +1265,7 @@
     "credit": "GQ via Style Girlfriend",
     "source_url": "https://stylegirlfriend.com/samba-outfit-men/"
    },
-   "updated": "2026-10-13T04:25:05.684Z",
+   "updated": "2026-10-13T04:27:36.880Z",
    "title": "Paul Mescal's white Sambas",
    "subtitle": "At a fashion show"
   },
