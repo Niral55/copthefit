@@ -1353,7 +1353,9 @@
      "product_url": "https://www.amazon.com/GAP-Denim-Jacket-Black-Large/dp/B09R2KPNGG/ref=sr_1_1?crid=AHXWHY1Z3VK3&dib=eyJ2IjoiMSJ9.p6qa70wDk4vjBtBY4rNCq3HIC4pHCVZt5SCgJFY_diwG33wouvwgXZIIp-RfZmIkboIfmY522azAdNwqiCwJT6ikf2_Ylt89ns37JnpmpPzZk9m5Yn4XdRW9DRii9P5FJXuLWN0iHBQuBVtBtgY5K-WxWA45VcDE8oQWadMdBDT__0ZOcobg8Gd8c9mCkpVyZSBxELz_KjzPj6x5tdykHb-C7JKw6RKNcyktMcfsGjjf7l6FxuxAweiOfA0pIO1hDjpv_-CcL86tSQwQ1O_1xm54_H-ItdASS7mnHOPO-U0.MXXj-FH3BWHWj99jY6pqqT1EajQ8DgYYx_9miBUfNBs&dib_tag=se&keywords=gap%2Bmen%27s%2BMid-wash%2Bdenim%2Bjacket%2Boversized&qid=1791864971&sprefix=gap%2Bmen%27s%2Bmid-wash%2Bdenim%2Bjacket%2Boversized%2Caps%2C106&sr=8-1&th=1&psc=1",
      "note": "",
      "type": "clothing",
-     "price": "$68"
+     "price": "$68",
+     "id": "11fb57",
+     "img": "images/cut/018-11fb57.png"
     },
     {
      "slide": 4,
@@ -1365,7 +1367,9 @@
      "product_url": "https://www.amazon.com/GAP-Baggy-Denim-Medium-40X30/dp/B0DP3PPR16/ref=sr_1_8?dib=eyJ2IjoiMSJ9.fkk0V2TngstPlbkcIYT-XuZ_sdvYH7Vb-eK_HEo7pQtpS-NnC9cF7348JWm6P6bRcK-38Gdy2602zAXnKm7Uu8aNZZB5pBm3spS-b4WSeTZRKCtBHgAUdS1zAY9FLOq1EPYoZT-1kEp3n5W2GbaXGNwrFtmjSY_t4btsMXF6u1-4s51HXSkQ36SOOu5ucx3eOQM771OaTfs1FnTP5arzrtml_xhLXEIBP6lhY_8OCsC3_WXCra7A6gK4QIqfta2d-rAOb4MQU2fmEFbh9Y2vNVAV6EktXW2H7IbM2uHTINE.Lnz9I9ubqoAwAPi3t0jJS7agNOD5WgWnx-8CL_Gtz3M&dib_tag=se&keywords=men%27s%2Bmid%2Bwash%2Bstraight%2Bjeans%2Boversized&qid=1791864917&sr=8-8&th=1&psc=1",
      "note": "",
      "type": "clothing",
-     "price": "$80"
+     "price": "$80",
+     "id": "fe86cb",
+     "img": "images/cut/018-fe86cb.png"
     }
    ],
    "posted_at": null,
