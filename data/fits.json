@@ -1240,7 +1240,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 6
+     "slide": 6,
+     "id": "6e95b5",
+     "img": "images/cut/016-6e95b5.png"
     }
    ],
    "photo_options": [
@@ -3891,13 +3893,12 @@
      "image_src": "https://i.ebayimg.com/images/g/qT0AAeSwoi5qc4qn/s-l1600.webp",
      "id": "9fa28c",
      "img": "images/cut/046-9fa28c.png",
-     "image_replace_failed": "2026-10-09: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
+     "image_replace_failed": "2026-10-13: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea",
      "type": "watch",
      "pin": [
       0.1381,
       0.8154
-     ],
-     "image_replace": "https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-38-co-axial-chronometer-chronograph-38-mm-32415385060001-afc962.png?w=1024"
+     ]
     },
     {
      "slide": 3,
@@ -3922,7 +3923,9 @@
      "retailer": "",
      "query": "",
      "note": "",
-     "slide": 4
+     "slide": 4,
+     "id": "ffe0bb",
+     "img": "images/cut/046-ffe0bb.png"
     }
    ],
    "posted_at": null,
