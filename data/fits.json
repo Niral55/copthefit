@@ -9015,6 +9015,29 @@
      "slide": 2,
      "id": "5fc585",
      "img": "images/cut/103-5fc585.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "drew house",
+     "name": "plush hooded puffer jacket lavender",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/drew-house-plush-hooded-puffer-jacket-lavender",
+     "note": "",
+     "price": "$383",
+     "image_src": "https://images.stockx.com/images/drew-house-plush-hooded-puffer-jacket-lavender.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1671551172",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "",
+     "name": "Baggy Jean",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.abercrombie.com/shop/us/p/baggy-jean-53267822",
+     "note": "",
+     "image_src": "https://img.abercrombie.com/is/image/anf/KIC_131-3165-2552-280_prod1?policy=product-extra-large",
+     "slide": 4
     }
    ],
    "photo_options": [
@@ -9055,7 +9078,11 @@
     "fresh": 2
    },
    "score_note": "Affordable Vans find; recognizable actor or artist; evergreen reference. ",
-   "note": "DRAFT COVER SET INCOMPLETE — one inspected full-body LA photograph showing black/white Old Skools; a second distinct photo from the same outing remains needed. This corrects the proposal: the GQ gray-hoodie photo has a different golden/brown shoe, and the oversized-suit framing was unsupported. Do not use the gray-hoodie or New York white-shoe pictures for this entry. November 2022 photo reference 1246283683; avoid inventing a precise day. StockX $33 ask / $40 including fee."
+   "note": "DRAFT COVER SET INCOMPLETE — one inspected full-body LA photograph showing black/white Old Skools; a second distinct photo from the same outing remains needed. This corrects the proposal: the GQ gray-hoodie photo has a different golden/brown shoe, and the oversized-suit framing was unsupported. Do not use the gray-hoodie or New York white-shoe pictures for this entry. November 2022 photo reference 1246283683; avoid inventing a precise day. StockX $33 ask / $40 including fee.",
+   "photo_src": "https://media.vogue.fr/photos/63c67ec08a1d91cec1e99996/master/w_1600%2Cc_limit/1246283683",
+   "photo_src_page": "https://www.vogue.fr/mode/article/vans-sneakers-justin-bieber-mode",
+   "photo_src_credit": "Getty Images via Vogue France",
+   "updated": "2026-10-14T05:57:24.404Z"
   },
   {
    "find": "104",
