@@ -5321,7 +5321,9 @@
      "note": "",
      "price": "$375",
      "image_src": "https://dailypaperclothing.com/cdn/shop/files/FW26_-_RAGLAN_SLEEVE_DIAS_PUFFER_JACKET_BlackP2606101205537_2461x.jpg?v=1787841417",
-     "slide": 3
+     "slide": 3,
+     "id": "7b7111",
+     "img": "images/cut/060-7b7111.png"
     },
     {
      "label": "Similar",
@@ -5333,7 +5335,9 @@
      "note": "",
      "price": "$245.0",
      "image_src": "https://naghedinyc.com/cdn/shop/files/StBarths_Petit_Tote_Solid_Onyx_SN03011LD_Main_2.jpg?v=1780938196&width=4000",
-     "slide": 4
+     "slide": 4,
+     "id": "6adfab",
+     "img": "images/cut/060-6adfab.png"
     },
     {
      "label": "Similar",
@@ -5345,7 +5349,9 @@
      "note": "",
      "price": "$134.95",
      "image_src": "https://cdn.fabletics.com/assets/images/skus/PT2500952-8615?model=d&imgSize=577x866&version=1",
-     "slide": 5
+     "slide": 5,
+     "id": "c28c27",
+     "img": "images/cut/060-c28c27.png"
     }
    ],
    "photo_options": [
