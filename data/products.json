@@ -6,12 +6,13 @@
    "store": "farfetch.com",
    "title_raw": "2000-2026 Goyardine Senat MM clutch bag",
    "brand": "Goyard Pre-Owned",
-   "name": "",
+   "name": "2000-2026 Goyardine Senat MM clutch bag",
    "image": "https://cdn-images.farfetch-contents.com/39/46/34/64/39463464_72961079_1000.jpg",
    "price": "1364.00",
    "currency": "USD",
    "added": "2026-10-14T17:19:54.672Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "bag"
   },
   {
    "id": "mv8dezpeiqth",
