@@ -1,33 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8mf7i23uxp",
-   "url": "https://clothbase.com/items/08b2172f_officine-generale-hugo-belted-pleated-virgin-wool-flannel-trousers-gray_officine-generale",
-   "store": "clothbase.com",
-   "title_raw": "OFFICINE GÉNÉRALE - Hugo Belted Pleated Virgin Wool-Flannel Trousers - Gray",
-   "brand": "Officine Generale",
-   "name": "",
-   "image": "https://cdn.clothbase.com/uploads/54081a63-70a7-4ffe-b8ba-d6a4c293958f/image.jpg",
-   "price": "390.0",
-   "currency": "USD",
-   "added": "2026-10-14T21:27:33.050Z",
-   "enriched": null
-  },
-  {
-   "id": "mv8mdebmd8cf",
-   "url": "https://stockx.com/balenciaga-strike-ankle-boots-black-leather",
-   "store": "stockx.com",
-   "title_raw": "Balenciaga Strike Ankle Boots Black Leather",
-   "brand": "Balenciaga",
-   "name": "Strike Ankle Boots Black Leather",
-   "image": "https://images.stockx.com/images/Balenciaga-Strike-Ankle-Boots-Black-Leather.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1687375215",
-   "price": "1364",
-   "currency": "USD",
-   "added": "2026-10-14T21:26:08.578Z",
-   "enriched": "basic",
-   "category": "shoes"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",

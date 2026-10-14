@@ -5179,6 +5179,30 @@
      "price": "$90",
      "id": "23441e",
      "img": "images/cut/058-23441e.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "Officine Generale",
+     "name": "OFFICINE GÉNÉRALE - Hugo Belted Pleated Virgin Wool-Flannel Trousers - Gray",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://clothbase.com/items/08b2172f_officine-generale-hugo-belted-pleated-virgin-wool-flannel-trousers-gray_officine-generale",
+     "note": "",
+     "price": "$390.0",
+     "image_src": "https://cdn.clothbase.com/uploads/54081a63-70a7-4ffe-b8ba-d6a4c293958f/image.jpg",
+     "slide": 4
+    },
+    {
+     "label": "Similar",
+     "brand": "Balenciaga",
+     "name": "Strike Ankle Boots Black Leather",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/balenciaga-strike-ankle-boots-black-leather",
+     "note": "",
+     "price": "$1364",
+     "image_src": "https://images.stockx.com/images/Balenciaga-Strike-Ankle-Boots-Black-Leather.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1687375215",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -5208,7 +5232,7 @@
     "credit": "via NFL.com",
     "source_url": "https://www.nfl.com/news/five-best-fits-of-week-1-2025-nfl-season"
    },
-   "updated": "2026-10-13T04:00:43.839Z",
+   "updated": "2026-10-14T21:27:44.025Z",
    "ig_queue": false,
    "video": "tunnel",
    "title": "Laremy Tunsil's ALD jacket",
