@@ -7797,7 +7797,9 @@
      "note": "",
      "price": "$120",
      "image_src": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Bottom-front.jpg?v=1755134251&width=1920",
-     "slide": 3
+     "slide": 3,
+     "id": "165d68",
+     "img": "images/cut/087-165d68.png"
     },
     {
      "slide": 4,
@@ -7810,7 +7812,9 @@
      "note": "",
      "type": "clothing",
      "price": "$120",
-     "image_src": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Bottom-front.jpg?v=1755134251&width=1920"
+     "image_src": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Bottom-front.jpg?v=1755134251&width=1920",
+     "id": "971dc4",
+     "img": "images/cut/087-971dc4.png"
     }
    ],
    "photo_options": [
