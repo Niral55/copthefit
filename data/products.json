@@ -6,12 +6,13 @@
    "store": "us.manieredevoir.com",
    "title_raw": "Michel - Suede Jacket With Revere Collar - Taupe",
    "brand": "Manière De Voir",
-   "name": "",
+   "name": "Michel",
    "image": "https://us.manieredevoir.com/cdn/shop/files/MDV_0046_MDV3.jpg?v=1791271483&width=2048",
    "price": "260",
    "currency": "USD",
    "added": "2026-10-14T06:02:39.585Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7orsanr3jr",
