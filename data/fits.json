@@ -1411,7 +1411,9 @@
      "note": "",
      "type": "accessory",
      "price": "$30.00",
-     "image_src": "https://images.dickssportinggoods.com/is/image/dkscdn/2447BAMLBDDGRSTNCLAD_is"
+     "image_src": "https://images.dickssportinggoods.com/is/image/dkscdn/2447BAMLBDDGRSTNCLAD_is",
+     "id": "f6f28f",
+     "img": "images/cut/017-f6f28f.png"
     },
     {
      "slide": 4,
@@ -1424,7 +1426,8 @@
      "note": "",
      "type": "clothing",
      "price": "$225.00",
-     "image_src": "https://cdn-images.farfetch-contents.com/32/49/40/23/32494023_62970025_1000.jpg"
+     "image_src": "https://cdn-images.farfetch-contents.com/32/49/40/23/32494023_62970025_1000.jpg",
+     "image_fetch": "failed 2026-10-14: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "slide": 5,
@@ -1436,7 +1439,9 @@
      "product_url": "https://www.next.us/en/style/su611497/f21058",
      "note": "",
      "type": "clothing",
-     "image_src": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/F21058s.jpg"
+     "image_src": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/F21058s.jpg",
+     "id": "21fff5",
+     "img": "images/cut/017-21fff5.png"
     }
    ],
    "photo_options": [
@@ -9047,7 +9052,9 @@
      "product_url": "https://www.zara.com/us/en/suede-pocket-jacket-p04416304.html",
      "note": "",
      "type": "clothing",
-     "image_src": "https://static.zara.net/assets/public/d7f5/7a3c/bbae434ea25d/366f1dfd7155/04416304717-p/04416304717-p.jpg?ts=1790331150376&w=1920"
+     "image_src": "https://static.zara.net/assets/public/d7f5/7a3c/bbae434ea25d/366f1dfd7155/04416304717-p/04416304717-p.jpg?ts=1790331150376&w=1920",
+     "id": "d980b6",
+     "img": "images/cut/102-d980b6.png"
     }
    ],
    "photo_options": [
