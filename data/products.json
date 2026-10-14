@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8dd4kwen37",
+   "url": "https://www.amazon.com/dp/B01N6ZL4AS",
+   "store": "amazon.com",
+   "title_raw": "Dockers Men's Classic Fit Easy Khaki Pants - Pleated (Standard and Big & Tall)",
+   "brand": "DOCKERS",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/71g6gbR9K0L._AC_SL1500_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-14T17:13:59.408Z",
+   "enriched": null
+  },
+  {
    "id": "mv8dbs71t3w2",
    "url": "https://stockx.com/saint-laurent-cassandre-belt-in-grained-leather-black",
    "store": "stockx.com",
