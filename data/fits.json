@@ -1425,6 +1425,18 @@
      "type": "clothing",
      "price": "$225.00",
      "image_src": "https://cdn-images.farfetch-contents.com/32/49/40/23/32494023_62970025_1000.jpg"
+    },
+    {
+     "slide": 5,
+     "label": "Similar",
+     "brand": "Armani Exchange",
+     "name": "Regular Fit Logo T-Shirt",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.next.us/en/style/su611497/f21058",
+     "note": "",
+     "type": "clothing",
+     "image_src": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/F21058s.jpg"
     }
    ],
    "photo_options": [
@@ -1464,7 +1476,7 @@
     "source_url": "https://www.marieclaire.com/fashion/celebrity-style/hudson-williams-new-balance-9060-sneakers/"
    },
    "video": "newbalance",
-   "updated": "2026-10-14T10:14:59.186Z",
+   "updated": "2026-10-14T10:15:13.006Z",
    "title": "Hudson Williams' 9060s",
    "subtitle": "Spotted in Paris"
   },
