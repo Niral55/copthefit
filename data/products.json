@@ -6,12 +6,13 @@
    "store": "goat.com",
    "title_raw": "Buy Nike Air Force 1 Low '07 LV8 'Vast Grey Canvas Gum' - IR0951 001 | GOAT",
    "brand": "",
-   "name": "",
+   "name": "Buy Nike Air Force 1 Low '07 LV8 'Vast Grey Canvas Gum'",
    "image": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/116/581/118/original/IR0951_20001.png.png?width=750",
    "price": "",
    "currency": "",
    "added": "2026-10-14T21:32:32.600Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "sneakers"
   },
   {
    "id": "mv8mk9876gml",
