@@ -4771,7 +4771,9 @@
      "note": "",
      "price": "$19.99",
      "image_src": "https://oldnavy.gap.com/webcontent/0060/382/161/cn60382161.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "5a5862",
+     "img": "images/cut/053-5a5862.png"
     },
     {
      "label": "Similar",
@@ -4782,7 +4784,9 @@
      "product_url": "https://www.goat.com/apparel/palace-pets-are-key-t-shirt-black-p23ts097",
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/078/781/677/original/1051129_01.jpg.jpeg?width=750",
-     "slide": 4
+     "slide": 4,
+     "id": "d56b76",
+     "img": "images/cut/053-d56b76.png"
     },
     {
      "label": "Similar",
@@ -4793,7 +4797,9 @@
      "product_url": "https://www.dickies.com/en-us/products/union-loose-straight-twill-pant-dk0a88580tb",
      "note": "",
      "image_src": "https://cdn.shopify.com/s/files/1/0692/5752/7484/files/DK0A88580TB-FR.jpg?v=1768409534",
-     "slide": 5
+     "slide": 5,
+     "id": "0c140e",
+     "img": "images/cut/053-0c140e.png"
     },
     {
      "label": "Similar",
@@ -4804,7 +4810,9 @@
      "product_url": "https://www.goat.com/sneakers/nike-air-force-1-low-07-lv8-vast-grey-canvas-gum-ir0951-001",
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/116/581/118/original/IR0951_20001.png.png?width=750",
-     "slide": 6
+     "slide": 6,
+     "id": "c56fe2",
+     "img": "images/cut/053-c56fe2.png"
     }
    ],
    "photo_options": [
