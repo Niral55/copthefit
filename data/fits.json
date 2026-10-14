@@ -1412,6 +1412,19 @@
      "type": "accessory",
      "price": "$30.00",
      "image_src": "https://images.dickssportinggoods.com/is/image/dkscdn/2447BAMLBDDGRSTNCLAD_is"
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "Diesel",
+     "name": "relaxed jeans regular waist 1980 D-Eeper",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.farfetch.com/shopping/men/diesel-relaxed-jeans-regular-waist-1980-d-eeper-item-32494023.aspx",
+     "note": "",
+     "type": "clothing",
+     "price": "$225.00",
+     "image_src": "https://cdn-images.farfetch-contents.com/32/49/40/23/32494023_62970025_1000.jpg"
     }
    ],
    "photo_options": [
@@ -1451,7 +1464,7 @@
     "source_url": "https://www.marieclaire.com/fashion/celebrity-style/hudson-williams-new-balance-9060-sneakers/"
    },
    "video": "newbalance",
-   "updated": "2026-10-14T10:14:47.900Z",
+   "updated": "2026-10-14T10:14:59.186Z",
    "title": "Hudson Williams' 9060s",
    "subtitle": "Spotted in Paris"
   },
