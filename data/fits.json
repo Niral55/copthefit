@@ -9050,6 +9050,18 @@
      "note": "White-and-green option for the look. Price varies by size; marketplace fee included in the displayed starting price.",
      "id": "1340bb",
      "img": "images/cut/101-1340bb.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "adidas",
+     "name": "Spain EQT Track Top",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.adidas.com/us/spain-eqt-track-top/KG2575.html",
+     "note": "",
+     "price": "$55",
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/2860810888144388a15ef530f38ed23b_9366/Spain_EQT_Track_Top_Blue_KG2575_HM1.jpg",
+     "slide": 3
     }
    ],
    "photo_options": [
@@ -9078,7 +9090,7 @@
    "score_note": "Affordable Stan Smith option; actor recognition; exact original colorway still unresolved; evergreen.",
    "note": "INCOMPLETE DRAFT — added at Niral’s explicit request on October 13, 2026 despite the usual photo and exact-colorway requirements. GQ identifies the original sneakers as adidas Stan Smith, but the exact SKU/colorway is not confirmed. The buyable M20324 White/Green OG is intentionally labeled Similar, not Exact; do not claim it is the original colorway. StockX showed $42 lowest ask/$49 including marketplace fee; size 10 was $88/$95 including fee. One clean full-length VICE photograph is available; the other VICE image is an annotated copy of the same photo, so it was excluded. A second suitable photograph remains outstanding. Video hook: How did a trip for drinks and crisps become a fashion reference?",
    "find": "101",
-   "updated": "2026-10-13T19:39:55.418Z",
+   "updated": "2026-10-14T20:57:19.622Z",
    "photo": {
     "credit": "Click News and Media via VICE",
     "source_url": "https://www.vice.com/en/article/paul-mescal-shorts-gin-tin-summer-energy/"
