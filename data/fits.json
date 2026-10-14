@@ -1076,13 +1076,35 @@
      "name": "Samba 'Cow Print' White Black (KK2238)",
      "product_url": "https://www.soleretriever.com/news/articles/adidas-samba-cow-print-pack-release-date-holiday-2025",
      "retailer": "",
-     "query": "adidas Samba Cow Print KK2238",
+     "query": "",
      "image_src": "https://images.soleretriever.com/blog/637520b2e84b21f2c46932107d15513f578227c3-1070x760.png",
-     "price": "",
      "note": "",
      "slide": 2,
      "id": "418095",
      "img": "images/cut/014-418095.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "Wrenpies",
+     "name": "Oversized Vintage Crewneck Sweatshirt Men Acid Wash Cotton Baggy Trendy Streetwear Long Sleeve Shirts Pullover Tops",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0DCJZHLH8",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/710T-UskBuL._AC_SL1500_.jpg",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "",
+     "name": "adidas Mens Mexico Track Pants",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://soccerzone.com/adidas-mens-mexico-track-pants-black-gold/",
+     "note": "",
+     "price": "$63",
+     "image_src": "https://cdn11.bigcommerce.com/s-kcw87xfpcb/products/4129/images/12127/mextp__70632.1764205492.386.513.jpg?c=1",
+     "slide": 4
     }
    ],
    "photo_options": [
@@ -1118,7 +1140,8 @@
    },
    "video": "samba",
    "title": "Abdul Carter's cow-print Sambas",
-   "subtitle": "Giants game arrival"
+   "subtitle": "Giants game arrival",
+   "updated": "2026-10-14T05:49:58.376Z"
   },
   {
    "celeb": "Austin Butler",
