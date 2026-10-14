@@ -6,12 +6,13 @@
    "store": "amazon.com",
    "title_raw": "Oversized Vintage Crewneck Sweatshirt Men Acid Wash Cotton Baggy Trendy Streetwear Long Sleeve Shirts Pullover Tops",
    "brand": "Wrenpies",
-   "name": "",
+   "name": "Oversized Vintage Crewneck Sweatshirt Men Acid Wash Cotton",
    "image": "https://m.media-amazon.com/images/I/710T-UskBuL._AC_SL1500_.jpg",
    "price": "",
    "currency": "USD",
    "added": "2026-10-14T05:49:29.191Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7otdf5y4fe",
