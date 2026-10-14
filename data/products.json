@@ -1,62 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8mmvtioju9",
-   "url": "https://www.dickies.com/en-us/products/union-loose-straight-twill-pant-dk0a88580tb",
-   "store": "dickies.com",
-   "title_raw": "Union Loose Straight Twill Pant",
-   "brand": "Dickies",
-   "name": "Union Loose Straight Twill Pant",
-   "image": "https://cdn.shopify.com/s/files/1/0692/5752/7484/files/DK0A88580TB-FR.jpg?v=1768409534",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-14T21:33:31.158Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8mlmmwfpoh",
-   "url": "https://www.goat.com/sneakers/nike-air-force-1-low-07-lv8-vast-grey-canvas-gum-ir0951-001",
-   "store": "goat.com",
-   "title_raw": "Buy Nike Air Force 1 Low '07 LV8 'Vast Grey Canvas Gum' - IR0951 001 | GOAT",
-   "brand": "",
-   "name": "Buy Nike Air Force 1 Low '07 LV8 'Vast Grey Canvas Gum'",
-   "image": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/116/581/118/original/IR0951_20001.png.png?width=750",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-14T21:32:32.600Z",
-   "enriched": "basic",
-   "category": "sneakers"
-  },
-  {
-   "id": "mv8mk9876gml",
-   "url": "https://www.goat.com/apparel/palace-pets-are-key-t-shirt-black-p23ts097",
-   "store": "goat.com",
-   "title_raw": "Buy Palace Pets Are Key T-Shirt 'Black' - P23TS097 | GOAT",
-   "brand": "",
-   "name": "Buy Palace Pets Are Key T-Shirt 'Black'",
-   "image": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/078/781/677/original/1051129_01.jpg.jpeg?width=750",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-14T21:31:28.567Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8miy3ufx0c",
-   "url": "https://oldnavy.gap.com/browse/product.do?pid=6899130020002",
-   "store": "oldnavy.gap.com",
-   "title_raw": "Classic Fit Everyday Oxford Shirt",
-   "brand": "Old Navy",
-   "name": "Classic Fit Everyday Oxford Shirt",
-   "image": "https://oldnavy.gap.com/webcontent/0060/382/161/cn60382161.jpg",
-   "price": "19.99",
-   "currency": "USD",
-   "added": "2026-10-14T21:30:27.498Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
