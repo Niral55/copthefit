@@ -10087,7 +10087,6 @@
      "retailer": "",
      "query": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/337/703/original/8207_01.jpg.jpeg?action=crop&width=750",
-     "price": "",
      "note": "Current production of the classic black low-top.",
      "slide": 2,
      "id": "9c45f9",
@@ -10133,7 +10132,11 @@
     "fresh": 2
    },
    "score_note": "Affordable Converse find; recognizable actor or artist; evergreen reference. ",
-   "note": "VIDEO HOOK: Everyone remembers the Skyline; zoom out to Brian’s sneakers. BEATS: 0–3s car nostalgia; 3–8s shoe reveal; 8–18s black low-top identification and styling; 18–25s ask car-or-fit, then site CTA. Three inspected frames show Walker in the black tee/shorts look with the shoes visible. These are different scenes in the film, not a real-world event. GOAT did not expose a dependable selected-size price; price deliberately left blank rather than invented."
+   "note": "VIDEO HOOK: Everyone remembers the Skyline; zoom out to Brian’s sneakers. BEATS: 0–3s car nostalgia; 3–8s shoe reveal; 8–18s black low-top identification and styling; 18–25s ask car-or-fit, then site CTA. Three inspected frames show Walker in the black tee/shorts look with the shoes visible. These are different scenes in the film, not a real-world event. GOAT did not expose a dependable selected-size price; price deliberately left blank rather than invented.",
+   "photo_src": "https://chucksconnection.com/2fast2furious/twofast6.jpg",
+   "photo_src_page": "https://chucksconnection.com/2fast2furious.html",
+   "photo_src_credit": "Universal Pictures via ChucksConnection",
+   "updated": "2026-10-14T18:51:33.470Z"
   },
   {
    "find": "114",
