@@ -6,12 +6,13 @@
    "store": "amazon.com",
    "title_raw": "COOFANDY Mens Knit Polo Shirts Long Sleeve Casual Dress Pullover Sweater",
    "brand": "COOFANDY",
-   "name": "",
+   "name": "Mens Knit Polo Shirts Long Sleeve Casual Dress Pullover",
    "image": "https://m.media-amazon.com/images/I/81oRObYvFSL._AC_SL1500_.jpg",
    "price": "",
    "currency": "USD",
    "added": "2026-10-14T17:11:29.909Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7orsanr3jr",
