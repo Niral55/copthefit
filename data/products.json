@@ -6,12 +6,13 @@
    "store": "asos.com",
    "title_raw": "ASOS DESIGN oversized baggy pants in black with pleats",
    "brand": "ASOS DESIGN",
-   "name": "",
+   "name": "oversized baggy pants in black with pleats",
    "image": "https://images.asos-media.com/products/asos-design-oversized-baggy-pants-in-black-with-pleats/209395522-1-black",
    "price": "",
    "currency": "",
    "added": "2026-10-14T21:15:10.984Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8e1mw1c02a",
