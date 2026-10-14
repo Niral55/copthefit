@@ -5388,7 +5388,9 @@
      "note": "",
      "price": "$1390",
      "image_src": "https://editorialist.com/thumbnails/600/2024/2/028/786/676/28786676~black_0.webp",
-     "slide": 3
+     "slide": 3,
+     "id": "aea7fd",
+     "img": "images/cut/061-aea7fd.png"
     },
     {
      "label": "Exact",
@@ -5399,7 +5401,9 @@
      "product_url": "https://www.goat.com/apparel/maison-mihara-yasuhiro-repair-cargo-trousers-black-a14pt053-blac",
      "note": "",
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/109/517/169/original/1604852_01.jpg.jpeg?width=750",
-     "slide": 4
+     "slide": 4,
+     "id": "681f38",
+     "img": "images/cut/061-681f38.png"
     }
    ],
    "photo_options": [
