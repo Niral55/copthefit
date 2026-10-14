@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8l00jvb1nu",
+   "url": "https://restockar.com/products/boredom-kills-cotton-summer-set-top",
+   "store": "restockar.com",
+   "title_raw": "Boredom Kills Cotton Summer Set Top",
+   "brand": "Boredom Kills",
+   "name": "",
+   "image": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Top-front.jpg?v=1755134174&width=1920",
+   "price": "120",
+   "currency": "USD",
+   "added": "2026-10-14T20:47:44.587Z",
+   "enriched": null
+  },
+  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
