@@ -6,12 +6,13 @@
    "store": "amazon.com",
    "title_raw": "G-Shock Casio Baby Cherry Watch BG169CH-4",
    "brand": "G-Shock",
-   "name": "",
+   "name": "Casio Baby Cherry Watch BG169CH-4",
    "image": "https://m.media-amazon.com/images/I/71eyfjMGUWL._AC_SL1500_.jpg",
    "price": "",
    "currency": "USD",
    "added": "2026-10-14T09:59:16.525Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "watch"
   },
   {
    "id": "mv7xs565efop",
