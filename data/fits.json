@@ -3443,7 +3443,18 @@
      "img": "images/cut/039-771607.png"
     },
     {
-     "slide": 3,
+     "label": "Similar",
+     "brand": "SAPPHERO",
+     "name": "Men's Watch Octagonal Stainless Steel 50M Waterproof",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0FBM9HZXB",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/71C25n8cYnL._AC_SL1500_.jpg",
+     "slide": 3
+    },
+    {
+     "slide": 4,
      "label": "Similar",
      "brand": "Tissot",
      "name": "PRX 40mm Quartz Blue (T137.410.11.041.00)",
@@ -3456,17 +3467,6 @@
      "price": "$450",
      "id": "da111f",
      "img": "images/cut/039-da111f.png"
-    },
-    {
-     "slide": 4,
-     "label": "Similar",
-     "brand": "",
-     "name": "Casio G-Shock GA-2100 (blue)",
-     "retailer": "amazon",
-     "query": "Casio G-Shock GA-2100 blue",
-     "product_url": "",
-     "note": "",
-     "type": "watch"
     },
     {
      "label": "Similar",
@@ -3490,7 +3490,7 @@
    "photo_source": "https://www.watchguys.com/blogs/celebrity-watches/celebrity-watches-emmys-2026-watches",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-14T17:07:10.222Z",
    "photo_options": [
     {
      "image": "https://cdn.shopify.com/s/files/1/0612/0354/6292/files/emmys-2026-patrick-ball-wearing-audemars-piguet-royal-oak-perpetual-calendar-26674st.png?v=1789502277",
