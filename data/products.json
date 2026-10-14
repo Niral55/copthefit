@@ -6,12 +6,13 @@
    "store": "farfetch.com",
    "title_raw": "slip-on leather loafers",
    "brand": "Celine Pre-Owned",
-   "name": "",
+   "name": "slip-on leather loafers",
    "image": "https://cdn-images.farfetch-contents.com/38/05/82/76/38058276_71045937_1000.jpg",
    "price": "716.00",
    "currency": "USD",
    "added": "2026-10-14T17:31:13.206Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "shoes"
   },
   {
    "id": "mv7orsanr3jr",
