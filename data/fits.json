@@ -5111,17 +5111,15 @@
     },
     {
      "label": "Similar",
-     "type": "clothing",
      "brand": "adidas",
-     "name": "Firebird Track Jacket (Night Indigo)",
-     "product_url": "https://www.adidas.com/us/firebird-track-jacket/KD8313.html",
-     "price": "$80",
+     "name": "ADISTAR CONTROL 5 Shoes",
      "retailer": "",
      "query": "",
+     "product_url": "https://www.adidas.com/us/adistar-control-5-shoes/KJ8781.html",
      "note": "",
-     "slide": 3,
-     "id": "564f4b",
-     "image_fetch": "failed 2026-10-13: store photo shows a model, not the product alone — upload a product-only image"
+     "price": "$84",
+     "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/248c8921330344e0af4e9ae941e5b8c2_9366/ADISTAR_CONTROL_5_Shoes_White_KJ8781_01_00_standard.jpg",
+     "slide": 3
     }
    ],
    "posted_at": null,
@@ -5133,7 +5131,7 @@
     "credit": "via The GAME",
     "source_url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
    },
-   "updated": "2026-10-12T17:09:08.105Z",
+   "updated": "2026-10-14T05:28:36.971Z",
    "ig_queue": false,
    "video": "tunnel",
    "title": "Donovan Mitchell's Rhude set",
