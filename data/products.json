@@ -6,12 +6,13 @@
    "store": "lululemon.fr",
    "title_raw": "Men's Steady State SuperLoft Jogger *Regular",
    "brand": "lululemon",
-   "name": "",
+   "name": "Men's Steady State SuperLoft Jogger *Regular",
    "image": "https://images.lululemon.com/is/image/lululemon/LM5BRJS_0001_1?size=800,800",
    "price": "",
    "currency": "",
    "added": "2026-10-14T21:00:22.204Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8levpn60jb",
