@@ -4226,7 +4226,7 @@
   },
   {
    "find": "049",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Harry Styles",
@@ -4366,7 +4366,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-13T19:49:24.859Z",
+   "updated": "2026-10-14T05:29:50.032Z",
    "photo_options": [
     {
      "image": "https://www.insidehook.com/wp-content/uploads/2026/02/GettyImages-2258962332.jpg?w=2542&resize=2542%2C3813",
@@ -5074,7 +5074,7 @@
   },
   {
    "find": "059",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Donovan Mitchell",
@@ -5131,7 +5131,7 @@
     "credit": "via The GAME",
     "source_url": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/"
    },
-   "updated": "2026-10-14T05:28:36.971Z",
+   "updated": "2026-10-14T05:29:50.032Z",
    "ig_queue": false,
    "video": "tunnel",
    "title": "Donovan Mitchell's Rhude set",
