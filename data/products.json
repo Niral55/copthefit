@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8mheoaxjwa",
+   "url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-original-mens-jeans/p/005013793",
+   "store": "levi.com",
+   "title_raw": "501® Original Men's Jeans",
+   "brand": "Levi Strauss & Co.",
+   "name": "",
+   "image": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0115_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
+   "price": "",
+   "currency": "",
+   "added": "2026-10-14T21:29:15.658Z",
+   "enriched": null
+  },
+  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
