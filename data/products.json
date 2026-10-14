@@ -6,12 +6,13 @@
    "store": "dickies.com",
    "title_raw": "Union Loose Straight Twill Pant",
    "brand": "Dickies",
-   "name": "",
+   "name": "Union Loose Straight Twill Pant",
    "image": "https://cdn.shopify.com/s/files/1/0692/5752/7484/files/DK0A88580TB-FR.jpg?v=1768409534",
    "price": "",
    "currency": "",
    "added": "2026-10-14T21:33:31.158Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8mlmmwfpoh",
