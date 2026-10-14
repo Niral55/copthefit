@@ -8996,6 +8996,18 @@
      "slide": 2,
      "id": "251fe4",
      "img": "images/cut/102-251fe4.png"
+    },
+    {
+     "slide": 3,
+     "label": "Similar",
+     "brand": "ZARA",
+     "name": "SUEDE POCKET JACKET",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.zara.com/us/en/suede-pocket-jacket-p04416304.html",
+     "note": "",
+     "type": "clothing",
+     "image_src": "https://static.zara.net/assets/public/d7f5/7a3c/bbae434ea25d/366f1dfd7155/04416304717-p/04416304717-p.jpg?ts=1790331150376&w=1920"
     }
    ],
    "photo_options": [
@@ -9033,7 +9045,7 @@
    },
    "score_note": "Affordable Converse find; recognizable actor or artist; evergreen reference. ",
    "note": "Video hook: Formal photocall, everyday blue Chucks. GQ identifies navy low-top All Stars. StockX showed $40 lowest ask / $47 including marketplace fee. Two distinct full-body photographs inspected; shoes visible.",
-   "updated": "2026-10-14T09:46:40.997Z",
+   "updated": "2026-10-14T10:13:17.943Z",
    "photo": {
     "credit": "Karwai Tang/Getty Images via GQ",
     "source_url": "https://www.gq.com/story/robert-pattinson-converse-chuck-taylor-sneakers-cannes"
