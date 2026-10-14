@@ -1092,7 +1092,9 @@
      "product_url": "https://www.amazon.com/dp/B0DCJZHLH8",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/710T-UskBuL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "c511e3",
+     "img": "images/cut/014-c511e3.png"
     },
     {
      "label": "Similar",
@@ -1104,7 +1106,9 @@
      "note": "",
      "price": "$63",
      "image_src": "https://cdn11.bigcommerce.com/s-kcw87xfpcb/products/4129/images/12127/mextp__70632.1764205492.386.513.jpg?c=1",
-     "slide": 4
+     "slide": 4,
+     "id": "27589b",
+     "img": "images/cut/014-27589b.png"
     }
    ],
    "photo_options": [
