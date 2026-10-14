@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8m9cqgo6je",
+   "url": "https://dailypaperclothing.com/products/black-raglan-sleeve-dias-puffer-jacket",
+   "store": "dailypaperclothing.com",
+   "title_raw": "Black Raglan Sleeve Dias Puffer Jacket",
+   "brand": "Daily Paper",
+   "name": "",
+   "image": "https://dailypaperclothing.com/cdn/shop/files/FW26_-_RAGLAN_SLEEVE_DIAS_PUFFER_JACKET_BlackP2606101205537_2461x.jpg?v=1787841417",
+   "price": "375",
+   "currency": "USD",
+   "added": "2026-10-14T21:22:59.896Z",
+   "enriched": null
+  },
+  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
