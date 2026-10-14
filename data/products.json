@@ -6,12 +6,13 @@
    "store": "oldnavy.gap.com",
    "title_raw": "Classic Fit Everyday Oxford Shirt",
    "brand": "Old Navy",
-   "name": "",
+   "name": "Classic Fit Everyday Oxford Shirt",
    "image": "https://oldnavy.gap.com/webcontent/0060/382/161/cn60382161.jpg",
    "price": "19.99",
    "currency": "USD",
    "added": "2026-10-14T21:30:27.498Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8e1mw1c02a",
