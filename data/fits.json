@@ -3805,15 +3805,15 @@
      "image_fetch": "failed 2026-10-13: HTTPSConnectionPool(host='www.omegawatches.com', port=443): Read timed out. (rea"
     },
     {
-     "slide": 3,
      "label": "Similar",
      "brand": "",
-     "name": "Tissot Gentleman Powermatic 80",
-     "retailer": "amazon",
-     "query": "Tissot Gentleman Powermatic 80",
-     "product_url": "",
+     "name": "Tissot Gentleman 38mm, Swiss Automatic Watch for Men, Stainless Steel Case, Blue Dial, T1658071104100",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0GVKR4FC9",
      "note": "",
-     "type": "watch"
+     "image_src": "https://m.media-amazon.com/images/I/71Wk9ClknNL._AC_SL1500_.jpg",
+     "slide": 3
     },
     {
      "label": "Similar",
@@ -3848,7 +3848,7 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-14T17:04:53.468Z",
    "ig_queue": false,
    "video": "globeswatches",
    "title": "Clooney's turquoise Aqua Terra",
