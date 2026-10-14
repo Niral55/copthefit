@@ -6,12 +6,13 @@
    "store": "newbalance.com.sg",
    "title_raw": "Made in USA Core T-Shirt",
    "brand": "New Balance",
-   "name": "",
+   "name": "Made in USA Core T-Shirt",
    "image": "https://nb.scene7.com/is/image/NB/mt43543ag_nb_70_i?$dw_detail_gallery$",
    "price": "99.00",
    "currency": "SGD",
    "added": "2026-10-14T20:59:18.155Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8e1mw1c02a",
