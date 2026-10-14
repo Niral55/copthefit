@@ -516,7 +516,7 @@ window.addEventListener("popstate", () => {
   if (location.hash === "#products") { openProducts(true); return; }
   if (location.hash === "#videos") { openVideos(true); return; }
   const t = location.hash.match(/^#tab-(\w+)$/);
-  const tab = t && STAGES.some(x => x.id === t[1]) ? t[1] : "all";
+  const tab = t && STAGES.some(x => x.id === t[1]) ? t[1] : (history.state && history.state.tab) || TAB;  // no tab in the address: keep the one you were on
   if (tab !== TAB) { TAB = tab; SEL.clear(); }
   showList();
 });
@@ -650,7 +650,7 @@ function renderEditor() {
     if (prodPrice(p)) it.price = prodPrice(p);
     if (p.image) it.image_src = p.image;  // the build cuts out the background
     DRAFT.items.push(it); DIRTY = true; renderItems(); renderPins(); renderReady();
-    save("save", { stay: true, note: `Added ${esc((it.brand ? it.brand + " " : "") + it.name)} and saved. It's off your saved products list; the product photo is ready in about 3 minutes.` });  // saved right away (keeps the post's status) and removed from your saved products
+    flash("Added from your saved products. Press Save to keep it (it leaves your saved list then).", "ok");
   };
   $("#addItem").onclick = () => { readForm(); if (DRAFT.items.length >= 8) return; DRAFT.items.push({ label: "Similar", brand: "", name: "", retailer: "", query: "", product_url: "", note: "", _link: "" }); renderItems(); renderReady(); };
   $("#save").onclick = () => save("save");
@@ -1354,8 +1354,6 @@ async function save(action, opts = {}) {
     flash(opts.note || note, "ok");
     closeEditor();
     if (opts.stay) { openEditor(find); return; }
-    const saved = DOC.fits.find(x => x.find === find);
-    if (saved && !STAGES.find(x => x.id === TAB).test(saved)) { TAB = "all"; renderList(); }
   } catch (e) {
     msg(esc(e.message), "err");
   } finally {
@@ -1377,6 +1375,7 @@ async function load() {
   else {
     const t = location.hash.match(/^#tab-(\w+)$/);
     if (t && STAGES.some(x => x.id === t[1])) TAB = t[1]; else if (location.hash) history.replaceState(null, "", location.pathname);
+    history.replaceState({ tab: TAB }, "", location.href);
     renderList();
   }
 }
