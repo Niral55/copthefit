@@ -600,7 +600,7 @@ function renderEditor() {
           ${hasAffIds() ? "" : `<p class="msg" style="margin:0">Links won't earn until you add your affiliate IDs. <a href="#settings" id="goCfg">Affiliates &amp; settings</a></p>`}
           <div class="items" id="items"></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn sm" id="addItem" type="button">+ Add item</button>
-            ${PRODUCTS.products.length ? `<select id="addSaved" class="btn sm" aria-label="Add a saved product" style="max-width:340px"><option value="">+ Add saved product (${PRODUCTS.products.length})…</option>${PRODUCTS.products.map((p, i) => `<option value="${i}">${esc(((p.brand ? p.brand + " " : "") + (p.name || p.title_raw || "")).slice(0, 60))}${prodPrice(p) ? " · " + esc(prodPrice(p)) : ""}${p.store ? " · " + esc(p.store) : ""}</option>`).join("")}</select>` : ""}</div>
+            <select id="addSaved" class="btn sm" aria-label="Add a saved product" style="max-width:340px">${savedOptions()}</select></div>
           <p class="hint">Link: paste a product page, or write <code>retailer: search words</code> (${esc(retailers.join(", "))}), or <code>custom</code> for one-off pieces. Tap an image box to upload that item's product shot.</p>
         </div>
       </div>
@@ -640,8 +640,19 @@ function renderEditor() {
   }));
   $("#editView").querySelectorAll(".cands button").forEach(b => b.onclick = () => useCandidate(DRAFT.photo_candidates[+b.dataset.c]));
   $("#editView").querySelectorAll("input,textarea,select").forEach(el => el.addEventListener("input", () => { readForm(); renderReady(); }));
+  // products saved with the extension while admin is open show up without a refresh
+  const refreshSaved = async () => {
+    try {
+      const fresh = await GH.jsonOr("data/products.json", undefined, { products: [] });
+      if (!fresh || !Array.isArray(fresh.products)) return;
+      PRODUCTS = fresh; renderProdCount();
+      const sel = $("#addSaved"); if (sel && sel.value === "") sel.innerHTML = savedOptions();
+    } catch (e) { /* offline or rate-limited: keep the list we have */ }
+  };
+  refreshSaved();
+  if ($("#addSaved")) { $("#addSaved").addEventListener("focus", refreshSaved); $("#addSaved").addEventListener("pointerdown", refreshSaved); }
   if ($("#addSaved")) $("#addSaved").onchange = e => {
-    const p = PRODUCTS.products[+e.target.value]; e.target.value = "";
+    const p = PRODUCTS.products.find(x => x.id === e.target.value); e.target.value = "";
     if (!p) return;
     readForm();
     if (DRAFT.items.length >= 8) { flash("This post already has 8 items (the Instagram limit). Remove one first.", "err"); return; }
@@ -920,6 +931,10 @@ function openProducts(fromHistory) {
   GH.json("data/fits.json").then(d => { DOC = d; if (!$("#prodView").hidden) renderProducts(); }).catch(() => {});
 }
 function closeProducts() { if (history.state && history.state.prod) { history.back(); return; } showList(); }
+function savedOptions() {
+  const list = PRODUCTS.products;
+  return `<option value="">+ Add saved product${list.length ? ` (${list.length})` : " (none saved yet)"}…</option>` + list.map(p => `<option value="${esc(p.id)}">${esc(((p.brand ? p.brand + " " : "") + (p.name || p.title_raw || "")).slice(0, 60))}${prodPrice(p) ? " · " + esc(prodPrice(p)) : ""}${p.store ? " · " + esc(p.store) : ""}</option>`).join("");
+}
 function prodPrice(p) { return p.price ? `${p.currency === "USD" || !p.currency ? "$" : p.currency + " "}${p.price}` : ""; }
 function pollProducts() {
   clearTimeout(pollProducts.t);
