@@ -4963,7 +4963,9 @@
      "note": "",
      "type": "clothing",
      "price": "$$126.00$210.00",
-     "image_src": "https://huckberry.imgix.net/spree/products/793955/original/93324_Universal_Works_Wool_Fleece_Cardigan_Fawn_01.jpg?auto=compress%2Cformat&cs=tinysrgb&fit=max&w=700"
+     "image_src": "https://huckberry.imgix.net/spree/products/793955/original/93324_Universal_Works_Wool_Fleece_Cardigan_Fawn_01.jpg?auto=compress%2Cformat&cs=tinysrgb&fit=max&w=700",
+     "id": "19991b",
+     "img": "images/cut/056-19991b.png"
     }
    ],
    "photo_options": [
