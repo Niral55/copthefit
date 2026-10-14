@@ -5201,7 +5201,9 @@
      "note": "",
      "price": "$390.0",
      "image_src": "https://cdn.clothbase.com/uploads/54081a63-70a7-4ffe-b8ba-d6a4c293958f/image.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "2701f2",
+     "img": "images/cut/058-2701f2.png"
     },
     {
      "label": "Similar",
@@ -5213,7 +5215,9 @@
      "note": "",
      "price": "$1364",
      "image_src": "https://images.stockx.com/images/Balenciaga-Strike-Ankle-Boots-Black-Leather.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1687375215",
-     "slide": 5
+     "slide": 5,
+     "id": "43c3aa",
+     "img": "images/cut/058-43c3aa.png"
     }
    ],
    "posted_at": null,
