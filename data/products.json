@@ -6,12 +6,13 @@
    "store": "zara.com",
    "title_raw": "SUEDE POCKET JACKET",
    "brand": "ZARA",
-   "name": "",
+   "name": "SUEDE POCKET JACKET",
    "image": "https://static.zara.net/assets/public/d7f5/7a3c/bbae434ea25d/366f1dfd7155/04416304717-p/04416304717-p.jpg?ts=1790331150376&w=1920",
    "price": "",
    "currency": "",
    "added": "2026-10-14T06:03:41.761Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7pdsgx6vze",
