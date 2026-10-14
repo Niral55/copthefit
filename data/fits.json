@@ -5734,37 +5734,61 @@
    "note": "",
    "items": [
     {
-     "slide": 2,
+     "label": "Similar",
+     "brand": "COOFANDY",
+     "name": "Mens Knit Polo Shirts Long Sleeve Casual Dress Pullover",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0D6R65T4K",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/81oRObYvFSL._AC_SL1500_.jpg",
+     "slide": 2
+    },
+    {
      "label": "Exact",
      "brand": "Saint Laurent",
-     "name": "Black leather belt",
-     "retailer": "farfetch",
-     "query": "Saint Laurent leather belt black",
-     "product_url": "",
+     "name": "Cassandre Belt in Grained Leather Black",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/saint-laurent-cassandre-belt-in-grained-leather-black",
      "note": "",
-     "type": "accessory"
+     "price": "$578",
+     "image_src": "https://images.stockx.com/images/Saint-Laurent-Cassandre-Belt-in-Grained-Leather-Black.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&trimcolor=ffffff&updated_at=1709606962",
+     "slide": 3
     },
     {
-     "slide": 3,
      "label": "Similar",
-     "brand": "",
-     "name": "Cream overshirt",
-     "retailer": "amazon",
-     "query": "men's cream overshirt",
-     "product_url": "",
+     "brand": "DOCKERS",
+     "name": "Men's Classic Fit Easy Khaki Pants - Pleated (Standard and Big & Tall)",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B01N6ZL4AS",
      "note": "",
-     "type": "clothing"
+     "image_src": "https://m.media-amazon.com/images/I/71g6gbR9K0L._AC_SL1500_.jpg",
+     "slide": 4
     },
     {
-     "slide": 4,
      "label": "Similar",
-     "brand": "",
-     "name": "Cream pleated trousers",
-     "retailer": "amazon",
-     "query": "men's cream pleated trousers",
-     "product_url": "",
+     "brand": "OLEVS",
+     "name": "Watch Men Luxury Casual Square Skeleton Chronograph Watches",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0F8TY1PZK",
      "note": "",
-     "type": "clothing"
+     "image_src": "https://m.media-amazon.com/images/I/61wmtuxsPEL._AC_SL1001_.jpg",
+     "slide": 5
+    },
+    {
+     "label": "Similar",
+     "brand": "Goyard Pre-Owned",
+     "name": "2000-2026 Goyardine Senat MM clutch bag",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.farfetch.com/shopping/men/goyard-pre-owned-2000-2026-goyardine-senat-mm-clutch-bag-item-39463464.aspx",
+     "note": "",
+     "price": "$1364.00",
+     "image_src": "https://cdn-images.farfetch-contents.com/39/46/34/64/39463464_72961079_1000.jpg",
+     "slide": 6
     }
    ],
    "posted_at": null,
@@ -5781,9 +5805,12 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-14T17:20:52.441Z",
    "title": "A.J. Brown's all-cream fit",
-   "subtitle": "Patriots debut arrival"
+   "subtitle": "Patriots debut arrival",
+   "photo": {
+    "credit": "@NFL (X)"
+   }
   },
   {
    "find": "067",
