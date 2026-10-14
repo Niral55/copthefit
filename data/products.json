@@ -6,12 +6,13 @@
    "store": "us.louisvuitton.com",
    "title_raw": "Graphic Knitted Crewneck",
    "brand": "Louis Vuitton",
-   "name": "",
+   "name": "Graphic Knitted Crewneck",
    "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-graphic-knitted-crewneck--HUN29WPWX165_PM2_Front%20view.jpg",
    "price": "1770",
    "currency": "USD",
    "added": "2026-10-14T05:45:32.927Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv6bgu03o10r",
