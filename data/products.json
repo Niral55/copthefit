@@ -6,12 +6,13 @@
    "store": "amazon.com",
    "title_raw": "OLEVS Watch Men Luxury Casual Square Skeleton Chronograph Watches",
    "brand": "OLEVS",
-   "name": "",
+   "name": "Watch Men Luxury Casual Square Skeleton Chronograph Watches",
    "image": "https://m.media-amazon.com/images/I/61wmtuxsPEL._AC_SL1001_.jpg",
    "price": "",
    "currency": "USD",
    "added": "2026-10-14T17:15:26.402Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "watch"
   },
   {
    "id": "mv8dd4kwen37",
