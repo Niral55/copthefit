@@ -7555,7 +7555,9 @@
      "note": "",
      "price": "SGD99.00",
      "image_src": "https://nb.scene7.com/is/image/NB/mt43543ag_nb_70_i?$dw_detail_gallery$",
-     "slide": 3
+     "slide": 3,
+     "id": "25a83b",
+     "img": "images/cut/084-25a83b.png"
     },
     {
      "label": "Similar",
@@ -7566,7 +7568,9 @@
      "product_url": "https://www.lululemon.fr/en-fr/p/mens-steady-state-superloft-jogger-regular/svbgzry05j.html",
      "note": "",
      "image_src": "https://images.lululemon.com/is/image/lululemon/LM5BRJS_0001_1?size=800,800",
-     "slide": 4
+     "slide": 4,
+     "id": "9cc4d5",
+     "img": "images/cut/084-9cc4d5.png"
     }
    ],
    "photo_options": [
