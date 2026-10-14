@@ -6,12 +6,13 @@
    "store": "naghedinyc.com",
    "title_raw": "St. Barths Petit Tote",
    "brand": "NAGHEDI",
-   "name": "",
+   "name": "St. Barths Petit Tote",
    "image": "https://naghedinyc.com/cdn/shop/files/StBarths_Petit_Tote_Solid_Onyx_SN03011LD_Main_2.jpg?v=1780938196&width=4000",
    "price": "245.0",
    "currency": "USD",
    "added": "2026-10-14T21:24:08.259Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "bag"
   },
   {
    "id": "mv8m9cqgo6je",
