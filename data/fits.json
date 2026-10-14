@@ -4782,6 +4782,18 @@
      "type": "watch",
      "price": "$1300",
      "image_src": "https://images.stockx.com/images/Casio-G-Shock-x-BAPE-x-Kid-Cudi-DW-6900-Pink.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1613834638"
+    },
+    {
+     "slide": 4,
+     "label": "Similar",
+     "brand": "G-Shock",
+     "name": "Casio Baby Cherry Watch BG169CH-4",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0F3PK2LBJ",
+     "note": "",
+     "type": "watch",
+     "image_src": "https://m.media-amazon.com/images/I/71eyfjMGUWL._AC_SL1500_.jpg"
     }
    ],
    "photo_options": [
@@ -4826,7 +4838,7 @@
     "credit": "Levi's / Fact Magazine",
     "source_url": "https://www.factmagazines.com/fashion-beauty/kid-cudi-stars-in-levis-501-campaign-for-150th-anniversary"
    },
-   "updated": "2026-10-14T10:00:00.301Z",
+   "updated": "2026-10-14T10:00:15.656Z",
    "title": "Kid Cudi's Levi's 501s",
    "subtitle": "Levi's 501 campaign"
   },
