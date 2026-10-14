@@ -9598,8 +9598,19 @@
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/91-nTsnvQ4L._AC_SL1500_.jpg",
      "slide": 2,
-     "id": "c436b3",
-     "img": "images/cut/107-c436b3.png"
+     "img": "images/cut/107-c436b3.png",
+     "id": "c436b3"
+    },
+    {
+     "label": "Similar",
+     "brand": "WOLFANT",
+     "name": "1.5\" Top Full Grain Leather Belt for Men,100% Italian Solid Leather",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0FF4B47KB",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/810R6jSBvyL._AC_SL1500_.jpg",
+     "slide": 3
     },
     {
      "label": "Similar",
@@ -9610,9 +9621,9 @@
      "product_url": "https://www.amazon.com/dp/B07HNXX2SL",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71QYYQ-tPRL._AC_SL1500_.jpg",
-     "slide": 3,
-     "id": "b66d88",
-     "img": "images/cut/107-b66d88.png"
+     "slide": 4,
+     "img": "images/cut/107-b66d88.png",
+     "id": "b66d88"
     },
     {
      "label": "Exact",
@@ -9625,7 +9636,7 @@
      "image_src": "https://www.minnetonkamoccasin.com/media/catalog/product/7/7/775x775-832-2.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
      "price": "$87.95",
      "note": "Reissued softsole design, intended for indoor wear.",
-     "slide": 4,
+     "slide": 5,
      "id": "e2ad4e",
      "img": "images/cut/107-e2ad4e.png"
     }
@@ -9674,7 +9685,7 @@
    },
    "score_note": "Affordable Minnetonka find; recognizable actor or artist; evergreen reference. ",
    "note": "Two inspected full-body publicity/film photographs show the brown fringed boots. BAMF identifies the reissued Minnetonka design. Brand-store fallback: no specific exact Amazon listing was found. Official price $87.95. Important: softsole indoor footwear, not the hardsole/outdoor version. Video hook: Hollywood stuntman style, moccasin comfort.",
-   "updated": "2026-10-14T20:52:40.628Z",
+   "updated": "2026-10-14T20:54:17.101Z",
    "photo": {
     "credit": "Columbia Pictures/Sony via BAMF Style",
     "source_url": "https://bamfstyle.com/2020/06/29/ouatih-pitt-denim-ghia/"
