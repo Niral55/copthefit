@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "drew house plush hooded puffer jacket lavender",
    "brand": "drew house",
-   "name": "",
+   "name": "plush hooded puffer jacket lavender",
    "image": "https://images.stockx.com/images/drew-house-plush-hooded-puffer-jacket-lavender.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1671551172",
    "price": "383",
    "currency": "USD",
    "added": "2026-10-14T05:56:50.069Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7p1gdtbipu",
