@@ -9567,9 +9567,10 @@
    "score_note": "Affordable Armitron find; recognizable actor or artist; evergreen reference. Availability or cover work remains.",
    "note": "DRAFT — inspected on-screen wrist close-up identifies the Griffy but is not a full actor cover; add proper scene photographs. Do NOT use Watchreel’s scene thumbnail of Mark holding a red ball: that photo does not show this Griffy. Screen case finish and modified branding differ from the purchasable black/red Amazon variant; labeled Similar. Amazon B099X9D5HX is BLACK/RED (not silver). Store image inspected at full resolution. $37.93 is a displayed marketplace starting offer, not a guaranteed price for every condition; inspect the selected offer before publication. Video hook: Lumon’s futuristic workplace, an old-school LED watch.",
    "updated": "2026-10-14T10:05:34.392Z",
-   "photo_src": "https://cdn.sanity.io/images/38ivb6x3/production/e05528c4e00a3f2693bdd95d29d56b1c8593b4fd-600x600.webp",
-   "photo_src_page": "https://www.watchreel.watch/spotted-watches/armitron-griffy-severance-mark-scout",
-   "photo_src_credit": "Apple TV+ via Watchreel"
+   "photo": {
+    "credit": "Apple TV+ via Watchreel",
+    "source_url": "https://www.watchreel.watch/spotted-watches/armitron-griffy-severance-mark-scout"
+   }
   },
   {
    "find": "109",
