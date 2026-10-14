@@ -4781,7 +4781,9 @@
      "note": "",
      "type": "watch",
      "price": "$1300",
-     "image_src": "https://images.stockx.com/images/Casio-G-Shock-x-BAPE-x-Kid-Cudi-DW-6900-Pink.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1613834638"
+     "image_src": "https://images.stockx.com/images/Casio-G-Shock-x-BAPE-x-Kid-Cudi-DW-6900-Pink.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1613834638",
+     "id": "478470",
+     "img": "images/cut/054-478470.png"
     },
     {
      "slide": 4,
@@ -4793,7 +4795,9 @@
      "product_url": "https://www.amazon.com/dp/B0F3PK2LBJ",
      "note": "",
      "type": "watch",
-     "image_src": "https://m.media-amazon.com/images/I/71eyfjMGUWL._AC_SL1500_.jpg"
+     "image_src": "https://m.media-amazon.com/images/I/71eyfjMGUWL._AC_SL1500_.jpg",
+     "id": "c6bb3d",
+     "img": "images/cut/054-c6bb3d.png"
     }
    ],
    "photo_options": [
