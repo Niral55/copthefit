@@ -7788,7 +7788,19 @@
      "img": "images/cut/087-949599.png"
     },
     {
-     "slide": 3,
+     "label": "Similar",
+     "brand": "Boredom Kills",
+     "name": "Cotton Summer Set Top",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://restockar.com/products/boredom-kills-cotton-summer-set-top",
+     "note": "",
+     "price": "$120",
+     "image_src": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Bottom-front.jpg?v=1755134251&width=1920",
+     "slide": 3
+    },
+    {
+     "slide": 4,
      "label": "Similar",
      "brand": "Boredom Kills",
      "name": "Cotton Summer Set Top",
@@ -7832,7 +7844,7 @@
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/look-great-play-great-nfl-week-4-best-tunnel-fits"
    },
-   "updated": "2026-10-14T20:46:54.218Z"
+   "updated": "2026-10-14T20:47:56.270Z"
   },
   {
    "celeb": "Lamar Jackson",
