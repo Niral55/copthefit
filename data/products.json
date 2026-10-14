@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8levpn60jb",
+   "url": "https://www.newbalance.com.sg/men-clothing/MT43543.html",
+   "store": "newbalance.com.sg",
+   "title_raw": "Made in USA Core T-Shirt",
+   "brand": "New Balance",
+   "name": "",
+   "image": "https://nb.scene7.com/is/image/NB/mt43543ag_nb_70_i?$dw_detail_gallery$",
+   "price": "99.00",
+   "currency": "SGD",
+   "added": "2026-10-14T20:59:18.155Z",
+   "enriched": null
+  },
+  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
