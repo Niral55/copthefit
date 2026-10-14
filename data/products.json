@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8mc4dnoyb4",
+   "url": "https://www.fabletics.com/products/THE-DON-CORD-BAGGY-PANT-PT2500952-8615",
+   "store": "fabletics.com",
+   "title_raw": "The Don Cord Pant (90s Baggy Fit)",
+   "brand": "fabletics",
+   "name": "",
+   "image": "https://cdn.fabletics.com/assets/images/skus/PT2500952-8615?model=d&imgSize=577x866&version=1",
+   "price": "134.95",
+   "currency": "USD",
+   "added": "2026-10-14T21:25:09.035Z",
+   "enriched": null
+  },
+  {
    "id": "mv8mathf08ru",
    "url": "https://naghedinyc.com/products/st-barths-petit-tote-onyx",
    "store": "naghedinyc.com",
