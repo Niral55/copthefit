@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv7y9gtgoo20",
+   "url": "https://huckberry.com/store/universal-works/category/p/93324-wool-fleece-cardigan",
+   "store": "huckberry.com",
+   "title_raw": "Wool Fleece Cardigan",
+   "brand": "",
+   "name": "",
+   "image": "https://huckberry.imgix.net/spree/products/793955/original/93324_Universal_Works_Wool_Fleece_Cardigan_Fawn_01.jpg?auto=compress%2Cformat&cs=tinysrgb&fit=max&w=700",
+   "price": "$126.00$210.00",
+   "currency": "USD",
+   "added": "2026-10-14T10:11:14.404Z",
+   "enriched": null
+  },
+  {
    "id": "mv7pf4g05jvn",
    "url": "https://www.zara.com/us/en/suede-pocket-jacket-p04416304.html",
    "store": "zara.com",
