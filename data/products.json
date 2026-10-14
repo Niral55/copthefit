@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Chrome Hearts Pink & Checkered Cross Patch Carpenter Pants Tan",
    "brand": "",
-   "name": "",
+   "name": "Chrome Hearts Pink & Checkered Cross Patch Carpenter Pants",
    "image": "https://images.stockx.com/images/Chrome-Hearts-Pink-Checkered-Cross-Patch-Carpenter-Pants-Tan.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1683067193",
    "price": "",
    "currency": "",
    "added": "2026-10-14T10:08:15.533Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7pf4g05jvn",
