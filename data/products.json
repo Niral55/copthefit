@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Balenciaga Strike Ankle Boots Black Leather",
    "brand": "Balenciaga",
-   "name": "",
+   "name": "Strike Ankle Boots Black Leather",
    "image": "https://images.stockx.com/images/Balenciaga-Strike-Ankle-Boots-Black-Leather.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1687375215",
    "price": "1364",
    "currency": "USD",
    "added": "2026-10-14T21:26:08.578Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "shoes"
   },
   {
    "id": "mv8e1mw1c02a",
