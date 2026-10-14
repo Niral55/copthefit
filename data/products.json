@@ -6,12 +6,13 @@
    "store": "abercrombie.com",
    "title_raw": "Baggy Jean",
    "brand": "",
-   "name": "",
+   "name": "Baggy Jean",
    "image": "https://img.abercrombie.com/is/image/anf/KIC_131-3165-2552-280_prod1?policy=product-extra-large",
    "price": "",
    "currency": "",
    "added": "2026-10-14T05:53:04.049Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv7orsanr3jr",
