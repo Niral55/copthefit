@@ -6,12 +6,13 @@
    "store": "dailypaperclothing.com",
    "title_raw": "Black Raglan Sleeve Dias Puffer Jacket",
    "brand": "Daily Paper",
-   "name": "",
+   "name": "Black Raglan Sleeve Dias Puffer Jacket",
    "image": "https://dailypaperclothing.com/cdn/shop/files/FW26_-_RAGLAN_SLEEVE_DIAS_PUFFER_JACKET_BlackP2606101205537_2461x.jpg?v=1787841417",
    "price": "375",
    "currency": "USD",
    "added": "2026-10-14T21:22:59.896Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8e1mw1c02a",
