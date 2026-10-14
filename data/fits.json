@@ -3498,7 +3498,9 @@
      "product_url": "https://www.amazon.com/dp/B01MRWWHO1",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71D3cttS7ML._AC_SL1500_.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "70ed5a",
+     "img": "images/cut/040-70ed5a.png"
     }
    ],
    "posted_at": null,
@@ -5130,7 +5132,9 @@
      "note": "",
      "price": "$84",
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/248c8921330344e0af4e9ae941e5b8c2_9366/ADISTAR_CONTROL_5_Shoes_White_KJ8781_01_00_standard.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "a13b6e",
+     "img": "images/cut/059-a13b6e.png"
     }
    ],
    "posted_at": null,
@@ -8905,7 +8909,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/000/013/785/original/M9697.png.png?action=crop&width=750",
      "price": "$47",
      "note": "Starting marketplace price; varies by size.",
-     "slide": 2
+     "slide": 2,
+     "id": "251fe4",
+     "img": "images/cut/102-251fe4.png"
     }
    ],
    "photo_options": [
@@ -8979,7 +8985,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/078/453/995/original/192218_01.jpg.jpeg?action=crop&width=750",
      "price": "$40",
      "note": "Starting marketplace price; varies by size.",
-     "slide": 2
+     "slide": 2,
+     "id": "5fc585",
+     "img": "images/cut/103-5fc585.png"
     }
    ],
    "photo_options": [
@@ -9057,7 +9065,9 @@
      "image_src": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/404408/01/sv01/fnd/PNA/fmt/png/A$AP-ROCKY-x-PUMA-Mostro-OG-Men's-Sneakers",
      "price": "$72",
      "note": "Starting marketplace price; varies by size.",
-     "slide": 2
+     "slide": 2,
+     "id": "114398",
+     "img": "images/cut/104-114398.png"
     }
    ],
    "photo_options": [
@@ -9135,7 +9145,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/378/731/original/1253680_01.jpg.jpeg?action=crop&width=750",
      "price": "$97",
      "note": "2024 release of the film’s white, red and blue colorway. Price varies by size.",
-     "slide": 2
+     "slide": 2,
+     "id": "731728",
+     "img": "images/cut/105-731728.png"
     }
    ],
    "photo_options": [
@@ -9218,7 +9230,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/082/391/636/original/7706_01.jpg.jpeg?action=crop&width=750",
      "price": "$37",
      "note": "Current production of the classic checkerboard style. Starting price varies by size.",
-     "slide": 2
+     "slide": 2,
+     "id": "dea6b0",
+     "img": "images/cut/106-dea6b0.png"
     }
    ],
    "photo_options": [
@@ -9296,7 +9310,9 @@
      "image_src": "https://www.minnetonkamoccasin.com/media/catalog/product/7/7/775x775-832-2.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
      "price": "$87.95",
      "note": "Reissued softsole design, intended for indoor wear.",
-     "slide": 2
+     "slide": 2,
+     "id": "e2ad4e",
+     "img": "images/cut/107-e2ad4e.png"
     }
    ],
    "photo_options": [
@@ -9379,7 +9395,9 @@
      "image_src": "https://m.media-amazon.com/images/I/61FSOFQfVlL._AC_SL1500_.jpg",
      "price": "$37.93",
      "note": "Black-case version with red LED display.",
-     "slide": 2
+     "slide": 2,
+     "id": "cc13d7",
+     "img": "images/cut/108-cc13d7.png"
     }
    ],
    "photo_options": [
@@ -9457,7 +9475,9 @@
      "image_src": "https://www.watch-id.com/sites/default/files/upload/sighting/suunto-core-all-black-b_0.jpg",
      "price": "$199.00",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "3d77a3",
+     "img": "images/cut/109-3d77a3.png"
     }
    ],
    "photo_options": [
@@ -9531,7 +9551,9 @@
      "image_src": "https://watch-id.com/sites/default/files/upload/sighting/Timex-TW2T73000-Expedition-Field-Chronograph.jpg",
      "price": "$58.54",
      "note": "Marketplace offers vary by condition and seller.",
-     "slide": 2
+     "slide": 2,
+     "id": "384e12",
+     "img": "images/cut/110-384e12.png"
     }
    ],
    "photo_options": [
@@ -9614,7 +9636,9 @@
      "image_src": "https://www.watch-id.com/sites/default/files/upload/sighting/Q-Timex-Red-Vega-1978-Reissue.jpg",
      "price": "$219",
      "note": "Modern reissue; not the original film prop. Currently unavailable from Timex US.",
-     "slide": 2
+     "slide": 2,
+     "id": "6417b7",
+     "img": "images/cut/111-6417b7.png"
     }
    ],
    "photo_options": [
