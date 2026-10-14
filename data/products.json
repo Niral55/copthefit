@@ -1,20 +1,6 @@
 {
  "products": [
   {
-   "id": "mv7oyz2di38w",
-   "url": "https://www.farfetch.com/shopping/men/ralph-lauren-vintage-plaid-button-down-shirt-item-36698593.aspx",
-   "store": "farfetch.com",
-   "title_raw": "plaid button-down shirt",
-   "brand": "Ralph Lauren Vintage",
-   "name": "plaid button-down shirt",
-   "image": "https://cdn-images.farfetch-contents.com/36/69/85/93/36698593_68956713_1000.jpg",
-   "price": "223.00",
-   "currency": "USD",
-   "added": "2026-10-14T05:51:08.293Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv7orsanr3jr",
    "url": "https://us.louisvuitton.com/eng-us/products/graphic-knitted-crewneck-nvprod6920234v/1AJBVX",
    "store": "us.louisvuitton.com",
