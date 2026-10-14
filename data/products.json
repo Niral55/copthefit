@@ -1,34 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8lg94shzd4",
-   "url": "https://www.lululemon.fr/en-fr/p/mens-steady-state-superloft-jogger-regular/svbgzry05j.html",
-   "store": "lululemon.fr",
-   "title_raw": "Men's Steady State SuperLoft Jogger *Regular",
-   "brand": "lululemon",
-   "name": "Men's Steady State SuperLoft Jogger *Regular",
-   "image": "https://images.lululemon.com/is/image/lululemon/LM5BRJS_0001_1?size=800,800",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-14T21:00:22.204Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8levpn60jb",
-   "url": "https://www.newbalance.com.sg/men-clothing/MT43543.html",
-   "store": "newbalance.com.sg",
-   "title_raw": "Made in USA Core T-Shirt",
-   "brand": "New Balance",
-   "name": "Made in USA Core T-Shirt",
-   "image": "https://nb.scene7.com/is/image/NB/mt43543ag_nb_70_i?$dw_detail_gallery$",
-   "price": "99.00",
-   "currency": "SGD",
-   "added": "2026-10-14T20:59:18.155Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",

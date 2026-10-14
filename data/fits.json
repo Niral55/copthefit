@@ -7544,6 +7544,29 @@
      "slide": 2,
      "id": "a39df6",
      "img": "images/cut/084-a39df6.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "New Balance",
+     "name": "Made in USA Core T-Shirt",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.newbalance.com.sg/men-clothing/MT43543.html",
+     "note": "",
+     "price": "SGD99.00",
+     "image_src": "https://nb.scene7.com/is/image/NB/mt43543ag_nb_70_i?$dw_detail_gallery$",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "lululemon",
+     "name": "Men's Steady State SuperLoft Jogger *Regular",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.lululemon.fr/en-fr/p/mens-steady-state-superloft-jogger-regular/svbgzry05j.html",
+     "note": "",
+     "image_src": "https://images.lululemon.com/is/image/lululemon/LM5BRJS_0001_1?size=800,800",
+     "slide": 4
     }
    ],
    "photo_options": [
@@ -7587,7 +7610,7 @@
     "credit": "Sole Retriever",
     "source_url": "https://www.soleretriever.com/news/articles/nfl-week-1-best-tunnel-fits-2025"
    },
-   "updated": "2026-10-13T02:21:17.947Z"
+   "updated": "2026-10-14T21:02:02.583Z"
   },
   {
    "celeb": "Jalen Hurts",
