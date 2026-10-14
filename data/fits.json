@@ -3901,7 +3901,9 @@
      "product_url": "https://www.amazon.com/dp/B0F6DB94L1",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/81p5WaTZxfL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "4c0801",
+     "img": "images/cut/044-4c0801.png"
     },
     {
      "label": "Similar",
@@ -3912,7 +3914,9 @@
      "product_url": "https://www.amazon.com/dp/B0H1JTJN65",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/713ik+fBoPL._AC_SL1500_.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "781ce0",
+     "img": "images/cut/044-781ce0.png"
     }
    ],
    "posted_at": null,
@@ -4002,7 +4006,8 @@
      "query": "",
      "note": "",
      "slide": 4,
-     "image_fetch": "failed 2026-10-13: 404 Client Error: Not Found for url: https://timex.com/cdn/shop/files/TW2W60300_"
+     "id": "42fd6e",
+     "img": "images/cut/045-42fd6e.png"
     }
    ],
    "posted_at": null,
