@@ -1,48 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8mc4dnoyb4",
-   "url": "https://www.fabletics.com/products/THE-DON-CORD-BAGGY-PANT-PT2500952-8615",
-   "store": "fabletics.com",
-   "title_raw": "The Don Cord Pant (90s Baggy Fit)",
-   "brand": "fabletics",
-   "name": "The Don Cord Pant",
-   "image": "https://cdn.fabletics.com/assets/images/skus/PT2500952-8615?model=d&imgSize=577x866&version=1",
-   "price": "134.95",
-   "currency": "USD",
-   "added": "2026-10-14T21:25:09.035Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8mathf08ru",
-   "url": "https://naghedinyc.com/products/st-barths-petit-tote-onyx",
-   "store": "naghedinyc.com",
-   "title_raw": "St. Barths Petit Tote",
-   "brand": "NAGHEDI",
-   "name": "St. Barths Petit Tote",
-   "image": "https://naghedinyc.com/cdn/shop/files/StBarths_Petit_Tote_Solid_Onyx_SN03011LD_Main_2.jpg?v=1780938196&width=4000",
-   "price": "245.0",
-   "currency": "USD",
-   "added": "2026-10-14T21:24:08.259Z",
-   "enriched": "basic",
-   "category": "bag"
-  },
-  {
-   "id": "mv8m9cqgo6je",
-   "url": "https://dailypaperclothing.com/products/black-raglan-sleeve-dias-puffer-jacket",
-   "store": "dailypaperclothing.com",
-   "title_raw": "Black Raglan Sleeve Dias Puffer Jacket",
-   "brand": "Daily Paper",
-   "name": "Black Raglan Sleeve Dias Puffer Jacket",
-   "image": "https://dailypaperclothing.com/cdn/shop/files/FW26_-_RAGLAN_SLEEVE_DIAS_PUFFER_JACKET_BlackP2606101205537_2461x.jpg?v=1787841417",
-   "price": "375",
-   "currency": "USD",
-   "added": "2026-10-14T21:22:59.896Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
