@@ -6804,6 +6804,29 @@
      "price": "$104",
      "id": "cdc11f",
      "img": "images/cut/077-cdc11f.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "Prada",
+     "name": "mohair-wool blouson jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.farfetch.com/shopping/women/prada-mohair-wool-blouson-jacket-item-36347081.aspx",
+     "note": "",
+     "price": "$4100.00",
+     "image_src": "https://cdn-images.farfetch-contents.com/36/34/70/81/36347081_68158728_1000.jpg",
+     "slide": 4
+    },
+    {
+     "label": "Similar",
+     "brand": "ASOS DESIGN",
+     "name": "oversized baggy pants in black with pleats",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.asos.com/us/asos-design/asos-design-oversized-baggy-pants-in-black-with-pleats/prd/209395522",
+     "note": "",
+     "image_src": "https://images.asos-media.com/products/asos-design-oversized-baggy-pants-in-black-with-pleats/209395522-1-black",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -6820,7 +6843,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-13T04:00:43.839Z",
+   "updated": "2026-10-14T21:16:23.504Z",
    "photo_options": [
     {
      "image": "https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2026/01/Prada-x-Harry-Styles_1.jpg",

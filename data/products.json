@@ -1,33 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8m0kic2040",
-   "url": "https://www.farfetch.com/shopping/women/prada-mohair-wool-blouson-jacket-item-36347081.aspx",
-   "store": "farfetch.com",
-   "title_raw": "mohair-wool blouson jacket",
-   "brand": "Prada",
-   "name": "",
-   "image": "https://cdn-images.farfetch-contents.com/36/34/70/81/36347081_68158728_1000.jpg",
-   "price": "4100.00",
-   "currency": "USD",
-   "added": "2026-10-14T21:16:10.068Z",
-   "enriched": null
-  },
-  {
-   "id": "mv8lzax3f8bd",
-   "url": "https://www.asos.com/us/asos-design/asos-design-oversized-baggy-pants-in-black-with-pleats/prd/209395522",
-   "store": "asos.com",
-   "title_raw": "ASOS DESIGN oversized baggy pants in black with pleats",
-   "brand": "ASOS DESIGN",
-   "name": "oversized baggy pants in black with pleats",
-   "image": "https://images.asos-media.com/products/asos-design-oversized-baggy-pants-in-black-with-pleats/209395522-1-black",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-14T21:15:10.984Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
