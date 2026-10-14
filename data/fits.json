@@ -9589,6 +9589,28 @@
    ],
    "items": [
     {
+     "label": "Similar",
+     "brand": "Wrangler",
+     "name": "Men's Cowboy Cut Western Unlined Denim Jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0BZJNN9YD",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/91-nTsnvQ4L._AC_SL1500_.jpg",
+     "slide": 2
+    },
+    {
+     "label": "Similar",
+     "brand": "Wrangler",
+     "name": "Mens Relaxed Fit Boot Cut Jean",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B07HNXX2SL",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/71QYYQ-tPRL._AC_SL1500_.jpg",
+     "slide": 3
+    },
+    {
      "label": "Exact",
      "type": "shoes",
      "brand": "Minnetonka",
@@ -9599,7 +9621,7 @@
      "image_src": "https://www.minnetonkamoccasin.com/media/catalog/product/7/7/775x775-832-2.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
      "price": "$87.95",
      "note": "Reissued softsole design, intended for indoor wear.",
-     "slide": 2,
+     "slide": 4,
      "id": "e2ad4e",
      "img": "images/cut/107-e2ad4e.png"
     }
@@ -9648,7 +9670,7 @@
    },
    "score_note": "Affordable Minnetonka find; recognizable actor or artist; evergreen reference. ",
    "note": "Two inspected full-body publicity/film photographs show the brown fringed boots. BAMF identifies the reissued Minnetonka design. Brand-store fallback: no specific exact Amazon listing was found. Official price $87.95. Important: softsole indoor footwear, not the hardsole/outdoor version. Video hook: Hollywood stuntman style, moccasin comfort.",
-   "updated": "2026-10-14T09:46:40.997Z",
+   "updated": "2026-10-14T20:52:40.628Z",
    "photo": {
     "credit": "Columbia Pictures/Sony via BAMF Style",
     "source_url": "https://bamfstyle.com/2020/06/29/ouatih-pitt-denim-ghia/"

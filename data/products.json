@@ -1,33 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8l66k0j0yx",
-   "url": "https://www.amazon.com/dp/B07HNXX2SL",
-   "store": "amazon.com",
-   "title_raw": "Wrangler Mens Relaxed Fit Boot Cut Jean",
-   "brand": "Wrangler",
-   "name": "",
-   "image": "https://m.media-amazon.com/images/I/71QYYQ-tPRL._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-14T20:52:32.304Z",
-   "enriched": null
-  },
-  {
-   "id": "mv8l4f2p82da",
-   "url": "https://www.amazon.com/dp/B0BZJNN9YD",
-   "store": "amazon.com",
-   "title_raw": "Wrangler Men's Cowboy Cut Western Unlined Denim Jacket",
-   "brand": "Wrangler",
-   "name": "Men's Cowboy Cut Western Unlined Denim Jacket",
-   "image": "https://m.media-amazon.com/images/I/91-nTsnvQ4L._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-14T20:51:10.033Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
