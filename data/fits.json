@@ -9597,7 +9597,9 @@
      "product_url": "https://www.amazon.com/dp/B0BZJNN9YD",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/91-nTsnvQ4L._AC_SL1500_.jpg",
-     "slide": 2
+     "slide": 2,
+     "id": "c436b3",
+     "img": "images/cut/107-c436b3.png"
     },
     {
      "label": "Similar",
@@ -9608,7 +9610,9 @@
      "product_url": "https://www.amazon.com/dp/B07HNXX2SL",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/71QYYQ-tPRL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "b66d88",
+     "img": "images/cut/107-b66d88.png"
     },
     {
      "label": "Exact",
