@@ -5469,7 +5469,9 @@
      "note": "",
      "price": "$25.0",
      "image_src": "https://cdn.clothbase.com/uploads/11968a92-8d93-44f6-9070-e9f1ae4c7a8b/11-05-2023-LB_TTT9LS002-WHT_1_1.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "46c9c9",
+     "img": "images/cut/062-46c9c9.png"
     }
    ],
    "photo_options": [
@@ -6827,7 +6829,8 @@
      "note": "",
      "price": "$4100.00",
      "image_src": "https://cdn-images.farfetch-contents.com/36/34/70/81/36347081_68158728_1000.jpg",
-     "slide": 4
+     "slide": 4,
+     "image_fetch": "failed 2026-10-14: 429 Client Error: Too Many Requests for url: https://cdn-images.farfetch-content"
     },
     {
      "label": "Similar",
@@ -6838,7 +6841,9 @@
      "product_url": "https://www.asos.com/us/asos-design/asos-design-oversized-baggy-pants-in-black-with-pleats/prd/209395522",
      "note": "",
      "image_src": "https://images.asos-media.com/products/asos-design-oversized-baggy-pants-in-black-with-pleats/209395522-1-black",
-     "slide": 5
+     "slide": 5,
+     "id": "5a5c6b",
+     "img": "images/cut/077-5a5c6b.png"
     }
    ],
    "posted_at": null,
