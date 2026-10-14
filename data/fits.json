@@ -4937,6 +4937,17 @@
      "slide": 2,
      "id": "9cc4ca",
      "img": "images/cut/055-9cc4ca.png"
+    },
+    {
+     "label": "Exact",
+     "brand": "Levi Strauss & Co.",
+     "name": "501® Original Men's Jeans",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-original-mens-jeans/p/005013793",
+     "note": "",
+     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0115_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
+     "slide": 3
     }
    ],
    "photo_options": [
@@ -4976,7 +4987,7 @@
     "credit": "Getty Images / Biography",
     "source_url": "https://www.biography.com/bio-buys/a62351879/austin-butler-carhartt-jacket"
    },
-   "updated": "2026-10-12T16:48:56.816Z",
+   "updated": "2026-10-14T21:29:59.474Z",
    "title": "Austin Butler's Carhartt jacket",
    "subtitle": "Spotted in New York"
   },
