@@ -9061,7 +9061,9 @@
      "note": "",
      "price": "$55",
      "image_src": "https://assets.adidas.com/images/w_500,f_auto,q_auto/2860810888144388a15ef530f38ed23b_9366/Spain_EQT_Track_Top_Blue_KG2575_HM1.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "43dfd8",
+     "img": "images/cut/101-43dfd8.png"
     }
    ],
    "photo_options": [
@@ -9622,7 +9624,9 @@
      "product_url": "https://www.amazon.com/dp/B0FF4B47KB",
      "note": "",
      "image_src": "https://m.media-amazon.com/images/I/810R6jSBvyL._AC_SL1500_.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "0b40d0",
+     "img": "images/cut/107-0b40d0.png"
     },
     {
      "label": "Similar",
