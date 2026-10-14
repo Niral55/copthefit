@@ -6,12 +6,13 @@
    "store": "fabletics.com",
    "title_raw": "The Don Cord Pant (90s Baggy Fit)",
    "brand": "fabletics",
-   "name": "",
+   "name": "The Don Cord Pant",
    "image": "https://cdn.fabletics.com/assets/images/skus/PT2500952-8615?model=d&imgSize=577x866&version=1",
    "price": "134.95",
    "currency": "USD",
    "added": "2026-10-14T21:25:09.035Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8mathf08ru",
