@@ -1,33 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8cxdsw5eiu",
-   "url": "https://www.amazon.com/dp/B0H1JTJN65",
-   "store": "amazon.com",
-   "title_raw": "Fossil Men's Watch, Pearson Multifunction Stainless Steel Watch for Men",
-   "brand": "Fossil",
-   "name": "",
-   "image": "https://m.media-amazon.com/images/I/713ik+fBoPL._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-14T17:01:44.864Z",
-   "enriched": null
-  },
-  {
-   "id": "mv8cw1ycahxy",
-   "url": "https://www.amazon.com/dp/B0F6DB94L1",
-   "store": "amazon.com",
-   "title_raw": "Tissot PRX, Swiss Automatic, 40mm, Blue Dial, Men’s Watch",
-   "brand": "",
-   "name": "Tissot PRX",
-   "image": "https://m.media-amazon.com/images/I/81p5WaTZxfL._AC_SL1500_.jpg",
-   "price": "",
-   "currency": "USD",
-   "added": "2026-10-14T17:00:42.852Z",
-   "enriched": "basic",
-   "category": "watch"
-  },
-  {
    "id": "mv7orsanr3jr",
    "url": "https://us.louisvuitton.com/eng-us/products/graphic-knitted-crewneck-nvprod6920234v/1AJBVX",
    "store": "us.louisvuitton.com",

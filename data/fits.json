@@ -3856,7 +3856,7 @@
   },
   {
    "find": "044",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Glen Powell",
@@ -3894,18 +3894,25 @@
     },
     {
      "label": "Similar",
-     "type": "watch",
-     "brand": "Invicta",
-     "name": "Pro Diver 43mm Steel and Gold, Blue Dial (1773)",
-     "product_url": "https://invictastores.com/products/invicta-pro-diver-men-s-watch-43mm-steel-gold-1773",
-     "image_src": "https://invictastores.com/cdn/shop/files/1773_iysi1j.png?v=1779837508",
-     "price": "$149.99",
+     "brand": "",
+     "name": "Tissot PRX, Swiss Automatic, 40mm, Blue Dial, Men’s Watch",
      "retailer": "",
      "query": "",
+     "product_url": "https://www.amazon.com/dp/B0F6DB94L1",
      "note": "",
-     "slide": 3,
-     "id": "b36d06",
-     "img": "images/cut/044-b36d06.png"
+     "image_src": "https://m.media-amazon.com/images/I/81p5WaTZxfL._AC_SL1500_.jpg",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "Fossil",
+     "name": "Men's Watch, Pearson Multifunction Stainless Steel Watch for Men",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.amazon.com/dp/B0H1JTJN65",
+     "note": "",
+     "image_src": "https://m.media-amazon.com/images/I/713ik+fBoPL._AC_SL1500_.jpg",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -3925,7 +3932,7 @@
     "credit": "via Luxury Bazaar",
     "source_url": "https://www.luxurybazaar.com/grey-market/watch-spotting-2026-golden-globes/"
    },
-   "updated": "2026-10-12T16:29:35.173Z",
+   "updated": "2026-10-14T17:01:55.217Z",
    "ig_queue": false,
    "video": "globeswatches",
    "title": "Glen Powell's Aqua Terra",
