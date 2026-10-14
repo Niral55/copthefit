@@ -9026,7 +9026,9 @@
      "note": "",
      "price": "$383",
      "image_src": "https://images.stockx.com/images/drew-house-plush-hooded-puffer-jacket-lavender.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1671551172",
-     "slide": 3
+     "slide": 3,
+     "id": "2316c1",
+     "img": "images/cut/103-2316c1.png"
     },
     {
      "label": "Similar",
@@ -9037,7 +9039,9 @@
      "product_url": "https://www.abercrombie.com/shop/us/p/baggy-jean-53267822",
      "note": "",
      "image_src": "https://img.abercrombie.com/is/image/anf/KIC_131-3165-2552-280_prod1?policy=product-extra-large",
-     "slide": 4
+     "slide": 4,
+     "id": "22913c",
+     "img": "images/cut/103-22913c.png"
     }
    ],
    "photo_options": [
@@ -9079,10 +9083,11 @@
    },
    "score_note": "Affordable Vans find; recognizable actor or artist; evergreen reference. ",
    "note": "DRAFT COVER SET INCOMPLETE — one inspected full-body LA photograph showing black/white Old Skools; a second distinct photo from the same outing remains needed. This corrects the proposal: the GQ gray-hoodie photo has a different golden/brown shoe, and the oversized-suit framing was unsupported. Do not use the gray-hoodie or New York white-shoe pictures for this entry. November 2022 photo reference 1246283683; avoid inventing a precise day. StockX $33 ask / $40 including fee.",
-   "photo_src": "https://media.vogue.fr/photos/63c67ec08a1d91cec1e99996/master/w_1600%2Cc_limit/1246283683",
-   "photo_src_page": "https://www.vogue.fr/mode/article/vans-sneakers-justin-bieber-mode",
-   "photo_src_credit": "Getty Images via Vogue France",
-   "updated": "2026-10-14T05:57:24.404Z"
+   "updated": "2026-10-14T05:57:24.404Z",
+   "photo": {
+    "credit": "Getty Images via Vogue France",
+    "source_url": "https://www.vogue.fr/mode/article/vans-sneakers-justin-bieber-mode"
+   }
   },
   {
    "find": "104",
@@ -9756,10 +9761,11 @@
    },
    "score_note": "Affordable Timex find; recognizable actor or artist; evergreen reference. Availability or cover work remains.",
    "note": "INCOMPLETE / AVAILABILITY HOLD — modern TW2Y55700 is not the original screen-worn reference; labeled Similar. Timex US main Product offer is OutOfStock at $219; a secondary reviews widget contradicts it, so do NOT advertise the watch as available. Authorized overseas retailers list stock, but US shipping/affiliate route still needs checking. No exact Amazon listing found. One inspected car scene shows Travolta’s left wristwatch; a second useful actor photo and clean red-dial close-up remain needed. Brand lifestyle wrist shots are NOT Travolta. Keep in Leads until a buyable approved retailer and cover set are ready. Video hook: The red detail hidden inside Tarantino’s black-suit uniform.",
-   "photo_src": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2024/10/PFVincentSuit-CX-Watch.jpg?resize=664%2C281&ssl=1",
-   "photo_src_page": "https://bamfstyle.com/2024/10/14/pulp-fiction-vincent-black-suit/amp/",
-   "photo_src_credit": "Miramax via BAMF Style",
-   "updated": "2026-10-14T05:58:36.901Z"
+   "updated": "2026-10-14T05:58:36.901Z",
+   "photo": {
+    "credit": "Miramax via BAMF Style",
+    "source_url": "https://bamfstyle.com/2024/10/14/pulp-fiction-vincent-black-suit/amp/"
+   }
   }
  ]
 }
