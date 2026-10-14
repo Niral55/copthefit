@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8d9x85wbms",
+   "url": "https://www.amazon.com/dp/B0D6R65T4K",
+   "store": "amazon.com",
+   "title_raw": "COOFANDY Mens Knit Polo Shirts Long Sleeve Casual Dress Pullover Sweater",
+   "brand": "COOFANDY",
+   "name": "",
+   "image": "https://m.media-amazon.com/images/I/81oRObYvFSL._AC_SL1500_.jpg",
+   "price": "",
+   "currency": "USD",
+   "added": "2026-10-14T17:11:29.909Z",
+   "enriched": null
+  },
+  {
    "id": "mv7orsanr3jr",
    "url": "https://us.louisvuitton.com/eng-us/products/graphic-knitted-crewneck-nvprod6920234v/1AJBVX",
    "store": "us.louisvuitton.com",
