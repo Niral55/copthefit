@@ -6,12 +6,13 @@
    "store": "shopproclub.com",
    "title_raw": "Heavyweight Baggy Fit Denim Short",
    "brand": "",
-   "name": "",
+   "name": "Heavyweight Baggy Fit Denim Short",
    "image": "https://shopproclub.com/media/catalog/product/cache/61eed81046a68439fa526f0fb7e1517f/d/s/dsc02725_6.jpg",
    "price": "54",
    "currency": "USD",
    "added": "2026-10-15T02:58:51.773Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8xmhtmr4nj",
