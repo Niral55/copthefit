@@ -24,6 +24,13 @@
    "message": "Ready: 27.7s \u00b7 voice: kokoro + music (neural failed: WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesi)",
    "file": "mamdani.mp4",
    "caption": "New York's mayor wears a $160 Casio \u231a It sold out after he won.\nComment CASIO and we'll DM you where it's still in stock (Find #010).\n#casio #casiovintage #watchspotting #nyc #celebstyle"
+  },
+  "nflarrivals": {
+   "last_run": "2026-10-15T06:06:22+00:00",
+   "result": "ok",
+   "message": "Ready: 37.3s \u00b7 voice: neural (en-US-AndrewMultilingualNeural)",
+   "file": "nflarrivals.mp4",
+   "caption": "What NFL stars wear walking into the stadium \ud83c\udfc8\nComment KICKS and we'll DM you every pair (Find #084\u2013#089).\n#nflfits #tunnelfits #sneakers #jordan #copthefit"
   }
  },
  "prices": {
