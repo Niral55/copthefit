@@ -1,34 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8xisyapnvg",
-   "url": "https://www.quince.com/men/mens-organic-stretch-cotton-chino-pants---straight-fit",
-   "store": "quince.com",
-   "title_raw": "Men's Organic Cotton Stretch Chino Pants - Straight",
-   "brand": "Quince",
-   "name": "Men's Organic Cotton Stretch Chino Pants",
-   "image": "https://images.quince.com/38DRCUx8h7dZvzELGyfQOi/caf4c463a5c4f8e0d209f882e33d0797/M-PNT-114-DEENAV-01_EDITED_01.jpg?fm=webP&q=90&w=1600",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-15T02:38:16.594Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8xhen007mx",
-   "url": "https://www.quince.com/men/mens-alpaca-crewneck-pullover-sweater?color=heather-grey",
-   "store": "quince.com",
-   "title_raw": "Men's Alpaca-Wool Crewneck Sweater",
-   "brand": "Quince",
-   "name": "Men's Alpaca-Wool Crewneck Sweater",
-   "image": "https://images.quince.com/sviCG9WqiCdQMpyjkqS5Q/e8aaa9b2003b561b859a19a04085854f/M-LKT-107-HEAGRE-01_EDITED.jpg?fm=webP&q=90&w=1600",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-15T02:37:11.388Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",

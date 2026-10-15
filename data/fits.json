@@ -10756,6 +10756,28 @@
      "slide": 2,
      "id": "cee4dc",
      "img": "images/cut/116-cee4dc.png"
+    },
+    {
+     "label": "Exact",
+     "brand": "Quince",
+     "name": "Men's Alpaca-Wool Crewneck Sweater",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.quince.com/men/mens-alpaca-crewneck-pullover-sweater?color=heather-grey",
+     "note": "",
+     "image_src": "https://images.quince.com/sviCG9WqiCdQMpyjkqS5Q/e8aaa9b2003b561b859a19a04085854f/M-LKT-107-HEAGRE-01_EDITED.jpg?fm=webP&q=90&w=1600",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "Quince",
+     "name": "Men's Organic Cotton Stretch Chino Pants - Straight",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.quince.com/men/mens-organic-stretch-cotton-chino-pants---straight-fit",
+     "note": "",
+     "image_src": "https://images.quince.com/38DRCUx8h7dZvzELGyfQOi/caf4c463a5c4f8e0d209f882e33d0797/M-PNT-114-DEENAV-01_EDITED_01.jpg?fm=webP&q=90&w=1600",
+     "slide": 4
     }
    ],
    "photo_options": [
@@ -10802,7 +10824,7 @@
    },
    "score_note": "Affordable American Optical find; recognizable actor or artist; evergreen reference. ",
    "note": "VIDEO HOOK: What sunglasses did JFK wear on the water? BEATS: 0–3s archival boat image; 3–8s frame close-up; 8–18s American Optical Saratoga identification; 18–25s distinguish current reissue from vintage and direct to find. Two inspected archive images show the sunglasses but depict separate boating moments/outfits; do not invent a single date or event. Current Brown Demi/gray-lens Amazon variant is Similar to historical Demi-Amber. Amazon displayed $275; lens and size affect offers.",
-   "updated": "2026-10-14T18:52:10.267Z",
+   "updated": "2026-10-15T02:40:11.559Z",
    "photo": {
     "credit": "American Optical historical archive",
     "source_url": "https://aoeyewear.com/blog/how-the-saratoga-became-legendary/"
