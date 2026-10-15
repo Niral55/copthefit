@@ -31,6 +31,13 @@
    "message": "Ready: 37.3s \u00b7 voice: neural (en-US-AndrewMultilingualNeural)",
    "file": "nflarrivals.mp4",
    "caption": "What NFL stars wear walking into the stadium \ud83c\udfc8\nComment KICKS and we'll DM you every pair (Find #084\u2013#089).\n#nflfits #tunnelfits #sneakers #jordan #copthefit"
+  },
+  "moviekicks": {
+   "last_run": "2026-10-15T06:06:27+00:00",
+   "result": "ok",
+   "message": "Ready: 29.1s \u00b7 voice: neural (en-US-AndrewMultilingualNeural)",
+   "file": "moviekicks.mp4",
+   "caption": "Iconic movie shoes you can still buy \ud83c\udfac Forrest Gump, Fast Times, Once Upon a Time in Hollywood\nComment SHOES and we'll DM you all three.\n#movieshoes #forrestgump #vans #nikecortez #copthefit"
   }
  },
  "prices": {
