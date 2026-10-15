@@ -6,12 +6,13 @@
    "store": "wdepartment.com",
    "title_raw": "Issey Miyake Homme Plisse Turtleneck",
    "brand": "",
-   "name": "",
+   "name": "Issey Miyake Homme Plisse Turtleneck",
    "image": "https://wdepartment.com/wp-content/uploads/2026/03/11759_A.jpg",
    "price": "583.00",
    "currency": "USD",
    "added": "2026-10-15T02:44:47.565Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8xmhtmr4nj",
