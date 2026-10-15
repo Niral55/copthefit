@@ -2694,7 +2694,9 @@
      "note": "",
      "price": "EUR59,95",
      "image_src": "http://www.off-the-pitch.com/cdn/shop/files/OTP251062_608_1_b2c_21a53350-8655-48dd-85f1-1f97c5f39ce9.jpg?v=1776330617",
-     "slide": 4
+     "slide": 4,
+     "id": "c41717",
+     "img": "images/cut/031-c41717.png"
     }
    ],
    "posted_at": null,
@@ -2790,7 +2792,9 @@
      "product_url": "https://www.uniqlo.com/us/en/products/E482306-000/00",
      "note": "",
      "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/482306/sub/goods_482306_sub11_3x4.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "81cbd9",
+     "img": "images/cut/032-81cbd9.png"
     },
     {
      "label": "Exact",
@@ -2801,7 +2805,9 @@
      "product_url": "https://www.uniqlo.com/us/en/products/E465863-000/00",
      "note": "",
      "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/465863/sub/goods_465863_sub12_3x4.jpg",
-     "slide": 5
+     "slide": 5,
+     "id": "cbc67b",
+     "img": "images/cut/032-cbc67b.png"
     }
    ],
    "posted_at": null,
@@ -2839,14 +2845,11 @@
    ],
    "photo": {
     "credit": "Man of Many (Image: Supplied)",
-    "source_url": "https://manofmany.com/watches/best-watches-from-2026-us-open-tennis"
+    "source_url": "https://raw.githubusercontent.com/niral55/copthefit/main/images/photos/032.jpg?t=1792013936048"
    },
    "video": "tenniswatches",
    "title": "Federer's colorful Rolex",
-   "subtitle": "At the US Open",
-   "photo_src": "https://raw.githubusercontent.com/niral55/copthefit/main/images/photos/032.jpg?t=1792013936048",
-   "photo_src_page": "",
-   "photo_src_credit": ""
+   "subtitle": "At the US Open"
   },
   {
    "find": "033",
