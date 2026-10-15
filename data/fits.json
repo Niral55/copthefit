@@ -1790,26 +1790,28 @@
      "price": "$125"
     },
     {
-     "slide": 3,
-     "label": "Exact",
-     "brand": "Chanel",
-     "name": "Mini bag (white)",
-     "retailer": "ebay",
-     "query": "Chanel mini bag white",
-     "product_url": "",
+     "label": "Similar",
+     "brand": "Raimundo Langlois",
+     "name": "White Poplin Field Jacket",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://clothbase.com/items/f90c9ca2_raimundo-langlois-white-poplin-field-jacket_raimundo-langlois",
      "note": "",
-     "type": "bag"
+     "price": "$446.0",
+     "image_src": "https://cdn.clothbase.com/uploads/929624d6-da5f-4ef1-a58b-bd97c17b73c2/white-poplin-field-jacket.jpg",
+     "slide": 3
     },
     {
-     "slide": 4,
      "label": "Similar",
      "brand": "",
-     "name": "All-white matching set",
-     "retailer": "amazon",
-     "query": "men's white matching set",
-     "product_url": "",
+     "name": "Heavyweight Baggy Fit Denim Short",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://shopproclub.com/pro-club-men-s-heavyweight-baggy-fit-denim-short",
      "note": "",
-     "type": "clothing"
+     "price": "$54",
+     "image_src": "https://shopproclub.com/media/catalog/product/cache/61eed81046a68439fa526f0fb7e1517f/d/s/dsc02725_6.jpg",
+     "slide": 4
     }
    ],
    "posted_at": null,
@@ -1818,7 +1820,7 @@
    "photo_source": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-13T03:31:06.626Z",
+   "updated": "2026-10-15T03:01:13.847Z",
    "photo_options": [
     {
      "image": "https://assets.thegame.ph/wp-content/uploads/2026/05/sga-3.webp",
