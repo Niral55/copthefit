@@ -1,0 +1,40 @@
+name: Check links
+
+# Opens every product link on live listings and records the result in reports/linkcheck.json (no site rebuild).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q requests
+      - name: Check
+        run: |
+          python3 - <<'PY'
+          import json, requests, concurrent.futures as cf
+          d = json.load(open("data/fits.json"))["fits"]
+          UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
+          jobs = [(f["find"], i["name"], i["product_url"]) for f in d if f["status"] in ("approved", "posted") for i in f["items"] if i.get("product_url")]
+          def chk(j):
+              try:
+                  r = requests.get(j[2], headers={"User-Agent": UA, "Accept": "text/html,*/*", "Accept-Language": "en-US"}, timeout=25, allow_redirects=True)
+                  t = r.text[:200000].lower()
+                  soldout = any(w in t for w in ("sold out", "out of stock", "no longer available", "currently unavailable"))
+                  return {"find": j[0], "name": j[1], "url": j[2], "status": r.status_code, "final": r.url, "soldout_text": soldout}
+              except Exception as e:
+                  return {"find": j[0], "name": j[1], "url": j[2], "status": 0, "error": str(e)[:120]}
+          with cf.ThreadPoolExecutor(8) as ex:
+              out = list(ex.map(chk, jobs))
+          import os; os.makedirs("reports", exist_ok=True)
+          json.dump(out, open("reports/linkcheck.json", "w"), indent=1)
+          PY
+      - name: Save
+        run: |
+          git config user.name "copthefit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports && git commit -qm "Link check [skip ci]" && git pull -q --rebase && git push -q || true
