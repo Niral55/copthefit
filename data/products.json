@@ -6,12 +6,13 @@
    "store": "clothbase.com",
    "title_raw": "Massimo Alba - Slim-Fit Cotton-Corduroy Suit Jacket - Blue",
    "brand": "Massimo Alba",
-   "name": "",
+   "name": "Slim-Fit Cotton-Corduroy Suit Jacket",
    "image": "https://cdn.clothbase.com/uploads/e37b5d7e-96e4-4ca9-9d0c-c39e84238aca/image.jpg",
    "price": "975.0",
    "currency": "USD",
    "added": "2026-10-15T02:54:44.336Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8xmhtmr4nj",
