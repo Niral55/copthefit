@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8y5fa2fzxb",
+   "url": "https://www.farfetch.com/shopping/men/jacob-cohen-blue-corduroy-jeans-item-36838638.aspx",
+   "store": "farfetch.com",
+   "title_raw": "blue corduroy jeans",
+   "brand": "Jacob Cohën",
+   "name": "",
+   "image": "https://cdn-images.farfetch-contents.com/36/83/86/38/36838638_69463406_1000.jpg",
+   "price": "654.00",
+   "currency": "USD",
+   "added": "2026-10-15T02:55:51.962Z",
+   "enriched": null
+  },
+  {
    "id": "mv8y3z3kmyyf",
    "url": "https://clothbase.com/items/06d1b9bc_massimo-alba-slim-fit-cotton-corduroy-suit-jacket-blue_massimo-alba",
    "store": "clothbase.com",
