@@ -1752,7 +1752,7 @@
   },
   {
    "find": "021",
-   "status": "rejected",
+   "status": "approved",
    "priority": 1,
    "added": "2026-10-08",
    "celeb": "Shai Gilgeous-Alexander",
@@ -1824,7 +1824,7 @@
    "photo_source": "https://thegame.ph/lifestyle/nba-conference-finals-2026-tunnel-fits/",
    "photo_search": "2026-10-08",
    "ig_queue": false,
-   "updated": "2026-10-15T03:01:13.847Z",
+   "updated": "2026-10-15T04:34:01.957Z",
    "photo_options": [
     {
      "image": "https://assets.thegame.ph/wp-content/uploads/2026/05/sga-3.webp",
