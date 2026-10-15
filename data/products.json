@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8y3z3kmyyf",
+   "url": "https://clothbase.com/items/06d1b9bc_massimo-alba-slim-fit-cotton-corduroy-suit-jacket-blue_massimo-alba",
+   "store": "clothbase.com",
+   "title_raw": "Massimo Alba - Slim-Fit Cotton-Corduroy Suit Jacket - Blue",
+   "brand": "Massimo Alba",
+   "name": "",
+   "image": "https://cdn.clothbase.com/uploads/e37b5d7e-96e4-4ca9-9d0c-c39e84238aca/image.jpg",
+   "price": "975.0",
+   "currency": "USD",
+   "added": "2026-10-15T02:54:44.336Z",
+   "enriched": null
+  },
+  {
    "id": "mv8xmhtmr4nj",
    "url": "https://www.levi.com/US/en_US/clothing/men/jeans/relaxed/550TM-relaxed-mens-jeans/p/005504891",
    "store": "levi.com",
