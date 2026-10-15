@@ -20,7 +20,7 @@
   "name": "DW5600E-1V (black, successor to the DW-5600C-1V)",
   "url": "https://www.walmart.com/ip/seort/297911752",
   "status": 200,
-  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=a8394fbc-c851-11f1-a135-702963c9b9c1&vid=&g=b",
+  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=127ec009-c852-11f1-b02b-5ad8850ced75&vid=&g=b",
   "soldout_text": false
  },
  {
@@ -28,7 +28,7 @@
   "name": "DW5600E-1V (ships as DW-5600UE-1), black",
   "url": "https://www.walmart.com/ip/seort/297911752",
   "status": 200,
-  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=a83eb67e-c851-11f1-8d84-1e2d462515cc&vid=&g=b",
+  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=12785d4e-c852-11f1-8cf4-62972fa13362&vid=&g=b",
   "soldout_text": false
  },
  {
@@ -36,7 +36,7 @@
   "name": "DW5600UBB-1 matte black (current version of the DW5600BB-1)",
   "url": "https://www.walmart.com/ip/Casio-G-Shock-Digital-Resin-Strap-Quartz-DW-5600UBB-1-200M-Men-s-Watch/5745946402",
   "status": 200,
-  "final": "https://www.walmart.com/blocked?url=L2lwL0Nhc2lvLUctU2hvY2stRGlnaXRhbC1SZXNpbi1TdHJhcC1RdWFydHotRFctNTYwMFVCQi0xLTIwME0tTWVuLXMtV2F0Y2gvNTc0NTk0NjQwMg==&uuid=a83e76ab-c851-11f1-9847-9951ec1151b2&vid=&g=b",
+  "final": "https://www.walmart.com/blocked?url=L2lwL0Nhc2lvLUctU2hvY2stRGlnaXRhbC1SZXNpbi1TdHJhcC1RdWFydHotRFctNTYwMFVCQi0xLTIwME0tTWVuLXMtV2F0Y2gvNTc0NTk0NjQwMg==&uuid=128b5b9f-c852-11f1-969b-8bb1bc4006b7&vid=&g=b",
   "soldout_text": false
  },
  {
@@ -296,6 +296,30 @@
   "soldout_text": false
  },
  {
+  "find": "021",
+  "name": "SHAI 001 Premium 'Slither' (A24274C)",
+  "url": "https://stockx.com/converse-shai-001-premium-slither",
+  "status": 403,
+  "final": "https://stockx.com/converse-shai-001-premium-slither",
+  "soldout_text": false
+ },
+ {
+  "find": "021",
+  "name": "White Poplin Field Jacket",
+  "url": "https://clothbase.com/items/f90c9ca2_raimundo-langlois-white-poplin-field-jacket_raimundo-langlois",
+  "status": 403,
+  "final": "https://clothbase.com/items/f90c9ca2_raimundo-langlois-white-poplin-field-jacket_raimundo-langlois",
+  "soldout_text": false
+ },
+ {
+  "find": "021",
+  "name": "Heavyweight Baggy Fit Denim Short",
+  "url": "https://shopproclub.com/pro-club-men-s-heavyweight-baggy-fit-denim-short",
+  "status": 200,
+  "final": "https://shopproclub.com/pro-club-men-s-heavyweight-baggy-fit-denim-short",
+  "soldout_text": false
+ },
+ {
   "find": "022",
   "name": "Giannis Freak 8 'South Beach' (Hyper Pink/Hyper Orange/Dynamic Yellow, IM5150-600)",
   "url": "https://stockx.com/nike-giannis-freak-8-south-beach",
@@ -355,7 +379,7 @@
   "find": "031",
   "name": "Wardrobe Essentials Full Zip Hood | Sky light blue",
   "url": "https://www.off-the-pitch.com/products/wardrobe-essentials-full-zip-hood-sky-light-blue",
-  "status": 429,
+  "status": 200,
   "final": "https://www.off-the-pitch.com/products/wardrobe-essentials-full-zip-hood-sky-light-blue",
   "soldout_text": false
  },
@@ -633,9 +657,9 @@
   "find": "049",
   "name": "Tank (yellow gold)",
   "url": "https://www.watchesofswitzerland.com/products/cartier-tank-louis-cartier-wgta0211-17311723",
-  "status": 429,
+  "status": 200,
   "final": "https://www.watchesofswitzerland.com/products/cartier-tank-louis-cartier-wgta0211-17311723",
-  "soldout_text": false
+  "soldout_text": true
  },
  {
   "find": "049",
@@ -712,9 +736,9 @@
  {
   "find": "053",
   "name": "Knit Cuffed Beanie (Acrylic Watch Hat A18), Carhartt Brown",
-  "url": "https://www.carhartt.com/products/Acrylic-Watch-Hat-A18",
+  "url": "https://www.amazon.com/dp/B0HMN6G144",
   "status": 200,
-  "final": "https://www.carhartt.com",
+  "final": "https://www.amazon.com/dp/B0HMN6G144",
   "soldout_text": false
  },
  {
