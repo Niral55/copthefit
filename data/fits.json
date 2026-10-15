@@ -11211,7 +11211,7 @@
   },
   {
    "find": "121",
-   "status": "review",
+   "status": "approved",
    "ig_queue": false,
    "priority": 1,
    "added": "2026-10-14",
@@ -11311,7 +11311,7 @@
    "photo_src": "https://media.gq.com/photos/684c5e63603987d2c428c3dd/master/w_1600%2Cc_limit/2219716554",
    "photo_src_page": "https://www.gq.com/story/ethan-hawke-adidas-sambas",
    "photo_src_credit": "Gilbert Carrasquillo/Getty Images via GQ",
-   "updated": "2026-10-15T02:56:01.747Z"
+   "updated": "2026-10-15T02:57:21.278Z"
   }
  ]
 }
