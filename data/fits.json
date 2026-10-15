@@ -11198,9 +11198,10 @@
    },
    "score_note": "Affordable adidas find; recognizable actor or artist; evergreen reference. ",
    "note": "VIDEO HOOK: What did Bond wear when the suit came off? BEATS: 0–3s spy-style question; 3–8s training shoes reveal; 8–18s Gazelle 2 identification; 18–25s clearly compare discontinued original with current navy/white Similar and site CTA. DRAFT: inspected wide range scene shows Craig and shoes; second image is an on-feet detail, not a full actor cover. Add a second distinct full-body training frame. Excluded Bond Lifestyle collages. Amazon displayed $56.63 for selected variant; size/seller changes pricing. Exact screen Dark Indigo/Argentina Blue differs from BB5478.",
-   "photo_src": "https://i0.wp.com/bamfstyle.com/wp-content/uploads/2022/02/Skyfall3SIS-CL-TrackPants.jpg?resize=664%2C276&ssl=1",
-   "photo_src_page": "https://bamfstyle.com/2022/02/21/skyfall-3-sis-training-gear/amp/",
-   "photo_src_credit": "MGM / EON via BAMF Style"
+   "photo": {
+    "credit": "MGM / EON via BAMF Style",
+    "source_url": "https://bamfstyle.com/2022/02/21/skyfall-3-sis-training-gear/amp/"
+   }
   },
   {
    "find": "121",
@@ -11341,7 +11342,9 @@
      "image_src": "https://www.stadiumgoods.com/cdn/shop/files/PLqu3fVRTmBUCZSKFgQbrQbw.png?crop=center&height=480&v=1726867600&width=480",
      "price": "$104",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "5294ba",
+     "img": "images/cut/122-5294ba.png"
     }
    ],
    "photo_options": [
@@ -11370,9 +11373,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MTk4NDczNjc5MDMyNTU5NDQ1/chiefs-biden.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/travis-kelce-wears-nike-dunks-to-the-white-house",
-   "photo_src_credit": "Kicks On SI"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Kicks On SI",
+    "source_url": "https://www.si.com/fannation/sneakers/news/travis-kelce-wears-nike-dunks-to-the-white-house"
+   }
   },
   {
    "celeb": "Joe Rogan",
@@ -11405,7 +11410,9 @@
      "image_src": "https://www.stadiumgoods.com/cdn/shop/files/PLqu3fVRTmBUCZSKFgQbrQbw.png?crop=center&height=480&v=1726867600&width=480",
      "price": "$104",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "5edace",
+     "img": "images/cut/123-5edace.png"
     }
    ],
    "photo_options": [
@@ -11439,9 +11446,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://images.complex.com/complex/image/upload/q_auto,f_avif,c_fill,ar_0.80,w_2048,g_auto/v1723826979/sanity-new/sub-buzz-5965-1713554105-1-136661518",
-   "photo_src_page": "https://www.complex.com/sneakers/a/matt-welty/joe-rogan-nike-panda-dunk-sneakerheads",
-   "photo_src_credit": "Via Joe Rogan / Complex"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Via Joe Rogan / Complex",
+    "source_url": "https://www.complex.com/sneakers/a/matt-welty/joe-rogan-nike-panda-dunk-sneakerheads"
+   }
   },
   {
    "celeb": "Caleb Williams",
@@ -11474,7 +11483,9 @@
      "image_src": "https://www.stadiumgoods.com/cdn/shop/files/PLqu3fVRTmBUCZSKFgQbrQbw.png?crop=center&height=480&v=1726867600&width=480",
      "price": "$104",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "11686e",
+     "img": "images/cut/124-11686e.png"
     }
    ],
    "photo_options": [
@@ -11508,9 +11519,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_136,w_3451,h_1941/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/kicks/01j4881z2zvxr55qd5mj.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/caleb-williams-wears-popular-nike-sneakers-to-hall-of-fame-game",
-   "photo_src_credit": "Kamil Krzaczynski-USA TODAY Sports"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Kamil Krzaczynski-USA TODAY Sports",
+    "source_url": "https://www.si.com/fannation/sneakers/news/caleb-williams-wears-popular-nike-sneakers-to-hall-of-fame-game"
+   }
   },
   {
    "celeb": "Josh Allen",
@@ -11543,7 +11556,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/096/703/984/original/1313028_01.jpg.jpeg?width=750",
      "price": "$99",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "e71cf2",
+     "img": "images/cut/125-e71cf2.png"
     }
    ],
    "photo_options": [
@@ -11577,9 +11592,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_83,w_2491,h_1401/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/kicks/01j4cppgz6vt4zv19r9x.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/josh-allen-wears-nike-dunks-to-bills-blue-red-practice",
-   "photo_src_credit": "Shawn Dowd / Rochester Democrat and Chronicle / USA TODAY NETWORK"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Shawn Dowd / Rochester Democrat and Chronicle / USA TODAY NETWORK",
+    "source_url": "https://www.si.com/fannation/sneakers/news/josh-allen-wears-nike-dunks-to-bills-blue-red-practice"
+   }
   },
   {
    "celeb": "Jalen Hurts",
@@ -11612,7 +11629,9 @@
      "image_src": "https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07-Product_V2.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1785333173",
      "price": "$98",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "731028",
+     "img": "images/cut/126-731028.png"
     }
    ],
    "photo_options": [
@@ -11646,9 +11665,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MTk1ODM3NjgyMzE0NjUwNjUw/jalen-hurts.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/jalen-hurts-wears-affordable-nike-shoes-to-super-bowl-lvii",
-   "photo_src_credit": "Kicks On SI"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Kicks On SI",
+    "source_url": "https://www.si.com/fannation/sneakers/news/jalen-hurts-wears-affordable-nike-shoes-to-super-bowl-lvii"
+   }
   },
   {
    "celeb": "Tom Brady",
@@ -11681,7 +11702,9 @@
      "image_src": "https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07-Product_V2.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1785333173",
      "price": "$98",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "d562fb",
+     "img": "images/cut/127-d562fb.png"
     }
    ],
    "photo_options": [
@@ -11715,9 +11738,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MTk5MTQ2NzM2Mzc4MTkzODc2/brady-kraft.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party",
-   "photo_src_credit": "Kicks On SI"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Kicks On SI",
+    "source_url": "https://www.si.com/fannation/sneakers/news/tom-brady-wears-cheap-nike-shoes-to-hamptons-party"
+   }
   },
   {
    "celeb": "Shohei Ohtani",
@@ -11750,7 +11775,9 @@
      "image_src": "https://kith.com/cdn/shop/files/u9060blk_2.jpg?v=1781274260",
      "price": "$115",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "496177",
+     "img": "images/cut/128-496177.png"
     }
    ],
    "photo_options": [
@@ -11784,9 +11811,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/MTk2MDM5MTM5NjM0NzE4MTc3/shohei-ohtani.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/shohei-ohtani-wears-new-balances-latest-lifestyle-shoes",
-   "photo_src_credit": "Kicks On SI"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Kicks On SI",
+    "source_url": "https://www.si.com/fannation/sneakers/news/shohei-ohtani-wears-new-balances-latest-lifestyle-shoes"
+   }
   },
   {
    "celeb": "Jack Harlow",
@@ -11819,7 +11848,9 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/640/719/original/1120422_01.jpg.jpeg?width=750",
      "price": "$118",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "c964ad",
+     "img": "images/cut/129-c964ad.png"
     }
    ],
    "photo_options": [
@@ -11853,9 +11884,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_1584%2Cy_766/MTk3NjM4NjAxNTYxODc2Mjc0/knicks-fans.jpg",
-   "photo_src_page": "https://www.si.com/fannation/sneakers/news/celebrities-show-off-sneakers-at-madison-square-garden",
-   "photo_src_credit": "Brad Penner-USA TODAY Sports"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Brad Penner-USA TODAY Sports",
+    "source_url": "https://www.si.com/fannation/sneakers/news/celebrities-show-off-sneakers-at-madison-square-garden"
+   }
   },
   {
    "celeb": "Eberechi Eze",
@@ -11892,7 +11925,9 @@
      "image_src": "https://www.stuff.tv/wp-content/uploads/sites/2/2026/07/Casio-W-59-1V.jpg?quality=75&w=1024",
      "price": "$20",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "1c4db2",
+     "img": "images/cut/130-1c4db2.png"
     }
    ],
    "photo_options": [
@@ -11926,9 +11961,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.stuff.tv/wp-content/uploads/sites/2/2026/07/GettyImages-2280725366.jpg?quality=75&w=1080",
-   "photo_src_page": "https://www.stuff.tv/?p=998993",
-   "photo_src_credit": "Getty Images / Stuff"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Getty Images / Stuff",
+    "source_url": "https://www.stuff.tv/?p=998993"
+   }
   },
   {
    "celeb": "Central Cee",
@@ -11961,7 +11998,9 @@
      "image_src": "https://www.g-central.com/wp-content/uploads/2020/01/DW-6900SP-1-1.jpg",
      "price": "$245",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "c61680",
+     "img": "images/cut/131-c61680.png"
     }
    ],
    "photo_options": [
@@ -11995,9 +12034,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.g-central.com/wp-content/uploads/2024/06/CENTRAL-CEE-G-SHOCK-DW-6900-PARIS-FASHION-WEEK.jpg",
-   "photo_src_page": "https://g-central.com/?p=72344",
-   "photo_src_credit": "G-Central"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "G-Central",
+    "source_url": "https://g-central.com/?p=72344"
+   }
   },
   {
    "celeb": "Ryan Gosling",
@@ -12038,7 +12079,9 @@
      "image_src": "https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blte0cf26e5ccbe43dd/678a2e6b5732c526949b0ac0/33176-1.jpg?format=pjpg&auto=webp&quality=75%2C90&width=3840",
      "price": "$45",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "249519",
+     "img": "images/cut/132-249519.png"
     }
    ],
    "photo_options": [
@@ -12072,9 +12115,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://cdn.strapsco.com/wp-content/uploads/2021/02/affordable_watches_worn_by_celebrities_ryan_gosling_casio_a168wa.jpg",
-   "photo_src_page": "https://strapsco.com/affordable-watches-worn-by-celebrities/",
-   "photo_src_credit": "Strapsco"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Strapsco",
+    "source_url": "https://strapsco.com/affordable-watches-worn-by-celebrities/"
+   }
   },
   {
    "celeb": "Jacob Elordi",
@@ -12111,7 +12156,9 @@
      "image_src": "https://imgcdn.carhartt.com/is/image/Carhartt/EU_103828_BRN?fit=constrain,1&wid=798&hei=800&fmt=jpg",
      "price": "$130",
      "note": "",
-     "slide": 2
+     "slide": 2,
+     "id": "d73d34",
+     "img": "images/cut/133-d73d34.png"
     }
    ],
    "photo_options": [
@@ -12145,9 +12192,11 @@
    "posted_at": null,
    "ig_media_id": null,
    "ig_permalink": null,
-   "photo_src": "https://www.mrporter.com/content/images/cms/ycm/resource/blob/25737622/06e083df93c94730a3f20ab0e4e7c000/16x9-opener-jpg-1--data.jpg",
-   "photo_src_page": "https://www.mrporter.com/en-it/journal/travel/carhartt-workwear-hollywood-25737482",
-   "photo_src_credit": "Fabio Lovino / 20th Century Studios via Mr Porter"
+   "photo_search": "2026-10-15",
+   "photo": {
+    "credit": "Fabio Lovino / 20th Century Studios via Mr Porter",
+    "source_url": "https://www.mrporter.com/en-it/journal/travel/carhartt-workwear-hollywood-25737482"
+   }
   }
  ]
 }
