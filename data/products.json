@@ -6,12 +6,13 @@
    "store": "stockx.com",
    "title_raw": "Kith Plaid Sheridan Shirt Jacket Pavillion",
    "brand": "Kith",
-   "name": "",
+   "name": "Plaid Sheridan Shirt Jacket Pavillion",
    "image": "https://images.stockx.com/images/Kith-Plaid-Sheridan-Shirt-Jacket-Pavillion.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1729872180",
    "price": "350",
    "currency": "USD",
    "added": "2026-10-15T02:35:36.130Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8xdxwbkqo7",
