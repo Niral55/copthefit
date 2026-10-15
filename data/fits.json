@@ -2768,6 +2768,28 @@
      "slide": 3,
      "id": "de08d7",
      "img": "images/cut/032-de08d7.png"
+    },
+    {
+     "label": "Exact",
+     "brand": "UNIQLO",
+     "name": "DRY-EX Quarter-Zip Polo Shirt",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.uniqlo.com/us/en/products/E482306-000/00",
+     "note": "",
+     "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/482306/sub/goods_482306_sub11_3x4.jpg",
+     "slide": 4
+    },
+    {
+     "label": "Exact",
+     "brand": "UNIQLO",
+     "name": "Stretch Shorts",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.uniqlo.com/us/en/products/E465863-000/00",
+     "note": "",
+     "image_src": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/465863/sub/goods_465863_sub12_3x4.jpg",
+     "slide": 5
     }
    ],
    "posted_at": null,
@@ -2790,7 +2812,7 @@
     }
    ],
    "ig_queue": false,
-   "updated": "2026-10-14T05:26:55.275Z",
+   "updated": "2026-10-15T02:30:11.585Z",
    "photo_options": [
     {
      "image": "https://manofmany.com/wp-content/uploads/2026/08/Roger-Fed-Rolex-at-US-Open-2026.jpg",
@@ -2809,7 +2831,10 @@
    },
    "video": "tenniswatches",
    "title": "Federer's colorful Rolex",
-   "subtitle": "At the US Open"
+   "subtitle": "At the US Open",
+   "photo_src": "https://raw.githubusercontent.com/niral55/copthefit/main/images/photos/032.jpg?t=1792013936048",
+   "photo_src_page": "",
+   "photo_src_credit": ""
   },
   {
    "find": "033",

@@ -1,34 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8x6zciuftf",
-   "url": "https://www.uniqlo.com/us/en/products/E465863-000/00",
-   "store": "uniqlo.com",
-   "title_raw": "Stretch Shorts",
-   "brand": "UNIQLO",
-   "name": "Stretch Shorts",
-   "image": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/465863/sub/goods_465863_sub12_3x4.jpg",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-15T02:29:05.010Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8x549kk3va",
-   "url": "https://www.uniqlo.com/us/en/products/E482306-000/00",
-   "store": "uniqlo.com",
-   "title_raw": "DRY-EX Quarter-Zip Polo Shirt",
-   "brand": "UNIQLO",
-   "name": "DRY-EX Quarter-Zip Polo Shirt",
-   "image": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/482306/sub/goods_482306_sub11_3x4.jpg",
-   "price": "",
-   "currency": "",
-   "added": "2026-10-15T02:27:38.072Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",
