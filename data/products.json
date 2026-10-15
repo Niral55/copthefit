@@ -6,12 +6,13 @@
    "store": "quince.com",
    "title_raw": "Men's Alpaca-Wool Crewneck Sweater",
    "brand": "Quince",
-   "name": "",
+   "name": "Men's Alpaca-Wool Crewneck Sweater",
    "image": "https://images.quince.com/sviCG9WqiCdQMpyjkqS5Q/e8aaa9b2003b561b859a19a04085854f/M-LKT-107-HEAGRE-01_EDITED.jpg?fm=webP&q=90&w=1600",
    "price": "",
    "currency": "",
    "added": "2026-10-15T02:37:11.388Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8e1mw1c02a",
