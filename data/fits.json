@@ -10639,7 +10639,9 @@
      "note": "",
      "price": "$350",
      "image_src": "https://images.stockx.com/images/Kith-Plaid-Sheridan-Shirt-Jacket-Pavillion.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1729872180",
-     "slide": 2
+     "slide": 2,
+     "id": "e6cef0",
+     "img": "images/cut/115-e6cef0.png"
     },
     {
      "label": "Similar",
@@ -10651,7 +10653,9 @@
      "note": "",
      "price": "$132",
      "image_src": "https://faraone.shop/cdn/shop/files/p26-costumein-26s398576_1600x.jpg?v=1776861316",
-     "slide": 3
+     "slide": 3,
+     "id": "7316be",
+     "img": "images/cut/115-7316be.png"
     },
     {
      "label": "Exact",
