@@ -10957,7 +10957,9 @@
      "note": "",
      "price": "$583.00",
      "image_src": "https://wdepartment.com/wp-content/uploads/2026/03/11759_A.jpg",
-     "slide": 2
+     "slide": 2,
+     "id": "ab0003",
+     "img": "images/cut/118-ab0003.png"
     },
     {
      "label": "Exact",
@@ -10968,7 +10970,9 @@
      "product_url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-original-mens-jeans/p/005013800",
      "note": "",
      "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0193_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
-     "slide": 3
+     "slide": 3,
+     "id": "260645",
+     "img": "images/cut/118-260645.png"
     },
     {
      "label": "Similar",
