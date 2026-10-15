@@ -3,8 +3,9 @@
   "find": "001",
   "name": "GA2100-1A1 Monochrome Black",
   "url": "https://www.amazon.com/dp/B0DSWNXSQG?lv=shuf&channelId=500&plpRedirect=mhFallback",
-  "status": 0,
-  "error": "(\"Connection broken: InvalidChunkLength(got length b'', 0 bytes read)\", InvalidChunkLength(got length b'', 0 bytes read)"
+  "status": 200,
+  "final": "https://www.amazon.com/dp/B0DSWNXSQG?lv=shuf&channelId=500&plpRedirect=mhFallback",
+  "soldout_text": false
  },
  {
   "find": "001",
@@ -19,7 +20,7 @@
   "name": "DW5600E-1V (black, successor to the DW-5600C-1V)",
   "url": "https://www.walmart.com/ip/seort/297911752",
   "status": 200,
-  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=3116dab3-c84e-11f1-a402-10420c6af5f0&vid=&g=b",
+  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=a8394fbc-c851-11f1-a135-702963c9b9c1&vid=&g=b",
   "soldout_text": false
  },
  {
@@ -27,7 +28,7 @@
   "name": "DW5600E-1V (ships as DW-5600UE-1), black",
   "url": "https://www.walmart.com/ip/seort/297911752",
   "status": 200,
-  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=3121734f-c84e-11f1-a41e-0aa68310ffe6&vid=&g=b",
+  "final": "https://www.walmart.com/blocked?url=L2lwL3Nlb3J0LzI5NzkxMTc1Mg==&uuid=a83eb67e-c851-11f1-8d84-1e2d462515cc&vid=&g=b",
   "soldout_text": false
  },
  {
@@ -35,7 +36,7 @@
   "name": "DW5600UBB-1 matte black (current version of the DW5600BB-1)",
   "url": "https://www.walmart.com/ip/Casio-G-Shock-Digital-Resin-Strap-Quartz-DW-5600UBB-1-200M-Men-s-Watch/5745946402",
   "status": 200,
-  "final": "https://www.walmart.com/blocked?url=L2lwL0Nhc2lvLUctU2hvY2stRGlnaXRhbC1SZXNpbi1TdHJhcC1RdWFydHotRFctNTYwMFVCQi0xLTIwME0tTWVuLXMtV2F0Y2gvNTc0NTk0NjQwMg==&uuid=31166353-c84e-11f1-bfb7-e418ee7b9dbc&vid=&g=b",
+  "final": "https://www.walmart.com/blocked?url=L2lwL0Nhc2lvLUctU2hvY2stRGlnaXRhbC1SZXNpbi1TdHJhcC1RdWFydHotRFctNTYwMFVCQi0xLTIwME0tTWVuLXMtV2F0Y2gvNTc0NTk0NjQwMg==&uuid=a83e76ab-c851-11f1-9847-9951ec1151b2&vid=&g=b",
   "soldout_text": false
  },
  {
@@ -145,9 +146,9 @@
  {
   "find": "014",
   "name": "Samba 'Cow Print' White Black (KK2238)",
-  "url": "https://www.soleretriever.com/news/articles/adidas-samba-cow-print-pack-release-date-holiday-2025",
-  "status": 200,
-  "final": "https://www.soleretriever.com/news/articles/adidas-samba-cow-print-pack-release-date-holiday-2025",
+  "url": "https://www.goat.com/sneakers/adidas-wmns-samba-og-cow-print-white-black-kk2238",
+  "status": 403,
+  "final": "https://www.goat.com/sneakers/adidas-wmns-samba-og-cow-print-white-black-kk2238",
   "soldout_text": false
  },
  {
@@ -354,7 +355,7 @@
   "find": "031",
   "name": "Wardrobe Essentials Full Zip Hood | Sky light blue",
   "url": "https://www.off-the-pitch.com/products/wardrobe-essentials-full-zip-hood-sky-light-blue",
-  "status": 200,
+  "status": 429,
   "final": "https://www.off-the-pitch.com/products/wardrobe-essentials-full-zip-hood-sky-light-blue",
   "soldout_text": false
  },
@@ -393,9 +394,9 @@
  {
   "find": "033",
   "name": "Cosmograph Daytona 6239 (vintage)",
-  "url": "https://graysantiques.com/product/rolex-vintage-daytona-hand-winding-ref-6239-full-set-box-and-papers-1968",
-  "status": 404,
-  "final": "https://www.graysantiques.com/product/rolex-vintage-daytona-hand-winding-ref-6239-full-set-box-and-papers-1968",
+  "url": "https://www.chrono24.com/rolex/ref-6239.htm",
+  "status": 403,
+  "final": "https://www.chrono24.com/rolex/ref-6239.htm",
   "soldout_text": false
  },
  {
@@ -417,9 +418,9 @@
  {
   "find": "034",
   "name": "Day-Date 40 228238",
-  "url": "https://www.rolex.com/en-us/watches/day-date/m228238-0005",
+  "url": "https://www.chrono24.com/rolex/ref-228238.htm",
   "status": 403,
-  "final": "https://www.rolex.com/en-us/watches/day-date/m228238-0005",
+  "final": "https://www.chrono24.com/rolex/ref-228238.htm",
   "soldout_text": false
  },
  {
@@ -458,9 +459,9 @@
   "find": "035",
   "name": "Pro Diver Automatic 40mm Steel (8926OB)",
   "url": "https://invictastores.com/products/invicta-pro-diver-automatic-men-s-watch-40mm-steel-8926ob",
-  "status": 200,
+  "status": 429,
   "final": "https://invictastores.com/products/invicta-pro-diver-automatic-men-s-watch-40mm-steel-8926ob",
-  "soldout_text": true
+  "soldout_text": false
  },
  {
   "find": "037",
@@ -490,9 +491,9 @@
   "find": "038",
   "name": "Priv\u00e9 Tank \u00e0 Guichets (rose gold)",
   "url": "https://wristaficionado.com/products/cartier-tank-a-guichets-wgta0235-rose-gold-alligator-strap-2025",
-  "status": 200,
+  "status": 429,
   "final": "https://wristaficionado.com/products/cartier-tank-a-guichets-wgta0235-rose-gold-alligator-strap-2025",
-  "soldout_text": true
+  "soldout_text": false
  },
  {
   "find": "038",
@@ -505,9 +506,9 @@
  {
   "find": "039",
   "name": "Royal Oak Perpetual Calendar 26674ST",
-  "url": "https://www.audemarspiguet.com/us/en/watch-collection/royal-oak/26674ST.OO.1320ST.01",
-  "status": 200,
-  "final": "https://www.audemarspiguet.com/us/en/watch-collection/royal-oak/26674ST.OO.1320ST.01",
+  "url": "https://www.chrono24.com/audemarspiguet/ref-26674st.htm",
+  "status": 403,
+  "final": "https://www.chrono24.com/audemarspiguet/ref-26674st.htm",
   "soldout_text": false
  },
  {
@@ -538,7 +539,7 @@
   "find": "040",
   "name": "Cosmograph Daytona 126538TRO",
   "url": "https://www.watchguys.com/products/rolex-daytona-126538tro",
-  "status": 200,
+  "status": 429,
   "final": "https://www.watchguys.com/products/rolex-daytona-126538tro",
   "soldout_text": false
  },
@@ -711,9 +712,9 @@
  {
   "find": "053",
   "name": "Knit Cuffed Beanie (Acrylic Watch Hat A18), Carhartt Brown",
-  "url": "https://www.carhartt.com/p/knit-cuffed-beanie/A18",
-  "status": 404,
-  "final": "https://www.carhartt.com/p/knit-cuffed-beanie/A18",
+  "url": "https://www.carhartt.com/products/Acrylic-Watch-Hat-A18",
+  "status": 200,
+  "final": "https://www.carhartt.com",
   "soldout_text": false
  },
  {
@@ -1086,17 +1087,17 @@
  {
   "find": "084",
   "name": "Made in USA Core T-Shirt",
-  "url": "https://www.newbalance.com.sg/men-clothing/MT43543.html",
+  "url": "https://www.newbalance.com/pd/made-in-usa-core-t-shirt/MT43543.html",
   "status": 403,
-  "final": "https://www.newbalance.com.sg/men-clothing/MT43543.html",
+  "final": "https://www.newbalance.com/pd/made-in-usa-core-t-shirt/MT43543.html",
   "soldout_text": false
  },
  {
   "find": "084",
   "name": "Men's Steady State SuperLoft Jogger *Regular",
-  "url": "https://www.lululemon.fr/en-fr/p/mens-steady-state-superloft-jogger-regular/svbgzry05j.html",
+  "url": "https://shop.lululemon.com/p/mens-steady-state-superloft-jogger-regular/svbgzry05j",
   "status": 403,
-  "final": "https://www.lululemon.fr/en-fr/p/mens-steady-state-superloft-jogger-regular/svbgzry05j.html",
+  "final": "https://shop.lululemon.com/p/mens-steady-state-superloft-jogger-regular/svbgzry05j",
   "soldout_text": false
  },
  {
@@ -1137,14 +1138,6 @@
   "url": "https://restockar.com/products/boredom-kills-cotton-summer-set-top",
   "status": 429,
   "final": "https://restockar.com/products/boredom-kills-cotton-summer-set-top",
-  "soldout_text": false
- },
- {
-  "find": "087",
-  "name": "Cotton Summer Set Top",
-  "url": "https://restockar.com/products/boredom-kills-cotton-summer-set-bottom",
-  "status": 429,
-  "final": "https://restockar.com/products/boredom-kills-cotton-summer-set-bottom",
   "soldout_text": false
  },
  {
