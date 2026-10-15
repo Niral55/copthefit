@@ -1799,7 +1799,9 @@
      "note": "",
      "price": "$446.0",
      "image_src": "https://cdn.clothbase.com/uploads/929624d6-da5f-4ef1-a58b-bd97c17b73c2/white-poplin-field-jacket.jpg",
-     "slide": 3
+     "slide": 3,
+     "id": "fa99d9",
+     "img": "images/cut/021-fa99d9.png"
     },
     {
      "label": "Similar",
@@ -1811,7 +1813,9 @@
      "note": "",
      "price": "$54",
      "image_src": "https://shopproclub.com/media/catalog/product/cache/61eed81046a68439fa526f0fb7e1517f/d/s/dsc02725_6.jpg",
-     "slide": 4
+     "slide": 4,
+     "id": "63e68c",
+     "img": "images/cut/021-63e68c.png"
     }
    ],
    "posted_at": null,
