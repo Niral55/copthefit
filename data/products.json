@@ -6,12 +6,13 @@
    "store": "levi.com",
    "title_raw": "550™ Relaxed Men's Jeans",
    "brand": "Levi Strauss & Co.",
-   "name": "",
+   "name": "550™ Relaxed Men's Jeans",
    "image": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00550-4891_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
    "price": "",
    "currency": "",
    "added": "2026-10-15T02:41:08.794Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8e1mw1c02a",
