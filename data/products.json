@@ -6,12 +6,13 @@
    "store": "uniqlo.com",
    "title_raw": "Stretch Shorts",
    "brand": "UNIQLO",
-   "name": "",
+   "name": "Stretch Shorts",
    "image": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/465863/sub/goods_465863_sub12_3x4.jpg",
    "price": "",
    "currency": "",
    "added": "2026-10-15T02:29:05.010Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8x549kk3va",
