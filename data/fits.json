@@ -10948,6 +10948,29 @@
    ],
    "items": [
     {
+     "label": "Exact",
+     "brand": "",
+     "name": "Issey Miyake Homme Plisse Turtleneck",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://wdepartment.com/product/issey-miyake-homme-plisse-turtleneck/",
+     "note": "",
+     "price": "$583.00",
+     "image_src": "https://wdepartment.com/wp-content/uploads/2026/03/11759_A.jpg",
+     "slide": 2
+    },
+    {
+     "label": "Exact",
+     "brand": "Levi Strauss & Co.",
+     "name": "501® Original Men's Jeans",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-original-mens-jeans/p/005013800",
+     "note": "",
+     "image_src": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-0193_GLO_CM_DA?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1200&hei=630",
+     "slide": 3
+    },
+    {
      "label": "Similar",
      "type": "sneakers",
      "brand": "New Balance",
@@ -10958,7 +10981,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/117/794/735/original/U992GY.png.png?action=crop&width=750",
      "price": "$199.99",
      "note": "Current reissue. Retail reference; marketplace prices vary.",
-     "slide": 2,
+     "slide": 4,
      "id": "9d69dc",
      "img": "images/cut/118-9d69dc.png"
     }
@@ -11002,7 +11025,7 @@
    },
    "score_note": "Affordable New Balance find; recognizable actor or artist; evergreen reference. ",
    "note": "VIDEO HOOK: There were two icons on stage at the iPad launch. BEATS: 0–3s iPad reveal; 3–8s cut to Jobs’ feet; 8–18s gray 992 and recognizable uniform; 18–25s current reissue distinction and site CTA. DRAFT: one inspected full-body seated keynote photograph; add a second distinct same-event shoe-visible image. U992GY is current production, not the vintage keynote pair. $199.99 is New Balance’s displayed US retail reference; selected GOAT prices vary.",
-   "updated": "2026-10-14T18:52:22.264Z",
+   "updated": "2026-10-15T02:48:09.807Z",
    "photo": {
     "credit": "Archive photograph via Creative Bloq",
     "source_url": "https://www.creativebloq.com/news/new-balances-steve-jobs-homage-is-so-subtle-you-might-have-missed-it"
