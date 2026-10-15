@@ -315,6 +315,284 @@
     "outro_say": "Comment Casio, and we'll send you where it's still in stock.",
     "caption": "New York's mayor wears a $160 Casio ⌚ It sold out after he won.\nComment CASIO and we'll DM you where it's still in stock (Find #010).\n#casio #casiovintage #watchspotting #nyc #celebstyle"
    }
+  },
+  {
+   "id": "nflarrivals",
+   "title": "What NFL stars actually wear to the game",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "088",
+    "089",
+    "087",
+    "085",
+    "084",
+    "086"
+   ],
+   "script": {
+    "hook_text": "NFL arrival kicks",
+    "hook_say": "Forget the uniforms. This is what NFL stars wear walking into the stadium.",
+    "keyword": "KICKS",
+    "order": [
+     "088",
+     "089",
+     "087",
+     "085",
+     "084",
+     "086"
+    ],
+    "lines": {
+     "088": {
+      "label": "Lamar Jackson",
+      "sub": "$272",
+      "say": "Lamar showed up for Monday Night Football in Ferrari red Jordan 14s."
+     },
+     "089": {
+      "label": "Davante Adams",
+      "sub": "$284",
+      "say": "Davante Adams went murdered-out in Black Cat 4s."
+     },
+     "087": {
+      "label": "Kayvon Thibodeaux",
+      "sub": "$102",
+      "say": "Thibodeaux kept it classic. Bred Jordan 1s."
+     },
+     "085": {
+      "label": "Jalen Hurts",
+      "sub": "$100",
+      "say": "Jalen Hurts walked in wearing Jordan boots built for the cold."
+     },
+     "084": {
+      "label": "Josh Allen",
+      "sub": "$101",
+      "say": "Josh Allen? Camo New Balance, made in the USA."
+     },
+     "086": {
+      "label": "Travis Hunter",
+      "sub": "$61",
+      "say": "And Travis Hunter wore Yeezys you can grab for about sixty bucks."
+     }
+    },
+    "product_find": "087",
+    "product_title": "Air Jordan 1 'Bred'",
+    "product_price": "From $102",
+    "product_say": "Most of these are cheaper than a game ticket. The Bred ones start around a hundred dollars.",
+    "outro_say": "Comment kicks, and we'll send you every pair from this video.",
+    "caption": "What NFL stars wear walking into the stadium 🏈\nComment KICKS and we'll DM you every pair (Find #084–#089).\n#nflfits #tunnelfits #sneakers #jordan #copthefit"
+   }
+  },
+  {
+   "id": "moviewatches",
+   "title": "Movie watches you can actually buy",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "111",
+    "109",
+    "108",
+    "110",
+    "099"
+   ],
+   "script": {
+    "hook_text": "Movie watches you can buy",
+    "hook_say": "These watches were in some of the biggest movies and shows. Most cost less than a dinner out.",
+    "keyword": "WATCH",
+    "order": [
+     "111",
+     "109",
+     "108",
+     "110",
+     "099"
+    ],
+    "lines": {
+     "111": {
+      "label": "Vincent Vega",
+      "sub": "PULP FICTION",
+      "say": "John Travolta wore a red-dial Timex in Pulp Fiction. Timex just reissued it."
+     },
+     "109": {
+      "label": "Robert McCall",
+      "sub": "THE EQUALIZER",
+      "say": "Denzel times every fight in The Equalizer on an all-black Suunto."
+     },
+     "108": {
+      "label": "Mark Scout",
+      "sub": "SEVERANCE · $38",
+      "say": "Mark in Severance wears a red LED Armitron. Thirty-eight dollars."
+     },
+     "110": {
+      "label": "Kyle Turner",
+      "sub": "UNTAMED · $59",
+      "say": "Eric Bana's park ranger in Untamed wears a Timex field chronograph."
+     },
+     "099": {
+      "label": "Nicolas Cage",
+      "sub": "$18",
+      "say": "And Nicolas Cage's watch in Willy's Wonderland? Eighteen dollars."
+     }
+    },
+    "product_find": "108",
+    "product_title": "Severance's LED watch",
+    "product_price": "$38",
+    "product_say": "Hollywood picks these on purpose. Mark's watch from Severance is thirty-eight dollars.",
+    "outro_say": "Comment watch, and we'll send you every watch from this video.",
+    "caption": "Movie & TV watches you can actually buy ⌚ Pulp Fiction, The Equalizer, Severance…\nComment WATCH and we'll DM you all five.\n#moviewatches #severance #timex #watchspotting #copthefit"
+   }
+  },
+  {
+   "id": "moviekicks",
+   "title": "Iconic movie shoes you can still buy",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "105",
+    "106",
+    "107"
+   ],
+   "script": {
+    "hook_text": "Iconic movie shoes",
+    "hook_say": "Three of the most famous shoes in movie history. You can still buy every one.",
+    "keyword": "SHOES",
+    "order": [
+     "105",
+     "106",
+     "107"
+    ],
+    "lines": {
+     "105": {
+      "label": "Forrest Gump",
+      "sub": "$97",
+      "say": "Forrest ran across America in white Nike Cortez. Nike still makes them."
+     },
+     "106": {
+      "label": "Jeff Spicoli",
+      "sub": "$37",
+      "say": "Sean Penn made checkerboard Vans famous in Fast Times. Thirty-seven dollars."
+     },
+     "107": {
+      "label": "Cliff Booth",
+      "sub": "$88",
+      "say": "And Brad Pitt's boots in Once Upon a Time in Hollywood? Minnetonka moccasin boots."
+     }
+    },
+    "product_find": "106",
+    "product_title": "Spicoli's checkerboard Vans",
+    "product_price": "$37",
+    "product_say": "The cheapest icon here? Spicoli's checkerboard Vans, thirty-seven dollars.",
+    "outro_say": "Comment shoes, and we'll send you all three.",
+    "caption": "Iconic movie shoes you can still buy 🎬 Forrest Gump, Fast Times, Once Upon a Time in Hollywood\nComment SHOES and we'll DM you all three.\n#movieshoes #forrestgump #vans #nikecortez #copthefit"
+   }
+  },
+  {
+   "id": "tvfits",
+   "title": "Get the look: TV's best-dressed characters",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "091",
+    "092",
+    "090",
+    "119"
+   ],
+   "script": {
+    "hook_text": "TV characters' fits",
+    "hook_say": "The Bear, The Last of Us, The Pitt. Here's exactly what these characters wear.",
+    "keyword": "FIT",
+    "order": [
+     "091",
+     "092",
+     "090",
+     "119"
+    ],
+    "lines": {
+     "091": {
+      "label": "Carmy",
+      "sub": "THE BEAR",
+      "say": "Carmy's kitchen uniform: a heavy white tee and black Birkenstock clogs."
+     },
+     "092": {
+      "label": "Joel",
+      "sub": "THE LAST OF US",
+      "say": "Joel survives the apocalypse in a waxed trucker jacket and work boots."
+     },
+     "090": {
+      "label": "Dr. Robby",
+      "sub": "THE PITT",
+      "say": "Dr. Robby in The Pitt: a Seiko field watch and Carhartt cargo pants."
+     },
+     "119": {
+      "label": "Royal Abbott",
+      "sub": "OUTER RANGE",
+      "say": "And Josh Brolin's rancher wears the classic Carhartt Detroit jacket."
+     }
+    },
+    "product_find": "119",
+    "product_title": "Carhartt Detroit Jacket",
+    "product_price": "$130",
+    "product_say": "The easiest one to copy? Brolin's Carhartt jacket, about a hundred thirty dollars.",
+    "outro_say": "Comment fit, and we'll send you every piece.",
+    "caption": "Get the look: TV's best-dressed characters 📺 The Bear, The Last of Us, The Pitt, Outer Range\nComment FIT and we'll DM you every piece.\n#thebear #thelastofus #thepitt #carhartt #copthefit"
+   }
+  },
+  {
+   "id": "celebkicks",
+   "title": "The cheap sneakers Hollywood actually wears",
+   "format": "5 celebs who wear X",
+   "finds": [
+    "103",
+    "102",
+    "101",
+    "097",
+    "104",
+    "095"
+   ],
+   "script": {
+    "hook_text": "Hollywood's cheap sneakers",
+    "hook_say": "Millionaires, and they're wearing sneakers that cost less than fifty bucks.",
+    "keyword": "KICKS",
+    "order": [
+     "103",
+     "102",
+     "101",
+     "097",
+     "104",
+     "095"
+    ],
+    "lines": {
+     "103": {
+      "label": "Justin Bieber",
+      "sub": "$40",
+      "say": "Justin Bieber, out in LA in black Vans Old Skools. Forty dollars."
+     },
+     "102": {
+      "label": "Robert Pattinson",
+      "sub": "$47",
+      "say": "Robert Pattinson walked into Cannes in navy Converse."
+     },
+     "101": {
+      "label": "Paul Mescal",
+      "sub": "$49",
+      "say": "Paul Mescal runs errands in white Stan Smiths."
+     },
+     "097": {
+      "label": "Ben Affleck",
+      "sub": "$64",
+      "say": "Ben Affleck does school drop-off in mint Jordan 1 Mids."
+     },
+     "104": {
+      "label": "A$AP Rocky",
+      "sub": "$72",
+      "say": "A$AP Rocky literally made his own PUMAs."
+     },
+     "095": {
+      "label": "Adam Sandler",
+      "sub": "$64",
+      "say": "And Adam Sandler wore basketball shoes to the Oscars."
+     }
+    },
+    "product_find": "103",
+    "product_title": "Vans Old Skool",
+    "product_price": "$40",
+    "product_say": "The cheapest one is Bieber's. Vans Old Skools, forty dollars.",
+    "outro_say": "Comment kicks, and we'll send you every pair.",
+    "caption": "The cheap sneakers Hollywood actually wears 👟 Bieber, Pattinson, Mescal, Affleck, Rocky, Sandler\nComment KICKS and we'll DM you every pair.\n#celebsneakers #vans #converse #stansmith #copthefit"
+   }
   }
  ],
  "no_video": [
