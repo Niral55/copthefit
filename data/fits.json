@@ -11247,6 +11247,30 @@
      "slide": 2,
      "id": "7b800e",
      "img": "images/cut/121-7b800e.png"
+    },
+    {
+     "label": "Similar",
+     "brand": "Massimo Alba",
+     "name": "- Slim-Fit Cotton-Corduroy Suit Jacket - Blue",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://clothbase.com/items/06d1b9bc_massimo-alba-slim-fit-cotton-corduroy-suit-jacket-blue_massimo-alba",
+     "note": "",
+     "price": "$975.0",
+     "image_src": "https://cdn.clothbase.com/uploads/e37b5d7e-96e4-4ca9-9d0c-c39e84238aca/image.jpg",
+     "slide": 3
+    },
+    {
+     "label": "Similar",
+     "brand": "Jacob Cohën",
+     "name": "blue corduroy jeans",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://www.farfetch.com/shopping/men/jacob-cohen-blue-corduroy-jeans-item-36838638.aspx",
+     "note": "",
+     "price": "$654.00",
+     "image_src": "https://cdn-images.farfetch-contents.com/36/83/86/38/36838638_69463406_1000.jpg",
+     "slide": 4
     }
    ],
    "photo_options": [
@@ -11283,7 +11307,11 @@
     "fresh": 2
    },
    "score_note": "Affordable adidas find; recognizable actor or artist; evergreen reference. ",
-   "note": "VIDEO HOOK: Are Sambas over, or is it all about the color? BEATS: 0–3s style debate; 3–8s Hawke’s full look; 8–18s navy, brown and yellow palette breakdown; 18–25s IG6174 identification, comments prompt and site CTA. Two distinct full-body arrival photographs inspected; both show brown uppers and yellow stripes. Clean GOAT profile matches IG6174. $217 starting StockX offer, size-dependent and before any additional checkout charges; refresh selected size before publication."
+   "note": "VIDEO HOOK: Are Sambas over, or is it all about the color? BEATS: 0–3s style debate; 3–8s Hawke’s full look; 8–18s navy, brown and yellow palette breakdown; 18–25s IG6174 identification, comments prompt and site CTA. Two distinct full-body arrival photographs inspected; both show brown uppers and yellow stripes. Clean GOAT profile matches IG6174. $217 starting StockX offer, size-dependent and before any additional checkout charges; refresh selected size before publication.",
+   "photo_src": "https://media.gq.com/photos/684c5e63603987d2c428c3dd/master/w_1600%2Cc_limit/2219716554",
+   "photo_src_page": "https://www.gq.com/story/ethan-hawke-adidas-sambas",
+   "photo_src_credit": "Gilbert Carrasquillo/Getty Images via GQ",
+   "updated": "2026-10-15T02:56:01.747Z"
   }
  ]
 }
