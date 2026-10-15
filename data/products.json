@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mv8yavxshwa9",
+   "url": "https://clothbase.com/items/f90c9ca2_raimundo-langlois-white-poplin-field-jacket_raimundo-langlois",
+   "store": "clothbase.com",
+   "title_raw": "Raimundo Langlois White Poplin Field Jacket",
+   "brand": "Raimundo Langlois",
+   "name": "",
+   "image": "https://cdn.clothbase.com/uploads/929624d6-da5f-4ef1-a58b-bd97c17b73c2/white-poplin-field-jacket.jpg",
+   "price": "446.0",
+   "currency": "USD",
+   "added": "2026-10-15T03:00:06.832Z",
+   "enriched": null
+  },
+  {
    "id": "mv8y9a0tgym5",
    "url": "https://shopproclub.com/pro-club-men-s-heavyweight-baggy-fit-denim-short",
    "store": "shopproclub.com",
