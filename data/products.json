@@ -6,12 +6,13 @@
    "store": "clothbase.com",
    "title_raw": "Raimundo Langlois White Poplin Field Jacket",
    "brand": "Raimundo Langlois",
-   "name": "",
+   "name": "White Poplin Field Jacket",
    "image": "https://cdn.clothbase.com/uploads/929624d6-da5f-4ef1-a58b-bd97c17b73c2/white-poplin-field-jacket.jpg",
    "price": "446.0",
    "currency": "USD",
    "added": "2026-10-15T03:00:06.832Z",
-   "enriched": null
+   "enriched": "basic",
+   "category": "clothing"
   },
   {
    "id": "mv8y9a0tgym5",
