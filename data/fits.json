@@ -10766,7 +10766,9 @@
      "product_url": "https://www.quince.com/men/mens-alpaca-crewneck-pullover-sweater?color=heather-grey",
      "note": "",
      "image_src": "https://images.quince.com/sviCG9WqiCdQMpyjkqS5Q/e8aaa9b2003b561b859a19a04085854f/M-LKT-107-HEAGRE-01_EDITED.jpg?fm=webP&q=90&w=1600",
-     "slide": 3
+     "slide": 3,
+     "id": "8cf0b4",
+     "img": "images/cut/116-8cf0b4.png"
     },
     {
      "label": "Similar",
@@ -10777,7 +10779,9 @@
      "product_url": "https://www.quince.com/men/mens-organic-stretch-cotton-chino-pants---straight-fit",
      "note": "",
      "image_src": "https://images.quince.com/38DRCUx8h7dZvzELGyfQOi/caf4c463a5c4f8e0d209f882e33d0797/M-PNT-114-DEENAV-01_EDITED_01.jpg?fm=webP&q=90&w=1600",
-     "slide": 4
+     "slide": 4,
+     "id": "0febef",
+     "img": "images/cut/116-0febef.png"
     }
    ],
    "photo_options": [
