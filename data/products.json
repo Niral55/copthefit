@@ -1,34 +1,6 @@
 {
  "products": [
   {
-   "id": "mv8xfd4ya39a",
-   "url": "https://stockx.com/kith-plaid-sheridan-shirt-jacket-pavillion",
-   "store": "stockx.com",
-   "title_raw": "Kith Plaid Sheridan Shirt Jacket Pavillion",
-   "brand": "Kith",
-   "name": "Plaid Sheridan Shirt Jacket Pavillion",
-   "image": "https://images.stockx.com/images/Kith-Plaid-Sheridan-Shirt-Jacket-Pavillion.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1729872180",
-   "price": "350",
-   "currency": "USD",
-   "added": "2026-10-15T02:35:36.130Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
-   "id": "mv8xdxwbkqo7",
-   "url": "https://faraone.shop/en/products/costumein-pantalone-pajama-uomo-panna-250551234",
-   "store": "faraone.shop",
-   "title_raw": "cream men's pajama pants",
-   "brand": "COSTUMEIN",
-   "name": "cream men's pajama pants",
-   "image": "https://faraone.shop/cdn/shop/files/p26-costumein-26s398576_1600x.jpg?v=1776861316",
-   "price": "132",
-   "currency": "USD",
-   "added": "2026-10-15T02:34:29.723Z",
-   "enriched": "basic",
-   "category": "clothing"
-  },
-  {
    "id": "mv8e1mw1c02a",
    "url": "https://www.amazon.com/dp/B0018ON68A",
    "store": "amazon.com",

@@ -10630,6 +10630,30 @@
    ],
    "items": [
     {
+     "label": "Similar",
+     "brand": "Kith",
+     "name": "Plaid Sheridan Shirt Jacket Pavillion",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://stockx.com/kith-plaid-sheridan-shirt-jacket-pavillion",
+     "note": "",
+     "price": "$350",
+     "image_src": "https://images.stockx.com/images/Kith-Plaid-Sheridan-Shirt-Jacket-Pavillion.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1729872180",
+     "slide": 2
+    },
+    {
+     "label": "Similar",
+     "brand": "COSTUMEIN",
+     "name": "cream men's pajama pants",
+     "retailer": "",
+     "query": "",
+     "product_url": "https://faraone.shop/en/products/costumein-pantalone-pajama-uomo-panna-250551234",
+     "note": "",
+     "price": "$132",
+     "image_src": "https://faraone.shop/cdn/shop/files/p26-costumein-26s398576_1600x.jpg?v=1776861316",
+     "slide": 3
+    },
+    {
      "label": "Exact",
      "type": "sneakers",
      "brand": "Converse",
@@ -10640,7 +10664,7 @@
      "image_src": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/188/860/original/A16305C.png.png?action=crop&width=750",
      "price": "$80",
      "note": "Original retail reference; current marketplace prices vary.",
-     "slide": 2,
+     "slide": 4,
      "id": "a91381",
      "img": "images/cut/115-a91381.png"
     }
@@ -10684,7 +10708,7 @@
    },
    "score_note": "Affordable Converse find; recognizable actor or artist; evergreen reference. ",
    "note": "VIDEO HOOK: Would you wear Tyler’s Converse boat shoes? BEATS: 0–3s unexpected silhouette; 3–8s seated campaign look; 8–18s suede, boat-shoe shape and easy outfit breakdown; 18–25s wear-or-pass question and site CTA. DRAFT: brown A16305C is visibly worn in this inspected campaign image. This replaces the proposed green striped version; the article’s interview prose mentions a different blue pair. Do not mix the Coach Jogger held in another photo into this entry. A second distinct worn photo is still needed. $80 is original retail, not a selected-size GOAT offer.",
-   "updated": "2026-10-14T18:51:49.763Z",
+   "updated": "2026-10-15T02:35:58.345Z",
    "photo": {
     "credit": "Converse campaign via Vogue",
     "source_url": "https://www.vogue.com/article/tyler-the-creator-on-delusion-gatekeeping-latest-collaboration-with-converse"
