@@ -13,6 +13,7 @@ Claude follows this file whenever Niral asks for leads in chat (or presses **Fin
 7b. **Link to stores Niral can earn on:** `product_url` goes to **Amazon, StockX or GOAT** first (sneakers → StockX/GOAT, watches and clothing → Amazon), and only falls back to a brand store if none of those sells the exact item. Always a specific product page, never a search.
 8. **Never repeat a fit** (run the dedupe check) and never re-add one Niral rejected.
 9. **Page title + subtitle** on every lead: `title` is short (≤ 40 characters), names the person and the piece, and has **no prices** (e.g. "Giannis' South Beach kicks", "Lil Tecca's G-Shocks"). `subtitle` says where he was spotted in plain words, not a database label (e.g. "Spotted at practice", "Eagles game arrival", "On the Emmys red carpet"). The longer `headline` stays as the Instagram cover text.
+9b. **No suit or tuxedo looks for new leads.** Niral wants casual, identifiable items people can readily buy through affiliate links. Skip listings of people wearing suits or tuxedos; do not build leads around buying or recreating formal tailoring. Prioritize sneakers, casual clothing, watches and accessories in casual looks.
 10. **If a lead can't meet all of this, drop it** and say so. Fewer good leads beat padded ones.
 
 ## Goal
@@ -39,6 +40,7 @@ Run `python scripts/dedupe.py "Name" "Event" "Date"`. If it prints DUPLICATE, dr
 
 ## 3. Skip the lead (hard filters)
 Skip it if **any** of these is true:
+- **Suit or tuxedo look.** Skip it. Suit shopping and recreating formal tailoring are a poor match for Niral's affiliate funnel; choose an easy-to-buy item in a casual look instead.
 - **Too expensive for the average person.** The main piece (the thing the post is about) must be something a regular guy actually buys: roughly **$300 or less**, from mass-market brands (Nike, Jordan, adidas, New Balance, Converse, Vans, Puma, ASICS, Hoka, Casio/G-Shock, Seiko, Timex, Citizen, Levi's, Carhartt, Dickies, Ralph Lauren, Tommy Hilfiger, Lacoste, Uniqlo, Zara, H&M, Ray-Ban, Oakley, Champion, Stüssy, Supreme, Essentials/Fear of God Essentials…) and in stock at a store with an affiliate program (Nike, adidas, Foot Locker, Finish Line, Amazon, StockX/GOAT at a normal resale price, Nordstrom, Macy's, Urban Outfitters, END., the brand's own store). **No Louis Vuitton, Tom Ford, Cartier, Rolex, AP, Patek, Prada or other luxury looks**, even with cheaper picks; skip custom and China-only/limited releases that resell far above retail.
 - **Nothing to buy.** No Exact piece is buyable from a store with an affiliate program (Amazon, eBay, StockX, GOAT, Farfetch, SSENSE, Nike, adidas, New Balance, Converse, Chrono24, Jomashop, brand stores via Skimlinks…) **and** there's no strong cheaper pick. Custom one-offs alone don't earn.
 - **No cover.** You can't find any clear photo or video of the look anywhere (see 6).
