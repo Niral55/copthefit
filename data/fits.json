@@ -1108,7 +1108,9 @@
      "image_src": "https://cdn11.bigcommerce.com/s-kcw87xfpcb/products/4129/images/12127/mextp__70632.1764205492.386.513.jpg?c=1",
      "slide": 4,
      "id": "27589b",
-     "img": "images/cut/014-27589b.png"
+     "img": "images/cut/014-27589b.png",
+     "price_auto": "$63",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -1398,7 +1400,7 @@
      "id": "053512",
      "img": "images/cut/017-053512.png",
      "price_auto": "$159.99",
-     "price_checked": "2026-10-12"
+     "price_checked": "2026-10-19"
     },
     {
      "slide": 3,
@@ -2355,7 +2357,9 @@
      "note": "",
      "slide": 3,
      "id": "358d2c",
-     "img": "images/cut/028-358d2c.png"
+     "img": "images/cut/028-358d2c.png",
+     "price_auto": "$105",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -2592,9 +2596,7 @@
      "note": "",
      "slide": 2,
      "id": "be973d",
-     "img": "images/cut/030-be973d.png",
-     "price_auto": "$115",
-     "price_checked": "2026-10-12"
+     "img": "images/cut/030-be973d.png"
     }
    ],
    "photo_options": [
@@ -2688,7 +2690,9 @@
      "note": "",
      "slide": 3,
      "id": "1e9221",
-     "img": "images/cut/031-1e9221.png"
+     "img": "images/cut/031-1e9221.png",
+     "price_auto": "$119.99",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -2702,7 +2706,9 @@
      "image_src": "http://www.off-the-pitch.com/cdn/shop/files/OTP251062_608_1_b2c_21a53350-8655-48dd-85f1-1f97c5f39ce9.jpg?v=1776330617",
      "slide": 4,
      "id": "c41717",
-     "img": "images/cut/031-c41717.png"
+     "img": "images/cut/031-c41717.png",
+     "price_auto": "€59.95",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -2787,7 +2793,9 @@
      "note": "",
      "slide": 3,
      "id": "de08d7",
-     "img": "images/cut/032-de08d7.png"
+     "img": "images/cut/032-de08d7.png",
+     "price_auto": "$179",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Exact",
@@ -2926,7 +2934,9 @@
      "note": "",
      "slide": 4,
      "id": "a57c94",
-     "img": "images/cut/033-a57c94.png"
+     "img": "images/cut/033-a57c94.png",
+     "price_auto": "$249",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -3021,7 +3031,9 @@
      "note": "",
      "slide": 4,
      "id": "2da40f",
-     "img": "images/cut/034-2da40f.png"
+     "img": "images/cut/034-2da40f.png",
+     "price_auto": "$127.50",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -3097,7 +3109,9 @@
      "image_src": "https://www.orientwatchusa.com/cdn/shop/files/kamasu-4336362.png?v=1787002521&width=1200",
      "price": "$375",
      "id": "34c04b",
-     "img": "images/cut/035-34c04b.png"
+     "img": "images/cut/035-34c04b.png",
+     "price_auto": "$375",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -3112,7 +3126,9 @@
      "note": "",
      "slide": 4,
      "id": "695fb0",
-     "img": "images/cut/035-695fb0.png"
+     "img": "images/cut/035-695fb0.png",
+     "price_auto": "$179.99",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -3417,7 +3433,9 @@
      "note": "",
      "slide": 3,
      "id": "aacd49",
-     "img": "images/cut/038-aacd49.png"
+     "img": "images/cut/038-aacd49.png",
+     "price_auto": "$159",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -3514,7 +3532,9 @@
      "image_src": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9b840963/product-pictures/739cc440-025b-42e8-a5f9-ae33b31479b2_T137-410-11-041-00_shadow.png",
      "price": "$450",
      "id": "da111f",
-     "img": "images/cut/039-da111f.png"
+     "img": "images/cut/039-da111f.png",
+     "price_auto": "$450",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -3529,7 +3549,9 @@
      "note": "",
      "slide": 5,
      "id": "a93801",
-     "img": "images/cut/039-a93801.png"
+     "img": "images/cut/039-a93801.png",
+     "price_auto": "$269",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -3590,7 +3612,9 @@
      "image_src": "https://www.watchguys.com/cdn/shop/files/Rolex_Daytona_126538TRO_Barbie.webp?v=1791255194&width=1200",
      "price": "$1,000,000",
      "id": "1f3f6d",
-     "img": "images/cut/040-1f3f6d.png"
+     "img": "images/cut/040-1f3f6d.png",
+     "price_auto": "$1,000,000",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -4042,7 +4066,9 @@
      "note": "",
      "slide": 4,
      "id": "42fd6e",
-     "img": "images/cut/045-42fd6e.png"
+     "img": "images/cut/045-42fd6e.png",
+     "price_auto": "$219",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -4142,7 +4168,9 @@
      "note": "",
      "slide": 4,
      "id": "ffe0bb",
-     "img": "images/cut/046-ffe0bb.png"
+     "img": "images/cut/046-ffe0bb.png",
+     "price_auto": "$269",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -4306,7 +4334,9 @@
      "note": "",
      "slide": 3,
      "id": "daa649",
-     "img": "images/cut/048-daa649.png"
+     "img": "images/cut/048-daa649.png",
+     "price_auto": "$129",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -4390,7 +4420,9 @@
      "id": "fc95af",
      "img": "images/cut/049-fc95af-v1791557427.png",
      "type": "watch",
-     "price": "$16,000"
+     "price": "$16,000",
+     "price_auto": "$16,000",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -4405,7 +4437,9 @@
      "note": "",
      "slide": 3,
      "id": "cb4d83",
-     "img": "images/cut/049-cb4d83.png"
+     "img": "images/cut/049-cb4d83.png",
+     "price_auto": "$159",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -4553,7 +4587,9 @@
      "id": "49b0d3",
      "img": "images/cut/050-49b0d3-v1791557465.png",
      "type": "watch",
-     "price": "$59,000"
+     "price": "$59,000",
+     "price_auto": "$59,000",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -4568,7 +4604,9 @@
      "note": "",
      "slide": 3,
      "id": "76fb78",
-     "img": "images/cut/050-76fb78.png"
+     "img": "images/cut/050-76fb78.png",
+     "price_auto": "$149",
+     "price_checked": "2026-10-19"
     },
     {
      "slide": 4,
@@ -4667,7 +4705,9 @@
      "note": "",
      "slide": 3,
      "id": "56d910",
-     "img": "images/cut/051-56d910.png"
+     "img": "images/cut/051-56d910.png",
+     "price_auto": "$149.99",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -4819,7 +4859,9 @@
      "image_src": "https://oldnavy.gap.com/webcontent/0060/382/161/cn60382161.jpg",
      "slide": 3,
      "id": "5a5862",
-     "img": "images/cut/053-5a5862.png"
+     "img": "images/cut/053-5a5862.png",
+     "price_auto": "$19.99",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -4845,7 +4887,9 @@
      "image_src": "https://cdn.shopify.com/s/files/1/0692/5752/7484/files/DK0A88580TB-FR.jpg?v=1768409534",
      "slide": 5,
      "id": "0c140e",
-     "img": "images/cut/053-0c140e.png"
+     "img": "images/cut/053-0c140e.png",
+     "price_auto": "$35.98",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -5477,7 +5521,9 @@
      "image_src": "https://naghedinyc.com/cdn/shop/files/StBarths_Petit_Tote_Solid_Onyx_SN03011LD_Main_2.jpg?v=1780938196&width=4000",
      "slide": 4,
      "id": "6adfab",
-     "img": "images/cut/060-6adfab.png"
+     "img": "images/cut/060-6adfab.png",
+     "price_auto": "$245",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -7052,7 +7098,9 @@
      "image_src": "https://images.asos-media.com/products/asos-design-oversized-baggy-pants-in-black-with-pleats/209395522-1-black",
      "slide": 5,
      "id": "5a5c6b",
-     "img": "images/cut/077-5a5c6b.png"
+     "img": "images/cut/077-5a5c6b.png",
+     "price_auto": "$54.99",
+     "price_checked": "2026-10-19"
     }
    ],
    "posted_at": null,
@@ -7473,7 +7521,9 @@
      "note": "",
      "slide": 3,
      "img": "images/cut/081-5b994f.png",
-     "id": "5b994f"
+     "id": "5b994f",
+     "price_auto": "$449",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -8074,7 +8124,9 @@
      "image_src": "https://restockar.com/cdn/shop/files/Boredom-Kills-Cotton-Summer-Set-Bottom-front.jpg?v=1755134251&width=1920",
      "slide": 3,
      "id": "165d68",
-     "img": "images/cut/087-165d68.png"
+     "img": "images/cut/087-165d68.png",
+     "price_auto": "$120",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -8318,7 +8370,9 @@
      "note": "",
      "slide": 3,
      "id": "36d6fd",
-     "img": "images/cut/090-36d6fd.png"
+     "img": "images/cut/090-36d6fd.png",
+     "price_auto": "$64.99",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -8397,7 +8451,9 @@
      "note": "",
      "slide": 2,
      "id": "012c71",
-     "img": "images/cut/091-012c71.png"
+     "img": "images/cut/091-012c71.png",
+     "price_auto": "$160",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Exact",
@@ -8412,7 +8468,9 @@
      "note": "",
      "slide": 3,
      "id": "7574b4",
-     "img": "images/cut/091-7574b4.png"
+     "img": "images/cut/091-7574b4.png",
+     "price_auto": "$115",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -8510,7 +8568,9 @@
      "note": "",
      "slide": 3,
      "id": "371ed1",
-     "img": "images/cut/092-371ed1.png"
+     "img": "images/cut/092-371ed1.png",
+     "price_auto": "$239.95",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -9942,7 +10002,9 @@
      "note": "Reissued softsole design, intended for indoor wear.",
      "slide": 5,
      "id": "e2ad4e",
-     "img": "images/cut/107-e2ad4e.png"
+     "img": "images/cut/107-e2ad4e.png",
+     "price_auto": "$87.95",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -10288,7 +10350,9 @@
      "note": "Modern reissue; not the original film prop. Currently unavailable from Timex US.",
      "slide": 2,
      "id": "6417b7",
-     "img": "images/cut/111-6417b7.png"
+     "img": "images/cut/111-6417b7.png",
+     "price_auto": "$219",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -10645,7 +10709,9 @@
      "image_src": "https://faraone.shop/cdn/shop/files/p26-costumein-26s398576_1600x.jpg?v=1776861316",
      "slide": 3,
      "id": "7316be",
-     "img": "images/cut/115-7316be.png"
+     "img": "images/cut/115-7316be.png",
+     "price_auto": "$132",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Exact",
@@ -10758,7 +10824,9 @@
      "image_src": "https://images.quince.com/sviCG9WqiCdQMpyjkqS5Q/e8aaa9b2003b561b859a19a04085854f/M-LKT-107-HEAGRE-01_EDITED.jpg?fm=webP&q=90&w=1600",
      "slide": 3,
      "id": "8cf0b4",
-     "img": "images/cut/116-8cf0b4.png"
+     "img": "images/cut/116-8cf0b4.png",
+     "price_auto": "$72",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Similar",
@@ -10771,7 +10839,9 @@
      "image_src": "https://images.quince.com/38DRCUx8h7dZvzELGyfQOi/caf4c463a5c4f8e0d209f882e33d0797/M-PNT-114-DEENAV-01_EDITED_01.jpg?fm=webP&q=90&w=1600",
      "slide": 4,
      "id": "0febef",
-     "img": "images/cut/116-0febef.png"
+     "img": "images/cut/116-0febef.png",
+     "price_auto": "$60",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -10861,7 +10931,9 @@
      "note": "Modern Japanese reissue; not the original film costume. Japanese store pricing.",
      "slide": 2,
      "id": "427e63",
-     "img": "images/cut/117-427e63.png"
+     "img": "images/cut/117-427e63.png",
+     "price_auto": "¥31,900",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
@@ -10949,7 +11021,9 @@
      "image_src": "https://wdepartment.com/wp-content/uploads/2026/03/11759_A.jpg",
      "slide": 2,
      "id": "ab0003",
-     "img": "images/cut/118-ab0003.png"
+     "img": "images/cut/118-ab0003.png",
+     "price_auto": "$583",
+     "price_checked": "2026-10-19"
     },
     {
      "label": "Exact",
@@ -11062,7 +11136,9 @@
      "note": "Current Detroit jacket; details differ from the screen-worn version.",
      "slide": 2,
      "id": "89eb21",
-     "img": "images/cut/119-89eb21.png"
+     "img": "images/cut/119-89eb21.png",
+     "price_auto": "$129.99",
+     "price_checked": "2026-10-19"
     }
    ],
    "photo_options": [
