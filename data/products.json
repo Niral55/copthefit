@@ -1,6 +1,19 @@
 {
  "products": [
   {
+   "id": "mvheaved57mg",
+   "url": "https://www.quince.com/home/cotton-knit-throw?color=olive",
+   "store": "quince.com",
+   "title_raw": "Cotton Fisherman Throw",
+   "brand": "Quince",
+   "name": "",
+   "image": "https://images.quince.com/62w5IzqXgTM4U1IAgvIg2k/c2f1c1c510f0ae3f13bb7eec8bfe6cab/U-HAC-12-OLV__1_.jpg?fm=webP&q=90&w=1600",
+   "price": "",
+   "currency": "",
+   "added": "2026-10-21T00:50:09.397Z",
+   "enriched": null
+  },
+  {
    "id": "mv8xmhtmr4nj",
    "url": "https://www.levi.com/US/en_US/clothing/men/jeans/relaxed/550TM-relaxed-mens-jeans/p/005504891",
    "store": "levi.com",
