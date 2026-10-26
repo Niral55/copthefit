@@ -1110,7 +1110,7 @@
      "id": "27589b",
      "img": "images/cut/014-27589b.png",
      "price_auto": "$63",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -1400,7 +1400,7 @@
      "id": "053512",
      "img": "images/cut/017-053512.png",
      "price_auto": "$159.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "slide": 3,
@@ -2359,7 +2359,7 @@
      "id": "358d2c",
      "img": "images/cut/028-358d2c.png",
      "price_auto": "$105",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -2692,7 +2692,7 @@
      "id": "1e9221",
      "img": "images/cut/031-1e9221.png",
      "price_auto": "$119.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -2708,7 +2708,7 @@
      "id": "c41717",
      "img": "images/cut/031-c41717.png",
      "price_auto": "€59.95",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -2795,7 +2795,7 @@
      "id": "de08d7",
      "img": "images/cut/032-de08d7.png",
      "price_auto": "$179",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Exact",
@@ -2936,7 +2936,7 @@
      "id": "a57c94",
      "img": "images/cut/033-a57c94.png",
      "price_auto": "$249",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -3032,8 +3032,8 @@
      "slide": 4,
      "id": "2da40f",
      "img": "images/cut/034-2da40f.png",
-     "price_auto": "$127.50",
-     "price_checked": "2026-10-19"
+     "price_auto": "$120",
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -3111,7 +3111,7 @@
      "id": "34c04b",
      "img": "images/cut/035-34c04b.png",
      "price_auto": "$375",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -3128,7 +3128,7 @@
      "id": "695fb0",
      "img": "images/cut/035-695fb0.png",
      "price_auto": "$179.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -3435,7 +3435,7 @@
      "id": "aacd49",
      "img": "images/cut/038-aacd49.png",
      "price_auto": "$159",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -3534,7 +3534,7 @@
      "id": "da111f",
      "img": "images/cut/039-da111f.png",
      "price_auto": "$450",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -3551,7 +3551,7 @@
      "id": "a93801",
      "img": "images/cut/039-a93801.png",
      "price_auto": "$269",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -3614,7 +3614,7 @@
      "id": "1f3f6d",
      "img": "images/cut/040-1f3f6d.png",
      "price_auto": "$1,000,000",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -4068,7 +4068,7 @@
      "id": "42fd6e",
      "img": "images/cut/045-42fd6e.png",
      "price_auto": "$219",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -4170,7 +4170,7 @@
      "id": "ffe0bb",
      "img": "images/cut/046-ffe0bb.png",
      "price_auto": "$269",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -4336,7 +4336,7 @@
      "id": "daa649",
      "img": "images/cut/048-daa649.png",
      "price_auto": "$129",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -4422,7 +4422,7 @@
      "type": "watch",
      "price": "$16,000",
      "price_auto": "$16,000",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -4439,7 +4439,7 @@
      "id": "cb4d83",
      "img": "images/cut/049-cb4d83.png",
      "price_auto": "$159",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -4589,7 +4589,7 @@
      "type": "watch",
      "price": "$59,000",
      "price_auto": "$59,000",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -4606,7 +4606,7 @@
      "id": "76fb78",
      "img": "images/cut/050-76fb78.png",
      "price_auto": "$149",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "slide": 4,
@@ -4707,7 +4707,7 @@
      "id": "56d910",
      "img": "images/cut/051-56d910.png",
      "price_auto": "$149.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "posted_at": null,
@@ -4861,7 +4861,7 @@
      "id": "5a5862",
      "img": "images/cut/053-5a5862.png",
      "price_auto": "$19.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -4889,7 +4889,7 @@
      "id": "0c140e",
      "img": "images/cut/053-0c140e.png",
      "price_auto": "$35.98",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -5523,7 +5523,7 @@
      "id": "6adfab",
      "img": "images/cut/060-6adfab.png",
      "price_auto": "$245",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -7098,9 +7098,7 @@
      "image_src": "https://images.asos-media.com/products/asos-design-oversized-baggy-pants-in-black-with-pleats/209395522-1-black",
      "slide": 5,
      "id": "5a5c6b",
-     "img": "images/cut/077-5a5c6b.png",
-     "price_auto": "$54.99",
-     "price_checked": "2026-10-19"
+     "img": "images/cut/077-5a5c6b.png"
     }
    ],
    "posted_at": null,
@@ -7523,7 +7521,7 @@
      "img": "images/cut/081-5b994f.png",
      "id": "5b994f",
      "price_auto": "$449",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -8126,7 +8124,7 @@
      "id": "165d68",
      "img": "images/cut/087-165d68.png",
      "price_auto": "$120",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -8372,7 +8370,7 @@
      "id": "36d6fd",
      "img": "images/cut/090-36d6fd.png",
      "price_auto": "$64.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -8453,7 +8451,7 @@
      "id": "012c71",
      "img": "images/cut/091-012c71.png",
      "price_auto": "$160",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Exact",
@@ -8470,7 +8468,7 @@
      "id": "7574b4",
      "img": "images/cut/091-7574b4.png",
      "price_auto": "$115",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -8570,7 +8568,7 @@
      "id": "371ed1",
      "img": "images/cut/092-371ed1.png",
      "price_auto": "$239.95",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -10004,7 +10002,7 @@
      "id": "e2ad4e",
      "img": "images/cut/107-e2ad4e.png",
      "price_auto": "$87.95",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -10352,7 +10350,7 @@
      "id": "6417b7",
      "img": "images/cut/111-6417b7.png",
      "price_auto": "$219",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -10709,9 +10707,7 @@
      "image_src": "https://faraone.shop/cdn/shop/files/p26-costumein-26s398576_1600x.jpg?v=1776861316",
      "slide": 3,
      "id": "7316be",
-     "img": "images/cut/115-7316be.png",
-     "price_auto": "$132",
-     "price_checked": "2026-10-19"
+     "img": "images/cut/115-7316be.png"
     },
     {
      "label": "Exact",
@@ -10826,7 +10822,7 @@
      "id": "8cf0b4",
      "img": "images/cut/116-8cf0b4.png",
      "price_auto": "$72",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Similar",
@@ -10841,7 +10837,7 @@
      "id": "0febef",
      "img": "images/cut/116-0febef.png",
      "price_auto": "$60",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -10933,7 +10929,7 @@
      "id": "427e63",
      "img": "images/cut/117-427e63.png",
      "price_auto": "¥31,900",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
@@ -11023,7 +11019,7 @@
      "id": "ab0003",
      "img": "images/cut/118-ab0003.png",
      "price_auto": "$583",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     },
     {
      "label": "Exact",
@@ -11138,7 +11134,7 @@
      "id": "89eb21",
      "img": "images/cut/119-89eb21.png",
      "price_auto": "$129.99",
-     "price_checked": "2026-10-19"
+     "price_checked": "2026-10-26"
     }
    ],
    "photo_options": [
